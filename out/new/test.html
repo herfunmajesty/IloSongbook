@@ -1,0 +1,388 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+<title>Krakow Ukulele & Sing Tuesdays</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
+<style>
+<style>
+.highlight {background-color: lemonchiffon; font-weight: bold;}
+.chord { font-weight: bold; color:red}
+ul { list-style: none; padding-left: 0px; }
+#options a {text-decoration: underline;}
+#songs a {text-decoration: none;}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+.montserrat-h3 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300; /* Waga 300 odpowiada Montserrat Light */
+}
+.toggle-button {
+	background-color: #eee;
+	border: 3px solid #ccc;
+	padding: 3px 5px;
+	margin-right: 5px;
+	cursor: pointer;
+}
+.bold-text {
+    font-weight: bold;
+    font-style: normal; 
+	}
+.italic-text {
+	font-style: italic;
+    font-weight: normal;
+	}	
+</style>
+
+</head>
+<body>
+
+<header class="container">
+    <div class="m-2 mb-4 text-center">
+        <img src="/images/ukulele-krakow.png" class="img-fluid" alt="Krakow Ukulele" width="200">
+    </div>
+</header>
+
+<div class="container">
+<div class="row justify-content-center">
+    
+    <div id="list" class="col-lg-8 col-md-10 col-sm-12 my-3"> <!-- zachowania kontenerów dla różnych typów ekranów + margin-->
+
+        <h4>Krakow Ukulele & Sing Tuesdays</h4>
+        <div class="row row-cols-2">
+            <div class="col-md-6">
+                <div>
+                    <h6>Filter</h6>
+                    <form id="filter-form">
+						<div class="btn-group-vertical">
+							<button type="button" name="Easy" class="toggle-button btn btn-outline-success">Easy</button>
+							<button type="button" name="Medium" class="toggle-button btn btn-outline-warning">Medium</button>
+							<button type="button" name="Hard" class="toggle-button btn btn-outline-danger">Hard</button>
+							<button type="button" name="New" class="toggle-button btn btn-outline-info">?? Only new</button>
+						</div>
+					</form>
+                </div>
+            </div>
+			<!--<div class="col-md-1">
+			</div>-->
+            <div class="col-md-6 d-flex justify-content-end"">
+                <div>
+                    <h6>Sort by</h6>
+						<div class="btn-group-vertical">
+							<button type="button" id="sortByTitle" class="toggle-button btn btn-outline-primary">  Titles  </button>
+							<button type="button" id="sortByArtist" class="toggle-button btn btn-outline-primary"> Artists </button>
+						</div>
+                </div>
+            </div>
+        </div>
+		<!--<div id="infoBox" style="position: fixed; right: 20px; top: 20px; border: 1px solid black; padding: 10px;">
+			<p id="sorting method" style="font-size: xx-small;"></p>
+		</div>-->
+		
+		<p id="sorting method"></p>
+		
+		
+        <div class="mt-2">
+			<h6>Songs</h6>
+			<ul id="songs">
+				
+					<li>
+						<a href="🔥Boys-Don't-Cry.html" name="T1">
+						T1 - 🔥Boys Don't Cry 
+						</a>
+						<small> - 
+							<em> The Cure -	</em> 
+						</small>
+						<span class= "text-success" >
+							<small><b>Easy</b></small>
+						</span>
+					</li>
+				
+					<li>
+						<a href="🔥Human.html" name="T2">
+						T2 - 🔥Human 
+						</a>
+						<small> - 
+							<em> lolsoos -	</em> 
+						</small>
+						<span class= "text-None" >
+							<small><b>xxx</b></small>
+						</span>
+					</li>
+				
+					<li>
+						<a href="🔥I'm-Still-Standing.html" name="T3">
+						T3 - 🔥I'm Still Standing 
+						</a>
+						<small> - 
+							<em> Elton John -	</em> 
+						</small>
+						<span class= "text-warning" >
+							<small><b>Medium</b></small>
+						</span>
+					</li>
+				
+					<li>
+						<a href="🔥In-The-End.html" name="T4">
+						T4 - 🔥In The End 
+						</a>
+						<small> - 
+							<em> Linkin Park -	</em> 
+						</small>
+						<span class= "text-None" >
+							<small><b>xxx</b></small>
+						</span>
+					</li>
+				
+					<li>
+						<a href="🔥Its-Raining-Men.html" name="T5">
+						T5 - 🔥Its Raining Men 
+						</a>
+						<small> - 
+							<em> The Weather Girls -	</em> 
+						</small>
+						<span class= "text-None" >
+							<small><b>xxx</b></small>
+						</span>
+					</li>
+				
+					<li>
+						<a href="🔥Just-Like-Heaven.html" name="T6">
+						T6 - 🔥Just Like Heaven 
+						</a>
+						<small> - 
+							<em> The Cure -	</em> 
+						</small>
+						<span class= "text-None" >
+							<small><b>xxx</b></small>
+						</span>
+					</li>
+				
+					<li>
+						<a href="🔥Little-Talks.html" name="T7">
+						T7 - 🔥Little Talks 
+						</a>
+						<small> - 
+							<em> Of Monsters and Men -	</em> 
+						</small>
+						<span class= "text-None" >
+							<small><b>xxx</b></small>
+						</span>
+					</li>
+				
+					<li>
+						<a href="🔥Somebody-Told-Me.html" name="T8">
+						T8 - 🔥Somebody Told Me 
+						</a>
+						<small> - 
+							<em> The Killers -	</em> 
+						</small>
+						<span class= "text-None" >
+							<small><b>xxx</b></small>
+						</span>
+					</li>
+				
+					<li>
+						<a href="⭐Waiting-For-Love.html" name="T9">
+						T9 - ⭐Waiting For Love 
+						</a>
+						<small> - 
+							<em> Avicii -	</em> 
+						</small>
+						<span class= "text-None" >
+							<small><b>xxx</b></small>
+						</span>
+					</li>
+				
+					<li>
+						<a href="What-Is-Love-(Baby-Don't-Hurt-Me).html" name="T10">
+						T10 - What Is Love (Baby Don't Hurt Me) 
+						</a>
+						<small> - 
+							<em> Haddaway -	</em> 
+						</small>
+						<span class= "text-success" >
+							<small><b>Easy</b></small>
+						</span>
+					</li>
+				
+					<li>
+						<a href="🔥Yours-Truly-2095.html" name="T11">
+						T11 - 🔥Yours Truly 2095 
+						</a>
+						<small> - 
+							<em> Electric Light Orchestra -	</em> 
+						</small>
+						<span class= "text-None" >
+							<small><b>xxx</b></small>
+						</span>
+					</li>
+				
+			</ul>
+		</div>
+       
+    </div>
+
+    <hr/>
+			
+    <div class="m-2 my-4 text-center">
+        <img src="/images/qrcode.png" class="img-fluid" alt="QR Code" width="200">
+    </div>
+	<div class="m-2 my-4 text-center"><li><a href="arch_songs.html">Archiwum</a></li></div>
+
+</div>
+</div>
+
+
+<script>
+	document.addEventListener('DOMContentLoaded', () => {
+		const toggleButtons = document.querySelectorAll('.toggle-button');
+		const savedState = JSON.parse(sessionStorage.getItem('buttonState'));
+		const songsList = document.getElementById('songs'); // ID twojej listy piosenek
+		console.log('Zachowane stany przycisk贸w: ', savedState);
+		if (savedState === null) {
+			// Je艣li savedState jest null, oznacz wszystkie przyciski jako aktywne
+			toggleButtons.forEach(button => {
+				if (button.name !== 'New') {
+					button.classList.add('active');
+				}
+			});
+		} else {
+			// W przeciwnym razie odczytaj stan przycisk贸w z sessionStorage
+			toggleButtons.forEach(button => {
+				if (button.name !== 'New') {
+					if (savedState.includes(button.name)) {
+						button.classList.add('active');
+					}
+				}
+			});
+		}
+	
+		toggleButtons.forEach(button => {
+			// Dla przycisk贸w wszystkich bez wyj膮tku
+			button.addEventListener('click', () => {
+				button.classList.toggle('active');
+				console.log('zmiana stany przycisk贸w: ', button.name);
+				filterSongs();
+				saveButtonState();
+			});
+		});
+		toggleButtons.forEach(button => {
+			console.log(`Przycisk "${button.name}" jest ${button.classList.contains('active') ? 'aktywny' : 'nieaktywny'}`);
+		});
+		function saveButtonState() {
+			const activeButtons = Array.from(toggleButtons).filter(btn => btn.classList.contains('active'));
+			sessionStorage.setItem('buttonState', JSON.stringify(activeButtons.map(btn => btn.name)));
+		}
+		function filterSongs() {
+			const activeButtons = document.querySelectorAll('.toggle-button.active');
+			console.log("Aktywne przyciski: ", activeButtons);
+			const allSongs = songsList.querySelectorAll('li');
+
+			allSongs.forEach(song => {
+				const level = song.querySelector('span small b').textContent;
+				var shouldDisplay = Array.from(activeButtons).some(btn => btn.name === level);
+				song.style.display = shouldDisplay ? 'block' : 'none';
+				activeButtons.forEach(button => {
+					if (button.name === 'New') {
+						const title = song.querySelector('a').textContent;
+						shouldDisplay = title.includes('🔥');
+						if (song.style.display === 'block'){
+							song.style.display = shouldDisplay ? 'block' : 'none';}
+					}
+				});
+			});
+		}
+	});
+
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const songsList = document.getElementById('songs'); // ID twojej listy piosenek
+        const sortByTitleButton = document.getElementById('sortByTitle');
+        const sortByArtistButton = document.getElementById('sortByArtist');
+		const myArtElements = document.querySelectorAll('.my-art'); // Znajdź wszystkie elementy o klasie "my-art"
+		const myLevElements = document.querySelectorAll('.my-lev'); // Znajdź wszystkie elementy o klasie "my-lev"
+		//sortByTitleButton.checked = true; // Zaznacz pole wyboru
+		// Wylacz przycisk "Sort by Artist" na poczatku
+        sortByArtistButton.classList.remove('active');
+
+        sortByTitleButton.addEventListener('click', () => {
+            sortByTitle();
+            sortByArtistButton.classList.remove('active'); // Wy艂膮cz drugi przycisk
+            sortByTitleButton.classList.add('active'); // Zaznacz pierwszy przycisk
+			var s_variant=true;
+			// Aktualizuj wartości w infoBox
+			document.getElementById('sorting method').textContent = 'sort by title: ' + s_variant;
+			myArtElements.forEach(element => {
+				element.classList.remove('bold-text'); // Dodaj klasę "bold-text" do każdego elementu
+			});	
+			myLevElements.forEach(element => {
+				element.classList.remove('italic-text');
+			});
+
+        });
+
+        sortByArtistButton.addEventListener('click', () => {
+            sortByArtist();
+            sortByTitleButton.classList.remove('active'); // Wy艂膮cz pierwszy przycisk
+            sortByArtistButton.classList.add('active'); // Zaznacz drugi przycisk
+			s_variant=false;
+			// Aktualizuj wartości w infoBox
+			document.getElementById('sorting method').textContent = 'sort by title: ' + s_variant;
+			myArtElements.forEach(element => {
+				element.classList.add('bold-text'); // Dodaj klasę "bold-text" do każdego elementu
+			});
+			myLevElements.forEach(element => {
+				element.classList.add('italic-text'); // Dodaj klasę "bold-text" do każdego elementu
+			});
+        });
+		
+        function sortByTitle() {
+			const sortedSongs = Array.from(songsList.querySelectorAll('li'))
+            .sort((a, b) => {
+				// Pobierz nazw臋 z atrybutu href
+				var nameA = a.querySelector('a').getAttribute('href');
+				var nameB = b.querySelector('a').getAttribute('href');
+				nameA = nameA.replace(/^🔥/i, '');
+				nameB = nameB.replace(/^🔥/i, '');
+				nameA = nameA.replace(/^🎂/i, '');
+				nameB = nameB.replace(/^🎂/i, '');
+				// Por贸wnaj nazwy
+				return nameA.localeCompare(nameB);
+				
+				// Wy艣wietl warto艣ci artyst贸w w konsoli
+				console.log('Title A:', nameA);
+				console.log('Title B:', nameB);
+				
+                return nameA.localeCompare(nameB);
+				
+            });
+			songsList.innerHTML = ''; // Wyczy艣膰 list臋
+			sortedSongs.forEach(song => songsList.appendChild(song));
+        }
+
+        function sortByArtist() {
+			const sortedSongs = Array.from(songsList.querySelectorAll('li'))
+				.sort((a, b) => {
+					var artistA = a.querySelector('em').textContent;
+					artistA = artistA.replace(/^by The\s+/i, '');
+					artistA = artistA.replace(/^by\s+/i, '');
+					var artistB = b.querySelector('em').textContent;
+					artistB = artistB.replace(/^by The\s+/i, '');
+					artistB = artistB.replace(/^by\s+/i, '');
+
+					return artistA.localeCompare(artistB, 'en', { sensitivity: 'base' });
+				});
+			songsList.innerHTML = ''; // Wyczy艣膰 list臋
+			sortedSongs.forEach(song => songsList.appendChild(song));
+			}
+		});
+</script>
+</body>
+</html>

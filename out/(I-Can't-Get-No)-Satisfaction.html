@@ -1,0 +1,207 @@
+
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <title>(I Can't Get No) Satisfaction - Krakow Ukulele Tuesdays</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+        .highlight {background-color: lemonchiffon; font-weight: bold;}
+        .chord { font-weight: bold; color:red}
+        #tab { font-size: 80%; font-family: Verdana, Tahoma, sans-serif; }
+        #options a {text-decoration: underline;}
+        .sticky { 
+            position: fixed; 
+            top: 0; 
+            margin-top: 0 !important; 
+            left: 0; 
+            padding: 0px 0px; 
+            width: 100%; 
+            border-bottom: 1px solid #cfd8dc; 
+            /* overflow-x: auto;
+            white-space: nowrap; */
+        }
+		.toggle-button {
+			background-color: #eee;
+			border: 1px solid #ccc;
+			padding: 1px 1px;
+			margin-right: 5px;
+			cursor: pointer;
+		}
+    </style>
+
+</head>
+<body data-duration = 4.0>
+
+
+<header class="container">
+    <div class="m-2 mb-4 text-center">
+        <img src="/images/ukulele-krakow.png" class="img-fluid" alt="Krakow Ukulele" width="200">
+    </div>
+</header>
+
+<div class="container">
+    <div class="row justify-content-center">
+        
+<div class="col-lg-8 col-md-10 col-sm-12 my-3">
+
+    <h3 class="song-title">
+        #1 (I Can't Get No) Satisfaction
+    </h3>
+    
+    <h5 class="song-artist">
+        The Rolling Stones
+    </h5>
+
+    <h5>
+        Level: 
+        <span class="badge rounded-pill badge-success text-white">Easy</span>
+    </h5>
+    
+	    <div class="mt-3">
+		    <iframe src="https://open.spotify.com/embed/track/3bjXZ00UeG17SC24jS8Sde"
+				    width="300"
+				    height="80"
+				    frameborder="0"
+				    allowtransparency="true"
+				    allow="encrypted-media"></iframe>
+	    </div>
+    
+    
+
+   <div class="mt-4" style="overflow-x: auto;">
+    
+        <img src="/chords/E7.gif" alt="E7" title="E7" />
+    
+        <img src="/chords/A.gif" alt="A" title="A" />
+    
+        <img src="/chords/D.gif" alt="D" title="D" />
+    
+        <img src="/chords/B7.gif" alt="B7" title="B7" />
+    
+</div>
+	<div id="infoBox" style="position: fixed; right: 20px; top: 20px; border: 1px solid black; padding: 10px;">
+		<p id="heightInfo" style="font-size: xx-small;"></p>
+		<p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
+		<p id="songDuration" style="font-size: xx-small;"></p>
+	</div>
+	<div id="floatingButton" style="position: fixed; right: 20px; bottom: 20px; ">
+		<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light">
+			<img id="buttonImage" src="images/pause2.gif">
+		</button>
+	</div>
+    
+    <div id="tab">
+        <br/><br/><br/><br/><br/><br/>riff 1 (optional):<br/><pre><br/>A|-2-2--2-4-5--5-5-4-4-2-|<br/>E|-----------------------|<br/>C|-----------------------|<br/>G|-----------------------|<br/></pre><br/><br/>(intro:)<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span> x3<br/><br/>(quiet:)<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span></span> I can't <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span></span> get no <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span></span> sa-tis-<span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span></span>-fa-ction,<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span></span> I can't <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span></span> get no <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span></span> sa-tis-<span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span></span>-fa-ction<br/>'Cause I <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span></span> try - and I <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[B7]</span></span></span></span></span> try - <br/>and I <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span></span> try - and I <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span></span> try<br/><br/>(loud: + riff 1)<br/>I can't <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span></span> get no, <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span> <br/>I can't <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span></span> get no <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span><br/><br/>When I'm <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span></span> drivin' in my <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span> car, <br/>and the <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span></span> man comes on the <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span> ra-dio<br/>He's <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span></span> tellin' me more and <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span> more <br/>about some <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span></span> useless infor-<span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span>-mation<br/>Supposed to <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span></span> drive my imagi-<span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span>-nation<br/><br/>I can't <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span></span> get no, <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span> <br/>oh, no, <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7/]</span></span></span></span></span> no, <strong><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[stop]</span></span></span></span></span></strong> (1..2..3..4..5)<br/>hey, hey, hey <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span></span>... <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span><br/>That's what <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span></span> I sa--ay <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span>...<br/><br/>(quiet:)<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span></span> I can't <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span></span> get no <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span></span> sa-tis-<span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span></span>-fa-ction,<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span></span> I can't <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span></span> get no <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span></span> sa-tis-<span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span></span>-fa-ction<br/>'Cause I <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span></span> try - and I <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[B7]</span></span></span></span></span> try - and I <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span></span> try - and I <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span></span> try<br/><br/>(loud: + riff 1)<br/>I can't <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span></span> get no <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span>, <br/>I can't <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span></span> get no <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span><br/><br/>When I'm <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span></span> watchin' my <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span> TV <br/>and a <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span></span> man comes on and <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span> tells me<br/>How <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span></span> white my shirts can <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span> be<br/>But, he <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span></span> can't be a man 'cause he <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span> doesn't <br/>smoke <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span></span> The same cigarettes as <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span> me<br/><br/>I can't <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span></span> get no <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span>, <br/>oh, no, <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7/]</span></span></span></span></span> no, <strong><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[stop]</span></span></span></span></span></strong> (1..2..3..4..5)<br/>hey, hey, hey <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span><br/>That's what <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span></span> I sa--ay <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span><br/><br/>(quiet:)<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span></span> I can't <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span></span> get no <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span></span> sa-tis-<span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span></span>-fa-ction,<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span></span> I can't <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span></span> get no <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span></span> girl re-<span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span></span>-act-ion<br/>'Cause I <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span></span> try - and I <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[B7]</span></span></span></span></span> try - <br/>and I <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span></span> try - and I <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span></span> try<br/><br/>(loud: + riff 1)<br/>I can't <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span></span> get no <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span>, <br/>I can't <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span></span> get no <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span><br/><br/>When I'm <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span></span> ridin' 'round the <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span> world<br/>And  I'm <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span></span> doin' this and I'm <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span> signin' that<br/>And  I'm <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span></span> tryin' to make some <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span> girl, <br/>who tells  me <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span></span> Baby, better come back <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span> maybe next week<br/>'cause you <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span></span> see I'm  on a <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span> losing streak?<br/><br/>I can't <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span></span> get no <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span>, <br/>oh, no, <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7/]</span></span></span></span></span> no, <strong><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[stop]</span></span></span></span></span></strong> (1..2..3..4..5)<br/>hey, hey, hey <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span><br/>That's what <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span></span> I sa--ay <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span> <br/><br/>I can't <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span></span> get no, <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span> <br/>I can't <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span></span> get no, <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span><br/>I can't <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span></span> get no, <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span> <br/>satis-<span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span></span>-faction, <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span><br/><br/>No satis-<span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span></span>-faction <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span><br/>No satis-<span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span></span>-faction <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span><br/>No satis-<span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span></span>-faction <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span><br/>I can't <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7/]</span></span></span></span></span> get <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7/]</span></span></span></span></span> no!
+    </div>
+
+    <div id="options" class="mt-4">
+        <ul class="list-unstyled">
+            <li><a href="songs.html"><strong>← Back</strong></a></li>
+         
+        </ul>
+    </div>
+
+    <hr/>
+			
+    <div class="m-2 my-4 text-center">
+        <img src="/images/qrcode.png" class="img-fluid" alt="QR Code" width="200">
+    </div>
+
+</div>
+
+    </div>
+</div>
+
+<script>
+window.onload = function initFloatingChords() {
+
+    const chordsContainer = document.getElementsByClassName("mt-4")[0];
+
+    // prevent lyrics being visible from behind the chords
+    chordsContainer.style.backgroundColor = "white"
+
+    const chordsContainerTop = chordsContainer.offsetTop
+    const chordsContainerHeight = chordsContainer.clientHeight
+
+    const chords = Array.prototype.slice.call(chordsContainer.getElementsByTagName("img"))
+    const maxChordSize = chords[0].clientWidth
+    const minChordSize = 40
+
+    const tab = document.getElementById("tab")
+
+    window.onscroll = function() {
+        onScrollListener()
+    };
+
+    function onScrollListener() {
+        var ratio = (window.pageYOffset - chordsContainerTop) / (chordsContainerTop + chordsContainerHeight)
+        ratio = Math.min(1.0, ratio)
+
+        var size = (1.0 - ratio) * maxChordSize
+        // minChordSize < size < maxChordSize
+        size = Math.min(maxChordSize, Math.max(minChordSize, size));
+        chords.forEach(chords => chords.style.width = size + "px")
+
+        if (window.pageYOffset > chordsContainerTop) {
+            chordsContainer.classList.add("sticky");
+            //include margin to prevent tab jumping up
+            tab.style.marginTop = chordsContainerHeight + "px"
+        } else {
+            chordsContainer.classList.remove("sticky");
+            tab.style.marginTop = "0px"
+        }
+    }
+}
+</script>
+
+<script>
+var scrollInterval;
+var songDuration = parseFloat(document.body.dataset.duration);
+var scrollDuration = songDuration * 60 * 1000; // x min w milisekundach - w tym czasie stronama zostac przewinięta
+//var body = document.body,
+//    html = document.documentElement;
+//var height = Math.max( Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight ) - window.innerHeight, 1);
+var height = document.getElementById('tab').clientHeight; //wysokość boxu div tab
+var scrollTimeStep =  scrollDuration / height; // czas co jaki ma być wywołana funkcja przewijania
+function toggleButton() {
+  if (scrollInterval) { //jeśli scrollInterval był ustawiony w trakcie wywołania funkcji to zmień obraz na pauzę i wyczyść go
+    document.getElementById('buttonImage').src = 'images/pause2.gif';
+    clearInterval(scrollInterval); // Zatrzymuje autoscrollowanie
+    scrollInterval = null;
+  } else { //w przeciwnym wypadku ustaw scroll interval i przewijaj chyba ze dotrzesz do końca strony
+    document.getElementById('buttonImage').src = 'images/play2.gif';
+    scrollInterval = setInterval(function() {
+      if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+        // Jeśli strona została przewinięta do końca, zatrzymaj autoscroll po 4 sekundach
+        setTimeout(function() {
+          document.getElementById('buttonImage').src = 'images/pause2.gif';
+          clearInterval(scrollInterval);
+          scrollInterval = null;
+        }, 4000);
+      } else {
+        window.scrollBy({top: 1, behavior: "instant"}); // Uruchamia autoscrollowanie
+      }
+		height = document.getElementById('tab').clientHeight; //tylko dla infoboxa
+		scrollTimeStep =  scrollDuration / height; 
+		// Aktualizuj wartości w infoBox
+		document.getElementById('heightInfo').textContent = 'Height: ' + height;
+		document.getElementById('scrollTimeStepInfo').textContent = 'Scroll Time Step: ' + scrollTimeStep.toFixed(1);
+		document.getElementById('songDuration').textContent = 'songDuration: ' + songDuration;
+    }, scrollTimeStep);
+  }
+}
+// Zatrzymaj autoscroll, gdy strona jest opuszczana
+window.addEventListener('beforeunload', function() {
+  if (scrollInterval) {
+    clearInterval(scrollInterval);
+  }
+});
+</script>
+</body>
+</html>

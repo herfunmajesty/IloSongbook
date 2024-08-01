@@ -1,0 +1,211 @@
+
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <title>🔥Summer Nights - Krakow Ukulele Tuesdays</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+        .highlight {background-color: lemonchiffon; font-weight: bold;}
+        .chord { font-weight: bold; color:red}
+        #tab { font-size: 80%; font-family: Verdana, Tahoma, sans-serif; }
+        #options a {text-decoration: underline;}
+        .sticky { 
+            position: fixed; 
+            top: 0; 
+            margin-top: 0 !important; 
+            left: 0; 
+            padding: 0px 0px; 
+            width: 100%; 
+            border-bottom: 1px solid #cfd8dc; 
+            /* overflow-x: auto;
+            white-space: nowrap; */
+        }
+		.toggle-button {
+			background-color: #eee;
+			border: 1px solid #ccc;
+			padding: 1px 1px;
+			margin-right: 5px;
+			cursor: pointer;
+		}
+    </style>
+
+</head>
+<body data-duration = 4.0>
+
+
+<header class="container">
+    <div class="m-2 mb-4 text-center">
+        <img src="/images/ukulele-krakow.png" class="img-fluid" alt="Krakow Ukulele" width="200">
+    </div>
+</header>
+
+<div class="container">
+    <div class="row justify-content-center">
+        
+<div class="col-lg-8 col-md-10 col-sm-12 my-3">
+
+    <h3 class="song-title">
+        #133 🔥Summer Nights
+    </h3>
+    
+    <h5 class="song-artist">
+        John Travolta & Olivia Newton-John
+    </h5>
+
+    <h5>
+        Level: 
+        <span class="badge rounded-pill badge-danger text-white">Hard</span>
+    </h5>
+    
+	    <div class="mt-3">
+		    <iframe src="https://open.spotify.com/embed/track/2AVkArcfALVk2X8sfPRzya"
+				    width="300"
+				    height="80"
+				    frameborder="0"
+				    allowtransparency="true"
+				    allow="encrypted-media"></iframe>
+	    </div>
+    
+    
+
+   <div class="mt-4" style="overflow-x: auto;">
+    
+        <img src="/chords/E7.gif" alt="E7" title="E7" />
+    
+        <img src="/chords/B.gif" alt="B" title="B" />
+    
+        <img src="/chords/G.gif" alt="G" title="G" />
+    
+        <img src="/chords/Em.gif" alt="Em" title="Em" />
+    
+        <img src="/chords/A.gif" alt="A" title="A" />
+    
+        <img src="/chords/D.gif" alt="D" title="D" />
+    
+</div>
+	<div id="infoBox" style="position: fixed; right: 20px; top: 20px; border: 1px solid black; padding: 10px;">
+		<p id="heightInfo" style="font-size: xx-small;"></p>
+		<p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
+		<p id="songDuration" style="font-size: xx-small;"></p>
+	</div>
+	<div id="floatingButton" style="position: fixed; right: 20px; bottom: 20px; ">
+		<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light">
+			<img id="buttonImage" src="images/pause2.gif">
+		</button>
+	</div>
+    
+    <div id="tab">
+          <br/>  <br/>  <br/><br/><br/><div class="mark">Beats per chord: <b>2</b><br/>Strummings: <b>Down-Down</b><br/></div><br/><br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D/]</span></span></span></span></span> ... <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G/]</span></span></span></span></span> ... <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A/]</span></span></span></span></span> ... <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span> <b>x2</b><br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span> Summer <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span> lovin', <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span></span> had me a <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span> blast<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span> Summer <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span> lovin', <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span></span> happened so <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span> fast<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span> I met a <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span> girl <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span></span> crazy for <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[B]</span></span></span></span></span> me<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span></span> Met a <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span></span> boy, <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span></span> cute as can <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span></span> be<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span> Summer <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span> days, <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span></span> driftin' <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[B]</span></span></span></span></span> away <br/>To-ah! <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span></span> Oh, the <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span></span> summer <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span> nights<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D/]</span></span></span></span></span> Oh, well-a <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G/]</span></span></span></span></span> well-a <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A/]</span></span></span></span></span> well-a <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D/]</span></span></span></span></span> (Huh!)<br/><br/>Tell me <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span> more, tell me <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span></span> more, did you <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span></span> get very <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span> far?<br/>Tell me <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span> more, tell me <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span></span> more, like, does <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span></span> he have a <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span> car?<br/>Uh ah ah <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span> Uh ah ah <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span></span> Uh ah ah <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span>...<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span> Uh ah ah <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span> Uh ah ah <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span></span> Uh ah ah <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span><br/> <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span> She swam <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span> by me, <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span></span> she got a <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span> cramp<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span> He ran <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span> by me, <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span></span> got my suit <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span> damp<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span> I saved her <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span> life, <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span></span> she nearly <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[B]</span></span></span></span></span> drowned<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span></span> He showed <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span></span> off, <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span></span> splashing <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span></span> around<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span> Summer <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span> sun, <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span></span> something's <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[B]</span></span></span></span></span> begun <br/>But ah! <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span></span> Oh, the <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span></span> summer <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span> nights<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D/]</span></span></span></span></span> Oh, well-a <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G/]</span></span></span></span></span> well-a <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A/]</span></span></span></span></span> well-a <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D/]</span></span></span></span></span> (Huh!)<br/><br/>Tell me <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span> more, tell me <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span></span> more, was it <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span></span> love at first <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span> sight<br/>Tell me <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span> more, tell me <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span></span> more, did she <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span></span> put up a <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span> fight<br/>Uh ah ah <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span> Uh ah ah <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span></span> Uh ah ah <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span>...<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span> Uh ah ah <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span> Uh ah ah <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span></span> Uh ah ah <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span><br/> <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span> Took her <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span> bowling <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span></span> in the arc<span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span>ade<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span> We went <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span> strolling, <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span></span> drank lemon<span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span>ade<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span> We made <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span> out, <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span></span> under the <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[B]</span></span></span></span></span> dock<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span></span> We stayed <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span></span> up, <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span></span> 'til ten o'cl<span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span></span>ock<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span> Summer <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span> fling, <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span></span> don't mean a <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[B]</span></span></span></span></span> thing <br/>But ah! <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span></span> Oh, the <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span></span> summer <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span> nights<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D/]</span></span></span></span></span> Oh, well-a <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G/]</span></span></span></span></span> well-a <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A/]</span></span></span></span></span> well-a <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D/]</span></span></span></span></span> (Huh!)<br/><br/>Tell me <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span> more, tell me <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span></span> more, like you <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span></span> don't have <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span> to brag<br/>Tell me <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span> more, tell me <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span></span> more,'cause he <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span></span> sounds <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span> like a drag<br/>Uh ah ah <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span> Uh ah ah <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span></span> Uh ah ah <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span>...<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span> Uh ah ah <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span> Uh ah ah <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span></span> Uh ah ah <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span> <br/> <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span> He got <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span> friendly, <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span></span> holding my <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span> hand<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span> She got <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span> friendly, <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span></span> down in the <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span> sand<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span> He was <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span> sweet, <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span></span> just turned <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[B]</span></span></span></span></span> eighteen<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span></span> She was <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span></span> good, <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span></span> you know what I <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span></span> mean<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span> Summer <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span> heat, <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span></span> boy and girl <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[B]</span></span></span></span></span> meet, <br/>But ah! <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span></span> Oh, the <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span></span> summer <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span> nights<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D/]</span></span></span></span></span> Oh, well-a <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G/]</span></span></span></span></span> well-a <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A/]</span></span></span></span></span> well-a <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D/]</span></span></span></span></span> (Huh!) <br/><br/>Tell me <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span> more, tell me <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span></span> more, how much <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span></span> dough did he <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span> spend?<br/>Tell me <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span> more, tell me <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span></span> more, could she <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span></span> get me a <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D/]</span></span></span></span></span> FRIEND? <strong><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[stop]</span></span></span></span></span></strong><br/><br/><i>(slow)</i><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D/]</span></span></span></span></span> It turned <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G/]</span></span></span></span></span> colder, <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A/]</span></span></span></span></span> that's where it <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G/]</span></span></span></span></span> ends<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D/]</span></span></span></span></span> So I told <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G/]</span></span></span></span></span> her, <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A/]</span></span></span></span></span> we'd still be <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G/]</span></span></span></span></span> friends<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D/]</span></span></span></span></span> Then we <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G/]</span></span></span></span></span> made <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A/]</span></span></span></span></span> our true love <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[B/]</span></span></span></span></span>vow<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7/]</span></span></span></span></span> Wonder <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A/]</span></span></span></span></span> what <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7/]</span></span></span></span></span> she's doin' <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A/]</span></span></span></span></span> now<br/><i>(even slower)</i><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D/]</span></span></span></span></span> Summer <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G/]</span></span></span></span></span> dreams, <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A/]</span></span></span></span></span> ripped at the <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[B/]</span></span></span></span></span> seams, <br/>But, oh <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em/]</span></span></span></span></span> Those <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A/]</span></span></span></span></span> summer <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D/]</span></span></span></span></span> nights!<br/><br/>Tell me more! <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G/]</span></span></span></span></span> Tell me more! <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D/]</span></span></span></span></span><br/> 
+    </div>
+
+    <div id="options" class="mt-4">
+        <ul class="list-unstyled">
+            <li><a href="songs.html"><strong>← Back</strong></a></li>
+         
+        </ul>
+    </div>
+
+    <hr/>
+			
+    <div class="m-2 my-4 text-center">
+        <img src="/images/qrcode.png" class="img-fluid" alt="QR Code" width="200">
+    </div>
+
+</div>
+
+    </div>
+</div>
+
+<script>
+window.onload = function initFloatingChords() {
+
+    const chordsContainer = document.getElementsByClassName("mt-4")[0];
+
+    // prevent lyrics being visible from behind the chords
+    chordsContainer.style.backgroundColor = "white"
+
+    const chordsContainerTop = chordsContainer.offsetTop
+    const chordsContainerHeight = chordsContainer.clientHeight
+
+    const chords = Array.prototype.slice.call(chordsContainer.getElementsByTagName("img"))
+    const maxChordSize = chords[0].clientWidth
+    const minChordSize = 40
+
+    const tab = document.getElementById("tab")
+
+    window.onscroll = function() {
+        onScrollListener()
+    };
+
+    function onScrollListener() {
+        var ratio = (window.pageYOffset - chordsContainerTop) / (chordsContainerTop + chordsContainerHeight)
+        ratio = Math.min(1.0, ratio)
+
+        var size = (1.0 - ratio) * maxChordSize
+        // minChordSize < size < maxChordSize
+        size = Math.min(maxChordSize, Math.max(minChordSize, size));
+        chords.forEach(chords => chords.style.width = size + "px")
+
+        if (window.pageYOffset > chordsContainerTop) {
+            chordsContainer.classList.add("sticky");
+            //include margin to prevent tab jumping up
+            tab.style.marginTop = chordsContainerHeight + "px"
+        } else {
+            chordsContainer.classList.remove("sticky");
+            tab.style.marginTop = "0px"
+        }
+    }
+}
+</script>
+
+<script>
+var scrollInterval;
+var songDuration = parseFloat(document.body.dataset.duration);
+var scrollDuration = songDuration * 60 * 1000; // x min w milisekundach - w tym czasie stronama zostac przewinięta
+//var body = document.body,
+//    html = document.documentElement;
+//var height = Math.max( Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight ) - window.innerHeight, 1);
+var height = document.getElementById('tab').clientHeight; //wysokość boxu div tab
+var scrollTimeStep =  scrollDuration / height; // czas co jaki ma być wywołana funkcja przewijania
+function toggleButton() {
+  if (scrollInterval) { //jeśli scrollInterval był ustawiony w trakcie wywołania funkcji to zmień obraz na pauzę i wyczyść go
+    document.getElementById('buttonImage').src = 'images/pause2.gif';
+    clearInterval(scrollInterval); // Zatrzymuje autoscrollowanie
+    scrollInterval = null;
+  } else { //w przeciwnym wypadku ustaw scroll interval i przewijaj chyba ze dotrzesz do końca strony
+    document.getElementById('buttonImage').src = 'images/play2.gif';
+    scrollInterval = setInterval(function() {
+      if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+        // Jeśli strona została przewinięta do końca, zatrzymaj autoscroll po 4 sekundach
+        setTimeout(function() {
+          document.getElementById('buttonImage').src = 'images/pause2.gif';
+          clearInterval(scrollInterval);
+          scrollInterval = null;
+        }, 4000);
+      } else {
+        window.scrollBy({top: 1, behavior: "instant"}); // Uruchamia autoscrollowanie
+      }
+		height = document.getElementById('tab').clientHeight; //tylko dla infoboxa
+		scrollTimeStep =  scrollDuration / height; 
+		// Aktualizuj wartości w infoBox
+		document.getElementById('heightInfo').textContent = 'Height: ' + height;
+		document.getElementById('scrollTimeStepInfo').textContent = 'Scroll Time Step: ' + scrollTimeStep.toFixed(1);
+		document.getElementById('songDuration').textContent = 'songDuration: ' + songDuration;
+    }, scrollTimeStep);
+  }
+}
+// Zatrzymaj autoscroll, gdy strona jest opuszczana
+window.addEventListener('beforeunload', function() {
+  if (scrollInterval) {
+    clearInterval(scrollInterval);
+  }
+});
+</script>
+</body>
+</html>

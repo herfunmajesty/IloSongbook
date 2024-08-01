@@ -1,0 +1,200 @@
+
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <title>Under Pressure - Krakow Ukulele Tuesdays</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+        .highlight {background-color: lemonchiffon; font-weight: bold;}
+        .chord { font-weight: bold; color:red}
+        #tab { font-size: 80%; font-family: Verdana, Tahoma, sans-serif; }
+        #options a {text-decoration: underline;}
+        .sticky { 
+            position: fixed; 
+            top: 0; 
+            margin-top: 0 !important; 
+            left: 0; 
+            padding: 0px 0px; 
+            width: 100%; 
+            border-bottom: 1px solid #cfd8dc; 
+            /* overflow-x: auto;
+            white-space: nowrap; */
+        }
+		.toggle-button {
+			background-color: #eee;
+			border: 1px solid #ccc;
+			padding: 1px 1px;
+			margin-right: 5px;
+			cursor: pointer;
+		}
+    </style>
+
+</head>
+<body data-duration = 4.0>
+
+
+<header class="container">
+    <div class="m-2 mb-4 text-center">
+        <img src="/images/ukulele-krakow.png" class="img-fluid" alt="Krakow Ukulele" width="200">
+    </div>
+</header>
+
+<div class="container">
+    <div class="row justify-content-center">
+        
+<div class="col-lg-8 col-md-10 col-sm-12 my-3">
+
+    <h3 class="song-title">
+        #154 Under Pressure
+    </h3>
+    
+    <h5 class="song-artist">
+        Queen & David Bowie
+    </h5>
+
+    <h5>
+        Level: 
+        <span class="badge rounded-pill badge-danger text-white">Hard</span>
+    </h5>
+    
+    
+
+   <div class="mt-4" style="overflow-x: auto;">
+    
+        <img src="/chords/G.gif" alt="G" title="G" />
+    
+        <img src="/chords/C.gif" alt="C" title="C" />
+    
+        <img src="/chords/A.gif" alt="A" title="A" />
+    
+        <img src="/chords/D.gif" alt="D" title="D" />
+    
+        <img src="/chords/F.gif" alt="F" title="F" />
+    
+</div>
+	<div id="infoBox" style="position: fixed; right: 20px; top: 20px; border: 1px solid black; padding: 10px;">
+		<p id="heightInfo" style="font-size: xx-small;"></p>
+		<p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
+		<p id="songDuration" style="font-size: xx-small;"></p>
+	</div>
+	<div id="floatingButton" style="position: fixed; right: 20px; bottom: 20px; ">
+		<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light">
+			<img id="buttonImage" src="images/pause2.gif">
+		</button>
+	</div>
+    
+    <div id="tab">
+        <br/><br/><br/><br/><pre><br/>riff 1:<br/>A|-------|<br/>E|-3--5--|<br/>C|-------|<br/>G|-------|<br/></pre><br/><br/><pre><br/>bass:<br/>A|-5-5-5-555-x---|<br/>E|-x-x-x-xxx-5---|<br/>C|-2-2-2-222-x---|<br/>G|-x-x-x-xxx-2---|<br/></pre><br/><br/>Intro:<br/><br/><b>(bass) + (riff 1)<br/>(bass) + (riff 1)</b><br/><br/><b>(finger picking) + (bass) + (riff 1)</b><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span>... <span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span>... <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span>... <span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span>...<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span> Doom doom bah deh  <span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span> Doom doom ba deh <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> Doom doom bah <span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span> Deh deh<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span> Pressure… pushing <span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span> down on me … Pressing <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> down on you, no man ask <span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span> for<br/>Under <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span> pressure… that burns a <span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span> building down… Splits a <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> family in two  <br/>Puts <span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span> people on streets<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span> Mmmm bah bah deh <span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span> Doom bah bah deh <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> Plee deh dah <span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span> Ee deh dah, that's Ok<br/> <br/><b>(metal strumming)</b><br/>It's the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> terror of knowing what the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span> world is about<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> Watching some good friends screaming  …  <span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span> "Let me out!"<br/>Pray to-<span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span>-morrow gets me <span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span> higher, <br/>Pressure <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D/]</span></span></span></span> on <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D/]</span></span></span></span> people, people <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G/]</span></span></span></span> on <span class="chord"><span class="chord"><span class="chord"><span class="chord">[A/]</span></span></span></span> streets<br/>  <br/><b>(bass) + (riff 1)</b><br/>Day day de mm hm  Da da da ba ba  Okay<br/>  <br/><b>(finger picking) + (bass) + (riff 1)</b><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span> Chipping around, <span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span> I kick my brains around the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> floor<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> These are the days it <span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span> never rains but it pours<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span> Ee do bay bup, Ee <span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span> do bay ba bup  Ee do <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> bup, bay bup <span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span> <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span> People on streets   …   Dee da  Dee <span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span> da day <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> People on streets   …   Dee da  Dee <span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span> da dee da dee da<br/> <br/><b>(metal strumming)</b><br/>It's the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> terror of knowing what the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span> world is about<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> Watching some good friends screaming  …  <span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span> "Let me out!"<br/>Pray to-<span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span>-morrow gets me <span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span> high, high, high___________<br/>Pressure  <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D/]</span></span></span></span> on   <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D/]</span></span></span></span> people, people  <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G/]</span></span></span></span> on   <span class="chord"><span class="chord"><span class="chord"><span class="chord">[A/]</span></span></span></span> streets<br/><br/>(1.. 2.. 3..) <br/>Turned  a-<span class="chord"><span class="chord"><span class="chord"><span class="chord">[G/]</span></span></span></span>-way from it all like a  <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C/]</span></span></span></span> blind man   <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G/]</span></span></span></span> Sat on a fence but it <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C/]</span></span></span></span> don't work<br/>Keep <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G/]</span></span></span></span> coming up with love but it's so <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C/]</span></span></span></span> slashed and torn<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> Why? - <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> Why? - <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> Whyyyyyyyy-<span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span>-yyyyy-<span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span>-yyyyy? <span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span>  <br/><br/><b>(down down strumming)</b><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span> Love, love, love, love, love<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span> Insanity laughs under pressure we're breaking. Can't we<br/>  <br/><b>(metal strumming)</b><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span> give ourselves one more <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G//]</span></span></span></span> chance? <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A//]</span></span></span></span> Why can't we <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span> give love that one more <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G//]</span></span></span></span> chance? <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A//]</span></span></span></span> Why can't we <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span> give love, give love, <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> give love, give love<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span> Give love, give love, <span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span> give love, give love?<br/><br/>Because <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> love's such an <span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span> old fashioned <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span> word and love <span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span> dares you to <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> care for<br/>The <span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span> people on the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span> edge of the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span> night<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span> And love <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> dares you to <span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span> change our way of<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> Caring a-<span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span>-bout ourselves <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> This is our <span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span> last dance<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> This is our <span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span> last chance <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D/]</span></span></span></span> This <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D/]</span></span></span></span> is   <span class="chord"><span class="chord"><span class="chord"><span class="chord">[A/]</span></span></span></span> our - <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G/]</span></span></span></span> selves <span class="chord"><span class="chord"><span class="chord"><span class="chord">[A/]</span></span></span></span><br/><br/>Under pressure<br/>(bass) + (riff 1)<br/>(bass) + (riff 1)<br/>(bass) <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G/]</span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[A/]</span></span></span></span><br/>
+    </div>
+
+    <div id="options" class="mt-4">
+        <ul class="list-unstyled">
+            <li><a href="songs.html"><strong>← Back</strong></a></li>
+         
+        </ul>
+    </div>
+
+    <hr/>
+			
+    <div class="m-2 my-4 text-center">
+        <img src="/images/qrcode.png" class="img-fluid" alt="QR Code" width="200">
+    </div>
+
+</div>
+
+    </div>
+</div>
+
+<script>
+window.onload = function initFloatingChords() {
+
+    const chordsContainer = document.getElementsByClassName("mt-4")[0];
+
+    // prevent lyrics being visible from behind the chords
+    chordsContainer.style.backgroundColor = "white"
+
+    const chordsContainerTop = chordsContainer.offsetTop
+    const chordsContainerHeight = chordsContainer.clientHeight
+
+    const chords = Array.prototype.slice.call(chordsContainer.getElementsByTagName("img"))
+    const maxChordSize = chords[0].clientWidth
+    const minChordSize = 40
+
+    const tab = document.getElementById("tab")
+
+    window.onscroll = function() {
+        onScrollListener()
+    };
+
+    function onScrollListener() {
+        var ratio = (window.pageYOffset - chordsContainerTop) / (chordsContainerTop + chordsContainerHeight)
+        ratio = Math.min(1.0, ratio)
+
+        var size = (1.0 - ratio) * maxChordSize
+        // minChordSize < size < maxChordSize
+        size = Math.min(maxChordSize, Math.max(minChordSize, size));
+        chords.forEach(chords => chords.style.width = size + "px")
+
+        if (window.pageYOffset > chordsContainerTop) {
+            chordsContainer.classList.add("sticky");
+            //include margin to prevent tab jumping up
+            tab.style.marginTop = chordsContainerHeight + "px"
+        } else {
+            chordsContainer.classList.remove("sticky");
+            tab.style.marginTop = "0px"
+        }
+    }
+}
+</script>
+
+<script>
+var scrollInterval;
+var songDuration = parseFloat(document.body.dataset.duration);
+var scrollDuration = songDuration * 60 * 1000; // x min w milisekundach - w tym czasie stronama zostac przewinięta
+//var body = document.body,
+//    html = document.documentElement;
+//var height = Math.max( Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight ) - window.innerHeight, 1);
+var height = document.getElementById('tab').clientHeight; //wysokość boxu div tab
+var scrollTimeStep =  scrollDuration / height; // czas co jaki ma być wywołana funkcja przewijania
+function toggleButton() {
+  if (scrollInterval) { //jeśli scrollInterval był ustawiony w trakcie wywołania funkcji to zmień obraz na pauzę i wyczyść go
+    document.getElementById('buttonImage').src = 'images/pause2.gif';
+    clearInterval(scrollInterval); // Zatrzymuje autoscrollowanie
+    scrollInterval = null;
+  } else { //w przeciwnym wypadku ustaw scroll interval i przewijaj chyba ze dotrzesz do końca strony
+    document.getElementById('buttonImage').src = 'images/play2.gif';
+    scrollInterval = setInterval(function() {
+      if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+        // Jeśli strona została przewinięta do końca, zatrzymaj autoscroll po 4 sekundach
+        setTimeout(function() {
+          document.getElementById('buttonImage').src = 'images/pause2.gif';
+          clearInterval(scrollInterval);
+          scrollInterval = null;
+        }, 4000);
+      } else {
+        window.scrollBy({top: 1, behavior: "instant"}); // Uruchamia autoscrollowanie
+      }
+		height = document.getElementById('tab').clientHeight; //tylko dla infoboxa
+		scrollTimeStep =  scrollDuration / height; 
+		// Aktualizuj wartości w infoBox
+		document.getElementById('heightInfo').textContent = 'Height: ' + height;
+		document.getElementById('scrollTimeStepInfo').textContent = 'Scroll Time Step: ' + scrollTimeStep.toFixed(1);
+		document.getElementById('songDuration').textContent = 'songDuration: ' + songDuration;
+    }, scrollTimeStep);
+  }
+}
+// Zatrzymaj autoscroll, gdy strona jest opuszczana
+window.addEventListener('beforeunload', function() {
+  if (scrollInterval) {
+    clearInterval(scrollInterval);
+  }
+});
+</script>
+</body>
+</html>

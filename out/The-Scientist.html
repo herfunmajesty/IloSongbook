@@ -1,0 +1,209 @@
+
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <title>The Scientist - Krakow Ukulele Tuesdays</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+        .highlight {background-color: lemonchiffon; font-weight: bold;}
+        .chord { font-weight: bold; color:red}
+        #tab { font-size: 80%; font-family: Verdana, Tahoma, sans-serif; }
+        #options a {text-decoration: underline;}
+        .sticky { 
+            position: fixed; 
+            top: 0; 
+            margin-top: 0 !important; 
+            left: 0; 
+            padding: 0px 0px; 
+            width: 100%; 
+            border-bottom: 1px solid #cfd8dc; 
+            /* overflow-x: auto;
+            white-space: nowrap; */
+        }
+		.toggle-button {
+			background-color: #eee;
+			border: 1px solid #ccc;
+			padding: 1px 1px;
+			margin-right: 5px;
+			cursor: pointer;
+		}
+    </style>
+
+</head>
+<body data-duration = 4.0>
+
+
+<header class="container">
+    <div class="m-2 mb-4 text-center">
+        <img src="/images/ukulele-krakow.png" class="img-fluid" alt="Krakow Ukulele" width="200">
+    </div>
+</header>
+
+<div class="container">
+    <div class="row justify-content-center">
+        
+<div class="col-lg-8 col-md-10 col-sm-12 my-3">
+
+    <h3 class="song-title">
+        #144 The Scientist
+    </h3>
+    
+    <h5 class="song-artist">
+        Coldplay
+    </h5>
+
+    <h5>
+        Level: 
+        <span class="badge rounded-pill badge-success text-white">Easy</span>
+    </h5>
+    
+	    <div class="mt-3">
+		    <iframe src="https://open.spotify.com/embed/track/75JFxkI2RXiU7L9VXzMkle"
+				    width="300"
+				    height="80"
+				    frameborder="0"
+				    allowtransparency="true"
+				    allow="encrypted-media"></iframe>
+	    </div>
+    
+    
+
+   <div class="mt-4" style="overflow-x: auto;">
+    
+        <img src="/chords/Bb.gif" alt="Bb" title="Bb" />
+    
+        <img src="/chords/Fsus2.gif" alt="Fsus2" title="Fsus2" />
+    
+        <img src="/chords/C.gif" alt="C" title="C" />
+    
+        <img src="/chords/Dm.gif" alt="Dm" title="Dm" />
+    
+        <img src="/chords/F.gif" alt="F" title="F" />
+    
+</div>
+	<div id="infoBox" style="position: fixed; right: 20px; top: 20px; border: 1px solid black; padding: 10px;">
+		<p id="heightInfo" style="font-size: xx-small;"></p>
+		<p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
+		<p id="songDuration" style="font-size: xx-small;"></p>
+	</div>
+	<div id="floatingButton" style="position: fixed; right: 20px; bottom: 20px; ">
+		<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light">
+			<img id="buttonImage" src="images/pause2.gif">
+		</button>
+	</div>
+    
+    <div id="tab">
+         <br/><br/><br/><br/><br/><br/>Intro:<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span></span>... <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bb]</span></span></span></span></span>... <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span></span>... <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Fsus2]</span></span></span></span></span>....<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span></span> Come up to <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bb]</span></span></span></span></span> meet you, tell you I'm <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span></span> sorry<br/>You don't know how <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Fsus2]</span></span></span></span></span> lovely you are<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span></span> I had to <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bb]</span></span></span></span></span> find you, tell you I <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span></span> need you,<br/>Tell you I set you <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Fsus2]</span></span></span></span></span> apart<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span></span> Tell me your <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bb]</span></span></span></span></span> secrets and nurse me your <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span></span> questions,<br/>Oh lets go <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Fsus2]</span></span></span></span></span> back to the start<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span></span> Running in cir-<span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bb]</span></span></span></span></span>cles, comin' in <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span></span> tails<br/>Heads on a <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Fsus2]</span></span></span></span></span> science apart<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bb]</span></span></span></span></span> Nobody said it was easy,<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span></span> Oh it's such a <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Fsus2]</span></span></span></span></span> shame for us to part.<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bb]</span></span></span></span></span> Nobody said it was easy,  <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span></span> No one ever <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Fsus2]</span></span></span></span></span> said it would be this hard.<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span>... <strong><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[stop]</span></span></span></span></span></strong> Oh take me back to the <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span></span> start<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bb]</span></span></span></span></span>... <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span></span>... <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Fsus2]</span></span></span></span></span>...<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span></span> I was just <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bb]</span></span></span></span></span> guessin' at numbers and fi-<span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span></span>gures,<br/>Pulling the <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Fsus2]</span></span></span></span></span> puzzles apart<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span></span> Questions of sci-<span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bb]</span></span></span></span></span>ence, science and pro-<span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span></span>gress<br/>Don't speak as <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Fsus2]</span></span></span></span></span> loud as my heart<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span></span> And tell me you <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bb]</span></span></span></span></span> love me, come back and <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span></span> haunt me<br/>Oh and I <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Fsus2]</span></span></span></span></span> rush to the start<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span></span> Runnin' in cir-<span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bb]</span></span></span></span></span>cles, Chasin' <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span></span> tails<br/>Comin' back as <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Fsus2]</span></span></span></span></span> we are<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bb]</span></span></span></span></span> Nobody said it was easy<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span></span> Oh it's such a <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Fsus2]</span></span></span></span></span> shame for us to part<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bb]</span></span></span></span></span> Nobody said it was easy<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span></span> No one ever <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Fsus2]</span></span></span></span></span> said it would be so hard<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span>... <strong><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[stop]</span></span></span></span></span></strong> I'm going back to <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span></span> the start.<br/> <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bb]</span></span></span></span></span>... <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span></span>... <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Fsus2]</span></span></span></span></span>...<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span></span>... <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bb]</span></span></span></span></span>... <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span></span>... <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Fsus2]</span></span></span></span></span>...<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span></span> Ohh <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bb]</span></span></span></span></span> uuuuhhhhh <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Fsus2]</span></span></span></span></span><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span></span> Ohh <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bb]</span></span></span></span></span> uuuuhhhhh <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Fsus2]</span></span></span></span></span><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span></span> Ohh <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bb]</span></span></span></span></span> uuuuhhhhh <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Fsus2]</span></span></span></span></span><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span></span> Ohh <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bb]</span></span></span></span></span> uuuuhhhhh <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F/]</span></span></span></span></span> 
+    </div>
+
+    <div id="options" class="mt-4">
+        <ul class="list-unstyled">
+            <li><a href="songs.html"><strong>← Back</strong></a></li>
+         
+        </ul>
+    </div>
+
+    <hr/>
+			
+    <div class="m-2 my-4 text-center">
+        <img src="/images/qrcode.png" class="img-fluid" alt="QR Code" width="200">
+    </div>
+
+</div>
+
+    </div>
+</div>
+
+<script>
+window.onload = function initFloatingChords() {
+
+    const chordsContainer = document.getElementsByClassName("mt-4")[0];
+
+    // prevent lyrics being visible from behind the chords
+    chordsContainer.style.backgroundColor = "white"
+
+    const chordsContainerTop = chordsContainer.offsetTop
+    const chordsContainerHeight = chordsContainer.clientHeight
+
+    const chords = Array.prototype.slice.call(chordsContainer.getElementsByTagName("img"))
+    const maxChordSize = chords[0].clientWidth
+    const minChordSize = 40
+
+    const tab = document.getElementById("tab")
+
+    window.onscroll = function() {
+        onScrollListener()
+    };
+
+    function onScrollListener() {
+        var ratio = (window.pageYOffset - chordsContainerTop) / (chordsContainerTop + chordsContainerHeight)
+        ratio = Math.min(1.0, ratio)
+
+        var size = (1.0 - ratio) * maxChordSize
+        // minChordSize < size < maxChordSize
+        size = Math.min(maxChordSize, Math.max(minChordSize, size));
+        chords.forEach(chords => chords.style.width = size + "px")
+
+        if (window.pageYOffset > chordsContainerTop) {
+            chordsContainer.classList.add("sticky");
+            //include margin to prevent tab jumping up
+            tab.style.marginTop = chordsContainerHeight + "px"
+        } else {
+            chordsContainer.classList.remove("sticky");
+            tab.style.marginTop = "0px"
+        }
+    }
+}
+</script>
+
+<script>
+var scrollInterval;
+var songDuration = parseFloat(document.body.dataset.duration);
+var scrollDuration = songDuration * 60 * 1000; // x min w milisekundach - w tym czasie stronama zostac przewinięta
+//var body = document.body,
+//    html = document.documentElement;
+//var height = Math.max( Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight ) - window.innerHeight, 1);
+var height = document.getElementById('tab').clientHeight; //wysokość boxu div tab
+var scrollTimeStep =  scrollDuration / height; // czas co jaki ma być wywołana funkcja przewijania
+function toggleButton() {
+  if (scrollInterval) { //jeśli scrollInterval był ustawiony w trakcie wywołania funkcji to zmień obraz na pauzę i wyczyść go
+    document.getElementById('buttonImage').src = 'images/pause2.gif';
+    clearInterval(scrollInterval); // Zatrzymuje autoscrollowanie
+    scrollInterval = null;
+  } else { //w przeciwnym wypadku ustaw scroll interval i przewijaj chyba ze dotrzesz do końca strony
+    document.getElementById('buttonImage').src = 'images/play2.gif';
+    scrollInterval = setInterval(function() {
+      if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+        // Jeśli strona została przewinięta do końca, zatrzymaj autoscroll po 4 sekundach
+        setTimeout(function() {
+          document.getElementById('buttonImage').src = 'images/pause2.gif';
+          clearInterval(scrollInterval);
+          scrollInterval = null;
+        }, 4000);
+      } else {
+        window.scrollBy({top: 1, behavior: "instant"}); // Uruchamia autoscrollowanie
+      }
+		height = document.getElementById('tab').clientHeight; //tylko dla infoboxa
+		scrollTimeStep =  scrollDuration / height; 
+		// Aktualizuj wartości w infoBox
+		document.getElementById('heightInfo').textContent = 'Height: ' + height;
+		document.getElementById('scrollTimeStepInfo').textContent = 'Scroll Time Step: ' + scrollTimeStep.toFixed(1);
+		document.getElementById('songDuration').textContent = 'songDuration: ' + songDuration;
+    }, scrollTimeStep);
+  }
+}
+// Zatrzymaj autoscroll, gdy strona jest opuszczana
+window.addEventListener('beforeunload', function() {
+  if (scrollInterval) {
+    clearInterval(scrollInterval);
+  }
+});
+</script>
+</body>
+</html>

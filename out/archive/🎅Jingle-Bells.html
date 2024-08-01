@@ -1,0 +1,198 @@
+
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <title>🎅Jingle Bells - Krakow Ukulele Tuesdays</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+        .highlight {background-color: lemonchiffon; font-weight: bold;}
+        .chord { font-weight: bold; color:red}
+        #tab { font-size: 80%; font-family: Verdana, Tahoma, sans-serif; }
+        #options a {text-decoration: underline;}
+        .sticky { 
+            position: fixed; 
+            top: 0; 
+            margin-top: 0 !important; 
+            left: 0; 
+            padding: 0px 0px; 
+            width: 100%; 
+            border-bottom: 1px solid #cfd8dc; 
+            /* overflow-x: auto;
+            white-space: nowrap; */
+        }
+		.toggle-button {
+			background-color: #eee;
+			border: 1px solid #ccc;
+			padding: 1px 1px;
+			margin-right: 5px;
+			cursor: pointer;
+		}
+    </style>
+
+</head>
+<body data-duration = 4.0>
+
+
+<header class="container">
+    <div class="m-2 mb-4 text-center">
+        <img src="/images/ukulele-krakow.png" class="img-fluid" alt="Krakow Ukulele" width="200">
+    </div>
+</header>
+
+<div class="container">
+    <div class="row justify-content-center">
+        
+<div class="col-lg-8 col-md-10 col-sm-12 my-3">
+
+    <h3 class="song-title">
+        #A6 🎅Jingle Bells
+    </h3>
+    
+    <h5 class="song-artist">
+        J.S. Pierpont
+    </h5>
+
+    <h5>
+        Level: 
+        <span class="badge rounded-pill badge-success text-white">Easy</span>
+    </h5>
+    
+    
+
+   <div class="mt-4" style="overflow-x: auto;">
+    
+        <img src="/chords/G7.gif" alt="G7" title="G7" />
+    
+        <img src="/chords/C.gif" alt="C" title="C" />
+    
+        <img src="/chords/D.gif" alt="D" title="D" />
+    
+        <img src="/chords/F.gif" alt="F" title="F" />
+    
+</div>
+	<div id="infoBox" style="position: fixed; right: 20px; top: 20px; border: 1px solid black; padding: 10px;">
+		<p id="heightInfo" style="font-size: xx-small;"></p>
+		<p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
+		<p id="songDuration" style="font-size: xx-small;"></p>
+	</div>
+	<div id="floatingButton" style="position: fixed; right: 20px; bottom: 20px; ">
+		<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light">
+			<img id="buttonImage" src="images/pause2.gif">
+		</button>
+	</div>
+    
+    <div id="tab">
+          <br/>  <br/><br/><br/>Info:<br/>strumming pattern: island strum<br/><br/>Intro: <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span><br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> Jingle bells, <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> jingle bells,<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> Jingle all the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> way.<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> Oh what fun it <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> is to ride<br/>In a <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span> one-horse open sle<span class="chord"><span class="chord"><span class="chord"><span class="chord">[G7/]</span></span></span></span>igh, <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G7/]</span></span></span></span> hey!<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> Jingle bells, <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> jingle bells,<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> Jingle all the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> way.<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> Oh what fun it <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> is to ride<br/>In a <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G7]</span></span></span></span> one-horse open sle<span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span>igh<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> Dashing through the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> snow<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> In a one-horse open <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> sleigh,<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> O'er the fields we <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G7]</span></span></span></span> go,<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G7]</span></span></span></span> Laughing all the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> way.<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> Bells on bob-tails <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> ring,<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> Making spirits <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> bright.<br/>What <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> fun it is to <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G7]</span></span></span></span> ride and sing<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G7]</span></span></span></span> A sleighing song to<span class="chord"><span class="chord"><span class="chord"><span class="chord">[C/]</span></span></span></span> night, <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G7/]</span></span></span></span> oh!<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> Jingle bells, <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> jingle bells,<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> Jingle all the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> way.<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> Oh what fun it <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> is to ride<br/>In a <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span> one-horse open sle<span class="chord"><span class="chord"><span class="chord"><span class="chord">[G7/]</span></span></span></span>igh, <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G7/]</span></span></span></span> hey!<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> Jingle bells, <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> jingle bells,<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> Jingle all the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> way.<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> Oh what fun it <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> is to ride<br/>In a <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G7]</span></span></span></span> one-horse open sle<span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span>igh <br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> Oh, what fun <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> is to ride in a <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G7]</span></span></span></span> one horse open <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C/]</span></span></span></span> sleigh<br/>
+    </div>
+
+    <div id="options" class="mt-4">
+        <ul class="list-unstyled">
+            <li><a href="songs.html"><strong>← Back</strong></a></li>
+         
+        </ul>
+    </div>
+
+    <hr/>
+			
+    <div class="m-2 my-4 text-center">
+        <img src="/images/qrcode.png" class="img-fluid" alt="QR Code" width="200">
+    </div>
+
+</div>
+
+    </div>
+</div>
+
+<script>
+window.onload = function initFloatingChords() {
+
+    const chordsContainer = document.getElementsByClassName("mt-4")[0];
+
+    // prevent lyrics being visible from behind the chords
+    chordsContainer.style.backgroundColor = "white"
+
+    const chordsContainerTop = chordsContainer.offsetTop
+    const chordsContainerHeight = chordsContainer.clientHeight
+
+    const chords = Array.prototype.slice.call(chordsContainer.getElementsByTagName("img"))
+    const maxChordSize = chords[0].clientWidth
+    const minChordSize = 40
+
+    const tab = document.getElementById("tab")
+
+    window.onscroll = function() {
+        onScrollListener()
+    };
+
+    function onScrollListener() {
+        var ratio = (window.pageYOffset - chordsContainerTop) / (chordsContainerTop + chordsContainerHeight)
+        ratio = Math.min(1.0, ratio)
+
+        var size = (1.0 - ratio) * maxChordSize
+        // minChordSize < size < maxChordSize
+        size = Math.min(maxChordSize, Math.max(minChordSize, size));
+        chords.forEach(chords => chords.style.width = size + "px")
+
+        if (window.pageYOffset > chordsContainerTop) {
+            chordsContainer.classList.add("sticky");
+            //include margin to prevent tab jumping up
+            tab.style.marginTop = chordsContainerHeight + "px"
+        } else {
+            chordsContainer.classList.remove("sticky");
+            tab.style.marginTop = "0px"
+        }
+    }
+}
+</script>
+
+<script>
+var scrollInterval;
+var songDuration = parseFloat(document.body.dataset.duration);
+var scrollDuration = songDuration * 60 * 1000; // x min w milisekundach - w tym czasie stronama zostac przewinięta
+//var body = document.body,
+//    html = document.documentElement;
+//var height = Math.max( Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight ) - window.innerHeight, 1);
+var height = document.getElementById('tab').clientHeight; //wysokość boxu div tab
+var scrollTimeStep =  scrollDuration / height; // czas co jaki ma być wywołana funkcja przewijania
+function toggleButton() {
+  if (scrollInterval) { //jeśli scrollInterval był ustawiony w trakcie wywołania funkcji to zmień obraz na pauzę i wyczyść go
+    document.getElementById('buttonImage').src = 'images/pause2.gif';
+    clearInterval(scrollInterval); // Zatrzymuje autoscrollowanie
+    scrollInterval = null;
+  } else { //w przeciwnym wypadku ustaw scroll interval i przewijaj chyba ze dotrzesz do końca strony
+    document.getElementById('buttonImage').src = 'images/play2.gif';
+    scrollInterval = setInterval(function() {
+      if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+        // Jeśli strona została przewinięta do końca, zatrzymaj autoscroll po 4 sekundach
+        setTimeout(function() {
+          document.getElementById('buttonImage').src = 'images/pause2.gif';
+          clearInterval(scrollInterval);
+          scrollInterval = null;
+        }, 4000);
+      } else {
+        window.scrollBy({top: 1, behavior: "instant"}); // Uruchamia autoscrollowanie
+      }
+		height = document.getElementById('tab').clientHeight; //tylko dla infoboxa
+		scrollTimeStep =  scrollDuration / height; 
+		// Aktualizuj wartości w infoBox
+		document.getElementById('heightInfo').textContent = 'Height: ' + height;
+		document.getElementById('scrollTimeStepInfo').textContent = 'Scroll Time Step: ' + scrollTimeStep.toFixed(1);
+		document.getElementById('songDuration').textContent = 'songDuration: ' + songDuration;
+    }, scrollTimeStep);
+  }
+}
+// Zatrzymaj autoscroll, gdy strona jest opuszczana
+window.addEventListener('beforeunload', function() {
+  if (scrollInterval) {
+    clearInterval(scrollInterval);
+  }
+});
+</script>
+</body>
+</html>

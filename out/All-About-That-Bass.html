@@ -1,0 +1,207 @@
+
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <title>All About That Bass - Krakow Ukulele Tuesdays</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+        .highlight {background-color: lemonchiffon; font-weight: bold;}
+        .chord { font-weight: bold; color:red}
+        #tab { font-size: 80%; font-family: Verdana, Tahoma, sans-serif; }
+        #options a {text-decoration: underline;}
+        .sticky { 
+            position: fixed; 
+            top: 0; 
+            margin-top: 0 !important; 
+            left: 0; 
+            padding: 0px 0px; 
+            width: 100%; 
+            border-bottom: 1px solid #cfd8dc; 
+            /* overflow-x: auto;
+            white-space: nowrap; */
+        }
+		.toggle-button {
+			background-color: #eee;
+			border: 1px solid #ccc;
+			padding: 1px 1px;
+			margin-right: 5px;
+			cursor: pointer;
+		}
+    </style>
+
+</head>
+<body data-duration = 4.0>
+
+
+<header class="container">
+    <div class="m-2 mb-4 text-center">
+        <img src="/images/ukulele-krakow.png" class="img-fluid" alt="Krakow Ukulele" width="200">
+    </div>
+</header>
+
+<div class="container">
+    <div class="row justify-content-center">
+        
+<div class="col-lg-8 col-md-10 col-sm-12 my-3">
+
+    <h3 class="song-title">
+        #8 All About That Bass
+    </h3>
+    
+    <h5 class="song-artist">
+        Meghan Trainor
+    </h5>
+
+    <h5>
+        Level: 
+        <span class="badge rounded-pill badge-success text-white">Easy</span>
+    </h5>
+    
+	    <div class="mt-3">
+		    <iframe src="https://open.spotify.com/embed/track/5jE48hhRu8E6zBDPRSkEq7"
+				    width="300"
+				    height="80"
+				    frameborder="0"
+				    allowtransparency="true"
+				    allow="encrypted-media"></iframe>
+	    </div>
+    
+    
+
+   <div class="mt-4" style="overflow-x: auto;">
+    
+        <img src="/chords/E7.gif" alt="E7" title="E7" />
+    
+        <img src="/chords/Bm.gif" alt="Bm" title="Bm" />
+    
+        <img src="/chords/A.gif" alt="A" title="A" />
+    
+        <img src="/chords/D.gif" alt="D" title="D" />
+    
+</div>
+	<div id="infoBox" style="position: fixed; right: 20px; top: 20px; border: 1px solid black; padding: 10px;">
+		<p id="heightInfo" style="font-size: xx-small;"></p>
+		<p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
+		<p id="songDuration" style="font-size: xx-small;"></p>
+	</div>
+	<div id="floatingButton" style="position: fixed; right: 20px; bottom: 20px; ">
+		<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light">
+			<img id="buttonImage" src="images/pause2.gif">
+		</button>
+	</div>
+    
+    <div id="tab">
+        <br/><br/><br/><br/><br/><br/>Intro: <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span></span>... <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bm]</span></span></span></span></span>... <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span></span>... <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span></span> <br/><br/>Because you know I'm <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span></span> all about that bass<br/>Bout that bass, no treble<br/>I'm <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bm]</span></span></span></span></span> all 'bout that bass, 'bout that bass, no treble<br/>I'm <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span></span> all 'bout that bass, 'bout that bass, no treble<br/>I'm <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span></span> all 'bout that bass, 'bout that bass (bass, bass, bass, bass)<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span></span> Yeah it's pretty clear, I ain't no size two<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bm]</span></span></span></span></span> But I can shake it, shake it like I'm supposed to do<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span></span> 'Cause I got that boom boom that all the boys chase<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span></span> All the right junk in all the right places<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span></span> I see them magazines workin' that photoshop<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bm]</span></span></span></span></span> We know that shit ain't real<br/>Come on now, make it stop<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span></span> If you got beauty beauty just raise 'em up<br/>'Cause every <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A//]</span></span></span></span></span> inch of you is <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D//]</span></span></span></span></span> perfect<br/>From the <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span></span> bottom to the top<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span></span> Yeah, my momma she told me don't worry about your <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bm]</span></span></span></span></span> size<br/>She says, <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span></span> boys like a little more booty to hold <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span></span> at night<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span></span> You know I won't be no stick-figure, silicone Barbie <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bm]</span></span></span></span></span> doll<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span></span> So, if that's what's you're into<br/>Then go <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span> ahead and move <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span></span> along!<br/><br/>Because you know I'm <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span></span> all about that bass<br/>'Bout that bass, no treble<br/>I'm <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bm]</span></span></span></span></span> all 'bout that bass, 'bout that bass, no treble<br/>I'm <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span></span> all 'bout that bass, 'bout that bass, no treble<br/>I'm <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span></span> all 'bout that bass, 'bout that bass, <br/><br/>hey<br/>I'm bringing <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A/]</span></span></span></span></span><b><strong><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[stop]</span></span></span></span></span></strong></b> booty back....<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span></span> Go ahead and tell them skinny <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bm]</span></span></span></span></span> bitches that<br/>(No, I'm just playing) I know y'all <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span></span> think you're fat <!-- part in the brackets on purpose, hard to say that and start singing next--><br/>But I'm here to tell you<br/>Every inch <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A//]</span></span></span></span></span> of you is <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D//]</span></span></span></span></span> perfect from the <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span></span> bottom to the top!<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span></span> Yeah , my momma she told me don't worry about your <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bm]</span></span></span></span></span> size<br/>She says, <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span></span> boys like a little more booty to hold <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span></span> at night...<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span></span> You know I won't be no stick-figure, silicone Barbie <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bm]</span></span></span></span></span> doll...<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span></span> So, if that's what's you're into<br/>Then go <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span> ahead and move <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span></span> along!<br/><br/>Because you know I'm <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span></span> all about that bass<br/>'Bout that bass, no treble<br/>I'm <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bm]</span></span></span></span></span> all 'bout that bass, 'bout that bass, no treble<br/>I'm <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span></span> all 'bout that bass, 'bout that bass, no treble<br/>I'm <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span></span> all 'bout that bass, 'bout that bass<br/><br/>Because you know I'm <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span></span> all about that bass<br/>'Bout that bass, no treble<br/>I'm <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bm]</span></span></span></span></span> all 'bout that bass, 'bout that bass, no treble<br/>I'm <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span></span> all 'bout that bass, 'bout that bass, no treble<br/>I'm <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span></span> all 'bout that bass, 'bout that bass<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span></span> 'bout that bass, 'bout that bass, Hey <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bm]</span></span></span></span></span> hey, ooh oooh... <br/>You know you love this <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span></span> bass... Ooh oooh ooh... <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A/]</span></span></span></span></span> <br/>
+    </div>
+
+    <div id="options" class="mt-4">
+        <ul class="list-unstyled">
+            <li><a href="songs.html"><strong>← Back</strong></a></li>
+         
+        </ul>
+    </div>
+
+    <hr/>
+			
+    <div class="m-2 my-4 text-center">
+        <img src="/images/qrcode.png" class="img-fluid" alt="QR Code" width="200">
+    </div>
+
+</div>
+
+    </div>
+</div>
+
+<script>
+window.onload = function initFloatingChords() {
+
+    const chordsContainer = document.getElementsByClassName("mt-4")[0];
+
+    // prevent lyrics being visible from behind the chords
+    chordsContainer.style.backgroundColor = "white"
+
+    const chordsContainerTop = chordsContainer.offsetTop
+    const chordsContainerHeight = chordsContainer.clientHeight
+
+    const chords = Array.prototype.slice.call(chordsContainer.getElementsByTagName("img"))
+    const maxChordSize = chords[0].clientWidth
+    const minChordSize = 40
+
+    const tab = document.getElementById("tab")
+
+    window.onscroll = function() {
+        onScrollListener()
+    };
+
+    function onScrollListener() {
+        var ratio = (window.pageYOffset - chordsContainerTop) / (chordsContainerTop + chordsContainerHeight)
+        ratio = Math.min(1.0, ratio)
+
+        var size = (1.0 - ratio) * maxChordSize
+        // minChordSize < size < maxChordSize
+        size = Math.min(maxChordSize, Math.max(minChordSize, size));
+        chords.forEach(chords => chords.style.width = size + "px")
+
+        if (window.pageYOffset > chordsContainerTop) {
+            chordsContainer.classList.add("sticky");
+            //include margin to prevent tab jumping up
+            tab.style.marginTop = chordsContainerHeight + "px"
+        } else {
+            chordsContainer.classList.remove("sticky");
+            tab.style.marginTop = "0px"
+        }
+    }
+}
+</script>
+
+<script>
+var scrollInterval;
+var songDuration = parseFloat(document.body.dataset.duration);
+var scrollDuration = songDuration * 60 * 1000; // x min w milisekundach - w tym czasie stronama zostac przewinięta
+//var body = document.body,
+//    html = document.documentElement;
+//var height = Math.max( Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight ) - window.innerHeight, 1);
+var height = document.getElementById('tab').clientHeight; //wysokość boxu div tab
+var scrollTimeStep =  scrollDuration / height; // czas co jaki ma być wywołana funkcja przewijania
+function toggleButton() {
+  if (scrollInterval) { //jeśli scrollInterval był ustawiony w trakcie wywołania funkcji to zmień obraz na pauzę i wyczyść go
+    document.getElementById('buttonImage').src = 'images/pause2.gif';
+    clearInterval(scrollInterval); // Zatrzymuje autoscrollowanie
+    scrollInterval = null;
+  } else { //w przeciwnym wypadku ustaw scroll interval i przewijaj chyba ze dotrzesz do końca strony
+    document.getElementById('buttonImage').src = 'images/play2.gif';
+    scrollInterval = setInterval(function() {
+      if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+        // Jeśli strona została przewinięta do końca, zatrzymaj autoscroll po 4 sekundach
+        setTimeout(function() {
+          document.getElementById('buttonImage').src = 'images/pause2.gif';
+          clearInterval(scrollInterval);
+          scrollInterval = null;
+        }, 4000);
+      } else {
+        window.scrollBy({top: 1, behavior: "instant"}); // Uruchamia autoscrollowanie
+      }
+		height = document.getElementById('tab').clientHeight; //tylko dla infoboxa
+		scrollTimeStep =  scrollDuration / height; 
+		// Aktualizuj wartości w infoBox
+		document.getElementById('heightInfo').textContent = 'Height: ' + height;
+		document.getElementById('scrollTimeStepInfo').textContent = 'Scroll Time Step: ' + scrollTimeStep.toFixed(1);
+		document.getElementById('songDuration').textContent = 'songDuration: ' + songDuration;
+    }, scrollTimeStep);
+  }
+}
+// Zatrzymaj autoscroll, gdy strona jest opuszczana
+window.addEventListener('beforeunload', function() {
+  if (scrollInterval) {
+    clearInterval(scrollInterval);
+  }
+});
+</script>
+</body>
+</html>

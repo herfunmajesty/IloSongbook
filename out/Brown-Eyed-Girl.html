@@ -1,0 +1,209 @@
+
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <title>Brown Eyed Girl - Krakow Ukulele Tuesdays</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+        .highlight {background-color: lemonchiffon; font-weight: bold;}
+        .chord { font-weight: bold; color:red}
+        #tab { font-size: 80%; font-family: Verdana, Tahoma, sans-serif; }
+        #options a {text-decoration: underline;}
+        .sticky { 
+            position: fixed; 
+            top: 0; 
+            margin-top: 0 !important; 
+            left: 0; 
+            padding: 0px 0px; 
+            width: 100%; 
+            border-bottom: 1px solid #cfd8dc; 
+            /* overflow-x: auto;
+            white-space: nowrap; */
+        }
+		.toggle-button {
+			background-color: #eee;
+			border: 1px solid #ccc;
+			padding: 1px 1px;
+			margin-right: 5px;
+			cursor: pointer;
+		}
+    </style>
+
+</head>
+<body data-duration = 4.0>
+
+
+<header class="container">
+    <div class="m-2 mb-4 text-center">
+        <img src="/images/ukulele-krakow.png" class="img-fluid" alt="Krakow Ukulele" width="200">
+    </div>
+</header>
+
+<div class="container">
+    <div class="row justify-content-center">
+        
+<div class="col-lg-8 col-md-10 col-sm-12 my-3">
+
+    <h3 class="song-title">
+        #22 Brown Eyed Girl
+    </h3>
+    
+    <h5 class="song-artist">
+        Van Morrison
+    </h5>
+
+    <h5>
+        Level: 
+        <span class="badge rounded-pill badge-success text-white">Easy</span>
+    </h5>
+    
+	    <div class="mt-3">
+		    <iframe src="https://open.spotify.com/embed/track/3yrSvpt2l1xhsV9Em88Pul"
+				    width="300"
+				    height="80"
+				    frameborder="0"
+				    allowtransparency="true"
+				    allow="encrypted-media"></iframe>
+	    </div>
+    
+    
+
+   <div class="mt-4" style="overflow-x: auto;">
+    
+        <img src="/chords/G.gif" alt="G" title="G" />
+    
+        <img src="/chords/Em.gif" alt="Em" title="Em" />
+    
+        <img src="/chords/D7.gif" alt="D7" title="D7" />
+    
+        <img src="/chords/C.gif" alt="C" title="C" />
+    
+        <img src="/chords/D.gif" alt="D" title="D" />
+    
+</div>
+	<div id="infoBox" style="position: fixed; right: 20px; top: 20px; border: 1px solid black; padding: 10px;">
+		<p id="heightInfo" style="font-size: xx-small;"></p>
+		<p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
+		<p id="songDuration" style="font-size: xx-small;"></p>
+	</div>
+	<div id="floatingButton" style="position: fixed; right: 20px; bottom: 20px; ">
+		<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light">
+			<img id="buttonImage" src="images/pause2.gif">
+		</button>
+	</div>
+    
+    <div id="tab">
+        <br/><br/><br/><br/><br/><br/><pre><br/>riff :<br/>A|-2-3-5---3-2-|-7-8--10---8-7-|-2-3-5---3-2-|-0---------0-|<br/>E|-3-5-7---5-3-|-8-10-12--10-8-|-3-5-7---5-3-|-------2-3---|<br/>C|-------------|---------------|-------------|-2-----------|<br/>G|-------------|---------------|-------------|-------------|<br/><br/><!--or could be played like this ,hard for me to say which is easier <br/>A|-2-3-5---3-2-|-7-8--10---8-7-|-2-3-5---3-2-|-0-----------|<br/>E|-------------|---------------|-------------|-------2-3-5-|<br/>C|-------------|---------------|-------------|-2-----------|<br/>G|-0-2-4---2-0-|-5-7--9----7-5-|-0-2-4---2-0-|-------------|<br/>--><br/></pre><br/><br/>intro + riff: <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span> x2<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> Hey, where did <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> we go? <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> days when the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span> rains came <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> Down in the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> hollow <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> playin' a <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span> new game<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> Laughin' and a-<span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span>runnin', hey hey<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> Skippin' and a-<span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span>jumpin' <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> In the misty <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> morning fog with <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> Our ...<span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span> hearts a-thumping and <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> you...<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span> My brown-eyed <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> girl <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span>... <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> You-u, my <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span> brown-eyed girl <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span>...<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D7]</span></span></span></span>...<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> Whatever <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> happened <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> to Tuesday and <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span> so slow? <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> Going down the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> old mine with a… <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> transistor <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span> radio <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> Standing in the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> sunlight laughing <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> Hiding 'hind a <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span> rainbow's wall <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> Slipping and <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> sliding<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> All along the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span> waterfall with you <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span>...<br/> <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span> My brown-eyed <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> girl <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span> ...<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> You-u, my <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span> brown-eyed girl <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> <br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span> Do you remem<span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span>ber when… <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span> we used to <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> sing?<br/>Sha la-la <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> la la la la <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> la la la la tee-<span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span>da <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> Sha la-la <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> la la la la <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> la la la la tee-<span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span>da <br/>La tee-<span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span>da ...<span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span> <br/><br/><!-- here is the base solo, but intro + riff is also fine--><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span> + riff x2 <br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> So hard to <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> find my way… <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> now that I'm all <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span> on my own <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> I saw you <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> just the other day… <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> My, how <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span> you have grown <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> Cast my memory <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> back there, Lord <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> Sometimes I'm <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span> overcome thinking 'bout it<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> Making love in the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> green grass <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> Behind the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span> stadium with you <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span>...<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span> My brown-eyed <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> girl <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span>...<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> You-u, my <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span> brown-eyed girl <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> <br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span> Do you remember when… we used to <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> sing? <br/>Sha-la-la <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> la-la la-la <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> la-la la-la tee-<span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span>da <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> Sha-la-la <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> la-la la-la <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> la-la la-la tee-<span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span>da <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> Sha-la-la <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> la-la la-la <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> la-la la-la tee-<span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span>da <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> Sha-la-la <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> la-la la-la <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> la-la la-la tee-<span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span>da <br/>La tee-<span class="chord"><span class="chord"><span class="chord"><span class="chord">[G/]</span></span></span></span>da<br/>
+    </div>
+
+    <div id="options" class="mt-4">
+        <ul class="list-unstyled">
+            <li><a href="songs.html"><strong>← Back</strong></a></li>
+         
+        </ul>
+    </div>
+
+    <hr/>
+			
+    <div class="m-2 my-4 text-center">
+        <img src="/images/qrcode.png" class="img-fluid" alt="QR Code" width="200">
+    </div>
+
+</div>
+
+    </div>
+</div>
+
+<script>
+window.onload = function initFloatingChords() {
+
+    const chordsContainer = document.getElementsByClassName("mt-4")[0];
+
+    // prevent lyrics being visible from behind the chords
+    chordsContainer.style.backgroundColor = "white"
+
+    const chordsContainerTop = chordsContainer.offsetTop
+    const chordsContainerHeight = chordsContainer.clientHeight
+
+    const chords = Array.prototype.slice.call(chordsContainer.getElementsByTagName("img"))
+    const maxChordSize = chords[0].clientWidth
+    const minChordSize = 40
+
+    const tab = document.getElementById("tab")
+
+    window.onscroll = function() {
+        onScrollListener()
+    };
+
+    function onScrollListener() {
+        var ratio = (window.pageYOffset - chordsContainerTop) / (chordsContainerTop + chordsContainerHeight)
+        ratio = Math.min(1.0, ratio)
+
+        var size = (1.0 - ratio) * maxChordSize
+        // minChordSize < size < maxChordSize
+        size = Math.min(maxChordSize, Math.max(minChordSize, size));
+        chords.forEach(chords => chords.style.width = size + "px")
+
+        if (window.pageYOffset > chordsContainerTop) {
+            chordsContainer.classList.add("sticky");
+            //include margin to prevent tab jumping up
+            tab.style.marginTop = chordsContainerHeight + "px"
+        } else {
+            chordsContainer.classList.remove("sticky");
+            tab.style.marginTop = "0px"
+        }
+    }
+}
+</script>
+
+<script>
+var scrollInterval;
+var songDuration = parseFloat(document.body.dataset.duration);
+var scrollDuration = songDuration * 60 * 1000; // x min w milisekundach - w tym czasie stronama zostac przewinięta
+//var body = document.body,
+//    html = document.documentElement;
+//var height = Math.max( Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight ) - window.innerHeight, 1);
+var height = document.getElementById('tab').clientHeight; //wysokość boxu div tab
+var scrollTimeStep =  scrollDuration / height; // czas co jaki ma być wywołana funkcja przewijania
+function toggleButton() {
+  if (scrollInterval) { //jeśli scrollInterval był ustawiony w trakcie wywołania funkcji to zmień obraz na pauzę i wyczyść go
+    document.getElementById('buttonImage').src = 'images/pause2.gif';
+    clearInterval(scrollInterval); // Zatrzymuje autoscrollowanie
+    scrollInterval = null;
+  } else { //w przeciwnym wypadku ustaw scroll interval i przewijaj chyba ze dotrzesz do końca strony
+    document.getElementById('buttonImage').src = 'images/play2.gif';
+    scrollInterval = setInterval(function() {
+      if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+        // Jeśli strona została przewinięta do końca, zatrzymaj autoscroll po 4 sekundach
+        setTimeout(function() {
+          document.getElementById('buttonImage').src = 'images/pause2.gif';
+          clearInterval(scrollInterval);
+          scrollInterval = null;
+        }, 4000);
+      } else {
+        window.scrollBy({top: 1, behavior: "instant"}); // Uruchamia autoscrollowanie
+      }
+		height = document.getElementById('tab').clientHeight; //tylko dla infoboxa
+		scrollTimeStep =  scrollDuration / height; 
+		// Aktualizuj wartości w infoBox
+		document.getElementById('heightInfo').textContent = 'Height: ' + height;
+		document.getElementById('scrollTimeStepInfo').textContent = 'Scroll Time Step: ' + scrollTimeStep.toFixed(1);
+		document.getElementById('songDuration').textContent = 'songDuration: ' + songDuration;
+    }, scrollTimeStep);
+  }
+}
+// Zatrzymaj autoscroll, gdy strona jest opuszczana
+window.addEventListener('beforeunload', function() {
+  if (scrollInterval) {
+    clearInterval(scrollInterval);
+  }
+});
+</script>
+</body>
+</html>

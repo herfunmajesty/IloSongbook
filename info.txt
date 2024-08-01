@@ -1,0 +1,14 @@
+W projekcie tworzonym w PyCharm foldery .idea i .venv pełnią różne funkcje:
+
+.idea:
+Ten folder przechowuje wewnętrzne ustawienia konfiguracyjne PyCharm dla projektu.
+Zawiera informacje o stylu kodu, ustawieniach środowiska, konfiguracji debuggera, itp.
+Dzięki temu PyCharm może zapewnić wsparcie podczas pisania kodu, refaktoryzacji i zachować spójność stylu.
+Nie jest to folder, który powinien być udostępniany w repozytorium kodu, ponieważ jest specyficzny dla środowiska PyCharm i może prowadzić do dezynchronizacji projektu, jeśli inni programiści korzystają z innych IDE12.
+.venv:
+To folder, w którym znajduje się wirtualne środowisko Pythona (virtual environment) dla projektu.
+Wirtualne środowisko izoluje zależności i ustawienia projektu od innych projektów.
+Dzięki temu możesz zarządzać pakietami i wersjami Pythona specyficznymi dla danego projektu.
+.venv jest ważne, ponieważ pozwala na uniknięcie konfliktów między różnymi projektami, które mogą wymagać różnych wersji bibliotek i interpreterów Pythona.
+Ten folder jest istotny i powinien być uwzględniony w repozytorium kodu, aby inni programiści mogli łatwo odtworzyć środowisko projektu na swoich maszynach34.
+Dlatego warto zachować te foldery w projekcie, ale pamiętaj, że .idea nie powinien być udostępniany publicznie, a .venv jest istotny dla współpracy i replikacji środowiska na różnych maszynach. 😊
