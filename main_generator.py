@@ -208,7 +208,7 @@ def generate_index(out_dir):
     current_time = datetime.datetime.now()  # requires datetime library
     formatted_time = current_time.strftime("%Y-%m-%d")
     html_content = template.render(
-        date = formatted_time
+        date=formatted_time
     )
     file_name = f"{out_dir}/index.html"
     with open(file_name, 'w', encoding='utf-8') as file:
@@ -243,9 +243,9 @@ def generate_song_html(local_song_list, out_dir):
             file.write(html_content)
 
 
-def generate_song_list_html(loc_song_list, out_dir,name):
+def generate_song_list_html(loc_song_list, out_dir, loc_template, name):
     # Utworzenie strony listy wsystkich piosenek
-    template2 = env.get_template('songs.html')  # Wczytanie szablonu listy HTML z pliku
+    template2 = env.get_template(loc_template)  # Wczytanie szablonu listy HTML z pliku
 
     html_content2 = template2.render(songs=loc_song_list)
     file_name2 = f"{out_dir}/{name}.html"
@@ -253,6 +253,7 @@ def generate_song_list_html(loc_song_list, out_dir,name):
     with open(file_name2, 'w', encoding='utf-8') as file:
         # print(f'{sep2}Zapisano html do listy piosenek pod nazwa {file_name2}{sep2}')
         file.write(html_content2)
+
 
 class SongCollection:
     def __init__(self):
@@ -345,8 +346,8 @@ for song in collection:
 main_directory = "out"
 generate_index(main_directory)
 generate_song_html(collection, main_directory)
-list_name = "songs" # zmienic ten fragment na main_list i zaimplementować w html
-generate_song_list_html(collection,main_directory,list_name)
+list_name = "songs"  # zmienic ten fragment na main_list i zaimplementować w html
+generate_song_list_html(collection, main_directory, 'songs.html', list_name)
 
 #    USUNIETE
 
@@ -381,8 +382,8 @@ for song in arch_collection:
 
 directory = "out\\archive"
 generate_song_html(arch_collection, directory)
-a_list_name = "archive" # zmienic ten fragment na archive_list i zaimplementować w html
-generate_song_list_html(arch_collection,directory,a_list_name)
+a_list_name = "archive"  # zmienic ten fragment na archive_list i zaimplementować w html
+generate_song_list_html(arch_collection, directory,'songs_hidden.html',  a_list_name)
 
 
 #    NOWE - TESTOWE
@@ -417,6 +418,5 @@ for song in test_collection:
 
 directory2 = "out\\new"
 generate_song_html(test_collection, directory2)
-t_list_name = "test" # zmienic ten fragment na test_list i zaimplementować w html
-generate_song_list_html(test_collection,directory2,t_list_name)
-
+t_list_name = "test"  # zmienic ten fragment na test_list i zaimplementować w html
+generate_song_list_html(test_collection, directory2,'songs_hidden.html',  t_list_name)

@@ -65,139 +65,19 @@ ul { list-style: none; padding-left: 0px; }
         <div class="mt-2">
 			<h6>Songs</h6>
 			<ul id="songs">
-				
+				{% for song in songs %}
 					<li>
-						<a href="🔥Boys-Don't-Cry.html" name="T1">
-						T1 - 🔥Boys Don't Cry 
+						<a href="{{song.html_name}}.html" name="{{song.Number}}">
+						{{song.Number}} - {{song.Title}} 
 						</a>
 						<small> - 
-							<em> The Cure -	</em> 
+							<em> {{song.Artist}} -	</em> 
 						</small>
-						<span class= "text-success" >
-							<small><b>Easy</b></small>
+						<span class= "text-{{song.l_tr}}" >
+							<small><b>{{song.Level}}</b></small>
 						</span>
 					</li>
-				
-					<li>
-						<a href="🔥Human.html" name="T2">
-						T2 - 🔥Human 
-						</a>
-						<small> - 
-							<em> lolsoos -	</em> 
-						</small>
-						<span class= "text-None" >
-							<small><b>xxx</b></small>
-						</span>
-					</li>
-				
-					<li>
-						<a href="🔥I'm-Still-Standing.html" name="T3">
-						T3 - 🔥I'm Still Standing 
-						</a>
-						<small> - 
-							<em> Elton John -	</em> 
-						</small>
-						<span class= "text-warning" >
-							<small><b>Medium</b></small>
-						</span>
-					</li>
-				
-					<li>
-						<a href="🔥In-The-End.html" name="T4">
-						T4 - 🔥In The End 
-						</a>
-						<small> - 
-							<em> Linkin Park -	</em> 
-						</small>
-						<span class= "text-None" >
-							<small><b>xxx</b></small>
-						</span>
-					</li>
-				
-					<li>
-						<a href="🔥Its-Raining-Men.html" name="T5">
-						T5 - 🔥Its Raining Men 
-						</a>
-						<small> - 
-							<em> The Weather Girls -	</em> 
-						</small>
-						<span class= "text-None" >
-							<small><b>xxx</b></small>
-						</span>
-					</li>
-				
-					<li>
-						<a href="🔥Just-Like-Heaven.html" name="T6">
-						T6 - 🔥Just Like Heaven 
-						</a>
-						<small> - 
-							<em> The Cure -	</em> 
-						</small>
-						<span class= "text-None" >
-							<small><b>xxx</b></small>
-						</span>
-					</li>
-				
-					<li>
-						<a href="🔥Little-Talks.html" name="T7">
-						T7 - 🔥Little Talks 
-						</a>
-						<small> - 
-							<em> Of Monsters and Men -	</em> 
-						</small>
-						<span class= "text-None" >
-							<small><b>xxx</b></small>
-						</span>
-					</li>
-				
-					<li>
-						<a href="🔥Somebody-Told-Me.html" name="T8">
-						T8 - 🔥Somebody Told Me 
-						</a>
-						<small> - 
-							<em> The Killers -	</em> 
-						</small>
-						<span class= "text-None" >
-							<small><b>xxx</b></small>
-						</span>
-					</li>
-				
-					<li>
-						<a href="⭐Waiting-For-Love.html" name="T9">
-						T9 - ⭐Waiting For Love 
-						</a>
-						<small> - 
-							<em> Avicii -	</em> 
-						</small>
-						<span class= "text-None" >
-							<small><b>xxx</b></small>
-						</span>
-					</li>
-				
-					<li>
-						<a href="What-Is-Love-(Baby-Don't-Hurt-Me).html" name="T10">
-						T10 - What Is Love (Baby Don't Hurt Me) 
-						</a>
-						<small> - 
-							<em> Haddaway -	</em> 
-						</small>
-						<span class= "text-success" >
-							<small><b>Easy</b></small>
-						</span>
-					</li>
-				
-					<li>
-						<a href="🔥Yours-Truly-2095.html" name="T11">
-						T11 - 🔥Yours Truly 2095 
-						</a>
-						<small> - 
-							<em> Electric Light Orchestra -	</em> 
-						</small>
-						<span class= "text-None" >
-							<small><b>xxx</b></small>
-						</span>
-					</li>
-				
+				{% endfor %}
 			</ul>
 		</div>
        
