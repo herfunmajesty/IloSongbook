@@ -1,0 +1,206 @@
+
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <title>🎅All I Want For Christmas Is You - Krakow Ukulele Tuesdays</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+        .highlight {background-color: lemonchiffon; font-weight: bold;}
+        .chord { font-weight: bold; color:red}
+        #tab { font-size: 80%; font-family: Verdana, Tahoma, sans-serif; }
+        #options a {text-decoration: underline;}
+        .sticky { 
+            position: fixed; 
+            top: 0; 
+            margin-top: 0 !important; 
+            left: 0; 
+            padding: 0px 0px; 
+            width: 100%; 
+            border-bottom: 1px solid #cfd8dc; 
+            /* overflow-x: auto;
+            white-space: nowrap; */
+        }
+		.toggle-button {
+			background-color: #eee;
+			border: 1px solid #ccc;
+			padding: 1px 1px;
+			margin-right: 5px;
+			cursor: pointer;
+		}
+    </style>
+
+</head>
+<body data-duration = 4.0>
+
+
+<header class="container">
+    <div class="m-2 mb-4 text-center">
+        <img src="/images/ukulele-krakow.png" class="img-fluid" alt="Krakow Ukulele" width="200">
+    </div>
+</header>
+
+<div class="container">
+    <div class="row justify-content-center">
+        
+<div class="col-lg-8 col-md-10 col-sm-12 my-3">
+
+    <h3 class="song-title">
+        #A2 🎅All I Want For Christmas Is You
+    </h3>
+    
+    <h5 class="song-artist">
+        Mariah Carey and Walter Afanasieff
+    </h5>
+
+    <h5>
+        Level: 
+        <span class="badge rounded-pill badge-danger text-white">Hard</span>
+    </h5>
+    
+    
+
+   <div class="mt-4" style="overflow-x: auto;">
+    
+        <img src="/chords/D.gif" alt="D" title="D" />
+    
+        <img src="/chords/Am.gif" alt="Am" title="Am" />
+    
+        <img src="/chords/E7.gif" alt="E7" title="E7" />
+    
+        <img src="/chords/Em.gif" alt="Em" title="Em" />
+    
+        <img src="/chords/Cm.gif" alt="Cm" title="Cm" />
+    
+        <img src="/chords/G.gif" alt="G" title="G" />
+    
+        <img src="/chords/B7.gif" alt="B7" title="B7" />
+    
+        <img src="/chords/C.gif" alt="C" title="C" />
+    
+</div>
+	<div id="infoBox" style="position: fixed; right: 20px; top: 20px; border: 1px solid black; padding: 10px;">
+		<p id="heightInfo" style="font-size: xx-small;"></p>
+		<p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
+		<p id="songDuration" style="font-size: xx-small;"></p>
+	</div>
+	<div id="floatingButton" style="position: fixed; right: 20px; bottom: 20px; ">
+		<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light">
+			<img id="buttonImage" src="images/pause2.gif">
+		</button>
+	</div>
+    
+    <div id="tab">
+          <br/>  <br/><br/>Info:<br/>strumming pattern: 4 down per chord<br/><br/>Intro: <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> <b>(slowly)</b><br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G/]</span></span></span></span> I don't want a <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G/]</span></span></span></span> lot for Christmas<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G/]</span></span></span></span> There is just one <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G/]</span></span></span></span> thing I need<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C/]</span></span></span></span> I don't care a<span class="chord"><span class="chord"><span class="chord"><span class="chord">[C/]</span></span></span></span>bout the presents <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Cm/]</span></span></span></span> underneath the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Cm/]</span></span></span></span> Christmas tree<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G/]</span></span></span></span> I just want you <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G/]</span></span></span></span> for my <span class="chord"><span class="chord"><span class="chord"><span class="chord">[B7/]</span></span></span></span> own<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em/]</span></span></span></span> More than you could <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em/]</span></span></span></span> ever <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Cm/]</span></span></span></span> know<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G/]</span></span></span></span> Make my wish come <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7/]</span></span></span></span> true<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am/]</span></span></span></span> All I want for <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D/]</span></span></span></span> Christma-a-as <br/>i-i-i-is <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> you <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span> Yeah <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> <b>(faster)</b><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span><br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> I don't want a <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> lot for Christmas<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> There is just one <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> thing I need (and I)<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> I don't care a<span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span>bout the presents <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Cm]</span></span></span></span> underneath the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Cm]</span></span></span></span> Christmas tree<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> I don't need to <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> hang my stocking <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> there upon the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> fireplace<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> Santa Claus won't <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> make me happy <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Cm]</span></span></span></span> with a toy on <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Cm]</span></span></span></span> Christmas Day<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> I just want you <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G//]</span></span></span></span> for my <span class="chord"><span class="chord"><span class="chord"><span class="chord">[B7//]</span></span></span></span>own<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span> More than you could <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em//]</span></span></span></span> ever <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Cm//]</span></span></span></span> know<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> Make my wish come <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span> true<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> All I want for <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span> Christmas is <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> you<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span>... <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> You, <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span> baby<br/><br/>Oh, <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> I won't ask for <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> much this Christmas<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> I won't even <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> wish for snow <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> I'm just gonna <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> keep on waiting <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Cm]</span></span></span></span> underneath the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Cm]</span></span></span></span> mistletoe<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> I won't make a <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> list and send it <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> to the North Pole <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> for Saint Nick<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> I won't even <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> stay awake to <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Cm]</span></span></span></span> hear those magic <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Cm]</span></span></span></span> reindeer click<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> I just want you <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G//]</span></span></span></span> here to<span class="chord"><span class="chord"><span class="chord"><span class="chord">[B7//]</span></span></span></span>night<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span> Holding on to me so <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em//]</span></span></span></span> tight <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Cm//]</span></span></span></span><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> What more can I <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span> do?<br/>Baby, <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> all I want for <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span> Christmas is <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> you<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> You, <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span> baby<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[B7]</span></span></span></span> Oh-oh, all the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[B7]</span></span></span></span> lights are shining so <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span> brightly every <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span>where<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[B7]</span></span></span></span>.. And the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[B7]</span></span></span></span> sound of children's <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span> laughter fills the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span> air <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Cm]</span></span></span></span>.. And every<span class="chord"><span class="chord"><span class="chord"><span class="chord">[Cm]</span></span></span></span>one is singing <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> I hear those <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span> sleigh bells ringing<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am/]</span></span></span></span> Santa, won't you bring me the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am/]</span></span></span></span> one I really need? <br/>Won't you <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D/]</span></span></span></span> please bring my baby to me? <br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> I don't want a <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> lot for Christmas <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> This is all I'm <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> asking for<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> I just wanna <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> see my baby <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Cm]</span></span></span></span> standing right out<span class="chord"><span class="chord"><span class="chord"><span class="chord">[Cm]</span></span></span></span>side my door<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> I just want you <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G//]</span></span></span></span> for my <span class="chord"><span class="chord"><span class="chord"><span class="chord">[B7//]</span></span></span></span> own<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span> More than you could <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em//]</span></span></span></span> ever <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Cm//]</span></span></span></span> know<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> Make my wish come <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span> true<br/>Baby, <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> all I want for <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span> Christmas is <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> You, <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span> baby <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span><br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> All I want for <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span> Christmas is <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> you, <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span> baby<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> All I want for <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span> Christmas is <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> you, <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span> baby<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> All I want for <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span> Christmas is <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> you, <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span> baby<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G/]</span></span></span></span>Ohhh <br/>
+    </div>
+
+    <div id="options" class="mt-4">
+        <ul class="list-unstyled">
+            <li><a href="songs.html"><strong>← Back</strong></a></li>
+         
+        </ul>
+    </div>
+
+    <hr/>
+			
+    <div class="m-2 my-4 text-center">
+        <img src="/images/qrcode.png" class="img-fluid" alt="QR Code" width="200">
+    </div>
+
+</div>
+
+    </div>
+</div>
+
+<script>
+window.onload = function initFloatingChords() {
+
+    const chordsContainer = document.getElementsByClassName("mt-4")[0];
+
+    // prevent lyrics being visible from behind the chords
+    chordsContainer.style.backgroundColor = "white"
+
+    const chordsContainerTop = chordsContainer.offsetTop
+    const chordsContainerHeight = chordsContainer.clientHeight
+
+    const chords = Array.prototype.slice.call(chordsContainer.getElementsByTagName("img"))
+    const maxChordSize = chords[0].clientWidth
+    const minChordSize = 40
+
+    const tab = document.getElementById("tab")
+
+    window.onscroll = function() {
+        onScrollListener()
+    };
+
+    function onScrollListener() {
+        var ratio = (window.pageYOffset - chordsContainerTop) / (chordsContainerTop + chordsContainerHeight)
+        ratio = Math.min(1.0, ratio)
+
+        var size = (1.0 - ratio) * maxChordSize
+        // minChordSize < size < maxChordSize
+        size = Math.min(maxChordSize, Math.max(minChordSize, size));
+        chords.forEach(chords => chords.style.width = size + "px")
+
+        if (window.pageYOffset > chordsContainerTop) {
+            chordsContainer.classList.add("sticky");
+            //include margin to prevent tab jumping up
+            tab.style.marginTop = chordsContainerHeight + "px"
+        } else {
+            chordsContainer.classList.remove("sticky");
+            tab.style.marginTop = "0px"
+        }
+    }
+}
+</script>
+
+<script>
+var scrollInterval;
+var songDuration = parseFloat(document.body.dataset.duration);
+var scrollDuration = songDuration * 60 * 1000; // x min w milisekundach - w tym czasie stronama zostac przewinięta
+//var body = document.body,
+//    html = document.documentElement;
+//var height = Math.max( Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight ) - window.innerHeight, 1);
+var height = document.getElementById('tab').clientHeight; //wysokość boxu div tab
+var scrollTimeStep =  scrollDuration / height; // czas co jaki ma być wywołana funkcja przewijania
+function toggleButton() {
+  if (scrollInterval) { //jeśli scrollInterval był ustawiony w trakcie wywołania funkcji to zmień obraz na pauzę i wyczyść go
+    document.getElementById('buttonImage').src = 'images/pause2.gif';
+    clearInterval(scrollInterval); // Zatrzymuje autoscrollowanie
+    scrollInterval = null;
+  } else { //w przeciwnym wypadku ustaw scroll interval i przewijaj chyba ze dotrzesz do końca strony
+    document.getElementById('buttonImage').src = 'images/play2.gif';
+    scrollInterval = setInterval(function() {
+      if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+        // Jeśli strona została przewinięta do końca, zatrzymaj autoscroll po 4 sekundach
+        setTimeout(function() {
+          document.getElementById('buttonImage').src = 'images/pause2.gif';
+          clearInterval(scrollInterval);
+          scrollInterval = null;
+        }, 4000);
+      } else {
+        window.scrollBy({top: 1, behavior: "instant"}); // Uruchamia autoscrollowanie
+      }
+		height = document.getElementById('tab').clientHeight; //tylko dla infoboxa
+		scrollTimeStep =  scrollDuration / height; 
+		// Aktualizuj wartości w infoBox
+		document.getElementById('heightInfo').textContent = 'Height: ' + height;
+		document.getElementById('scrollTimeStepInfo').textContent = 'Scroll Time Step: ' + scrollTimeStep.toFixed(1);
+		document.getElementById('songDuration').textContent = 'songDuration: ' + songDuration;
+    }, scrollTimeStep);
+  }
+}
+// Zatrzymaj autoscroll, gdy strona jest opuszczana
+window.addEventListener('beforeunload', function() {
+  if (scrollInterval) {
+    clearInterval(scrollInterval);
+  }
+});
+</script>
+</body>
+</html>

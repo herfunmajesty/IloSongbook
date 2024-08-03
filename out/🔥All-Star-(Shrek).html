@@ -1,0 +1,211 @@
+
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <title>🔥All Star (Shrek) - Krakow Ukulele Tuesdays</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+        .highlight {background-color: lemonchiffon; font-weight: bold;}
+        .chord { font-weight: bold; color:red}
+        #tab { font-size: 80%; font-family: Verdana, Tahoma, sans-serif; }
+        #options a {text-decoration: underline;}
+        .sticky { 
+            position: fixed; 
+            top: 0; 
+            margin-top: 0 !important; 
+            left: 0; 
+            padding: 0px 0px; 
+            width: 100%; 
+            border-bottom: 1px solid #cfd8dc; 
+            /* overflow-x: auto;
+            white-space: nowrap; */
+        }
+		.toggle-button {
+			background-color: #eee;
+			border: 1px solid #ccc;
+			padding: 1px 1px;
+			margin-right: 5px;
+			cursor: pointer;
+		}
+    </style>
+
+</head>
+<body data-duration = 4.0>
+
+
+<header class="container">
+    <div class="m-2 mb-4 text-center">
+        <img src="/images/ukulele-krakow.png" class="img-fluid" alt="Krakow Ukulele" width="200">
+    </div>
+</header>
+
+<div class="container">
+    <div class="row justify-content-center">
+        
+<div class="col-lg-8 col-md-10 col-sm-12 my-3">
+
+    <h3 class="song-title">
+        #10 🔥All Star (Shrek)
+    </h3>
+    
+    <h5 class="song-artist">
+        Smash Mouth
+    </h5>
+
+    <h5>
+        Level: 
+        <span class="badge rounded-pill badge-danger text-white">Hard</span>
+    </h5>
+    
+	    <div class="mt-3">
+		    <iframe src="https://open.spotify.com/embed/track/3cfOd4CMv2snFaKAnMdnvK"
+				    width="300"
+				    height="80"
+				    frameborder="0"
+				    allowtransparency="true"
+				    allow="encrypted-media"></iframe>
+	    </div>
+    
+    
+
+   <div class="mt-4" style="overflow-x: auto;">
+    
+        <img src="/chords/D.gif" alt="D" title="D" />
+    
+        <img src="/chords/Am.gif" alt="Am" title="Am" />
+    
+        <img src="/chords/G.gif" alt="G" title="G" />
+    
+        <img src="/chords/C.gif" alt="C" title="C" />
+    
+        <img src="/chords/F.gif" alt="F" title="F" />
+    
+        <img src="/chords/Csharpdim.gif" alt="Csharpdim" title="Csharpdim" />
+    
+</div>
+	<div id="infoBox" style="position: fixed; right: 20px; top: 20px; border: 1px solid black; padding: 10px;">
+		<p id="heightInfo" style="font-size: xx-small;"></p>
+		<p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
+		<p id="songDuration" style="font-size: xx-small;"></p>
+	</div>
+	<div id="floatingButton" style="position: fixed; right: 20px; bottom: 20px; ">
+		<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light">
+			<img id="buttonImage" src="images/pause2.gif">
+		</button>
+	</div>
+    
+    <div id="tab">
+          <br/>  <br/><br/><br/><br/><span class="mark fw-bold">2 beats per chord</b><br/>When (Verse Alternate):<br/>- 1st chord, 1 strum<br/>- 2nd chord, 2 strums<br/>- next chord, 1 strum<br/>- 2nd chord, 2 strums<br/>Example: (pam X pam pam X pam X pam pam)<br/></span><br/><br/>Intro:<br/>1... 2... 1, 2, 3<br/><br/><b class="mark">(Verse Alternating)</b><br/>Some<span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span>body once <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span> told me the <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span></span> world is gonna <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span> roll me<br/>I <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span> ain't the sharpest <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span> tool in the <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span></span> shed <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span><br/>She was <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span> looking kind of <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span> dumb with her <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span></span> finger and her <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span> thumb In the <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span> shape of an <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span> "L" on her <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span></span> forehead <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span><br/><br/><b>Normal strums</b><br/>Well the <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span> years start coming and they <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span> don't stop coming <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span></span> fed to the rules and I <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span> hit the ground running<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span> Didn't make sense not to <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span> live for fun, your <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span></span> brain gets smart but your <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span> head gets dumb<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span> So much to do, so <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span> much to see, so what's <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span></span> wrong with taking the <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span> back streets?<br/>You'll <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span> never know if you don't <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span> go, <br/>you'll <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span></span>never shine if you don't <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span> glow<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span> Hey now, you're an <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span> all-star… <br/>get your <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C#dim]</span></span></span></span></span> game on, go <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span> play<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span> Hey now, you're a <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span> rock star… get the <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C#dim]</span></span></span></span></span> show on, get <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span> paid<br/>And <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span> all that <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span> glitters is <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C#dim]</span></span></span></span></span> gold <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span><br/>Only shooting <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span> stars <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span></span> break the <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span> mould <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span>..<br/><br/><b class="mark">(Verse Alternating)</b><br/>It's a <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span> cool place and they <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span> say it gets colder,<br/>you're <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span></span> bundled up now, wait <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span> till you get older<br/>But the <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span> meteor men beg to <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span> differ, judging by the <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span></span> hole in the satellite <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span> picture<br/>The ice we <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span> skate is getting pretty <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span> thin, the water's getting <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span></span> warm so you might as well <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span> swim<br/>My world's on <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span> fire, how ‘bout <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span> yours? That's the way I <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span></span> like it and I never get <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span>bored<br/><br/><b>Normal strums</b><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span> Hey now, you're an <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span> all-star… <br/>get your <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C#dim]</span></span></span></span></span> game on, go <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span> play<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span> Hey now, you're a <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span> rock star… get the <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C#dim]</span></span></span></span></span> show on, get <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span> paid<br/>And <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span> all that <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span> glitters is <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C#dim]</span></span></span></span></span> gold <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span><br/>Only shooting <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span> stars <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span></span> break the <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span> mould <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span>..<br/><br/><b class="mark">(Verse Alternating)</b><br/><b>Whistling</b><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C#dim]</span></span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C#dim]</span></span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C#dim]</span></span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C#dim]</span></span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span><br/><br/><b>Normal strums</b><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span> Hey now, you're an <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span> all-star… <br/>get your <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C#dim]</span></span></span></span></span> game on, go <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span> play<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span> Hey now, you're a <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span> rock star… get the <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C#dim]</span></span></span></span></span> show on, get <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span> paid<br/>And <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span> all that <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span> glitters is <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C#dim]</span></span></span></span></span> gold <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span><br/>Only shooting <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span> stars... <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span></span>...<br/><br/><b class="mark">(Verse Alternating)</b><br/>Some<span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span>body once <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span> asked could I <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span></span> spare some change for <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span> gas<br/>I need to <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span> get myself a<span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span>way from <br/>this <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span></span> place <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span><br/>I said <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span> yep… what a con<span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span>cept, I could <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span></span> use a little fuel <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span> myself<br/>And we could <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span> all use a <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span> little <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am/]</span></span></span></span></span> <strong><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[stop]</span></span></span></span></span></strong> cha-a-a-a-ange<br/><br/><b>Normal strums</b><br/>Well the <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span> years start coming and they <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span> don't stop coming <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span></span> fed to the rules and I <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span> hit the ground running<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span> Didn't make sense not to <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span> live for fun, <br/>your <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span></span>brain gets smart but your <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span>head gets dumb<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span> So much to do, so <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span> much to see, so what's <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span></span> wrong with taking the <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span> back streets?<br/>You'll <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span> never know if you don't <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span> go, <br/>you'll <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span></span> never shine if you don't <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span> glow<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span> Hey now, you're an <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span> all-star… <br/>get your <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C#dim]</span></span></span></span></span> game on, go <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span> play<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span> Hey now, you're a <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span> rock star… get the <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C#dim]</span></span></span></span></span> show on, get <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span> paid<br/>And <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span> all that <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span> glitters is <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C#dim]</span></span></span></span></span> gold <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span><br/><br/>Only shooting <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span> stars <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span> break the <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C#dim]</span></span></span></span></span> mould <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span><br/>And <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span> all that <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span> glitters is <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C#dim]</span></span></span></span></span> gold<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span> Only shooting <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span> stars <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span></span> break the <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C/]</span></span></span></span></span> mould
+    </div>
+
+    <div id="options" class="mt-4">
+        <ul class="list-unstyled">
+            <li><a href="songs.html"><strong>← Back</strong></a></li>
+         
+        </ul>
+    </div>
+
+    <hr/>
+			
+    <div class="m-2 my-4 text-center">
+        <img src="/images/qrcode.png" class="img-fluid" alt="QR Code" width="200">
+    </div>
+
+</div>
+
+    </div>
+</div>
+
+<script>
+window.onload = function initFloatingChords() {
+
+    const chordsContainer = document.getElementsByClassName("mt-4")[0];
+
+    // prevent lyrics being visible from behind the chords
+    chordsContainer.style.backgroundColor = "white"
+
+    const chordsContainerTop = chordsContainer.offsetTop
+    const chordsContainerHeight = chordsContainer.clientHeight
+
+    const chords = Array.prototype.slice.call(chordsContainer.getElementsByTagName("img"))
+    const maxChordSize = chords[0].clientWidth
+    const minChordSize = 40
+
+    const tab = document.getElementById("tab")
+
+    window.onscroll = function() {
+        onScrollListener()
+    };
+
+    function onScrollListener() {
+        var ratio = (window.pageYOffset - chordsContainerTop) / (chordsContainerTop + chordsContainerHeight)
+        ratio = Math.min(1.0, ratio)
+
+        var size = (1.0 - ratio) * maxChordSize
+        // minChordSize < size < maxChordSize
+        size = Math.min(maxChordSize, Math.max(minChordSize, size));
+        chords.forEach(chords => chords.style.width = size + "px")
+
+        if (window.pageYOffset > chordsContainerTop) {
+            chordsContainer.classList.add("sticky");
+            //include margin to prevent tab jumping up
+            tab.style.marginTop = chordsContainerHeight + "px"
+        } else {
+            chordsContainer.classList.remove("sticky");
+            tab.style.marginTop = "0px"
+        }
+    }
+}
+</script>
+
+<script>
+var scrollInterval;
+var songDuration = parseFloat(document.body.dataset.duration);
+var scrollDuration = songDuration * 60 * 1000; // x min w milisekundach - w tym czasie stronama zostac przewinięta
+//var body = document.body,
+//    html = document.documentElement;
+//var height = Math.max( Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight ) - window.innerHeight, 1);
+var height = document.getElementById('tab').clientHeight; //wysokość boxu div tab
+var scrollTimeStep =  scrollDuration / height; // czas co jaki ma być wywołana funkcja przewijania
+function toggleButton() {
+  if (scrollInterval) { //jeśli scrollInterval był ustawiony w trakcie wywołania funkcji to zmień obraz na pauzę i wyczyść go
+    document.getElementById('buttonImage').src = 'images/pause2.gif';
+    clearInterval(scrollInterval); // Zatrzymuje autoscrollowanie
+    scrollInterval = null;
+  } else { //w przeciwnym wypadku ustaw scroll interval i przewijaj chyba ze dotrzesz do końca strony
+    document.getElementById('buttonImage').src = 'images/play2.gif';
+    scrollInterval = setInterval(function() {
+      if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+        // Jeśli strona została przewinięta do końca, zatrzymaj autoscroll po 4 sekundach
+        setTimeout(function() {
+          document.getElementById('buttonImage').src = 'images/pause2.gif';
+          clearInterval(scrollInterval);
+          scrollInterval = null;
+        }, 4000);
+      } else {
+        window.scrollBy({top: 1, behavior: "instant"}); // Uruchamia autoscrollowanie
+      }
+		height = document.getElementById('tab').clientHeight; //tylko dla infoboxa
+		scrollTimeStep =  scrollDuration / height; 
+		// Aktualizuj wartości w infoBox
+		document.getElementById('heightInfo').textContent = 'Height: ' + height;
+		document.getElementById('scrollTimeStepInfo').textContent = 'Scroll Time Step: ' + scrollTimeStep.toFixed(1);
+		document.getElementById('songDuration').textContent = 'songDuration: ' + songDuration;
+    }, scrollTimeStep);
+  }
+}
+// Zatrzymaj autoscroll, gdy strona jest opuszczana
+window.addEventListener('beforeunload', function() {
+  if (scrollInterval) {
+    clearInterval(scrollInterval);
+  }
+});
+</script>
+</body>
+</html>

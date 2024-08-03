@@ -1,0 +1,200 @@
+
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <title>I'm Yours - Krakow Ukulele Tuesdays</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+        .highlight {background-color: lemonchiffon; font-weight: bold;}
+        .chord { font-weight: bold; color:red}
+        #tab { font-size: 80%; font-family: Verdana, Tahoma, sans-serif; }
+        #options a {text-decoration: underline;}
+        .sticky { 
+            position: fixed; 
+            top: 0; 
+            margin-top: 0 !important; 
+            left: 0; 
+            padding: 0px 0px; 
+            width: 100%; 
+            border-bottom: 1px solid #cfd8dc; 
+            /* overflow-x: auto;
+            white-space: nowrap; */
+        }
+		.toggle-button {
+			background-color: #eee;
+			border: 1px solid #ccc;
+			padding: 1px 1px;
+			margin-right: 5px;
+			cursor: pointer;
+		}
+    </style>
+
+</head>
+<body data-duration = 4.0>
+
+
+<header class="container">
+    <div class="m-2 mb-4 text-center">
+        <img src="/images/ukulele-krakow.png" class="img-fluid" alt="Krakow Ukulele" width="200">
+    </div>
+</header>
+
+<div class="container">
+    <div class="row justify-content-center">
+        
+<div class="col-lg-8 col-md-10 col-sm-12 my-3">
+
+    <h3 class="song-title">
+        #81 I'm Yours
+    </h3>
+    
+    <h5 class="song-artist">
+        Jason Mraz
+    </h5>
+
+    <h5>
+        Level: 
+        <span class="badge rounded-pill badge-success text-white">Easy</span>
+    </h5>
+    
+    
+
+   <div class="mt-4" style="overflow-x: auto;">
+    
+        <img src="/chords/Am.gif" alt="Am" title="Am" />
+    
+        <img src="/chords/D7.gif" alt="D7" title="D7" />
+    
+        <img src="/chords/G.gif" alt="G" title="G" />
+    
+        <img src="/chords/C.gif" alt="C" title="C" />
+    
+        <img src="/chords/F.gif" alt="F" title="F" />
+    
+</div>
+	<div id="infoBox" style="position: fixed; right: 20px; top: 20px; border: 1px solid black; padding: 10px;">
+		<p id="heightInfo" style="font-size: xx-small;"></p>
+		<p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
+		<p id="songDuration" style="font-size: xx-small;"></p>
+	</div>
+	<div id="floatingButton" style="position: fixed; right: 20px; bottom: 20px; ">
+		<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light">
+			<img id="buttonImage" src="images/pause2.gif">
+		</button>
+	</div>
+    
+    <div id="tab">
+          <br/>  <br/>  <br/><br/><br/>Intro: <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span><br/><br/>Well <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> you done done me and you bet I felt it<br/>I <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> tried to be chill but you're so hot that I melted<br/>I <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> fell right through the cracks… <br/>Now I'm <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> trying to get back<br/><br/>Before the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> cool done run out I'll be giving it my bestest<br/>And <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> nothing's going to stop me but divine intervention<br/>I <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> reckon it's again my turn… <br/>To <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> win some or learn some<br/><br/>But <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span>I… won't… he-si<span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span>tate… no… more<br/>No… <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>more… it… can-not <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span>wait… I'm yours<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span><br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> Well open up your mind… and see like <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span>me<br/>Open up your plans and damn you're <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>free<br/>Look into your heart and you'll find <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span>love love love love<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span>Listen to the music of the moment people dance and <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span>sing<br/>We're just one big fami<span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>ly<br/>And it's our godforsaken right to be <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span>loved… loved loved loved <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D7]</span></span></span></span>(single strum) loved (pause)<br/><br/>So <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span>I… won't… he-si<span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span>tate… no… more<br/>No… <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>more… it… can-not <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span>wait… I'm sure<br/>There's no <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span>need… to… com-pli<span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span>cate… our… time<br/>Is <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>short… this… is… our <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span>fate… I'm yours<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span><br/><br/>I've been spending <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span>way too long checking my tongue in the mirror<br/>And <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span>bending over backwards just to try to see it clearer<br/>But my <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>breath fogged up the glass… and so I <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span>drew a new face<br/>and I laughed<br/><br/>I <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span>guess what I'll be saying is there ain't no better reasons<br/>To <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span>rid yourself of vanities and just go with the seasons<br/>It's <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>what we aim to do… our <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span>name is our virtue<br/><br/>But <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span>I… won't… he-si<span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span>tate no… more<br/>No… <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>more… it… can-not <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span>wait… I'm yours<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> Well open up your mind… and see like <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span>me<br/>Open up your plans and damn you're <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>free<br/>Look into your heart and you'll find that… <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> the sky is yours<br/><br/>So <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span>please don't, please don't, please don't… there's no <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span>ne-ed to<br/>complicate. Cause our <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>time is short… this is our, this is our <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span>fate… I'm yours<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D7/]</span></span></span></span> (single strum) (pause)<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C/]</span></span></span></span> (single strum)<br/>
+    </div>
+
+    <div id="options" class="mt-4">
+        <ul class="list-unstyled">
+            <li><a href="songs.html"><strong>← Back</strong></a></li>
+         
+        </ul>
+    </div>
+
+    <hr/>
+			
+    <div class="m-2 my-4 text-center">
+        <img src="/images/qrcode.png" class="img-fluid" alt="QR Code" width="200">
+    </div>
+
+</div>
+
+    </div>
+</div>
+
+<script>
+window.onload = function initFloatingChords() {
+
+    const chordsContainer = document.getElementsByClassName("mt-4")[0];
+
+    // prevent lyrics being visible from behind the chords
+    chordsContainer.style.backgroundColor = "white"
+
+    const chordsContainerTop = chordsContainer.offsetTop
+    const chordsContainerHeight = chordsContainer.clientHeight
+
+    const chords = Array.prototype.slice.call(chordsContainer.getElementsByTagName("img"))
+    const maxChordSize = chords[0].clientWidth
+    const minChordSize = 40
+
+    const tab = document.getElementById("tab")
+
+    window.onscroll = function() {
+        onScrollListener()
+    };
+
+    function onScrollListener() {
+        var ratio = (window.pageYOffset - chordsContainerTop) / (chordsContainerTop + chordsContainerHeight)
+        ratio = Math.min(1.0, ratio)
+
+        var size = (1.0 - ratio) * maxChordSize
+        // minChordSize < size < maxChordSize
+        size = Math.min(maxChordSize, Math.max(minChordSize, size));
+        chords.forEach(chords => chords.style.width = size + "px")
+
+        if (window.pageYOffset > chordsContainerTop) {
+            chordsContainer.classList.add("sticky");
+            //include margin to prevent tab jumping up
+            tab.style.marginTop = chordsContainerHeight + "px"
+        } else {
+            chordsContainer.classList.remove("sticky");
+            tab.style.marginTop = "0px"
+        }
+    }
+}
+</script>
+
+<script>
+var scrollInterval;
+var songDuration = parseFloat(document.body.dataset.duration);
+var scrollDuration = songDuration * 60 * 1000; // x min w milisekundach - w tym czasie stronama zostac przewinięta
+//var body = document.body,
+//    html = document.documentElement;
+//var height = Math.max( Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight ) - window.innerHeight, 1);
+var height = document.getElementById('tab').clientHeight; //wysokość boxu div tab
+var scrollTimeStep =  scrollDuration / height; // czas co jaki ma być wywołana funkcja przewijania
+function toggleButton() {
+  if (scrollInterval) { //jeśli scrollInterval był ustawiony w trakcie wywołania funkcji to zmień obraz na pauzę i wyczyść go
+    document.getElementById('buttonImage').src = 'images/pause2.gif';
+    clearInterval(scrollInterval); // Zatrzymuje autoscrollowanie
+    scrollInterval = null;
+  } else { //w przeciwnym wypadku ustaw scroll interval i przewijaj chyba ze dotrzesz do końca strony
+    document.getElementById('buttonImage').src = 'images/play2.gif';
+    scrollInterval = setInterval(function() {
+      if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+        // Jeśli strona została przewinięta do końca, zatrzymaj autoscroll po 4 sekundach
+        setTimeout(function() {
+          document.getElementById('buttonImage').src = 'images/pause2.gif';
+          clearInterval(scrollInterval);
+          scrollInterval = null;
+        }, 4000);
+      } else {
+        window.scrollBy({top: 1, behavior: "instant"}); // Uruchamia autoscrollowanie
+      }
+		height = document.getElementById('tab').clientHeight; //tylko dla infoboxa
+		scrollTimeStep =  scrollDuration / height; 
+		// Aktualizuj wartości w infoBox
+		document.getElementById('heightInfo').textContent = 'Height: ' + height;
+		document.getElementById('scrollTimeStepInfo').textContent = 'Scroll Time Step: ' + scrollTimeStep.toFixed(1);
+		document.getElementById('songDuration').textContent = 'songDuration: ' + songDuration;
+    }, scrollTimeStep);
+  }
+}
+// Zatrzymaj autoscroll, gdy strona jest opuszczana
+window.addEventListener('beforeunload', function() {
+  if (scrollInterval) {
+    clearInterval(scrollInterval);
+  }
+});
+</script>
+</body>
+</html>

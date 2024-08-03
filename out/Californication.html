@@ -1,0 +1,219 @@
+
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <title>Californication - Krakow Ukulele Tuesdays</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+        .highlight {background-color: lemonchiffon; font-weight: bold;}
+        .chord { font-weight: bold; color:red}
+        #tab { font-size: 80%; font-family: Verdana, Tahoma, sans-serif; }
+        #options a {text-decoration: underline;}
+        .sticky { 
+            position: fixed; 
+            top: 0; 
+            margin-top: 0 !important; 
+            left: 0; 
+            padding: 0px 0px; 
+            width: 100%; 
+            border-bottom: 1px solid #cfd8dc; 
+            /* overflow-x: auto;
+            white-space: nowrap; */
+        }
+		.toggle-button {
+			background-color: #eee;
+			border: 1px solid #ccc;
+			padding: 1px 1px;
+			margin-right: 5px;
+			cursor: pointer;
+		}
+    </style>
+
+</head>
+<body data-duration = 4.0>
+
+
+<header class="container">
+    <div class="m-2 mb-4 text-center">
+        <img src="/images/ukulele-krakow.png" class="img-fluid" alt="Krakow Ukulele" width="200">
+    </div>
+</header>
+
+<div class="container">
+    <div class="row justify-content-center">
+        
+<div class="col-lg-8 col-md-10 col-sm-12 my-3">
+
+    <h3 class="song-title">
+        #25 Californication
+    </h3>
+    
+    <h5 class="song-artist">
+        Red Hot Chili Peppers
+    </h5>
+
+    <h5>
+        Level: 
+        <span class="badge rounded-pill badge-warning text-white">Medium</span>
+    </h5>
+    
+	    <div class="mt-3">
+		    <iframe src="https://open.spotify.com/embed/track/48UPSzbZjgc449aqz8bxox"
+				    width="300"
+				    height="80"
+				    frameborder="0"
+				    allowtransparency="true"
+				    allow="encrypted-media"></iframe>
+	    </div>
+    
+    
+
+   <div class="mt-4" style="overflow-x: auto;">
+    
+        <img src="/chords/D.gif" alt="D" title="D" />
+    
+        <img src="/chords/Am.gif" alt="Am" title="Am" />
+    
+        <img src="/chords/Fsharpm.gif" alt="Fsharpm" title="Fsharpm" />
+    
+        <img src="/chords/Bm.gif" alt="Bm" title="Bm" />
+    
+        <img src="/chords/E7.gif" alt="E7" title="E7" />
+    
+        <img src="/chords/A.gif" alt="A" title="A" />
+    
+        <img src="/chords/Dm.gif" alt="Dm" title="Dm" />
+    
+        <img src="/chords/G.gif" alt="G" title="G" />
+    
+        <img src="/chords/C.gif" alt="C" title="C" />
+    
+        <img src="/chords/F.gif" alt="F" title="F" />
+    
+</div>
+	<div id="infoBox" style="position: fixed; right: 20px; top: 20px; border: 1px solid black; padding: 10px;">
+		<p id="heightInfo" style="font-size: xx-small;"></p>
+		<p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
+		<p id="songDuration" style="font-size: xx-small;"></p>
+	</div>
+	<div id="floatingButton" style="position: fixed; right: 20px; bottom: 20px; ">
+		<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light">
+			<img id="buttonImage" src="images/pause2.gif">
+		</button>
+	</div>
+    
+    <div id="tab">
+          <br/>  <br/><br/><br/><br/>Intro:<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span></span><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span></span><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span></span><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span></span><br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span></span> Psychic spies from China try to <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span></span> steal your mind's elation<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span></span> Little girls from Sweden dream of <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span></span> silver screen quotations<br/>And <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C//]</span></span></span></span></span> if you want these <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G//]</span></span></span></span></span> kind of dreams it's <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F//]</span></span></span></span></span> Californi<span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm//]</span></span></span></span></span>cation<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span></span><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span></span><br/><br/>It's the <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span></span> edge of the world and all of <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span></span> Western civilization<br/>The <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span></span> sun may rise in the East at least it <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span></span> settles in a final location<br/>It's <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C//]</span></span></span></span></span> understood that <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G//]</span></span></span></span></span> Hollywood sells <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F//]</span></span></span></span></span> Californi<span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm//]</span></span></span></span></span>cation<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span></span> uuuuuh <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span></span> uuhh ..<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span></span> uuuuuh <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span></span> uuhh ..<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span></span> Pay your surgeon very well to <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span></span> break the spell of aging<br/>Cel<span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span></span>ebrity skin, is this your chin? Or <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span></span> is that war your waging?<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span></span> First born uni<span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span></span>corn<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span></span> Hardcore soft <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span></span> porn<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C//]</span></span></span></span></span> Dream of Cali<span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G//]</span></span></span></span></span>forni<span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm//]</span></span></span></span></span>cation <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am//]</span></span></span></span></span><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C//]</span></span></span></span></span> Dream of Cali<span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G//]</span></span></span></span></span>forni<span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm//]</span></span></span></span></span>cation <strong><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[stop]</span></span></span></span></span></strong> ..<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span></span><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span></span><br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span></span> Marry me girl, be my fairy to the world, be my <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span></span> very own constellation<br/>A <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span></span> teenage bride with a baby inside getting <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span></span> high on information<br/>And <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C//]</span></span></span></span></span> buy me a star on the <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G//]</span></span></span></span></span> boulevard it's <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F//]</span></span></span></span></span> Californi<span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm//]</span></span></span></span></span>cation<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span></span><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span></span><br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span></span> Space may be the final frontier but it's <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span></span> made in a Hollywood basement<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span></span> Cobain can you hear the spheres singing <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span></span> songs off station to station?<br/>And <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span> Alderaan's not <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span> far away it's <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span></span> Californi<span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span></span>cation<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span></span> uuuuuh <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span></span> uuhh ..<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span></span> uuuuuh <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span></span> uuhh ..<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span></span> Born and raised by those who praise con<span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span></span>trol of population<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span></span> Everybody's been there and I <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span></span> don't mean on vacation<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span></span> First born uni<span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span></span>corn<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span></span> Hardcore soft <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span></span> porn<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C//]</span></span></span></span></span> Dream of Cali<span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G//]</span></span></span></span></span>forni<span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm//]</span></span></span></span></span>cation <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am//]</span></span></span></span></span><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C//]</span></span></span></span></span> Dream of Cali<span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G//]</span></span></span></span></span>forni<span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm//]</span></span></span></span></span>cation <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm//]</span></span></span></span></span><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C//]</span></span></span></span></span> Dream of Cali<span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G//]</span></span></span></span></span>forni<span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm//]</span></span></span></span></span>cation <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am//]</span></span></span></span></span><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C//]</span></span></span></span></span> Dream of Cali<span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G//]</span></span></span></span></span>forni<span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm//]</span></span></span></span></span>cation <strong><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[stop]</span></span></span></span></span></strong> ..<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F#m]</span></span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span> <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F#m]</span></span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span> <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bm//]</span></span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D//]</span></span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A//]</span></span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7//]</span></span></span></span></span><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bm//]</span></span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D//]</span></span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A//]</span></span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7//]</span></span></span></span></span><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bm//]</span></span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D//]</span></span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A//]</span></span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7//]</span></span></span></span></span><br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span></span><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span></span><br/><br/>De<span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span></span>struction leads to a very rough road but it <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span></span> also breeds creation<br/>And <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span></span> earthquakes are to a girl's guitar they're <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span></span> just another good vibration<br/>And <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C//]</span></span></span></span></span> tidal waves couldn't <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G//]</span></span></span></span></span> save the world from <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F//]</span></span></span></span></span> Californi<span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm//]</span></span></span></span></span>cation<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span></span> uuuuuh <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span></span> uuhh ..<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span></span> uuuuuh <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span></span> uuhh ..<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span></span> Pay your surgeon very well to <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span></span> break the spell of aging<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span></span> Sicker than the rest, there is no test but <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span></span> this is what you're craving<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span></span> First born uni<span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span></span>corn<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span></span> Hardcore soft <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span></span> porn<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C//]</span></span></span></span></span> Dream of Cali<span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G//]</span></span></span></span></span>forni<span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm//]</span></span></span></span></span>cation <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am//]</span></span></span></span></span><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C//]</span></span></span></span></span> Dream of Cali<span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G//]</span></span></span></span></span>forni<span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span></span>cation <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span></span><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C//]</span></span></span></span></span> Dream of Cali<span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G//]</span></span></span></span></span>forni<span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm//]</span></span></span></span></span>cation <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am//]</span></span></span></span></span><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C//]</span></span></span></span></span> Dream of Cali<span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G//]</span></span></span></span></span>forni<span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm/]</span></span></span></span></span>cation
+    </div>
+
+    <div id="options" class="mt-4">
+        <ul class="list-unstyled">
+            <li><a href="songs.html"><strong>← Back</strong></a></li>
+         
+        </ul>
+    </div>
+
+    <hr/>
+			
+    <div class="m-2 my-4 text-center">
+        <img src="/images/qrcode.png" class="img-fluid" alt="QR Code" width="200">
+    </div>
+
+</div>
+
+    </div>
+</div>
+
+<script>
+window.onload = function initFloatingChords() {
+
+    const chordsContainer = document.getElementsByClassName("mt-4")[0];
+
+    // prevent lyrics being visible from behind the chords
+    chordsContainer.style.backgroundColor = "white"
+
+    const chordsContainerTop = chordsContainer.offsetTop
+    const chordsContainerHeight = chordsContainer.clientHeight
+
+    const chords = Array.prototype.slice.call(chordsContainer.getElementsByTagName("img"))
+    const maxChordSize = chords[0].clientWidth
+    const minChordSize = 40
+
+    const tab = document.getElementById("tab")
+
+    window.onscroll = function() {
+        onScrollListener()
+    };
+
+    function onScrollListener() {
+        var ratio = (window.pageYOffset - chordsContainerTop) / (chordsContainerTop + chordsContainerHeight)
+        ratio = Math.min(1.0, ratio)
+
+        var size = (1.0 - ratio) * maxChordSize
+        // minChordSize < size < maxChordSize
+        size = Math.min(maxChordSize, Math.max(minChordSize, size));
+        chords.forEach(chords => chords.style.width = size + "px")
+
+        if (window.pageYOffset > chordsContainerTop) {
+            chordsContainer.classList.add("sticky");
+            //include margin to prevent tab jumping up
+            tab.style.marginTop = chordsContainerHeight + "px"
+        } else {
+            chordsContainer.classList.remove("sticky");
+            tab.style.marginTop = "0px"
+        }
+    }
+}
+</script>
+
+<script>
+var scrollInterval;
+var songDuration = parseFloat(document.body.dataset.duration);
+var scrollDuration = songDuration * 60 * 1000; // x min w milisekundach - w tym czasie stronama zostac przewinięta
+//var body = document.body,
+//    html = document.documentElement;
+//var height = Math.max( Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight ) - window.innerHeight, 1);
+var height = document.getElementById('tab').clientHeight; //wysokość boxu div tab
+var scrollTimeStep =  scrollDuration / height; // czas co jaki ma być wywołana funkcja przewijania
+function toggleButton() {
+  if (scrollInterval) { //jeśli scrollInterval był ustawiony w trakcie wywołania funkcji to zmień obraz na pauzę i wyczyść go
+    document.getElementById('buttonImage').src = 'images/pause2.gif';
+    clearInterval(scrollInterval); // Zatrzymuje autoscrollowanie
+    scrollInterval = null;
+  } else { //w przeciwnym wypadku ustaw scroll interval i przewijaj chyba ze dotrzesz do końca strony
+    document.getElementById('buttonImage').src = 'images/play2.gif';
+    scrollInterval = setInterval(function() {
+      if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+        // Jeśli strona została przewinięta do końca, zatrzymaj autoscroll po 4 sekundach
+        setTimeout(function() {
+          document.getElementById('buttonImage').src = 'images/pause2.gif';
+          clearInterval(scrollInterval);
+          scrollInterval = null;
+        }, 4000);
+      } else {
+        window.scrollBy({top: 1, behavior: "instant"}); // Uruchamia autoscrollowanie
+      }
+		height = document.getElementById('tab').clientHeight; //tylko dla infoboxa
+		scrollTimeStep =  scrollDuration / height; 
+		// Aktualizuj wartości w infoBox
+		document.getElementById('heightInfo').textContent = 'Height: ' + height;
+		document.getElementById('scrollTimeStepInfo').textContent = 'Scroll Time Step: ' + scrollTimeStep.toFixed(1);
+		document.getElementById('songDuration').textContent = 'songDuration: ' + songDuration;
+    }, scrollTimeStep);
+  }
+}
+// Zatrzymaj autoscroll, gdy strona jest opuszczana
+window.addEventListener('beforeunload', function() {
+  if (scrollInterval) {
+    clearInterval(scrollInterval);
+  }
+});
+</script>
+</body>
+</html>

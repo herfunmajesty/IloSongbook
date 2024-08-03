@@ -1,0 +1,209 @@
+
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <title>🔥Can't Stop - Krakow Ukulele Tuesdays</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+        .highlight {background-color: lemonchiffon; font-weight: bold;}
+        .chord { font-weight: bold; color:red}
+        #tab { font-size: 80%; font-family: Verdana, Tahoma, sans-serif; }
+        #options a {text-decoration: underline;}
+        .sticky { 
+            position: fixed; 
+            top: 0; 
+            margin-top: 0 !important; 
+            left: 0; 
+            padding: 0px 0px; 
+            width: 100%; 
+            border-bottom: 1px solid #cfd8dc; 
+            /* overflow-x: auto;
+            white-space: nowrap; */
+        }
+		.toggle-button {
+			background-color: #eee;
+			border: 1px solid #ccc;
+			padding: 1px 1px;
+			margin-right: 5px;
+			cursor: pointer;
+		}
+    </style>
+
+</head>
+<body data-duration = 4.0>
+
+
+<header class="container">
+    <div class="m-2 mb-4 text-center">
+        <img src="/images/ukulele-krakow.png" class="img-fluid" alt="Krakow Ukulele" width="200">
+    </div>
+</header>
+
+<div class="container">
+    <div class="row justify-content-center">
+        
+<div class="col-lg-8 col-md-10 col-sm-12 my-3">
+
+    <h3 class="song-title">
+        #28 🔥Can't Stop
+    </h3>
+    
+    <h5 class="song-artist">
+        Red Hot Chili Peppers
+    </h5>
+
+    <h5>
+        Level: 
+        <span class="badge rounded-pill badge-warning text-white">Medium</span>
+    </h5>
+    
+	    <div class="mt-3">
+		    <iframe src="https://open.spotify.com/embed/track/3ZOEytgrvLwQaqXreDs2Jx"
+				    width="300"
+				    height="80"
+				    frameborder="0"
+				    allowtransparency="true"
+				    allow="encrypted-media"></iframe>
+	    </div>
+    
+    
+
+   <div class="mt-4" style="overflow-x: auto;">
+    
+        <img src="/chords/D.gif" alt="D" title="D" />
+    
+        <img src="/chords/Bm.gif" alt="Bm" title="Bm" />
+    
+        <img src="/chords/Em.gif" alt="Em" title="Em" />
+    
+        <img src="/chords/G.gif" alt="G" title="G" />
+    
+        <img src="/chords/C.gif" alt="C" title="C" />
+    
+</div>
+	<div id="infoBox" style="position: fixed; right: 20px; top: 20px; border: 1px solid black; padding: 10px;">
+		<p id="heightInfo" style="font-size: xx-small;"></p>
+		<p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
+		<p id="songDuration" style="font-size: xx-small;"></p>
+	</div>
+	<div id="floatingButton" style="position: fixed; right: 20px; bottom: 20px; ">
+		<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light">
+			<img id="buttonImage" src="images/pause2.gif">
+		</button>
+	</div>
+    
+    <div id="tab">
+          <br/>  <br/><br/><br/><br/><span class="fw-bold fs-5"><br/>4 beats per chord<br/></span><br/><br/>RIFF 1<br/><pre><br/>A|-------------------------|<br/>E|-------------------------|<br/>C|-2-4--2-4--2-4--2-4--2-4-|<br/>G|-------------------------|<br/></pre><br/><br/>RIFF 2<br/><pre><br/>A|---5-7-------5-7---------|--5-7-------5-7----------|<br/>E|-------------------------|-------------------------|<br/>C|-4----4-4-4-----4-4-4-2--|------2-2-2-----2-2-2----|<br/>G|-------------------------|----------------------4--|<br/><br/>A|--5-7-------5-7----------|--5-7-------5-7----------|<br/>E|-------------------------|-------------------------|<br/>C|----------------------2--|------0-0-0-----0-0-0-4--|<br/>G|------4-4-4-----4-4-4----|-------------------------|<br/></pre><br/><br/><hr/><br/><br/>Intro:<br/>(1, 2, 3, 4)<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[riff 1]</span></span></span></span></span> x6<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[riff 2]</span></span></span></span></span> x1<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span></span> Can't stop addicted to the shindig<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span> Chop top he says I'm gonna win big<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bm]</span></span></span></span></span> Choose not a life of imitation<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span> Distant cousin to the reservation<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span></span> Defunct the pistol that you pay for<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span> This punk the feeling that you stay for<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bm]</span></span></span></span></span> In time I want to be your best friend<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span> Eastside love is living on the westend <br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span></span> Knocked out but boy you better come to<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span> Don't die you know the truth as some do<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bm]</span></span></span></span></span> Go write your message on the pavement<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span> Burn so bright I wonder what the wave meant<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span></span> White heat is screaming in the jungle<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span> Complete the motion if you stumble<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bm]</span></span></span></span></span> Go ask the dust for any answers<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span> Come back strong with 50 belly dancers <br/><br/>The <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G//]</span></span></span></span></span> world I love<br/>The <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D//]</span></span></span></span></span> tears I've dropped<br/>To <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bm//]</span></span></span></span></span> be part of<br/>the <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C//]</span></span></span></span></span> wave can't stop<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G//]</span></span></span></span></span> Ever <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D//]</span></span></span></span></span> wonder <br/>if <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bm//]</span></span></span></span></span> it's all for <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C//]</span></span></span></span></span> you<br/><br/>The <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G//]</span></span></span></span></span> world I love<br/>The <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D//]</span></span></span></span></span> trains I hop<br/>To <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bm//]</span></span></span></span></span> be part of<br/>The <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C//]</span></span></span></span></span> wave can't stop<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G//]</span></span></span></span></span> Come and tell <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D//]</span></span></span></span></span> me <br/>when it's <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bm/]</span></span></span></span></span> time <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C/]</span></span></span></span></span> to <br/>(3, 4)<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span></span> Sweetheart is bleeding in the snowcone<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span> So smart she's leading me to ozone<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bm]</span></span></span></span></span> Music the great communicator<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span> Use two sticks to make it in the nature<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span></span> I'll get you into penetration<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span> The gender of a generation<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bm]</span></span></span></span></span> The birth of every other nation<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span> Worth your weight the gold of meditation<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span></span> This chapter's going to be a close one<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span> Smoke rings I know you're going to blow one<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bm]</span></span></span></span></span> All on a spaceship persevering<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span> Use my hands for everything but steering<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span></span> Can't stop the spirits when they need you<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span> Mop tops are happy when they feed you<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bm]</span></span></span></span></span> Jay butterfly is in the treetop<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span> Birds that blow the meaning into bebop  <br/><br/>The <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G//]</span></span></span></span></span> world I love<br/>The <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D//]</span></span></span></span></span> tears I've dropped<br/>To <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bm//]</span></span></span></span></span> be part of<br/>the <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C//]</span></span></span></span></span> wave can't stop<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G//]</span></span></span></span></span> Ever <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D//]</span></span></span></span></span> wonder <br/>if <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bm//]</span></span></span></span></span> it's all for <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C//]</span></span></span></span></span> you<br/><br/>The <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G//]</span></span></span></span></span> world I love<br/>The <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D//]</span></span></span></span></span> trains I hop<br/>To <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bm//]</span></span></span></span></span> be part of<br/>The <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C//]</span></span></span></span></span> wave can't stop<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G//]</span></span></span></span></span> Come and tell <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D//]</span></span></span></span></span> me <br/>when it's <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bm/]</span></span></span></span></span> time <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C/]</span></span></span></span></span> to <br/>(3, 4)<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span></span> Wait a minute I'm <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span> passing out, <br/>win or <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bm]</span></span></span></span></span> lose, just like <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span> you<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span></span> Far more shockin' than <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span> anything <br/>I ever <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bm]</span></span></span></span></span> knew, how 'bout <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span> you<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span></span> Ten more reasons why <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span> I need <br/>somebody <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bm]</span></span></span></span></span> new, just like <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span> you<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span></span> Far more shockin' than <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span> anything <br/>I ever <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bm]</span></span></span></span></span> knew, right on <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span> cue <br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[riff 2]</span></span></span></span></span><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em/]</span></span></span></span></span>... <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D/]</span></span></span></span></span>... <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bm/]</span></span></span></span></span>... <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C/]</span></span></span></span></span><br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span></span> Can't stop addicted to the shindig<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span> Chop top he says I'm gonna win big<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bm]</span></span></span></span></span> Choose not a life of imitation<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span> Distant cousin to the reservation<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span></span> Defunct the pistol that you pay for<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span> This punk the feeling that you stay for<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bm]</span></span></span></span></span> In time I want to be your best friend<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span> Eastside love is living on the westend<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span></span> Knocked out but boy you better come to<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span> Don't die you know the truth as some do<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bm]</span></span></span></span></span> Go write your message on the pavement<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span> Burn so bright I wonder what the wave meant<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span></span> Kick start the golden generator<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span> Sweet talk but don't intimidate her<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bm]</span></span></span></span></span> Can't stop the Gods from engineering<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span> Feel no need for any interfering<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span></span> Your image in the dictionary<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span> This life is more than ordinary<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bm]</span></span></span></span></span> Can I get 2 maybe even 3 of these<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span> Comin' from space to teach you of the Pliedes<br/><strong><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[stop]</span></span></span></span></span></strong><br/><br/>Can't stop the spirits when they need you<br/>This life is more than just a read-thru  
+    </div>
+
+    <div id="options" class="mt-4">
+        <ul class="list-unstyled">
+            <li><a href="songs.html"><strong>← Back</strong></a></li>
+         
+        </ul>
+    </div>
+
+    <hr/>
+			
+    <div class="m-2 my-4 text-center">
+        <img src="/images/qrcode.png" class="img-fluid" alt="QR Code" width="200">
+    </div>
+
+</div>
+
+    </div>
+</div>
+
+<script>
+window.onload = function initFloatingChords() {
+
+    const chordsContainer = document.getElementsByClassName("mt-4")[0];
+
+    // prevent lyrics being visible from behind the chords
+    chordsContainer.style.backgroundColor = "white"
+
+    const chordsContainerTop = chordsContainer.offsetTop
+    const chordsContainerHeight = chordsContainer.clientHeight
+
+    const chords = Array.prototype.slice.call(chordsContainer.getElementsByTagName("img"))
+    const maxChordSize = chords[0].clientWidth
+    const minChordSize = 40
+
+    const tab = document.getElementById("tab")
+
+    window.onscroll = function() {
+        onScrollListener()
+    };
+
+    function onScrollListener() {
+        var ratio = (window.pageYOffset - chordsContainerTop) / (chordsContainerTop + chordsContainerHeight)
+        ratio = Math.min(1.0, ratio)
+
+        var size = (1.0 - ratio) * maxChordSize
+        // minChordSize < size < maxChordSize
+        size = Math.min(maxChordSize, Math.max(minChordSize, size));
+        chords.forEach(chords => chords.style.width = size + "px")
+
+        if (window.pageYOffset > chordsContainerTop) {
+            chordsContainer.classList.add("sticky");
+            //include margin to prevent tab jumping up
+            tab.style.marginTop = chordsContainerHeight + "px"
+        } else {
+            chordsContainer.classList.remove("sticky");
+            tab.style.marginTop = "0px"
+        }
+    }
+}
+</script>
+
+<script>
+var scrollInterval;
+var songDuration = parseFloat(document.body.dataset.duration);
+var scrollDuration = songDuration * 60 * 1000; // x min w milisekundach - w tym czasie stronama zostac przewinięta
+//var body = document.body,
+//    html = document.documentElement;
+//var height = Math.max( Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight ) - window.innerHeight, 1);
+var height = document.getElementById('tab').clientHeight; //wysokość boxu div tab
+var scrollTimeStep =  scrollDuration / height; // czas co jaki ma być wywołana funkcja przewijania
+function toggleButton() {
+  if (scrollInterval) { //jeśli scrollInterval był ustawiony w trakcie wywołania funkcji to zmień obraz na pauzę i wyczyść go
+    document.getElementById('buttonImage').src = 'images/pause2.gif';
+    clearInterval(scrollInterval); // Zatrzymuje autoscrollowanie
+    scrollInterval = null;
+  } else { //w przeciwnym wypadku ustaw scroll interval i przewijaj chyba ze dotrzesz do końca strony
+    document.getElementById('buttonImage').src = 'images/play2.gif';
+    scrollInterval = setInterval(function() {
+      if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+        // Jeśli strona została przewinięta do końca, zatrzymaj autoscroll po 4 sekundach
+        setTimeout(function() {
+          document.getElementById('buttonImage').src = 'images/pause2.gif';
+          clearInterval(scrollInterval);
+          scrollInterval = null;
+        }, 4000);
+      } else {
+        window.scrollBy({top: 1, behavior: "instant"}); // Uruchamia autoscrollowanie
+      }
+		height = document.getElementById('tab').clientHeight; //tylko dla infoboxa
+		scrollTimeStep =  scrollDuration / height; 
+		// Aktualizuj wartości w infoBox
+		document.getElementById('heightInfo').textContent = 'Height: ' + height;
+		document.getElementById('scrollTimeStepInfo').textContent = 'Scroll Time Step: ' + scrollTimeStep.toFixed(1);
+		document.getElementById('songDuration').textContent = 'songDuration: ' + songDuration;
+    }, scrollTimeStep);
+  }
+}
+// Zatrzymaj autoscroll, gdy strona jest opuszczana
+window.addEventListener('beforeunload', function() {
+  if (scrollInterval) {
+    clearInterval(scrollInterval);
+  }
+});
+</script>
+</body>
+</html>

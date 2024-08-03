@@ -1,0 +1,218 @@
+
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <title>🔥Little Talks - Krakow Ukulele Tuesdays</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+        .highlight {background-color: lemonchiffon; font-weight: bold;}
+        .chord { font-weight: bold; color:red}
+        #tab { font-size: 80%; font-family: Verdana, Tahoma, sans-serif; }
+        #options a {text-decoration: underline;}
+        .sticky { 
+            position: fixed; 
+            top: 0; 
+            margin-top: 0 !important; 
+            left: 0; 
+            padding: 0px 0px; 
+            width: 100%; 
+            border-bottom: 1px solid #cfd8dc; 
+            /* overflow-x: auto;
+            white-space: nowrap; */
+        }
+		.toggle-button {
+			background-color: #eee;
+			border: 1px solid #ccc;
+			padding: 1px 1px;
+			margin-right: 5px;
+			cursor: pointer;
+		}
+    </style>
+
+</head>
+<body data-duration = 4.0>
+
+
+<header class="container">
+    <div class="m-2 mb-4 text-center">
+        <img src="/images/ukulele-krakow.png" class="img-fluid" alt="Krakow Ukulele" width="200">
+    </div>
+</header>
+
+<div class="container">
+    <div class="row justify-content-center">
+        
+<div class="col-lg-8 col-md-10 col-sm-12 my-3">
+
+    <h3 class="song-title">
+        #T7 🔥Little Talks
+    </h3>
+    
+    <h5 class="song-artist">
+        Of Monsters and Men
+    </h5>
+
+    <h5>
+        Level: 
+        <span class="badge rounded-pill badge-None text-white">xxx</span>
+    </h5>
+    
+    
+
+   <div class="mt-4" style="overflow-x: auto;">
+    
+        <img src="/chords/Intro.gif" alt="Intro" title="Intro" />
+    
+        <img src="/chords/Am.gif" alt="Am" title="Am" />
+    
+        <img src="/chords/Instrumental.gif" alt="Instrumental" title="Instrumental" />
+    
+        <img src="/chords/Verse.gif" alt="Verse" title="Verse" />
+    
+        <img src="/chords/3.gif" alt="3" title="3" />
+    
+        <img src="/chords/Fmaj7.gif" alt="Fmaj7" title="Fmaj7" />
+    
+        <img src="/chords/1.gif" alt="1" title="1" />
+    
+        <img src="/chords/Chorus.gif" alt="Chorus" title="Chorus" />
+    
+        <img src="/chords/Interlude.gif" alt="Interlude" title="Interlude" />
+    
+        <img src="/chords/Ending.gif" alt="Ending" title="Ending" />
+    
+        <img src="/chords/G.gif" alt="G" title="G" />
+    
+        <img src="/chords/2.gif" alt="2" title="2" />
+    
+        <img src="/chords/C.gif" alt="C" title="C" />
+    
+        <img src="/chords/F.gif" alt="F" title="F" />
+    
+</div>
+	<div id="infoBox" style="position: fixed; right: 20px; top: 20px; border: 1px solid black; padding: 10px;">
+		<p id="heightInfo" style="font-size: xx-small;"></p>
+		<p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
+		<p id="songDuration" style="font-size: xx-small;"></p>
+	</div>
+	<div id="floatingButton" style="position: fixed; right: 20px; bottom: 20px; ">
+		<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light">
+			<img id="buttonImage" src="images/pause2.gif">
+		</button>
+	</div>
+    
+    <div id="tab">
+        <br/><br/><br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Intro]</span></span></span></span><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>Hey! <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Fmaj7]</span></span></span></span>         <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span>     <br/> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> ...<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>Hey! <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Fmaj7]</span></span></span></span>         <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span>     <br/> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> ...<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>Hey! <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Fmaj7]</span></span></span></span>         <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span>     <br/> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> ...<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>   <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Fmaj7]</span></span></span></span>   <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span>   <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span><br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Verse 1]</span></span></span></span><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>I don't like <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Fmaj7]</span></span></span></span>walking around this old<span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span>  and empty house<br/>So <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>hold my hand, I'll <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span>walk with you my <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span>dear<br/>The <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>stairs creak <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Fmaj7]</span></span></span></span>as you sleep, it's <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span>keeping me awake<br/>It's the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>house telling <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span>you to close your <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span>eyes<br/>And <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>some days <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Fmaj7]</span></span></span></span>I can't even<span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span>  dress myself<br/>It's <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>killing me to <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span>see you this way<br/> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> ...<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Chorus]</span></span></span></span><br/>'Cause though the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>truth may <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Fmaj7]</span></span></span></span>vary, this<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span>ship will <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span>carry our<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>bodies <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span>safe to shore<br/> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> ...<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Interlude]</span></span></span></span><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>Hey! <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Fmaj7]</span></span></span></span>         <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span>     <br/> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> ...<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>Hey! <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Fmaj7]</span></span></span></span>         <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span>     <br/> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> ...<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>Hey! <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Fmaj7]</span></span></span></span>         <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span>     <br/> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> ...<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>   <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Fmaj7]</span></span></span></span>   <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span>   <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span><br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Verse 2]</span></span></span></span><br/>There's an <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>old voice <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Fmaj7]</span></span></span></span>in my head that's<span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span>  holding me back<br/>Well, <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>tell her that I <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Fmaj7]</span></span></span></span>miss our little <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span>talks<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>Soon it will be <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Fmaj7]</span></span></span></span>over and <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span>buried with our past<br/>We <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>used to play <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Fmaj7]</span></span></span></span>outside when we were <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span>young (and full of life and full of love)<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>Some days <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Fmaj7]</span></span></span></span>I don't know if <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span>I am wrong or right<br/>Your <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>mind is playing <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Fmaj7]</span></span></span></span>tricks on you my <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span>dear<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Chorus]</span></span></span></span><br/>'Cause though the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>truth may <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Fmaj7]</span></span></span></span>vary, this<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span>ship will <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span>carry our<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>bodies <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Fmaj7]</span></span></span></span>safe to shore<span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span>    Hey!<br/>Don't <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>listen to a <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Fmaj7]</span></span></span></span>word I <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span>say. <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span>Hey!<br/>The <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>screams all <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Fmaj7]</span></span></span></span>sound the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span>same. <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span>Hey!<br/>Though the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>truth may <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Fmaj7]</span></span></span></span>vary, this<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span>ship will <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span>carry our<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>bodies <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Fmaj7]</span></span></span></span>safe to shore<span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span>    <br/> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> ...<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Instrumental]</span></span></span></span><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>Hey! <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Fmaj7]</span></span></span></span>         <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span>     <br/> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> ...<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>Hey! <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Fmaj7]</span></span></span></span>         <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span>     <br/> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> ...<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>   <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Fmaj7]</span></span></span></span>   <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span>   <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>   <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Fmaj7]</span></span></span></span>   <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span>   <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span><br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Verse 3]</span></span></span></span><br/>You're <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>gone, gone, gone away. I watched you disappear<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>All that's left is a ghost of you<br/>Now we're <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>torn, torn, torn apart, there's nothing we can do<br/>Just <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>let me go, we'll meet again soon<br/>Now <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>wait, wait, <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Fmaj7]</span></span></span></span>wait for me.<span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span>  Please hang around<br/>I'll <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>see you when I <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Fmaj7]</span></span></span></span>fall <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span>asleep. Hey!<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Chorus]</span></span></span></span><br/>Don't <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>listen to a <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Fmaj7]</span></span></span></span>word I <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span>say. <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span>Hey!<br/>The <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>screams all <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Fmaj7]</span></span></span></span>sound the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span>same. <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span>Hey!<br/>Though the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>truth may <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Fmaj7]</span></span></span></span>vary, this<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span>ship will <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span>carry our<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>bodies <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Fmaj7]</span></span></span></span>safe to shore<span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span>    <br/> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> ...<br/><br/>Don't <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>listen to a <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Fmaj7]</span></span></span></span>word I <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span>say. <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span>Hey!<br/>The <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>screams all <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Fmaj7]</span></span></span></span>sound the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span>same. <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span>Hey!<br/>Though the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>truth may <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Fmaj7]</span></span></span></span>vary, this<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span>ship will <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span>carry our<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>bodies <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Fmaj7]</span></span></span></span>safe to shore<span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span>    <br/> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> ...<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Ending]</span></span></span></span><br/>Though the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>truth may <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Fmaj7]</span></span></span></span>vary, this<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span>ship will <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span>carry our<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>bodies <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Fmaj7]</span></span></span></span>safe to shore<br/> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> ...<br/><br/>Though the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>truth may <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Fmaj7]</span></span></span></span>vary, this<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span>ship will <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span>carry our<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>bodies <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Fmaj7]</span></span></span></span>safe to shore<br/> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> ...<br/>X
+    </div>
+
+    <div id="options" class="mt-4">
+        <ul class="list-unstyled">
+            <li><a href="songs.html"><strong>← Back</strong></a></li>
+         
+        </ul>
+    </div>
+
+    <hr/>
+			
+    <div class="m-2 my-4 text-center">
+        <img src="/images/qrcode.png" class="img-fluid" alt="QR Code" width="200">
+    </div>
+
+</div>
+
+    </div>
+</div>
+
+<script>
+window.onload = function initFloatingChords() {
+
+    const chordsContainer = document.getElementsByClassName("mt-4")[0];
+
+    // prevent lyrics being visible from behind the chords
+    chordsContainer.style.backgroundColor = "white"
+
+    const chordsContainerTop = chordsContainer.offsetTop
+    const chordsContainerHeight = chordsContainer.clientHeight
+
+    const chords = Array.prototype.slice.call(chordsContainer.getElementsByTagName("img"))
+    const maxChordSize = chords[0].clientWidth
+    const minChordSize = 40
+
+    const tab = document.getElementById("tab")
+
+    window.onscroll = function() {
+        onScrollListener()
+    };
+
+    function onScrollListener() {
+        var ratio = (window.pageYOffset - chordsContainerTop) / (chordsContainerTop + chordsContainerHeight)
+        ratio = Math.min(1.0, ratio)
+
+        var size = (1.0 - ratio) * maxChordSize
+        // minChordSize < size < maxChordSize
+        size = Math.min(maxChordSize, Math.max(minChordSize, size));
+        chords.forEach(chords => chords.style.width = size + "px")
+
+        if (window.pageYOffset > chordsContainerTop) {
+            chordsContainer.classList.add("sticky");
+            //include margin to prevent tab jumping up
+            tab.style.marginTop = chordsContainerHeight + "px"
+        } else {
+            chordsContainer.classList.remove("sticky");
+            tab.style.marginTop = "0px"
+        }
+    }
+}
+</script>
+
+<script>
+var scrollInterval;
+var songDuration = parseFloat(document.body.dataset.duration);
+var scrollDuration = songDuration * 60 * 1000; // x min w milisekundach - w tym czasie stronama zostac przewinięta
+//var body = document.body,
+//    html = document.documentElement;
+//var height = Math.max( Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight ) - window.innerHeight, 1);
+var height = document.getElementById('tab').clientHeight; //wysokość boxu div tab
+var scrollTimeStep =  scrollDuration / height; // czas co jaki ma być wywołana funkcja przewijania
+function toggleButton() {
+  if (scrollInterval) { //jeśli scrollInterval był ustawiony w trakcie wywołania funkcji to zmień obraz na pauzę i wyczyść go
+    document.getElementById('buttonImage').src = 'images/pause2.gif';
+    clearInterval(scrollInterval); // Zatrzymuje autoscrollowanie
+    scrollInterval = null;
+  } else { //w przeciwnym wypadku ustaw scroll interval i przewijaj chyba ze dotrzesz do końca strony
+    document.getElementById('buttonImage').src = 'images/play2.gif';
+    scrollInterval = setInterval(function() {
+      if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+        // Jeśli strona została przewinięta do końca, zatrzymaj autoscroll po 4 sekundach
+        setTimeout(function() {
+          document.getElementById('buttonImage').src = 'images/pause2.gif';
+          clearInterval(scrollInterval);
+          scrollInterval = null;
+        }, 4000);
+      } else {
+        window.scrollBy({top: 1, behavior: "instant"}); // Uruchamia autoscrollowanie
+      }
+		height = document.getElementById('tab').clientHeight; //tylko dla infoboxa
+		scrollTimeStep =  scrollDuration / height; 
+		// Aktualizuj wartości w infoBox
+		document.getElementById('heightInfo').textContent = 'Height: ' + height;
+		document.getElementById('scrollTimeStepInfo').textContent = 'Scroll Time Step: ' + scrollTimeStep.toFixed(1);
+		document.getElementById('songDuration').textContent = 'songDuration: ' + songDuration;
+    }, scrollTimeStep);
+  }
+}
+// Zatrzymaj autoscroll, gdy strona jest opuszczana
+window.addEventListener('beforeunload', function() {
+  if (scrollInterval) {
+    clearInterval(scrollInterval);
+  }
+});
+</script>
+</body>
+</html>
