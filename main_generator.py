@@ -162,7 +162,7 @@ def read_songs_from_folder(local_folder_path):  #
                     file_content = loc_file.read()
                     metadata = parse_song_metadata(file_content)
                     title = metadata.get('t')
-                    # print(title)
+                    print(title)
                     check_title(filename, title)
                     new = True if '🔥' in metadata.get('t') else False
                     # print(new)
@@ -189,6 +189,7 @@ def read_songs_from_folder(local_folder_path):  #
                     # po nadaniu obiektowu klasy html_namei l_tr nie tworzą się z automatu!
                     html_name = loc_song.convert_name(loc_song.Title)
                     l_tr = loc_song.convert_level(level)
+                    print(l_tr)
                     if l_tr is None:
                         print(f'Uwaga! w piosence {filename} coś jest nie tak z levelem')
                         log_sequence(filename, f'Uwaga! w tej piosence coś jest nie tak z levelem, jest: {level}')
