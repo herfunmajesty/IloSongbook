@@ -4,12 +4,15 @@ Do zrobienia:
 - zmienić aranżację drzewka - aktywne piosenki, folder nowe-nie gotowe i folder archiwum, z usuniętymi i sezonowymi
 - i zaktualizować program do tego :)
 - odklikiwanie fitrów pod mobilne urządzenia, tylko dla lepszej widoczności
-
+- Zmiana kolejności przy filtrowaniu po artystach a po piosenkach
 - in: songs: active, archive, new; images, chords, templates and out: na zewnatrz index, songs i aktywne piosenki, katalog new i archive
  - poprawić index
  - pomyśleć co zmienić na stronach z ukrytymi zasobami (chodzi o zmodyfikowanie temlatek i to zmienić 
 	* wyrypać filtry
+- w liście poiosenek: "nr - tytuł - " i nowy skrypt filtrujący
  - kod QR poprawić ale to kiedy będzie adres ustalony
+ - zrobic kopię roboczą programu i kopię do aktualizowania na githubie, albo wymyślićjak usunąć niektóre rzeczyz repozytorium
+
 
 Co jest zrobione - 
  poprawione wyświetlanie leveli, 

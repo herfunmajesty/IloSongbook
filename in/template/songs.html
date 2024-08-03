@@ -93,9 +93,9 @@ ul { list-style: none; padding-left: 0px; }
 				{% for song in songs %}
 					<li>
 						<a href="{{song.html_name}}.html" name="{{song.Number}}">
-						{{song.Number}} - {{song.Title}} 
+						{{song.Number}} - {{song.Title}} - 
 						</a>
-						<small> - 
+						<small>
 							<em> {{song.Artist}} -	</em> 
 						</small>
 						<span class= "text-{{song.l_tr}}" >
@@ -248,6 +248,12 @@ ul { list-style: none; padding-left: 0px; }
             });
 			songsList.innerHTML = ''; // Wyczy艣膰 list臋
 			sortedSongs.forEach(song => songsList.appendChild(song));
+			var allLiElements = document.querySelectorAll('li'); // Pobierz wszystkie elementy <li>
+			allLiElements.forEach(function (myLi) {
+				var EmElement = myLi.querySelector('em');
+				var anchorElement = myLi.querySelector('a'); // Pobierz element <a>
+				myLi.insertBefore(anchorElement, EmElement); // Przenieś element small em przed elementem <a>
+			});
         }
 
         function sortByArtist() {
@@ -264,8 +270,17 @@ ul { list-style: none; padding-left: 0px; }
 				});
 			songsList.innerHTML = ''; // Wyczy艣膰 list臋
 			sortedSongs.forEach(song => songsList.appendChild(song));
-			}
-		});
+			
+			var allLiElements = document.querySelectorAll('li'); // Pobierz wszystkie elementy <li>
+			allLiElements.forEach(function(myLi) {
+				var SmallEmElement = myLi.querySelector('small em');
+				//spanElement.textContent = spanElement.textContent.replace(/^	by\s+/i, ''); // Usuń "by"
+				//myLi.appendChild(document.createTextNode(' - ')); // Dodaj myślnik na końcu
+				myLi.insertBefore(SmallEmElement, myLi.querySelector('a'));
+			});
+		}
+		
+	});
 </script>
 </body>
 </html>
