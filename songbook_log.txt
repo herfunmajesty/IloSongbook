@@ -934,3 +934,42 @@
 2024-08-04 14:14:57 - Song: Waiting for love.txt, Message: Uwaga! w tej piosence coś jest nie tak z levelem, jest: xxx
 2024-08-04 14:14:57 - Song: Yours Truly 2095.txt, Message: Nowa pisenka, tytuł zgodny
 2024-08-04 14:14:57 - Song: Yours Truly 2095.txt, Message: Uwaga! w tej piosence coś jest nie tak z levelem, jest: xxx
+2024-08-04 21:07:18 - Song: 19 2000.txt, Message: Tytuł jest źle sformatowany wewnątrz pliku!: 19-2000
+2024-08-04 21:07:18 - Song: All Star (Shrek).txt, Message: Nowa pisenka, tytuł zgodny
+2024-08-04 21:07:18 - Song: Blinding Lights.txt, Message: Nowa pisenka, tytuł zgodny
+2024-08-04 21:07:18 - Song: Can't Get You Out Of My Head.txt, Message: Nowa pisenka, tytuł zgodny
+2024-08-04 21:07:18 - Song: Can't Stop.txt, Message: Nowa pisenka, tytuł zgodny
+2024-08-04 21:07:18 - Song: Dancing Queen.txt, Message: Nowa pisenka, tytuł zgodny
+2024-08-04 21:07:18 - Song: Do I Wanna Know.txt, Message: Nowa pisenka, tytuł zgodny
+2024-08-04 21:07:18 - Song: Eye Of The Tiger.txt, Message: Uwaga!Jest tu 24 zroślaków różnej formy - sprawdź czy akordy
+2024-08-04 21:07:18 - Song: Flowers.txt, Message: Nowa pisenka, tytuł zgodny
+2024-08-04 21:07:18 - Song: Flowers.txt, Message: Uwaga! w tej piosence coś jest nie tak z levelem, jest: xxx
+2024-08-04 21:07:19 - Song: How You Remind Me.txt, Message: Nowa pisenka, tytuł zgodny
+2024-08-04 21:07:19 - Song: Let It Be.txt, Message: Uwaga!Jest tu 12 zroślaków różnej formy - sprawdź czy akordy
+2024-08-04 21:07:19 - Song: Maria.txt, Message: Nowa pisenka, tytuł zgodny
+2024-08-04 21:07:19 - Song: Snow (Hey Oh).txt, Message: Nowa pisenka, tytuł zgodny
+2024-08-04 21:07:19 - Song: Summer Nights.txt, Message: Nowa pisenka, tytuł zgodny
+2024-08-04 21:07:19 - Song: There Is A Light That Never Goes Out.txt, Message: Nowa pisenka, tytuł zgodny
+2024-08-04 21:07:19 - Song: Wake Me Up.txt, Message: Nowa pisenka, tytuł zgodny
+2024-08-04 21:07:19 - Song: Dock Of The Bay.txt, Message: Tytuł jest źle sformatowany wewnątrz pliku!: (Sittin' on the) Dock of the Bay
+2024-08-04 21:07:19 - Song: Boys Don't Cry.txt, Message: Nowa pisenka, tytuł zgodny
+2024-08-04 21:07:19 - Song: Human.txt, Message: Nowa pisenka, tytuł zgodny
+2024-08-04 21:07:19 - Song: Human.txt, Message: Uwaga! w tej piosence coś jest nie tak z levelem, jest: xxx
+2024-08-04 21:07:19 - Song: I'm Still Standing.txt, Message: Nowa pisenka, tytuł zgodny
+2024-08-04 21:07:19 - Song: I'm Still Standing.txt, Message: Uwaga!Jest tu 1 zroślaków różnej formy - sprawdź czy akordy
+2024-08-04 21:07:19 - Song: In The End.txt, Message: Nowa pisenka, tytuł zgodny
+2024-08-04 21:07:19 - Song: In The End.txt, Message: Uwaga! w tej piosence coś jest nie tak z levelem, jest: xxx
+2024-08-04 21:07:19 - Song: Its raining man.txt, Message: Nowa! Uwaga! Tytuł i nazwa pliku się różnią: Its raining man.txt i 🔥Its Raining Men
+2024-08-04 21:07:19 - Song: Its raining man.txt, Message: Uwaga! w tej piosence coś jest nie tak z levelem, jest: xxx
+2024-08-04 21:07:19 - Song: Just Like Heaven.txt, Message: Nowa pisenka, tytuł zgodny
+2024-08-04 21:07:19 - Song: Just Like Heaven.txt, Message: Uwaga!Jest tu 3 zroślaków różnej formy - sprawdź czy akordy
+2024-08-04 21:07:19 - Song: Just Like Heaven.txt, Message: Uwaga! w tej piosence coś jest nie tak z levelem, jest: xxx
+2024-08-04 21:07:19 - Song: Little Talks.txt, Message: Nowa pisenka, tytuł zgodny
+2024-08-04 21:07:19 - Song: Little Talks.txt, Message: Uwaga!Jest tu 3 zroślaków różnej formy - sprawdź czy akordy
+2024-08-04 21:07:19 - Song: Little Talks.txt, Message: Uwaga! w tej piosence coś jest nie tak z levelem, jest: xxx
+2024-08-04 21:07:19 - Song: Somebody Told Me.txt, Message: Nowa pisenka, tytuł zgodny
+2024-08-04 21:07:19 - Song: Somebody Told Me.txt, Message: Uwaga! w tej piosence coś jest nie tak z levelem, jest: xxx
+2024-08-04 21:07:19 - Song: Waiting for love.txt, Message: Uwaga! Tytuł ok, ale: nazwa pliku nie: Waiting for love.txt i tytuł wew: Waiting For Love
+2024-08-04 21:07:19 - Song: Waiting for love.txt, Message: Uwaga! w tej piosence coś jest nie tak z levelem, jest: xxx
+2024-08-04 21:07:19 - Song: Yours Truly 2095.txt, Message: Nowa pisenka, tytuł zgodny
+2024-08-04 21:07:19 - Song: Yours Truly 2095.txt, Message: Uwaga! w tej piosence coś jest nie tak z levelem, jest: xxx
