@@ -44,7 +44,7 @@ ul { list-style: none; padding-left: 0px; }
 
 <header class="container">
     <div class="m-2 mb-4 text-center">
-        <img src="/images/ukulele-krakow.png" class="img-fluid" alt="Krakow Ukulele" width="200">
+        <img src="images/ukulele-krakow.png" class="img-fluid" alt="Krakow Ukulele" width="200">
     </div>
 </header>
 
@@ -77,14 +77,17 @@ ul { list-style: none; padding-left: 0px; }
 							<button type="button" id="sortByTitle" class="toggle-button btn btn-outline-primary">  Titles  </button>
 							<button type="button" id="sortByArtist" class="toggle-button btn btn-outline-primary"> Artists </button>
 						</div>
+						<div id="virtual-click-area" style="display: none; border: 2px solid red;"></div>
                 </div>
             </div>
+			
         </div>
-		<!--<div id="infoBox" style="position: fixed; right: 20px; top: 20px; border: 1px solid black; padding: 10px;">
+		<!-- <div id="infoBox" style="position: fixed; right: 20px; top: 20px; border: 1px solid black; padding: 10px;">
 			<p id="sorting method" style="font-size: xx-small;"></p>
-		</div>-->
-		
-		<p id="sorting method"></p>
+		</div> 
+		Robocze elementy do sprawdzania trybu sortowania 
+		-->
+		<!--<p id="sorting method"></p>-->
 		
 		
         <div class="mt-2">
@@ -98,7 +101,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> The Rolling Stones -	</em> 
 						</small>
-						<span class= "text-success" >
+						<span class="text-success" >
 							<small><b>Easy</b></small>
 						</span>
 					</li>
@@ -110,7 +113,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Gorillaz -	</em> 
 						</small>
-						<span class= "text-success" >
+						<span class="text-success" >
 							<small><b>Easy</b></small>
 						</span>
 					</li>
@@ -122,7 +125,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> The Proclaimers -	</em> 
 						</small>
-						<span class= "text-success" >
+						<span class="text-success" >
 							<small><b>Easy</b></small>
 						</span>
 					</li>
@@ -134,7 +137,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Erasure -	</em> 
 						</small>
-						<span class= "text-warning" >
+						<span class="text-warning" >
 							<small><b>Medium</b></small>
 						</span>
 					</li>
@@ -146,7 +149,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Counting Crows -	</em> 
 						</small>
-						<span class= "text-warning" >
+						<span class="text-warning" >
 							<small><b>Medium</b></small>
 						</span>
 					</li>
@@ -158,7 +161,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> The Velvet Underground -	</em> 
 						</small>
-						<span class= "text-warning" >
+						<span class="text-warning" >
 							<small><b>Medium</b></small>
 						</span>
 					</li>
@@ -170,7 +173,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Bill Withers -	</em> 
 						</small>
-						<span class= "text-success" >
+						<span class="text-success" >
 							<small><b>Easy</b></small>
 						</span>
 					</li>
@@ -182,7 +185,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Meghan Trainor -	</em> 
 						</small>
-						<span class= "text-success" >
+						<span class="text-success" >
 							<small><b>Easy</b></small>
 						</span>
 					</li>
@@ -194,7 +197,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Nirvana -	</em> 
 						</small>
-						<span class= "text-success" >
+						<span class="text-success" >
 							<small><b>Easy</b></small>
 						</span>
 					</li>
@@ -206,7 +209,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Smash Mouth -	</em> 
 						</small>
-						<span class= "text-danger" >
+						<span class="text-danger" >
 							<small><b>Hard</b></small>
 						</span>
 					</li>
@@ -218,7 +221,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Pink Floyd -	</em> 
 						</small>
-						<span class= "text-success" >
+						<span class="text-success" >
 							<small><b>Easy</b></small>
 						</span>
 					</li>
@@ -230,7 +233,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Tom Odell -	</em> 
 						</small>
-						<span class= "text-success" >
+						<span class="text-success" >
 							<small><b>Easy</b></small>
 						</span>
 					</li>
@@ -242,7 +245,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Creedence -	</em> 
 						</small>
-						<span class= "text-success" >
+						<span class="text-success" >
 							<small><b>Easy</b></small>
 						</span>
 					</li>
@@ -254,7 +257,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Lady Gaga -	</em> 
 						</small>
-						<span class= "text-success" >
+						<span class="text-success" >
 							<small><b>Easy</b></small>
 						</span>
 					</li>
@@ -266,7 +269,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Nancy Sinatra -	</em> 
 						</small>
-						<span class= "text-success" >
+						<span class="text-success" >
 							<small><b>Easy</b></small>
 						</span>
 					</li>
@@ -278,7 +281,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Green Day -	</em> 
 						</small>
-						<span class= "text-warning" >
+						<span class="text-warning" >
 							<small><b>Medium</b></small>
 						</span>
 					</li>
@@ -290,7 +293,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Madcon -	</em> 
 						</small>
-						<span class= "text-success" >
+						<span class="text-success" >
 							<small><b>Easy</b></small>
 						</span>
 					</li>
@@ -302,7 +305,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Micheal Jackson -	</em> 
 						</small>
-						<span class= "text-success" >
+						<span class="text-success" >
 							<small><b>Easy</b></small>
 						</span>
 					</li>
@@ -314,7 +317,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> The Weeknd -	</em> 
 						</small>
-						<span class= "text-warning" >
+						<span class="text-warning" >
 							<small><b>Medium</b></small>
 						</span>
 					</li>
@@ -326,7 +329,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Bob Dylan -	</em> 
 						</small>
-						<span class= "text-success" >
+						<span class="text-success" >
 							<small><b>Easy</b></small>
 						</span>
 					</li>
@@ -338,7 +341,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Queen -	</em> 
 						</small>
-						<span class= "text-danger" >
+						<span class="text-danger" >
 							<small><b>Hard</b></small>
 						</span>
 					</li>
@@ -350,7 +353,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Van Morrison -	</em> 
 						</small>
-						<span class= "text-success" >
+						<span class="text-success" >
 							<small><b>Easy</b></small>
 						</span>
 					</li>
@@ -362,7 +365,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> George Ezra -	</em> 
 						</small>
-						<span class= "text-success" >
+						<span class="text-success" >
 							<small><b>Easy</b></small>
 						</span>
 					</li>
@@ -374,7 +377,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> The Mamas and the Papas -	</em> 
 						</small>
-						<span class= "text-danger" >
+						<span class="text-danger" >
 							<small><b>Hard</b></small>
 						</span>
 					</li>
@@ -386,7 +389,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Red Hot Chili Peppers -	</em> 
 						</small>
-						<span class= "text-warning" >
+						<span class="text-warning" >
 							<small><b>Medium</b></small>
 						</span>
 					</li>
@@ -398,7 +401,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Kylie Minogue -	</em> 
 						</small>
-						<span class= "text-warning" >
+						<span class="text-warning" >
 							<small><b>Medium</b></small>
 						</span>
 					</li>
@@ -410,7 +413,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Elvis Presley -	</em> 
 						</small>
-						<span class= "text-warning" >
+						<span class="text-warning" >
 							<small><b>Medium</b></small>
 						</span>
 					</li>
@@ -422,7 +425,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Red Hot Chili Peppers -	</em> 
 						</small>
-						<span class= "text-warning" >
+						<span class="text-warning" >
 							<small><b>Medium</b></small>
 						</span>
 					</li>
@@ -434,7 +437,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Frankie Vallie -	</em> 
 						</small>
-						<span class= "text-warning" >
+						<span class="text-warning" >
 							<small><b>Medium</b></small>
 						</span>
 					</li>
@@ -446,7 +449,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> George Michael -	</em> 
 						</small>
-						<span class= "text-success" >
+						<span class="text-success" >
 							<small><b>Easy</b></small>
 						</span>
 					</li>
@@ -458,7 +461,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Simon & Garfunkel -	</em> 
 						</small>
-						<span class= "text-warning" >
+						<span class="text-warning" >
 							<small><b>Medium</b></small>
 						</span>
 					</li>
@@ -470,7 +473,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> System of a Down -	</em> 
 						</small>
-						<span class= "text-danger" >
+						<span class="text-danger" >
 							<small><b>Hard</b></small>
 						</span>
 					</li>
@@ -482,7 +485,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Gnarls Barkley -	</em> 
 						</small>
-						<span class= "text-success" >
+						<span class="text-success" >
 							<small><b>Easy</b></small>
 						</span>
 					</li>
@@ -494,7 +497,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> The Queen -	</em> 
 						</small>
-						<span class= "text-danger" >
+						<span class="text-danger" >
 							<small><b>Hard</b></small>
 						</span>
 					</li>
@@ -506,7 +509,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Radiohead -	</em> 
 						</small>
-						<span class= "text-success" >
+						<span class="text-success" >
 							<small><b>Easy</b></small>
 						</span>
 					</li>
@@ -518,7 +521,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Abba -	</em> 
 						</small>
-						<span class= "text-warning" >
+						<span class="text-warning" >
 							<small><b>Medium</b></small>
 						</span>
 					</li>
@@ -530,7 +533,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Arctic Monkeys -	</em> 
 						</small>
-						<span class= "text-warning" >
+						<span class="text-warning" >
 							<small><b>Medium</b></small>
 						</span>
 					</li>
@@ -542,7 +545,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Animals/Krakow Street Band -	</em> 
 						</small>
-						<span class= "text-warning" >
+						<span class="text-warning" >
 							<small><b>Medium</b></small>
 						</span>
 					</li>
@@ -554,7 +557,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> The Beatles -	</em> 
 						</small>
-						<span class= "text-success" >
+						<span class="text-success" >
 							<small><b>Easy</b></small>
 						</span>
 					</li>
@@ -566,7 +569,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Oasis -	</em> 
 						</small>
-						<span class= "text-danger" >
+						<span class="text-danger" >
 							<small><b>Hard</b></small>
 						</span>
 					</li>
@@ -578,7 +581,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Queen -	</em> 
 						</small>
-						<span class= "text-danger" >
+						<span class="text-danger" >
 							<small><b>Hard</b></small>
 						</span>
 					</li>
@@ -590,7 +593,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Bobby McFerrin -	</em> 
 						</small>
-						<span class= "text-success" >
+						<span class="text-success" >
 							<small><b>Easy</b></small>
 						</span>
 					</li>
@@ -602,7 +605,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> The Mamas & The Papas -	</em> 
 						</small>
-						<span class= "text-danger" >
+						<span class="text-danger" >
 							<small><b>Hard</b></small>
 						</span>
 					</li>
@@ -614,7 +617,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Sting -	</em> 
 						</small>
-						<span class= "text-success" >
+						<span class="text-success" >
 							<small><b>Easy</b></small>
 						</span>
 					</li>
@@ -626,7 +629,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Depeche Mode -	</em> 
 						</small>
-						<span class= "text-warning" >
+						<span class="text-warning" >
 							<small><b>Medium</b></small>
 						</span>
 					</li>
@@ -638,7 +641,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> The Police -	</em> 
 						</small>
-						<span class= "text-warning" >
+						<span class="text-warning" >
 							<small><b>Medium</b></small>
 						</span>
 					</li>
@@ -650,7 +653,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Fleetwood Mac -	</em> 
 						</small>
-						<span class= "text-success" >
+						<span class="text-success" >
 							<small><b>Easy</b></small>
 						</span>
 					</li>
@@ -662,7 +665,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Survivor -	</em> 
 						</small>
-						<span class= "text-warning" >
+						<span class="text-warning" >
 							<small><b>Medium</b></small>
 						</span>
 					</li>
@@ -674,7 +677,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Miley Cyrus -	</em> 
 						</small>
-						<span class= "text-None" >
+						<span class="text-None" >
 							<small><b>xxx</b></small>
 						</span>
 					</li>
@@ -686,7 +689,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Arctic Monkeys -	</em> 
 						</small>
-						<span class= "text-warning" >
+						<span class="text-warning" >
 							<small><b>Medium</b></small>
 						</span>
 					</li>
@@ -698,7 +701,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Lenny Kravitz -	</em> 
 						</small>
-						<span class= "text-success" >
+						<span class="text-success" >
 							<small><b>Easy</b></small>
 						</span>
 					</li>
@@ -710,7 +713,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Frank Sinatra -	</em> 
 						</small>
-						<span class= "text-warning" >
+						<span class="text-warning" >
 							<small><b>Medium</b></small>
 						</span>
 					</li>
@@ -722,7 +725,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> The Cure -	</em> 
 						</small>
-						<span class= "text-warning" >
+						<span class="text-warning" >
 							<small><b>Medium</b></small>
 						</span>
 					</li>
@@ -734,7 +737,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Daft Punk -	</em> 
 						</small>
-						<span class= "text-success" >
+						<span class="text-success" >
 							<small><b>Easy</b></small>
 						</span>
 					</li>
@@ -746,7 +749,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Leonard Cohen -	</em> 
 						</small>
-						<span class= "text-warning" >
+						<span class="text-warning" >
 							<small><b>Medium</b></small>
 						</span>
 					</li>
@@ -758,7 +761,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Pharrell Williams -	</em> 
 						</small>
-						<span class= "text-warning" >
+						<span class="text-warning" >
 							<small><b>Medium</b></small>
 						</span>
 					</li>
@@ -770,7 +773,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Patty & Mildred Hill (Traditional tune) -	</em> 
 						</small>
-						<span class= "text-success" >
+						<span class="text-success" >
 							<small><b>Easy</b></small>
 						</span>
 					</li>
@@ -782,7 +785,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> The Turtles -	</em> 
 						</small>
-						<span class= "text-warning" >
+						<span class="text-warning" >
 							<small><b>Medium</b></small>
 						</span>
 					</li>
@@ -794,7 +797,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Creedence -	</em> 
 						</small>
-						<span class= "text-warning" >
+						<span class="text-warning" >
 							<small><b>Medium</b></small>
 						</span>
 					</li>
@@ -806,7 +809,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> The Beatles -	</em> 
 						</small>
-						<span class= "text-danger" >
+						<span class="text-danger" >
 							<small><b>Hard</b></small>
 						</span>
 					</li>
@@ -818,7 +821,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> The Beatles -	</em> 
 						</small>
-						<span class= "text-warning" >
+						<span class="text-warning" >
 							<small><b>Medium</b></small>
 						</span>
 					</li>
@@ -830,7 +833,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Plain White T's -	</em> 
 						</small>
-						<span class= "text-warning" >
+						<span class="text-warning" >
 							<small><b>Medium</b></small>
 						</span>
 					</li>
@@ -842,7 +845,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> OutKast -	</em> 
 						</small>
-						<span class= "text-warning" >
+						<span class="text-warning" >
 							<small><b>Medium</b></small>
 						</span>
 					</li>
@@ -854,7 +857,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> AC/DC -	</em> 
 						</small>
-						<span class= "text-warning" >
+						<span class="text-warning" >
 							<small><b>Medium</b></small>
 						</span>
 					</li>
@@ -866,7 +869,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Britney Spears -	</em> 
 						</small>
-						<span class= "text-warning" >
+						<span class="text-warning" >
 							<small><b>Medium</b></small>
 						</span>
 					</li>
@@ -878,7 +881,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Ray Charles -	</em> 
 						</small>
-						<span class= "text-danger" >
+						<span class="text-danger" >
 							<small><b>Hard</b></small>
 						</span>
 					</li>
@@ -890,7 +893,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> The Lumineers -	</em> 
 						</small>
-						<span class= "text-success" >
+						<span class="text-success" >
 							<small><b>Easy</b></small>
 						</span>
 					</li>
@@ -902,7 +905,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Eagles -	</em> 
 						</small>
-						<span class= "text-warning" >
+						<span class="text-warning" >
 							<small><b>Medium</b></small>
 						</span>
 					</li>
@@ -914,7 +917,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Twenty One Pilots -	</em> 
 						</small>
-						<span class= "text-warning" >
+						<span class="text-warning" >
 							<small><b>Medium</b></small>
 						</span>
 					</li>
@@ -926,7 +929,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> The Animals -	</em> 
 						</small>
-						<span class= "text-warning" >
+						<span class="text-warning" >
 							<small><b>Medium</b></small>
 						</span>
 					</li>
@@ -938,7 +941,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Nickelback -	</em> 
 						</small>
-						<span class= "text-success" >
+						<span class="text-success" >
 							<small><b>Easy</b></small>
 						</span>
 					</li>
@@ -950,7 +953,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Marvin Gaye -	</em> 
 						</small>
-						<span class= "text-success" >
+						<span class="text-success" >
 							<small><b>Easy</b></small>
 						</span>
 					</li>
@@ -962,7 +965,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> U2 -	</em> 
 						</small>
-						<span class= "text-success" >
+						<span class="text-success" >
 							<small><b>Easy</b></small>
 						</span>
 					</li>
@@ -974,7 +977,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> The Jungle Book -	</em> 
 						</small>
-						<span class= "text-warning" >
+						<span class="text-warning" >
 							<small><b>Medium</b></small>
 						</span>
 					</li>
@@ -986,7 +989,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Backstreet Boys -	</em> 
 						</small>
-						<span class= "text-danger" >
+						<span class="text-danger" >
 							<small><b>Hard</b></small>
 						</span>
 					</li>
@@ -998,7 +1001,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Queen -	</em> 
 						</small>
-						<span class= "text-success" >
+						<span class="text-success" >
 							<small><b>Easy</b></small>
 						</span>
 					</li>
@@ -1010,7 +1013,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Kiss -	</em> 
 						</small>
-						<span class= "text-warning" >
+						<span class="text-warning" >
 							<small><b>Medium</b></small>
 						</span>
 					</li>
@@ -1022,7 +1025,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Gloria Gaynor -	</em> 
 						</small>
-						<span class= "text-warning" >
+						<span class="text-warning" >
 							<small><b>Medium</b></small>
 						</span>
 					</li>
@@ -1034,7 +1037,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> The Rembrandts -	</em> 
 						</small>
-						<span class= "text-warning" >
+						<span class="text-warning" >
 							<small><b>Medium</b></small>
 						</span>
 					</li>
@@ -1046,7 +1049,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> The Monkees -	</em> 
 						</small>
-						<span class= "text-warning" >
+						<span class="text-warning" >
 							<small><b>Medium</b></small>
 						</span>
 					</li>
@@ -1058,7 +1061,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Jason Mraz -	</em> 
 						</small>
-						<span class= "text-success" >
+						<span class="text-success" >
 							<small><b>Easy</b></small>
 						</span>
 					</li>
@@ -1070,7 +1073,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> John Lennon -	</em> 
 						</small>
-						<span class= "text-warning" >
+						<span class="text-warning" >
 							<small><b>Medium</b></small>
 						</span>
 					</li>
@@ -1082,7 +1085,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Mungo Jerry -	</em> 
 						</small>
-						<span class= "text-success" >
+						<span class="text-success" >
 							<small><b>Easy</b></small>
 						</span>
 					</li>
@@ -1094,7 +1097,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Bon Jovi -	</em> 
 						</small>
-						<span class= "text-warning" >
+						<span class="text-warning" >
 							<small><b>Medium</b></small>
 						</span>
 					</li>
@@ -1106,7 +1109,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Bob Marley -	</em> 
 						</small>
-						<span class= "text-warning" >
+						<span class="text-warning" >
 							<small><b>Medium</b></small>
 						</span>
 					</li>
@@ -1118,7 +1121,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Dolly Parton -	</em> 
 						</small>
-						<span class= "text-warning" >
+						<span class="text-warning" >
 							<small><b>Medium</b></small>
 						</span>
 					</li>
@@ -1130,7 +1133,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Radiohead -	</em> 
 						</small>
-						<span class= "text-warning" >
+						<span class="text-warning" >
 							<small><b>Medium</b></small>
 						</span>
 					</li>
@@ -1142,7 +1145,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> MGMT -	</em> 
 						</small>
-						<span class= "text-success" >
+						<span class="text-success" >
 							<small><b>Easy</b></small>
 						</span>
 					</li>
@@ -1154,7 +1157,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Roberta Flack -	</em> 
 						</small>
-						<span class= "text-warning" >
+						<span class="text-warning" >
 							<small><b>Medium</b></small>
 						</span>
 					</li>
@@ -1166,7 +1169,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Bob Dylan -	</em> 
 						</small>
-						<span class= "text-success" >
+						<span class="text-success" >
 							<small><b>Easy</b></small>
 						</span>
 					</li>
@@ -1178,7 +1181,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Ritchie Valens -	</em> 
 						</small>
-						<span class= "text-success" >
+						<span class="text-success" >
 							<small><b>Easy</b></small>
 						</span>
 					</li>
@@ -1190,7 +1193,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Louis Armstrong -	</em> 
 						</small>
-						<span class= "text-warning" >
+						<span class="text-warning" >
 							<small><b>Medium</b></small>
 						</span>
 					</li>
@@ -1202,7 +1205,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Bruno Mars -	</em> 
 						</small>
-						<span class= "text-success" >
+						<span class="text-success" >
 							<small><b>Easy</b></small>
 						</span>
 					</li>
@@ -1214,7 +1217,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Fools Garden -	</em> 
 						</small>
-						<span class= "text-warning" >
+						<span class="text-warning" >
 							<small><b>Medium</b></small>
 						</span>
 					</li>
@@ -1226,7 +1229,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Passenger -	</em> 
 						</small>
-						<span class= "text-warning" >
+						<span class="text-warning" >
 							<small><b>Medium</b></small>
 						</span>
 					</li>
@@ -1238,7 +1241,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> The Beatles -	</em> 
 						</small>
-						<span class= "text-warning" >
+						<span class="text-warning" >
 							<small><b>Medium</b></small>
 						</span>
 					</li>
@@ -1250,7 +1253,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> The Doors -	</em> 
 						</small>
-						<span class= "text-warning" >
+						<span class="text-warning" >
 							<small><b>Medium</b></small>
 						</span>
 					</li>
@@ -1262,7 +1265,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> The Tokens -	</em> 
 						</small>
-						<span class= "text-success" >
+						<span class="text-success" >
 							<small><b>Easy</b></small>
 						</span>
 					</li>
@@ -1274,7 +1277,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Mumford and Sons -	</em> 
 						</small>
-						<span class= "text-success" >
+						<span class="text-success" >
 							<small><b>Easy</b></small>
 						</span>
 					</li>
@@ -1286,7 +1289,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> R.E.M. -	</em> 
 						</small>
-						<span class= "text-warning" >
+						<span class="text-warning" >
 							<small><b>Medium</b></small>
 						</span>
 					</li>
@@ -1298,7 +1301,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Queen -	</em> 
 						</small>
-						<span class= "text-warning" >
+						<span class="text-warning" >
 							<small><b>Medium</b></small>
 						</span>
 					</li>
@@ -1310,7 +1313,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> The Beatles -	</em> 
 						</small>
-						<span class= "text-danger" >
+						<span class="text-danger" >
 							<small><b>Hard</b></small>
 						</span>
 					</li>
@@ -1322,7 +1325,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Gary Jules -	</em> 
 						</small>
-						<span class= "text-success" >
+						<span class="text-success" >
 							<small><b>Easy</b></small>
 						</span>
 					</li>
@@ -1334,7 +1337,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> ABBA -	</em> 
 						</small>
-						<span class= "text-danger" >
+						<span class="text-danger" >
 							<small><b>Hard</b></small>
 						</span>
 					</li>
@@ -1346,7 +1349,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Blondie -	</em> 
 						</small>
-						<span class= "text-success" >
+						<span class="text-success" >
 							<small><b>Easy</b></small>
 						</span>
 					</li>
@@ -1358,7 +1361,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Stereophonics -	</em> 
 						</small>
-						<span class= "text-success" >
+						<span class="text-success" >
 							<small><b>Easy</b></small>
 						</span>
 					</li>
@@ -1370,7 +1373,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> The Killers -	</em> 
 						</small>
-						<span class= "text-success" >
+						<span class="text-success" >
 							<small><b>Easy</b></small>
 						</span>
 					</li>
@@ -1382,7 +1385,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> The Temptations -	</em> 
 						</small>
-						<span class= "text-warning" >
+						<span class="text-warning" >
 							<small><b>Medium</b></small>
 						</span>
 					</li>
@@ -1394,7 +1397,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Celine Dion -	</em> 
 						</small>
-						<span class= "text-success" >
+						<span class="text-success" >
 							<small><b>Easy</b></small>
 						</span>
 					</li>
@@ -1406,7 +1409,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Arctic Monkeys -	</em> 
 						</small>
-						<span class= "text-warning" >
+						<span class="text-warning" >
 							<small><b>Medium</b></small>
 						</span>
 					</li>
@@ -1418,7 +1421,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Bob Marley -	</em> 
 						</small>
-						<span class= "text-success" >
+						<span class="text-success" >
 							<small><b>Easy</b></small>
 						</span>
 					</li>
@@ -1430,7 +1433,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Red Hot Chili Peppers -	</em> 
 						</small>
-						<span class= "text-success" >
+						<span class="text-success" >
 							<small><b>Easy</b></small>
 						</span>
 					</li>
@@ -1442,7 +1445,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> The Doors -	</em> 
 						</small>
-						<span class= "text-success" >
+						<span class="text-success" >
 							<small><b>Easy</b></small>
 						</span>
 					</li>
@@ -1454,7 +1457,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Beirut -	</em> 
 						</small>
-						<span class= "text-warning" >
+						<span class="text-warning" >
 							<small><b>Medium</b></small>
 						</span>
 					</li>
@@ -1466,7 +1469,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Talking Heads -	</em> 
 						</small>
-						<span class= "text-danger" >
+						<span class="text-danger" >
 							<small><b>Hard</b></small>
 						</span>
 					</li>
@@ -1478,7 +1481,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Foster The People -	</em> 
 						</small>
-						<span class= "text-success" >
+						<span class="text-success" >
 							<small><b>Easy</b></small>
 						</span>
 					</li>
@@ -1490,7 +1493,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> B J Thomas -	</em> 
 						</small>
-						<span class= "text-danger" >
+						<span class="text-danger" >
 							<small><b>Hard</b></small>
 						</span>
 					</li>
@@ -1502,7 +1505,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Johnny Cash -	</em> 
 						</small>
-						<span class= "text-success" >
+						<span class="text-success" >
 							<small><b>Easy</b></small>
 						</span>
 					</li>
@@ -1514,7 +1517,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Vance Joy -	</em> 
 						</small>
-						<span class= "text-success" >
+						<span class="text-success" >
 							<small><b>Easy</b></small>
 						</span>
 					</li>
@@ -1526,7 +1529,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Adelle -	</em> 
 						</small>
-						<span class= "text-success" >
+						<span class="text-success" >
 							<small><b>Easy</b></small>
 						</span>
 					</li>
@@ -1538,7 +1541,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Rod Stewart -	</em> 
 						</small>
-						<span class= "text-warning" >
+						<span class="text-warning" >
 							<small><b>Medium</b></small>
 						</span>
 					</li>
@@ -1550,7 +1553,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Krakow Street Band -	</em> 
 						</small>
-						<span class= "text-success" >
+						<span class="text-success" >
 							<small><b>Easy</b></small>
 						</span>
 					</li>
@@ -1562,7 +1565,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Taylor Swift -	</em> 
 						</small>
-						<span class= "text-success" >
+						<span class="text-success" >
 							<small><b>Easy</b></small>
 						</span>
 					</li>
@@ -1574,7 +1577,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> The Beatles -	</em> 
 						</small>
-						<span class= "text-warning" >
+						<span class="text-warning" >
 							<small><b>Medium</b></small>
 						</span>
 					</li>
@@ -1586,7 +1589,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> REM -	</em> 
 						</small>
-						<span class= "text-warning" >
+						<span class="text-warning" >
 							<small><b>Medium</b></small>
 						</span>
 					</li>
@@ -1598,7 +1601,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Red Hot Chili Peppers -	</em> 
 						</small>
-						<span class= "text-warning" >
+						<span class="text-warning" >
 							<small><b>Medium</b></small>
 						</span>
 					</li>
@@ -1610,7 +1613,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Jefferson Airplane -	</em> 
 						</small>
-						<span class= "text-warning" >
+						<span class="text-warning" >
 							<small><b>Medium</b></small>
 						</span>
 					</li>
@@ -1622,7 +1625,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Arlen and Harburg -	</em> 
 						</small>
-						<span class= "text-warning" >
+						<span class="text-warning" >
 							<small><b>Medium</b></small>
 						</span>
 					</li>
@@ -1634,7 +1637,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Paul Simon -	</em> 
 						</small>
-						<span class= "text-warning" >
+						<span class="text-warning" >
 							<small><b>Medium</b></small>
 						</span>
 					</li>
@@ -1646,7 +1649,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> David Bowie -	</em> 
 						</small>
-						<span class= "text-danger" >
+						<span class="text-danger" >
 							<small><b>Hard</b></small>
 						</span>
 					</li>
@@ -1658,7 +1661,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Ben E King -	</em> 
 						</small>
-						<span class= "text-success" >
+						<span class="text-success" >
 							<small><b>Easy</b></small>
 						</span>
 					</li>
@@ -1670,7 +1673,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Sam Smith -	</em> 
 						</small>
-						<span class= "text-success" >
+						<span class="text-success" >
 							<small><b>Easy</b></small>
 						</span>
 					</li>
@@ -1682,7 +1685,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> John Travolta & Olivia Newton-John -	</em> 
 						</small>
-						<span class= "text-danger" >
+						<span class="text-danger" >
 							<small><b>Hard</b></small>
 						</span>
 					</li>
@@ -1694,7 +1697,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Laid Back -	</em> 
 						</small>
-						<span class= "text-success" >
+						<span class="text-success" >
 							<small><b>Easy</b></small>
 						</span>
 					</li>
@@ -1706,7 +1709,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Neil Diamond -	</em> 
 						</small>
-						<span class= "text-warning" >
+						<span class="text-warning" >
 							<small><b>Medium</b></small>
 						</span>
 					</li>
@@ -1718,7 +1721,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Guns & Roses -	</em> 
 						</small>
-						<span class= "text-warning" >
+						<span class="text-warning" >
 							<small><b>Medium</b></small>
 						</span>
 					</li>
@@ -1730,7 +1733,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Eurythmics -	</em> 
 						</small>
-						<span class= "text-success" >
+						<span class="text-success" >
 							<small><b>Easy</b></small>
 						</span>
 					</li>
@@ -1742,7 +1745,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> John Denver -	</em> 
 						</small>
-						<span class= "text-warning" >
+						<span class="text-warning" >
 							<small><b>Medium</b></small>
 						</span>
 					</li>
@@ -1754,7 +1757,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Franz Ferdinand -	</em> 
 						</small>
-						<span class= "text-warning" >
+						<span class="text-warning" >
 							<small><b>Medium</b></small>
 						</span>
 					</li>
@@ -1766,7 +1769,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Aha -	</em> 
 						</small>
-						<span class= "text-warning" >
+						<span class="text-warning" >
 							<small><b>Medium</b></small>
 						</span>
 					</li>
@@ -1778,7 +1781,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Blur -	</em> 
 						</small>
-						<span class= "text-warning" >
+						<span class="text-warning" >
 							<small><b>Medium</b></small>
 						</span>
 					</li>
@@ -1790,7 +1793,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Europe -	</em> 
 						</small>
-						<span class= "text-warning" >
+						<span class="text-warning" >
 							<small><b>Medium</b></small>
 						</span>
 					</li>
@@ -1802,7 +1805,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> David Bowie -	</em> 
 						</small>
-						<span class= "text-warning" >
+						<span class="text-warning" >
 							<small><b>Medium</b></small>
 						</span>
 					</li>
@@ -1814,7 +1817,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Coldplay -	</em> 
 						</small>
-						<span class= "text-success" >
+						<span class="text-success" >
 							<small><b>Easy</b></small>
 						</span>
 					</li>
@@ -1826,7 +1829,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> The Smiths -	</em> 
 						</small>
-						<span class= "text-danger" >
+						<span class="text-danger" >
 							<small><b>Hard</b></small>
 						</span>
 					</li>
@@ -1838,7 +1841,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Nancy Sinatra -	</em> 
 						</small>
-						<span class= "text-success" >
+						<span class="text-success" >
 							<small><b>Easy</b></small>
 						</span>
 					</li>
@@ -1850,7 +1853,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Ed Sheeran -	</em> 
 						</small>
-						<span class= "text-danger" >
+						<span class="text-danger" >
 							<small><b>Hard</b></small>
 						</span>
 					</li>
@@ -1862,7 +1865,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> The Smiths -	</em> 
 						</small>
-						<span class= "text-warning" >
+						<span class="text-warning" >
 							<small><b>Medium</b></small>
 						</span>
 					</li>
@@ -1874,7 +1877,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Bob Marley and the Wailers -	</em> 
 						</small>
-						<span class= "text-success" >
+						<span class="text-success" >
 							<small><b>Easy</b></small>
 						</span>
 					</li>
@@ -1886,7 +1889,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Foo Fighters -	</em> 
 						</small>
-						<span class= "text-success" >
+						<span class="text-success" >
 							<small><b>Easy</b></small>
 						</span>
 					</li>
@@ -1898,7 +1901,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Britney Spears -	</em> 
 						</small>
-						<span class= "text-success" >
+						<span class="text-success" >
 							<small><b>Easy</b></small>
 						</span>
 					</li>
@@ -1910,7 +1913,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> System Of A Down -	</em> 
 						</small>
-						<span class= "text-warning" >
+						<span class="text-warning" >
 							<small><b>Medium</b></small>
 						</span>
 					</li>
@@ -1922,7 +1925,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> The Beatles -	</em> 
 						</small>
-						<span class= "text-success" >
+						<span class="text-success" >
 							<small><b>Easy</b></small>
 						</span>
 					</li>
@@ -1934,7 +1937,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Queen & David Bowie -	</em> 
 						</small>
-						<span class= "text-danger" >
+						<span class="text-danger" >
 							<small><b>Hard</b></small>
 						</span>
 					</li>
@@ -1946,7 +1949,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Kings Of Leon -	</em> 
 						</small>
-						<span class= "text-success" >
+						<span class="text-success" >
 							<small><b>Easy</b></small>
 						</span>
 					</li>
@@ -1958,7 +1961,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Amy Winehouse -	</em> 
 						</small>
-						<span class= "text-success" >
+						<span class="text-success" >
 							<small><b>Easy</b></small>
 						</span>
 					</li>
@@ -1970,7 +1973,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Avicii -	</em> 
 						</small>
-						<span class= "text-success" >
+						<span class="text-success" >
 							<small><b>Easy</b></small>
 						</span>
 					</li>
@@ -1982,7 +1985,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> 4 Non Blondes -	</em> 
 						</small>
-						<span class= "text-success" >
+						<span class="text-success" >
 							<small><b>Easy</b></small>
 						</span>
 					</li>
@@ -1994,7 +1997,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Pixies -	</em> 
 						</small>
-						<span class= "text-warning" >
+						<span class="text-warning" >
 							<small><b>Medium</b></small>
 						</span>
 					</li>
@@ -2006,7 +2009,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> The Offspring -	</em> 
 						</small>
-						<span class= "text-success" >
+						<span class="text-success" >
 							<small><b>Easy</b></small>
 						</span>
 					</li>
@@ -2018,7 +2021,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Chris Isaak -	</em> 
 						</small>
-						<span class= "text-success" >
+						<span class="text-success" >
 							<small><b>Easy</b></small>
 						</span>
 					</li>
@@ -2030,7 +2033,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Pink Floyd -	</em> 
 						</small>
-						<span class= "text-warning" >
+						<span class="text-warning" >
 							<small><b>Medium</b></small>
 						</span>
 					</li>
@@ -2042,7 +2045,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Oasis -	</em> 
 						</small>
-						<span class= "text-warning" >
+						<span class="text-warning" >
 							<small><b>Medium</b></small>
 						</span>
 					</li>
@@ -2054,7 +2057,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Coldplay -	</em> 
 						</small>
-						<span class= "text-success" >
+						<span class="text-success" >
 							<small><b>Easy</b></small>
 						</span>
 					</li>
@@ -2066,7 +2069,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Johnny Cash -	</em> 
 						</small>
-						<span class= "text-success" >
+						<span class="text-success" >
 							<small><b>Easy</b></small>
 						</span>
 					</li>
@@ -2078,7 +2081,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Amy Winehouse -	</em> 
 						</small>
-						<span class= "text-warning" >
+						<span class="text-warning" >
 							<small><b>Medium</b></small>
 						</span>
 					</li>
@@ -2090,7 +2093,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Imany -	</em> 
 						</small>
-						<span class= "text-success" >
+						<span class="text-success" >
 							<small><b>Easy</b></small>
 						</span>
 					</li>
@@ -2102,7 +2105,7 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> The Cranberries -	</em> 
 						</small>
-						<span class= "text-success" >
+						<span class="text-success" >
 							<small><b>Easy</b></small>
 						</span>
 					</li>
@@ -2117,9 +2120,9 @@ ul { list-style: none; padding-left: 0px; }
     <div class="m-2 my-4 text-center">
         <img src="/images/qrcode.png" class="img-fluid" alt="QR Code" width="200">
     </div>
-	<div class="m-2 my-4 text-center"><li><a href="archive/archive.html">Archiwum</a></li>
+	<!--<div class="m-2 my-4 text-center"><li><a href="archive/archive.html">Archiwum</a></li>
 	<li><a href="new/test.html">Test</a></li>
-	</div>
+	</div>-->
 
 
 </div>
@@ -2131,16 +2134,16 @@ ul { list-style: none; padding-left: 0px; }
 		const toggleButtons = document.querySelectorAll('.toggle-button');
 		const savedState = JSON.parse(sessionStorage.getItem('buttonState'));
 		const songsList = document.getElementById('songs'); // ID twojej listy piosenek
-		console.log('Zachowane stany przycisk贸w: ', savedState);
+		console.log('Zachowane stany przyciskow: ', savedState);
 		if (savedState === null) {
-			// Je艣li savedState jest null, oznacz wszystkie przyciski jako aktywne
+			// Jesli savedState jest null, oznacz wszystkie przyciski jako aktywne
 			toggleButtons.forEach(button => {
 				if (button.name !== 'New') {
 					button.classList.add('active');
 				}
 			});
 		} else {
-			// W przeciwnym razie odczytaj stan przycisk贸w z sessionStorage
+			// W przeciwnym razie odczytaj stan przyciskow z sessionStorage
 			toggleButtons.forEach(button => {
 				if (button.name !== 'New') {
 					if (savedState.includes(button.name)) {
@@ -2151,12 +2154,13 @@ ul { list-style: none; padding-left: 0px; }
 		}
 	
 		toggleButtons.forEach(button => {
-			// Dla przycisk贸w wszystkich bez wyj膮tku
+			// Dla przyciskow wszystkich bez wyjatku
 			button.addEventListener('click', () => {
 				button.classList.toggle('active');
-				console.log('zmiana stany przycisk贸w: ', button.name);
+				console.log('zmiana stany przyciskow: ', button.name);
 				filterSongs();
 				saveButtonState();
+				document.getElementById('virtual-click-area').click();
 			});
 		});
 		toggleButtons.forEach(button => {
@@ -2185,8 +2189,11 @@ ul { list-style: none; padding-left: 0px; }
 				});
 			});
 		}
+		// Dodaj nasłuchiwanie na wirtualnym elemencie
+        document.getElementById('virtual-click-area').addEventListener('click', () => {
+            console.log('Wirtualny obiekt został kliknięty!');
+		});
 	});
-
 </script>
 <script>
     document.addEventListener('DOMContentLoaded', () => {
@@ -2201,18 +2208,11 @@ ul { list-style: none; padding-left: 0px; }
 
         sortByTitleButton.addEventListener('click', () => {
             sortByTitle();
-            sortByArtistButton.classList.remove('active'); // Wy艂膮cz drugi przycisk
+            sortByArtistButton.classList.remove('active'); // Wylacz drugi przycisk
             sortByTitleButton.classList.add('active'); // Zaznacz pierwszy przycisk
 			var s_variant=true;
-			// Aktualizuj wartości w infoBox
-			document.getElementById('sorting method').textContent = 'sort by title: ' + s_variant;
-			myArtElements.forEach(element => {
-				element.classList.remove('bold-text'); // Dodaj klasę "bold-text" do każdego elementu
-			});	
-			myLevElements.forEach(element => {
-				element.classList.remove('italic-text');
-			});
-
+			// Aktualizuj wartości w infoBox ROBOCZO
+			//document.getElementById('sorting method').textContent = 'sort by title: ' + s_variant;
         });
 
         sortByArtistButton.addEventListener('click', () => {
@@ -2220,14 +2220,8 @@ ul { list-style: none; padding-left: 0px; }
             sortByTitleButton.classList.remove('active'); // Wy艂膮cz pierwszy przycisk
             sortByArtistButton.classList.add('active'); // Zaznacz drugi przycisk
 			s_variant=false;
-			// Aktualizuj wartości w infoBox
-			document.getElementById('sorting method').textContent = 'sort by title: ' + s_variant;
-			myArtElements.forEach(element => {
-				element.classList.add('bold-text'); // Dodaj klasę "bold-text" do każdego elementu
-			});
-			myLevElements.forEach(element => {
-				element.classList.add('italic-text'); // Dodaj klasę "bold-text" do każdego elementu
-			});
+			// Aktualizuj wartości w infoBox ROBOCZO
+			//document.getElementById('sorting method').textContent = 'sort by title: ' + s_variant;
         });
 		
         function sortByTitle() {
@@ -2240,19 +2234,20 @@ ul { list-style: none; padding-left: 0px; }
 				nameB = nameB.replace(/^🔥/i, '');
 				nameA = nameA.replace(/^🎂/i, '');
 				nameB = nameB.replace(/^🎂/i, '');
-				// Por贸wnaj nazwy
+				// Porównaj nazwy
 				return nameA.localeCompare(nameB);
 				
-				// Wy艣wietl warto艣ci artyst贸w w konsoli
-				console.log('Title A:', nameA);
-				console.log('Title B:', nameB);
+				// Wyświetl wartotci artystów w konsoli
+				//console.log('Title A:', nameA);
+				//console.log('Title B:', nameB);
 				
                 return nameA.localeCompare(nameB);
 				
             });
-			songsList.innerHTML = ''; // Wyczy艣膰 list臋
+			songsList.innerHTML = ''; // Wyczysc liste
 			sortedSongs.forEach(song => songsList.appendChild(song));
-			var allLiElements = document.querySelectorAll('li'); // Pobierz wszystkie elementy <li>
+			
+			var allLiElements = document.querySelectorAll('li'); // Pobierz wszystkie elementy <li>. Uwaga! nie może istnieć inny element typu <li>
 			allLiElements.forEach(function (myLi) {
 				var EmElement = myLi.querySelector('em');
 				var anchorElement = myLi.querySelector('a'); // Pobierz element <a>
@@ -2264,22 +2259,27 @@ ul { list-style: none; padding-left: 0px; }
 			const sortedSongs = Array.from(songsList.querySelectorAll('li'))
 				.sort((a, b) => {
 					var artistA = a.querySelector('em').textContent;
-					artistA = artistA.replace(/^by The\s+/i, '');
-					artistA = artistA.replace(/^by\s+/i, '');
+					artistA = artistA.replace(/^\s*The\s+/i, ''); //usuwanie śmieci napotrzeby sotowania
+					artistA = artistA.replace(/^\s+/, ''); 
+					//console.log('artistA : ', artistA);
+					
 					var artistB = b.querySelector('em').textContent;
-					artistB = artistB.replace(/^by The\s+/i, '');
-					artistB = artistB.replace(/^by\s+/i, '');
+					artistB = artistB.replace(/^\s*The\s+/i, '');
+					artistB = artistB.replace(/^\s+/, '');
+					//console.log('artistB : ', artistB);
+					
 
 					return artistA.localeCompare(artistB, 'en', { sensitivity: 'base' });
 				});
-			songsList.innerHTML = ''; // Wyczy艣膰 list臋
+			songsList.innerHTML = ''; // Wyczysc liste
 			sortedSongs.forEach(song => songsList.appendChild(song));
 			
 			var allLiElements = document.querySelectorAll('li'); // Pobierz wszystkie elementy <li>
-			allLiElements.forEach(function(myLi) {
-				var SmallEmElement = myLi.querySelector('small em');
-				//spanElement.textContent = spanElement.textContent.replace(/^	by\s+/i, ''); // Usuń "by"
-				//myLi.appendChild(document.createTextNode(' - ')); // Dodaj myślnik na końcu
+			allLiElements.forEach(function(myLi, index) {
+				var SmallEmElement = myLi.querySelector('em');
+				//console.log(`Iteracja ${index}:`, SmallEmElement);
+				//console.log(`Iteracja ${index}:`, myLi.querySelector('a'));
+
 				myLi.insertBefore(SmallEmElement, myLi.querySelector('a'));
 			});
 		}
