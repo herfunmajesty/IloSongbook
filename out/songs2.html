@@ -2166,7 +2166,12 @@ ul { list-style: none; padding-left: 0px; }
 				console.log('zmiana stany przyciskow: ', button.name);
 				filterSongs();
 				saveButtonState();
-				document.getElementById('virtual-click-area').click();
+				// Poczekaj 3 sekundy
+				setTimeout(() => {
+				    // Wywołaj kliknięcie na wirtualnym elemencie
+					document.getElementById('virtual-click-area').click();
+				}, 3000); // 3000 milisekund = 3 sekundy
+
 			});
 		});
 		toggleButtons.forEach(button => {
