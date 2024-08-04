@@ -2169,7 +2169,8 @@ ul { list-style: none; padding-left: 0px; }
 				// Poczekaj 3 sekundy
 				setTimeout(() => {
 				    // Wywołaj kliknięcie na wirtualnym elemencie
-					document.getElementById('virtual-click-area').click();
+				    const virtualClickEvent = new Event('click');
+				    document.getElementById('virtual-click-area').dispatchEvent(virtualClickEvent);
 				}, 3000); // 3000 milisekund = 3 sekundy
 
 			});
