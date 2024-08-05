@@ -2148,8 +2148,9 @@ ul { list-style: none; padding-left: 0px; }
 		toggleButtons.forEach(button => {
 			// Dla przyciskow wszystkich bez wyjatku
 			button.addEventListener('click', () => {
-				// button.classList.toggle('active');
+				button.classList.toggle('active');
 				// console.log('zmiana stany przyciskow: ', button.name);
+				var ButtonChanged = true;
 				const isActive = button.classList.contains('active');
 			        if (isActive) {
 			            button.classList.remove('active'); // Usuń klasę "active"
@@ -2161,6 +2162,16 @@ ul { list-style: none; padding-left: 0px; }
 				saveButtonState();
 			});
 		});
+		if (ButtonChanged) {
+			ButtonChanged = false;
+			toggleButtons.forEach(button => {
+			        if (button.classList.contains('active')) {
+			            button.classList.remove('active'); // Usuń klasę "active"
+			        } else {
+			            button.classList.add('active'); // Dodaj klasę "active"
+			        }
+			}
+		}
 		toggleButtons.forEach(button => {
 			console.log(`Przycisk "${button.name}" jest ${button.classList.contains('active') ? 'aktywny' : 'nieaktywny'}`);
 		});
