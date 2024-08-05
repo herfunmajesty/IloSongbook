@@ -2152,6 +2152,10 @@ ul { list-style: none; padding-left: 0px; }
 				filterSongs();
 				saveButtonState();
 				button.blur();
+				if (not button.classList.contains('active'))){
+					button.disabled = true;
+				}
+				 
 			});
 		});
 		toggleButtons.forEach(button => {
