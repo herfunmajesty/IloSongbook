@@ -1,4 +1,4 @@
-<!doctype html>
+te<!doctype html>
 
 <html lang="en">
 <head>
@@ -2151,7 +2151,7 @@ ul { list-style: none; padding-left: 0px; }
 				button.classList.toggle('active');
 				console.log('zmiana stany przyciskow: ', button.name);
 				// Zaktualizuj stan przycisku w obiekcie buttonStates
-    				buttonStates[button.name] = !buttonStates[button.name];
+    				savedState[button.name] = !savedState[button.name];
 				console.log (' stan przycisku', button.name, buttonStates[button.name])
 				filterSongs();
 				saveButtonState();
