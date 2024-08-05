@@ -2148,7 +2148,7 @@ ul { list-style: none; padding-left: 0px; }
 			// Dla przyciskow wszystkich bez wyjatku
 			button.addEventListener('click', () => {
 				const isPressed = button.getAttribute('aria-pressed') === 'true';
-				//button.classList.toggle('active');
+				button.classList.toggle('active');
 				button.setAttribute('aria-pressed', isPressed ? 'false' : 'true');
 				// console.log('zmiana stany przyciskow: ', button.name);
 				const isActive = button.classList.contains('active');
