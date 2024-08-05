@@ -2151,18 +2151,19 @@ ul { list-style: none; padding-left: 0px; }
 				button.classList.toggle('active');
 				// console.log('zmiana stany przyciskow: ', button.name);
 				var ButtonChanged = true;
-				const isActive = button.classList.contains('active');
-			        if (isActive) {
-			            button.classList.remove('active'); // Usuń klasę "active"
-			        } else {
-			            button.classList.add('active'); // Dodaj klasę "active"
-			        }
+				//const isActive = button.classList.contains('active');
+			        //if (isActive) {
+			        //    button.classList.remove('active'); // Usuń klasę "active"
+			        //} else {
+			        //    button.classList.add('active'); // Dodaj klasę "active"
+			        //}
 				console.log(`Zmiana stanu przycisku ${button.name}: ${isActive ? 'wyłączony' : 'włączony'}`);
 				filterSongs();
 				saveButtonState();
 			});
 		});
 		if (ButtonChanged) {
+			console.log(`Zmiana stanów`);
 			ButtonChanged = false;
 			toggleButtons.forEach(button => {
 			        if (button.classList.contains('active')) {
@@ -2170,7 +2171,7 @@ ul { list-style: none; padding-left: 0px; }
 			        } else {
 			            button.classList.add('active'); // Dodaj klasę "active"
 			        }
-			}
+			});
 		}
 		toggleButtons.forEach(button => {
 			console.log(`Przycisk "${button.name}" jest ${button.classList.contains('active') ? 'aktywny' : 'nieaktywny'}`);
