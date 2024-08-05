@@ -2152,7 +2152,7 @@ ul { list-style: none; padding-left: 0px; }
 				console.log('zmiana stany przyciskow: ', button.name);
 				// Zaktualizuj stan przycisku w obiekcie buttonStates
     				savedState[button.name] = !savedState[button.name];
-				console.log (' stan przycisku', button.name, buttonStates[button.name])
+				console.log (' stan przycisku', button.name, savedState[button.name])
 				filterSongs();
 				saveButtonState();
 			});
