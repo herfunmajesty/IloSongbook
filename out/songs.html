@@ -2151,12 +2151,7 @@ ul { list-style: none; padding-left: 0px; }
 				console.log(`Zmiana stanu przycisku ${button.name}: ${button.classList.contains('active') ? 'włączony' : 'wyłączony'}`);
 				filterSongs();
 				saveButtonState();
-				button.blur();
-				if (button.classList.contains('active') === false){
-					button.disabled = true;
-					button.disabled = false;
-				}
-				 
+				button.blur(); 
 			});
 		});
 		toggleButtons.forEach(button => {
