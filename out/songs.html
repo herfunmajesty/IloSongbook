@@ -2150,11 +2150,9 @@ ul { list-style: none; padding-left: 0px; }
 			button.addEventListener('click', () => {
 				button.classList.toggle('active');
 				console.log('zmiana stany przyciskow: ', button.name);
-				// Zaktualizuj stan przycisku w obiekcie buttonStates
-    				savedState[button.name] = !savedState[button.name];
-				console.log (' stan przycisku', button.name, savedState[button.name])
 				filterSongs();
 				saveButtonState();
+				console.log('Stan przycisku ', button.name, savedState[button.name]);
 			});
 		});
 		toggleButtons.forEach(button => {
