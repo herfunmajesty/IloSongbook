@@ -2156,6 +2156,7 @@ ul { list-style: none; padding-left: 0px; }
 			        } else {
 			            button.classList.add('active'); // Dodaj klasę "active"
 			        }
+				console.log(`Zmiana stanu przycisku ${button.name}: ${isActive ? 'wyłączony' : 'włączony'}`);
 				filterSongs();
 				saveButtonState();
 			});
