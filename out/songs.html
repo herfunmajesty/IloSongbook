@@ -2148,7 +2148,7 @@ ul { list-style: none; padding-left: 0px; }
 			// Dla przyciskow wszystkich bez wyjatku
 			button.addEventListener('click', () => {
 				button.classList.toggle('active');
-				console.log(`Zmiana stanu przycisku ${button.name}: ${button.classList.contains('active') ? 'wyłączony' : 'włączony'}`);
+				console.log(`Zmiana stanu przycisku ${button.name}: ${button.classList.contains('active') ? 'włączony' : 'wyłączony'}`);
 				filterSongs();
 				saveButtonState();
 			});
