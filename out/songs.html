@@ -2165,9 +2165,9 @@ ul { list-style: none; padding-left: 0px; }
 			console.log(`Zmiana stanów`);
 			toggleButtons.forEach(button => {
 			        if (button.classList.contains('active')) {
-			            button.classList.remove('active'); // Usuń klasę "active"
+			            button.classList.add('active'); // Usuń klasę "active"
 			        } else {
-			            button.classList.add('active'); // Dodaj klasę "active"
+			            button.classList.remove('active'); // Dodaj klasę "active"
 			        }
 			});
 		}
