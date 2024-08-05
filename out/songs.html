@@ -2144,13 +2144,11 @@ ul { list-style: none; padding-left: 0px; }
 				}
 			});
 		}
-		var ButtonChanged;
 		toggleButtons.forEach(button => {
 			// Dla przyciskow wszystkich bez wyjatku
 			button.addEventListener('click', () => {
 				button.classList.toggle('active');
 				// console.log('zmiana stany przyciskow: ', button.name);
-				ButtonChanged = true;
 				const isActive = button.classList.contains('active');
 			        //if (isActive) {
 			        //    button.classList.remove('active'); // Usuń klasę "active"
@@ -2160,11 +2158,11 @@ ul { list-style: none; padding-left: 0px; }
 				console.log(`Zmiana stanu przycisku ${button.name}: ${isActive ? 'wyłączony' : 'włączony'}`);
 				filterSongs();
 				saveButtonState();
+				UpdateButtons();
 			});
 		});
-		if (ButtonChanged) {
+		function UpdateButtons () {
 			console.log(`Zmiana stanów`);
-			ButtonChanged = false;
 			toggleButtons.forEach(button => {
 			        if (button.classList.contains('active')) {
 			            button.classList.remove('active'); // Usuń klasę "active"
