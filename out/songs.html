@@ -2144,13 +2144,13 @@ ul { list-style: none; padding-left: 0px; }
 				}
 			});
 		}
-	
+		var ButtonChanged;
 		toggleButtons.forEach(button => {
 			// Dla przyciskow wszystkich bez wyjatku
 			button.addEventListener('click', () => {
 				button.classList.toggle('active');
 				// console.log('zmiana stany przyciskow: ', button.name);
-				var ButtonChanged = true;
+				ButtonChanged = true;
 				//const isActive = button.classList.contains('active');
 			        //if (isActive) {
 			        //    button.classList.remove('active'); // Usuń klasę "active"
