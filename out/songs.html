@@ -2147,32 +2147,12 @@ ul { list-style: none; padding-left: 0px; }
 		toggleButtons.forEach(button => {
 			// Dla przyciskow wszystkich bez wyjatku
 			button.addEventListener('click', () => {
-				const isPressed = button.getAttribute('aria-pressed') === 'true';
 				button.classList.toggle('active');
-				button.setAttribute('aria-pressed', isPressed ? 'false' : 'true');
-				// console.log('zmiana stany przyciskow: ', button.name);
-				const isActive = button.classList.contains('active');
-			        //if (isActive) {
-			        //    button.classList.remove('active'); // Usuń klasę "active"
-			        //} else {
-			        //    button.classList.add('active'); // Dodaj klasę "active"
-			        //}
-				console.log(`Zmiana stanu przycisku ${button.name}: ${isActive ? 'wyłączony' : 'włączony'}`);
+				console.log(`Zmiana stanu przycisku ${button.name}: ${button.classList.contains('active') ? 'wyłączony' : 'włączony'}`);
 				filterSongs();
 				saveButtonState();
-				//UpdateButtons();
 			});
 		});
-		function UpdateButtons () {
-			console.log(`Zmiana stanów`);
-			toggleButtons.forEach(button => {
-			        if (button.classList.contains('active')) {
-			            button.classList.add('active'); // Usuń klasę "active"
-			        } else {
-			            button.classList.remove('active'); // Dodaj klasę "active"
-			        }
-			});
-		}
 		toggleButtons.forEach(button => {
 			console.log(`Przycisk "${button.name}" jest ${button.classList.contains('active') ? 'aktywny' : 'nieaktywny'}`);
 		});
