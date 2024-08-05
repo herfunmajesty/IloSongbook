@@ -2148,8 +2148,14 @@ ul { list-style: none; padding-left: 0px; }
 		toggleButtons.forEach(button => {
 			// Dla przyciskow wszystkich bez wyjatku
 			button.addEventListener('click', () => {
-				button.classList.toggle('active');
-				console.log('zmiana stany przyciskow: ', button.name);
+				// button.classList.toggle('active');
+				// console.log('zmiana stany przyciskow: ', button.name);
+				const isActive = button.classList.contains('active');
+			        if (isActive) {
+			            button.classList.remove('active'); // Usuń klasę "active"
+			        } else {
+			            button.classList.add('active"); // Dodaj klasę "active"
+			        }
 				filterSongs();
 				saveButtonState();
 			});
