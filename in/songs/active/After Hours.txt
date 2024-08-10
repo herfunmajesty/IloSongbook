@@ -3,6 +3,7 @@
 {level: Medium}
 {youtube:fND_Y6OgsDs}
 {spotify:6cA1usDL8nTHeSgFewQat3}
+{d:3.0}
 
 info:
 *key different than in orginal

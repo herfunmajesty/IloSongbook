@@ -1,6 +1,7 @@
 {t:Another Love}
 {artist:Tom Odell}
 {level:Easy}
+{d:4.30}
 
 
 Intro:

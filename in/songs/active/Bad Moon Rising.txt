@@ -2,6 +2,7 @@
 {artist:Creedence}  
 {level:Easy}  
 {youtube:UDK2w9s3gP0}
+{d:3.0}
 
 Intro:
 [C] [G//] [F//] [C] [C]

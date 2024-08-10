@@ -3,7 +3,7 @@
 {artist:Bill Withers}  
 {level:Easy}  
 {spotify:1k1Bqnv2R0uJXQN4u6LKYt}  
-{c: } 
+{d:3.0}
 
 Intro: 
 [Am//] [Em7//] x4 

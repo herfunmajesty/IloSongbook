@@ -1,4 +1,4 @@
-te<!doctype html>
+<!doctype html>
 
 <html lang="en">
 <head>
@@ -29,7 +29,15 @@ ul { list-style: none; padding-left: 0px; }
 	padding: 3px 5px;
 	margin-right: 5px;
 	cursor: pointer;
-}	
+}
+.bold-text {
+    font-weight: bold;
+    font-style: normal; 
+	}
+.italic-text {
+	font-style: italic;
+    font-weight: normal;
+	}	
 </style>
 
 </head>
@@ -2152,6 +2160,7 @@ ul { list-style: none; padding-left: 0px; }
 				console.log('zmiana stany przyciskow: ', button.name);
 				filterSongs();
 				saveButtonState();
+				document.getElementById('virtual-click-area').click();
 			});
 		});
 		toggleButtons.forEach(button => {
@@ -2180,6 +2189,10 @@ ul { list-style: none; padding-left: 0px; }
 				});
 			});
 		}
+		// Dodaj nasłuchiwanie na wirtualnym elemencie
+        document.getElementById('virtual-click-area').addEventListener('click', () => {
+            console.log('Wirtualny obiekt został kliknięty!');
+		});
 	});
 </script>
 <script>

@@ -3,6 +3,7 @@
 {level:Easy}
 {youtube:qrO4YZeyl0I}
 {spotify:0SiywuOBRcynK0uKGWdCnn}
+{d:5.0}
 
 <i>(intro)</i>
 Oh oh oh oh [F/] oh oh oh oh [G/] oh oh oh oh

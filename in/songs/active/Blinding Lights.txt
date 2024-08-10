@@ -2,6 +2,7 @@
 {artist:The Weeknd}  
 {level:Medium}
 {spotify:0VjIjW4GlUZAMYd2vXMi3b}
+{d:4.3}
 
 <span class="mark fw-bold">4 beats per chord
 </span>

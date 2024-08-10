@@ -1,6 +1,7 @@
 {t:🔥Do I Wanna Know}
 {artist:Arctic Monkeys}
 {level:Medium}
+{d:4.4}
 
 * at first it's easier to strum 4 down
  
