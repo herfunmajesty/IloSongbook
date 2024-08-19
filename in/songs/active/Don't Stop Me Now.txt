@@ -2,6 +2,7 @@
 {artist:Queen}  
 {level:Hard}  
 {spotify:5T8EDUDqKcs6OSOwEsfqG7}
+{d: 4.3} 
 
 (slow)
 To[F/]night… I’m gonna have my[Am/]self… a real [Dm/] good time

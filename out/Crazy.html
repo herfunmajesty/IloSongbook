@@ -33,11 +33,19 @@
 			padding: 1px 1px;
 			margin-right: 5px;
 			cursor: pointer;
-		}
+		
+		.div_box {
+			border: 1px solid #aaa;
+			padding: 10px;
+			display: none;
+			}
+			.checkbox:checked + .div_box {
+			display: block;
+			}
     </style>
 
 </head>
-<body data-duration = 4.0>
+<body data-duration = 4.3>
 
 
 <header class="container">
@@ -52,7 +60,7 @@
 <div class="col-lg-8 col-md-10 col-sm-12 my-3">
 
     <h3 class="song-title">
-        #33 Crazy
+        #33 - Crazy
     </h3>
     
     <h5 class="song-artist">
@@ -77,18 +85,19 @@
 
    <div class="mt-4" style="overflow-x: auto;">
     
-        <img src="chords/E7.gif" alt="E7" title="E7" />
-    
         <img src="chords/F.gif" alt="F" title="F" />
-    
-        <img src="chords/Am.gif" alt="Am" title="Am" />
     
         <img src="chords/A.gif" alt="A" title="A" />
     
+        <img src="chords/E7.gif" alt="E7" title="E7" />
+    
         <img src="chords/Cmaj7.gif" alt="Cmaj7" title="Cmaj7" />
     
+        <img src="chords/Am.gif" alt="Am" title="Am" />
+    
 </div>
-	<div id="infoBox" style="position: fixed; right: 20px; top: 20px; border: 1px solid black; padding: 10px;">
+	<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 20px; top: 20px;">Dev info? <input type="checkbox" class="checkbox" onclick="toggleDiv()"> </div>
+	<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px;">
 		<p id="heightInfo" style="font-size: xx-small;"></p>
 		<p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
 		<p id="songDuration" style="font-size: xx-small;"></p>
@@ -100,7 +109,7 @@
 	</div>
     
     <div id="tab">
-          <br/>  <br/><br/><br/><br/><br/>Intro:<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>... <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Cmaj7]</span></span></span></span>... <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span>... <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span>...<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> I remember when… I remember, <br/>I remember when I lost my <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Cmaj7]</span></span></span></span> mind <br/>There was something so pleasant about that plaa<span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span>ce<br/>Even your emotions had an echo, In so much spa<span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span>ce<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> And when you're out there… without care<br/>Yeah, I was out of tou<span class="chord"><span class="chord"><span class="chord"><span class="chord">[Cmaj7]</span></span></span></span>ch<br/>But it wasn't because I didn't know enough <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> <br/>I just knew too <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span> much<br/><br/>Does that make me <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> crazy?<br/>Does that make me <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Cmaj7]</span></span></span></span> crazy??<br/>Does that make me <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> crazy???<br/>Possib<span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span>ly...<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span> And I hope that you are <br/>ha-aving the time of your <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> li-ife...<br/>But think <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Cmaj7]</span></span></span></span> twice... that's my only ad<span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span>vice<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> Come on now who-do-you. Who-do-you, <br/>who-do-you, who do you think you <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Cmaj7]</span></span></span></span> are?<br/>Ha ha ha, bless your so<span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span>ul<br/>You really think you're in con<span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span>trol? <br/><br/>Well, I think you're <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> crazy!<br/>I think you're <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Cmaj7]</span></span></span></span> crazy!!<br/>I think you're <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> crazy!!!<br/>Just like <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span> me-e-e<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span> My heroes had the heart… <br/>to lose their lives out on a <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> limb<br/>And all I re<span class="chord"><span class="chord"><span class="chord"><span class="chord">[Cmaj7]</span></span></span></span>member… is thinking… <br/>I wanna be like <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span> them<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> Ever since I was little… <br/>Ever since I was little it looked like <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Cmaj7]</span></span></span></span> fun<br/>And it's no coincidence I've co-<span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span>-me<br/>And I can die when I'm do<span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span>ne..<br/><br/>Maybe I'm <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> crazy<br/>Maybe you're <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Cmaj7]</span></span></span></span> crazy<br/>Maybe we're <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> crazy<br/>Probably <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span>...<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>... <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Cmaj7]</span></span></span></span>... <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span>... <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span>...<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am/]</span></span></span></span><br/>
+          <br/>  <br/><br/><br/><br/> <br/><br/>Intro:<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>... <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Cmaj7]</span></span></span></span>... <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span>... <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span>...<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> I remember when… I remember, <br/>I remember when I lost my <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Cmaj7]</span></span></span></span> mind <br/>There was something so pleasant about that plaa<span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span>ce<br/>Even your emotions had an echo, In so much spa<span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span>ce<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> And when you're out there… without care<br/>Yeah, I was out of tou<span class="chord"><span class="chord"><span class="chord"><span class="chord">[Cmaj7]</span></span></span></span>ch<br/>But it wasn't because I didn't know enough <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> <br/>I just knew too <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span> much<br/><br/>Does that make me <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> crazy?<br/>Does that make me <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Cmaj7]</span></span></span></span> crazy??<br/>Does that make me <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> crazy???<br/>Possib<span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span>ly...<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span> And I hope that you are <br/>ha-aving the time of your <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> li-ife...<br/>But think <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Cmaj7]</span></span></span></span> twice... that's my only ad<span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span>vice<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> Come on now who-do-you. Who-do-you, <br/>who-do-you, who do you think you <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Cmaj7]</span></span></span></span> are?<br/>Ha ha ha, bless your so<span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span>ul<br/>You really think you're in con<span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span>trol? <br/><br/>Well, I think you're <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> crazy!<br/>I think you're <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Cmaj7]</span></span></span></span> crazy!!<br/>I think you're <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> crazy!!!<br/>Just like <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span> me-e-e<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span> My heroes had the heart… <br/>to lose their lives out on a <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> limb<br/>And all I re<span class="chord"><span class="chord"><span class="chord"><span class="chord">[Cmaj7]</span></span></span></span>member… is thinking… <br/>I wanna be like <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span> them<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> Ever since I was little… <br/>Ever since I was little it looked like <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Cmaj7]</span></span></span></span> fun<br/>And it's no coincidence I've co-<span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span>-me<br/>And I can die when I'm do<span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span>ne..<br/><br/>Maybe I'm <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> crazy<br/>Maybe you're <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Cmaj7]</span></span></span></span> crazy<br/>Maybe we're <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> crazy<br/>Probably <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span>...<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>... <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Cmaj7]</span></span></span></span>... <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span>... <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span>...<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am/]</span></span></span></span><br/>
     </div>
 
     <div id="options" class="mt-4">
@@ -192,6 +201,9 @@ function toggleButton() {
       }
 		height = document.getElementById('tab').clientHeight; //tylko dla infoboxa
 		scrollTimeStep =  scrollDuration / height; 
+		var checkBox = document.querySelector('.checkbox');
+		var devInfo = document.getElementById('infoBox');
+		devInfo.style.display = checkBox.checked ? 'block' : 'none';
 		// Aktualizuj wartości w infoBox
 		document.getElementById('heightInfo').textContent = 'Height: ' + height;
 		document.getElementById('scrollTimeStepInfo').textContent = 'Scroll Time Step: ' + scrollTimeStep.toFixed(1);
@@ -206,5 +218,12 @@ window.addEventListener('beforeunload', function() {
   }
 });
 </script>
+<!--<script>
+  function toggleDiv() {
+    var checkBox = document.querySelector('.checkbox');
+    var devInfo = document.getElementById('infoBox');
+    devInfo.style.display = checkBox.checked ? 'block' : 'none';
+  }
+</script>-->
 </body>
 </html>

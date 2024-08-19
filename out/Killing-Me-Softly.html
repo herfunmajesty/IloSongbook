@@ -33,7 +33,15 @@
 			padding: 1px 1px;
 			margin-right: 5px;
 			cursor: pointer;
-		}
+		
+		.div_box {
+			border: 1px solid #aaa;
+			padding: 10px;
+			display: none;
+			}
+			.checkbox:checked + .div_box {
+			display: block;
+			}
     </style>
 
 </head>
@@ -52,7 +60,7 @@
 <div class="col-lg-8 col-md-10 col-sm-12 my-3">
 
     <h3 class="song-title">
-        #89 Killing Me Softly
+        #89 - Killing Me Softly
     </h3>
     
     <h5 class="song-artist">
@@ -70,26 +78,27 @@
     
         <img src="chords/Em.gif" alt="Em" title="Em" />
     
-        <img src="chords/D.gif" alt="D" title="D" />
-    
-        <img src="chords/D7.gif" alt="D7" title="D7" />
-    
-        <img src="chords/C.gif" alt="C" title="C" />
-    
-        <img src="chords/E7.gif" alt="E7" title="E7" />
+        <img src="chords/A.gif" alt="A" title="A" />
     
         <img src="chords/F.gif" alt="F" title="F" />
     
-        <img src="chords/B.gif" alt="B" title="B" />
+        <img src="chords/E7.gif" alt="E7" title="E7" />
     
         <img src="chords/Am.gif" alt="Am" title="Am" />
     
-        <img src="chords/A.gif" alt="A" title="A" />
+        <img src="chords/D.gif" alt="D" title="D" />
+    
+        <img src="chords/B.gif" alt="B" title="B" />
+    
+        <img src="chords/C.gif" alt="C" title="C" />
     
         <img src="chords/G.gif" alt="G" title="G" />
     
+        <img src="chords/D7.gif" alt="D7" title="D7" />
+    
 </div>
-	<div id="infoBox" style="position: fixed; right: 20px; top: 20px; border: 1px solid black; padding: 10px;">
+	<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 20px; top: 20px;">Dev info? <input type="checkbox" class="checkbox" onclick="toggleDiv()"> </div>
+	<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px;">
 		<p id="heightInfo" style="font-size: xx-small;"></p>
 		<p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
 		<p id="songDuration" style="font-size: xx-small;"></p>
@@ -193,6 +202,9 @@ function toggleButton() {
       }
 		height = document.getElementById('tab').clientHeight; //tylko dla infoboxa
 		scrollTimeStep =  scrollDuration / height; 
+		var checkBox = document.querySelector('.checkbox');
+		var devInfo = document.getElementById('infoBox');
+		devInfo.style.display = checkBox.checked ? 'block' : 'none';
 		// Aktualizuj wartości w infoBox
 		document.getElementById('heightInfo').textContent = 'Height: ' + height;
 		document.getElementById('scrollTimeStepInfo').textContent = 'Scroll Time Step: ' + scrollTimeStep.toFixed(1);
@@ -207,5 +219,12 @@ window.addEventListener('beforeunload', function() {
   }
 });
 </script>
+<!--<script>
+  function toggleDiv() {
+    var checkBox = document.querySelector('.checkbox');
+    var devInfo = document.getElementById('infoBox');
+    devInfo.style.display = checkBox.checked ? 'block' : 'none';
+  }
+</script>-->
 </body>
 </html>

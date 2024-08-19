@@ -1,24 +1,41 @@
 Do zrobienia:
+
 - wyrąbać pliki z _ przed nazwą - niech nowe pliki będą w katalogu new 
-- Kolejne wersje witryny internetowej (może)
-- zmienić aranżację drzewka - aktywne piosenki, folder nowe-nie gotowe i folder archiwum, z usuniętymi i sezonowymi
-- i zaktualizować program do tego :)
-- odklikiwanie fitrów pod mobilne urządzenia, tylko dla lepszej widoczności
-- Zmiana kolejności przy filtrowaniu po artystach a po piosenkach
-- in: songs: active, archive, new; images, chords, templates and out: na zewnatrz index, songs i aktywne piosenki, katalog new i archive
- - poprawić index
- - pomyśleć co zmienić na stronach z ukrytymi zasobami (chodzi o zmodyfikowanie temlatek i to zmienić 
+
+- Kolejne wersje witryny internetowej (może)Damn, nie pamiętam o co mi chodziło
+
+- sprawdzić wyświetlanie tego zółtego infoboxa (w jakiejś piosence przefruwał nad akordami)!!!!
+
+- !!!!odklikiwanie fitrów pod mobilne urządzenia, tylko dla lepszej widoczności
+
+-DONE-  in: songs: active, archive, new; images, chords, templates and out: na zewnatrz index, songs i aktywne piosenki, katalog new i archive
+
+- zmienić index
+
+- pomyśleć co zmienić na stronach z ukrytymi zasobami (chodzi o zmodyfikowanie temlatek i to zmienić 
 	* wyrypać filtry
-- w liście poiosenek: "nr - tytuł - " i nowy skrypt filtrujący
- - kod QR poprawić ale to kiedy będzie adres ustalony
+
+-DONE?-  w liście poiosenek: "nr - tytuł - " i nowy skrypt filtrujący ( chyba chodziło o sortowanie a nie filtrowanie - po artystach lub po tytułach)
+
+-DONE- kod QR poprawić ale to kiedy będzie adres ustalony
+
  - zrobic kopię roboczą programu i kopię do aktualizowania na githubie, albo wymyślićjak usunąć niektóre rzeczyz repozytorium
 
+- długości poaktualizować{d:3.0}
 
-Co jest zrobione - 
- poprawione wyświetlanie leveli, 
- zmieniony aranż drzewka i pomysłu na ukryte zasoby  ale tylko w progamie
+- przemyśleć jak chcę żeby wyglądał typowy szablon piosenki: 
+	* akordy (czerwone pogrubione), 
+	* (even space) solo, 
+	* (instrukcje do wyjaśnienia na zółtym boxie) a oznaczenia fragmentow pioenek w tekscie kursywą) info, 
+ 	* chórki (boldowane) 
+	* i np nowa rzecz ([Am]) akord przeciągnięty do następnej linii, czyli jakby oznaczenie kontynuacji 
+- może napisać jakiś skrypcik który wykrywa czy 
+	a) nowa piosenka jest napewno dobrze sformatowana i wypisujący info 
+	b) to samo tylko sprawdzające stare piosenki do jednokrotnego wylistowania wszytskich potrzebujacych fixa, np że czegoś tam nie mają, np linka do spotify, albo duration, albo błąd w levelu, 
 
-prawdzić czy akordy by działały na stronie - działają!
+
+
+
 
 
 

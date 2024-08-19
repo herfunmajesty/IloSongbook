@@ -1,6 +1,7 @@
 {t: Don't Worry Be Happy }  
 {artist:Bobby McFerrin}  
 {level:Easy}
+{d: 4.3} 
 
 Intro:
 [C] [Dm] [F] [C]
