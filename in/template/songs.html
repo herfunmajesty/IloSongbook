@@ -151,17 +151,24 @@ ul { list-style: none; padding-left: 0px; }
 	
 		toggleButtons.forEach(button => {
 			// Dla przyciskow wszystkich bez wyjatku
+			button.addEventListener('touchend', () => {
+			    changeFilterButtonState(button);
+			});
 			button.addEventListener('click', () => {
-				button.classList.toggle('active');
-				console.log('zmiana stany przyciskow: ', button.name);
-				filterSongs();
-				saveButtonState();
-				document.getElementById('virtual-click-area').click();
+				changeFilterButtonState(button);
 			});
 		});
 		toggleButtons.forEach(button => {
 			console.log(`Przycisk "${button.name}" jest ${button.classList.contains('active') ? 'aktywny' : 'nieaktywny'}`);
 		});
+		function changeFilterButtonState(button){
+				event.preventDefault();
+				button.classList.toggle('active');
+				console.log('zmiana stany przyciskow: ', button.name);
+				filterSongs();
+				saveButtonState();
+				document.getElementById('virtual-click-area').click();
+		}
 		function saveButtonState() {
 			const activeButtons = Array.from(toggleButtons).filter(btn => btn.classList.contains('active'));
 			sessionStorage.setItem('buttonState', JSON.stringify(activeButtons.map(btn => btn.name)));
