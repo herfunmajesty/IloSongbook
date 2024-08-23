@@ -1,6 +1,7 @@
 {t:Creep}
 {artist:Radiohead}
 {level:Easy}
+{d: 4.3} 
 
 Intro: [G] [B] [C] [Cm]
 

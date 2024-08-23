@@ -33,15 +33,58 @@
 			padding: 1px 1px;
 			margin-right: 5px;
 			cursor: pointer;
-		
+		}
 		.div_box {
-			border: 1px solid #aaa;
 			padding: 10px;
 			display: none;
 			}
 			.checkbox:checked + .div_box {
 			display: block;
+			border: 1px solid #aaa;
 			}
+		
+		@font-face {
+			font-family: 'Montserrat';
+			src:  url('fonts/Montserrat-Regular.ttf') format('truetype');
+			font-weight: normal;
+			font-style: normal;
+		}
+
+		@font-face {
+			font-family: 'Montserrat';
+			src:  url('fonts/Montserrat-UltraLight.ttf') format('truetype');
+			font-weight: 200;
+			font-style: normal;
+		}
+		@font-face {
+			font-family: 'Montserrat';
+			src: url('fonts/Montserrat-SemiBold.ttf') format('truetype');
+			font-weight: 600;
+			font-style: normal;
+		}
+		.custom-text-h3 {
+			font-family: 'Montserrat', sans-serif;
+			
+			font-size: 2rem
+		}
+		.custom-text-h4 {
+			font-family: 'Montserrat', sans-serif;
+			font-style: italics;
+			font-size: 1.5rem
+		}
+		.custom-text-h5 {
+			font-family: 'Montserrat', sans-serif;
+			font-size: 1.2rem
+		}
+		.ultra-light {
+			font-family: 'Montserrat', sans-serif;
+			font-weight: 200;
+		}
+
+		.semi-bold {
+			font-family: 'Montserrat', sans-serif;
+			font-weight: 600;
+		}
     </style>
 
 </head>
@@ -58,16 +101,16 @@
     <div class="row justify-content-center">
         
 <div class="col-lg-8 col-md-10 col-sm-12 my-3">
+	
 
-    <h3 class="song-title">
-        #20 - Blowing In The Wind
+    <h3 class="song-title semi-bold">
+	  #20 - Blowing In The Wind
     </h3>
-    
-    <h5 class="song-artist">
+    <h4 class="song-artist custom-text-h4">
         Bob Dylan
-    </h5>
+    </h4>
 
-    <h5>
+    <h5 class= custom-text-h5>
         Level: 
         <span class="badge rounded-pill badge-success text-white">Easy</span>
     </h5>
@@ -78,11 +121,11 @@
     
         <img src="chords/C.gif" alt="C" title="C" />
     
-        <img src="chords/F.gif" alt="F" title="F" />
+        <img src="chords/G.gif" alt="G" title="G" />
     
         <img src="chords/Am.gif" alt="Am" title="Am" />
     
-        <img src="chords/G.gif" alt="G" title="G" />
+        <img src="chords/F.gif" alt="F" title="F" />
     
 </div>
 	<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 20px; top: 20px;">Dev info? <input type="checkbox" class="checkbox" onclick="toggleDiv()"> </div>
@@ -102,16 +145,14 @@
     </div>
 
     <div id="options" class="mt-4">
-        <ul class="list-unstyled">
-            <li><a href="songs.html"><strong>← Back</strong></a></li>
+        <a href="songs.html"><strong>← Back</strong></a>
          
-        </ul>
     </div>
 
     <hr/>
 			
     <div class="m-2 my-4 text-center">
-        <img src="/images/qrcode.png" class="img-fluid" alt="QR Code" width="200">
+        <img src="/images/qrcode.png" class="img-fluid" alt="QR Code" width="100">
     </div>
 
 </div>

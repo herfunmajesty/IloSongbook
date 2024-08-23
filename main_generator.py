@@ -1,6 +1,7 @@
 import os
 import re
 import datetime
+import shutil
 from jinja2 import Environment, FileSystemLoader
 
 
@@ -313,11 +314,52 @@ def print_songs_details(loc_songs_list):
         print(f"Czy jest sticky: {x_song.Sticky}")
         print(f"{sep2}")  # Separator dla czytelności
 
+def copy_folders(src_dir, dest_dir, folders_to_copy):
+
+    if not os.path.exists(dest_dir):
+        os.makedirs(dest_dir)
+
+    for folder in folders_to_copy:
+        src_path = os.path.join(src_dir, folder)
+        dest_path = os.path.join(dest_dir, folder)
+        if os.path.exists(src_path):
+            shutil.rmtree(dest_path)  # Usuwa istniejący katalog docelowy
+            shutil.copytree(src_path, dest_path)
+            print(f'Skopiowano {src_path} do {dest_path}')
+        else:
+            print(f'Folder {src_path} nie istnieje')
+
+def copy_files(src_dir, dest_dir, files_to_copy):
+
+    if not os.path.exists(dest_dir):
+        os.makedirs(dest_dir)
+
+    for file_name in files_to_copy:
+        src_path = os.path.join(src_dir, file_name)
+        dest_path = os.path.join(dest_dir, file_name)
+        if os.path.exists(src_path):
+            shutil.copy(src_path, dest_path)
+            print(f'Skopiowano {src_path} do {dest_path}')
+        else:
+            print(f'Plik {src_path} nie istnieje')
+
+################## Program Własciwy ############################
 
 # sprawdzenie gdzie jestem
 env = Environment(loader=FileSystemLoader('in\\template'))
 print(f"{sep1}Tworzenie bazy piosenek aktywnych{sep1}")
 print("Current working directory:", os.getcwd())
+
+# kopiowanie obrazów i ikon do katalogu wyjsciowego
+img_folders = ['images', 'chords']
+src_dir = os.path.join(os.getcwd(), 'in')
+dest_dir = os.path.join(os.getcwd(), 'out')
+copy_folders(src_dir, dest_dir, img_folders)
+# kopiowanie plików nie renderowanych
+n_r_files = ['how.html']
+n_src_dir = os.path.join(os.getcwd(),'in\\template')
+n_dest_dir = os.path.join(os.getcwd(),'out')
+copy_files(n_src_dir,n_dest_dir,n_r_files)
 
 # Najpierw tworzę bazę piosenek aktywnych:
 folder_path_active = os.path.join(os.getcwd(), 'in\\songs\\active')
