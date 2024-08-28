@@ -74,7 +74,7 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  height: 100vh;
+  height: 100vh; /* a niby jego wysokość to liczymy..*/
 }
 .button-container .btn {
   background-color: transparent; /* Ustawia tło na przezroczyste */
@@ -86,7 +86,7 @@ a:hover {
   font-variant: small-caps; /* Ustawia tekst na kapitaliki */
 }
 .button-container2 .btn {
-  background-color: transparent; /* Ustawia tło na przezroczyste */
+  /*background-color: transparent; */ /* Ustawia tło na przezroczyste */
   border: 4px solid rgba(189,32,40,.8);   /* Opcjonalnie: dodaj obramowanie, aby przycisk był widoczny */
   white-space: nowrap; /* Zapobiega łamaniu tekstu */
   display: inline-block;
@@ -106,13 +106,21 @@ a:hover {
 .custom-border {
   border: 2px solid rgba(189,32,40,.8); /* Ustawia kolor ramki */
 }
-
+.collapse {
+  transform: translateY(1%);
+}
+.qr-code-container {
+  position: absolute;
+  top: 55%; /* Ustawia na wysokości około 1/2 kontenera */
+  /*transform: translateY(10%);*/ /* Przesuwa w górę o 50% wysokości elementu */
+  text-align: center;
+}
 </style>
 </head>
 <body>
- <div class="site-wrapper">
+ <div id="screen" class="site-wrapper">
     <div class="cover-container">
-      <div class="masthead clearfix">
+      <div id="pasek" class="masthead clearfix">
         <div class="inner">
           <nav class="nav nav-masthead">					
             <a class="nav-link" href="how.html">How we operate</a>
@@ -120,8 +128,8 @@ a:hover {
           </nav>
         </div>
       </div>		
-      <div class="m-2 mb-4 text-center">
-        <img id="logo" src="images/ukulele-krakow-trans.png" class="img-fluid" alt="Krakow Ukulele" width="200">
+      <div id="logo" class="m-2 mb-4 text-center">
+        <img  src="/images/ukulele-krakow-trans.png" class="img-fluid" alt="Krakow Ukulele" width="200">
       </div>		
       <div class="container">
         <div class="row justify-content-center">
@@ -131,47 +139,66 @@ a:hover {
               <button class="btn btn-light">
                 <a href="songs.html" class="display-5">Songs and chords</a>
               </button>
-            </div>        
+			  <div class="qr-code-container">
+				<small><i>Share link</i><br></small>
+				<img src="/images/qrcode.png" class="img-fluid" alt="QR Code" width="200">
+			  </div>
+			</div>
+            
+			
+			<!--<div class="m-2 my-4 text-center">
+				<small><i>Share link</i><br></small>
+				<img src="../images/qrcode.png" class="img-fluid" alt="QR Code" width="200">
+			  </div>-->
           </div>
         </div>
       </div>
     </div>
   </div>
+
   <div id="footer" class="mastfoot">
-    <div class="m-2 my-4 text-center">
+    <!--<div class="m-2 my-4 text-center">
 	<small><i>Share link</i><br></small>
-      <img src="/images/qrcode.png" class="img-fluid" alt="QR Code" width="200">
-    </div>
-	<p>
-		<div class="button-container2">
-			<button class="btn btn-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-				CREDITS
-			</button>
-		</div>
-	</p>
+      <img src="../images/qrcode.png" class="img-fluid" alt="QR Code" width="200">
+    </div>-->
+	
+	<div class="button-container2">
+		<button class="btn btn-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+			CREDITS
+		</button>
+	</div>
 	<div class="collapse" id="collapseExample">
 	  <div class="card card-body custom-width custom-border">
 		<b>Songbook v.2</b> created by herfunmajesty, ZezCyklopa, Tom Mar<br><b>Song arrangements</b> by Joao, herfunmajesty, Sylwia Gęborys and Dana Pikulska<br><b>Pinned chords</b> by scana<br><b>Logo</b> by sachsanjoy
 	  </div>
 	</div>
 	<em>Updated on: {{date}}</em>
-    <!--<p><b>Songbook v.2</b> created by herfunmajesty, Bong0, Tom Mar<br><b>Songs</b> by Joao, herfunmajesty, Sylwia Gęborys and Dana Pikulska<br><b>Pinned chords</b> by scana<br><b>Logo</b> by sachsanjoy</p>
-    <em>Updated on: 2024-08-19</em>-->
   </div>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
 <script>
   window.onload = function() {
+    var screenHeight = document.getElementById('screen').offsetHeight;
     var logoHeight = document.getElementById('logo').offsetHeight;
+	var menuHeight = document.getElementById('pasek').offsetHeight;
     var footerHeight = document.getElementById('footer').offsetHeight;
+	console.log('Wysokość okna: ' + screenHeight + 'px');
     console.log('Wysokość logo: ' + logoHeight + 'px');
+	console.log('Wysokość paska: ' + menuHeight + 'px');
     console.log('Wysokość stopki: ' + footerHeight + 'px');
 
-    // Dostosuj wysokość kontenera przycisku
-    var buttonContainer = document.querySelector('.button-container');
-    buttonContainer.style.height = 'calc(100vh - ' + (logoHeight + footerHeight) + 'px)';
-    buttonContainer.querySelector('.btn').style.marginTop = 'calc((100vh - ' + (logoHeight + footerHeight) + 'px) / 6)';
-  };
+    // Convert pixel values to vh
+  var logoHeightVh = (logoHeight / window.innerHeight) * 100;
+  var footerHeightVh = (footerHeight / window.innerHeight) * 100;
+  var menuHeightVh = (menuHeight / window.innerHeight) * 100;
+
+  // Adjust the height of the button container
+  var buttonContainer = document.querySelector('.button-container');
+  buttonContainer.style.height = 'calc(100vh - ' + (logoHeightVh + footerHeightVh + menuHeightVh) + 'vh)';
+  console.log('Wysokość kontenera: ' + buttonContainer.style.height);
+
+  buttonContainer.querySelector('.btn').style.marginTop = 'calc((100vh - ' + (logoHeightVh + footerHeightVh + menuHeightVh) + 'vh) / 9)';
+};
 </script>
 </body>
 </html>

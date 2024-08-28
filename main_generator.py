@@ -13,6 +13,7 @@ replacements = {
     "<grey>": "<span class='text-muted'>",
     "</grey>": "</span>",
     "[stop]": "<strong>[stop]</strong>",
+    "[muted]": "<strong>[muted]</strong>",
     "[riff]": "<span class='text-muted'><strong>(riff)</strong></span>",
     "[back]": "<b><i>",
     "[/back]": "</b></i>",
