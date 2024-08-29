@@ -93,22 +93,35 @@
 			background-image: linear-gradient(to bottom, rgba(189, 32, 40, 0.4), rgba(189, 32, 40, 0.2));
 		}
 		.my-watermark {
-			background-image: url('../images/ukule_krakow-03.png');
-			background-position: right; /* lub background-position: 100%; */
-			background-size: 100% auto;
-			/*opacity: 0.6;  Przezroczystość tła */
+		  position: relative; /* Ustawienie pozycji względnej dla kontenera */
+		  background-color: #fff; /* Ustawienie koloru tła kontenera, jeśli potrzebne */
+		}
+		
+		.my-watermark::after {
+		  content: "";
+		  position: absolute;
+		  top: 0;
+		  right: 0;
+		  left: auto; 
+		  width: 50%; /* Szerokość obrazu tła */
+		  height: 100%;
+		  background-image: url('../images/ukule_krakow-03.png');
+		  background-size: contain; /* Dopasowanie obrazu do kontenera */
+		  background-repeat: no-repeat;
+		  opacity: 0.2; /* Przezroczystość obrazu tła */
+		  pointer-events: none; /* Zapobiega interakcji z pseudo-elementem */
 		}
     </style>
 
 </head>
 <body data-duration = 4.0>
 
-
+<!--
 <header class="container">
     <div class="m-2 mb-4 text-center">
         <img src="../images/ukulele-krakow-trans.png" class="img-fluid" alt="Krakow Ukulele" width="200">
     </div>
-</header>
+</header>-->
 
 <div class="container">
     <div class="row justify-content-center">      
