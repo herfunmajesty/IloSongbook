@@ -1,6 +1,6 @@
 {t:🔥Flowers}
 {artist:Miley Cyrus}
-{level: xxx}
+{level: Easy}
 
 * info
 - second verse almost blends with the finish of the chorus
