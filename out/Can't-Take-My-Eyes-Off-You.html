@@ -29,19 +29,17 @@
         }
 		.toggle-button {
 			background-color: #eee;
-			border: 1px solid #ccc;
-			padding: 1px 1px;
+			border: 0px solid ;
+			padding: 0px 0px;
 			margin-right: 5px;
 			cursor: pointer;
 		}
 		.div_box {
 			padding: 10px;
-			display: none;
-			}
-			.checkbox:checked + .div_box {
+		}
+		.checkbox:checked + #infoBox {
 			display: block;
-			border: 1px solid #aaa;
-			}
+		}
 		
 		@font-face {
 			font-family: 'Montserrat';
@@ -119,13 +117,11 @@
 
    <div class="mt-4" style="overflow-x: auto;">
     
-        <img src="chords/D7.gif" alt="D7" title="D7" />
-    
         <img src="chords/Gmaj7.gif" alt="Gmaj7" title="Gmaj7" />
     
-        <img src="chords/Cm.gif" alt="Cm" title="Cm" />
-    
         <img src="chords/G7.gif" alt="G7" title="G7" />
+    
+        <img src="chords/E7.gif" alt="E7" title="E7" />
     
         <img src="chords/G.gif" alt="G" title="G" />
     
@@ -133,27 +129,31 @@
     
         <img src="chords/Em7.gif" alt="Em7" title="Em7" />
     
+        <img src="chords/Cm.gif" alt="Cm" title="Cm" />
+    
         <img src="chords/C.gif" alt="C" title="C" />
     
-        <img src="chords/E7.gif" alt="E7" title="E7" />
+        <img src="chords/D7.gif" alt="D7" title="D7" />
     
         <img src="chords/A7.gif" alt="A7" title="A7" />
     
 </div>
-	<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 20px; top: 20px;">Dev info? <input type="checkbox" class="checkbox" onclick="toggleDiv()"> </div>
-	<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px;">
-		<p id="heightInfo" style="font-size: xx-small;"></p>
-		<p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
-		<p id="songDuration" style="font-size: xx-small;"></p>
-	</div>
+		<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 5px; top: 10px;">
+		  Dev info? <input type="checkbox" class="checkbox">
+		</div>
+		<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px; display: none;">
+		  <p id="heightInfo" style="font-size: xx-small;"></p>
+		  <p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
+		  <p id="songDuration" style="font-size: xx-small;"></p>
+		</div>
 	<div id="floatingButton" style="position: fixed; right: 20px; bottom: 20px; ">
-		<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light">
+		<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light toggle-button">
 			<img id="buttonImage" src="images/pause2.gif">
 		</button>
 	</div>
     
     <div id="tab">
-          <br/>  <br/>  <br/> <br/><br/><br/><br/>4 beats per chord<br/><br/>Intro:<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A7//]</span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Cm//]</span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G//]</span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G//]</span></span></span></span><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A7//]</span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Cm//]</span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G//]</span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G//]</span></span></span></span><br/><br/>You're just too <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> good to be true   <br/>Can't take my <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Gmaj7]</span></span></span></span> eyes off you   <br/>You'd be like <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G7]</span></span></span></span> heaven to touch    <br/>I wanna <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> hold you so much    <br/>At long last <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Cm]</span></span></span></span> love has arrived    <br/>And I thank <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> God I'm alive    <br/>You're just too <span class="chord"><span class="chord"><span class="chord"><span class="chord">[A7//]</span></span></span></span> good to be true     <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Cm//]</span></span></span></span> Can't take my <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> eyes off you<br/><br/>Pardon the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> way that I stare    <br/>There's nothing <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Gmaj7]</span></span></span></span> else to compare    <br/>The sight of <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G7]</span></span></span></span> you leaves me weak    <br/>There are no <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> words left to speak    <br/>So if you <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Cm]</span></span></span></span> feel like I feel    <br/>Please let me <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> know that it's real    <br/>You're just too <span class="chord"><span class="chord"><span class="chord"><span class="chord">[A7//]</span></span></span></span> good to be true<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Cm//]</span></span></span></span> Can't take my <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> eyes off you   <br/><br/>(Sing Da Da, Da Da)   <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am//]</span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D7//]</span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G//]</span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G//]</span></span></span></span><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am//]</span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D7//]</span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G//]</span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span> (stop)<br/><br/>I love you <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> baby and if it's <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D7]</span></span></span></span> quite all right    <br/>I need you <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> baby to warm the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em7]</span></span></span></span> lonely nights    <br/>I love you <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> baby, <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D7]</span></span></span></span> trust in me when I <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> say <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span><br/>Oh pretty <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> baby, don't bring me <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D7]</span></span></span></span> down I pray    <br/>Oh pretty <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> baby, now that I've <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em7]</span></span></span></span> found you stay    <br/>And let me <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> love you baby, let me <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Cm/]</span></span></span></span> love you (stop)<br/><br/>You're just too <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> good to be true   <br/>Can't take my <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Gmaj7]</span></span></span></span> eyes off you   <br/>You'd be like <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G7]</span></span></span></span> heaven to touch    <br/>I wanna <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> hold you so much    <br/>At long last <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Cm]</span></span></span></span> love has arrived    <br/>And I thank <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> God I'm alive    <br/>You're just too <span class="chord"><span class="chord"><span class="chord"><span class="chord">[A7//]</span></span></span></span> good to be true     <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Cm//]</span></span></span></span> Can't take my <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> eyes off you<br/><br/>(Sing Da Da, Da Da)   <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am//]</span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D7//]</span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G//]</span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G//]</span></span></span></span><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am//]</span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D7//]</span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G//]</span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7/]</span></span></span></span> (stop)<br/><br/>I love you <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> baby and if it's <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D7]</span></span></span></span> quite all right    <br/>I need you <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> baby to warm the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em7]</span></span></span></span> lonely nights    <br/>I love you <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> baby, <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D7]</span></span></span></span> trust in me when I <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> say <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span><br/>Oh pretty <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> baby, don't bring me <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D7]</span></span></span></span> down I pray    <br/>Oh pretty <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> baby, now that I've <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em7]</span></span></span></span> found you stay    <br/>And let me <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> love you baby, let me <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Cm/]</span></span></span></span> love youuuuu <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G/]</span></span></span></span>
+          <br/>  <br/>  <br/> <br/><br/><br/><br/>4 beats per chord<br/><br/>Intro:<br/><span class="chord">[A7//]</span> <span class="chord">[Cm//]</span> <span class="chord">[G//]</span> <span class="chord">[G//]</span><br/><span class="chord">[A7//]</span> <span class="chord">[Cm//]</span> <span class="chord">[G//]</span> <span class="chord">[G//]</span><br/><br/>You're just too <span class="chord">[G]</span> good to be true   <br/>Can't take my <span class="chord">[Gmaj7]</span> eyes off you   <br/>You'd be like <span class="chord">[G7]</span> heaven to touch    <br/>I wanna <span class="chord">[C]</span> hold you so much    <br/>At long last <span class="chord">[Cm]</span> love has arrived    <br/>And I thank <span class="chord">[G]</span> God I'm alive    <br/>You're just too <span class="chord">[A7//]</span> good to be true     <br/><span class="chord">[Cm//]</span> Can't take my <span class="chord">[G]</span> eyes off you<br/><br/>Pardon the <span class="chord">[G]</span> way that I stare    <br/>There's nothing <span class="chord">[Gmaj7]</span> else to compare    <br/>The sight of <span class="chord">[G7]</span> you leaves me weak    <br/>There are no <span class="chord">[C]</span> words left to speak    <br/>So if you <span class="chord">[Cm]</span> feel like I feel    <br/>Please let me <span class="chord">[G]</span> know that it's real    <br/>You're just too <span class="chord">[A7//]</span> good to be true<br/><span class="chord">[Cm//]</span> Can't take my <span class="chord">[G]</span> eyes off you   <br/><br/>(Sing Da Da, Da Da)   <br/><span class="chord">[Am//]</span> <span class="chord">[D7//]</span> <span class="chord">[G//]</span> <span class="chord">[G//]</span><br/><span class="chord">[Am//]</span> <span class="chord">[D7//]</span> <span class="chord">[G//]</span> <span class="chord">[E7]</span> (stop)<br/><br/>I love you <span class="chord">[Am]</span> baby and if it's <span class="chord">[D7]</span> quite all right    <br/>I need you <span class="chord">[G]</span> baby to warm the <span class="chord">[Em7]</span> lonely nights    <br/>I love you <span class="chord">[Am]</span> baby, <span class="chord">[D7]</span> trust in me when I <span class="chord">[G]</span> say <span class="chord">[E7]</span><br/>Oh pretty <span class="chord">[Am]</span> baby, don't bring me <span class="chord">[D7]</span> down I pray    <br/>Oh pretty <span class="chord">[G]</span> baby, now that I've <span class="chord">[Em7]</span> found you stay    <br/>And let me <span class="chord">[Am]</span> love you baby, let me <span class="chord">[Cm/]</span> love you (stop)<br/><br/>You're just too <span class="chord">[G]</span> good to be true   <br/>Can't take my <span class="chord">[Gmaj7]</span> eyes off you   <br/>You'd be like <span class="chord">[G7]</span> heaven to touch    <br/>I wanna <span class="chord">[C]</span> hold you so much    <br/>At long last <span class="chord">[Cm]</span> love has arrived    <br/>And I thank <span class="chord">[G]</span> God I'm alive    <br/>You're just too <span class="chord">[A7//]</span> good to be true     <br/><span class="chord">[Cm//]</span> Can't take my <span class="chord">[G]</span> eyes off you<br/><br/>(Sing Da Da, Da Da)   <br/><span class="chord">[Am//]</span> <span class="chord">[D7//]</span> <span class="chord">[G//]</span> <span class="chord">[G//]</span><br/><span class="chord">[Am//]</span> <span class="chord">[D7//]</span> <span class="chord">[G//]</span> <span class="chord">[E7]</span> <span class="chord">[E7/]</span> (stop)<br/><br/>I love you <span class="chord">[Am]</span> baby and if it's <span class="chord">[D7]</span> quite all right    <br/>I need you <span class="chord">[G]</span> baby to warm the <span class="chord">[Em7]</span> lonely nights    <br/>I love you <span class="chord">[Am]</span> baby, <span class="chord">[D7]</span> trust in me when I <span class="chord">[G]</span> say <span class="chord">[E7]</span><br/>Oh pretty <span class="chord">[Am]</span> baby, don't bring me <span class="chord">[D7]</span> down I pray    <br/>Oh pretty <span class="chord">[G]</span> baby, now that I've <span class="chord">[Em7]</span> found you stay    <br/>And let me <span class="chord">[Am]</span> love you baby, let me <span class="chord">[Cm/]</span> love youuuuu <span class="chord">[G/]</span>
     </div>
 
     <div id="options" class="mt-4">
@@ -260,12 +260,12 @@ window.addEventListener('beforeunload', function() {
   }
 });
 </script>
-<!--<script>
+<script>
   function toggleDiv() {
     var checkBox = document.querySelector('.checkbox');
-    var devInfo = document.getElementById('infoBox');
-    devInfo.style.display = checkBox.checked ? 'block' : 'none';
+    var infoBox = document.getElementById('infoBox');
+    infoBox.style.display = checkBox.checked ? 'block' : 'none';
   }
-</script>-->
+</script>
 </body>
 </html>

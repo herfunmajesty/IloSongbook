@@ -29,19 +29,17 @@
         }
 		.toggle-button {
 			background-color: #eee;
-			border: 1px solid #ccc;
-			padding: 1px 1px;
+			border: 0px solid ;
+			padding: 0px 0px;
 			margin-right: 5px;
 			cursor: pointer;
 		}
 		.div_box {
 			padding: 10px;
-			display: none;
-			}
-			.checkbox:checked + .div_box {
+		}
+		.checkbox:checked + #infoBox {
 			display: block;
-			border: 1px solid #aaa;
-			}
+		}
 		
 		@font-face {
 			font-family: 'Montserrat';
@@ -119,6 +117,8 @@
 
    <div class="mt-4" style="overflow-x: auto;">
     
+        <img src="chords/F.gif" alt="F" title="F" />
+    
         <img src="chords/G.gif" alt="G" title="G" />
     
         <img src="chords/Am.gif" alt="Am" title="Am" />
@@ -127,23 +127,23 @@
     
         <img src="chords/C.gif" alt="C" title="C" />
     
-        <img src="chords/F.gif" alt="F" title="F" />
-    
 </div>
-	<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 20px; top: 20px;">Dev info? <input type="checkbox" class="checkbox" onclick="toggleDiv()"> </div>
-	<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px;">
-		<p id="heightInfo" style="font-size: xx-small;"></p>
-		<p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
-		<p id="songDuration" style="font-size: xx-small;"></p>
-	</div>
+		<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 5px; top: 10px;">
+		  Dev info? <input type="checkbox" class="checkbox">
+		</div>
+		<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px; display: none;">
+		  <p id="heightInfo" style="font-size: xx-small;"></p>
+		  <p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
+		  <p id="songDuration" style="font-size: xx-small;"></p>
+		</div>
 	<div id="floatingButton" style="position: fixed; right: 20px; bottom: 20px; ">
-		<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light">
+		<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light toggle-button">
 			<img id="buttonImage" src="images/pause2.gif">
 		</button>
 	</div>
     
     <div id="tab">
-          <br/>  <br/><br/><br/>Intro: <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> (stop)<br/><br/>I want to break <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> free   <br/>I want to break free   <br/>I want to break free from your lies   <br/>You're so… self-satisfied I don't <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> need you   <br/>I've got to break <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> free   <br/>God <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> knows… <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> God knows I want to break <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> free <br/><br/>(stop) <br/>I've fallen in <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> love   <br/>I've fallen in love for the first time   <br/>And this time I know it's for <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> real   <br/>I've fallen in <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> love, yeah   <br/>God <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> knows  <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> God knows I've fallen in <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> love  <br/><br/>(stop)<br/>It's <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> strange, but it's <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> true   <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> I can't get over the way you <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> love me like you do   <br/>But I <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> have to be sure <br/>When I <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span> walk out that <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span> door   <br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> Oh how I <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> want to be <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> free baby   <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> Oh how I <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> want to be <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> free   <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> Oh how I <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> want to bre-<span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span>-eak free  <br/><br/>(stop)<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> … … … … <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span>… … <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span>… … <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span>… <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span>… <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span>… (stop) <br/><br/>But life still goes <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> on   <br/>I can't get used to living without… living without   <br/>Living without you… by my <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> siii-ii-iiide   <br/>I don't want to live a-<span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span>-lo-o-o-one   <br/>God <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> knows  <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> ... Got to make it on <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> my own  <br/>So baby can't you <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> see   <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> I've got to bre-<span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span>-eak free <br/><br/>(stop)<br/>I've got to break <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> free   <br/>I want to bre-e-eak free yeah   <br/>I want… I want… I want… I want… <br/>To breeeeeeeeak free<br/><br/>(cha-cha-cha)<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C/]</span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C/]</span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C/]</span></span></span></span>
+          <br/>  <br/><br/><br/>Intro: <br/><span class="chord">[C]</span> <span class="chord">[C]</span> <span class="chord">[C]</span> <span class="chord">[C]</span> <br/><span class="chord">[C]</span> <span class="chord">[C]</span> <span class="chord">[C]</span> (stop)<br/><br/>I want to break <span class="chord">[C]</span> free   <br/>I want to break free   <br/>I want to break free from your lies   <br/>You're so… self-satisfied I don't <span class="chord">[F]</span> need you   <br/>I've got to break <span class="chord">[C]</span> free   <br/>God <span class="chord">[G]</span> knows… <span class="chord">[F]</span> God knows I want to break <span class="chord">[C]</span> free <br/><br/>(stop) <br/>I've fallen in <span class="chord">[C]</span> love   <br/>I've fallen in love for the first time   <br/>And this time I know it's for <span class="chord">[F]</span> real   <br/>I've fallen in <span class="chord">[C]</span> love, yeah   <br/>God <span class="chord">[G]</span> knows  <span class="chord">[F]</span> God knows I've fallen in <span class="chord">[C]</span> love  <br/><br/>(stop)<br/>It's <span class="chord">[G]</span> strange, but it's <span class="chord">[F]</span> true   <br/><span class="chord">[G]</span> I can't get over the way you <span class="chord">[F]</span> love me like you do   <br/>But I <span class="chord">[Am]</span> have to be sure <br/>When I <span class="chord">[D]</span> walk out that <span class="chord">[D]</span> door   <br/><br/><span class="chord">[F]</span> Oh how I <span class="chord">[G]</span> want to be <span class="chord">[Am]</span> free baby   <br/><span class="chord">[F]</span> Oh how I <span class="chord">[G]</span> want to be <span class="chord">[Am]</span> free   <br/><span class="chord">[F]</span> Oh how I <span class="chord">[G]</span> want to bre-<span class="chord">[C]</span>-eak free  <br/><br/>(stop)<br/><span class="chord">[C]</span> … … … … <span class="chord">[F]</span>… … <span class="chord">[C]</span>… … <span class="chord">[G]</span>… <span class="chord">[F]</span>… <span class="chord">[C]</span>… (stop) <br/><br/>But life still goes <span class="chord">[C]</span> on   <br/>I can't get used to living without… living without   <br/>Living without you… by my <span class="chord">[F]</span> siii-ii-iiide   <br/>I don't want to live a-<span class="chord">[C]</span>-lo-o-o-one   <br/>God <span class="chord">[G]</span> knows  <br/><span class="chord">[F]</span> ... Got to make it on <span class="chord">[C]</span> my own  <br/>So baby can't you <span class="chord">[G]</span> see   <br/><span class="chord">[F]</span> I've got to bre-<span class="chord">[C]</span>-eak free <br/><br/>(stop)<br/>I've got to break <span class="chord">[C]</span> free   <br/>I want to bre-e-eak free yeah   <br/>I want… I want… I want… I want… <br/>To breeeeeeeeak free<br/><br/>(cha-cha-cha)<br/><span class="chord">[C/]</span> <span class="chord">[C/]</span> <span class="chord">[C/]</span>
     </div>
 
     <div id="options" class="mt-4">
@@ -250,12 +250,12 @@ window.addEventListener('beforeunload', function() {
   }
 });
 </script>
-<!--<script>
+<script>
   function toggleDiv() {
     var checkBox = document.querySelector('.checkbox');
-    var devInfo = document.getElementById('infoBox');
-    devInfo.style.display = checkBox.checked ? 'block' : 'none';
+    var infoBox = document.getElementById('infoBox');
+    infoBox.style.display = checkBox.checked ? 'block' : 'none';
   }
-</script>-->
+</script>
 </body>
 </html>

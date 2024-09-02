@@ -29,19 +29,17 @@
         }
 		.toggle-button {
 			background-color: #eee;
-			border: 1px solid #ccc;
-			padding: 1px 1px;
+			border: 0px solid ;
+			padding: 0px 0px;
 			margin-right: 5px;
 			cursor: pointer;
 		}
 		.div_box {
 			padding: 10px;
-			display: none;
-			}
-			.checkbox:checked + .div_box {
+		}
+		.checkbox:checked + #infoBox {
 			display: block;
-			border: 1px solid #aaa;
-			}
+		}
 		
 		@font-face {
 			font-family: 'Montserrat';
@@ -130,31 +128,33 @@
     
         <img src="chords/Bbm6.gif" alt="Bbm6" title="Bbm6" />
     
-        <img src="chords/A.gif" alt="A" title="A" />
+        <img src="chords/F.gif" alt="F" title="F" />
     
         <img src="chords/C.gif" alt="C" title="C" />
     
-        <img src="chords/Dm.gif" alt="Dm" title="Dm" />
-    
         <img src="chords/A7.gif" alt="A7" title="A7" />
     
-        <img src="chords/F.gif" alt="F" title="F" />
+        <img src="chords/A.gif" alt="A" title="A" />
+    
+        <img src="chords/Dm.gif" alt="Dm" title="Dm" />
     
 </div>
-	<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 20px; top: 20px;">Dev info? <input type="checkbox" class="checkbox" onclick="toggleDiv()"> </div>
-	<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px;">
-		<p id="heightInfo" style="font-size: xx-small;"></p>
-		<p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
-		<p id="songDuration" style="font-size: xx-small;"></p>
-	</div>
+		<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 5px; top: 10px;">
+		  Dev info? <input type="checkbox" class="checkbox">
+		</div>
+		<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px; display: none;">
+		  <p id="heightInfo" style="font-size: xx-small;"></p>
+		  <p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
+		  <p id="songDuration" style="font-size: xx-small;"></p>
+		</div>
 	<div id="floatingButton" style="position: fixed; right: 20px; bottom: 20px; ">
-		<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light">
+		<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light toggle-button">
 			<img id="buttonImage" src="images/pause2.gif">
 		</button>
 	</div>
     
     <div id="tab">
-          <br/>  <br/><br/><br/><br/><span class='text-muted'><strong>(riff)</strong></span>: string E: (5 5 5 3 . 6 5 3)<br/><br/>Intro:<br/><span class='text-muted'><strong>(riff)</strong></span> <span class='text-muted'><strong>(riff)</strong></span><br/><br/>(riff)<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span></span> ... <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span></span> ... <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span></span> ... <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm/]</span></span></span></span></span> (stop)<br/><br/>We passed upon the <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A7]</span></span></span></span></span> stair<br/>We spoke of was and when <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span></span> ...<br/>Although I wasn't <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A7]</span></span></span></span></span> there ...<br/>He said I was his friend <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span></span> ...<br/>Which came as some sur<span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span>prise ...<br/>I spoke into his <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span></span> eyes, <br/>“I thought you died a<span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span></span>lone ..<br/>A long, long time a<span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span>go”<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span> ... <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span> ...<br/><br/>“Oh <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span>no ... not <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span></span>me ...<br/>I <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bbm6]</span></span></span></span></span> never lost con<span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span></span>trol ...<br/>You're <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span> face ... to <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span></span> face ...<br/>With the <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bbm6]</span></span></span></span></span> man who sold the world”<br/><br/>(riff)<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span></span> ... <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span></span> ... <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span></span> ... <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm/]</span></span></span></span></span> (stop)<br/><br/>I laughed and shook his <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A7]</span></span></span></span></span> hand ...<br/>And made my way back <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span></span> home ...<br/>I searched for form and <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A7]</span></span></span></span></span> land ...<br/>For years and years I roa<span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span></span>med ...<br/>I gazed a gazely <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span> stare ...<br/>At all the millions <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span></span> here, <br/>we must have died a<span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span></span>lone<br/>A long, long time a<span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span>go ...<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span> ... <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span> ...<br/><br/>“Oh <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span> no ... not <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span></span> me ...<br/>I <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bbm6]</span></span></span></span></span> never lost con-<span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span></span>-trol ...<br/>You're <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span> face ... to <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span></span> face ...<br/>With the <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bbm6]</span></span></span></span></span> man who sold the world”<br/><br/>(riff)<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span></span> ... <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span></span> ... <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span></span> ... <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span></span> ...<br/><br/>Who <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span> knows? ... Not me <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span></span> ...<br/>We <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bbm6]</span></span></span></span></span> never lost con-<span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span></span>-trol ...<br/>You're <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span> face ... to <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span></span> face ...<br/>With the <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bbm6]</span></span></span></span></span> man who sold the world<br/><br/>(riff)<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span></span> ... <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span></span> ... <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span></span> ... <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span></span> ...<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span></span> ... <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span></span> ... <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span></span> ... <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span></span> ...<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span></span> ... <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm/]</span></span></span></span></span>
+          <br/>  <br/><br/><br/><br/><span class='text-muted'><strong>(riff)</strong></span>: string E: (5 5 5 3 . 6 5 3)<br/><br/>Intro:<br/><span class='text-muted'><strong>(riff)</strong></span> <span class='text-muted'><strong>(riff)</strong></span><br/><br/>(riff)<br/><span class="chord">[A]</span> ... <span class="chord">[Dm]</span> ... <span class="chord">[F]</span> ... <span class="chord">[Dm/]</span> (stop)<br/><br/>We passed upon the <span class="chord">[A7]</span> stair<br/>We spoke of was and when <span class="chord">[Dm]</span> ...<br/>Although I wasn't <span class="chord">[A7]</span> there ...<br/>He said I was his friend <span class="chord">[F]</span> ...<br/>Which came as some sur<span class="chord">[C]</span>prise ...<br/>I spoke into his <span class="chord">[A]</span> eyes, <br/>“I thought you died a<span class="chord">[Dm]</span>lone ..<br/>A long, long time a<span class="chord">[C]</span>go”<br/><br/><span class="chord">[C]</span> ... <span class="chord">[C]</span> ...<br/><br/>“Oh <span class="chord">[C]</span>no ... not <span class="chord">[F]</span>me ...<br/>I <span class="chord">[Bbm6]</span> never lost con<span class="chord">[F]</span>trol ...<br/>You're <span class="chord">[C]</span> face ... to <span class="chord">[F]</span> face ...<br/>With the <span class="chord">[Bbm6]</span> man who sold the world”<br/><br/>(riff)<br/><span class="chord">[A]</span> ... <span class="chord">[Dm]</span> ... <span class="chord">[F]</span> ... <span class="chord">[Dm/]</span> (stop)<br/><br/>I laughed and shook his <span class="chord">[A7]</span> hand ...<br/>And made my way back <span class="chord">[Dm]</span> home ...<br/>I searched for form and <span class="chord">[A7]</span> land ...<br/>For years and years I roa<span class="chord">[F]</span>med ...<br/>I gazed a gazely <span class="chord">[C]</span> stare ...<br/>At all the millions <span class="chord">[A]</span> here, <br/>we must have died a<span class="chord">[Dm]</span>lone<br/>A long, long time a<span class="chord">[C]</span>go ...<br/><br/><span class="chord">[C]</span> ... <span class="chord">[C]</span> ...<br/><br/>“Oh <span class="chord">[C]</span> no ... not <span class="chord">[F]</span> me ...<br/>I <span class="chord">[Bbm6]</span> never lost con-<span class="chord">[F]</span>-trol ...<br/>You're <span class="chord">[C]</span> face ... to <span class="chord">[F]</span> face ...<br/>With the <span class="chord">[Bbm6]</span> man who sold the world”<br/><br/>(riff)<br/><span class="chord">[A]</span> ... <span class="chord">[Dm]</span> ... <span class="chord">[F]</span> ... <span class="chord">[Dm]</span> ...<br/><br/>Who <span class="chord">[C]</span> knows? ... Not me <span class="chord">[F]</span> ...<br/>We <span class="chord">[Bbm6]</span> never lost con-<span class="chord">[F]</span>-trol ...<br/>You're <span class="chord">[C]</span> face ... to <span class="chord">[F]</span> face ...<br/>With the <span class="chord">[Bbm6]</span> man who sold the world<br/><br/>(riff)<br/><span class="chord">[A]</span> ... <span class="chord">[Dm]</span> ... <span class="chord">[F]</span> ... <span class="chord">[Dm]</span> ...<br/><span class="chord">[A]</span> ... <span class="chord">[Dm]</span> ... <span class="chord">[F]</span> ... <span class="chord">[Dm]</span> ...<br/><span class="chord">[A]</span> ... <span class="chord">[Dm/]</span>
     </div>
 
     <div id="options" class="mt-4">
@@ -261,12 +261,12 @@ window.addEventListener('beforeunload', function() {
   }
 });
 </script>
-<!--<script>
+<script>
   function toggleDiv() {
     var checkBox = document.querySelector('.checkbox');
-    var devInfo = document.getElementById('infoBox');
-    devInfo.style.display = checkBox.checked ? 'block' : 'none';
+    var infoBox = document.getElementById('infoBox');
+    infoBox.style.display = checkBox.checked ? 'block' : 'none';
   }
-</script>-->
+</script>
 </body>
 </html>

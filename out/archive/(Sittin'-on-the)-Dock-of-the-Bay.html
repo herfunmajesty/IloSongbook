@@ -29,19 +29,17 @@
         }
 		.toggle-button {
 			background-color: #eee;
-			border: 1px solid #ccc;
-			padding: 1px 1px;
+			border: 0px solid ;
+			padding: 0px 0px;
 			margin-right: 5px;
 			cursor: pointer;
 		}
 		.div_box {
 			padding: 10px;
-			display: none;
-			}
-			.checkbox:checked + .div_box {
+		}
+		.checkbox:checked + #infoBox {
 			display: block;
-			border: 1px solid #aaa;
-			}
+		}
 		
 		@font-face {
 			font-family: 'Montserrat';
@@ -128,35 +126,37 @@
 
    <div class="mt-4" style="overflow-x: auto;">
     
-        <img src="chords/B7.gif" alt="B7" title="B7" />
-    
-        <img src="chords/G.gif" alt="G" title="G" />
-    
-        <img src="chords/A.gif" alt="A" title="A" />
-    
-        <img src="chords/C.gif" alt="C" title="C" />
-    
-        <img src="chords/D.gif" alt="D" title="D" />
-    
         <img src="chords/E7.gif" alt="E7" title="E7" />
     
         <img src="chords/F.gif" alt="F" title="F" />
     
+        <img src="chords/G.gif" alt="G" title="G" />
+    
+        <img src="chords/D.gif" alt="D" title="D" />
+    
+        <img src="chords/C.gif" alt="C" title="C" />
+    
+        <img src="chords/B7.gif" alt="B7" title="B7" />
+    
+        <img src="chords/A.gif" alt="A" title="A" />
+    
 </div>
-	<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 20px; top: 20px;">Dev info? <input type="checkbox" class="checkbox" onclick="toggleDiv()"> </div>
-	<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px;">
-		<p id="heightInfo" style="font-size: xx-small;"></p>
-		<p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
-		<p id="songDuration" style="font-size: xx-small;"></p>
-	</div>
+		<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 5px; top: 10px;">
+		  Dev info? <input type="checkbox" class="checkbox">
+		</div>
+		<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px; display: none;">
+		  <p id="heightInfo" style="font-size: xx-small;"></p>
+		  <p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
+		  <p id="songDuration" style="font-size: xx-small;"></p>
+		</div>
 	<div id="floatingButton" style="position: fixed; right: 20px; bottom: 20px; ">
-		<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light">
+		<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light toggle-button">
 			<img id="buttonImage" src="images/pause2.gif">
 		</button>
 	</div>
     
     <div id="tab">
-          <br/>  <br/>  <br/><br/><br/><br/><br/>  <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> Sittin' in the morning <span class="chord"><span class="chord"><span class="chord"><span class="chord">[B7]</span></span></span></span> sun   <br/>I'll be <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> sittin' when the  evenin' <span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span> comes   <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> Watching the ships roll <span class="chord"><span class="chord"><span class="chord"><span class="chord">[B7]</span></span></span></span> in   <br/>And I <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> watch 'em roll away a-<span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span>gain   <br/>  <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> Sitting on the dock of the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span> bay  <br/>watching the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> tide roll a-<span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span>way   <br/>I'm just <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> sittin' on the dock of the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span> bay wastin' <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> time <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span>    <br/>  <br/>I <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> left my home in <span class="chord"><span class="chord"><span class="chord"><span class="chord">[B7]</span></span></span></span> Georgia   <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> Headed for the 'Frisco <span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span> bay   <br/>'Cause <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> I had nothin to <span class="chord"><span class="chord"><span class="chord"><span class="chord">[B7]</span></span></span></span> live for   <br/>And look like <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> nothing's gonna come my <span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span> way   <br/>  <br/>So I'm just gonna <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> Sit on the dock of the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span> bay <br/>watching the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> tide roll a-<span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span>way   <br/>I'm <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> sittin' on the dock of the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span> bay wastin' <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> time <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span>    <br/>  <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> Look <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span> like <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> nothing's gonna change   <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> E-e-<span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span>-verything <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> still remains the same   <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span>  I can't <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span> do what <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> ten people tell me <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> to do   <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span>  So I guess I'll re-<span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span>main the same   <br/>  <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> Sittin' here resting my <span class="chord"><span class="chord"><span class="chord"><span class="chord">[B7]</span></span></span></span> bones   <br/>And this <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> loneliness won't leave me <span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span> alone   <br/>It's <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> two thousand miles I <span class="chord"><span class="chord"><span class="chord"><span class="chord">[B7]</span></span></span></span> roamed   <br/>Just to <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> make this dock my <span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span> home   <br/>  <br/>Now, I'm just <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> Sittin' on the dock of the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span> bay <br/>watching the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> tide roll a-<span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span>way   <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> Sittin' on the dock of the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span> bay wasting <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> time <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span>    <br/>  <br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> Sittin' on the dock of the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span> bay, watching the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> tide roll a-<span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span>way  
+          <br/>  <br/>  <br/><br/><br/><br/><br/>  <br/><span class="chord">[G]</span> Sittin' in the morning <span class="chord">[B7]</span> sun   <br/>I'll be <span class="chord">[C]</span> sittin' when the  evenin' <span class="chord">[A]</span> comes   <br/><span class="chord">[G]</span> Watching the ships roll <span class="chord">[B7]</span> in   <br/>And I <span class="chord">[C]</span> watch 'em roll away a-<span class="chord">[A]</span>gain   <br/>  <br/><span class="chord">[G]</span> Sitting on the dock of the <span class="chord">[E7]</span> bay  <br/>watching the <span class="chord">[G]</span> tide roll a-<span class="chord">[E7]</span>way   <br/>I'm just <span class="chord">[G]</span> sittin' on the dock of the <span class="chord">[A]</span> bay wastin' <span class="chord">[G]</span> time <span class="chord">[E7]</span>    <br/>  <br/>I <span class="chord">[G]</span> left my home in <span class="chord">[B7]</span> Georgia   <br/><span class="chord">[C]</span> Headed for the 'Frisco <span class="chord">[A]</span> bay   <br/>'Cause <span class="chord">[G]</span> I had nothin to <span class="chord">[B7]</span> live for   <br/>And look like <span class="chord">[C]</span> nothing's gonna come my <span class="chord">[A]</span> way   <br/>  <br/>So I'm just gonna <span class="chord">[G]</span> Sit on the dock of the <span class="chord">[E7]</span> bay <br/>watching the <span class="chord">[G]</span> tide roll a-<span class="chord">[E7]</span>way   <br/>I'm <span class="chord">[G]</span> sittin' on the dock of the <span class="chord">[A]</span> bay wastin' <span class="chord">[G]</span> time <span class="chord">[E7]</span>    <br/>  <br/><span class="chord">[G]</span> Look <span class="chord">[D]</span> like <span class="chord">[C]</span> nothing's gonna change   <br/><span class="chord">[G]</span> E-e-<span class="chord">[D]</span>-verything <span class="chord">[C]</span> still remains the same   <br/><span class="chord">[G]</span>  I can't <span class="chord">[D]</span> do what <span class="chord">[C]</span> ten people tell me <span class="chord">[G]</span> to do   <br/><span class="chord">[F]</span>  So I guess I'll re-<span class="chord">[D]</span>main the same   <br/>  <br/><span class="chord">[G]</span> Sittin' here resting my <span class="chord">[B7]</span> bones   <br/>And this <span class="chord">[C]</span> loneliness won't leave me <span class="chord">[A]</span> alone   <br/>It's <span class="chord">[G]</span> two thousand miles I <span class="chord">[B7]</span> roamed   <br/>Just to <span class="chord">[C]</span> make this dock my <span class="chord">[A]</span> home   <br/>  <br/>Now, I'm just <span class="chord">[G]</span> Sittin' on the dock of the <span class="chord">[E7]</span> bay <br/>watching the <span class="chord">[G]</span> tide roll a-<span class="chord">[E7]</span>way   <br/><span class="chord">[G]</span> Sittin' on the dock of the <span class="chord">[A]</span> bay wasting <span class="chord">[G]</span> time <span class="chord">[E7]</span>    <br/>  <br/><br/><span class="chord">[G]</span> Sittin' on the dock of the <span class="chord">[E7]</span> bay, watching the <span class="chord">[G]</span> tide roll a-<span class="chord">[E7]</span>way  
     </div>
 
     <div id="options" class="mt-4">
@@ -263,12 +263,12 @@ window.addEventListener('beforeunload', function() {
   }
 });
 </script>
-<!--<script>
+<script>
   function toggleDiv() {
     var checkBox = document.querySelector('.checkbox');
-    var devInfo = document.getElementById('infoBox');
-    devInfo.style.display = checkBox.checked ? 'block' : 'none';
+    var infoBox = document.getElementById('infoBox');
+    infoBox.style.display = checkBox.checked ? 'block' : 'none';
   }
-</script>-->
+</script>
 </body>
 </html>

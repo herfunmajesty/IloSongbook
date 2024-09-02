@@ -29,19 +29,17 @@
         }
 		.toggle-button {
 			background-color: #eee;
-			border: 1px solid #ccc;
-			padding: 1px 1px;
+			border: 0px solid ;
+			padding: 0px 0px;
 			margin-right: 5px;
 			cursor: pointer;
 		}
 		.div_box {
 			padding: 10px;
-			display: none;
-			}
-			.checkbox:checked + .div_box {
+		}
+		.checkbox:checked + #infoBox {
 			display: block;
-			border: 1px solid #aaa;
-			}
+		}
 		
 		@font-face {
 			font-family: 'Montserrat';
@@ -119,7 +117,11 @@
 
    <div class="mt-4" style="overflow-x: auto;">
     
+        <img src="chords/E7.gif" alt="E7" title="E7" />
+    
         <img src="chords/G7.gif" alt="G7" title="G7" />
+    
+        <img src="chords/F.gif" alt="F" title="F" />
     
         <img src="chords/Em7.gif" alt="Em7" title="Em7" />
     
@@ -127,29 +129,27 @@
     
         <img src="chords/C.gif" alt="C" title="C" />
     
-        <img src="chords/E7.gif" alt="E7" title="E7" />
+        <img src="chords/A7.gif" alt="A7" title="A7" />
     
         <img src="chords/Dm.gif" alt="Dm" title="Dm" />
     
-        <img src="chords/A7.gif" alt="A7" title="A7" />
-    
-        <img src="chords/F.gif" alt="F" title="F" />
-    
 </div>
-	<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 20px; top: 20px;">Dev info? <input type="checkbox" class="checkbox" onclick="toggleDiv()"> </div>
-	<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px;">
-		<p id="heightInfo" style="font-size: xx-small;"></p>
-		<p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
-		<p id="songDuration" style="font-size: xx-small;"></p>
-	</div>
+		<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 5px; top: 10px;">
+		  Dev info? <input type="checkbox" class="checkbox">
+		</div>
+		<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px; display: none;">
+		  <p id="heightInfo" style="font-size: xx-small;"></p>
+		  <p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
+		  <p id="songDuration" style="font-size: xx-small;"></p>
+		</div>
 	<div id="floatingButton" style="position: fixed; right: 20px; bottom: 20px; ">
-		<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light">
+		<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light toggle-button">
 			<img id="buttonImage" src="images/pause2.gif">
 		</button>
 	</div>
     
     <div id="tab">
-        <br/><br/><br/><br/><br/>Intro: <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G7]</span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em7]</span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[A7]</span></span></span></span><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G7]</span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span><br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> Fly me to the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span> moon, and let me <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G7]</span></span></span></span> play among the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> stars    <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> Let me see what <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span> spring is like on <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span> Jupiter and <span class="chord"><span class="chord"><span class="chord"><span class="chord">[A7]</span></span></span></span> Mars   <br/>In <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span> other words, <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G7]</span></span></span></span> hold my <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em7]</span></span></span></span> hand. <span class="chord"><span class="chord"><span class="chord"><span class="chord">[A7]</span></span></span></span> …     <br/>In <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span> other words, <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G7]</span></span></span></span> baby <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> kiss me. <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span> …  <br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> Fill my heart with <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span> song, and let me <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G7]</span></span></span></span> sing forever <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> more <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> You're all that I <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span> long for, all I <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span> worship and do a-<span class="chord"><span class="chord"><span class="chord"><span class="chord">[A7]</span></span></span></span>dore. …  <br/>In <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span> other words, <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G7]</span></span></span></span> please be <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em7]</span></span></span></span> true! <span class="chord"><span class="chord"><span class="chord"><span class="chord">[A7]</span></span></span></span> … <br/>In <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span> other words, <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G7]</span></span></span></span> I love <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> you! <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span> … <br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> … <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span> … <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G7]</span></span></span></span> … <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> …<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> … <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span> … <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7/]</span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7/]</span></span></span></span> (stop) … <span class="chord"><span class="chord"><span class="chord"><span class="chord">[A7]</span></span></span></span> …<br/>In <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span> other words, <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G7]</span></span></span></span> hold my <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em7]</span></span></span></span> hand. <span class="chord"><span class="chord"><span class="chord"><span class="chord">[A7]</span></span></span></span> …     <br/>In <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span> other words, <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G7]</span></span></span></span> baby <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> kiss me. <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span> …  <br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> Fill my heart with <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span> song, and let me <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G7]</span></span></span></span> sing forever <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> more<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> You are all I <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span> long for, all I <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span> worship and do a-<span class="chord"><span class="chord"><span class="chord"><span class="chord">[A7]</span></span></span></span>dore.<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span> In other words, <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G7]</span></span></span></span> please be <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em7]</span></span></span></span> truuuuue! <span class="chord"><span class="chord"><span class="chord"><span class="chord">[A7]</span></span></span></span> … <br/>In <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span> other words... In <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span> other words <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span> I <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G7]</span></span></span></span> love <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> yoooooou! <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C/]</span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G7/]</span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C/]</span></span></span></span> 
+        <br/><br/><br/><br/><br/>Intro: <br/><span class="chord">[Dm]</span> <span class="chord">[G7]</span> <span class="chord">[Em7]</span> <span class="chord">[A7]</span><br/><span class="chord">[Dm]</span> <span class="chord">[G7]</span> <span class="chord">[C]</span> <span class="chord">[E7]</span><br/><br/><span class="chord">[Am]</span> Fly me to the <span class="chord">[Dm]</span> moon, and let me <span class="chord">[G7]</span> play among the <span class="chord">[C]</span> stars    <br/><span class="chord">[F]</span> Let me see what <span class="chord">[Dm]</span> spring is like on <span class="chord">[E7]</span> Jupiter and <span class="chord">[A7]</span> Mars   <br/>In <span class="chord">[Dm]</span> other words, <span class="chord">[G7]</span> hold my <span class="chord">[Em7]</span> hand. <span class="chord">[A7]</span> …     <br/>In <span class="chord">[Dm]</span> other words, <span class="chord">[G7]</span> baby <span class="chord">[C]</span> kiss me. <span class="chord">[E7]</span> …  <br/><br/><span class="chord">[Am]</span> Fill my heart with <span class="chord">[Dm]</span> song, and let me <span class="chord">[G7]</span> sing forever <span class="chord">[C]</span> more <br/><span class="chord">[F]</span> You're all that I <span class="chord">[Dm]</span> long for, all I <span class="chord">[E7]</span> worship and do a-<span class="chord">[A7]</span>dore. …  <br/>In <span class="chord">[Dm]</span> other words, <span class="chord">[G7]</span> please be <span class="chord">[Em7]</span> true! <span class="chord">[A7]</span> … <br/>In <span class="chord">[Dm]</span> other words, <span class="chord">[G7]</span> I love <span class="chord">[C]</span> you! <span class="chord">[E7]</span> … <br/><br/><span class="chord">[Am]</span> … <span class="chord">[Dm]</span> … <span class="chord">[G7]</span> … <span class="chord">[C]</span> …<br/><span class="chord">[F]</span> … <span class="chord">[Dm]</span> … <span class="chord">[E7/]</span> <span class="chord">[E7/]</span> (stop) … <span class="chord">[A7]</span> …<br/>In <span class="chord">[Dm]</span> other words, <span class="chord">[G7]</span> hold my <span class="chord">[Em7]</span> hand. <span class="chord">[A7]</span> …     <br/>In <span class="chord">[Dm]</span> other words, <span class="chord">[G7]</span> baby <span class="chord">[C]</span> kiss me. <span class="chord">[E7]</span> …  <br/><br/><span class="chord">[Am]</span> Fill my heart with <span class="chord">[Dm]</span> song, and let me <span class="chord">[G7]</span> sing forever <span class="chord">[C]</span> more<br/><span class="chord">[F]</span> You are all I <span class="chord">[Dm]</span> long for, all I <span class="chord">[E7]</span> worship and do a-<span class="chord">[A7]</span>dore.<br/><span class="chord">[Dm]</span> In other words, <span class="chord">[G7]</span> please be <span class="chord">[Em7]</span> truuuuue! <span class="chord">[A7]</span> … <br/>In <span class="chord">[Dm]</span> other words... In <span class="chord">[Dm]</span> other words <br/><span class="chord">[Dm]</span> I <span class="chord">[G7]</span> love <span class="chord">[C]</span> yoooooou! <span class="chord">[C/]</span> <span class="chord">[G7/]</span> <span class="chord">[C/]</span> 
     </div>
 
     <div id="options" class="mt-4">
@@ -256,12 +256,12 @@ window.addEventListener('beforeunload', function() {
   }
 });
 </script>
-<!--<script>
+<script>
   function toggleDiv() {
     var checkBox = document.querySelector('.checkbox');
-    var devInfo = document.getElementById('infoBox');
-    devInfo.style.display = checkBox.checked ? 'block' : 'none';
+    var infoBox = document.getElementById('infoBox');
+    infoBox.style.display = checkBox.checked ? 'block' : 'none';
   }
-</script>-->
+</script>
 </body>
 </html>

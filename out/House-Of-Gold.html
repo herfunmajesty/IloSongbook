@@ -29,19 +29,17 @@
         }
 		.toggle-button {
 			background-color: #eee;
-			border: 1px solid #ccc;
-			padding: 1px 1px;
+			border: 0px solid ;
+			padding: 0px 0px;
 			margin-right: 5px;
 			cursor: pointer;
 		}
 		.div_box {
 			padding: 10px;
-			display: none;
-			}
-			.checkbox:checked + .div_box {
+		}
+		.checkbox:checked + #infoBox {
 			display: block;
-			border: 1px solid #aaa;
-			}
+		}
 		
 		@font-face {
 			font-family: 'Montserrat';
@@ -119,35 +117,37 @@
 
    <div class="mt-4" style="overflow-x: auto;">
     
+        <img src="chords/F.gif" alt="F" title="F" />
+    
         <img src="chords/G.gif" alt="G" title="G" />
     
         <img src="chords/Am.gif" alt="Am" title="Am" />
     
-        <img src="chords/Bbm.gif" alt="Bbm" title="Bbm" />
-    
         <img src="chords/C.gif" alt="C" title="C" />
     
-        <img src="chords/Dm.gif" alt="Dm" title="Dm" />
+        <img src="chords/Bbm.gif" alt="Bbm" title="Bbm" />
     
         <img src="chords/A7.gif" alt="A7" title="A7" />
     
-        <img src="chords/F.gif" alt="F" title="F" />
+        <img src="chords/Dm.gif" alt="Dm" title="Dm" />
     
 </div>
-	<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 20px; top: 20px;">Dev info? <input type="checkbox" class="checkbox" onclick="toggleDiv()"> </div>
-	<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px;">
-		<p id="heightInfo" style="font-size: xx-small;"></p>
-		<p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
-		<p id="songDuration" style="font-size: xx-small;"></p>
-	</div>
+		<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 5px; top: 10px;">
+		  Dev info? <input type="checkbox" class="checkbox">
+		</div>
+		<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px; display: none;">
+		  <p id="heightInfo" style="font-size: xx-small;"></p>
+		  <p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
+		  <p id="songDuration" style="font-size: xx-small;"></p>
+		</div>
 	<div id="floatingButton" style="position: fixed; right: 20px; bottom: 20px; ">
-		<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light">
+		<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light toggle-button">
 			<img id="buttonImage" src="images/pause2.gif">
 		</button>
 	</div>
     
     <div id="tab">
-          <br/> <br/><br/><br/><br/>(chunking only on first verse all in <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span><br/> <br/>She <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> asked me, "Son, when  I grow old,<br/>Will you buy me a  house of gold?<br/>And when your father turns to stone,<br/>Will you take care of me?"<br/><br/>She <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> asked me, "Son, when <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> I grow old,<br/>Will <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> you buy me a <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> house of gold?<br/>And <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> when your father <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> turns to stone,<br/>Will <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> you take <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> care of <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> me?"<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> I will <span class="chord"><span class="chord"><span class="chord"><span class="chord">[A7]</span></span></span></span> make you<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span> Queen of <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bbm]</span></span></span></span> everything you <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> see<br/>I'll put you on the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> map, I'll cure you of <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> disease  <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> <br/><br/>Let's <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> say we up and <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> left this town<br/>And <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> turned our future <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> upside-down<br/>We'll <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> make pretend that <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> you and me<br/>Lived <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> ever <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> after, <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> happily<br/><br/>She <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> asked me, "Son, when <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> I grow old,<br/>Will <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> you buy me a <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> house of gold?<br/>And <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> when your father <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> turns to stone,<br/>Will <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> you take <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> care of <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> me?"<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> I will <span class="chord"><span class="chord"><span class="chord"><span class="chord">[A7]</span></span></span></span> make you<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span> Queen of <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bbm]</span></span></span></span> everything you <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> see<br/>I'll put you on the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> map, I'll cure you of <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> disease  <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> <br/><br/>And <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> since we know that <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> dreams are dead<br/>And <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> life turns plans up <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> on their head<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> I will plan to <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> be a bum<br/>So <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> I just <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> might be-<span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span>come someone<br/><br/>She <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> asked me, "Son, when <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> I grow old,<br/>Will <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> you buy me a <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> house of gold?<br/>And <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> when your father <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> turns to stone,<br/>Will <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> you take <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> care of <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> me?"<br/><br/>(single strums)<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F/]</span></span></span></span> I will <span class="chord"><span class="chord"><span class="chord"><span class="chord">[A7/]</span></span></span></span> make you<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm/]</span></span></span></span> Queen of <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bbm/]</span></span></span></span> everything you <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F/]</span></span></span></span> see<br/>I'll put you on the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C/]</span></span></span></span> map, I'll cure you of <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F/]</span></span></span></span> disease<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C/]</span></span></span></span>
+          <br/> <br/><br/><br/><br/>(chunking only on first verse all in <span class="chord">[C]</span><br/> <br/>She <span class="chord">[C]</span> asked me, "Son, when  I grow old,<br/>Will you buy me a  house of gold?<br/>And when your father turns to stone,<br/>Will you take care of me?"<br/><br/>She <span class="chord">[C]</span> asked me, "Son, when <span class="chord">[F]</span> I grow old,<br/>Will <span class="chord">[Am]</span> you buy me a <span class="chord">[G]</span> house of gold?<br/>And <span class="chord">[C]</span> when your father <span class="chord">[F]</span> turns to stone,<br/>Will <span class="chord">[C]</span> you take <span class="chord">[G]</span> care of <span class="chord">[C]</span> me?"<br/><br/><span class="chord">[F]</span> I will <span class="chord">[A7]</span> make you<br/><span class="chord">[Dm]</span> Queen of <span class="chord">[Bbm]</span> everything you <span class="chord">[F]</span> see<br/>I'll put you on the <span class="chord">[C]</span> map, I'll cure you of <span class="chord">[F]</span> disease  <span class="chord">[C]</span> <br/><br/>Let's <span class="chord">[C]</span> say we up and <span class="chord">[F]</span> left this town<br/>And <span class="chord">[Am]</span> turned our future <span class="chord">[G]</span> upside-down<br/>We'll <span class="chord">[C]</span> make pretend that <span class="chord">[F]</span> you and me<br/>Lived <span class="chord">[C]</span> ever <span class="chord">[G]</span> after, <span class="chord">[C]</span> happily<br/><br/>She <span class="chord">[C]</span> asked me, "Son, when <span class="chord">[F]</span> I grow old,<br/>Will <span class="chord">[Am]</span> you buy me a <span class="chord">[G]</span> house of gold?<br/>And <span class="chord">[C]</span> when your father <span class="chord">[F]</span> turns to stone,<br/>Will <span class="chord">[C]</span> you take <span class="chord">[G]</span> care of <span class="chord">[C]</span> me?"<br/><br/><span class="chord">[F]</span> I will <span class="chord">[A7]</span> make you<br/><span class="chord">[Dm]</span> Queen of <span class="chord">[Bbm]</span> everything you <span class="chord">[F]</span> see<br/>I'll put you on the <span class="chord">[C]</span> map, I'll cure you of <span class="chord">[F]</span> disease  <span class="chord">[C]</span> <br/><br/>And <span class="chord">[C]</span> since we know that <span class="chord">[F]</span> dreams are dead<br/>And <span class="chord">[Am]</span> life turns plans up <span class="chord">[G]</span> on their head<br/><span class="chord">[C]</span> I will plan to <span class="chord">[F]</span> be a bum<br/>So <span class="chord">[C]</span> I just <span class="chord">[G]</span> might be-<span class="chord">[C]</span>come someone<br/><br/>She <span class="chord">[C]</span> asked me, "Son, when <span class="chord">[F]</span> I grow old,<br/>Will <span class="chord">[Am]</span> you buy me a <span class="chord">[G]</span> house of gold?<br/>And <span class="chord">[C]</span> when your father <span class="chord">[F]</span> turns to stone,<br/>Will <span class="chord">[C]</span> you take <span class="chord">[G]</span> care of <span class="chord">[C]</span> me?"<br/><br/>(single strums)<br/><span class="chord">[F/]</span> I will <span class="chord">[A7/]</span> make you<br/><span class="chord">[Dm/]</span> Queen of <span class="chord">[Bbm/]</span> everything you <span class="chord">[F/]</span> see<br/>I'll put you on the <span class="chord">[C/]</span> map, I'll cure you of <span class="chord">[F/]</span> disease<br/><span class="chord">[C/]</span>
     </div>
 
     <div id="options" class="mt-4">
@@ -254,12 +254,12 @@ window.addEventListener('beforeunload', function() {
   }
 });
 </script>
-<!--<script>
+<script>
   function toggleDiv() {
     var checkBox = document.querySelector('.checkbox');
-    var devInfo = document.getElementById('infoBox');
-    devInfo.style.display = checkBox.checked ? 'block' : 'none';
+    var infoBox = document.getElementById('infoBox');
+    infoBox.style.display = checkBox.checked ? 'block' : 'none';
   }
-</script>-->
+</script>
 </body>
 </html>

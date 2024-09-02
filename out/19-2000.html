@@ -29,19 +29,17 @@
         }
 		.toggle-button {
 			background-color: #eee;
-			border: 1px solid #ccc;
-			padding: 1px 1px;
+			border: 0px solid ;
+			padding: 0px 0px;
 			margin-right: 5px;
 			cursor: pointer;
 		}
 		.div_box {
 			padding: 10px;
-			display: none;
-			}
-			.checkbox:checked + .div_box {
+		}
+		.checkbox:checked + #infoBox {
 			display: block;
-			border: 1px solid #aaa;
-			}
+		}
 		
 		@font-face {
 			font-family: 'Montserrat';
@@ -128,27 +126,29 @@
 
    <div class="mt-4" style="overflow-x: auto;">
     
-        <img src="chords/C.gif" alt="C" title="C" />
+        <img src="chords/F.gif" alt="F" title="F" />
     
         <img src="chords/G.gif" alt="G" title="G" />
     
-        <img src="chords/F.gif" alt="F" title="F" />
+        <img src="chords/C.gif" alt="C" title="C" />
     
 </div>
-	<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 20px; top: 20px;">Dev info? <input type="checkbox" class="checkbox" onclick="toggleDiv()"> </div>
-	<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px;">
-		<p id="heightInfo" style="font-size: xx-small;"></p>
-		<p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
-		<p id="songDuration" style="font-size: xx-small;"></p>
-	</div>
+		<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 5px; top: 10px;">
+		  Dev info? <input type="checkbox" class="checkbox">
+		</div>
+		<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px; display: none;">
+		  <p id="heightInfo" style="font-size: xx-small;"></p>
+		  <p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
+		  <p id="songDuration" style="font-size: xx-small;"></p>
+		</div>
 	<div id="floatingButton" style="position: fixed; right: 20px; bottom: 20px; ">
-		<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light">
+		<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light toggle-button">
 			<img id="buttonImage" src="images/pause2.gif">
 		</button>
 	</div>
     
     <div id="tab">
-          <br/>  <br/><br/><br/><br/>Intro: <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> <br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> The world is spinning too fast<br/>I'm buying lead Nike shoes<br/>To <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> keep myself tethered<br/>To the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> days I tried to lose<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> My mamma said to slow down<br/>You must make your own shoes<br/>And <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> stop dancing to the music<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> Of Gorillaz in a happy mood. <br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> Deee duuu bop <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> Deee duuu bop <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> Deee duuu bop<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> Deee duuu bop<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> Get the cool<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> Get the cool shoeshine<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> Get the cool<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> Get the cool shoeshine <br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> Get the cool<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> Get the cool shoeshine<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> Get the cool<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> Get the cool shoeshine <br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> <br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> There's a monkey in the jungle<br/>Watching a vapor trail<br/>Caught <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> up in the conflict<br/>Between his <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> brain and his tail<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> And if time's elimination<br/>Then we've got nothing to lose<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> Please repeat the message<br/>It's the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> music that we choose<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> Deee duuu bop <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> Deee duuu bop <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> Deee duuu bop<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> Deee duuu bop<br/><br/>(chorus)<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> Get the cool<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> Get the cool shoeshine<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> Get the cool<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> Get the cool shoeshine <br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> Get the cool<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> Get the cool shoeshine<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> Get the cool<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> Get the cool shoeshine <br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G/]</span></span></span></span>
+          <br/>  <br/><br/><br/><br/>Intro: <br/><span class="chord">[G]</span> <span class="chord">[G]</span> <span class="chord">[F]</span> <span class="chord">[G]</span> <br/><br/><span class="chord">[G]</span> The world is spinning too fast<br/>I'm buying lead Nike shoes<br/>To <span class="chord">[F]</span> keep myself tethered<br/>To the <span class="chord">[G]</span> days I tried to lose<br/><br/><span class="chord">[G]</span> My mamma said to slow down<br/>You must make your own shoes<br/>And <span class="chord">[F]</span> stop dancing to the music<br/><span class="chord">[G]</span> Of Gorillaz in a happy mood. <br/><br/><span class="chord">[G]</span> Deee duuu bop <br/><span class="chord">[F]</span> Deee duuu bop <br/><span class="chord">[C]</span> Deee duuu bop<br/><span class="chord">[G]</span> Deee duuu bop<br/><br/><span class="chord">[G]</span> Get the cool<br/><span class="chord">[F]</span> Get the cool shoeshine<br/><span class="chord">[C]</span> Get the cool<br/><span class="chord">[G]</span> Get the cool shoeshine <br/><br/><span class="chord">[G]</span> Get the cool<br/><span class="chord">[F]</span> Get the cool shoeshine<br/><span class="chord">[C]</span> Get the cool<br/><span class="chord">[G]</span> Get the cool shoeshine <br/><br/><span class="chord">[G]</span> <span class="chord">[F]</span> <span class="chord">[C]</span> <span class="chord">[G]</span> <br/><br/><span class="chord">[G]</span> There's a monkey in the jungle<br/>Watching a vapor trail<br/>Caught <span class="chord">[F]</span> up in the conflict<br/>Between his <span class="chord">[G]</span> brain and his tail<br/><br/><span class="chord">[G]</span> And if time's elimination<br/>Then we've got nothing to lose<br/><span class="chord">[F]</span> Please repeat the message<br/>It's the <span class="chord">[G]</span> music that we choose<br/><br/><span class="chord">[G]</span> Deee duuu bop <br/><span class="chord">[F]</span> Deee duuu bop <br/><span class="chord">[C]</span> Deee duuu bop<br/><span class="chord">[G]</span> Deee duuu bop<br/><br/>(chorus)<br/><span class="chord">[G]</span> Get the cool<br/><span class="chord">[F]</span> Get the cool shoeshine<br/><span class="chord">[C]</span> Get the cool<br/><span class="chord">[G]</span> Get the cool shoeshine <br/><br/><span class="chord">[G]</span> Get the cool<br/><span class="chord">[F]</span> Get the cool shoeshine<br/><span class="chord">[C]</span> Get the cool<br/><span class="chord">[G]</span> Get the cool shoeshine <br/><br/><span class="chord">[G/]</span>
     </div>
 
     <div id="options" class="mt-4">
@@ -255,12 +255,12 @@ window.addEventListener('beforeunload', function() {
   }
 });
 </script>
-<!--<script>
+<script>
   function toggleDiv() {
     var checkBox = document.querySelector('.checkbox');
-    var devInfo = document.getElementById('infoBox');
-    devInfo.style.display = checkBox.checked ? 'block' : 'none';
+    var infoBox = document.getElementById('infoBox');
+    infoBox.style.display = checkBox.checked ? 'block' : 'none';
   }
-</script>-->
+</script>
 </body>
 </html>

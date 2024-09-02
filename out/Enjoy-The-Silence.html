@@ -29,19 +29,17 @@
         }
 		.toggle-button {
 			background-color: #eee;
-			border: 1px solid #ccc;
-			padding: 1px 1px;
+			border: 0px solid ;
+			padding: 0px 0px;
 			margin-right: 5px;
 			cursor: pointer;
 		}
 		.div_box {
 			padding: 10px;
-			display: none;
-			}
-			.checkbox:checked + .div_box {
+		}
+		.checkbox:checked + #infoBox {
 			display: block;
-			border: 1px solid #aaa;
-			}
+		}
 		
 		@font-face {
 			font-family: 'Montserrat';
@@ -128,13 +126,13 @@
 
    <div class="mt-4" style="overflow-x: auto;">
     
-        <img src="chords/A.gif" alt="A" title="A" />
-    
         <img src="chords/G.gif" alt="G" title="G" />
+    
+        <img src="chords/D.gif" alt="D" title="D" />
     
         <img src="chords/Bb.gif" alt="Bb" title="Bb" />
     
-        <img src="chords/D.gif" alt="D" title="D" />
+        <img src="chords/A.gif" alt="A" title="A" />
     
         <img src="chords/Bm.gif" alt="Bm" title="Bm" />
     
@@ -143,20 +141,22 @@
         <img src="chords/Dm.gif" alt="Dm" title="Dm" />
     
 </div>
-	<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 20px; top: 20px;">Dev info? <input type="checkbox" class="checkbox" onclick="toggleDiv()"> </div>
-	<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px;">
-		<p id="heightInfo" style="font-size: xx-small;"></p>
-		<p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
-		<p id="songDuration" style="font-size: xx-small;"></p>
-	</div>
+		<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 5px; top: 10px;">
+		  Dev info? <input type="checkbox" class="checkbox">
+		</div>
+		<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px; display: none;">
+		  <p id="heightInfo" style="font-size: xx-small;"></p>
+		  <p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
+		  <p id="songDuration" style="font-size: xx-small;"></p>
+		</div>
 	<div id="floatingButton" style="position: fixed; right: 20px; bottom: 20px; ">
-		<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light">
+		<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light toggle-button">
 			<img id="buttonImage" src="images/pause2.gif">
 		</button>
 	</div>
     
     <div id="tab">
-        <br/><br/><br/><br/><br/><br/><div class="mb-1"><br/>Beats per chord: <b>4</b><br/></div><br/><br/>(riff 1)<br/><pre><br/>A|---2---4-|----5---4-|---2---4-|----5---4-|<br/>E|-2---2---|--2---2---|-2---2---|--2---2---|<br/>C|---------|----------|---------|----------|<br/>G|---------|----------|---------|----------|<br/><br/>A|---2-----|----------|---2-----|----------|<br/>E|-2---2-5-|--x-3-x-2-|-2---2-5-|--x-3-x-2-|<br/>C|---------|----------|---------|----------|<br/>G|---------|----------|---------|----------|<br/></pre><br/><br/><hr /><br/><br/>Start: 1 2 3 4<br/><br/><span class='text-muted'><strong>(riff)</strong></span><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bm]</span></span></span></span></span>... <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span>... <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bm]</span></span></span></span></span>... <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span>...<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bm]</span></span></span></span></span>... <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span>... <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bm]</span></span></span></span></span>... <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span>...<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bm]</span></span></span></span></span> Words like violence<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span></span> Break the silence<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span> Come crashing in<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span> Into my little world<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bm]</span></span></span></span></span> Painful to me<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span></span> Pierce right through me<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span> Can't you understand<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span> Oh my little girl<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span></span> All I ever wanted<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span> All I ever needed<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bm]</span></span></span></span></span> Is here in my <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span></span> arms...<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span></span> Words are very <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span> unnecessary<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bm]</span></span></span></span></span> They can only do <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bb]</span></span></span></span></span> harm <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bb]</span></span></span></span></span>...<br/><br/><span class='text-muted'><strong>(riff)</strong></span><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bm]</span></span></span></span></span>... <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span>... <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bm]</span></span></span></span></span>... <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span>...<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bm]</span></span></span></span></span>... <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span>... <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bm]</span></span></span></span></span>... <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span></span>...<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bm]</span></span></span></span></span> Vows are spoken<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span></span> To be broken<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span> Feelings are intense<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span> Words are trivial<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bm]</span></span></span></span></span> Pleasures remain<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span></span> So does the pain<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span> Words are meaningless<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span> And forgettable<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span></span> All I ever wanted<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span> All I ever needed<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bm]</span></span></span></span></span> Is here in my <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span></span> arms<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span></span> Words are very <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span> unnecessary<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bm]</span></span></span></span></span> They can only do <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bb]</span></span></span></span></span> harm<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span></span> All I ever wanted<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span> All I ever needed<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bm]</span></span></span></span></span> Is here in my <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span></span> arms<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span></span> Words are very <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span> unnecessary<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bm]</span></span></span></span></span> They can only do <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bb]</span></span></span></span></span> harm <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bb]</span></span></span></span></span>...<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bm/]</span></span></span></span></span><br/>
+        <br/><br/><br/><br/><br/><br/><div class="mb-1"><br/>Beats per chord: <b>4</b><br/></div><br/><br/>(riff 1)<br/><pre><br/>A|---2---4-|----5---4-|---2---4-|----5---4-|<br/>E|-2---2---|--2---2---|-2---2---|--2---2---|<br/>C|---------|----------|---------|----------|<br/>G|---------|----------|---------|----------|<br/><br/>A|---2-----|----------|---2-----|----------|<br/>E|-2---2-5-|--x-3-x-2-|-2---2-5-|--x-3-x-2-|<br/>C|---------|----------|---------|----------|<br/>G|---------|----------|---------|----------|<br/></pre><br/><br/><hr /><br/><br/>Start: 1 2 3 4<br/><br/><span class='text-muted'><strong>(riff)</strong></span><br/><span class="chord">[Bm]</span>... <span class="chord">[D]</span>... <span class="chord">[Bm]</span>... <span class="chord">[D]</span>...<br/><span class="chord">[Bm]</span>... <span class="chord">[D]</span>... <span class="chord">[Bm]</span>... <span class="chord">[D]</span>...<br/><br/><span class="chord">[Bm]</span> Words like violence<br/><span class="chord">[Dm]</span> Break the silence<br/><span class="chord">[G]</span> Come crashing in<br/><span class="chord">[G]</span> Into my little world<br/><span class="chord">[Bm]</span> Painful to me<br/><span class="chord">[Dm]</span> Pierce right through me<br/><span class="chord">[G]</span> Can't you understand<br/><span class="chord">[G]</span> Oh my little girl<br/><br/><span class="chord">[Em]</span> All I ever wanted<br/><span class="chord">[G]</span> All I ever needed<br/><span class="chord">[Bm]</span> Is here in my <span class="chord">[A]</span> arms...<br/><span class="chord">[Em]</span> Words are very <span class="chord">[G]</span> unnecessary<br/><span class="chord">[Bm]</span> They can only do <span class="chord">[Bb]</span> harm <span class="chord">[Bb]</span>...<br/><br/><span class='text-muted'><strong>(riff)</strong></span><br/><span class="chord">[Bm]</span>... <span class="chord">[D]</span>... <span class="chord">[Bm]</span>... <span class="chord">[D]</span>...<br/><span class="chord">[Bm]</span>... <span class="chord">[D]</span>... <span class="chord">[Bm]</span>... <span class="chord">[D]</span>...<br/><br/><span class="chord">[Bm]</span> Vows are spoken<br/><span class="chord">[Dm]</span> To be broken<br/><span class="chord">[G]</span> Feelings are intense<br/><span class="chord">[G]</span> Words are trivial<br/><span class="chord">[Bm]</span> Pleasures remain<br/><span class="chord">[Dm]</span> So does the pain<br/><span class="chord">[G]</span> Words are meaningless<br/><span class="chord">[G]</span> And forgettable<br/><br/><span class="chord">[Em]</span> All I ever wanted<br/><span class="chord">[G]</span> All I ever needed<br/><span class="chord">[Bm]</span> Is here in my <span class="chord">[A]</span> arms<br/><span class="chord">[Em]</span> Words are very <span class="chord">[G]</span> unnecessary<br/><span class="chord">[Bm]</span> They can only do <span class="chord">[Bb]</span> harm<br/><br/><span class="chord">[Em]</span> All I ever wanted<br/><span class="chord">[G]</span> All I ever needed<br/><span class="chord">[Bm]</span> Is here in my <span class="chord">[A]</span> arms<br/><span class="chord">[Em]</span> Words are very <span class="chord">[G]</span> unnecessary<br/><span class="chord">[Bm]</span> They can only do <span class="chord">[Bb]</span> harm <span class="chord">[Bb]</span>...<br/><br/><span class="chord">[Bm/]</span><br/>
     </div>
 
     <div id="options" class="mt-4">
@@ -263,12 +263,12 @@ window.addEventListener('beforeunload', function() {
   }
 });
 </script>
-<!--<script>
+<script>
   function toggleDiv() {
     var checkBox = document.querySelector('.checkbox');
-    var devInfo = document.getElementById('infoBox');
-    devInfo.style.display = checkBox.checked ? 'block' : 'none';
+    var infoBox = document.getElementById('infoBox');
+    infoBox.style.display = checkBox.checked ? 'block' : 'none';
   }
-</script>-->
+</script>
 </body>
 </html>

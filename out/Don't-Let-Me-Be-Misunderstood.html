@@ -29,19 +29,17 @@
         }
 		.toggle-button {
 			background-color: #eee;
-			border: 1px solid #ccc;
-			padding: 1px 1px;
+			border: 0px solid ;
+			padding: 0px 0px;
 			margin-right: 5px;
 			cursor: pointer;
 		}
 		.div_box {
 			padding: 10px;
-			display: none;
-			}
-			.checkbox:checked + .div_box {
+		}
+		.checkbox:checked + #infoBox {
 			display: block;
-			border: 1px solid #aaa;
-			}
+		}
 		
 		@font-face {
 			font-family: 'Montserrat';
@@ -119,7 +117,9 @@
 
    <div class="mt-4" style="overflow-x: auto;">
     
-        <img src="chords/NC.gif" alt="NC" title="NC" />
+        <img src="chords/E7.gif" alt="E7" title="E7" />
+    
+        <img src="chords/F.gif" alt="F" title="F" />
     
         <img src="chords/G.gif" alt="G" title="G" />
     
@@ -127,27 +127,27 @@
     
         <img src="chords/C.gif" alt="C" title="C" />
     
-        <img src="chords/E7.gif" alt="E7" title="E7" />
+        <img src="chords/NC.gif" alt="NC" title="NC" />
     
         <img src="chords/Dm.gif" alt="Dm" title="Dm" />
     
-        <img src="chords/F.gif" alt="F" title="F" />
-    
 </div>
-	<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 20px; top: 20px;">Dev info? <input type="checkbox" class="checkbox" onclick="toggleDiv()"> </div>
-	<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px;">
-		<p id="heightInfo" style="font-size: xx-small;"></p>
-		<p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
-		<p id="songDuration" style="font-size: xx-small;"></p>
-	</div>
+		<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 5px; top: 10px;">
+		  Dev info? <input type="checkbox" class="checkbox">
+		</div>
+		<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px; display: none;">
+		  <p id="heightInfo" style="font-size: xx-small;"></p>
+		  <p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
+		  <p id="songDuration" style="font-size: xx-small;"></p>
+		</div>
 	<div id="floatingButton" style="position: fixed; right: 20px; bottom: 20px; ">
-		<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light">
+		<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light toggle-button">
 			<img id="buttonImage" src="images/pause2.gif">
 		</button>
 	</div>
     
     <div id="tab">
-        <br/><br/><br/><br/><br/><br/>Intro: <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>...<span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span>... x2 <br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> Baby, do you under<span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span>stand me now,<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> Sometimes I feel a little <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span> mad.<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> But, don't you know that no one alive <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> can aaaalways be an angel.<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> When things go wrong I feel real <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span> bad.<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> I'm just a soul whose <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> intentions are good,<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F/]</span></span></span></span> Oh Lord, <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm/]</span></span></span></span> please don't let me be misunder<span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>stood.<br/><br/>(same as intro)<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>  <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span> x2<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> Baby, sometimes I'm so <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> carefree,<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> With a joy that's hard to <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span> hide.<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> And sometimes it seems that, <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> all I have is worry<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> And then you're bound to see my <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span> other side.<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> I'm just a soul whose <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> intentions are good,<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F/]</span></span></span></span> Oh Lord, <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm/]</span></span></span></span> please don't let me be misunder<span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>stood.<br/><br/>(same as intro)<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>  <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span> x2<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> If I seem <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> edgy,<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> I want you to <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> know,<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> I never <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> mean to take it <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> out on you-<span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>-u.<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> Life has its <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> problems,<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> And I get my <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> share,<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> And that's one <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> thing I never <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span> mean to do,<br/>'Cause I love <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> you, Oh,<br/><br/>(same as intro)<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>  <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span> x2<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> baby - I'm JUST <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> human.<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> and I have thoughts like any other <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span> one.<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> Sometimes I find myself, <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> Lord, regretting,<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> Some little things - some <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span> stupid things I've done.<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> I'm just a soul whose <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> intentions are good,<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F/]</span></span></span></span> Oh Lord, <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm/]</span></span></span></span> please don't let me be misunder<span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>stood.<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[NC]</span></span></span></span> pa pa-ra-ra pa-ra-ra - pa-ra-ra pa pa-ra x2<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> pa pa-ra-ra pa-ra-ra, <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span> pa-ra-ra pa pa-ra x2<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> I'm just a soul whose <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> intentions are good,<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F/]</span></span></span></span> Oh Lord, <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm/]</span></span></span></span> please don't let me be misunder<span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am/]</span></span></span></span>stood.<br/>
+        <br/><br/><br/><br/><br/><br/>Intro: <br/><span class="chord">[Am]</span>...<span class="chord">[Dm]</span>... x2 <br/><br/><span class="chord">[Am]</span> Baby, do you under<span class="chord">[G]</span>stand me now,<br/><span class="chord">[F]</span> Sometimes I feel a little <span class="chord">[E7]</span> mad.<br/><span class="chord">[Am]</span> But, don't you know that no one alive <span class="chord">[G]</span> can aaaalways be an angel.<br/><span class="chord">[F]</span> When things go wrong I feel real <span class="chord">[E7]</span> bad.<br/><br/><span class="chord">[C]</span> I'm just a soul whose <span class="chord">[Am]</span> intentions are good,<br/><span class="chord">[F/]</span> Oh Lord, <span class="chord">[Dm/]</span> please don't let me be misunder<span class="chord">[Am]</span>stood.<br/><br/>(same as intro)<br/><span class="chord">[Am]</span>  <span class="chord">[Dm]</span> x2<br/><br/><span class="chord">[Am]</span> Baby, sometimes I'm so <span class="chord">[G]</span> carefree,<br/><span class="chord">[F]</span> With a joy that's hard to <span class="chord">[E7]</span> hide.<br/><span class="chord">[Am]</span> And sometimes it seems that, <span class="chord">[G]</span> all I have is worry<br/><span class="chord">[F]</span> And then you're bound to see my <span class="chord">[E7]</span> other side.<br/><br/><span class="chord">[C]</span> I'm just a soul whose <span class="chord">[Am]</span> intentions are good,<br/><span class="chord">[F/]</span> Oh Lord, <span class="chord">[Dm/]</span> please don't let me be misunder<span class="chord">[Am]</span>stood.<br/><br/>(same as intro)<br/><span class="chord">[Am]</span>  <span class="chord">[Dm]</span> x2<br/><span class="chord">[F]</span> If I seem <span class="chord">[G]</span> edgy,<br/><span class="chord">[F]</span> I want you to <span class="chord">[G]</span> know,<br/><span class="chord">[F]</span> I never <span class="chord">[G]</span> mean to take it <span class="chord">[C]</span> out on you-<span class="chord">[Am]</span>-u.<br/><span class="chord">[F]</span> Life has its <span class="chord">[G]</span> problems,<br/><span class="chord">[F]</span> And I get my <span class="chord">[G]</span> share,<br/><span class="chord">[F]</span> And that's one <span class="chord">[G]</span> thing I never <span class="chord">[E7]</span> mean to do,<br/>'Cause I love <span class="chord">[Am]</span> you, Oh,<br/><br/>(same as intro)<br/><span class="chord">[Am]</span>  <span class="chord">[Dm]</span> x2<br/><br/><span class="chord">[Am]</span> baby - I'm JUST <span class="chord">[G]</span> human.<br/><span class="chord">[F]</span> and I have thoughts like any other <span class="chord">[E7]</span> one.<br/><span class="chord">[Am]</span> Sometimes I find myself, <span class="chord">[G]</span> Lord, regretting,<br/><span class="chord">[F]</span> Some little things - some <span class="chord">[E7]</span> stupid things I've done.<br/><br/><span class="chord">[C]</span> I'm just a soul whose <span class="chord">[Am]</span> intentions are good,<br/><span class="chord">[F/]</span> Oh Lord, <span class="chord">[Dm/]</span> please don't let me be misunder<span class="chord">[Am]</span>stood.<br/><br/><span class="chord">[NC]</span> pa pa-ra-ra pa-ra-ra - pa-ra-ra pa pa-ra x2<br/><span class="chord">[Am]</span> pa pa-ra-ra pa-ra-ra, <span class="chord">[Dm]</span> pa-ra-ra pa pa-ra x2<br/><br/><span class="chord">[C]</span> I'm just a soul whose <span class="chord">[Am]</span> intentions are good,<br/><span class="chord">[F/]</span> Oh Lord, <span class="chord">[Dm/]</span> please don't let me be misunder<span class="chord">[Am/]</span>stood.<br/>
     </div>
 
     <div id="options" class="mt-4">
@@ -254,12 +254,12 @@ window.addEventListener('beforeunload', function() {
   }
 });
 </script>
-<!--<script>
+<script>
   function toggleDiv() {
     var checkBox = document.querySelector('.checkbox');
-    var devInfo = document.getElementById('infoBox');
-    devInfo.style.display = checkBox.checked ? 'block' : 'none';
+    var infoBox = document.getElementById('infoBox');
+    infoBox.style.display = checkBox.checked ? 'block' : 'none';
   }
-</script>-->
+</script>
 </body>
 </html>

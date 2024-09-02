@@ -29,19 +29,17 @@
         }
 		.toggle-button {
 			background-color: #eee;
-			border: 1px solid #ccc;
-			padding: 1px 1px;
+			border: 0px solid ;
+			padding: 0px 0px;
 			margin-right: 5px;
 			cursor: pointer;
 		}
 		.div_box {
 			padding: 10px;
-			display: none;
-			}
-			.checkbox:checked + .div_box {
+		}
+		.checkbox:checked + #infoBox {
 			display: block;
-			border: 1px solid #aaa;
-			}
+		}
 		
 		@font-face {
 			font-family: 'Montserrat';
@@ -128,29 +126,31 @@
 
    <div class="mt-4" style="overflow-x: auto;">
     
-        <img src="chords/Em.gif" alt="Em" title="Em" />
-    
         <img src="chords/C.gif" alt="C" title="C" />
     
         <img src="chords/D.gif" alt="D" title="D" />
     
         <img src="chords/Am.gif" alt="Am" title="Am" />
     
+        <img src="chords/Em.gif" alt="Em" title="Em" />
+    
 </div>
-	<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 20px; top: 20px;">Dev info? <input type="checkbox" class="checkbox" onclick="toggleDiv()"> </div>
-	<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px;">
-		<p id="heightInfo" style="font-size: xx-small;"></p>
-		<p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
-		<p id="songDuration" style="font-size: xx-small;"></p>
-	</div>
+		<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 5px; top: 10px;">
+		  Dev info? <input type="checkbox" class="checkbox">
+		</div>
+		<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px; display: none;">
+		  <p id="heightInfo" style="font-size: xx-small;"></p>
+		  <p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
+		  <p id="songDuration" style="font-size: xx-small;"></p>
+		</div>
 	<div id="floatingButton" style="position: fixed; right: 20px; bottom: 20px; ">
-		<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light">
+		<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light toggle-button">
 			<img id="buttonImage" src="images/pause2.gif">
 		</button>
 	</div>
     
     <div id="tab">
-        <br/><br/><br/><br/><br/><br/>4 beats per chord<br/><br/>Intro:<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> ... <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> ... <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span> ... <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span> ... <br/><br/>Like the legend of the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> phoenix <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> ...<br/>All ends were be<span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span>ginnings <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span> ...<br/>What keeps the planet <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> spinning <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> (ah-ah)<br/>The force from the beg<span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span>inning <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span> ...<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> We've… come too <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> far ...<br/>To give <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span> up… who we <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span> are<br/>So <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> let's… raise the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> bar<br/>And our <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span> cups… to the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span> stars<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> She's up all night 'til the sun… <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> I'm up all night to get some<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span> She's up all night for good fun… <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span> I'm up all night to get lucky<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> We're up all night 'til the sun… <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> we're up all night to get some<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span> We're up all night for good fun… <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span> we're up all night to get lucky<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> We're up all night to get lucky… <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> we're up all night to get lucky<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span> We're up all night to get lucky… <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span> we're up all night to get lucky<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> ... <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> ... <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span> ... <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span> ...<br/><br/>The present has no <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> rhythm <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> ...<br/>Your gift keeps on <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span> giving <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span> ...<br/>What is this I'm <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> feeling? <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> ...<br/>If you want to leave I'm <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span> with it <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span> (ah-ah)<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> We've… come too <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> far<br/>To give <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span> up… who we <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span> are<br/>So <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> let's… raise the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> bar<br/>And our <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span> cups… to the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span> stars<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> She's up all night 'til the sun… <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> I'm up all night to get some<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span> She's up all night for good fun… <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span> I'm up all night to get lucky<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> We're up all night 'til the sun… <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> we're up all night to get some<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span> We're up all night for good fun… <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span> we're up all night to get lucky<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> We're up all night to get lucky… <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> we're up all night to get lucky<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span> We're up all night to get lucky… <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span> we're up all night to get lucky<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am/]</span></span></span></span><br/>
+        <br/><br/><br/><br/><br/><br/>4 beats per chord<br/><br/>Intro:<br/><span class="chord">[Am]</span> ... <span class="chord">[C]</span> ... <span class="chord">[Em]</span> ... <span class="chord">[D]</span> ... <br/><br/>Like the legend of the <span class="chord">[Am]</span> phoenix <span class="chord">[C]</span> ...<br/>All ends were be<span class="chord">[Em]</span>ginnings <span class="chord">[D]</span> ...<br/>What keeps the planet <span class="chord">[Am]</span> spinning <span class="chord">[C]</span> (ah-ah)<br/>The force from the beg<span class="chord">[Em]</span>inning <span class="chord">[D]</span> ...<br/><br/><span class="chord">[Am]</span> We've… come too <span class="chord">[C]</span> far ...<br/>To give <span class="chord">[Em]</span> up… who we <span class="chord">[D]</span> are<br/>So <span class="chord">[Am]</span> let's… raise the <span class="chord">[C]</span> bar<br/>And our <span class="chord">[Em]</span> cups… to the <span class="chord">[D]</span> stars<br/><br/><span class="chord">[Am]</span> She's up all night 'til the sun… <span class="chord">[C]</span> I'm up all night to get some<br/><span class="chord">[Em]</span> She's up all night for good fun… <span class="chord">[D]</span> I'm up all night to get lucky<br/><span class="chord">[Am]</span> We're up all night 'til the sun… <span class="chord">[C]</span> we're up all night to get some<br/><span class="chord">[Em]</span> We're up all night for good fun… <span class="chord">[D]</span> we're up all night to get lucky<br/><span class="chord">[Am]</span> We're up all night to get lucky… <span class="chord">[C]</span> we're up all night to get lucky<br/><span class="chord">[Em]</span> We're up all night to get lucky… <span class="chord">[D]</span> we're up all night to get lucky<br/><span class="chord">[Am]</span> ... <span class="chord">[C]</span> ... <span class="chord">[Em]</span> ... <span class="chord">[D]</span> ...<br/><br/>The present has no <span class="chord">[Am]</span> rhythm <span class="chord">[C]</span> ...<br/>Your gift keeps on <span class="chord">[Em]</span> giving <span class="chord">[D]</span> ...<br/>What is this I'm <span class="chord">[Am]</span> feeling? <span class="chord">[C]</span> ...<br/>If you want to leave I'm <span class="chord">[Em]</span> with it <span class="chord">[D]</span> (ah-ah)<br/><br/><span class="chord">[Am]</span> We've… come too <span class="chord">[C]</span> far<br/>To give <span class="chord">[Em]</span> up… who we <span class="chord">[D]</span> are<br/>So <span class="chord">[Am]</span> let's… raise the <span class="chord">[C]</span> bar<br/>And our <span class="chord">[Em]</span> cups… to the <span class="chord">[D]</span> stars<br/><br/><span class="chord">[Am]</span> She's up all night 'til the sun… <span class="chord">[C]</span> I'm up all night to get some<br/><span class="chord">[Em]</span> She's up all night for good fun… <span class="chord">[D]</span> I'm up all night to get lucky<br/><span class="chord">[Am]</span> We're up all night 'til the sun… <span class="chord">[C]</span> we're up all night to get some<br/><span class="chord">[Em]</span> We're up all night for good fun… <span class="chord">[D]</span> we're up all night to get lucky<br/><span class="chord">[Am]</span> We're up all night to get lucky… <span class="chord">[C]</span> we're up all night to get lucky<br/><span class="chord">[Em]</span> We're up all night to get lucky… <span class="chord">[D]</span> we're up all night to get lucky<br/><br/><span class="chord">[Am/]</span><br/>
     </div>
 
     <div id="options" class="mt-4">
@@ -257,12 +257,12 @@ window.addEventListener('beforeunload', function() {
   }
 });
 </script>
-<!--<script>
+<script>
   function toggleDiv() {
     var checkBox = document.querySelector('.checkbox');
-    var devInfo = document.getElementById('infoBox');
-    devInfo.style.display = checkBox.checked ? 'block' : 'none';
+    var infoBox = document.getElementById('infoBox');
+    infoBox.style.display = checkBox.checked ? 'block' : 'none';
   }
-</script>-->
+</script>
 </body>
 </html>

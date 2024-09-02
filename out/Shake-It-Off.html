@@ -29,19 +29,17 @@
         }
 		.toggle-button {
 			background-color: #eee;
-			border: 1px solid #ccc;
-			padding: 1px 1px;
+			border: 0px solid ;
+			padding: 0px 0px;
 			margin-right: 5px;
 			cursor: pointer;
 		}
 		.div_box {
 			padding: 10px;
-			display: none;
-			}
-			.checkbox:checked + .div_box {
+		}
+		.checkbox:checked + #infoBox {
 			display: block;
-			border: 1px solid #aaa;
-			}
+		}
 		
 		@font-face {
 			font-family: 'Montserrat';
@@ -126,20 +124,22 @@
         <img src="chords/G.gif" alt="G" title="G" />
     
 </div>
-	<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 20px; top: 20px;">Dev info? <input type="checkbox" class="checkbox" onclick="toggleDiv()"> </div>
-	<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px;">
-		<p id="heightInfo" style="font-size: xx-small;"></p>
-		<p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
-		<p id="songDuration" style="font-size: xx-small;"></p>
-	</div>
+		<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 5px; top: 10px;">
+		  Dev info? <input type="checkbox" class="checkbox">
+		</div>
+		<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px; display: none;">
+		  <p id="heightInfo" style="font-size: xx-small;"></p>
+		  <p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
+		  <p id="songDuration" style="font-size: xx-small;"></p>
+		</div>
 	<div id="floatingButton" style="position: fixed; right: 20px; bottom: 20px; ">
-		<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light">
+		<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light toggle-button">
 			<img id="buttonImage" src="images/pause2.gif">
 		</button>
 	</div>
     
     <div id="tab">
-          <br/>  <br/>  <br/><br/><br/>Intro: (mute strums)<br/><br/>I stay out too <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em/]</span></span></span></span> late... <br/>Got nothing in my <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G/]</span></span></span></span> brain<br/>That's what people <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D/]</span></span></span></span> sa-ayy… mmm-mmm… <br/>That's what people sa-ayy… mmm-mmm<br/><br/>I go on too many <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em/]</span></span></span></span> dates... <br/>But I can't make 'em <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G/]</span></span></span></span> stay<br/>At least that's what people <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D/]</span></span></span></span> sa-ay… mmm-mmm… <br/>That's what people sa-ay… mmm-mmm (stop)<br/><br/>But I keep <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span> cruisin'… <br/>Can't stop won't stop <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> moving<br/>It's like I got this <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span> music… <br/>In my mind, saying it's gonna be alright (stop)<br/><br/>(chorus:)<br/>Cause the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span> players gonna play, play, play, play, play<br/>And the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> haters gonna hate, hate, hate, hate, hate baby<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span> I'm just gonna shake, shake, shake, shake, shake<br/>Shake it off, I shake it off<br/><br/>Heart <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span> breakers gonna break, break, break, break, break<br/>And the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> fakers gonna fake, fake, fake, fake, fake baby<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span> I'm just gonna shake, shake, shake, shake, shake<br/>Shake it off, I shake it off (stop)<br/><br/>I never miss a <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span> beat... <br/>I'm lightning on my <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span>feet<br/>And that's what they don't <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span>see-ee… mmm-mmm… <br/>That's what they dont' see-ee… mmm-mmm<br/><br/>I'm dancing on my <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span> own (dancing on my own)<br/>I'll make the moves up as I <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> go (moves up as I go)<br/>And that's what they don't <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span> know-ow, mmm-mmm<br/>That's what they don't know-ow, mmm-mmm (stop)<br/><br/>But I keep <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span> cruisin'… <br/>Can't stop won't stop <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> grooving<br/>It's like I got this <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span> music… <br/>In my mind, saying (stop) it's gonna be alright<br/><br/>(chorus:)<br/>Cause the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span> players gonna play, play, play, play, play<br/>And the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> haters gonna hate, hate, hate, hate, hate baby<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span> I'm just gonna shake, shake, shake, shake, shake<br/>Shake it off, I shake it off<br/><br/>Heart <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span> breakers gonna break, break, break, break, break<br/>And the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> fakers gonna fake, fake, fake, fake, fake baby<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span> I'm just gonna shake, shake, shake, shake, shake<br/>Shake it off, I shake it off <br/><br/>Cause the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span> players gonna play, play, play, play, play<br/>And the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> haters gonna hate, hate, hate, hate, hate baby<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span> I'm just gonna shake, shake, shake, shake, shake<br/>Shake it off, I shake it off<br/><br/>Heart <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span> breakers gonna break, break, break, break, break<br/>And the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> fakers gonna fake, fake, fake, fake, fake baby<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span> I'm just gonna shake, shake, shake, shake, shake<br/>Shake it off, I shake it off <br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span> Shake it off, I shake it off… I I, <br/>I <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span>shake it off, I shake it off, I I,<br/>I… <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span>shake it off, I shake it off… I I, <br/>I shake it off, I shake it off (stop)
+          <br/>  <br/>  <br/><br/><br/>Intro: (mute strums)<br/><br/>I stay out too <span class="chord">[Em/]</span> late... <br/>Got nothing in my <span class="chord">[G/]</span> brain<br/>That's what people <span class="chord">[D/]</span> sa-ayy… mmm-mmm… <br/>That's what people sa-ayy… mmm-mmm<br/><br/>I go on too many <span class="chord">[Em/]</span> dates... <br/>But I can't make 'em <span class="chord">[G/]</span> stay<br/>At least that's what people <span class="chord">[D/]</span> sa-ay… mmm-mmm… <br/>That's what people sa-ay… mmm-mmm (stop)<br/><br/>But I keep <span class="chord">[Em]</span> cruisin'… <br/>Can't stop won't stop <span class="chord">[G]</span> moving<br/>It's like I got this <span class="chord">[D]</span> music… <br/>In my mind, saying it's gonna be alright (stop)<br/><br/>(chorus:)<br/>Cause the <span class="chord">[Em]</span> players gonna play, play, play, play, play<br/>And the <span class="chord">[G]</span> haters gonna hate, hate, hate, hate, hate baby<br/><span class="chord">[D]</span> I'm just gonna shake, shake, shake, shake, shake<br/>Shake it off, I shake it off<br/><br/>Heart <span class="chord">[Em]</span> breakers gonna break, break, break, break, break<br/>And the <span class="chord">[G]</span> fakers gonna fake, fake, fake, fake, fake baby<br/><span class="chord">[D]</span> I'm just gonna shake, shake, shake, shake, shake<br/>Shake it off, I shake it off (stop)<br/><br/>I never miss a <span class="chord">[Em]</span> beat... <br/>I'm lightning on my <span class="chord">[G]</span>feet<br/>And that's what they don't <span class="chord">[D]</span>see-ee… mmm-mmm… <br/>That's what they dont' see-ee… mmm-mmm<br/><br/>I'm dancing on my <span class="chord">[Em]</span> own (dancing on my own)<br/>I'll make the moves up as I <span class="chord">[G]</span> go (moves up as I go)<br/>And that's what they don't <span class="chord">[D]</span> know-ow, mmm-mmm<br/>That's what they don't know-ow, mmm-mmm (stop)<br/><br/>But I keep <span class="chord">[Em]</span> cruisin'… <br/>Can't stop won't stop <span class="chord">[G]</span> grooving<br/>It's like I got this <span class="chord">[D]</span> music… <br/>In my mind, saying (stop) it's gonna be alright<br/><br/>(chorus:)<br/>Cause the <span class="chord">[Em]</span> players gonna play, play, play, play, play<br/>And the <span class="chord">[G]</span> haters gonna hate, hate, hate, hate, hate baby<br/><span class="chord">[D]</span> I'm just gonna shake, shake, shake, shake, shake<br/>Shake it off, I shake it off<br/><br/>Heart <span class="chord">[Em]</span> breakers gonna break, break, break, break, break<br/>And the <span class="chord">[G]</span> fakers gonna fake, fake, fake, fake, fake baby<br/><span class="chord">[D]</span> I'm just gonna shake, shake, shake, shake, shake<br/>Shake it off, I shake it off <br/><br/>Cause the <span class="chord">[Em]</span> players gonna play, play, play, play, play<br/>And the <span class="chord">[G]</span> haters gonna hate, hate, hate, hate, hate baby<br/><span class="chord">[D]</span> I'm just gonna shake, shake, shake, shake, shake<br/>Shake it off, I shake it off<br/><br/>Heart <span class="chord">[Em]</span> breakers gonna break, break, break, break, break<br/>And the <span class="chord">[G]</span> fakers gonna fake, fake, fake, fake, fake baby<br/><span class="chord">[D]</span> I'm just gonna shake, shake, shake, shake, shake<br/>Shake it off, I shake it off <br/><br/><span class="chord">[Em]</span> Shake it off, I shake it off… I I, <br/>I <span class="chord">[G]</span>shake it off, I shake it off, I I,<br/>I… <span class="chord">[D]</span>shake it off, I shake it off… I I, <br/>I shake it off, I shake it off (stop)
     </div>
 
     <div id="options" class="mt-4">
@@ -246,12 +246,12 @@ window.addEventListener('beforeunload', function() {
   }
 });
 </script>
-<!--<script>
+<script>
   function toggleDiv() {
     var checkBox = document.querySelector('.checkbox');
-    var devInfo = document.getElementById('infoBox');
-    devInfo.style.display = checkBox.checked ? 'block' : 'none';
+    var infoBox = document.getElementById('infoBox');
+    infoBox.style.display = checkBox.checked ? 'block' : 'none';
   }
-</script>-->
+</script>
 </body>
 </html>

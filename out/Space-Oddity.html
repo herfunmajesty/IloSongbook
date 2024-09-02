@@ -29,19 +29,17 @@
         }
 		.toggle-button {
 			background-color: #eee;
-			border: 1px solid #ccc;
-			padding: 1px 1px;
+			border: 0px solid ;
+			padding: 0px 0px;
 			margin-right: 5px;
 			cursor: pointer;
 		}
 		.div_box {
 			padding: 10px;
-			display: none;
-			}
-			.checkbox:checked + .div_box {
+		}
+		.checkbox:checked + #infoBox {
 			display: block;
-			border: 1px solid #aaa;
-			}
+		}
 		
 		@font-face {
 			font-family: 'Montserrat';
@@ -128,47 +126,49 @@
 
    <div class="mt-4" style="overflow-x: auto;">
     
-        <img src="chords/D7.gif" alt="D7" title="D7" />
+        <img src="chords/E7.gif" alt="E7" title="E7" />
     
-        <img src="chords/Fm.gif" alt="Fm" title="Fm" />
-    
-        <img src="chords/A.gif" alt="A" title="A" />
+        <img src="chords/F.gif" alt="F" title="F" />
     
         <img src="chords/G.gif" alt="G" title="G" />
     
+        <img src="chords/Em7.gif" alt="Em7" title="Em7" />
+    
         <img src="chords/Am.gif" alt="Am" title="Am" />
     
-        <img src="chords/Em7.gif" alt="Em7" title="Em7" />
+        <img src="chords/Fm.gif" alt="Fm" title="Fm" />
+    
+        <img src="chords/D.gif" alt="D" title="D" />
     
         <img src="chords/Bb.gif" alt="Bb" title="Bb" />
     
         <img src="chords/C.gif" alt="C" title="C" />
     
-        <img src="chords/D.gif" alt="D" title="D" />
+        <img src="chords/Am7.gif" alt="Am7" title="Am7" />
     
-        <img src="chords/E7.gif" alt="E7" title="E7" />
+        <img src="chords/D7.gif" alt="D7" title="D7" />
+    
+        <img src="chords/A.gif" alt="A" title="A" />
     
         <img src="chords/Fmaj7.gif" alt="Fmaj7" title="Fmaj7" />
     
-        <img src="chords/Am7.gif" alt="Am7" title="Am7" />
-    
-        <img src="chords/F.gif" alt="F" title="F" />
-    
 </div>
-	<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 20px; top: 20px;">Dev info? <input type="checkbox" class="checkbox" onclick="toggleDiv()"> </div>
-	<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px;">
-		<p id="heightInfo" style="font-size: xx-small;"></p>
-		<p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
-		<p id="songDuration" style="font-size: xx-small;"></p>
-	</div>
+		<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 5px; top: 10px;">
+		  Dev info? <input type="checkbox" class="checkbox">
+		</div>
+		<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px; display: none;">
+		  <p id="heightInfo" style="font-size: xx-small;"></p>
+		  <p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
+		  <p id="songDuration" style="font-size: xx-small;"></p>
+		</div>
 	<div id="floatingButton" style="position: fixed; right: 20px; bottom: 20px; ">
-		<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light">
+		<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light toggle-button">
 			<img id="buttonImage" src="images/pause2.gif">
 		</button>
 	</div>
     
     <div id="tab">
-        <br/><br/><br/><br/><br/>Obs: <br/>- The count<br/>- Explain bridge<br/>- <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D7]</span></span></span></span> with two fingers<br/><br/>(intro)<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Fmaj7]</span></span></span></span> ... <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em7]</span></span></span></span> ...<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Fmaj7]</span></span></span></span> ... <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em7]</span></span></span></span> ...<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> Ground control to Major <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em7]</span></span></span></span> Tom…<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> Ground control to Major <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em7]</span></span></span></span> Tom…<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> Take your <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am7]</span></span></span></span> protein pills and <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span> put your helmet on<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> Ground control to Major <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em7]</span></span></span></span> Tom…<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> Commencing countdown engines <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em7]</span></span></span></span> on…<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> Check ig<span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am7]</span></span></span></span>nition and may <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span> God’s love be with you…<br/><br/>(moving chord higher)<br/>8... 7... 6... 5... 4... 3... 2... 1... )<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> This is ground control to Major <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span> Tom… <br/>You’ve really made the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> gra-ade…<br/>And the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Fm]</span></span></span></span> papers want to <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> know whose shirt you <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> wea-ear…<br/>Now it’s <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Fm]</span></span></span></span> time to leave the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> capsule, if you <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> da-are<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> This is Major Tom to ground con<span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span>trol… <br/>I’m stepping through the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> door…<br/>And I’m <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Fm]</span></span></span></span> floating in a <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> most peculiar <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> wa-ay…<br/>And the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Fm]</span></span></span></span> stars look very <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> different <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> toda-a-ay…<br/><br/>For <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Fmaj7]</span></span></span></span> he-e-ere am I <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em7]</span></span></span></span> sitting in the tin can…<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Fmaj7]</span></span></span></span> Fa-a-ar above the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em7]</span></span></span></span> world<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bb]</span></span></span></span> Planet earth is <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> blue <br/>And there’s <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> nothing I can <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> do-o-o<br/><br/>(bridge)<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C/]</span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F/]</span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G/]</span></span></span></span> . <span class="chord"><span class="chord"><span class="chord"><span class="chord">[A/]</span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[A/]</span></span></span></span><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C/]</span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F/]</span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G/]</span></span></span></span> . <span class="chord"><span class="chord"><span class="chord"><span class="chord">[A/]</span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[A/]</span></span></span></span><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Fmaj7]</span></span></span></span> ... <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em7]</span></span></span></span> ...<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span>... <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span>... <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span>... <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span>...<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> Though I’m past one hundred thousand <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span> miles… <br/>I’m feeling very <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> stiiill<br/>And I <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Fm]</span></span></span></span> think my spaceship <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> knows which way to <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> go-o-o<br/>Tell my <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Fm]</span></span></span></span> wife I love her <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> very much… she <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> kno-o-ows<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> Ground control to <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span> Major Tom<br/>Your <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> circuit’s dead there’s <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> something wrong<br/><br/>Can you <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D7]</span></span></span></span> hear me Major Tom?<br/>Can you <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> hear me Major Tom?<br/>Can you <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> hear me Major Tom? Can you<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Fmaj7]</span></span></span></span> He-e-ere am I <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em7]</span></span></span></span> floating in my tin can<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Fmaj7]</span></span></span></span> Fa-a-ar above the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em7]</span></span></span></span> moon<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bb]</span></span></span></span> Planet earth is <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> blue <br/>And there’s <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> nothing I can <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> do-o-o<br/><br/>(bridge)<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C/]</span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F/]</span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G/]</span></span></span></span> . <span class="chord"><span class="chord"><span class="chord"><span class="chord">[A/]</span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[A/]</span></span></span></span><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C/]</span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F/]</span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G/]</span></span></span></span> . <span class="chord"><span class="chord"><span class="chord"><span class="chord">[A/]</span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[A/]</span></span></span></span><br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Fmaj7]</span></span></span></span> ... <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em7]</span></span></span></span> ... <br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span> ... <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> ... <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span> ... <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span><br/><br/>(moving chord higher and fading)<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span>...<br/>
+        <br/><br/><br/><br/><br/>Obs: <br/>- The count<br/>- Explain bridge<br/>- <span class="chord">[D7]</span> with two fingers<br/><br/>(intro)<br/><span class="chord">[Fmaj7]</span> ... <span class="chord">[Em7]</span> ...<br/><span class="chord">[Fmaj7]</span> ... <span class="chord">[Em7]</span> ...<br/><br/><span class="chord">[C]</span> Ground control to Major <span class="chord">[Em7]</span> Tom…<br/><span class="chord">[C]</span> Ground control to Major <span class="chord">[Em7]</span> Tom…<br/><span class="chord">[Am]</span> Take your <span class="chord">[Am7]</span> protein pills and <span class="chord">[D]</span> put your helmet on<br/><br/><span class="chord">[C]</span> Ground control to Major <span class="chord">[Em7]</span> Tom…<br/><span class="chord">[C]</span> Commencing countdown engines <span class="chord">[Em7]</span> on…<br/><span class="chord">[Am]</span> Check ig<span class="chord">[Am7]</span>nition and may <span class="chord">[D]</span> God’s love be with you…<br/><br/>(moving chord higher)<br/>8... 7... 6... 5... 4... 3... 2... 1... )<br/><br/><span class="chord">[C]</span> This is ground control to Major <span class="chord">[E7]</span> Tom… <br/>You’ve really made the <span class="chord">[F]</span> gra-ade…<br/>And the <span class="chord">[Fm]</span> papers want to <span class="chord">[C]</span> know whose shirt you <span class="chord">[F]</span> wea-ear…<br/>Now it’s <span class="chord">[Fm]</span> time to leave the <span class="chord">[C]</span> capsule, if you <span class="chord">[F]</span> da-are<br/><br/><span class="chord">[C]</span> This is Major Tom to ground con<span class="chord">[E7]</span>trol… <br/>I’m stepping through the <span class="chord">[F]</span> door…<br/>And I’m <span class="chord">[Fm]</span> floating in a <span class="chord">[C]</span> most peculiar <span class="chord">[F]</span> wa-ay…<br/>And the <span class="chord">[Fm]</span> stars look very <span class="chord">[C]</span> different <span class="chord">[F]</span> toda-a-ay…<br/><br/>For <span class="chord">[Fmaj7]</span> he-e-ere am I <span class="chord">[Em7]</span> sitting in the tin can…<br/><span class="chord">[Fmaj7]</span> Fa-a-ar above the <span class="chord">[Em7]</span> world<br/><br/><span class="chord">[Bb]</span> Planet earth is <span class="chord">[Am]</span> blue <br/>And there’s <span class="chord">[G]</span> nothing I can <span class="chord">[F]</span> do-o-o<br/><br/>(bridge)<br/><span class="chord">[C/]</span> <span class="chord">[F/]</span> <span class="chord">[G/]</span> . <span class="chord">[A/]</span> <span class="chord">[A/]</span><br/><span class="chord">[C/]</span> <span class="chord">[F/]</span> <span class="chord">[G/]</span> . <span class="chord">[A/]</span> <span class="chord">[A/]</span><br/><span class="chord">[Fmaj7]</span> ... <span class="chord">[Em7]</span> ...<br/><span class="chord">[A]</span>... <span class="chord">[C]</span>... <span class="chord">[D]</span>... <span class="chord">[E7]</span>...<br/><br/><span class="chord">[C]</span> Though I’m past one hundred thousand <span class="chord">[E7]</span> miles… <br/>I’m feeling very <span class="chord">[F]</span> stiiill<br/>And I <span class="chord">[Fm]</span> think my spaceship <span class="chord">[C]</span> knows which way to <span class="chord">[F]</span> go-o-o<br/>Tell my <span class="chord">[Fm]</span> wife I love her <span class="chord">[C]</span> very much… she <span class="chord">[F]</span> kno-o-ows<br/><br/><span class="chord">[G]</span> Ground control to <span class="chord">[E7]</span> Major Tom<br/>Your <span class="chord">[Am]</span> circuit’s dead there’s <span class="chord">[C]</span> something wrong<br/><br/>Can you <span class="chord">[D7]</span> hear me Major Tom?<br/>Can you <span class="chord">[C]</span> hear me Major Tom?<br/>Can you <span class="chord">[G]</span> hear me Major Tom? Can you<br/><span class="chord">[Fmaj7]</span> He-e-ere am I <span class="chord">[Em7]</span> floating in my tin can<br/><span class="chord">[Fmaj7]</span> Fa-a-ar above the <span class="chord">[Em7]</span> moon<br/><br/><span class="chord">[Bb]</span> Planet earth is <span class="chord">[Am]</span> blue <br/>And there’s <span class="chord">[G]</span> nothing I can <span class="chord">[F]</span> do-o-o<br/><br/>(bridge)<br/><span class="chord">[C/]</span> <span class="chord">[F/]</span> <span class="chord">[G/]</span> . <span class="chord">[A/]</span> <span class="chord">[A/]</span><br/><span class="chord">[C/]</span> <span class="chord">[F/]</span> <span class="chord">[G/]</span> . <span class="chord">[A/]</span> <span class="chord">[A/]</span><br/><br/><span class="chord">[Fmaj7]</span> ... <span class="chord">[Em7]</span> ... <br/><br/><span class="chord">[A]</span> ... <span class="chord">[C]</span> ... <span class="chord">[D]</span> ... <span class="chord">[E7]</span><br/><br/>(moving chord higher and fading)<br/><span class="chord">[E7]</span>...<br/>
     </div>
 
     <div id="options" class="mt-4">
@@ -275,12 +275,12 @@ window.addEventListener('beforeunload', function() {
   }
 });
 </script>
-<!--<script>
+<script>
   function toggleDiv() {
     var checkBox = document.querySelector('.checkbox');
-    var devInfo = document.getElementById('infoBox');
-    devInfo.style.display = checkBox.checked ? 'block' : 'none';
+    var infoBox = document.getElementById('infoBox');
+    infoBox.style.display = checkBox.checked ? 'block' : 'none';
   }
-</script>-->
+</script>
 </body>
 </html>

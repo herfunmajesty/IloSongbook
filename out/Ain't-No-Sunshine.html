@@ -29,19 +29,17 @@
         }
 		.toggle-button {
 			background-color: #eee;
-			border: 1px solid #ccc;
-			padding: 1px 1px;
+			border: 0px solid ;
+			padding: 0px 0px;
 			margin-right: 5px;
 			cursor: pointer;
 		}
 		.div_box {
 			padding: 10px;
-			display: none;
-			}
-			.checkbox:checked + .div_box {
+		}
+		.checkbox:checked + #infoBox {
 			display: block;
-			border: 1px solid #aaa;
-			}
+		}
 		
 		@font-face {
 			font-family: 'Montserrat';
@@ -135,20 +133,22 @@
         <img src="chords/Am.gif" alt="Am" title="Am" />
     
 </div>
-	<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 20px; top: 20px;">Dev info? <input type="checkbox" class="checkbox" onclick="toggleDiv()"> </div>
-	<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px;">
-		<p id="heightInfo" style="font-size: xx-small;"></p>
-		<p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
-		<p id="songDuration" style="font-size: xx-small;"></p>
-	</div>
+		<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 5px; top: 10px;">
+		  Dev info? <input type="checkbox" class="checkbox">
+		</div>
+		<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px; display: none;">
+		  <p id="heightInfo" style="font-size: xx-small;"></p>
+		  <p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
+		  <p id="songDuration" style="font-size: xx-small;"></p>
+		</div>
 	<div id="floatingButton" style="position: fixed; right: 20px; bottom: 20px; ">
-		<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light">
+		<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light toggle-button">
 			<img id="buttonImage" src="images/pause2.gif">
 		</button>
 	</div>
     
     <div id="tab">
-          <br/>  <br/>  <br/>  <br/>  <br/><br/><br/>Intro: <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am//]</span></span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em7//]</span></span></span></span></span> x4 <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am/]</span></span></span></span></span> <strong><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[stop]</span></span></span></span></span></strong><br/><br/>Ain't no sunshine when she's <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am//]</span></span></span></span></span> gone .. <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em7//]</span></span></span></span></span> ..  <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span></span> It’s not warm when she's <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am//]</span></span></span></span></span> away .. <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em7//]</span></span></span></span></span> ..    <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span></span> Ain't no sunshine when she's <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em7]</span></span></span></span></span> gone    <br/>And she’s always gone too <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span></span> long    <br/>Anytime she goes a<span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am//]</span></span></span></span></span>way ... <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em7//]</span></span></span></span></span> .. <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am/]</span></span></span></span></span> <strong><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[stop]</span></span></span></span></span></strong><br/><br/>Wonder this time where she’s <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am//]</span></span></span></span></span> .. gone <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em7//]</span></span></span></span></span> ..<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span></span> Wonder if she's gone to <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am//]</span></span></span></span></span> stay .. <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em7//]</span></span></span></span></span> ..    <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span></span> Ain't no sunshine when she's <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em7]</span></span></span></span></span> gone    <br/>And this house just ain't no <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span></span> home    <br/>Anytime she goes a<span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am//]</span></span></span></span></span>way .. <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em7//]</span></span></span></span></span> .. <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am/]</span></span></span></span></span> <br/><br/>(stop) <br/>And I know, I know ,I know ,I know,<br/>I know, I KNOW, I know, I know,<br/>I know, I KNOW, I know, I know,<br/><br/>I know, I KNOW!<br/>HEY, I oughtta leave the young thing alone    <br/>But there ain't no sunshine    <br/>When she's <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am//]</span></span></span></span></span> gone <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em7//]</span></span></span></span></span> .. <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span></span>    <br/> <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span></span> Ain't no sunshine when she's <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am//]</span></span></span></span></span> gone <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em7//]</span></span></span></span></span> .. <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span></span> Only darkness every<span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am//]</span></span></span></span></span>day <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em7//]</span></span></span></span></span> ..     <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span></span> Ain't no sunshine when she’s <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em7]</span></span></span></span></span> gone    <br/>And this house just ain't no <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span></span> home    <br/>Anytime she goes <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am//]</span></span></span></span></span> away <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em7//]</span></span></span></span></span> ...     <br/> <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span></span> Anytime she goes a<span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am//]</span></span></span></span></span>way <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em7//]</span></span></span></span></span>    <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span></span> Anytime she goes a<span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am//]</span></span></span></span></span>way <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em7//]</span></span></span></span></span> <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span></span> Anytime she goes a<span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am//]</span></span></span></span></span>way <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em7//]</span></span></span></span></span> <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am/]</span></span></span></span></span><br/>
+          <br/>  <br/>  <br/>  <br/>  <br/><br/><br/>Intro: <br/><span class="chord">[Am//]</span> <span class="chord">[Em7//]</span> x4 <br/><span class="chord">[Am/]</span> <strong><span class="chord">[stop]</span></strong><br/><br/>Ain't no sunshine when she's <span class="chord">[Am//]</span> gone .. <span class="chord">[Em7//]</span> ..  <br/><span class="chord">[Am]</span> It’s not warm when she's <span class="chord">[Am//]</span> away .. <span class="chord">[Em7//]</span> ..    <br/><span class="chord">[Am]</span> Ain't no sunshine when she's <span class="chord">[Em7]</span> gone    <br/>And she’s always gone too <span class="chord">[Dm]</span> long    <br/>Anytime she goes a<span class="chord">[Am//]</span>way ... <span class="chord">[Em7//]</span> .. <span class="chord">[Am/]</span> <strong><span class="chord">[stop]</span></strong><br/><br/>Wonder this time where she’s <span class="chord">[Am//]</span> .. gone <span class="chord">[Em7//]</span> ..<br/><span class="chord">[Am]</span> Wonder if she's gone to <span class="chord">[Am//]</span> stay .. <span class="chord">[Em7//]</span> ..    <br/><span class="chord">[Am]</span> Ain't no sunshine when she's <span class="chord">[Em7]</span> gone    <br/>And this house just ain't no <span class="chord">[Dm]</span> home    <br/>Anytime she goes a<span class="chord">[Am//]</span>way .. <span class="chord">[Em7//]</span> .. <span class="chord">[Am/]</span> <br/><br/>(stop) <br/>And I know, I know ,I know ,I know,<br/>I know, I KNOW, I know, I know,<br/>I know, I KNOW, I know, I know,<br/><br/>I know, I KNOW!<br/>HEY, I oughtta leave the young thing alone    <br/>But there ain't no sunshine    <br/>When she's <span class="chord">[Am//]</span> gone <span class="chord">[Em7//]</span> .. <span class="chord">[Am]</span>    <br/> <br/><span class="chord">[Am]</span> Ain't no sunshine when she's <span class="chord">[Am//]</span> gone <span class="chord">[Em7//]</span> .. <br/><span class="chord">[Am]</span> Only darkness every<span class="chord">[Am//]</span>day <span class="chord">[Em7//]</span> ..     <br/><span class="chord">[Am]</span> Ain't no sunshine when she’s <span class="chord">[Em7]</span> gone    <br/>And this house just ain't no <span class="chord">[Dm]</span> home    <br/>Anytime she goes <span class="chord">[Am//]</span> away <span class="chord">[Em7//]</span> ...     <br/> <br/><span class="chord">[Am]</span> Anytime she goes a<span class="chord">[Am//]</span>way <span class="chord">[Em7//]</span>    <br/><span class="chord">[Am]</span> Anytime she goes a<span class="chord">[Am//]</span>way <span class="chord">[Em7//]</span> <br/><span class="chord">[Am]</span> Anytime she goes a<span class="chord">[Am//]</span>way <span class="chord">[Em7//]</span> <br/><span class="chord">[Am/]</span><br/>
     </div>
 
     <div id="options" class="mt-4">
@@ -255,12 +255,12 @@ window.addEventListener('beforeunload', function() {
   }
 });
 </script>
-<!--<script>
+<script>
   function toggleDiv() {
     var checkBox = document.querySelector('.checkbox');
-    var devInfo = document.getElementById('infoBox');
-    devInfo.style.display = checkBox.checked ? 'block' : 'none';
+    var infoBox = document.getElementById('infoBox');
+    infoBox.style.display = checkBox.checked ? 'block' : 'none';
   }
-</script>-->
+</script>
 </body>
 </html>

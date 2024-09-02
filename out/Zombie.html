@@ -29,19 +29,17 @@
         }
 		.toggle-button {
 			background-color: #eee;
-			border: 1px solid #ccc;
-			padding: 1px 1px;
+			border: 0px solid ;
+			padding: 0px 0px;
 			margin-right: 5px;
 			cursor: pointer;
 		}
 		.div_box {
 			padding: 10px;
-			display: none;
-			}
-			.checkbox:checked + .div_box {
+		}
+		.checkbox:checked + #infoBox {
 			display: block;
-			border: 1px solid #aaa;
-			}
+		}
 		
 		@font-face {
 			font-family: 'Montserrat';
@@ -130,27 +128,29 @@
     
         <img src="chords/Em.gif" alt="Em" title="Em" />
     
-        <img src="chords/C.gif" alt="C" title="C" />
+        <img src="chords/D.gif" alt="D" title="D" />
     
         <img src="chords/G.gif" alt="G" title="G" />
     
-        <img src="chords/D.gif" alt="D" title="D" />
+        <img src="chords/C.gif" alt="C" title="C" />
     
 </div>
-	<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 20px; top: 20px;">Dev info? <input type="checkbox" class="checkbox" onclick="toggleDiv()"> </div>
-	<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px;">
-		<p id="heightInfo" style="font-size: xx-small;"></p>
-		<p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
-		<p id="songDuration" style="font-size: xx-small;"></p>
-	</div>
+		<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 5px; top: 10px;">
+		  Dev info? <input type="checkbox" class="checkbox">
+		</div>
+		<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px; display: none;">
+		  <p id="heightInfo" style="font-size: xx-small;"></p>
+		  <p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
+		  <p id="songDuration" style="font-size: xx-small;"></p>
+		</div>
 	<div id="floatingButton" style="position: fixed; right: 20px; bottom: 20px; ">
-		<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light">
+		<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light toggle-button">
 			<img id="buttonImage" src="images/pause2.gif">
 		</button>
 	</div>
     
     <div id="tab">
-          <br/>  <br/>  <br/>  <br/><br/><br/>Obs:<br/>- Verses play softly and quietly<br/>- Chorus play louder<br/><br/>Intro: <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span><br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span> Another <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> head hangs lowly<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> Child is slowly <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span> taken…<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span> And the violence <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> caused such silence<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> Who are we mis<span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span>taken?…<br/><br/>But you <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span> see… it's not me… it's not <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> my family<br/>In your <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> head… in your head… they are <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span> fighting<br/>With their <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span> tanks… and their bombs<br/>And their <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> bombs… and their guns<br/>In your <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> head… in your head… they are <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span> crying<br/><br/>In your <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span> hea-ea-ead… in your <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> hea-ea-ead<br/>Zo-om<span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span>bie… zo-ombie… zo-om<span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span>bie hey hey<br/>What’s in your <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span> hea-ea-ead… in your <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> hea-ea-ead<br/>Zo-om<span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span>bie… zo-ombie… zo-om<span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span>bie hey hey hey<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span> do-do-do <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> do-do-do<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> Do-do-do <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span> do-do-do<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span>... <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span>... <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span>... <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span>...<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span> Another <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> mother's breakin'<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> Heart is taking <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span> over<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span> When the violence <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> causes silence<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> We must be mis<span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span>taken<br/><br/>It's the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span> same old theme… since <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> 1916<br/>In your <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> head… in your head… they're still <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span> fighting<br/>With their <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span> tanks… and their bombs<br/>And their <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> bombs… and their guns<br/>In your <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> head… in your head… they are <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span> dying<br/><br/>In your <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span>hea-ea-ead… in your <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> hea-ea-ead<br/>Zo-om<span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span>bie… zo-ombie… zo-om<span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span>bie hey hey<br/>What’s in your <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span> hea-ea-ead… in your <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> hea-ea-ead<br/>Zo-om<span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span>bie… zo-ombie… zo-om<span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span>bie hey hey hey<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span> Oh oh oh oh <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> oh oh oh oh<br/>Ay <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> ohhhh ah ah <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span> aaaah<br/><br/>(softly:)<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span>... <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span>... <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span>... <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span>...<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em/]</span></span></span></span>
+          <br/>  <br/>  <br/>  <br/><br/><br/>Obs:<br/>- Verses play softly and quietly<br/>- Chorus play louder<br/><br/>Intro: <br/><span class="chord">[Em]</span> <span class="chord">[C]</span> <span class="chord">[G]</span> <span class="chord">[D]</span><br/><span class="chord">[Em]</span> <span class="chord">[C]</span> <span class="chord">[G]</span> <span class="chord">[D]</span><br/><br/><span class="chord">[Em]</span> Another <span class="chord">[C]</span> head hangs lowly<br/><span class="chord">[G]</span> Child is slowly <span class="chord">[D]</span> taken…<br/><span class="chord">[Em]</span> And the violence <span class="chord">[C]</span> caused such silence<br/><span class="chord">[G]</span> Who are we mis<span class="chord">[D]</span>taken?…<br/><br/>But you <span class="chord">[Em]</span> see… it's not me… it's not <span class="chord">[C]</span> my family<br/>In your <span class="chord">[G]</span> head… in your head… they are <span class="chord">[D]</span> fighting<br/>With their <span class="chord">[Em]</span> tanks… and their bombs<br/>And their <span class="chord">[C]</span> bombs… and their guns<br/>In your <span class="chord">[G]</span> head… in your head… they are <span class="chord">[D]</span> crying<br/><br/>In your <span class="chord">[Em]</span> hea-ea-ead… in your <span class="chord">[C]</span> hea-ea-ead<br/>Zo-om<span class="chord">[G]</span>bie… zo-ombie… zo-om<span class="chord">[D]</span>bie hey hey<br/>What’s in your <span class="chord">[Em]</span> hea-ea-ead… in your <span class="chord">[C]</span> hea-ea-ead<br/>Zo-om<span class="chord">[G]</span>bie… zo-ombie… zo-om<span class="chord">[D]</span>bie hey hey hey<br/><br/><span class="chord">[Em]</span> do-do-do <span class="chord">[C]</span> do-do-do<br/><span class="chord">[G]</span> Do-do-do <span class="chord">[D]</span> do-do-do<br/><br/><span class="chord">[Em]</span>... <span class="chord">[C]</span>... <br/><span class="chord">[G]</span>... <span class="chord">[D]</span>...<br/><br/><span class="chord">[Em]</span> Another <span class="chord">[C]</span> mother's breakin'<br/><span class="chord">[G]</span> Heart is taking <span class="chord">[D]</span> over<br/><span class="chord">[Em]</span> When the violence <span class="chord">[C]</span> causes silence<br/><span class="chord">[G]</span> We must be mis<span class="chord">[D]</span>taken<br/><br/>It's the <span class="chord">[Em]</span> same old theme… since <span class="chord">[C]</span> 1916<br/>In your <span class="chord">[G]</span> head… in your head… they're still <span class="chord">[D]</span> fighting<br/>With their <span class="chord">[Em]</span> tanks… and their bombs<br/>And their <span class="chord">[C]</span> bombs… and their guns<br/>In your <span class="chord">[G]</span> head… in your head… they are <span class="chord">[D]</span> dying<br/><br/>In your <span class="chord">[Em]</span>hea-ea-ead… in your <span class="chord">[C]</span> hea-ea-ead<br/>Zo-om<span class="chord">[G]</span>bie… zo-ombie… zo-om<span class="chord">[D]</span>bie hey hey<br/>What’s in your <span class="chord">[Em]</span> hea-ea-ead… in your <span class="chord">[C]</span> hea-ea-ead<br/>Zo-om<span class="chord">[G]</span>bie… zo-ombie… zo-om<span class="chord">[D]</span>bie hey hey hey<br/><br/><span class="chord">[Em]</span> Oh oh oh oh <span class="chord">[C]</span> oh oh oh oh<br/>Ay <span class="chord">[G]</span> ohhhh ah ah <span class="chord">[D]</span> aaaah<br/><br/>(softly:)<br/><span class="chord">[Em]</span>... <span class="chord">[C]</span>... <br/><span class="chord">[G]</span>... <span class="chord">[D]</span>...<br/><br/><span class="chord">[Em/]</span>
     </div>
 
     <div id="options" class="mt-4">
@@ -257,12 +257,12 @@ window.addEventListener('beforeunload', function() {
   }
 });
 </script>
-<!--<script>
+<script>
   function toggleDiv() {
     var checkBox = document.querySelector('.checkbox');
-    var devInfo = document.getElementById('infoBox');
-    devInfo.style.display = checkBox.checked ? 'block' : 'none';
+    var infoBox = document.getElementById('infoBox');
+    infoBox.style.display = checkBox.checked ? 'block' : 'none';
   }
-</script>-->
+</script>
 </body>
 </html>

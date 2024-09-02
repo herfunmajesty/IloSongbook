@@ -29,19 +29,17 @@
         }
 		.toggle-button {
 			background-color: #eee;
-			border: 1px solid #ccc;
-			padding: 1px 1px;
+			border: 0px solid ;
+			padding: 0px 0px;
 			margin-right: 5px;
 			cursor: pointer;
 		}
 		.div_box {
 			padding: 10px;
-			display: none;
-			}
-			.checkbox:checked + .div_box {
+		}
+		.checkbox:checked + #infoBox {
 			display: block;
-			border: 1px solid #aaa;
-			}
+		}
 		
 		@font-face {
 			font-family: 'Montserrat';
@@ -119,7 +117,9 @@
 
    <div class="mt-4" style="overflow-x: auto;">
     
-        <img src="chords/A.gif" alt="A" title="A" />
+        <img src="chords/E7.gif" alt="E7" title="E7" />
+    
+        <img src="chords/F.gif" alt="F" title="F" />
     
         <img src="chords/G.gif" alt="G" title="G" />
     
@@ -127,27 +127,27 @@
     
         <img src="chords/C.gif" alt="C" title="C" />
     
-        <img src="chords/E7.gif" alt="E7" title="E7" />
+        <img src="chords/A.gif" alt="A" title="A" />
     
         <img src="chords/Em.gif" alt="Em" title="Em" />
     
-        <img src="chords/F.gif" alt="F" title="F" />
-    
 </div>
-	<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 20px; top: 20px;">Dev info? <input type="checkbox" class="checkbox" onclick="toggleDiv()"> </div>
-	<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px;">
-		<p id="heightInfo" style="font-size: xx-small;"></p>
-		<p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
-		<p id="songDuration" style="font-size: xx-small;"></p>
-	</div>
+		<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 5px; top: 10px;">
+		  Dev info? <input type="checkbox" class="checkbox">
+		</div>
+		<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px; display: none;">
+		  <p id="heightInfo" style="font-size: xx-small;"></p>
+		  <p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
+		  <p id="songDuration" style="font-size: xx-small;"></p>
+		</div>
 	<div id="floatingButton" style="position: fixed; right: 20px; bottom: 20px; ">
-		<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light">
+		<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light toggle-button">
 			<img id="buttonImage" src="images/pause2.gif">
 		</button>
 	</div>
     
     <div id="tab">
-          <br/>  <br/>  <br/> <br/><br/>Imagine <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> me and you I do   <br/>I think about you <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> day and night it's only right   <br/>To think about the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> girl you love and hold her tight   <br/>So happy to-<span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span>gether   <br/> <br/>If I should <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> call you up invest a dime   <br/>And you say you be-<span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span>long to me and ease my mind   <br/>Imagine how the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> world could be so very fine    <br/>So happy to-<span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span>gether <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span>   <br/> <br/>Chorus:   <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span> I can't see me <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span> lovin' nobody but <span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span> you for all my <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> life   <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span> When you're with me    <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span> Baby the skies'll be <span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span> blue for all my <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> life   <br/> <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> Me and you and you and me   <br/>No matter how they <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> toss the dice it had to be   <br/>The only one for <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> me is you and you for me    <br/>So happy to-<span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span>gether <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span>   <br/> <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span> I can't see me <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span> lovin' nobody but <span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span> you for all my <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> life   <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span> When you're with me    <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span> Baby the skies'll be <span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span> blue for all my <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> life      <br/> <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> Me and you and you and me   <br/>No matter how they <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> toss the dice it had to be   <br/>The only one for <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> me is you and you for me    <br/>So happy to-<span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span>gether <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span>   <br/> <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span> Ba-ba-ba-ba <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span> ba-ba-ba-ba ba-ba-<span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span> ba ba-ba-ba-<span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> ba   <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span> Ba-ba-ba-ba <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span> ba-ba-ba-ba ba-ba-<span class="chord"><span class="chord"><span class="chord"><span class="chord">[A]</span></span></span></span> ba ba-ba-ba-<span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> ba   <br/> <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> Me and you and you and me   <br/>No matter how they <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> toss the dice it has to be   <br/>The only one for <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> me is you and you for me    <br/>So happy to-<span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span>gether (oo-oo-oo-oo)   <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> So happy to-<span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span>gether (oo-oo-oo-oo) <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> how is the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span> weather <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> So happy to-<span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span>gether <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> we're happy to-<span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span>gether <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> So happy to-<span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span>gether<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> happy to-<span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span>gether <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> So happy to-<span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span>gether <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> so happy to-<span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span>gether <span class="chord"><span class="chord"><span class="chord"><span class="chord">[A/]</span></span></span></span><br/>
+          <br/>  <br/>  <br/> <br/><br/>Imagine <span class="chord">[Am]</span> me and you I do   <br/>I think about you <span class="chord">[G]</span> day and night it's only right   <br/>To think about the <span class="chord">[F]</span> girl you love and hold her tight   <br/>So happy to-<span class="chord">[E7]</span>gether   <br/> <br/>If I should <span class="chord">[Am]</span> call you up invest a dime   <br/>And you say you be-<span class="chord">[G]</span>long to me and ease my mind   <br/>Imagine how the <span class="chord">[F]</span> world could be so very fine    <br/>So happy to-<span class="chord">[E7]</span>gether <span class="chord">[E7]</span>   <br/> <br/>Chorus:   <br/><span class="chord">[A]</span> I can't see me <span class="chord">[Em]</span> lovin' nobody but <span class="chord">[A]</span> you for all my <span class="chord">[C]</span> life   <br/><span class="chord">[A]</span> When you're with me    <br/><span class="chord">[Em]</span> Baby the skies'll be <span class="chord">[A]</span> blue for all my <span class="chord">[C]</span> life   <br/> <br/><span class="chord">[Am]</span> Me and you and you and me   <br/>No matter how they <span class="chord">[G]</span> toss the dice it had to be   <br/>The only one for <span class="chord">[F]</span> me is you and you for me    <br/>So happy to-<span class="chord">[E7]</span>gether <span class="chord">[E7]</span>   <br/> <br/><span class="chord">[A]</span> I can't see me <span class="chord">[Em]</span> lovin' nobody but <span class="chord">[A]</span> you for all my <span class="chord">[C]</span> life   <br/><span class="chord">[A]</span> When you're with me    <br/><span class="chord">[Em]</span> Baby the skies'll be <span class="chord">[A]</span> blue for all my <span class="chord">[C]</span> life      <br/> <br/><span class="chord">[Am]</span> Me and you and you and me   <br/>No matter how they <span class="chord">[G]</span> toss the dice it had to be   <br/>The only one for <span class="chord">[F]</span> me is you and you for me    <br/>So happy to-<span class="chord">[E7]</span>gether <span class="chord">[E7]</span>   <br/> <br/><span class="chord">[A]</span> Ba-ba-ba-ba <span class="chord">[Em]</span> ba-ba-ba-ba ba-ba-<span class="chord">[A]</span> ba ba-ba-ba-<span class="chord">[C]</span> ba   <br/><span class="chord">[A]</span> Ba-ba-ba-ba <span class="chord">[Em]</span> ba-ba-ba-ba ba-ba-<span class="chord">[A]</span> ba ba-ba-ba-<span class="chord">[C]</span> ba   <br/> <br/><span class="chord">[Am]</span> Me and you and you and me   <br/>No matter how they <span class="chord">[G]</span> toss the dice it has to be   <br/>The only one for <span class="chord">[F]</span> me is you and you for me    <br/>So happy to-<span class="chord">[E7]</span>gether (oo-oo-oo-oo)   <br/><span class="chord">[Am]</span> So happy to-<span class="chord">[E7]</span>gether (oo-oo-oo-oo) <br/><span class="chord">[Am]</span> how is the <span class="chord">[E7]</span> weather <br/><span class="chord">[Am]</span> So happy to-<span class="chord">[E7]</span>gether <br/><span class="chord">[Am]</span> we're happy to-<span class="chord">[E7]</span>gether <br/><span class="chord">[Am]</span> So happy to-<span class="chord">[E7]</span>gether<br/><span class="chord">[Am]</span> happy to-<span class="chord">[E7]</span>gether <br/><span class="chord">[Am]</span> So happy to-<span class="chord">[E7]</span>gether <br/><span class="chord">[Am]</span> so happy to-<span class="chord">[E7]</span>gether <span class="chord">[A/]</span><br/>
     </div>
 
     <div id="options" class="mt-4">
@@ -254,12 +254,12 @@ window.addEventListener('beforeunload', function() {
   }
 });
 </script>
-<!--<script>
+<script>
   function toggleDiv() {
     var checkBox = document.querySelector('.checkbox');
-    var devInfo = document.getElementById('infoBox');
-    devInfo.style.display = checkBox.checked ? 'block' : 'none';
+    var infoBox = document.getElementById('infoBox');
+    infoBox.style.display = checkBox.checked ? 'block' : 'none';
   }
-</script>-->
+</script>
 </body>
 </html>

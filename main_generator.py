@@ -183,8 +183,8 @@ def read_songs_from_folder(local_folder_path):  #
                     for old, new in replacements.items():
                         if old in lyrics_chords_content:
                             lyrics = lyrics.replace(old, new)
-                            lyrics = lyrics.replace("""[""", "<span class=\"chord\">[")
-                            lyrics = lyrics.replace("""]""", "]</span>")
+                            # lyrics = lyrics.replace("""[""", "<span class=\"chord\">[")
+                            # lyrics = lyrics.replace("""]""", "]</span>")
                     ch_list = extract_chords(lyrics_chords_content, filename)
                     # print(ch_list)
                     loc_song = Song(title, artist, level, s_link, y_link, lyrics, ch_list, duration, sticky)

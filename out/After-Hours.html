@@ -29,19 +29,17 @@
         }
 		.toggle-button {
 			background-color: #eee;
-			border: 1px solid #ccc;
-			padding: 1px 1px;
+			border: 0px solid ;
+			padding: 0px 0px;
 			margin-right: 5px;
 			cursor: pointer;
 		}
 		.div_box {
 			padding: 10px;
-			display: none;
-			}
-			.checkbox:checked + .div_box {
+		}
+		.checkbox:checked + #infoBox {
 			display: block;
-			border: 1px solid #aaa;
-			}
+		}
 		
 		@font-face {
 			font-family: 'Montserrat';
@@ -128,41 +126,43 @@
 
    <div class="mt-4" style="overflow-x: auto;">
     
-        <img src="chords/B.gif" alt="B" title="B" />
-    
-        <img src="chords/Fm.gif" alt="Fm" title="Fm" />
-    
-        <img src="chords/C7.gif" alt="C7" title="C7" />
+        <img src="chords/F.gif" alt="F" title="F" />
     
         <img src="chords/G.gif" alt="G" title="G" />
     
         <img src="chords/Am.gif" alt="Am" title="Am" />
     
+        <img src="chords/C7.gif" alt="C7" title="C7" />
+    
+        <img src="chords/Fm.gif" alt="Fm" title="Fm" />
+    
         <img src="chords/C.gif" alt="C" title="C" />
+    
+        <img src="chords/A7.gif" alt="A7" title="A7" />
+    
+        <img src="chords/B.gif" alt="B" title="B" />
     
         <img src="chords/Em.gif" alt="Em" title="Em" />
     
         <img src="chords/Dm.gif" alt="Dm" title="Dm" />
     
-        <img src="chords/A7.gif" alt="A7" title="A7" />
-    
-        <img src="chords/F.gif" alt="F" title="F" />
-    
 </div>
-	<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 20px; top: 20px;">Dev info? <input type="checkbox" class="checkbox" onclick="toggleDiv()"> </div>
-	<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px;">
-		<p id="heightInfo" style="font-size: xx-small;"></p>
-		<p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
-		<p id="songDuration" style="font-size: xx-small;"></p>
-	</div>
+		<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 5px; top: 10px;">
+		  Dev info? <input type="checkbox" class="checkbox">
+		</div>
+		<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px; display: none;">
+		  <p id="heightInfo" style="font-size: xx-small;"></p>
+		  <p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
+		  <p id="songDuration" style="font-size: xx-small;"></p>
+		</div>
 	<div id="floatingButton" style="position: fixed; right: 20px; bottom: 20px; ">
-		<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light">
+		<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light toggle-button">
 			<img id="buttonImage" src="images/pause2.gif">
 		</button>
 	</div>
     
     <div id="tab">
-        <br/><br/><br/><br/><br/><br/><br/>info:<br/>*key different than in orginal<br/><br/>Intro:<br/>1, 2, 3<br/><br/>If you <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span> close.. the <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A7]</span></span></span></span></span> door<br/>The <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span></span> night could last.. for<span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span>ever<br/>Leave the <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span> sun..shine <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A7]</span></span></span></span></span> out<br/>And <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span></span> say hello.. to <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span> never<br/>All the <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span> people are dancing<br/>And they're <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C7]</span></span></span></span></span> having such fun<br/>I <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span></span> wish it could happen to <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Fm/]</span></span></span></span></span> me <strong><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[stop]</span></span></span></span></span></strong> <br/>But if you <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span> close.. the <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A7]</span></span></span></span></span> door<br/>I'd <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm//]</span></span></span></span></span> never have to <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G//]</span></span></span></span></span> see the day <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C/]</span></span></span></span></span> again <strong><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[stop]</span></span></span></span></span></strong><br/><br/>If you <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span> close.. the <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A7]</span></span></span></span></span> door<br/>The <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span></span> night could last.. <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span> forever<br/>Leave the <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span> wine..glass <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A7]</span></span></span></span></span> out<br/>And <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span></span> drink a toast.. to <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span> never<br/>Oh, <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span> someday I know<br/>Someone will <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C7]</span></span></span></span></span> look into my eyes<br/>And say <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F/]</span></span></span></span></span> "hello .... <br/>You're my very special <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Fm/]</span></span></span></span></span> one"<br/><br/>But if you <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span> close.. the <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A7]</span></span></span></span></span> door<br/>I'd <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm//]</span></span></span></span></span> never have to <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G//]</span></span></span></span></span> see the day <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C//]</span></span></span></span></span> again <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[B//]</span></span></span></span></span> <br/><br/><b>(down down strum)</b><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span></span> Dark party bars, shiny <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[B]</span></span></span></span></span> Cadillac cars<br/>And the <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em//]</span></span></span></span></span> people on <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[B//]</span></span></span></span></span> subways and <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em//]</span></span></span></span></span> trains <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[B//]</span></span></span></span></span><br/>Looking <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span></span> gray in the rain as they <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span></span> stand disarrayed<br/>Oh, but <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm/]</span></span></span></span></span> people look <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm/]</span></span></span></span></span> well in the <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G/]</span></span></span></span></span> dark <strong><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[stop]</span></span></span></span></span></strong> <br/><br/><b>(normal strum)</b><br/>And if you <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span> close.. the <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A7]</span></span></span></span></span> door<br/>The <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span></span> night could last.. for<span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span>ever<br/>Leave the <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span> sun..shine <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A7]</span></span></span></span></span> out<br/>And <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span></span> say hello.. to <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span></span> never<br/>All the <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span> people are dancing<br/>And they're <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C7]</span></span></span></span></span> having such fun<br/>I <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span></span> wish it could happen to <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Fm/]</span></span></span></span></span> me <strong><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[stop]</span></span></span></span></span></strong> <br/><br/>Coz if you <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span> close.. the <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A7]</span></span></span></span></span> door<br/>I'd <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm//]</span></span></span></span></span> never have to <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G//]</span></span></span></span></span> see the day <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C//]</span></span></span></span></span> again <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A7//]</span></span></span></span></span> <br/>I'd <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm//]</span></span></span></span></span> never have to <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G//]</span></span></span></span></span> see the day <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C//]</span></span></span></span></span> again <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[A7//]</span></span></span></span></span>, once more<br/>I'd <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm//]</span></span></span></span></span> never have to <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G//]</span></span></span></span></span> see the day <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C/]</span></span></span></span></span> again
+        <br/><br/><br/><br/><br/><br/><br/>info:<br/>*key different than in orginal<br/><br/>Intro:<br/>1, 2, 3<br/><br/>If you <span class="chord">[C]</span> close.. the <span class="chord">[A7]</span> door<br/>The <span class="chord">[Dm]</span> night could last.. for<span class="chord">[G]</span>ever<br/>Leave the <span class="chord">[C]</span> sun..shine <span class="chord">[A7]</span> out<br/>And <span class="chord">[Dm]</span> say hello.. to <span class="chord">[G]</span> never<br/>All the <span class="chord">[C]</span> people are dancing<br/>And they're <span class="chord">[C7]</span> having such fun<br/>I <span class="chord">[F]</span> wish it could happen to <span class="chord">[Fm/]</span> me <strong><span class="chord">[stop]</span></strong> <br/>But if you <span class="chord">[C]</span> close.. the <span class="chord">[A7]</span> door<br/>I'd <span class="chord">[Dm//]</span> never have to <span class="chord">[G//]</span> see the day <span class="chord">[C/]</span> again <strong><span class="chord">[stop]</span></strong><br/><br/>If you <span class="chord">[C]</span> close.. the <span class="chord">[A7]</span> door<br/>The <span class="chord">[Dm]</span> night could last.. <span class="chord">[G]</span> forever<br/>Leave the <span class="chord">[C]</span> wine..glass <span class="chord">[A7]</span> out<br/>And <span class="chord">[Dm]</span> drink a toast.. to <span class="chord">[G]</span> never<br/>Oh, <span class="chord">[C]</span> someday I know<br/>Someone will <span class="chord">[C7]</span> look into my eyes<br/>And say <span class="chord">[F/]</span> "hello .... <br/>You're my very special <span class="chord">[Fm/]</span> one"<br/><br/>But if you <span class="chord">[C]</span> close.. the <span class="chord">[A7]</span> door<br/>I'd <span class="chord">[Dm//]</span> never have to <span class="chord">[G//]</span> see the day <span class="chord">[C//]</span> again <span class="chord">[B//]</span> <br/><br/><b>(down down strum)</b><br/><span class="chord">[Em]</span> Dark party bars, shiny <span class="chord">[B]</span> Cadillac cars<br/>And the <span class="chord">[Em//]</span> people on <span class="chord">[B//]</span> subways and <span class="chord">[Em//]</span> trains <span class="chord">[B//]</span><br/>Looking <span class="chord">[Am]</span> gray in the rain as they <span class="chord">[Am]</span> stand disarrayed<br/>Oh, but <span class="chord">[Dm/]</span> people look <span class="chord">[Dm/]</span> well in the <span class="chord">[G/]</span> dark <strong><span class="chord">[stop]</span></strong> <br/><br/><b>(normal strum)</b><br/>And if you <span class="chord">[C]</span> close.. the <span class="chord">[A7]</span> door<br/>The <span class="chord">[Dm]</span> night could last.. for<span class="chord">[G]</span>ever<br/>Leave the <span class="chord">[C]</span> sun..shine <span class="chord">[A7]</span> out<br/>And <span class="chord">[Dm]</span> say hello.. to <span class="chord">[G]</span> never<br/>All the <span class="chord">[C]</span> people are dancing<br/>And they're <span class="chord">[C7]</span> having such fun<br/>I <span class="chord">[F]</span> wish it could happen to <span class="chord">[Fm/]</span> me <strong><span class="chord">[stop]</span></strong> <br/><br/>Coz if you <span class="chord">[C]</span> close.. the <span class="chord">[A7]</span> door<br/>I'd <span class="chord">[Dm//]</span> never have to <span class="chord">[G//]</span> see the day <span class="chord">[C//]</span> again <span class="chord">[A7//]</span> <br/>I'd <span class="chord">[Dm//]</span> never have to <span class="chord">[G//]</span> see the day <span class="chord">[C//]</span> again <span class="chord">[A7//]</span>, once more<br/>I'd <span class="chord">[Dm//]</span> never have to <span class="chord">[G//]</span> see the day <span class="chord">[C/]</span> again
     </div>
 
     <div id="options" class="mt-4">
@@ -269,12 +269,12 @@ window.addEventListener('beforeunload', function() {
   }
 });
 </script>
-<!--<script>
+<script>
   function toggleDiv() {
     var checkBox = document.querySelector('.checkbox');
-    var devInfo = document.getElementById('infoBox');
-    devInfo.style.display = checkBox.checked ? 'block' : 'none';
+    var infoBox = document.getElementById('infoBox');
+    infoBox.style.display = checkBox.checked ? 'block' : 'none';
   }
-</script>-->
+</script>
 </body>
 </html>

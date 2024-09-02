@@ -29,19 +29,17 @@
         }
 		.toggle-button {
 			background-color: #eee;
-			border: 1px solid #ccc;
-			padding: 1px 1px;
+			border: 0px solid ;
+			padding: 0px 0px;
 			margin-right: 5px;
 			cursor: pointer;
 		}
 		.div_box {
 			padding: 10px;
-			display: none;
-			}
-			.checkbox:checked + .div_box {
+		}
+		.checkbox:checked + #infoBox {
 			display: block;
-			border: 1px solid #aaa;
-			}
+		}
 		
 		@font-face {
 			font-family: 'Montserrat';
@@ -128,33 +126,35 @@
 
    <div class="mt-4" style="overflow-x: auto;">
     
+        <img src="chords/F.gif" alt="F" title="F" />
+    
         <img src="chords/G.gif" alt="G" title="G" />
     
         <img src="chords/Am.gif" alt="Am" title="Am" />
     
-        <img src="chords/C.gif" alt="C" title="C" />
+        <img src="chords/E.gif" alt="E" title="E" />
     
         <img src="chords/D.gif" alt="D" title="D" />
     
-        <img src="chords/E.gif" alt="E" title="E" />
-    
-        <img src="chords/F.gif" alt="F" title="F" />
+        <img src="chords/C.gif" alt="C" title="C" />
     
 </div>
-	<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 20px; top: 20px;">Dev info? <input type="checkbox" class="checkbox" onclick="toggleDiv()"> </div>
-	<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px;">
-		<p id="heightInfo" style="font-size: xx-small;"></p>
-		<p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
-		<p id="songDuration" style="font-size: xx-small;"></p>
-	</div>
+		<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 5px; top: 10px;">
+		  Dev info? <input type="checkbox" class="checkbox">
+		</div>
+		<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px; display: none;">
+		  <p id="heightInfo" style="font-size: xx-small;"></p>
+		  <p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
+		  <p id="songDuration" style="font-size: xx-small;"></p>
+		</div>
 	<div id="floatingButton" style="position: fixed; right: 20px; bottom: 20px; ">
-		<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light">
+		<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light toggle-button">
 			<img id="buttonImage" src="images/pause2.gif">
 		</button>
 	</div>
     
     <div id="tab">
-         <br/><br/><br/><br/><br/><br/>Intro: <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span><br/> <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> don't you worry, there my honey<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> we might not have any money                           <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> but we've got our love to pay the F bills<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> maybe I think you're cute and funny,<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> maybe I wanna do what bunnies <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> do with you,<br/>if you know what I <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> mean<br/>                                                          <br/>Oh, <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> let's get rich and <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E]</span></span></span></span> buy our parents <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> homes in the South of <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> France<br/>let's get rich and give every<span class="chord"><span class="chord"><span class="chord"><span class="chord">[E]</span></span></span></span>body nice sweaters<br/>and <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> teach them how to <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> dance<br/>let's get <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> rich and build our <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E]</span></span></span></span> house on a mountain<br/>making <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> everybody look like <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span> ants<br/>from way up <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> there, you and <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> I, <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> you and <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> I<br/><br/>well you might be a bit confused<br/>and <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> you might be a little bit bruised<br/>but <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> baby how we spoon like no one <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> else<br/>so <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> I will help you read those books<br/>if <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> you will soothe my worried looks<br/>and <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> we will put the lonesome on the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> shelf<br/>                                                         <br/>Oh, <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> let's get rich and <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E]</span></span></span></span> buy our parents <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> homes in the South of <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> France<br/>let's get rich and give every<span class="chord"><span class="chord"><span class="chord"><span class="chord">[E]</span></span></span></span>body nice sweaters<br/>and <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> teach them how to <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> dance<br/>let's get <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> rich and build our <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E]</span></span></span></span> house on a mountain<br/>making <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> everybody look like <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span> ants<br/>from way up <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> there, you and <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> I, <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> you and <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> I<br/><br/>(no guitar)<br/><br/>oh, let’s get rich and buy our parents homes in the south of France<br/>let's get rich and give everybody nice sweaters<br/>and teach them how to dance<br/>let's get rich and build our house on a mountain<br/>making everybody look like ants<br/>from way up there you and I, you and I, you and I  
+         <br/><br/><br/><br/><br/><br/>Intro: <span class="chord">[C]</span><br/> <br/><span class="chord">[C]</span> don't you worry, there my honey<br/><span class="chord">[F]</span> we might not have any money                           <br/><span class="chord">[Am]</span> but we've got our love to pay the F bills<br/><span class="chord">[C]</span> maybe I think you're cute and funny,<br/><span class="chord">[F]</span> maybe I wanna do what bunnies <span class="chord">[Am]</span> do with you,<br/>if you know what I <span class="chord">[F]</span> mean<br/>                                                          <br/>Oh, <span class="chord">[C]</span> let's get rich and <span class="chord">[E]</span> buy our parents <span class="chord">[F]</span> homes in the South of <span class="chord">[C]</span> France<br/>let's get rich and give every<span class="chord">[E]</span>body nice sweaters<br/>and <span class="chord">[F]</span> teach them how to <span class="chord">[G]</span> dance<br/>let's get <span class="chord">[C]</span> rich and build our <span class="chord">[E]</span> house on a mountain<br/>making <span class="chord">[F]</span> everybody look like <span class="chord">[D]</span> ants<br/>from way up <span class="chord">[C]</span> there, you and <span class="chord">[F]</span> I, <span class="chord">[G]</span> you and <span class="chord">[C]</span> I<br/><br/>well you might be a bit confused<br/>and <span class="chord">[F]</span> you might be a little bit bruised<br/>but <span class="chord">[Am]</span> baby how we spoon like no one <span class="chord">[F]</span> else<br/>so <span class="chord">[C]</span> I will help you read those books<br/>if <span class="chord">[F]</span> you will soothe my worried looks<br/>and <span class="chord">[Am]</span> we will put the lonesome on the <span class="chord">[F]</span> shelf<br/>                                                         <br/>Oh, <span class="chord">[C]</span> let's get rich and <span class="chord">[E]</span> buy our parents <span class="chord">[F]</span> homes in the South of <span class="chord">[C]</span> France<br/>let's get rich and give every<span class="chord">[E]</span>body nice sweaters<br/>and <span class="chord">[F]</span> teach them how to <span class="chord">[G]</span> dance<br/>let's get <span class="chord">[C]</span> rich and build our <span class="chord">[E]</span> house on a mountain<br/>making <span class="chord">[F]</span> everybody look like <span class="chord">[D]</span> ants<br/>from way up <span class="chord">[C]</span> there, you and <span class="chord">[F]</span> I, <span class="chord">[G]</span> you and <span class="chord">[C]</span> I<br/><br/>(no guitar)<br/><br/>oh, let’s get rich and buy our parents homes in the south of France<br/>let's get rich and give everybody nice sweaters<br/>and teach them how to dance<br/>let's get rich and build our house on a mountain<br/>making everybody look like ants<br/>from way up there you and I, you and I, you and I  
     </div>
 
     <div id="options" class="mt-4">
@@ -261,12 +261,12 @@ window.addEventListener('beforeunload', function() {
   }
 });
 </script>
-<!--<script>
+<script>
   function toggleDiv() {
     var checkBox = document.querySelector('.checkbox');
-    var devInfo = document.getElementById('infoBox');
-    devInfo.style.display = checkBox.checked ? 'block' : 'none';
+    var infoBox = document.getElementById('infoBox');
+    infoBox.style.display = checkBox.checked ? 'block' : 'none';
   }
-</script>-->
+</script>
 </body>
 </html>

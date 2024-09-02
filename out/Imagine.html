@@ -29,19 +29,17 @@
         }
 		.toggle-button {
 			background-color: #eee;
-			border: 1px solid #ccc;
-			padding: 1px 1px;
+			border: 0px solid ;
+			padding: 0px 0px;
 			margin-right: 5px;
 			cursor: pointer;
 		}
 		.div_box {
 			padding: 10px;
-			display: none;
-			}
-			.checkbox:checked + .div_box {
+		}
+		.checkbox:checked + #infoBox {
 			display: block;
-			border: 1px solid #aaa;
-			}
+		}
 		
 		@font-face {
 			font-family: 'Montserrat';
@@ -119,35 +117,37 @@
 
    <div class="mt-4" style="overflow-x: auto;">
     
+        <img src="chords/E7.gif" alt="E7" title="E7" />
+    
+        <img src="chords/F.gif" alt="F" title="F" />
+    
+        <img src="chords/G7.gif" alt="G7" title="G7" />
+    
         <img src="chords/G.gif" alt="G" title="G" />
     
         <img src="chords/Am.gif" alt="Am" title="Am" />
     
-        <img src="chords/G7.gif" alt="G7" title="G7" />
-    
         <img src="chords/C.gif" alt="C" title="C" />
-    
-        <img src="chords/E7.gif" alt="E7" title="E7" />
     
         <img src="chords/Dm.gif" alt="Dm" title="Dm" />
     
-        <img src="chords/F.gif" alt="F" title="F" />
-    
 </div>
-	<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 20px; top: 20px;">Dev info? <input type="checkbox" class="checkbox" onclick="toggleDiv()"> </div>
-	<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px;">
-		<p id="heightInfo" style="font-size: xx-small;"></p>
-		<p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
-		<p id="songDuration" style="font-size: xx-small;"></p>
-	</div>
+		<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 5px; top: 10px;">
+		  Dev info? <input type="checkbox" class="checkbox">
+		</div>
+		<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px; display: none;">
+		  <p id="heightInfo" style="font-size: xx-small;"></p>
+		  <p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
+		  <p id="songDuration" style="font-size: xx-small;"></p>
+		</div>
 	<div id="floatingButton" style="position: fixed; right: 20px; bottom: 20px; ">
-		<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light">
+		<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light toggle-button">
 			<img id="buttonImage" src="images/pause2.gif">
 		</button>
 	</div>
     
     <div id="tab">
-          <br/>  <br/>  <br/><br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> Imagine there’s no <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> heaven <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> it’s easy if you <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> try <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> No Hell <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> below us <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> Above us only <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> sky   <br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F//]</span></span></span></span> Imagine <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am//]</span></span></span></span> all the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm//]</span></span></span></span> people <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F//]</span></span></span></span> ... <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> living for <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G7]</span></span></span></span> todaaay ya haaa uhh   <br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> Imagine there’s no <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> countries <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> It isn’t hard <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> to do  <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> Nothing to kill or <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> die for <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> No religion <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> too   <br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F//]</span></span></span></span> Imagine <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am//]</span></span></span></span> all the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm//]</span></span></span></span> people <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F//]</span></span></span></span> ... <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> living life in <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G7]</span></span></span></span> peace … you huu uhh <br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F//]</span></span></span></span> You may <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G7//]</span></span></span></span> say I’m a <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C//]</span></span></span></span> dreamer <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7//]</span></span></span></span> …<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F//]</span></span></span></span> But I’m <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G//]</span></span></span></span> not the only one <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C//]</span></span></span></span> … <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7//]</span></span></span></span> …<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F//]</span></span></span></span> I hope <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G//]</span></span></span></span> someday you’ll <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C//]</span></span></span></span> join us, <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7//]</span></span></span></span> …<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F//]</span></span></span></span> And the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G//]</span></span></span></span> world will <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C//]</span></span></span></span> be as one <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C//]</span></span></span></span>  <br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> Imagine no po<span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span>ssessions <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> I wonder if you <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> can <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> No need for greed nor <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> hunger <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> A brotherhood of <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> man   <br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F//]</span></span></span></span> Imagine <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am//]</span></span></span></span> all the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm//]</span></span></span></span> people <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F//]</span></span></span></span> …<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> sharing all the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G7]</span></span></span></span> world you huu uhh <br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F//]</span></span></span></span> You may <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G7//]</span></span></span></span> say I’m a <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C//]</span></span></span></span> dreamer <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7//]</span></span></span></span> …<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F//]</span></span></span></span> But I’m <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G//]</span></span></span></span> not the only one <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C//]</span></span></span></span> … <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7//]</span></span></span></span> …<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F//]</span></span></span></span> I hope <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> someday you’ll <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> join us, <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7//]</span></span></span></span> … <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F//]</span></span></span></span> And the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> world will <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C/]</span></span></span></span> live as one
+          <br/>  <br/>  <br/><br/><br/><span class="chord">[C]</span> Imagine there’s no <span class="chord">[F]</span> heaven <br/><span class="chord">[C]</span> it’s easy if you <span class="chord">[F]</span> try <br/><span class="chord">[C]</span> No Hell <span class="chord">[F]</span> below us <br/><span class="chord">[C]</span> Above us only <span class="chord">[F]</span> sky   <br/><br/><span class="chord">[F//]</span> Imagine <span class="chord">[Am//]</span> all the <span class="chord">[Dm//]</span> people <span class="chord">[F//]</span> ... <br/><span class="chord">[G]</span> living for <span class="chord">[G7]</span> todaaay ya haaa uhh   <br/><br/><span class="chord">[C]</span> Imagine there’s no <span class="chord">[F]</span> countries <br/><span class="chord">[C]</span> It isn’t hard <span class="chord">[F]</span> to do  <br/><span class="chord">[C]</span> Nothing to kill or <span class="chord">[F]</span> die for <br/><span class="chord">[C]</span> No religion <span class="chord">[F]</span> too   <br/><br/><span class="chord">[F//]</span> Imagine <span class="chord">[Am//]</span> all the <span class="chord">[Dm//]</span> people <span class="chord">[F//]</span> ... <br/><span class="chord">[G]</span> living life in <span class="chord">[G7]</span> peace … you huu uhh <br/><br/><span class="chord">[F//]</span> You may <span class="chord">[G7//]</span> say I’m a <span class="chord">[C//]</span> dreamer <span class="chord">[E7//]</span> …<br/><span class="chord">[F//]</span> But I’m <span class="chord">[G//]</span> not the only one <span class="chord">[C//]</span> … <span class="chord">[E7//]</span> …<br/><span class="chord">[F//]</span> I hope <span class="chord">[G//]</span> someday you’ll <span class="chord">[C//]</span> join us, <span class="chord">[E7//]</span> …<br/><span class="chord">[F//]</span> And the <span class="chord">[G//]</span> world will <span class="chord">[C//]</span> be as one <span class="chord">[C//]</span>  <br/><br/><span class="chord">[C]</span> Imagine no po<span class="chord">[F]</span>ssessions <br/><span class="chord">[C]</span> I wonder if you <span class="chord">[F]</span> can <br/><span class="chord">[C]</span> No need for greed nor <span class="chord">[F]</span> hunger <br/><span class="chord">[C]</span> A brotherhood of <span class="chord">[F]</span> man   <br/><br/><span class="chord">[F//]</span> Imagine <span class="chord">[Am//]</span> all the <span class="chord">[Dm//]</span> people <span class="chord">[F//]</span> …<br/><span class="chord">[G]</span> sharing all the <span class="chord">[G7]</span> world you huu uhh <br/><br/><span class="chord">[F//]</span> You may <span class="chord">[G7//]</span> say I’m a <span class="chord">[C//]</span> dreamer <span class="chord">[E7//]</span> …<br/><span class="chord">[F//]</span> But I’m <span class="chord">[G//]</span> not the only one <span class="chord">[C//]</span> … <span class="chord">[E7//]</span> …<br/><span class="chord">[F//]</span> I hope <span class="chord">[G]</span> someday you’ll <span class="chord">[C]</span> join us, <span class="chord">[E7//]</span> … <br/><span class="chord">[F//]</span> And the <span class="chord">[G]</span> world will <span class="chord">[C/]</span> live as one
     </div>
 
     <div id="options" class="mt-4">
@@ -254,12 +254,12 @@ window.addEventListener('beforeunload', function() {
   }
 });
 </script>
-<!--<script>
+<script>
   function toggleDiv() {
     var checkBox = document.querySelector('.checkbox');
-    var devInfo = document.getElementById('infoBox');
-    devInfo.style.display = checkBox.checked ? 'block' : 'none';
+    var infoBox = document.getElementById('infoBox');
+    infoBox.style.display = checkBox.checked ? 'block' : 'none';
   }
-</script>-->
+</script>
 </body>
 </html>

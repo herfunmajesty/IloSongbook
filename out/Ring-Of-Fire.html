@@ -29,19 +29,17 @@
         }
 		.toggle-button {
 			background-color: #eee;
-			border: 1px solid #ccc;
-			padding: 1px 1px;
+			border: 0px solid ;
+			padding: 0px 0px;
 			margin-right: 5px;
 			cursor: pointer;
 		}
 		.div_box {
 			padding: 10px;
-			display: none;
-			}
-			.checkbox:checked + .div_box {
+		}
+		.checkbox:checked + #infoBox {
 			display: block;
-			border: 1px solid #aaa;
-			}
+		}
 		
 		@font-face {
 			font-family: 'Montserrat';
@@ -128,27 +126,29 @@
 
    <div class="mt-4" style="overflow-x: auto;">
     
-        <img src="chords/C.gif" alt="C" title="C" />
+        <img src="chords/D.gif" alt="D" title="D" />
     
         <img src="chords/G.gif" alt="G" title="G" />
     
-        <img src="chords/D.gif" alt="D" title="D" />
+        <img src="chords/C.gif" alt="C" title="C" />
     
 </div>
-	<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 20px; top: 20px;">Dev info? <input type="checkbox" class="checkbox" onclick="toggleDiv()"> </div>
-	<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px;">
-		<p id="heightInfo" style="font-size: xx-small;"></p>
-		<p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
-		<p id="songDuration" style="font-size: xx-small;"></p>
-	</div>
+		<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 5px; top: 10px;">
+		  Dev info? <input type="checkbox" class="checkbox">
+		</div>
+		<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px; display: none;">
+		  <p id="heightInfo" style="font-size: xx-small;"></p>
+		  <p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
+		  <p id="songDuration" style="font-size: xx-small;"></p>
+		</div>
 	<div id="floatingButton" style="position: fixed; right: 20px; bottom: 20px; ">
-		<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light">
+		<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light toggle-button">
 			<img id="buttonImage" src="images/pause2.gif">
 		</button>
 	</div>
     
     <div id="tab">
-          <br/>  <br/>          <br/><br/><br/>Ps: <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> in the verses are very short. If gets hard, stays in <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span><br/><br/>Intro: <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> pa pa ra pa ra <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C/]</span></span></span></span> pa ra <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> paaaa<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> pa pa ra pa ra <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C/]</span></span></span></span> pa ra <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> paaaa<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> Love is a <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C/]</span></span></span></span> burning <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> thing      <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> And it makes a <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C/]</span></span></span></span> fiery <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> ring   <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> Bound by <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C/]</span></span></span></span> wild de<span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span>sire   <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> I fell into a <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C/]</span></span></span></span> ring of <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> fire   <br/> <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span> I fell in to a <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> burning ring of <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> fire   <br/>I went <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span> down, down, down   <br/>And the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> flames went <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> higher   <br/> <br/>And it <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> burns, burns, burns        <br/>The <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> ring of <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> fire, the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C/]</span></span></span></span> ring of <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> fire<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> pa pa ra pa ra <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C/]</span></span></span></span> pa ra <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> paaaa<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> pa pa ra pa ra <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C/]</span></span></span></span> pa ra <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> paaaa<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> The taste of <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C/]</span></span></span></span> love is <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> sweet   <br/>When <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> hearts like <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C/]</span></span></span></span> ours <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> meet   <br/>I <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> fell for you <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C/]</span></span></span></span> like a <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> child     <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> Oh but the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C/]</span></span></span></span> fire went <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> wild   <br/> <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span> I fell in to a <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> burning ring of <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> fire   <br/>I went <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span> down, down, down   <br/>And the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> flames went <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> higher   <br/> <br/>And it <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> burns, burns, burns                          <br/>The <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> ring of <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> fire, the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C/]</span></span></span></span> ring of <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> fire   <br/> <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span> I fell in to a <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> burning ring of <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> fire   <br/>I went <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span> down, down, down   <br/>And the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> flames went <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> higher   <br/> <br/>And it <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> burns, burns, burns                          <br/>The <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> ring of <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> fire, the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C/]</span></span></span></span> ring of <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G/]</span></span></span></span> fire   <br/>
+          <br/>  <br/>          <br/><br/><br/>Ps: <span class="chord">[C]</span> in the verses are very short. If gets hard, stays in <span class="chord">[G]</span><br/><br/>Intro: <br/><span class="chord">[G]</span> pa pa ra pa ra <span class="chord">[C/]</span> pa ra <span class="chord">[G]</span> paaaa<br/><span class="chord">[G]</span> pa pa ra pa ra <span class="chord">[C/]</span> pa ra <span class="chord">[G]</span> paaaa<br/><br/><span class="chord">[G]</span> Love is a <span class="chord">[C/]</span> burning <span class="chord">[G]</span> thing      <br/><span class="chord">[G]</span> And it makes a <span class="chord">[C/]</span> fiery <span class="chord">[G]</span> ring   <br/><span class="chord">[G]</span> Bound by <span class="chord">[C/]</span> wild de<span class="chord">[G]</span>sire   <br/><span class="chord">[G]</span> I fell into a <span class="chord">[C/]</span> ring of <span class="chord">[G]</span> fire   <br/> <br/><span class="chord">[D]</span> I fell in to a <span class="chord">[C]</span> burning ring of <span class="chord">[G]</span> fire   <br/>I went <span class="chord">[D]</span> down, down, down   <br/>And the <span class="chord">[C]</span> flames went <span class="chord">[G]</span> higher   <br/> <br/>And it <span class="chord">[G]</span> burns, burns, burns        <br/>The <span class="chord">[C]</span> ring of <span class="chord">[G]</span> fire, the <span class="chord">[C/]</span> ring of <span class="chord">[G]</span> fire<br/><br/><span class="chord">[G]</span> pa pa ra pa ra <span class="chord">[C/]</span> pa ra <span class="chord">[G]</span> paaaa<br/><span class="chord">[G]</span> pa pa ra pa ra <span class="chord">[C/]</span> pa ra <span class="chord">[G]</span> paaaa<br/><br/><span class="chord">[G]</span> The taste of <span class="chord">[C/]</span> love is <span class="chord">[G]</span> sweet   <br/>When <span class="chord">[G]</span> hearts like <span class="chord">[C/]</span> ours <span class="chord">[G]</span> meet   <br/>I <span class="chord">[G]</span> fell for you <span class="chord">[C/]</span> like a <span class="chord">[G]</span> child     <br/><span class="chord">[G]</span> Oh but the <span class="chord">[C/]</span> fire went <span class="chord">[G]</span> wild   <br/> <br/><span class="chord">[D]</span> I fell in to a <span class="chord">[C]</span> burning ring of <span class="chord">[G]</span> fire   <br/>I went <span class="chord">[D]</span> down, down, down   <br/>And the <span class="chord">[C]</span> flames went <span class="chord">[G]</span> higher   <br/> <br/>And it <span class="chord">[G]</span> burns, burns, burns                          <br/>The <span class="chord">[C]</span> ring of <span class="chord">[G]</span> fire, the <span class="chord">[C/]</span> ring of <span class="chord">[G]</span> fire   <br/> <br/><span class="chord">[D]</span> I fell in to a <span class="chord">[C]</span> burning ring of <span class="chord">[G]</span> fire   <br/>I went <span class="chord">[D]</span> down, down, down   <br/>And the <span class="chord">[C]</span> flames went <span class="chord">[G]</span> higher   <br/> <br/>And it <span class="chord">[G]</span> burns, burns, burns                          <br/>The <span class="chord">[C]</span> ring of <span class="chord">[G]</span> fire, the <span class="chord">[C/]</span> ring of <span class="chord">[G/]</span> fire   <br/>
     </div>
 
     <div id="options" class="mt-4">
@@ -255,12 +255,12 @@ window.addEventListener('beforeunload', function() {
   }
 });
 </script>
-<!--<script>
+<script>
   function toggleDiv() {
     var checkBox = document.querySelector('.checkbox');
-    var devInfo = document.getElementById('infoBox');
-    devInfo.style.display = checkBox.checked ? 'block' : 'none';
+    var infoBox = document.getElementById('infoBox');
+    infoBox.style.display = checkBox.checked ? 'block' : 'none';
   }
-</script>-->
+</script>
 </body>
 </html>

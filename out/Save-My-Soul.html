@@ -29,19 +29,17 @@
         }
 		.toggle-button {
 			background-color: #eee;
-			border: 1px solid #ccc;
-			padding: 1px 1px;
+			border: 0px solid ;
+			padding: 0px 0px;
 			margin-right: 5px;
 			cursor: pointer;
 		}
 		.div_box {
 			padding: 10px;
-			display: none;
-			}
-			.checkbox:checked + .div_box {
+		}
+		.checkbox:checked + #infoBox {
 			display: block;
-			border: 1px solid #aaa;
-			}
+		}
 		
 		@font-face {
 			font-family: 'Montserrat';
@@ -119,27 +117,29 @@
 
    <div class="mt-4" style="overflow-x: auto;">
     
-        <img src="chords/C.gif" alt="C" title="C" />
+        <img src="chords/F.gif" alt="F" title="F" />
     
         <img src="chords/G.gif" alt="G" title="G" />
     
-        <img src="chords/F.gif" alt="F" title="F" />
+        <img src="chords/C.gif" alt="C" title="C" />
     
 </div>
-	<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 20px; top: 20px;">Dev info? <input type="checkbox" class="checkbox" onclick="toggleDiv()"> </div>
-	<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px;">
-		<p id="heightInfo" style="font-size: xx-small;"></p>
-		<p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
-		<p id="songDuration" style="font-size: xx-small;"></p>
-	</div>
+		<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 5px; top: 10px;">
+		  Dev info? <input type="checkbox" class="checkbox">
+		</div>
+		<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px; display: none;">
+		  <p id="heightInfo" style="font-size: xx-small;"></p>
+		  <p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
+		  <p id="songDuration" style="font-size: xx-small;"></p>
+		</div>
 	<div id="floatingButton" style="position: fixed; right: 20px; bottom: 20px; ">
-		<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light">
+		<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light toggle-button">
 			<img id="buttonImage" src="images/pause2.gif">
 		</button>
 	</div>
     
     <div id="tab">
-        <br/><br/><br/><br/><br/>Intro: <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span><br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> The women I know ain't no good to you<br/>They'll break a man's heart and leave him, too<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> I know wow oh hoo, <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> I don't have to worry  <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span><br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> The gal that I met is one of a kind<br/>She'll treat you right and ease your mind<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> I know wow oh hoo, <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> I gotta be lucky <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span><br/><br/>(chorus)<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> Save my soul, open my heart and <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> save my soul<br/>If It <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> weren't for you, <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> I know I'd be burning in hell <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> Save my soul, open my heart and <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> save my soul<br/>If It <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> weren't for you, <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> I know I'd be burning in hell <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span><br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> Living alone is a hell of a pain<br/>You ain't worth nothing when you lose your friend<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> I know wow oh hoo, <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> I'll have to wait <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span><br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> I miss you babe but I've done you wrong<br/>I'm feelin' blue and the night is<br/>Sooooo <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> damn cold, <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> Oh Lord yes <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> it is<br/><br/>(chorus)<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> Save my soul, open my heart and <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> save my soul<br/>If It <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> weren't for you, <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> I know I'd be burning in hell <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> Save my soul, open my heart and <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> save my soul<br/>If It <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> weren't for you, <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> I know I'd be burning in hell <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span><br/><br/>(repeat chorus)
+        <br/><br/><br/><br/><br/>Intro: <span class="chord">[C]</span> <span class="chord">[C]</span> <span class="chord">[F]</span> <span class="chord">[G]</span> <span class="chord">[C]</span><br/><br/><span class="chord">[C]</span> The women I know ain't no good to you<br/>They'll break a man's heart and leave him, too<br/><span class="chord">[F]</span> I know wow oh hoo, <span class="chord">[G]</span> I don't have to worry  <span class="chord">[C]</span><br/><br/><span class="chord">[C]</span> The gal that I met is one of a kind<br/>She'll treat you right and ease your mind<br/><span class="chord">[F]</span> I know wow oh hoo, <span class="chord">[G]</span> I gotta be lucky <span class="chord">[C]</span><br/><br/>(chorus)<br/><span class="chord">[C]</span> Save my soul, open my heart and <span class="chord">[G]</span> save my soul<br/>If It <span class="chord">[F]</span> weren't for you, <span class="chord">[G]</span> I know I'd be burning in hell <span class="chord">[C]</span><br/><span class="chord">[C]</span> Save my soul, open my heart and <span class="chord">[G]</span> save my soul<br/>If It <span class="chord">[F]</span> weren't for you, <span class="chord">[G]</span> I know I'd be burning in hell <span class="chord">[C]</span><br/><br/><span class="chord">[C]</span> Living alone is a hell of a pain<br/>You ain't worth nothing when you lose your friend<br/><span class="chord">[F]</span> I know wow oh hoo, <span class="chord">[G]</span> I'll have to wait <span class="chord">[C]</span><br/><br/><span class="chord">[C]</span> I miss you babe but I've done you wrong<br/>I'm feelin' blue and the night is<br/>Sooooo <span class="chord">[F]</span> damn cold, <span class="chord">[G]</span> Oh Lord yes <span class="chord">[C]</span> it is<br/><br/>(chorus)<br/><span class="chord">[C]</span> Save my soul, open my heart and <span class="chord">[G]</span> save my soul<br/>If It <span class="chord">[F]</span> weren't for you, <span class="chord">[G]</span> I know I'd be burning in hell <span class="chord">[C]</span><br/><span class="chord">[C]</span> Save my soul, open my heart and <span class="chord">[G]</span> save my soul<br/>If It <span class="chord">[F]</span> weren't for you, <span class="chord">[G]</span> I know I'd be burning in hell <span class="chord">[C]</span><br/><br/>(repeat chorus)
     </div>
 
     <div id="options" class="mt-4">
@@ -246,12 +246,12 @@ window.addEventListener('beforeunload', function() {
   }
 });
 </script>
-<!--<script>
+<script>
   function toggleDiv() {
     var checkBox = document.querySelector('.checkbox');
-    var devInfo = document.getElementById('infoBox');
-    devInfo.style.display = checkBox.checked ? 'block' : 'none';
+    var infoBox = document.getElementById('infoBox');
+    infoBox.style.display = checkBox.checked ? 'block' : 'none';
   }
-</script>-->
+</script>
 </body>
 </html>

@@ -29,19 +29,17 @@
         }
 		.toggle-button {
 			background-color: #eee;
-			border: 1px solid #ccc;
-			padding: 1px 1px;
+			border: 0px solid ;
+			padding: 0px 0px;
 			margin-right: 5px;
 			cursor: pointer;
 		}
 		.div_box {
 			padding: 10px;
-			display: none;
-			}
-			.checkbox:checked + .div_box {
+		}
+		.checkbox:checked + #infoBox {
 			display: block;
-			border: 1px solid #aaa;
-			}
+		}
 		
 		@font-face {
 			font-family: 'Montserrat';
@@ -128,20 +126,22 @@
         <img src="chords/B.gif" alt="B" title="B" />
     
 </div>
-	<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 20px; top: 20px;">Dev info? <input type="checkbox" class="checkbox" onclick="toggleDiv()"> </div>
-	<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px;">
-		<p id="heightInfo" style="font-size: xx-small;"></p>
-		<p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
-		<p id="songDuration" style="font-size: xx-small;"></p>
-	</div>
+		<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 5px; top: 10px;">
+		  Dev info? <input type="checkbox" class="checkbox">
+		</div>
+		<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px; display: none;">
+		  <p id="heightInfo" style="font-size: xx-small;"></p>
+		  <p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
+		  <p id="songDuration" style="font-size: xx-small;"></p>
+		</div>
 	<div id="floatingButton" style="position: fixed; right: 20px; bottom: 20px; ">
-		<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light">
+		<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light toggle-button">
 			<img id="buttonImage" src="images/pause2.gif">
 		</button>
 	</div>
     
     <div id="tab">
-        <br/><br/><br/> <br/><br/>Intro: <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[B]</span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Cm]</span></span></span></span><br/><br/>When you were here be<span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span>fore<br/>Couldn’t look you in the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[B]</span></span></span></span>eye<br/>You’re just like an an<span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span>gel<br/>Your skin makes me cry <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Cm]</span></span></span></span> (stop)<br/><br/>You float like a fea<span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span>ther<br/>In a beautiful world <span class="chord"><span class="chord"><span class="chord"><span class="chord">[B]</span></span></span></span><br/>I wish I was spe<span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span>cial<br/>You’re so very spe<span class="chord"><span class="chord"><span class="chord"><span class="chord">[Cm]</span></span></span></span>cial (stop)<br/><br/>But I’m a creep <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span><br/>I’m a weir<span class="chord"><span class="chord"><span class="chord"><span class="chord">[B]</span></span></span></span>do<br/>What the hell am I doing <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span>here?<br/>I don’t be<span class="chord"><span class="chord"><span class="chord"><span class="chord">[Cm]</span></span></span></span>long here  (stop)<br/><br/>I don’t care if it <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span>hurts<br/>I want to have con<span class="chord"><span class="chord"><span class="chord"><span class="chord">[B]</span></span></span></span>trol<br/>I want a perfect bo<span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span>dy<br/>I want a perfect <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Cm]</span></span></span></span>soul  (stop)<br/><br/>I want you to no<span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span>tice<br/>When I’m not a<span class="chord"><span class="chord"><span class="chord"><span class="chord">[B]</span></span></span></span>round<br/>You’re so very spe<span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span>cial<br/>I wish I was spe<span class="chord"><span class="chord"><span class="chord"><span class="chord">[Cm]</span></span></span></span>cial  (stop)<br/><br/>But I’m a creep <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span><br/>I’m a weir<span class="chord"><span class="chord"><span class="chord"><span class="chord">[B]</span></span></span></span>do<br/>What the hell am I doing <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span>here?<br/>I don’t be<span class="chord"><span class="chord"><span class="chord"><span class="chord">[Cm]</span></span></span></span>long here<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span>She’s running out the <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[B]</span></span></span></span>doo-oo-oor<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span>She’s running out<br/>She <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Cm]</span></span></span></span>run, run, run, ru-u-u-u-u-u-n<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span>-u-u-u-u-un <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[B]</span></span></span></span><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span>Ru-u-u-u-u-un<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Cm]</span></span></span></span>   (stop)<br/><br/>Whatever makes you hap<span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span>py <br/>Whatever you want <span class="chord"><span class="chord"><span class="chord"><span class="chord">[B]</span></span></span></span> <br/>You’re so very spe<span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span>cial <br/>I wish I was spe<span class="chord"><span class="chord"><span class="chord"><span class="chord">[Cm]</span></span></span></span>cial (stop)<br/><br/>But I’m a creep <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span><br/>I’m a weir<span class="chord"><span class="chord"><span class="chord"><span class="chord">[B]</span></span></span></span>do<br/>What the hell am I doing here? <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span><br/>I don’t be<span class="chord"><span class="chord"><span class="chord"><span class="chord">[Cm]</span></span></span></span>long here<br/>I don’t be<span class="chord"><span class="chord"><span class="chord"><span class="chord">[G/]</span></span></span></span>long here
+        <br/><br/><br/> <br/><br/>Intro: <span class="chord">[G]</span> <span class="chord">[B]</span> <span class="chord">[C]</span> <span class="chord">[Cm]</span><br/><br/>When you were here be<span class="chord">[G]</span>fore<br/>Couldn’t look you in the <span class="chord">[B]</span>eye<br/>You’re just like an an<span class="chord">[C]</span>gel<br/>Your skin makes me cry <span class="chord">[Cm]</span> (stop)<br/><br/>You float like a fea<span class="chord">[G]</span>ther<br/>In a beautiful world <span class="chord">[B]</span><br/>I wish I was spe<span class="chord">[C]</span>cial<br/>You’re so very spe<span class="chord">[Cm]</span>cial (stop)<br/><br/>But I’m a creep <span class="chord">[G]</span><br/>I’m a weir<span class="chord">[B]</span>do<br/>What the hell am I doing <span class="chord">[C]</span>here?<br/>I don’t be<span class="chord">[Cm]</span>long here  (stop)<br/><br/>I don’t care if it <span class="chord">[G]</span>hurts<br/>I want to have con<span class="chord">[B]</span>trol<br/>I want a perfect bo<span class="chord">[C]</span>dy<br/>I want a perfect <span class="chord">[Cm]</span>soul  (stop)<br/><br/>I want you to no<span class="chord">[G]</span>tice<br/>When I’m not a<span class="chord">[B]</span>round<br/>You’re so very spe<span class="chord">[C]</span>cial<br/>I wish I was spe<span class="chord">[Cm]</span>cial  (stop)<br/><br/>But I’m a creep <span class="chord">[G]</span><br/>I’m a weir<span class="chord">[B]</span>do<br/>What the hell am I doing <span class="chord">[C]</span>here?<br/>I don’t be<span class="chord">[Cm]</span>long here<br/><br/><span class="chord">[G]</span>She’s running out the <br/><span class="chord">[B]</span>doo-oo-oor<br/><span class="chord">[C]</span>She’s running out<br/>She <span class="chord">[Cm]</span>run, run, run, ru-u-u-u-u-u-n<br/><br/><span class="chord">[G]</span>-u-u-u-u-un <br/><span class="chord">[B]</span><br/><span class="chord">[C]</span>Ru-u-u-u-u-un<br/><span class="chord">[Cm]</span>   (stop)<br/><br/>Whatever makes you hap<span class="chord">[G]</span>py <br/>Whatever you want <span class="chord">[B]</span> <br/>You’re so very spe<span class="chord">[C]</span>cial <br/>I wish I was spe<span class="chord">[Cm]</span>cial (stop)<br/><br/>But I’m a creep <span class="chord">[G]</span><br/>I’m a weir<span class="chord">[B]</span>do<br/>What the hell am I doing here? <span class="chord">[C]</span><br/>I don’t be<span class="chord">[Cm]</span>long here<br/>I don’t be<span class="chord">[G/]</span>long here
     </div>
 
     <div id="options" class="mt-4">
@@ -248,12 +248,12 @@ window.addEventListener('beforeunload', function() {
   }
 });
 </script>
-<!--<script>
+<script>
   function toggleDiv() {
     var checkBox = document.querySelector('.checkbox');
-    var devInfo = document.getElementById('infoBox');
-    devInfo.style.display = checkBox.checked ? 'block' : 'none';
+    var infoBox = document.getElementById('infoBox');
+    infoBox.style.display = checkBox.checked ? 'block' : 'none';
   }
-</script>-->
+</script>
 </body>
 </html>

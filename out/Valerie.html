@@ -29,19 +29,17 @@
         }
 		.toggle-button {
 			background-color: #eee;
-			border: 1px solid #ccc;
-			padding: 1px 1px;
+			border: 0px solid ;
+			padding: 0px 0px;
 			margin-right: 5px;
 			cursor: pointer;
 		}
 		.div_box {
 			padding: 10px;
-			display: none;
-			}
-			.checkbox:checked + .div_box {
+		}
+		.checkbox:checked + #infoBox {
 			display: block;
-			border: 1px solid #aaa;
-			}
+		}
 		
 		@font-face {
 			font-family: 'Montserrat';
@@ -119,6 +117,8 @@
 
    <div class="mt-4" style="overflow-x: auto;">
     
+        <img src="chords/F.gif" alt="F" title="F" />
+    
         <img src="chords/G.gif" alt="G" title="G" />
     
         <img src="chords/C.gif" alt="C" title="C" />
@@ -127,23 +127,23 @@
     
         <img src="chords/Dm.gif" alt="Dm" title="Dm" />
     
-        <img src="chords/F.gif" alt="F" title="F" />
-    
 </div>
-	<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 20px; top: 20px;">Dev info? <input type="checkbox" class="checkbox" onclick="toggleDiv()"> </div>
-	<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px;">
-		<p id="heightInfo" style="font-size: xx-small;"></p>
-		<p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
-		<p id="songDuration" style="font-size: xx-small;"></p>
-	</div>
+		<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 5px; top: 10px;">
+		  Dev info? <input type="checkbox" class="checkbox">
+		</div>
+		<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px; display: none;">
+		  <p id="heightInfo" style="font-size: xx-small;"></p>
+		  <p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
+		  <p id="songDuration" style="font-size: xx-small;"></p>
+		</div>
 	<div id="floatingButton" style="position: fixed; right: 20px; bottom: 20px; ">
-		<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light">
+		<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light toggle-button">
 			<img id="buttonImage" src="images/pause2.gif">
 		</button>
 	</div>
     
     <div id="tab">
-          <br/> <br/> <br/><br/>Intro : <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span>... <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span>...<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span>... <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span>... (stop)<br/>				<br/>Well some <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> times I go out by myself <br/>And I look across the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span> water ...   <br/>And I <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> think of all the things, what you're doing    <br/>And in my head I make a <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span> picture ...<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> 'Cos since I've come on home, <br/>Eell my <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span> body's been a mess   <br/>And I've <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> missed your ginger hair <br/>And the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span> way you like to dress   <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> Won't you come on over, <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> stop making a fool out of <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> me<br/>(stop)   <br/>Why won't you come on over Vale<span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span>rie?  ...<br/>Vale<span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span>rie ... Vale<span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span>rie? ... Vale<span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span>rie ...<br/><br/>(stop)  <br/>Did you <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> have to go to jail, <br/>Put your house on up for sale    <br/>Did you get a good <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span> lawyer? <br/>I hope you <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> didn't catch a tan, <br/>I hope you find the right man    <br/>Who'll fix it <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span> for you ...<br/><br/>Are you <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> shopping anywhere, <br/>Changed the colour of your hair,    <br/>Are you still <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span> busy ...<br/>And did you <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> have to pay the fine <br/>you were dodging all the time    <br/>Are you still <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span> dizzy? ...<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> 'Cos since I've come on home, <br/>Well my <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span> body's been a mess   <br/>And I've <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> missed your ginger hair <br/>And the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span> way you like to dress   <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> Won't you come on over, <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> stop making a fool out of <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> me ... <br/>Why won't you come on over Vale<span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span>rie? ...<br/>Vale<span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span>rie ... Vale<span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span>rie? ... Vale<span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span>rie ...<br/><br/>(stop)<br/>Well sometimes I go out by myself and I look across the water   <br/>And I think of all the things, what you're doing    <br/>and in my head I make a <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span> picture   <br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> 'Cos since I've come on home<br/>Well my <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span> body's been a mess   <br/>And I've <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> missed your ginger hair <br/>And the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span> way you like to dress   <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> Won't you come on over, <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> Stop making a fool out of <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> me ... <br/>Why won't you come on over Vale<span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span>rie? ...<br/>Vale<span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span>rie ... Vale<span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span>rie? ... Vale<span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span>rie .<br/><br/>(stop)<br/>Why won't you come on over Vale<span class="chord"><span class="chord"><span class="chord"><span class="chord">[C/]</span></span></span></span>rieeee?
+          <br/> <br/> <br/><br/>Intro : <br/><span class="chord">[C]</span>... <span class="chord">[Dm]</span>...<br/><span class="chord">[C]</span>... <span class="chord">[Dm]</span>... (stop)<br/>				<br/>Well some <span class="chord">[C]</span> times I go out by myself <br/>And I look across the <span class="chord">[Dm]</span> water ...   <br/>And I <span class="chord">[C]</span> think of all the things, what you're doing    <br/>And in my head I make a <span class="chord">[Dm]</span> picture ...<br/><br/><span class="chord">[F]</span> 'Cos since I've come on home, <br/>Eell my <span class="chord">[Em]</span> body's been a mess   <br/>And I've <span class="chord">[F]</span> missed your ginger hair <br/>And the <span class="chord">[Em]</span> way you like to dress   <br/><span class="chord">[F]</span> Won't you come on over, <br/><span class="chord">[C]</span> stop making a fool out of <span class="chord">[G]</span> me<br/>(stop)   <br/>Why won't you come on over Vale<span class="chord">[C]</span>rie?  ...<br/>Vale<span class="chord">[Dm]</span>rie ... Vale<span class="chord">[C]</span>rie? ... Vale<span class="chord">[Dm]</span>rie ...<br/><br/>(stop)  <br/>Did you <span class="chord">[C]</span> have to go to jail, <br/>Put your house on up for sale    <br/>Did you get a good <span class="chord">[Dm]</span> lawyer? <br/>I hope you <span class="chord">[C]</span> didn't catch a tan, <br/>I hope you find the right man    <br/>Who'll fix it <span class="chord">[Dm]</span> for you ...<br/><br/>Are you <span class="chord">[C]</span> shopping anywhere, <br/>Changed the colour of your hair,    <br/>Are you still <span class="chord">[Dm]</span> busy ...<br/>And did you <span class="chord">[C]</span> have to pay the fine <br/>you were dodging all the time    <br/>Are you still <span class="chord">[Dm]</span> dizzy? ...<br/><br/><span class="chord">[F]</span> 'Cos since I've come on home, <br/>Well my <span class="chord">[Em]</span> body's been a mess   <br/>And I've <span class="chord">[F]</span> missed your ginger hair <br/>And the <span class="chord">[Em]</span> way you like to dress   <br/><span class="chord">[F]</span> Won't you come on over, <br/><span class="chord">[C]</span> stop making a fool out of <span class="chord">[G]</span> me ... <br/>Why won't you come on over Vale<span class="chord">[C]</span>rie? ...<br/>Vale<span class="chord">[Dm]</span>rie ... Vale<span class="chord">[C]</span>rie? ... Vale<span class="chord">[Dm]</span>rie ...<br/><br/>(stop)<br/>Well sometimes I go out by myself and I look across the water   <br/>And I think of all the things, what you're doing    <br/>and in my head I make a <span class="chord">[Dm]</span> picture   <br/><br/><span class="chord">[F]</span> 'Cos since I've come on home<br/>Well my <span class="chord">[Em]</span> body's been a mess   <br/>And I've <span class="chord">[F]</span> missed your ginger hair <br/>And the <span class="chord">[Em]</span> way you like to dress   <br/><span class="chord">[F]</span> Won't you come on over, <br/><span class="chord">[C]</span> Stop making a fool out of <span class="chord">[G]</span> me ... <br/>Why won't you come on over Vale<span class="chord">[C]</span>rie? ...<br/>Vale<span class="chord">[Dm]</span>rie ... Vale<span class="chord">[C]</span>rie? ... Vale<span class="chord">[Dm]</span>rie .<br/><br/>(stop)<br/>Why won't you come on over Vale<span class="chord">[C/]</span>rieeee?
     </div>
 
     <div id="options" class="mt-4">
@@ -250,12 +250,12 @@ window.addEventListener('beforeunload', function() {
   }
 });
 </script>
-<!--<script>
+<script>
   function toggleDiv() {
     var checkBox = document.querySelector('.checkbox');
-    var devInfo = document.getElementById('infoBox');
-    devInfo.style.display = checkBox.checked ? 'block' : 'none';
+    var infoBox = document.getElementById('infoBox');
+    infoBox.style.display = checkBox.checked ? 'block' : 'none';
   }
-</script>-->
+</script>
 </body>
 </html>

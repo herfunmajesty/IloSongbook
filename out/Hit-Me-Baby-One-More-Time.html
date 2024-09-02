@@ -29,19 +29,17 @@
         }
 		.toggle-button {
 			background-color: #eee;
-			border: 1px solid #ccc;
-			padding: 1px 1px;
+			border: 0px solid ;
+			padding: 0px 0px;
 			margin-right: 5px;
 			cursor: pointer;
 		}
 		.div_box {
 			padding: 10px;
-			display: none;
-			}
-			.checkbox:checked + .div_box {
+		}
+		.checkbox:checked + #infoBox {
 			display: block;
-			border: 1px solid #aaa;
-			}
+		}
 		
 		@font-face {
 			font-family: 'Montserrat';
@@ -119,35 +117,37 @@
 
    <div class="mt-4" style="overflow-x: auto;">
     
+        <img src="chords/E7.gif" alt="E7" title="E7" />
+    
+        <img src="chords/F.gif" alt="F" title="F" />
+    
         <img src="chords/G.gif" alt="G" title="G" />
     
         <img src="chords/Am.gif" alt="Am" title="Am" />
     
         <img src="chords/C.gif" alt="C" title="C" />
     
-        <img src="chords/E7.gif" alt="E7" title="E7" />
-    
         <img src="chords/Am7.gif" alt="Am7" title="Am7" />
     
         <img src="chords/Dm.gif" alt="Dm" title="Dm" />
     
-        <img src="chords/F.gif" alt="F" title="F" />
-    
 </div>
-	<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 20px; top: 20px;">Dev info? <input type="checkbox" class="checkbox" onclick="toggleDiv()"> </div>
-	<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px;">
-		<p id="heightInfo" style="font-size: xx-small;"></p>
-		<p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
-		<p id="songDuration" style="font-size: xx-small;"></p>
-	</div>
+		<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 5px; top: 10px;">
+		  Dev info? <input type="checkbox" class="checkbox">
+		</div>
+		<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px; display: none;">
+		  <p id="heightInfo" style="font-size: xx-small;"></p>
+		  <p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
+		  <p id="songDuration" style="font-size: xx-small;"></p>
+		</div>
 	<div id="floatingButton" style="position: fixed; right: 20px; bottom: 20px; ">
-		<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light">
+		<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light toggle-button">
 			<img id="buttonImage" src="images/pause2.gif">
 		</button>
 	</div>
     
     <div id="tab">
-          <br/>  <br/> <br/><br/><br/>Intro <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am7/]</span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am///]</span></span></span></span> x4<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am7/]</span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> Oh baby, baby, how <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span> was I supposed to <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> know<br/>That <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span> something wasn't <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span> right here?<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> Oh baby, baby, I <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span> shouldn't have let you <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> go<br/>And <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span> now you're out of <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span> sight, yeah<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> Show me, how you want it <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span> to be<br/>Tell me, <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> baby cos I need to <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span> know now <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span> Oh because<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> My loneliness is <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span> killing me… and I<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> I must confess I <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span>still believe… <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span> still bel<span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>ieve<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> When I'm not with you, I <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span> lose my mind<br/>Give me a <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> si-i-i-ign<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span> Hit me, baby, <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span> one more time<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> Oh baby, baby, the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span> reason I breathe is <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> you<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span> Boy you got me <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span> blinded<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> Oh pretty baby, there’s <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span> nothing that I wouldn’t <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> do<br/>That’s <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span> not the way I <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span> planned it<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> Show me, how you want it <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span> to be<br/>Tell me, <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> baby, cos I need to <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span> know now <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span> oh because<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> My loneliness is <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span> killing me… and I<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> I must confess I <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span>still believe… <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span> still bel<span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>ieve<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> When I'm not with you, I <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span> lose my mind<br/>Give me a <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> si-i-i-ign<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span> Hit me, baby, <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span> one more time<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> Oh pretty baby, I <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> shouldn't have let you <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span> go <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> (Stop) <br/>I must con<span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>fess… that my loneli<span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span>ness… is killing me <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> now<br/>Don’t you <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span> know I <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span> still believe <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> That you will be <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> here<br/>And give me a <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> sign<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span> Hit me, baby, <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span> one more time<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> My loneliness is <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span> killing me… and I<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> I must confess I <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span> still believe… <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span> still bel<span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>ieve<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> When I'm not with you, I <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span> lose my mind<br/>Give me a <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> si-i-i-ign<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span> Hit me, baby, <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span> one more time <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am/]</span></span></span></span>
+          <br/>  <br/> <br/><br/><br/>Intro <span class="chord">[Am7/]</span> <span class="chord">[Am///]</span> x4<br/><br/><span class="chord">[Am7/]</span> <span class="chord">[Am]</span> Oh baby, baby, how <span class="chord">[E7]</span> was I supposed to <span class="chord">[C]</span> know<br/>That <span class="chord">[Dm]</span> something wasn't <span class="chord">[E7]</span> right here?<br/><span class="chord">[Am]</span> Oh baby, baby, I <span class="chord">[E7]</span> shouldn't have let you <span class="chord">[C]</span> go<br/>And <span class="chord">[Dm]</span> now you're out of <span class="chord">[E7]</span> sight, yeah<br/><span class="chord">[Am]</span> Show me, how you want it <span class="chord">[E7]</span> to be<br/>Tell me, <span class="chord">[C]</span> baby cos I need to <span class="chord">[Dm]</span> know now <span class="chord">[E7]</span> Oh because<br/><br/><span class="chord">[Am]</span> My loneliness is <span class="chord">[E7]</span> killing me… and I<br/><span class="chord">[C]</span> I must confess I <span class="chord">[Dm]</span>still believe… <span class="chord">[E7]</span> still bel<span class="chord">[Am]</span>ieve<br/><span class="chord">[Am]</span> When I'm not with you, I <span class="chord">[E7]</span> lose my mind<br/>Give me a <span class="chord">[C]</span> si-i-i-ign<br/><span class="chord">[Dm]</span> Hit me, baby, <span class="chord">[E7]</span> one more time<br/><br/><span class="chord">[Am]</span> Oh baby, baby, the <span class="chord">[E7]</span> reason I breathe is <span class="chord">[C]</span> you<br/><span class="chord">[Dm]</span> Boy you got me <span class="chord">[E7]</span> blinded<br/><span class="chord">[Am]</span> Oh pretty baby, there’s <span class="chord">[E7]</span> nothing that I wouldn’t <span class="chord">[C]</span> do<br/>That’s <span class="chord">[Dm]</span> not the way I <span class="chord">[E7]</span> planned it<br/><span class="chord">[Am]</span> Show me, how you want it <span class="chord">[E7]</span> to be<br/>Tell me, <span class="chord">[C]</span> baby, cos I need to <span class="chord">[Dm]</span> know now <span class="chord">[E7]</span> oh because<br/><br/><span class="chord">[Am]</span> My loneliness is <span class="chord">[E7]</span> killing me… and I<br/><span class="chord">[C]</span> I must confess I <span class="chord">[Dm]</span>still believe… <span class="chord">[E7]</span> still bel<span class="chord">[Am]</span>ieve<br/><span class="chord">[Am]</span> When I'm not with you, I <span class="chord">[E7]</span> lose my mind<br/>Give me a <span class="chord">[C]</span> si-i-i-ign<br/><span class="chord">[Dm]</span> Hit me, baby, <span class="chord">[E7]</span> one more time<br/><br/><span class="chord">[F]</span> Oh pretty baby, I <span class="chord">[G]</span> shouldn't have let you <span class="chord">[Dm]</span> go <span class="chord">[F]</span> (Stop) <br/>I must con<span class="chord">[Am]</span>fess… that my loneli<span class="chord">[E7]</span>ness… is killing me <span class="chord">[C]</span> now<br/>Don’t you <span class="chord">[Dm]</span> know I <span class="chord">[E7]</span> still believe <span class="chord">[F]</span> That you will be <span class="chord">[G]</span> here<br/>And give me a <span class="chord">[F]</span> sign<br/><span class="chord">[Dm]</span> Hit me, baby, <span class="chord">[E7]</span> one more time<br/><br/><span class="chord">[Am]</span> My loneliness is <span class="chord">[E7]</span> killing me… and I<br/><span class="chord">[C]</span> I must confess I <span class="chord">[Dm]</span> still believe… <span class="chord">[E7]</span> still bel<span class="chord">[Am]</span>ieve<br/><span class="chord">[Am]</span> When I'm not with you, I <span class="chord">[E7]</span> lose my mind<br/>Give me a <span class="chord">[C]</span> si-i-i-ign<br/><span class="chord">[Dm]</span> Hit me, baby, <span class="chord">[E7]</span> one more time <span class="chord">[Am/]</span>
     </div>
 
     <div id="options" class="mt-4">
@@ -254,12 +254,12 @@ window.addEventListener('beforeunload', function() {
   }
 });
 </script>
-<!--<script>
+<script>
   function toggleDiv() {
     var checkBox = document.querySelector('.checkbox');
-    var devInfo = document.getElementById('infoBox');
-    devInfo.style.display = checkBox.checked ? 'block' : 'none';
+    var infoBox = document.getElementById('infoBox');
+    infoBox.style.display = checkBox.checked ? 'block' : 'none';
   }
-</script>-->
+</script>
 </body>
 </html>

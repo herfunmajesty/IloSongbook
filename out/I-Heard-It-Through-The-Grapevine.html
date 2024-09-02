@@ -29,19 +29,17 @@
         }
 		.toggle-button {
 			background-color: #eee;
-			border: 1px solid #ccc;
-			padding: 1px 1px;
+			border: 0px solid ;
+			padding: 0px 0px;
 			margin-right: 5px;
 			cursor: pointer;
 		}
 		.div_box {
 			padding: 10px;
-			display: none;
-			}
-			.checkbox:checked + .div_box {
+		}
+		.checkbox:checked + #infoBox {
 			display: block;
-			border: 1px solid #aaa;
-			}
+		}
 		
 		@font-face {
 			font-family: 'Montserrat';
@@ -128,29 +126,31 @@
 
    <div class="mt-4" style="overflow-x: auto;">
     
-        <img src="chords/Bm.gif" alt="Bm" title="Bm" />
-    
         <img src="chords/G.gif" alt="G" title="G" />
     
         <img src="chords/Dm.gif" alt="Dm" title="Dm" />
     
         <img src="chords/A7.gif" alt="A7" title="A7" />
     
+        <img src="chords/Bm.gif" alt="Bm" title="Bm" />
+    
 </div>
-	<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 20px; top: 20px;">Dev info? <input type="checkbox" class="checkbox" onclick="toggleDiv()"> </div>
-	<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px;">
-		<p id="heightInfo" style="font-size: xx-small;"></p>
-		<p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
-		<p id="songDuration" style="font-size: xx-small;"></p>
-	</div>
+		<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 5px; top: 10px;">
+		  Dev info? <input type="checkbox" class="checkbox">
+		</div>
+		<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px; display: none;">
+		  <p id="heightInfo" style="font-size: xx-small;"></p>
+		  <p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
+		  <p id="songDuration" style="font-size: xx-small;"></p>
+		</div>
 	<div id="floatingButton" style="position: fixed; right: 20px; bottom: 20px; ">
-		<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light">
+		<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light toggle-button">
 			<img id="buttonImage" src="images/pause2.gif">
 		</button>
 	</div>
     
     <div id="tab">
-          <br/>  <br/><br/><br/><br/><br/>info:<br/>* different key than orginal<br/>* uppercase is for parts that are sang higher<br/><br/><pre><br/>riff:<br/>A|---------------|---------------|<br/>E|---------------|---------------|<br/>C|2-----2-5---2--|--2-2--5-4---2-|<br/>G|---------------|---------------|<br/></pre> <br/><br/>intro:<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span> + riff x4<br/><br/>Ooh-ooh, <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span> bet you wondered how I knew<br/>'Bout your <span class="chord"><span class="chord"><span class="chord"><span class="chord">[A7]</span></span></span></span> plan to make me <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> blue<br/>With some other <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span> GUY that you knew before<br/>Between the two of us <span class="chord"><span class="chord"><span class="chord"><span class="chord">[A7]</span></span></span></span> guys, you know I love you <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> more <br/>It took me by SURPRI-<span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bm]</span></span></span></span>-ISE I must <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> say<br/>When I <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span> found out yester-<span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span>-day<br/><br/>Ooh-ooh, <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span> I heard it through the grapevine<br/>Not much <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> longer would you be mine<br/>Ooh-ooh, <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span> I heard it through the grapevine<br/>And I'm <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> just about to lose my mind<br/>Honey, honey <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span> yeah<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span> + riff x4<br/><br/>You know <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span> that a man ain't supposed to cry<br/>But these <span class="chord"><span class="chord"><span class="chord"><span class="chord">[A7]</span></span></span></span> tears I can't hold <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> inside<br/>Losin' <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span> YOU'd end my life you see<br/>'Cause you <span class="chord"><span class="chord"><span class="chord"><span class="chord">[A7]</span></span></span></span> mean that much to <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> me<br/>You could've <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bm]</span></span></span></span> TO-OLD me your<span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span>self<br/>That you <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span> found someone <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> else<br/><br/>Instead <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span> I heard it through the grapevine<br/>Not much <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> longer would you be mine<br/>Ooh-ooh, <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span> I heard it through the grapevine<br/>And I'm <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> just about to lose my mind<br/>Honey, honey <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span> yeah<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span> + riff x4<br/><br/>People say <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span> ha-alf from what you see<br/>Nah-nah-<span class="chord"><span class="chord"><span class="chord"><span class="chord">[A7]</span></span></span></span>none from what you <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> hear<br/>I can't <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span> HELP but bein' confused<br/>If it's <span class="chord"><span class="chord"><span class="chord"><span class="chord">[A7]</span></span></span></span> true, won't you tell me <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> here?<br/>Do you <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bm]</span></span></span></span> PLA-AN to let me <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> go-o<br/>For the other <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span> guy that you knew <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> before?<br/><br/>Ooh-ooh, <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span> I heard it through the grapevine<br/>Not much <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> longer would you be mine<br/>Ooh-ooh, <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span> I heard it through the grapevine<br/>And I'm <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> just about to lose my mind<br/>Honey, honey <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span> yeah<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span> +riff x4<br/> <br/><!-- RIP SOLO, chords like in verse and chorus-->
+          <br/>  <br/><br/><br/><br/><br/>info:<br/>* different key than orginal<br/>* uppercase is for parts that are sang higher<br/><br/><pre><br/>riff:<br/>A|---------------|---------------|<br/>E|---------------|---------------|<br/>C|2-----2-5---2--|--2-2--5-4---2-|<br/>G|---------------|---------------|<br/></pre> <br/><br/>intro:<br/><span class="chord">[Dm]</span> + riff x4<br/><br/>Ooh-ooh, <span class="chord">[Dm]</span> bet you wondered how I knew<br/>'Bout your <span class="chord">[A7]</span> plan to make me <span class="chord">[G]</span> blue<br/>With some other <span class="chord">[Dm]</span> GUY that you knew before<br/>Between the two of us <span class="chord">[A7]</span> guys, you know I love you <span class="chord">[G]</span> more <br/>It took me by SURPRI-<span class="chord">[Bm]</span>-ISE I must <span class="chord">[G]</span> say<br/>When I <span class="chord">[Dm]</span> found out yester-<span class="chord">[G]</span>-day<br/><br/>Ooh-ooh, <span class="chord">[Dm]</span> I heard it through the grapevine<br/>Not much <span class="chord">[G]</span> longer would you be mine<br/>Ooh-ooh, <span class="chord">[Dm]</span> I heard it through the grapevine<br/>And I'm <span class="chord">[G]</span> just about to lose my mind<br/>Honey, honey <span class="chord">[Dm]</span> yeah<br/><br/><span class="chord">[Dm]</span> + riff x4<br/><br/>You know <span class="chord">[Dm]</span> that a man ain't supposed to cry<br/>But these <span class="chord">[A7]</span> tears I can't hold <span class="chord">[G]</span> inside<br/>Losin' <span class="chord">[Dm]</span> YOU'd end my life you see<br/>'Cause you <span class="chord">[A7]</span> mean that much to <span class="chord">[G]</span> me<br/>You could've <span class="chord">[Bm]</span> TO-OLD me your<span class="chord">[G]</span>self<br/>That you <span class="chord">[Dm]</span> found someone <span class="chord">[G]</span> else<br/><br/>Instead <span class="chord">[Dm]</span> I heard it through the grapevine<br/>Not much <span class="chord">[G]</span> longer would you be mine<br/>Ooh-ooh, <span class="chord">[Dm]</span> I heard it through the grapevine<br/>And I'm <span class="chord">[G]</span> just about to lose my mind<br/>Honey, honey <span class="chord">[Dm]</span> yeah<br/><br/><span class="chord">[Dm]</span> + riff x4<br/><br/>People say <span class="chord">[Dm]</span> ha-alf from what you see<br/>Nah-nah-<span class="chord">[A7]</span>none from what you <span class="chord">[G]</span> hear<br/>I can't <span class="chord">[Dm]</span> HELP but bein' confused<br/>If it's <span class="chord">[A7]</span> true, won't you tell me <span class="chord">[G]</span> here?<br/>Do you <span class="chord">[Bm]</span> PLA-AN to let me <span class="chord">[G]</span> go-o<br/>For the other <span class="chord">[Dm]</span> guy that you knew <span class="chord">[G]</span> before?<br/><br/>Ooh-ooh, <span class="chord">[Dm]</span> I heard it through the grapevine<br/>Not much <span class="chord">[G]</span> longer would you be mine<br/>Ooh-ooh, <span class="chord">[Dm]</span> I heard it through the grapevine<br/>And I'm <span class="chord">[G]</span> just about to lose my mind<br/>Honey, honey <span class="chord">[Dm]</span> yeah<br/><br/><span class="chord">[Dm]</span> +riff x4<br/> <br/><!-- RIP SOLO, chords like in verse and chorus-->
     </div>
 
     <div id="options" class="mt-4">
@@ -257,12 +257,12 @@ window.addEventListener('beforeunload', function() {
   }
 });
 </script>
-<!--<script>
+<script>
   function toggleDiv() {
     var checkBox = document.querySelector('.checkbox');
-    var devInfo = document.getElementById('infoBox');
-    devInfo.style.display = checkBox.checked ? 'block' : 'none';
+    var infoBox = document.getElementById('infoBox');
+    infoBox.style.display = checkBox.checked ? 'block' : 'none';
   }
-</script>-->
+</script>
 </body>
 </html>

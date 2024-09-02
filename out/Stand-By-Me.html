@@ -29,19 +29,17 @@
         }
 		.toggle-button {
 			background-color: #eee;
-			border: 1px solid #ccc;
-			padding: 1px 1px;
+			border: 0px solid ;
+			padding: 0px 0px;
 			margin-right: 5px;
 			cursor: pointer;
 		}
 		.div_box {
 			padding: 10px;
-			display: none;
-			}
-			.checkbox:checked + .div_box {
+		}
+		.checkbox:checked + #infoBox {
 			display: block;
-			border: 1px solid #aaa;
-			}
+		}
 		
 		@font-face {
 			font-family: 'Montserrat';
@@ -121,27 +119,29 @@
     
         <img src="chords/Em.gif" alt="Em" title="Em" />
     
-        <img src="chords/C.gif" alt="C" title="C" />
+        <img src="chords/D.gif" alt="D" title="D" />
     
         <img src="chords/G.gif" alt="G" title="G" />
     
-        <img src="chords/D.gif" alt="D" title="D" />
+        <img src="chords/C.gif" alt="C" title="C" />
     
 </div>
-	<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 20px; top: 20px;">Dev info? <input type="checkbox" class="checkbox" onclick="toggleDiv()"> </div>
-	<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px;">
-		<p id="heightInfo" style="font-size: xx-small;"></p>
-		<p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
-		<p id="songDuration" style="font-size: xx-small;"></p>
-	</div>
+		<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 5px; top: 10px;">
+		  Dev info? <input type="checkbox" class="checkbox">
+		</div>
+		<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px; display: none;">
+		  <p id="heightInfo" style="font-size: xx-small;"></p>
+		  <p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
+		  <p id="songDuration" style="font-size: xx-small;"></p>
+		</div>
 	<div id="floatingButton" style="position: fixed; right: 20px; bottom: 20px; ">
-		<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light">
+		<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light toggle-button">
 			<img id="buttonImage" src="images/pause2.gif">
 		</button>
 	</div>
     
     <div id="tab">
-          <br/>  <br/>  <br/>  <br/> <br/>Intro: <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span>  <br/> <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> When the night has come <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span> and the land is dark    <br/>And the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> moon is the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span> only light we'll <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> see    <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> No I won't be afraid no I <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span> won't be afraid    <br/>Just as <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> long as you <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span> stand, stand by <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> me    <br/> <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> So darling darling <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> stand by me oh <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span> stand by me    <br/>Oh <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> stand, <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span> stand by me, <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> stand by me    <br/> <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> If the sky that we look upon    <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span> Should tumble and fall    <br/>Or the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> mountain should <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span> crumble to the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> sea    <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> I won't cry I won't cry no I <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span> won't shed a tear    <br/>Just as <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> long as you <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span> stand, stand by <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> me    <br/> <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> And darling darling <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> stand by me oh <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span> stand by me    <br/>Oh <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> stand <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span> stand by me <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> stand by me    <br/> <br/>Solo: <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> <br/> <br/>And darling darling <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> stand by me oh <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span> stand by me    <br/>Oh <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> stand <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span> stand by me <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> stand by me    <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> And darling darling <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> stand by me oh <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span> stand by me    <br/>Oh <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> stand <span class="chord"><span class="chord"><span class="chord"><span class="chord">[D]</span></span></span></span> stand by me <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> stand by me    <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G/]</span></span></span></span><br/> <br/>
+          <br/>  <br/>  <br/>  <br/> <br/>Intro: <span class="chord">[G]</span> <span class="chord">[Em]</span> <span class="chord">[C]</span> <span class="chord">[D]</span> <span class="chord">[G]</span>  <br/> <br/><span class="chord">[G]</span> When the night has come <span class="chord">[Em]</span> and the land is dark    <br/>And the <span class="chord">[C]</span> moon is the <span class="chord">[D]</span> only light we'll <span class="chord">[G]</span> see    <br/><span class="chord">[G]</span> No I won't be afraid no I <span class="chord">[Em]</span> won't be afraid    <br/>Just as <span class="chord">[C]</span> long as you <span class="chord">[D]</span> stand, stand by <span class="chord">[G]</span> me    <br/> <br/><span class="chord">[G]</span> So darling darling <span class="chord">[G]</span> stand by me oh <span class="chord">[Em]</span> stand by me    <br/>Oh <span class="chord">[C]</span> stand, <span class="chord">[D]</span> stand by me, <span class="chord">[G]</span> stand by me    <br/> <br/><span class="chord">[G]</span> If the sky that we look upon    <br/><span class="chord">[Em]</span> Should tumble and fall    <br/>Or the <span class="chord">[C]</span> mountain should <span class="chord">[D]</span> crumble to the <span class="chord">[G]</span> sea    <br/><span class="chord">[G]</span> I won't cry I won't cry no I <span class="chord">[Em]</span> won't shed a tear    <br/>Just as <span class="chord">[C]</span> long as you <span class="chord">[D]</span> stand, stand by <span class="chord">[G]</span> me    <br/> <br/><span class="chord">[G]</span> And darling darling <span class="chord">[G]</span> stand by me oh <span class="chord">[Em]</span> stand by me    <br/>Oh <span class="chord">[C]</span> stand <span class="chord">[D]</span> stand by me <span class="chord">[G]</span> stand by me    <br/> <br/>Solo: <span class="chord">[G]</span> <span class="chord">[Em]</span> <span class="chord">[C]</span> <span class="chord">[D]</span> <span class="chord">[G]</span> <br/> <br/>And darling darling <span class="chord">[G]</span> stand by me oh <span class="chord">[Em]</span> stand by me    <br/>Oh <span class="chord">[C]</span> stand <span class="chord">[D]</span> stand by me <span class="chord">[G]</span> stand by me    <br/><span class="chord">[G]</span> And darling darling <span class="chord">[G]</span> stand by me oh <span class="chord">[Em]</span> stand by me    <br/>Oh <span class="chord">[C]</span> stand <span class="chord">[D]</span> stand by me <span class="chord">[G]</span> stand by me    <br/><span class="chord">[G/]</span><br/> <br/>
     </div>
 
     <div id="options" class="mt-4">
@@ -248,12 +248,12 @@ window.addEventListener('beforeunload', function() {
   }
 });
 </script>
-<!--<script>
+<script>
   function toggleDiv() {
     var checkBox = document.querySelector('.checkbox');
-    var devInfo = document.getElementById('infoBox');
-    devInfo.style.display = checkBox.checked ? 'block' : 'none';
+    var infoBox = document.getElementById('infoBox');
+    infoBox.style.display = checkBox.checked ? 'block' : 'none';
   }
-</script>-->
+</script>
 </body>
 </html>

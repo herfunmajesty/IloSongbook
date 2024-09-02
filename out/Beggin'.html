@@ -29,19 +29,17 @@
         }
 		.toggle-button {
 			background-color: #eee;
-			border: 1px solid #ccc;
-			padding: 1px 1px;
+			border: 0px solid ;
+			padding: 0px 0px;
 			margin-right: 5px;
 			cursor: pointer;
 		}
 		.div_box {
 			padding: 10px;
-			display: none;
-			}
-			.checkbox:checked + .div_box {
+		}
+		.checkbox:checked + #infoBox {
 			display: block;
-			border: 1px solid #aaa;
-			}
+		}
 		
 		@font-face {
 			font-family: 'Montserrat';
@@ -128,29 +126,31 @@
 
    <div class="mt-4" style="overflow-x: auto;">
     
-        <img src="chords/Am.gif" alt="Am" title="Am" />
-    
         <img src="chords/Dm.gif" alt="Dm" title="Dm" />
     
         <img src="chords/E7.gif" alt="E7" title="E7" />
     
         <img src="chords/F.gif" alt="F" title="F" />
     
+        <img src="chords/Am.gif" alt="Am" title="Am" />
+    
 </div>
-	<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 20px; top: 20px;">Dev info? <input type="checkbox" class="checkbox" onclick="toggleDiv()"> </div>
-	<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px;">
-		<p id="heightInfo" style="font-size: xx-small;"></p>
-		<p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
-		<p id="songDuration" style="font-size: xx-small;"></p>
-	</div>
+		<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 5px; top: 10px;">
+		  Dev info? <input type="checkbox" class="checkbox">
+		</div>
+		<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px; display: none;">
+		  <p id="heightInfo" style="font-size: xx-small;"></p>
+		  <p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
+		  <p id="songDuration" style="font-size: xx-small;"></p>
+		</div>
 	<div id="floatingButton" style="position: fixed; right: 20px; bottom: 20px; ">
-		<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light">
+		<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light toggle-button">
 			<img id="buttonImage" src="images/pause2.gif">
 		</button>
 	</div>
     
     <div id="tab">
-        <br/><br/><br/><br/><br/><br/><br/>(Intro)<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F/]</span></span></span></span> Put your loving <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm/]</span></span></span></span> hand out, baby <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7/]</span></span></span></span><br/>I'm beggin'<br/><br/>(Chorus)<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> Beggin', <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> beggin' you<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span> Put your loving <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span> hand out, baby<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> Beggin', <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> beggin' you<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span> Put your loving <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span> hand out, darling<br/><br/>(Verse)<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> Riding high, <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> when I was king<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span> Played it hard <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span> and fast, 'cause I had everything<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> Walked away, <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> wonderin' then<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span> But easy come <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span> and easy go and it would end<br/><br/>(Chorus)<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> Beggin', <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> beggin' you<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span> Put your loving <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span> hand out, baby<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> Beggin', <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> beggin' you<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span> Put your loving <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span> hand out, darling<br/><br/>(Bridge)<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> I need you <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> to understand<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span> Tried so hard <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span> to be your man<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> The kind of man <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> you want in the end<br/>Only <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span> then can I begin to <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span>  live again<br/><br/>(Verse)<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> An empty shell, <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> I used to be<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span> Shadow of my <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span> life was hangin' over me<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> A broken man <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> that I don't know<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span> Won't even stand <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span> the devil's chance to win my soul<br/><br/>(Chorus)<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> Beggin', <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> beggin' you<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span> Put your loving <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span> hand out, baby<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> Beggin', <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> beggin' you<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span> Put your loving <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span> hand out, darling<br/><br/>(Bridge)<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> I'm fighting hard <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> to hold my own<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span> No, I just can't make it <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span> all alone<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> I'm holding on <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> I can't fall back<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span> I'm just a con <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span> 'bout to fade to black<br/><br/>(Chorus)<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> Beggin', <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> beggin' you<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span> Put your loving <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span> hand out, baby<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> Beggin', <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> beggin' you<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span> Put your loving <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span> hand out, darling<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> Beggin', <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> beggin' you<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span> Put your loving <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span> hand out, baby<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> Beggin', <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> beggin' you<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span> Put your loving <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span> hand out, darling<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am/]</span></span></span></span><br/>
+        <br/><br/><br/><br/><br/><br/><br/>(Intro)<br/><span class="chord">[F/]</span> Put your loving <span class="chord">[Dm/]</span> hand out, baby <span class="chord">[E7/]</span><br/>I'm beggin'<br/><br/>(Chorus)<br/><span class="chord">[Am]</span> Beggin', <span class="chord">[F]</span> beggin' you<br/><span class="chord">[Dm]</span> Put your loving <span class="chord">[E7]</span> hand out, baby<br/><span class="chord">[Am]</span> Beggin', <span class="chord">[F]</span> beggin' you<br/><span class="chord">[Dm]</span> Put your loving <span class="chord">[E7]</span> hand out, darling<br/><br/>(Verse)<br/><span class="chord">[Am]</span> Riding high, <span class="chord">[F]</span> when I was king<br/><span class="chord">[Dm]</span> Played it hard <span class="chord">[E7]</span> and fast, 'cause I had everything<br/><span class="chord">[Am]</span> Walked away, <span class="chord">[F]</span> wonderin' then<br/><span class="chord">[Dm]</span> But easy come <span class="chord">[E7]</span> and easy go and it would end<br/><br/>(Chorus)<br/><span class="chord">[Am]</span> Beggin', <span class="chord">[F]</span> beggin' you<br/><span class="chord">[Dm]</span> Put your loving <span class="chord">[E7]</span> hand out, baby<br/><span class="chord">[Am]</span> Beggin', <span class="chord">[F]</span> beggin' you<br/><span class="chord">[Dm]</span> Put your loving <span class="chord">[E7]</span> hand out, darling<br/><br/>(Bridge)<br/><span class="chord">[Am]</span> I need you <span class="chord">[F]</span> to understand<br/><span class="chord">[Dm]</span> Tried so hard <span class="chord">[E7]</span> to be your man<br/><span class="chord">[Am]</span> The kind of man <span class="chord">[F]</span> you want in the end<br/>Only <span class="chord">[Dm]</span> then can I begin to <span class="chord">[E7]</span>  live again<br/><br/>(Verse)<br/><span class="chord">[Am]</span> An empty shell, <span class="chord">[F]</span> I used to be<br/><span class="chord">[Dm]</span> Shadow of my <span class="chord">[E7]</span> life was hangin' over me<br/><span class="chord">[Am]</span> A broken man <span class="chord">[F]</span> that I don't know<br/><span class="chord">[Dm]</span> Won't even stand <span class="chord">[E7]</span> the devil's chance to win my soul<br/><br/>(Chorus)<br/><span class="chord">[Am]</span> Beggin', <span class="chord">[F]</span> beggin' you<br/><span class="chord">[Dm]</span> Put your loving <span class="chord">[E7]</span> hand out, baby<br/><span class="chord">[Am]</span> Beggin', <span class="chord">[F]</span> beggin' you<br/><span class="chord">[Dm]</span> Put your loving <span class="chord">[E7]</span> hand out, darling<br/><br/>(Bridge)<br/><span class="chord">[Am]</span> I'm fighting hard <span class="chord">[F]</span> to hold my own<br/><span class="chord">[Dm]</span> No, I just can't make it <span class="chord">[E7]</span> all alone<br/><span class="chord">[Am]</span> I'm holding on <span class="chord">[F]</span> I can't fall back<br/><span class="chord">[Dm]</span> I'm just a con <span class="chord">[E7]</span> 'bout to fade to black<br/><br/>(Chorus)<br/><span class="chord">[Am]</span> Beggin', <span class="chord">[F]</span> beggin' you<br/><span class="chord">[Dm]</span> Put your loving <span class="chord">[E7]</span> hand out, baby<br/><span class="chord">[Am]</span> Beggin', <span class="chord">[F]</span> beggin' you<br/><span class="chord">[Dm]</span> Put your loving <span class="chord">[E7]</span> hand out, darling<br/><br/><span class="chord">[Am]</span> Beggin', <span class="chord">[F]</span> beggin' you<br/><span class="chord">[Dm]</span> Put your loving <span class="chord">[E7]</span> hand out, baby<br/><span class="chord">[Am]</span> Beggin', <span class="chord">[F]</span> beggin' you<br/><span class="chord">[Dm]</span> Put your loving <span class="chord">[E7]</span> hand out, darling<br/><span class="chord">[Am/]</span><br/>
     </div>
 
     <div id="options" class="mt-4">
@@ -257,12 +257,12 @@ window.addEventListener('beforeunload', function() {
   }
 });
 </script>
-<!--<script>
+<script>
   function toggleDiv() {
     var checkBox = document.querySelector('.checkbox');
-    var devInfo = document.getElementById('infoBox');
-    devInfo.style.display = checkBox.checked ? 'block' : 'none';
+    var infoBox = document.getElementById('infoBox');
+    infoBox.style.display = checkBox.checked ? 'block' : 'none';
   }
-</script>-->
+</script>
 </body>
 </html>

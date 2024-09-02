@@ -29,19 +29,17 @@
         }
 		.toggle-button {
 			background-color: #eee;
-			border: 1px solid #ccc;
-			padding: 1px 1px;
+			border: 0px solid ;
+			padding: 0px 0px;
 			margin-right: 5px;
 			cursor: pointer;
 		}
 		.div_box {
 			padding: 10px;
-			display: none;
-			}
-			.checkbox:checked + .div_box {
+		}
+		.checkbox:checked + #infoBox {
 			display: block;
-			border: 1px solid #aaa;
-			}
+		}
 		
 		@font-face {
 			font-family: 'Montserrat';
@@ -128,29 +126,31 @@
 
    <div class="mt-4" style="overflow-x: auto;">
     
-        <img src="chords/C.gif" alt="C" title="C" />
-    
         <img src="chords/G7.gif" alt="G7" title="G7" />
-    
-        <img src="chords/G.gif" alt="G" title="G" />
     
         <img src="chords/F.gif" alt="F" title="F" />
     
+        <img src="chords/G.gif" alt="G" title="G" />
+    
+        <img src="chords/C.gif" alt="C" title="C" />
+    
 </div>
-	<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 20px; top: 20px;">Dev info? <input type="checkbox" class="checkbox" onclick="toggleDiv()"> </div>
-	<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px;">
-		<p id="heightInfo" style="font-size: xx-small;"></p>
-		<p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
-		<p id="songDuration" style="font-size: xx-small;"></p>
-	</div>
+		<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 5px; top: 10px;">
+		  Dev info? <input type="checkbox" class="checkbox">
+		</div>
+		<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px; display: none;">
+		  <p id="heightInfo" style="font-size: xx-small;"></p>
+		  <p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
+		  <p id="songDuration" style="font-size: xx-small;"></p>
+		</div>
 	<div id="floatingButton" style="position: fixed; right: 20px; bottom: 20px; ">
-		<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light">
+		<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light toggle-button">
 			<img id="buttonImage" src="images/pause2.gif">
 		</button>
 	</div>
     
     <div id="tab">
-          <br/>  <br/>  <br/>  <br/> <br/><br/>Intro: (palm mute) <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span><br/><br/>(palm mute)<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> Cecilia, you're <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> breaking my <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> heart   <br/>You're <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> shaking my <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> confidence <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> daily<br/>(play soft)   <br/>Oh, <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> Cecil- <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> ia, I'm <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> down on my <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> knees   <br/>I'm <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> begging you <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> please to come <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> home    <br/> <br/>(play loud)<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> Cecilia, you're <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> breaking my <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> heart   <br/>You're <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> shaking my <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> confidence <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> daily   <br/>Oh, <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> Cecil- <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> ia, I'm <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> down on my <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> knees   <br/>I'm <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> begging you <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> please to come <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> home   <br/>Come on <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> home   <br/> <br/>.. <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> ..<br/>Making <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> love in the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> afternoon with <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> Cecilia   <br/>Up in <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G7]</span></span></span></span> my bed- <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> room ...<br/>I got up to <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> wash my face   <br/>When I <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> come back to bed   <br/>Someone's <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G7]</span></span></span></span> taken my <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> place   <br/> <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> Cecilia, you're <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> breaking my <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> heart   <br/>You're <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> shaking my <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> confidence <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> daily   <br/>Oh, <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> Cecil- <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> ia, I'm <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> down on my <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> knees   <br/>I'm <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> begging you <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> please to come <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> home   <br/><br/>Jubi- <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> la- <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> tion, she <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> loves me <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> again,   <br/>I <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> fall on the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> floor and I’m <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> laughing,   <br/>Jubi-<span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span>la-<span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span>tion, she <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> loves me <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> again,   <br/>I <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> fall on the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> floor and I’m <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> laughing   <br/> <br/>Whoo<span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> ooo<span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> ooo<span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> ooo <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> ooo<span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> ooo<span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> oooo <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span>  oooo<br/><br/>Whoo<span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> ooo<span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> ooo<span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> ooo <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> ooo<span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> ooo<span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> oooo <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span>  oooo<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C/]</span></span></span></span><br/>
+          <br/>  <br/>  <br/>  <br/> <br/><br/>Intro: (palm mute) <span class="chord">[C]</span><br/><br/>(palm mute)<br/><span class="chord">[C]</span> Cecilia, you're <span class="chord">[F]</span> breaking my <span class="chord">[C]</span> heart   <br/>You're <span class="chord">[F]</span> shaking my <span class="chord">[C]</span> confidence <span class="chord">[G]</span> daily<br/>(play soft)   <br/>Oh, <span class="chord">[F]</span> Cecil- <span class="chord">[C]</span> ia, I'm <span class="chord">[F]</span> down on my <span class="chord">[C]</span> knees   <br/>I'm <span class="chord">[F]</span> begging you <span class="chord">[C]</span> please to come <span class="chord">[G]</span> home    <br/> <br/>(play loud)<br/><span class="chord">[C]</span> Cecilia, you're <span class="chord">[F]</span> breaking my <span class="chord">[C]</span> heart   <br/>You're <span class="chord">[F]</span> shaking my <span class="chord">[C]</span> confidence <span class="chord">[G]</span> daily   <br/>Oh, <span class="chord">[F]</span> Cecil- <span class="chord">[C]</span> ia, I'm <span class="chord">[F]</span> down on my <span class="chord">[C]</span> knees   <br/>I'm <span class="chord">[F]</span> begging you <span class="chord">[C]</span> please to come <span class="chord">[G]</span> home   <br/>Come on <span class="chord">[C]</span> home   <br/> <br/>.. <span class="chord">[C]</span> ..<br/>Making <span class="chord">[C]</span> love in the <span class="chord">[F]</span> afternoon with <span class="chord">[C]</span> Cecilia   <br/>Up in <span class="chord">[G7]</span> my bed- <span class="chord">[C]</span> room ...<br/>I got up to <span class="chord">[F]</span> wash my face   <br/>When I <span class="chord">[C]</span> come back to bed   <br/>Someone's <span class="chord">[G7]</span> taken my <span class="chord">[C]</span> place   <br/> <br/><span class="chord">[C]</span> Cecilia, you're <span class="chord">[F]</span> breaking my <span class="chord">[C]</span> heart   <br/>You're <span class="chord">[F]</span> shaking my <span class="chord">[C]</span> confidence <span class="chord">[G]</span> daily   <br/>Oh, <span class="chord">[F]</span> Cecil- <span class="chord">[C]</span> ia, I'm <span class="chord">[F]</span> down on my <span class="chord">[C]</span> knees   <br/>I'm <span class="chord">[F]</span> begging you <span class="chord">[C]</span> please to come <span class="chord">[G]</span> home   <br/><br/>Jubi- <span class="chord">[F]</span> la- <span class="chord">[C]</span> tion, she <span class="chord">[F]</span> loves me <span class="chord">[C]</span> again,   <br/>I <span class="chord">[F]</span> fall on the <span class="chord">[C]</span> floor and I’m <span class="chord">[G]</span> laughing,   <br/>Jubi-<span class="chord">[F]</span>la-<span class="chord">[C]</span>tion, she <span class="chord">[F]</span> loves me <span class="chord">[C]</span> again,   <br/>I <span class="chord">[F]</span> fall on the <span class="chord">[C]</span> floor and I’m <span class="chord">[G]</span> laughing   <br/> <br/>Whoo<span class="chord">[F]</span> ooo<span class="chord">[C]</span> ooo<span class="chord">[F]</span> ooo <span class="chord">[C]</span> ooo<span class="chord">[F]</span> ooo<span class="chord">[C]</span> oooo <span class="chord">[G]</span>  oooo<br/><br/>Whoo<span class="chord">[F]</span> ooo<span class="chord">[C]</span> ooo<span class="chord">[F]</span> ooo <span class="chord">[C]</span> ooo<span class="chord">[F]</span> ooo<span class="chord">[C]</span> oooo <span class="chord">[G]</span>  oooo<br/><span class="chord">[C/]</span><br/>
     </div>
 
     <div id="options" class="mt-4">
@@ -257,12 +257,12 @@ window.addEventListener('beforeunload', function() {
   }
 });
 </script>
-<!--<script>
+<script>
   function toggleDiv() {
     var checkBox = document.querySelector('.checkbox');
-    var devInfo = document.getElementById('infoBox');
-    devInfo.style.display = checkBox.checked ? 'block' : 'none';
+    var infoBox = document.getElementById('infoBox');
+    infoBox.style.display = checkBox.checked ? 'block' : 'none';
   }
-</script>-->
+</script>
 </body>
 </html>

@@ -29,19 +29,17 @@
         }
 		.toggle-button {
 			background-color: #eee;
-			border: 1px solid #ccc;
-			padding: 1px 1px;
+			border: 0px solid ;
+			padding: 0px 0px;
 			margin-right: 5px;
 			cursor: pointer;
 		}
 		.div_box {
 			padding: 10px;
-			display: none;
-			}
-			.checkbox:checked + .div_box {
+		}
+		.checkbox:checked + #infoBox {
 			display: block;
-			border: 1px solid #aaa;
-			}
+		}
 		
 		@font-face {
 			font-family: 'Montserrat';
@@ -121,27 +119,29 @@
     
         <img src="chords/E7.gif" alt="E7" title="E7" />
     
-        <img src="chords/G.gif" alt="G" title="G" />
-    
         <img src="chords/Dm.gif" alt="Dm" title="Dm" />
+    
+        <img src="chords/G.gif" alt="G" title="G" />
     
         <img src="chords/Am.gif" alt="Am" title="Am" />
     
 </div>
-	<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 20px; top: 20px;">Dev info? <input type="checkbox" class="checkbox" onclick="toggleDiv()"> </div>
-	<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px;">
-		<p id="heightInfo" style="font-size: xx-small;"></p>
-		<p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
-		<p id="songDuration" style="font-size: xx-small;"></p>
-	</div>
+		<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 5px; top: 10px;">
+		  Dev info? <input type="checkbox" class="checkbox">
+		</div>
+		<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px; display: none;">
+		  <p id="heightInfo" style="font-size: xx-small;"></p>
+		  <p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
+		  <p id="songDuration" style="font-size: xx-small;"></p>
+		</div>
 	<div id="floatingButton" style="position: fixed; right: 20px; bottom: 20px; ">
-		<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light">
+		<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light toggle-button">
 			<img id="buttonImage" src="images/pause2.gif">
 		</button>
 	</div>
     
     <div id="tab">
-          <br/>  <br/>  <br/><br/>Intro: <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span><br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> I was five and he was six<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span> We rode on horses made of sticks<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> He wore black and I wore white<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span> He would always win the fight<br/><br/>(chorus)<br/>Bang <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> bang     <br/>He shot me down bang <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span> bang    <br/>I hit the ground bang <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> bang<br/>That awful sound bang <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span> bang<br/>My baby shot me <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> down<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span><br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> Seasons came and changed the time<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span> When I grew up I called him mine<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> He would always laugh and say<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span> Remember when we used to play<br/><br/>Bang <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> bang     <br/>I shot you down bang <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span> bang    <br/>You hit the ground bang <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> bang<br/>That awful sound bang <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span> bang<br/>I used to shoot you <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> down<br/><br/>(bridge)<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> Music played and people sang<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> Just for me the church bells rang <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span><br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> Now he's gone I don't know why<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span> And till this day some times I cry<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> He didn't even say goodbye<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span> He didn't take the time to lie<br/><br/>Bang <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> bang     <br/>He shot me down bang <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span> bang    <br/>I hit the ground <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> bang bang<br/>That awful sound <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span> bang bang<br/>My baby shot me <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> down<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[E7]</span></span></span></span><br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am/]</span></span></span></span>
+          <br/>  <br/>  <br/><br/>Intro: <span class="chord">[Am]</span> <span class="chord">[Dm]</span> <span class="chord">[G]</span> <span class="chord">[E7]</span><br/><br/><span class="chord">[Am]</span> I was five and he was six<br/><span class="chord">[Dm]</span> We rode on horses made of sticks<br/><span class="chord">[G]</span> He wore black and I wore white<br/><span class="chord">[E7]</span> He would always win the fight<br/><br/>(chorus)<br/>Bang <span class="chord">[Am]</span> bang     <br/>He shot me down bang <span class="chord">[Dm]</span> bang    <br/>I hit the ground bang <span class="chord">[G]</span> bang<br/>That awful sound bang <span class="chord">[E7]</span> bang<br/>My baby shot me <span class="chord">[Am]</span> down<br/><br/><span class="chord">[Am]</span> <span class="chord">[Dm]</span> <span class="chord">[G]</span> <span class="chord">[E7]</span><br/><br/><span class="chord">[Am]</span> Seasons came and changed the time<br/><span class="chord">[Dm]</span> When I grew up I called him mine<br/><span class="chord">[G]</span> He would always laugh and say<br/><span class="chord">[E7]</span> Remember when we used to play<br/><br/>Bang <span class="chord">[Am]</span> bang     <br/>I shot you down bang <span class="chord">[Dm]</span> bang    <br/>You hit the ground bang <span class="chord">[G]</span> bang<br/>That awful sound bang <span class="chord">[E7]</span> bang<br/>I used to shoot you <span class="chord">[Am]</span> down<br/><br/>(bridge)<br/><span class="chord">[Am]</span> Music played and people sang<br/><span class="chord">[G]</span> Just for me the church bells rang <br/><span class="chord">[Dm]</span> <span class="chord">[E7]</span><br/><br/><span class="chord">[Am]</span> Now he's gone I don't know why<br/><span class="chord">[Dm]</span> And till this day some times I cry<br/><span class="chord">[G]</span> He didn't even say goodbye<br/><span class="chord">[E7]</span> He didn't take the time to lie<br/><br/>Bang <span class="chord">[Am]</span> bang     <br/>He shot me down bang <span class="chord">[Dm]</span> bang    <br/>I hit the ground <span class="chord">[G]</span> bang bang<br/>That awful sound <span class="chord">[E7]</span> bang bang<br/>My baby shot me <span class="chord">[Am]</span> down<br/><br/><span class="chord">[Am]</span> <span class="chord">[Dm]</span> <span class="chord">[G]</span> <span class="chord">[E7]</span><br/><br/><span class="chord">[Am/]</span>
     </div>
 
     <div id="options" class="mt-4">
@@ -248,12 +248,12 @@ window.addEventListener('beforeunload', function() {
   }
 });
 </script>
-<!--<script>
+<script>
   function toggleDiv() {
     var checkBox = document.querySelector('.checkbox');
-    var devInfo = document.getElementById('infoBox');
-    devInfo.style.display = checkBox.checked ? 'block' : 'none';
+    var infoBox = document.getElementById('infoBox');
+    infoBox.style.display = checkBox.checked ? 'block' : 'none';
   }
-</script>-->
+</script>
 </body>
 </html>

@@ -29,19 +29,17 @@
         }
 		.toggle-button {
 			background-color: #eee;
-			border: 1px solid #ccc;
-			padding: 1px 1px;
+			border: 0px solid ;
+			padding: 0px 0px;
 			margin-right: 5px;
 			cursor: pointer;
 		}
 		.div_box {
 			padding: 10px;
-			display: none;
-			}
-			.checkbox:checked + .div_box {
+		}
+		.checkbox:checked + #infoBox {
 			display: block;
-			border: 1px solid #aaa;
-			}
+		}
 		
 		@font-face {
 			font-family: 'Montserrat';
@@ -128,27 +126,29 @@
 
    <div class="mt-4" style="overflow-x: auto;">
     
-        <img src="chords/C.gif" alt="C" title="C" />
+        <img src="chords/F.gif" alt="F" title="F" />
     
         <img src="chords/G.gif" alt="G" title="G" />
     
-        <img src="chords/F.gif" alt="F" title="F" />
+        <img src="chords/C.gif" alt="C" title="C" />
     
 </div>
-	<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 20px; top: 20px;">Dev info? <input type="checkbox" class="checkbox" onclick="toggleDiv()"> </div>
-	<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px;">
-		<p id="heightInfo" style="font-size: xx-small;"></p>
-		<p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
-		<p id="songDuration" style="font-size: xx-small;"></p>
-	</div>
+		<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 5px; top: 10px;">
+		  Dev info? <input type="checkbox" class="checkbox">
+		</div>
+		<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px; display: none;">
+		  <p id="heightInfo" style="font-size: xx-small;"></p>
+		  <p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
+		  <p id="songDuration" style="font-size: xx-small;"></p>
+		</div>
 	<div id="floatingButton" style="position: fixed; right: 20px; bottom: 20px; ">
-		<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light">
+		<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light toggle-button">
 			<img id="buttonImage" src="images/pause2.gif">
 		</button>
 	</div>
     
     <div id="tab">
-        <br/><br/><br/><br/><br/><br/><span class="chord"><span class="chord"><span class='text-muted'><strong>(riff)</strong></span></span></span><br/><pre><br/>A|-----------------|---------3-3-1-0--|<br/>E|-0-0-1-0-3-3-1-0-|-0-0-1-0----------|<br/>C|-----------------|------------------|<br/>G|-----------------|------------------|<br/><br/>A|-----------------|---------7-7-5-3--|<br/>E|-0-0-1-0-3-3-1-0-|-0-0-1-0----------|<br/>C|-----------------|------------------|<br/>G|-----------------|------------------|<br/></pre><br/><br/><hr/><br/><br/>Start: 1 2 3 4<br/><br/><span class="chord"><span class="chord"><span class='text-muted'><strong>(riff)</strong></span></span></span><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span></span></span>...<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span></span></span>...<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span></span></span> What else do I be... all apologies...<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span></span></span> What else could I say... everyone is gay...<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span></span></span> What else could I write... I don't have a right...<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span></span></span> What else should I be... all apologies...<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span></span></span></span> In the sun, in the sun I feel as one<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span></span></span></span> In the sun, in the sun.. <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G/]</span></span></span></span></span></span></span> I'm married <span class='text-muted'>(1 2 3 4)</span> <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G/]</span></span></span></span></span></span></span> burried <span class='text-muted'>(1 2 3 4)</span><br/><br/><span class="chord"><span class="chord"><span class='text-muted'><strong>(riff)</strong></span></span></span><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span></span></span>...<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span></span></span>...<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span></span></span> I wish I was like you... easily amused...<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span></span></span> Find my nest of salt... everyhting's my fault...<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span></span></span> I'll take all the blame... aqua seafome shame...<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span></span></span> Sunburn with freezer bur... choking on the ashes of her enemies<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span></span></span></span> In the sun, in the sun I feel as one<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span></span></span></span> In the sun, in the sun.. <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G/]</span></span></span></span></span></span></span> I'm married <span class='text-muted'>(1 2 3 4)</span> <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G/]</span></span></span></span></span></span></span> burried <span class='text-muted'>(1 2 3 4)</span><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G/]</span></span></span></span></span></span></span> I'm married <span class='text-muted'>(1 2 3 4)</span> <span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G/]</span></span></span></span></span></span></span> burried (yah, yah, yah, yeah)<br/><br/><span class="chord"><span class="chord"><span class='text-muted'><strong>(riff)</strong></span></span></span><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span></span></span>... <br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span></span></span> All alone is all we are<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span></span></span> All alone is all we are<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span></span></span> All alone is all we are<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span></span></span> All alone is all we are<br/><br/>(quieter)<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span></span></span> All alone is all we are<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span></span></span></span> All alone is all we are<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C/]</span></span></span></span></span></span></span> All alone is all we are<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C/]</span></span></span></span></span></span></span> All alone is all we are
+        <br/><br/><br/><br/><br/><br/><span class='text-muted'><strong>(riff)</strong></span><br/><pre><br/>A|-----------------|---------3-3-1-0--|<br/>E|-0-0-1-0-3-3-1-0-|-0-0-1-0----------|<br/>C|-----------------|------------------|<br/>G|-----------------|------------------|<br/><br/>A|-----------------|---------7-7-5-3--|<br/>E|-0-0-1-0-3-3-1-0-|-0-0-1-0----------|<br/>C|-----------------|------------------|<br/>G|-----------------|------------------|<br/></pre><br/><br/><hr/><br/><br/>Start: 1 2 3 4<br/><br/><span class='text-muted'><strong>(riff)</strong></span><br/><span class="chord">[C]</span>...<br/><span class="chord">[C]</span>...<br/><span class="chord">[C]</span> What else do I be... all apologies...<br/><span class="chord">[C]</span> What else could I say... everyone is gay...<br/><span class="chord">[C]</span> What else could I write... I don't have a right...<br/><span class="chord">[C]</span> What else should I be... all apologies...<br/><br/><span class="chord">[F]</span> In the sun, in the sun I feel as one<br/><span class="chord">[F]</span> In the sun, in the sun.. <br/><span class="chord">[G/]</span> I'm married <span class='text-muted'>(1 2 3 4)</span> <span class="chord">[G/]</span> burried <span class='text-muted'>(1 2 3 4)</span><br/><br/><span class='text-muted'><strong>(riff)</strong></span><br/><span class="chord">[C]</span>...<br/><span class="chord">[C]</span>...<br/><span class="chord">[C]</span> I wish I was like you... easily amused...<br/><span class="chord">[C]</span> Find my nest of salt... everyhting's my fault...<br/><span class="chord">[C]</span> I'll take all the blame... aqua seafome shame...<br/><span class="chord">[C]</span> Sunburn with freezer bur... choking on the ashes of her enemies<br/><br/><span class="chord">[F]</span> In the sun, in the sun I feel as one<br/><span class="chord">[F]</span> In the sun, in the sun.. <br/><span class="chord">[G/]</span> I'm married <span class='text-muted'>(1 2 3 4)</span> <span class="chord">[G/]</span> burried <span class='text-muted'>(1 2 3 4)</span><br/><span class="chord">[G/]</span> I'm married <span class='text-muted'>(1 2 3 4)</span> <span class="chord">[G/]</span> burried (yah, yah, yah, yeah)<br/><br/><span class='text-muted'><strong>(riff)</strong></span><br/><span class="chord">[C]</span>... <br/><span class="chord">[C]</span> All alone is all we are<br/><span class="chord">[C]</span> All alone is all we are<br/><span class="chord">[C]</span> All alone is all we are<br/><span class="chord">[C]</span> All alone is all we are<br/><br/>(quieter)<br/><span class="chord">[C]</span> All alone is all we are<br/><span class="chord">[C]</span> All alone is all we are<br/><span class="chord">[C/]</span> All alone is all we are<br/><span class="chord">[C/]</span> All alone is all we are
     </div>
 
     <div id="options" class="mt-4">
@@ -255,12 +255,12 @@ window.addEventListener('beforeunload', function() {
   }
 });
 </script>
-<!--<script>
+<script>
   function toggleDiv() {
     var checkBox = document.querySelector('.checkbox');
-    var devInfo = document.getElementById('infoBox');
-    devInfo.style.display = checkBox.checked ? 'block' : 'none';
+    var infoBox = document.getElementById('infoBox');
+    infoBox.style.display = checkBox.checked ? 'block' : 'none';
   }
-</script>-->
+</script>
 </body>
 </html>

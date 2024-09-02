@@ -29,19 +29,17 @@
         }
 		.toggle-button {
 			background-color: #eee;
-			border: 1px solid #ccc;
-			padding: 1px 1px;
+			border: 0px solid ;
+			padding: 0px 0px;
 			margin-right: 5px;
 			cursor: pointer;
 		}
 		.div_box {
 			padding: 10px;
-			display: none;
-			}
-			.checkbox:checked + .div_box {
+		}
+		.checkbox:checked + #infoBox {
 			display: block;
-			border: 1px solid #aaa;
-			}
+		}
 		
 		@font-face {
 			font-family: 'Montserrat';
@@ -128,7 +126,7 @@
 
    <div class="mt-4" style="overflow-x: auto;">
     
-        <img src="chords/NC.gif" alt="NC" title="NC" />
+        <img src="chords/F.gif" alt="F" title="F" />
     
         <img src="chords/G.gif" alt="G" title="G" />
     
@@ -136,23 +134,25 @@
     
         <img src="chords/C.gif" alt="C" title="C" />
     
-        <img src="chords/F.gif" alt="F" title="F" />
+        <img src="chords/NC.gif" alt="NC" title="NC" />
     
 </div>
-	<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 20px; top: 20px;">Dev info? <input type="checkbox" class="checkbox" onclick="toggleDiv()"> </div>
-	<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px;">
-		<p id="heightInfo" style="font-size: xx-small;"></p>
-		<p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
-		<p id="songDuration" style="font-size: xx-small;"></p>
-	</div>
+		<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 5px; top: 10px;">
+		  Dev info? <input type="checkbox" class="checkbox">
+		</div>
+		<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px; display: none;">
+		  <p id="heightInfo" style="font-size: xx-small;"></p>
+		  <p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
+		  <p id="songDuration" style="font-size: xx-small;"></p>
+		</div>
 	<div id="floatingButton" style="position: fixed; right: 20px; bottom: 20px; ">
-		<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light">
+		<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light toggle-button">
 			<img id="buttonImage" src="images/pause2.gif">
 		</button>
 	</div>
     
     <div id="tab">
-         <br/> <br/><br/><br/><br/><!-- denceing the strum along --><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[NC]</span></span></span></span> <br/>My friend's got a girlfriend, man, he hates that bitch<br/>He tells me every day<br/>He says, "Man, I really gotta lose my chick<br/>In the worst kind of way"<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> She sits on her ass, <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bb]</span></span></span></span> he works his hands to the bone<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> To give her money every <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> payday<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> But she wants more dinero just to <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bb]</span></span></span></span> stay at home<br/>Well, my <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F//]</span></span></span></span> friend, you <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C//]</span></span></span></span> gotta <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> say<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> I won't pay, I won't pay ya, <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bb]</span></span></span></span> no way<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F//]</span></span></span></span> Na-na, why <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C//]</span></span></span></span> don't you get a <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> job?<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> Say no way, say no way-ah, <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bb]</span></span></span></span> no wa-a-a-ay<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F//]</span></span></span></span> Na-na, why <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C//]</span></span></span></span> don't you get a <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F//]</span></span></span></span> job?<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> I guess all his money, well, it <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bb]</span></span></span></span>isn't enough<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> To keep the bill collectors at <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> bay<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> I guess all his money, well, it <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bb]</span></span></span></span>isn't enough<br/>'Cause that <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F//]</span></span></span></span> girl's got <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C//]</span></span></span></span> expensive <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> taste<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> I won't pay, I won't pay ya, <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bb]</span></span></span></span> no way<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F//]</span></span></span></span> Na-na, why <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C//]</span></span></span></span> don't you get a <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> job?<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> Say no way, say no way-ah, <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bb]</span></span></span></span> no wa-a-a-ay<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F//]</span></span></span></span> Na-na, why <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C//]</span></span></span></span> don't you get a <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F//]</span></span></span></span> job?<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bb]</span></span></span></span> Well, I guess it ain't easy doing nothing at <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> aaaall, oh yeah<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bb]</span></span></span></span> But, hey man, free rides just don't come <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> along every <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> day<br/>(Let me tell you about my other friend now)<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> My friend's got a boyfriend, man, she <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bb]</span></span></span></span> hates that dick<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> She tells me every <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span> day<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> He wants more dinero just to <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bb]</span></span></span></span> stay at home<br/>Well, my <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F//]</span></span></span></span> friend, you <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C//]</span></span></span></span> gotta <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> say<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> I won't pay, I won't pay ya, <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bb]</span></span></span></span> no way<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F//]</span></span></span></span> Na-na, why <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C//]</span></span></span></span> don't you get a <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> job?<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> Say no way, say no way-ah, <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bb]</span></span></span></span> no wa-a-a-ay<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F//]</span></span></span></span> Na-na, why <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C//]</span></span></span></span> don't you get a <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F//]</span></span></span></span> job?<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> I won't give you no money, <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bb]</span></span></span></span> I always pay<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F//]</span></span></span></span> Na-na, why <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C//]</span></span></span></span> don't you get a <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> job?<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span> Say no way, say no way-ah, <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bb]</span></span></span></span> no wa-a-a-ay<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F//]</span></span></span></span> Na-na, why <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C//]</span></span></span></span> don't you get a <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span> jo-<span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span>-o-<span class="chord"><span class="chord"><span class="chord"><span class="chord">[F/]</span></span></span></span>-ob?<br/><!--Hey, that's something everyone can enjoy???-->
+         <br/> <br/><br/><br/><br/><!-- denceing the strum along --><br/><span class="chord">[NC]</span> <br/>My friend's got a girlfriend, man, he hates that bitch<br/>He tells me every day<br/>He says, "Man, I really gotta lose my chick<br/>In the worst kind of way"<br/><br/><span class="chord">[F]</span> She sits on her ass, <span class="chord">[Bb]</span> he works his hands to the bone<br/><span class="chord">[F]</span> To give her money every <span class="chord">[C]</span> payday<br/><span class="chord">[F]</span> But she wants more dinero just to <span class="chord">[Bb]</span> stay at home<br/>Well, my <span class="chord">[F//]</span> friend, you <span class="chord">[C//]</span> gotta <span class="chord">[F]</span> say<br/><br/><span class="chord">[F]</span> I won't pay, I won't pay ya, <span class="chord">[Bb]</span> no way<br/><span class="chord">[F//]</span> Na-na, why <span class="chord">[C//]</span> don't you get a <span class="chord">[F]</span> job?<br/><span class="chord">[F]</span> Say no way, say no way-ah, <span class="chord">[Bb]</span> no wa-a-a-ay<br/><span class="chord">[F//]</span> Na-na, why <span class="chord">[C//]</span> don't you get a <span class="chord">[F//]</span> job?<br/><br/><span class="chord">[F]</span> I guess all his money, well, it <span class="chord">[Bb]</span>isn't enough<br/><span class="chord">[F]</span> To keep the bill collectors at <span class="chord">[C]</span> bay<br/><span class="chord">[F]</span> I guess all his money, well, it <span class="chord">[Bb]</span>isn't enough<br/>'Cause that <span class="chord">[F//]</span> girl's got <span class="chord">[C//]</span> expensive <span class="chord">[F]</span> taste<br/><br/><span class="chord">[F]</span> I won't pay, I won't pay ya, <span class="chord">[Bb]</span> no way<br/><span class="chord">[F//]</span> Na-na, why <span class="chord">[C//]</span> don't you get a <span class="chord">[F]</span> job?<br/><span class="chord">[F]</span> Say no way, say no way-ah, <span class="chord">[Bb]</span> no wa-a-a-ay<br/><span class="chord">[F//]</span> Na-na, why <span class="chord">[C//]</span> don't you get a <span class="chord">[F//]</span> job?<br/><br/><span class="chord">[Bb]</span> Well, I guess it ain't easy doing nothing at <span class="chord">[F]</span> aaaall, oh yeah<br/><span class="chord">[Bb]</span> But, hey man, free rides just don't come <span class="chord">[G]</span> along every <span class="chord">[C]</span> day<br/>(Let me tell you about my other friend now)<br/><br/><span class="chord">[F]</span> My friend's got a boyfriend, man, she <span class="chord">[Bb]</span> hates that dick<br/><span class="chord">[F]</span> She tells me every <span class="chord">[C]</span> day<br/><span class="chord">[F]</span> He wants more dinero just to <span class="chord">[Bb]</span> stay at home<br/>Well, my <span class="chord">[F//]</span> friend, you <span class="chord">[C//]</span> gotta <span class="chord">[F]</span> say<br/><br/><span class="chord">[F]</span> I won't pay, I won't pay ya, <span class="chord">[Bb]</span> no way<br/><span class="chord">[F//]</span> Na-na, why <span class="chord">[C//]</span> don't you get a <span class="chord">[F]</span> job?<br/><span class="chord">[F]</span> Say no way, say no way-ah, <span class="chord">[Bb]</span> no wa-a-a-ay<br/><span class="chord">[F//]</span> Na-na, why <span class="chord">[C//]</span> don't you get a <span class="chord">[F//]</span> job?<br/><br/><span class="chord">[F]</span> I won't give you no money, <span class="chord">[Bb]</span> I always pay<br/><span class="chord">[F//]</span> Na-na, why <span class="chord">[C//]</span> don't you get a <span class="chord">[F]</span> job?<br/><span class="chord">[F]</span> Say no way, say no way-ah, <span class="chord">[Bb]</span> no wa-a-a-ay<br/><span class="chord">[F//]</span> Na-na, why <span class="chord">[C//]</span> don't you get a <span class="chord">[G]</span> jo-<span class="chord">[C]</span>-o-<span class="chord">[F/]</span>-ob?<br/><!--Hey, that's something everyone can enjoy???-->
     </div>
 
     <div id="options" class="mt-4">
@@ -259,12 +259,12 @@ window.addEventListener('beforeunload', function() {
   }
 });
 </script>
-<!--<script>
+<script>
   function toggleDiv() {
     var checkBox = document.querySelector('.checkbox');
-    var devInfo = document.getElementById('infoBox');
-    devInfo.style.display = checkBox.checked ? 'block' : 'none';
+    var infoBox = document.getElementById('infoBox');
+    infoBox.style.display = checkBox.checked ? 'block' : 'none';
   }
-</script>-->
+</script>
 </body>
 </html>
