@@ -1,6 +1,7 @@
 {t: Hey Jude }  
 {artist:The Beatles}  
 {level:Medium} 
+{d:4.3}
 
 Hey [G] Jude don't make it [D] bad   
 Take a [D7] sad song and make it [G] better   

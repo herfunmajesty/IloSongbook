@@ -1,6 +1,7 @@
 {t: Eye Of The Tiger }  
 {artist:Survivor}  
 {level:Medium} 
+{d:3.5}
 
 (Ps: Song arrangement is different than original. 
 Riff is always played twice.

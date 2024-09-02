@@ -2,6 +2,7 @@
 {key: Am}  
 {artist:The Animals}  
 {level:Medium}  
+{d:5.2}
                                     
 [Am] [C] [D] [F] [Am] [E7] [Am] [E7]  
 

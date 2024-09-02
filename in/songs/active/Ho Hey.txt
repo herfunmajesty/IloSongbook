@@ -2,6 +2,7 @@
 {artist:The Lumineers}  
 {level:Easy}
 {spotify:1K3LRUEcUz5FMtPYyg0F45}
+{d:3.3}
 
 (Ps: The [F/] is very short, just one strum down)
 

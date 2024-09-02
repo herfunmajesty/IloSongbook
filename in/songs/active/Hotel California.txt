@@ -3,6 +3,7 @@
 {artist:Eagles}  
 {level:Medium}
 {spotify:40riOy7x9W7GXjyGp4pjAv}
+{d:4.4}
 
 <i>(intro)</i> 
 [Am] [E7] [G] [D] [F] [C] [Dm] [E7]  

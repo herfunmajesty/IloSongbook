@@ -1,6 +1,7 @@
 {t: Hallelujah }  
 {artist:Leonard Cohen}  
 {level:Medium}
+{d:4.5}
 
 Info:
 - "//" means half bar
