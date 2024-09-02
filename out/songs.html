@@ -29,6 +29,14 @@ ul { list-style: none; padding-left: 0px; }
 	margin-right: 5px;
 	cursor: pointer;
 }
+.bold-text {
+    font-weight: bold;
+    font-style: normal; 
+	}
+.italic-text {
+	font-style: italic;
+    font-weight: normal;
+	}	
 </style>
 
 </head>
@@ -668,8 +676,8 @@ ul { list-style: none; padding-left: 0px; }
 						<small>
 							<em> Miley Cyrus -	</em> 
 						</small>
-						<span class="text-None" >
-							<small><b>xxx</b></small>
+						<span class="text-success" >
+							<small><b>Easy</b></small>
 						</span>
 					</li>
 				
@@ -2202,7 +2210,7 @@ ul { list-style: none; padding-left: 0px; }
 		const myLevElements = document.querySelectorAll('.my-lev'); // Znajdź wszystkie elementy o klasie "my-lev"
 		//sortByTitleButton.checked = true; // Zaznacz pole wyboru
 		// Wylacz przycisk "Sort by Artist" na poczatku
-        // sortByArtistButton.classList.remove('active');
+           	// sortByArtistButton.classList.remove('active');
 		sortByTitleButton.classList.add('active');
 
         sortByTitleButton.addEventListener('click', () => {
@@ -2211,16 +2219,16 @@ ul { list-style: none; padding-left: 0px; }
             sortByTitleButton.classList.add('active'); // Zaznacz pierwszy przycisk
 			var s_variant=true;
 			// Aktualizuj wartości w infoBox ROBOCZO
-			// document.getElementById('sorting method').textContent = 'sort by title: ' + s_variant;
+			//document.getElementById('sorting method').textContent = 'sort by title: ' + s_variant;
         });
 
         sortByArtistButton.addEventListener('click', () => {
             sortByArtist();
-            sortByTitleButton.classList.remove('active'); // Wylacz pierwszy przycisk
+            sortByTitleButton.classList.remove('active'); // Wy艂膮cz pierwszy przycisk
             sortByArtistButton.classList.add('active'); // Zaznacz drugi przycisk
 			s_variant=false;
 			// Aktualizuj wartości w infoBox ROBOCZO
-			// document.getElementById('sorting method').textContent = 'sort by title: ' + s_variant;
+			//document.getElementById('sorting method').textContent = 'sort by title: ' + s_variant;
         });
 		
         function sortByTitle() {
