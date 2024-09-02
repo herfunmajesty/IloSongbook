@@ -36,12 +36,10 @@
 		}
 		.div_box {
 			padding: 10px;
-			display: none;
-			}
-			.checkbox:checked + .div_box {
+		}
+		.checkbox:checked + #infoBox {
 			display: block;
-			border: 1px solid #aaa;
-			}
+		}
 		
 		@font-face {
 			font-family: 'Montserrat';
@@ -128,21 +126,23 @@
 
    <div class="mt-4" style="overflow-x: auto;">
     
-        <img src="chords/B7.gif" alt="B7" title="B7" />
-    
-        <img src="chords/D.gif" alt="D" title="D" />
-    
         <img src="chords/A.gif" alt="A" title="A" />
+    
+        <img src="chords/B7.gif" alt="B7" title="B7" />
     
         <img src="chords/E7.gif" alt="E7" title="E7" />
     
+        <img src="chords/D.gif" alt="D" title="D" />
+    
 </div>
-	<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 20px; top: 20px;">Dev info? <input type="checkbox" class="checkbox" onclick="toggleDiv()"> </div>
-	<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px;">
-		<p id="heightInfo" style="font-size: xx-small;"></p>
-		<p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
-		<p id="songDuration" style="font-size: xx-small;"></p>
-	</div>
+		<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 5px; top: 10px;">
+		  Dev info? <input type="checkbox" class="checkbox">
+		</div>
+		<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px; display: none;">
+		  <p id="heightInfo" style="font-size: xx-small;"></p>
+		  <p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
+		  <p id="songDuration" style="font-size: xx-small;"></p>
+		</div>
 	<div id="floatingButton" style="position: fixed; right: 20px; bottom: 20px; ">
 		<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light">
 			<img id="buttonImage" src="images/pause2.gif">
@@ -257,12 +257,12 @@ window.addEventListener('beforeunload', function() {
   }
 });
 </script>
-<!--<script>
+<script>
   function toggleDiv() {
     var checkBox = document.querySelector('.checkbox');
-    var devInfo = document.getElementById('infoBox');
-    devInfo.style.display = checkBox.checked ? 'block' : 'none';
+    var infoBox = document.getElementById('infoBox');
+    infoBox.style.display = checkBox.checked ? 'block' : 'none';
   }
-</script>-->
+</script>
 </body>
 </html>

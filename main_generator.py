@@ -315,6 +315,7 @@ def print_songs_details(loc_songs_list):
         print(f"Czy jest sticky: {x_song.Sticky}")
         print(f"{sep2}")  # Separator dla czytelności
 
+
 def copy_folders(src_dir, dest_dir, folders_to_copy):
 
     if not os.path.exists(dest_dir):
@@ -330,6 +331,7 @@ def copy_folders(src_dir, dest_dir, folders_to_copy):
         else:
             print(f'Folder {src_path} nie istnieje')
 
+
 def copy_files(src_dir, dest_dir, files_to_copy):
 
     if not os.path.exists(dest_dir):
@@ -344,7 +346,7 @@ def copy_files(src_dir, dest_dir, files_to_copy):
         else:
             print(f'Plik {src_path} nie istnieje')
 
-################## Program Własciwy ############################
+# ====================== Program Własciwy ===========================
 
 # sprawdzenie gdzie jestem
 env = Environment(loader=FileSystemLoader('in\\template'))
@@ -353,14 +355,14 @@ print("Current working directory:", os.getcwd())
 
 # kopiowanie obrazów i ikon do katalogu wyjsciowego
 img_folders = ['images', 'chords']
-src_dir = os.path.join(os.getcwd(), 'in')
-dest_dir = os.path.join(os.getcwd(), 'out')
-copy_folders(src_dir, dest_dir, img_folders)
+src_directory = os.path.join(os.getcwd(), 'in')
+dest_directory = os.path.join(os.getcwd(), 'out')
+copy_folders(src_directory, dest_directory, img_folders)
 # kopiowanie plików nie renderowanych
 n_r_files = ['how.html']
-n_src_dir = os.path.join(os.getcwd(),'in\\template')
-n_dest_dir = os.path.join(os.getcwd(),'out')
-copy_files(n_src_dir,n_dest_dir,n_r_files)
+n_src_directory = os.path.join(os.getcwd(), 'in\\template')
+n_dest_directory = os.path.join(os.getcwd(), 'out')
+copy_files(n_src_directory, n_dest_directory, n_r_files)
 
 # Najpierw tworzę bazę piosenek aktywnych:
 folder_path_active = os.path.join(os.getcwd(), 'in\\songs\\active')
@@ -427,7 +429,7 @@ for song in arch_collection:
 directory = "out\\archive"
 generate_song_html(arch_collection, directory)
 a_list_name = "archive"  # zmienic ten fragment na archive_list i zaimplementować w html
-generate_song_list_html(arch_collection, directory,'songs_hidden.html',  a_list_name)
+generate_song_list_html(arch_collection, directory, 'songs_hidden.html',  a_list_name)
 
 
 #    NOWE - TESTOWE
@@ -463,4 +465,4 @@ for song in test_collection:
 directory2 = "out\\new"
 generate_song_html(test_collection, directory2)
 t_list_name = "test"  # zmienic ten fragment na test_list i zaimplementować w html
-generate_song_list_html(test_collection, directory2,'songs_hidden.html',  t_list_name)
+generate_song_list_html(test_collection, directory2, 'songs_hidden.html',  t_list_name)
