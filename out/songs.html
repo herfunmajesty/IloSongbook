@@ -37,6 +37,19 @@ ul { list-style: none; padding-left: 0px; }
 	font-style: italic;
     font-weight: normal;
 	}	
+.ultra-light {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 200;
+}
+
+.semi-bold {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+}
+.custom-text-h5 {
+			font-family: 'Montserrat', sans-serif;
+			font-size: 1.2rem
+			}
 </style>
 
 </head>
@@ -52,17 +65,17 @@ ul { list-style: none; padding-left: 0px; }
     
     <div id="list" class="col-lg-8 col-md-10 col-sm-12 my-3"> <!-- zachowania kontenerów dla różnych typów ekranów + margin-->
 
-        <h4>Krakow Ukulele & Sing Tuesdays</h4>
+        <h4 class="semi-bold">Songbook</h4>
         <div class="row row-cols-2">
             <div class="col-md-6">
                 <div>
-                    <h6>Filter</h6>
+                    <h6 class="custom-text-h5">Filter</h6>
                     <form id="filter-form">
 						<div class="btn-group-vertical">
 							<button type="button" name="Easy" class="toggle-button btn btn-outline-success filter-button">Easy</button>
 							<button type="button" name="Medium" class="toggle-button btn btn-outline-warning filter-button">Medium</button>
 							<button type="button" name="Hard" class="toggle-button btn btn-outline-danger filter-button">Hard</button>
-							<button type="button" name="New" class="toggle-button btn btn-outline-info filter-button">🔥 Only new</button>
+							<button type="button" name="New" class="toggle-button btn btn-outline-info filter-button">🔥 New only</button>
 						</div>
 					</form>
                 </div>
@@ -71,7 +84,7 @@ ul { list-style: none; padding-left: 0px; }
 			</div>-->
             <div class="col-md-6 d-flex justify-content-end">
                 <div>
-                    <h6>Sort by</h6>
+                    <h6 class="custom-text-h5">Sort by</h6>
 						<div class="btn-group-vertical">
 							<button type="button" id="sortByTitle" class="toggle-button btn btn-outline-primary">  Titles  </button>
 							<button type="button" id="sortByArtist" class="toggle-button btn btn-outline-primary"> Artists </button>
