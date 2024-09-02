@@ -3,6 +3,7 @@
 {level:Easy}
 {youtube:nrIPxlFzDi0}
 {spotify:3bjXZ00UeG17SC24jS8Sde}
+{d:4.5}
 
 riff 1 (optional):
 <pre>
