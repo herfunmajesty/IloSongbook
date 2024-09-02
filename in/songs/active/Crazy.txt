@@ -1,6 +1,6 @@
 {t:Crazy}  
 {artist:Gnarls Barkley}  
-{level:Easy}
+{level:Medium}
 {youtube:SZF9rKzOqCI}
 {spotify:1vxw6aYJls2oq3gW0DujAo}
 {d: 4.3} 
