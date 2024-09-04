@@ -77,106 +77,118 @@
 		.ultra-light {
 			font-family: 'Montserrat', sans-serif;
 			font-weight: 200;
+		.ultra-light2 {
+			font-family: 'Montserrat', sans-serif;
+			font-weight: 200;
+			font-size: 1.1rem
 		}
 
 		.semi-bold {
 			font-family: 'Montserrat', sans-serif;
 			font-weight: 600;
 		}
+		.moj-element {
+			background-image: linear-gradient(to bottom, rgba(189, 32, 40, 0.4), rgba(189, 32, 40, 0.2));
+		}
+		.my-watermark {
+			background-image: url('../images/back_02.png');
+			background-position: right; /* lub background-position: 100%; */
+			background-size: contain;
+			background-repeat: no-repeat;
+			pointer-events: none; 
+		}
     </style>
 
 </head>
 <body data-duration = 3.0>
-
-
-<header class="container">
-    <div class="m-2 mb-4 text-center">
-        <img src="/images/ukulele-krakow.PNG" class="img-fluid" alt="Krakow Ukulele" width="200">
-    </div>
-</header>
+<!-- nie ma headera - czy tak w ogłe wolno? -->
 
 <div class="container">
     <div class="row justify-content-center">
-        
-<div class="col-lg-8 col-md-10 col-sm-12 my-3">
-	
+		<div class="col-lg-8 col-md-10 col-sm-12 my-3">
+			<div class="shadow p-3 mb-5 bg-body rounded my-watermark">
+				<h3 class="song-title semi-bold">
+				  #6 - After Hours
+				</h3>
+				<h5 class="song-artist ultra-light ">
+					The Velvet Underground
+				</h4>
 
-    <h3 class="song-title semi-bold">
-	  #6 - After Hours
-    </h3>
-    <h4 class="song-artist custom-text-h4">
-        The Velvet Underground
-    </h4>
-
-    <h5 class= custom-text-h5>
-        Level: 
-        <span class="badge rounded-pill badge-warning text-white">Medium</span>
-    </h5>
-    
-	    <div class="mt-3">
-		    <iframe src="https://open.spotify.com/embed/track/6cA1usDL8nTHeSgFewQat3"
-				    width="300"
-				    height="80"
-				    frameborder="0"
-				    allowtransparency="true"
-				    allow="encrypted-media"></iframe>
-	    </div>
-    
-    
-
-   <div class="mt-4" style="overflow-x: auto;">
-    
-        <img src="chords/F.gif" alt="F" title="F" />
-    
-        <img src="chords/G.gif" alt="G" title="G" />
-    
-        <img src="chords/Am.gif" alt="Am" title="Am" />
-    
-        <img src="chords/C7.gif" alt="C7" title="C7" />
-    
-        <img src="chords/Fm.gif" alt="Fm" title="Fm" />
-    
-        <img src="chords/C.gif" alt="C" title="C" />
-    
-        <img src="chords/A7.gif" alt="A7" title="A7" />
-    
-        <img src="chords/B.gif" alt="B" title="B" />
-    
-        <img src="chords/Em.gif" alt="Em" title="Em" />
-    
-        <img src="chords/Dm.gif" alt="Dm" title="Dm" />
-    
-</div>
-		<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 5px; top: 10px;">
-		  Dev info? <input type="checkbox" class="checkbox">
-		</div>
-		<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px; display: none;">
-		  <p id="heightInfo" style="font-size: xx-small;"></p>
-		  <p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
-		  <p id="songDuration" style="font-size: xx-small;"></p>
-		</div>
-	<div id="floatingButton" style="position: fixed; right: 20px; bottom: 20px; ">
-		<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light toggle-button">
-			<img id="buttonImage" src="images/pause2.gif">
-		</button>
-	</div>
-    
-    <div id="tab">
-        <br/><br/><br/><br/><br/><br/><br/>info:<br/>*key different than in orginal<br/><br/>Intro:<br/>1, 2, 3<br/><br/>If you <span class="chord">[C]</span> close.. the <span class="chord">[A7]</span> door<br/>The <span class="chord">[Dm]</span> night could last.. for<span class="chord">[G]</span>ever<br/>Leave the <span class="chord">[C]</span> sun..shine <span class="chord">[A7]</span> out<br/>And <span class="chord">[Dm]</span> say hello.. to <span class="chord">[G]</span> never<br/>All the <span class="chord">[C]</span> people are dancing<br/>And they're <span class="chord">[C7]</span> having such fun<br/>I <span class="chord">[F]</span> wish it could happen to <span class="chord">[Fm/]</span> me <strong><span class="chord">[stop]</span></strong> <br/>But if you <span class="chord">[C]</span> close.. the <span class="chord">[A7]</span> door<br/>I'd <span class="chord">[Dm//]</span> never have to <span class="chord">[G//]</span> see the day <span class="chord">[C/]</span> again <strong><span class="chord">[stop]</span></strong><br/><br/>If you <span class="chord">[C]</span> close.. the <span class="chord">[A7]</span> door<br/>The <span class="chord">[Dm]</span> night could last.. <span class="chord">[G]</span> forever<br/>Leave the <span class="chord">[C]</span> wine..glass <span class="chord">[A7]</span> out<br/>And <span class="chord">[Dm]</span> drink a toast.. to <span class="chord">[G]</span> never<br/>Oh, <span class="chord">[C]</span> someday I know<br/>Someone will <span class="chord">[C7]</span> look into my eyes<br/>And say <span class="chord">[F/]</span> "hello .... <br/>You're my very special <span class="chord">[Fm/]</span> one"<br/><br/>But if you <span class="chord">[C]</span> close.. the <span class="chord">[A7]</span> door<br/>I'd <span class="chord">[Dm//]</span> never have to <span class="chord">[G//]</span> see the day <span class="chord">[C//]</span> again <span class="chord">[B//]</span> <br/><br/><b>(down down strum)</b><br/><span class="chord">[Em]</span> Dark party bars, shiny <span class="chord">[B]</span> Cadillac cars<br/>And the <span class="chord">[Em//]</span> people on <span class="chord">[B//]</span> subways and <span class="chord">[Em//]</span> trains <span class="chord">[B//]</span><br/>Looking <span class="chord">[Am]</span> gray in the rain as they <span class="chord">[Am]</span> stand disarrayed<br/>Oh, but <span class="chord">[Dm/]</span> people look <span class="chord">[Dm/]</span> well in the <span class="chord">[G/]</span> dark <strong><span class="chord">[stop]</span></strong> <br/><br/><b>(normal strum)</b><br/>And if you <span class="chord">[C]</span> close.. the <span class="chord">[A7]</span> door<br/>The <span class="chord">[Dm]</span> night could last.. for<span class="chord">[G]</span>ever<br/>Leave the <span class="chord">[C]</span> sun..shine <span class="chord">[A7]</span> out<br/>And <span class="chord">[Dm]</span> say hello.. to <span class="chord">[G]</span> never<br/>All the <span class="chord">[C]</span> people are dancing<br/>And they're <span class="chord">[C7]</span> having such fun<br/>I <span class="chord">[F]</span> wish it could happen to <span class="chord">[Fm/]</span> me <strong><span class="chord">[stop]</span></strong> <br/><br/>Coz if you <span class="chord">[C]</span> close.. the <span class="chord">[A7]</span> door<br/>I'd <span class="chord">[Dm//]</span> never have to <span class="chord">[G//]</span> see the day <span class="chord">[C//]</span> again <span class="chord">[A7//]</span> <br/>I'd <span class="chord">[Dm//]</span> never have to <span class="chord">[G//]</span> see the day <span class="chord">[C//]</span> again <span class="chord">[A7//]</span>, once more<br/>I'd <span class="chord">[Dm//]</span> never have to <span class="chord">[G//]</span> see the day <span class="chord">[C/]</span> again
-    </div>
-
-    <div id="options" class="mt-4">
-        <a href="songs.html"><strong>← Back</strong></a>
-         
-    </div>
-
-    <hr/>
+				<h5 class= ultra-light >
+					Level: 
+					<span class="badge rounded-pill badge-warning text-white">Medium</span>
+				</h5>
+			</div>
 			
-    <div class="m-2 my-4 text-center">
-        <img src="/images/qrcode.png" class="img-fluid" alt="QR Code" width="100">
-    </div>
+			<div class="mt-3">			
+				<iframe style="border-radius:12px" 
+						src="https://open.spotify.com/embed/track/6L89mwZXSOwYl76YXfX13s?utm_source=generator" 
+						width="300px" 
+						height="80" 
+						frameBorder="0" 
+						allowfullscreen="" 
+						allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+						loading="lazy">
+				</iframe>
+			</div>
+			
+			
 
-</div>
+		    <div class="mt-4" style="overflow-x: auto;">
+			
+				<img src="chords/C7.gif" alt="C7" title="C7" />
+			
+				<img src="chords/A7.gif" alt="A7" title="A7" />
+			
+				<img src="chords/C.gif" alt="C" title="C" />
+			
+				<img src="chords/G.gif" alt="G" title="G" />
+			
+				<img src="chords/Am.gif" alt="Am" title="Am" />
+			
+				<img src="chords/Fm.gif" alt="Fm" title="Fm" />
+			
+				<img src="chords/Em.gif" alt="Em" title="Em" />
+			
+				<img src="chords/Dm.gif" alt="Dm" title="Dm" />
+			
+				<img src="chords/F.gif" alt="F" title="F" />
+			
+				<img src="chords/B.gif" alt="B" title="B" />
+			
+			</div>
+			
+			<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 5px; top: 10px;">
+			  Dev info? <input type="checkbox" class="checkbox">
+			</div>
+			<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px; display: none;">
+			  <p id="heightInfo" style="font-size: xx-small;"></p>
+			  <p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
+			  <p id="songDuration" style="font-size: xx-small;"></p>
+			</div>
+			
+			<div id="floatingButton" style="position: fixed; right: 20px; bottom: 20px; ">
+				<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light toggle-button">
+					<img id="buttonImage" src="images/pause2.gif">
+				</button>
+			</div>
+			
+			<div id="tab">
+				<br/><br/><br/><br/><br/><br/><br/>info:<br/>*key different than in orginal<br/><br/>Intro:<br/>1, 2, 3<br/><br/>If you <span class="chord">[C]</span> close.. the <span class="chord">[A7]</span> door<br/>The <span class="chord">[Dm]</span> night could last.. for<span class="chord">[G]</span>ever<br/>Leave the <span class="chord">[C]</span> sun..shine <span class="chord">[A7]</span> out<br/>And <span class="chord">[Dm]</span> say hello.. to <span class="chord">[G]</span> never<br/>All the <span class="chord">[C]</span> people are dancing<br/>And they're <span class="chord">[C7]</span> having such fun<br/>I <span class="chord">[F]</span> wish it could happen to <span class="chord">[Fm/]</span> me <strong><span class="chord">[stop]</span></strong> <br/>But if you <span class="chord">[C]</span> close.. the <span class="chord">[A7]</span> door<br/>I'd <span class="chord">[Dm//]</span> never have to <span class="chord">[G//]</span> see the day <span class="chord">[C/]</span> again <strong><span class="chord">[stop]</span></strong><br/><br/>If you <span class="chord">[C]</span> close.. the <span class="chord">[A7]</span> door<br/>The <span class="chord">[Dm]</span> night could last.. <span class="chord">[G]</span> forever<br/>Leave the <span class="chord">[C]</span> wine..glass <span class="chord">[A7]</span> out<br/>And <span class="chord">[Dm]</span> drink a toast.. to <span class="chord">[G]</span> never<br/>Oh, <span class="chord">[C]</span> someday I know<br/>Someone will <span class="chord">[C7]</span> look into my eyes<br/>And say <span class="chord">[F/]</span> "hello .... <br/>You're my very special <span class="chord">[Fm/]</span> one"<br/><br/>But if you <span class="chord">[C]</span> close.. the <span class="chord">[A7]</span> door<br/>I'd <span class="chord">[Dm//]</span> never have to <span class="chord">[G//]</span> see the day <span class="chord">[C//]</span> again <span class="chord">[B//]</span> <br/><br/><b>(down down strum)</b><br/><span class="chord">[Em]</span> Dark party bars, shiny <span class="chord">[B]</span> Cadillac cars<br/>And the <span class="chord">[Em//]</span> people on <span class="chord">[B//]</span> subways and <span class="chord">[Em//]</span> trains <span class="chord">[B//]</span><br/>Looking <span class="chord">[Am]</span> gray in the rain as they <span class="chord">[Am]</span> stand disarrayed<br/>Oh, but <span class="chord">[Dm/]</span> people look <span class="chord">[Dm/]</span> well in the <span class="chord">[G/]</span> dark <strong><span class="chord">[stop]</span></strong> <br/><br/><b>(normal strum)</b><br/>And if you <span class="chord">[C]</span> close.. the <span class="chord">[A7]</span> door<br/>The <span class="chord">[Dm]</span> night could last.. for<span class="chord">[G]</span>ever<br/>Leave the <span class="chord">[C]</span> sun..shine <span class="chord">[A7]</span> out<br/>And <span class="chord">[Dm]</span> say hello.. to <span class="chord">[G]</span> never<br/>All the <span class="chord">[C]</span> people are dancing<br/>And they're <span class="chord">[C7]</span> having such fun<br/>I <span class="chord">[F]</span> wish it could happen to <span class="chord">[Fm/]</span> me <strong><span class="chord">[stop]</span></strong> <br/><br/>Coz if you <span class="chord">[C]</span> close.. the <span class="chord">[A7]</span> door<br/>I'd <span class="chord">[Dm//]</span> never have to <span class="chord">[G//]</span> see the day <span class="chord">[C//]</span> again <span class="chord">[A7//]</span> <br/>I'd <span class="chord">[Dm//]</span> never have to <span class="chord">[G//]</span> see the day <span class="chord">[C//]</span> again <span class="chord">[A7//]</span>, once more<br/>I'd <span class="chord">[Dm//]</span> never have to <span class="chord">[G//]</span> see the day <span class="chord">[C/]</span> again
+			</div>
+
+			<div id="options" class="mt-4">
+				<a href="songs.html"><strong>← Back</strong></a>
+				 
+			</div>
+
+			<hr/>
+					
+			<div class="m-2 my-4 text-center">
+				<img src="/images/qrcode.png" class="img-fluid" alt="QR Code" width="100">
+			</div>
+
+		</div>
 
     </div>
 </div>
