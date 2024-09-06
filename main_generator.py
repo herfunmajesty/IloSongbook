@@ -99,7 +99,7 @@ def extract_chords(text, filename):  # finds all chords in [] brackets
     # add chords excluding: (riff, stop, solo itp.)
     seq_count = 0
     for match in chords_matches:
-        if not any(keyword in match.lower() for keyword in ['riff', 'stop', 'solo', 'back', 'pause']):
+        if not any(keyword in match.lower() for keyword in ['riff', 'stop', 'solo', 'back', 'pause', 'muted']):
             normalized_match = normalize_chord(match)
             # if there is sequence of chords with "/", inside, divides, slash was replaced beforehand
 
@@ -116,7 +116,10 @@ def extract_chords(text, filename):  # finds all chords in [] brackets
             filename,
             f'Uwaga!Jest tu {seq_count} zroślaków różnej formy - sprawdź czy akordy'
         )
-    return list(chords_set)
+    # Convert set to list and sort it alphabetically
+    chords_list = sorted(list(chords_set))
+    return chords_list
+
 
 
 def custom_istitle(string):
@@ -186,7 +189,7 @@ def read_songs_from_folder(local_folder_path):  #
                             # lyrics = lyrics.replace("""[""", "<span class=\"chord\">[")
                             # lyrics = lyrics.replace("""]""", "]</span>")
                     ch_list = extract_chords(lyrics_chords_content, filename)
-                    # print(ch_list)
+                    print(ch_list)
                     loc_song = Song(title, artist, level, s_link, y_link, lyrics, ch_list, duration, sticky)
                     # po nadaniu obiektowu klasy html_namei l_tr nie tworzą się z automatu!
                     html_name = loc_song.convert_name(loc_song.Title)
@@ -196,7 +199,7 @@ def read_songs_from_folder(local_folder_path):  #
                         print(f'Uwaga! w piosence {filename} coś jest nie tak z levelem')
                         log_sequence(filename, f'Uwaga! w tej piosence coś jest nie tak z levelem, jest: {level}')
                     loc_song = Song(title, artist, level, s_link, y_link, lyrics, ch_list, duration, sticky)
-                    # print(f'Sprawdzenie poprawności 2: {title}, {html_name}, {level}, {l_tr}')
+                    print(f'Sprawdzenie poprawności 2: {title}, {html_name}, {level}, {l_tr}')
                     songs.append(loc_song)
         else:
             log_sequence(filename, "Nazwa zaczyna się od _")
