@@ -12,9 +12,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <style>
-        .highlight {background-color: lemonchiffon; font-weight: bold;}
+        .highlight {background-color: lemonchiffon; font-weight: bold;} 
         .chord { font-weight: bold; color:red}
-        #tab { font-size: 80%; font-family: Verdana, Tahoma, sans-serif; }
+        #tab { font-size: 90%; font-family: Verdana, Tahoma, sans-serif; }
         #options a {text-decoration: underline;}
         .sticky { 
             position: fixed; 
@@ -62,7 +62,6 @@
 		}
 		.custom-text-h3 {
 			font-family: 'Montserrat', sans-serif;
-			
 			font-size: 2rem
 		}
 		.custom-text-h4 {
@@ -77,6 +76,7 @@
 		.ultra-light {
 			font-family: 'Montserrat', sans-serif;
 			font-weight: 200;
+		}
 		.ultra-light2 {
 			font-family: 'Montserrat', sans-serif;
 			font-weight: 200;
@@ -91,12 +91,14 @@
 			background-image: linear-gradient(to bottom, rgba(189, 32, 40, 0.4), rgba(189, 32, 40, 0.2));
 		}
 		.my-watermark {
-			background-image: url('/images/back_02.png');
+			background-image: url('../images/back_30.png');
 			background-position: right; /* lub background-position: 100%; */
 			background-size: contain;
 			background-repeat: no-repeat;
 			pointer-events: none; 
 		}
+		
+		
     </style>
 
 </head>
@@ -104,61 +106,61 @@
 <!-- nie ma headera - czy tak w ogłe wolno? -->
 
 <div class="container">
-    <div class="row justify-content-center">
+    <div class="row justify-content-center">      
 		<div class="col-lg-8 col-md-10 col-sm-12 my-3">
 			<div class="shadow p-3 mb-5 bg-body rounded my-watermark">
 				<h3 class="song-title semi-bold">
-				  #3 - 500 Miles (I'm Gonna Be)
+					#3 - 500 Miles (I'm Gonna Be)
 				</h3>
 				<h5 class="song-artist ultra-light ">
 					The Proclaimers
-				</h4>
-
+				</h5>
+			
 				<h5 class= ultra-light >
 					Level: 
-					<span class="badge rounded-pill badge-success text-white">Easy</span>
-				</h5>
+					<span class="badge rounded-pill badge-warning text-white">Easy</span>					
+				</h5>				
+			
 			</div>
 			
 			
+				<div class="mt-4" style="overflow-x: auto;">
+					
+						<img src="chords/D.gif" alt="D" title="D" />
+					
+						<img src="chords/Em.gif" alt="Em" title="Em" />
+					
+						<img src="chords/G.gif" alt="G" title="G" />
+					
+						<img src="chords/A.gif" alt="A" title="A" />
+					
+				
+				</div>
+				<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 5px; top: 10px;">
+				  Dev info? <input type="checkbox" class="checkbox">
+				</div>
+				<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px; display: none;">
+				  <p id="heightInfo" style="font-size: xx-small;"></p>
+				  <p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
+				  <p id="songDuration" style="font-size: xx-small;"></p>
+				</div>
+				<div id="floatingButton" style="position: fixed; right: 20px; bottom: 20px; ">
+					<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light toggle-button">
+						<img id="buttonImage" src="images/pause2.gif">
+					</button>
+				</div>
 
-		    <div class="mt-4" style="overflow-x: auto;">
-			
-				<img src="chords/G.gif" alt="G" title="G" />
-			
-				<img src="chords/Em.gif" alt="Em" title="Em" />
-			
-				<img src="chords/A.gif" alt="A" title="A" />
-			
-				<img src="chords/D.gif" alt="D" title="D" />
-			
-			</div>
-			
-			<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 5px; top: 10px;">
-			  Dev info? <input type="checkbox" class="checkbox">
-			</div>
-			<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px; display: none;">
-			  <p id="heightInfo" style="font-size: xx-small;"></p>
-			  <p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
-			  <p id="songDuration" style="font-size: xx-small;"></p>
-			</div>
-			
-			<div id="floatingButton" style="position: fixed; right: 20px; bottom: 20px; ">
-				<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light toggle-button">
-					<img id="buttonImage" src="images/pause2.gif">
-				</button>
-			</div>
 			
 			<div id="tab">
 				  <br/>  <br/>  <br/>  <br/><br/>Intro: <span class="chord">[D]</span><br/><br/><span class="chord">[D]</span> When I wake up, yeah, I know I'm gonna be,   <br/>I'm gonna <span class="chord">[G]</span> be the man who <span class="chord">[A]</span> wakes up next to <span class="chord">[D]</span> you.   <br/><span class="chord">[D]</span> When I go out, yeah, I know I'm gonna be,   <br/>I'm gonna <span class="chord">[G]</span> be the man who <span class="chord">[A]</span> goes along with <span class="chord">[D]</span> you.   <br/><span class="chord">[D]</span> If I get drunk, well I know I'm gonna be,   <br/>I'm gonna <span class="chord">[G]</span> be the man who <span class="chord">[A]</span> gets drunk next to <span class="chord">[D]</span> you.   <br/><span class="chord">[D]</span> And if I haver, yeah, I know I'm gonna be,   <br/>I'm gonna <span class="chord">[G]</span> be the man who's <span class="chord">[A]</span> havering to <span class="chord">[D]</span> you.   <br/> <br/><span class="chord">[D]</span> But I would walk  500 miles, and <span class="chord">[G]</span> I would walk <span class="chord">[A]</span> 500 more,   <br/>Just to <span class="chord">[D]</span> be the man who walked 1,000 <span class="chord">[G]</span> miles to fall down <span class="chord">[A]</span> at your door.   <br/> <br/><span class="chord">[D]</span> When I'm working, yeah, I know I'm gonna be,   <br/>I'm gonna <span class="chord">[G]</span> be the man who's <span class="chord">[A]</span> working hard for <span class="chord">[D]</span> you.   <br/><span class="chord">[D]</span> And when the money, comes in for the work I do   <br/>I'll pass <span class="chord">[G]</span> almost every <span class="chord">[A]</span> penny on to <span class="chord">[D]</span> you.   <br/><span class="chord">[D]</span> When I come home, oh I know I'm gonna be,   <br/>I'm gonna <span class="chord">[G]</span> be the man who <span class="chord">[A]</span> comes back home to <span class="chord">[D]</span> you.   <br/><span class="chord">[D]</span> And if I grow old, well, I know I'm gonna be,   <br/>I'm gonna <span class="chord">[G]</span> be the man who's <span class="chord">[A]</span> growing old with <span class="chord">[D]</span> you.   <br/> <br/><span class="chord">[D]</span> But I would walk 500 miles, and <span class="chord">[G]</span> I would walk <span class="chord">[A]</span> 500 more,   <br/>Just to <span class="chord">[D]</span> be the man who walked 1,000 <span class="chord">[G]</span> miles to fall down <span class="chord">[A]</span> at your door.   <br/><br/><span class="chord">[D]</span> Ta la la ta (ta la la ta), ta la la ta (ta la la ta), la la la <br/><span class="chord">[G]</span> ta, la la la la la <span class="chord">[A]</span> ta,la la la <span class="chord">[D]</span> la la <br/><br/><span class="chord">[D]</span> Ta la la ta (ta la la ta), ta la la ta (ta la la ta), la la la <br/><span class="chord">[G]</span> ta, la la la la la <span class="chord">[A]</span> ta,la la la <span class="chord">[D]</span> la la <br/><br/><span class="chord">[D]</span> When I'm lonely, well, I know I'm gonna be,   <br/>I'm gonna <span class="chord">[G]</span> be the man who's <span class="chord">[A]</span> lonely without <span class="chord">[D]</span> you.   <br/><span class="chord">[D]</span> And when I'm dreaming, well, I know I'm gonna dream,   <br/>I'm gonna <span class="chord">[G]</span> dream about the <span class="chord">[A]</span> time when I'm with <span class="chord">[D]</span> you.   <br/><span class="chord">[D]</span> When I go out, well I know I'm gonna be,   <br/>I'm gonna <span class="chord">[G]</span> be the man who <span class="chord">[A]</span> goes along with <span class="chord">[D]</span> you.   <br/><span class="chord">[D]</span> And when I come home, well I know I'm gonna be,   <br/>I'm gonna <span class="chord">[G]</span> be the man who <span class="chord">[A]</span> comes back home to<span class="chord">[D]</span> you.   <br/>I'm gonna <span class="chord">[Em/]</span> be the man who's <span class="chord">[A/]</span> coming home to <span class="chord">[D/]</span> you.   <br/><br/><span class="chord">[D]</span> But I would walk 500 miles, and <span class="chord">[G]</span> I would walk <span class="chord">[A]</span> 500 more,   <br/>Just to <span class="chord">[D]</span> be the man who walked 1,000 <span class="chord">[G]</span> miles to fall down <span class="chord">[A]</span> at your door.  <br/><br/><span class="chord">[D]</span> Ta la la ta (ta la la ta), ta la la ta (ta la la ta), la la la <br/><span class="chord">[G]</span> ta, la la la la la <span class="chord">[A]</span> ta,la la la <span class="chord">[D]</span> la la <br/><br/><span class="chord">[D]</span> Ta la la ta (ta la la ta), ta la la ta (ta la la ta), la la la <br/><span class="chord">[G]</span> ta, la la la la la <span class="chord">[A]</span> ta,la la la <span class="chord">[D]</span> la la 
 			</div>
-
+			<hr/>
 			<div id="options" class="mt-4">
 				<a href="songs.html"><strong>← Back</strong></a>
 				 
 			</div>
 
-			<hr/>
+			
 					
 			<div class="m-2 my-4 text-center">
 				<img src="/images/qrcode.png" class="img-fluid" alt="QR Code" width="100">
