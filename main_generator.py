@@ -19,7 +19,7 @@ replacements = {
     "[/back]": "</b></i>",
     """[""": "<span class=\"chord\">[",
     """]""": "]</span>",
-    "\n": '<br/>',
+    "\n": '<br>',
     # add more if needed here
 }
 
@@ -88,13 +88,15 @@ def normalize_chord(chord):
     return chord.replace("\\", "").replace("/", "").replace("#", "sharp")
 
 
-def extract_chords(text, filename):  # finds all chords in [] brackets
-    # używam tu filename tylko po to aby móc logować błędy akordów - np sekwencje albo akordy ze spacją w środku
+def extract_chords(text, filename):
+    import re
+
     chords_pattern = r"\[(.*?)\]"
     chords_matches = re.findall(chords_pattern, text)
 
-    # create a set and avoid duplicates
-    chords_set = set()
+    # create a list to maintain order and avoid duplicates
+    chords_list = []
+    seen = set()
 
     # add chords excluding: (riff, stop, solo itp.)
     seq_count = 0
@@ -107,19 +109,46 @@ def extract_chords(text, filename):  # finds all chords in [] brackets
                 seq_count += 1
                 # log_sequence(filename, f'Uwaga!!! mamy zroślaka {normalized_match}')
                 sub_chords = normalized_match.split(" ")
-                # print(sub_chords)
-                chords_set.update(sub_chords)  # chords set is updated with each chord form division
+                for sub_chord in sub_chords:
+                    if sub_chord not in seen:
+                        seen.add(sub_chord)
+                        chords_list.append(sub_chord)
             else:
-                chords_set.add(normalized_match)
+                if normalized_match not in seen:
+                    seen.add(normalized_match)
+                    chords_list.append(normalized_match)
+
     if seq_count != 0:
         log_sequence(
             filename,
-            f'Uwaga!Jest tu {seq_count} zroślaków różnej formy - sprawdź czy akordy'
+            f'Uwaga! Jest tu {seq_count} zroślaków różnej formy - sprawdź czy akordy'
         )
-    # Convert set to list and sort it alphabetically
-    chords_list = sorted(list(chords_set))
+
     return chords_list
 
+
+def remove_extra_empty_lines(text, max_empty_lines=1):
+    print('Narzędziedo usuwania nadmiarowych linii')
+    pattern = r'<br\s*/?>|\n'
+    lines = re.split(pattern, text)
+    #  print(lines)
+    new_lines = []
+    empty_line_count = 0
+
+    for line in lines:
+        print (line)
+        if line.strip() == '':
+            empty_line_count += 1
+            print ('zwiększam licznik pustych nowych linii')
+        else:
+            empty_line_count = 0
+        print(empty_line_count)
+        if empty_line_count <= max_empty_lines:
+            new_lines.append(line)
+        else: print('Panie, tu jest za dużo pustych linii, co za marnotrastwo, usuwam to w cholere')
+    print(new_lines)
+
+    return '<br>'.join(new_lines)
 
 
 def custom_istitle(string):
@@ -182,12 +211,14 @@ def read_songs_from_folder(local_folder_path):  #
                     # Remove the metadata from the content to get lyrics and chords
                     lyrics_chords_content = re.sub(r"{.*?}", "", file_content)
                     lyrics = lyrics_chords_content
+                    # remove_extra_empty_lines(lyrics)
                     # Sprawdzanie i zamiana fraz w zawartości pliku
                     for old, new in replacements.items():
                         if old in lyrics_chords_content:
                             lyrics = lyrics.replace(old, new)
                             # lyrics = lyrics.replace("""[""", "<span class=\"chord\">[")
                             # lyrics = lyrics.replace("""]""", "]</span>")
+                    lyrics=remove_extra_empty_lines(lyrics)
                     ch_list = extract_chords(lyrics_chords_content, filename)
                     print(ch_list)
                     loc_song = Song(title, artist, level, s_link, y_link, lyrics, ch_list, duration, sticky)
