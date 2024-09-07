@@ -128,7 +128,7 @@ def extract_chords(text, filename):
 
 
 def remove_extra_empty_lines(text, max_empty_lines=1):
-    print('Narzędziedo usuwania nadmiarowych linii')
+    # print('Narzędzie do usuwania nadmiarowych linii')
     pattern = r'<br\s*/?>|\n'
     lines = re.split(pattern, text)
     #  print(lines)
@@ -136,13 +136,13 @@ def remove_extra_empty_lines(text, max_empty_lines=1):
     empty_line_count = 0
 
     for line in lines:
-        print (line)
+        # print (line)
         if line.strip() == '':
             empty_line_count += 1
-            print ('zwiększam licznik pustych nowych linii')
+            # print ('zwiększam licznik pustych nowych linii')
         else:
             empty_line_count = 0
-        print(empty_line_count)
+        # print(empty_line_count)
         if empty_line_count <= max_empty_lines:
             new_lines.append(line)
         else: print('Panie, tu jest za dużo pustych linii, co za marnotrastwo, usuwam to w cholere')
