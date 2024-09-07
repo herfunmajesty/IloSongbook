@@ -7,14 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
 	<link rel="icon" href="/images/icon.png" sizes="32x32" />
-    <title>Love Of My Life - Krakow Ukulele Tuesdays</title>
+    <title>{{title}} - Krakow Ukulele Tuesdays</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <style>
-        .highlight {background-color: lemonchiffon; font-weight: bold;} 
+        .highlight {background-color: lemonchiffon; font-weight: bold;}
         .chord { font-weight: bold; color:red}
-        #tab { font-size: 90%; font-family: Verdana, Tahoma, sans-serif; }
+        #tab { font-size: 80%; font-family: Verdana, Tahoma, sans-serif; }
         #options a {text-decoration: underline;}
         .sticky { 
             position: fixed; 
@@ -62,6 +62,7 @@
 		}
 		.custom-text-h3 {
 			font-family: 'Montserrat', sans-serif;
+			
 			font-size: 2rem
 		}
 		.custom-text-h4 {
@@ -77,112 +78,100 @@
 			font-family: 'Montserrat', sans-serif;
 			font-weight: 200;
 		}
-		.ultra-light2 {
-			font-family: 'Montserrat', sans-serif;
-			font-weight: 200;
-			font-size: 1.1rem
-		}
 
 		.semi-bold {
 			font-family: 'Montserrat', sans-serif;
 			font-weight: 600;
 		}
-		.moj-element {
-			background-image: linear-gradient(to bottom, rgba(189, 32, 40, 0.4), rgba(189, 32, 40, 0.2));
-		}
-		.my-watermark {
-			background-image: url('../images/back_30.png');
-			background-position: right; /* lub background-position: 100%; */
-			background-size: contain;
-			background-repeat: no-repeat;
-			pointer-events: none; 
-		}
-		
-		
     </style>
 
 </head>
-<body data-duration = 4.0>
-<!-- nie ma headera - czy tak w ogłe wolno? -->
+<body data-duration = {{duration}}>
+
+
+<header class="container">
+    <div class="m-2 mb-4 text-center">
+        <img src="/images/ukulele-krakow.PNG" class="img-fluid" alt="Krakow Ukulele" width="200">
+    </div>
+</header>
 
 <div class="container">
-    <div class="row justify-content-center">      
-		<div class="col-lg-8 col-md-10 col-sm-12 my-3">
-			<div class="shadow p-3 mb-5 bg-body rounded my-watermark">
-				<h3 class="song-title semi-bold">
-					#101 - Love Of My Life
-				</h3>
-				<h5 class="song-artist ultra-light ">
-					Queen
-				</h5>
-			
-				<h5 class= ultra-light >
-					Level: 
-					<span class="badge rounded-pill badge-warning text-white">Medium</span>					
-				</h5>				
-			
-			</div>
-			
-			
-				<div class="mt-4" style="overflow-x: auto;">
-					
-						<img src="chords/Am.gif" alt="Am" title="Am" />
-					
-						<img src="chords/Bb.gif" alt="Bb" title="Bb" />
-					
-						<img src="chords/Bbm.gif" alt="Bbm" title="Bbm" />
-					
-						<img src="chords/C.gif" alt="C" title="C" />
-					
-						<img src="chords/C7.gif" alt="C7" title="C7" />
-					
-						<img src="chords/D7.gif" alt="D7" title="D7" />
-					
-						<img src="chords/Dm.gif" alt="Dm" title="Dm" />
-					
-						<img src="chords/F.gif" alt="F" title="F" />
-					
-						<img src="chords/G.gif" alt="G" title="G" />
-					
-						<img src="chords/Gm.gif" alt="Gm" title="Gm" />
-					
-				
-				</div>
-				<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 5px; top: 10px;">
-				  Dev info? <input type="checkbox" class="checkbox">
-				</div>
-				<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px; display: none;">
-				  <p id="heightInfo" style="font-size: xx-small;"></p>
-				  <p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
-				  <p id="songDuration" style="font-size: xx-small;"></p>
-				</div>
-				<div id="floatingButton" style="position: fixed; right: 20px; bottom: 20px; ">
-					<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light toggle-button">
-						<img id="buttonImage" src="images/pause2.gif">
-					</button>
-				</div>
+    <div class="row justify-content-center">
+        
+<div class="col-lg-8 col-md-10 col-sm-12 my-3">
+	
 
-			
-			<div id="tab">
-				  <br/>  <br/>  <br/><br/>Intro: <span class="chord">[C]</span><br/>           <br/><span class="chord">[C]</span> Love of my life, you've <span class="chord">[Am]</span> hurt me<br/>You've <span class="chord">[Dm]</span> broken my heart and <span class="chord">[G]</span> now you leave me <br/><span class="chord">[C]</span> Love of my life, can't you <span class="chord">[F]</span> see?<br/>Bring it <span class="chord">[Dm//]</span> back, bring it <span class="chord">[Am//]</span> back<br/>Don't <span class="chord">[Bb//]</span> take it away <span class="chord">[F//]</span> from me<br/><span class="chord">[Bb/]</span> Because <span class="chord">[Am/]</span> you <span class="chord">[Dm/]</span> don't <span class="chord">[G/]</span> know <br/>What it <span class="chord">[C/]</span> means to <span class="chord">[F]</span> me <span class="chord">[F]</span> <br/>                   <br/><span class="chord">[C]</span> Love of my life, don't <span class="chord">[Am]</span> leave me<br/>You <span class="chord">[Dm]</span> taken my love you <span class="chord">[G]</span> now desert me<br/><span class="chord">[C]</span> Love of my life can't you <span class="chord">[F]</span> see?<br/>Bring it <span class="chord">[Dm//]</span> back, bring it <span class="chord">[Am//]</span> back<br/>Don't <span class="chord">[Bb//]</span> take it <span class="chord">[F//]</span> away  from me                      <br/><span class="chord">[Bb/]</span> Because <span class="chord">[Am/]</span> you <span class="chord">[Dm/]</span> don't <span class="chord">[G/]</span> know <br/>What it <span class="chord">[C/]</span> means to <span class="chord">[F]</span> me <span class="chord">[F]</span><br/>     <br/><span class="chord">[Dm]</span> You will remember when <span class="chord">[Am]</span> this is flown over<br/>And <span class="chord">[Bb]</span> everything's all by the <span class="chord">[F]</span> way<br/>When <span class="chord">[Dm]</span> I grow older <span class="chord">[Am]</span> I will be there at your <span class="chord">[D7]</span> side<br/>To remind you how I <span class="chord">[Gm]</span> still love you<br/><span class="chord">[C7/]</span> (stop) I still love you <br/>         <br/><span class="chord">[Dm/]</span> Back, hurry <span class="chord">[Am/]</span> back<br/>Please <span class="chord">[Bb/]</span> bring it back <span class="chord">[F/]</span> home to me             <br/><span class="chord">[Bb/]</span> Because <span class="chord">[Am/]</span> you <span class="chord">[Dm/]</span> don't <span class="chord">[G/]</span> know <br/>What it <span class="chord">[C/]</span> means to <span class="chord">[F]</span> me<br/> <br/><span class="chord">[Dm]</span> Love of my life   <br/><span class="chord">[Am]</span> Love of my life         <br/><span class="chord">[Bb/]</span> hu.. <span class="chord">[Bbm/]</span> hu.. <span class="chord">[F/]</span> huuuuuu<br/>
-			</div>
-			<hr/>
-			<div id="options" class="mt-4">
-				<a href="songs.html"><strong>← Back</strong></a>
-				 
-			</div>
+    <h3 class="song-title semi-bold">
+	  #{{number}} - {{title}}
+    </h3>
+    <h4 class="song-artist custom-text-h4">
+        {{artist}}
+    </h4>
 
-			
-					
-			<div class="m-2 my-4 text-center">
-				<img src="/images/qrcode.png" class="img-fluid" alt="QR Code" width="100">
-			</div>
+    <h5 class= custom-text-h5>
+        Level: 
+        <span class="badge rounded-pill badge-{{ltrans}} text-white">{{level}}</span>
+    </h5>
+    {% if spotify %}
+	    <div class="mt-3">
+		    <iframe src="https://open.spotify.com/embed/track/{{spotify}}"
+				    width="300"
+				    height="80"
+				    frameborder="0"
+				    allowtransparency="true"
+				    allow="encrypted-media"></iframe>
+	    </div>
+    {% endif %}
+    {% if youtube %}
+    <div class="mt-3">
 
+        <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+            width="267" height="150" type="text/html"
+            src="https://www.youtube.com/embed/{{youtube}}?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&vq=small">
+        </iframe>
+
+    </div>
+    {% endif %}
+
+   <div class="mt-4" style="overflow-x: auto;">
+    {% for chord in chords %}
+        <img src="chords/{{chord}}.gif" alt="{{chord}}" title="{{chord}}" />
+    {% endfor %}
+</div>
+		<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 5px; top: 10px;">
+		  Dev info? <input type="checkbox" class="checkbox">
 		</div>
+		<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px; display: none;">
+		  <p id="heightInfo" style="font-size: xx-small;"></p>
+		  <p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
+		  <p id="songDuration" style="font-size: xx-small;"></p>
+		</div>
+	<div id="floatingButton" style="position: fixed; right: 20px; bottom: 20px; ">
+		<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light toggle-button">
+			<img id="buttonImage" src="images/pause2.gif">
+		</button>
+	</div>
+    
+    <div id="tab">
+        {{lyrics}}
+    </div>
+
+    <div id="options" class="mt-4">
+        <a href="songs.html"><strong>← Back</strong></a>
+         
+    </div>
+
+    <hr/>
+			
+    <div class="m-2 my-4 text-center">
+        <img src="/images/qrcode.png" class="img-fluid" alt="QR Code" width="100">
+    </div>
+
+</div>
 
     </div>
 </div>
-
+{% if sticky %}
 <script>
 window.onload = function initFloatingChords() {
 
@@ -224,7 +213,7 @@ window.onload = function initFloatingChords() {
     }
 }
 </script>
-
+{% endif %}
 <script>
 var scrollInterval;
 var songDuration = parseFloat(document.body.dataset.duration);
@@ -280,3 +269,4 @@ window.addEventListener('beforeunload', function() {
 </script>
 </body>
 </html>
+

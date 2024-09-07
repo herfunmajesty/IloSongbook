@@ -12,9 +12,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <style>
-        .highlight {background-color: lemonchiffon; font-weight: bold;}
+        .highlight {background-color: lemonchiffon; font-weight: bold;} 
         .chord { font-weight: bold; color:red}
-        #tab { font-size: 80%; font-family: Verdana, Tahoma, sans-serif; }
+        #tab { font-size: 90%; font-family: Verdana, Tahoma, sans-serif; }
         #options a {text-decoration: underline;}
         .sticky { 
             position: fixed; 
@@ -62,7 +62,6 @@
 		}
 		.custom-text-h3 {
 			font-family: 'Montserrat', sans-serif;
-			
 			font-size: 2rem
 		}
 		.custom-text-h4 {
@@ -78,99 +77,114 @@
 			font-family: 'Montserrat', sans-serif;
 			font-weight: 200;
 		}
+		.ultra-light2 {
+			font-family: 'Montserrat', sans-serif;
+			font-weight: 200;
+			font-size: 1.1rem
+		}
 
 		.semi-bold {
 			font-family: 'Montserrat', sans-serif;
 			font-weight: 600;
 		}
+		.moj-element {
+			background-image: linear-gradient(to bottom, rgba(189, 32, 40, 0.4), rgba(189, 32, 40, 0.2));
+		}
+		.my-watermark {
+			background-image: url('../images/back_30.png');
+			background-position: right; /* lub background-position: 100%; */
+			background-size: contain;
+			background-repeat: no-repeat;
+			pointer-events: none; 
+		}
+		
+		
     </style>
 
 </head>
-<body data-duration = 4.4>
-
-
-<header class="container">
-    <div class="m-2 mb-4 text-center">
-        <img src="/images/ukulele-krakow.PNG" class="img-fluid" alt="Krakow Ukulele" width="200">
-    </div>
-</header>
+<body data-duration = 4.0>
+<!-- nie ma headera - czy tak w ogłe wolno? -->
 
 <div class="container">
-    <div class="row justify-content-center">
-        
-<div class="col-lg-8 col-md-10 col-sm-12 my-3">
-	
-
-    <h3 class="song-title semi-bold">
-	  #68 - Hotel California
-    </h3>
-    <h4 class="song-artist custom-text-h4">
-        Eagles
-    </h4>
-
-    <h5 class= custom-text-h5>
-        Level: 
-        <span class="badge rounded-pill badge-warning text-white">Medium</span>
-    </h5>
-    
-	    <div class="mt-3">
-		    <iframe src="https://open.spotify.com/embed/track/40riOy7x9W7GXjyGp4pjAv"
-				    width="300"
-				    height="80"
-				    frameborder="0"
-				    allowtransparency="true"
-				    allow="encrypted-media"></iframe>
-	    </div>
-    
-    
-
-   <div class="mt-4" style="overflow-x: auto;">
-    
-        <img src="chords/E7.gif" alt="E7" title="E7" />
-    
-        <img src="chords/C.gif" alt="C" title="C" />
-    
-        <img src="chords/D.gif" alt="D" title="D" />
-    
-        <img src="chords/G.gif" alt="G" title="G" />
-    
-        <img src="chords/Am.gif" alt="Am" title="Am" />
-    
-        <img src="chords/F.gif" alt="F" title="F" />
-    
-        <img src="chords/Dm.gif" alt="Dm" title="Dm" />
-    
-</div>
-		<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 5px; top: 10px;">
-		  Dev info? <input type="checkbox" class="checkbox">
-		</div>
-		<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px; display: none;">
-		  <p id="heightInfo" style="font-size: xx-small;"></p>
-		  <p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
-		  <p id="songDuration" style="font-size: xx-small;"></p>
-		</div>
-	<div id="floatingButton" style="position: fixed; right: 20px; bottom: 20px; ">
-		<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light toggle-button">
-			<img id="buttonImage" src="images/pause2.gif">
-		</button>
-	</div>
-    
-    <div id="tab">
-          <br/>  <br/>  <br/><br/><br/><br/><br/><i>(intro)</i> <br/><span class="chord">[Am]</span> <span class="chord">[E7]</span> <span class="chord">[G]</span> <span class="chord">[D]</span> <span class="chord">[F]</span> <span class="chord">[C]</span> <span class="chord">[Dm]</span> <span class="chord">[E7]</span>  <br/> <br/><i>(verse)</i><br/><span class="chord">[Am]</span> On a dark desert highway <span class="chord">[E7]</span> cool wind in my hair   <br/><span class="chord">[G]</span> Warm smell of colitas <span class="chord">[D]</span> rising up through the air   <br/><span class="chord">[F]</span> Up ahead in the distance <span class="chord">[C]</span> I saw a shimmering light   <br/><span class="chord">[Dm]</span> My head grew heavy and my sight grew dim   <br/><span class="chord">[E7]</span> I had to stop for the night   <br/><br/><span class="chord">[Am]</span> There she stood in the doorway <span class="chord">[E7]</span> I heard the mission bell   <br/><span class="chord">[G]</span> And I was thinking to myself this could be <span class="chord">[D]</span> heaven or this could be hell   <br/><span class="chord">[F]</span> Then she lit up a candle <span class="chord">[C]</span> and she showed me the way   <br/><span class="chord">[Dm]</span> There were voices down the corridor <span class="chord">[E7]</span> I thought I heard them say   <br/><br/><i>(chorus)</i><br/><span class="chord">[F]</span> Welcome to the Hotel Cali<span class="chord">[C]</span>fornia   <br/>Such a <span class="chord">[Dm]</span> lovely place such a <span class="chord">[Am]</span> lovely face   <br/><span class="chord">[F]</span> Plenty of room at the Hotel Cali<span class="chord">[C]</span>fornia   <br/>Any <span class="chord">[Dm]</span> time of year you can <span class="chord">[E7]</span> find it here  <br/> <br/><i>(verse)</i><br/><span class="chord">[Am]</span> Her mind is Tiffany twisted <span class="chord">[E7]</span> she got the Mercedes Benz   <br/><span class="chord">[G]</span> She got a lot of pretty pretty boys <span class="chord">[D]</span> that she calls friends   <br/><span class="chord">[F]</span> How they dance in the courtyard <span class="chord">[C]</span> sweet summer sweat   <br/><span class="chord">[Dm]</span> Some dance to remember <span class="chord">[E7]</span> some dance to forget  <br/> <br/><span class="chord">[Am]</span> So I called up the captain <span class="chord">[E7]</span> please bring me my wine   <br/>He said <span class="chord">[G]</span> we haven't had that spirit here since <span class="chord">[D]</span> 1969   <br/><span class="chord">[F]</span> And still those voices are calling from <span class="chord">[C]</span> far away   <br/><span class="chord">[Dm]</span> Wake you up in the middle of the night <span class="chord">[E7]</span> just to hear them say   <br/><br/><i>(chorus)</i><br/><span class="chord">[F]</span> Welcome to the Hotel Cali<span class="chord">[C]</span>fornia   <br/>Such a <span class="chord">[Dm]</span> lovely place such a <span class="chord">[Am]</span> lovely face   <br/><span class="chord">[F]</span> Plenty of room at the Hotel Cali<span class="chord">[C]</span>fornia   <br/>Any <span class="chord">[Dm]</span> time of year you can <span class="chord">[E7]</span> find it here  <br/><br/><i>(verse)</i> <br/><span class="chord">[Am]</span> Mirrors on the ceiling <span class="chord">[E7]</span> the pink champagne on ice   <br/>And she said <span class="chord">[G]</span> we are all just prisoners here <span class="chord">[D]</span> of our own device   <br/><span class="chord">[F]</span> And in the master's chambers <span class="chord">[C]</span> they gathered for the feast   <br/><span class="chord">[Dm]</span> They stab it with their steely knives but they <span class="chord">[E7]</span> just can't kill the beast  <br/> <br/><span class="chord">[Am]</span> Last thing I remember I was <span class="chord">[E7]</span> running for the door   <br/><span class="chord">[G]</span> I had to find the passage back to the <span class="chord">[D]</span> place I was before   <br/><br/><span class="chord">[F]</span> Relax said the nightman we are <span class="chord">[C]</span> programmed to receive   <br/><span class="chord">[Dm]</span> You can check out anytime you like <span class="chord">[E7]</span> but you can never leave  <br/><br/><i>(chorus)</i><br/><span class="chord">[F]</span> Welcome to the Hotel Cali<span class="chord">[C]</span>fornia   <br/>Such a <span class="chord">[Dm]</span> lovely place such a <span class="chord">[Am]</span> lovely face   <br/>They <span class="chord">[F]</span> livin' it up at the Hotel Cali<span class="chord">[C]</span>fornia   <br/>What a <span class="chord">[Dm]</span> nice surprise bring your <span class="chord">[E7]</span> alibis       <br/><span class="chord">[Am/]</span>
-    </div>
-
-    <div id="options" class="mt-4">
-        <a href="songs.html"><strong>← Back</strong></a>
-         
-    </div>
-
-    <hr/>
+    <div class="row justify-content-center">      
+		<div class="col-lg-8 col-md-10 col-sm-12 my-3">
+			<div class="shadow p-3 mb-5 bg-body rounded my-watermark">
+				<h3 class="song-title semi-bold">
+					#68 - Hotel California
+				</h3>
+				<h5 class="song-artist ultra-light ">
+					Eagles
+				</h5>
 			
-    <div class="m-2 my-4 text-center">
-        <img src="/images/qrcode.png" class="img-fluid" alt="QR Code" width="100">
-    </div>
+				<h5 class= ultra-light >
+					Level: 
+					<span class="badge rounded-pill badge-warning text-white">Medium</span>					
+				</h5>				
+			
+			</div>
+			
+				<div class="mt-3">							
+					<iframe style="border-radius:12px" 
+							src="https://open.spotify.com/embed/track/40riOy7x9W7GXjyGp4pjAv"
+							width="300px" 
+							height="80" 
+							frameBorder="0" 
+							allowfullscreen="" 
+							allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+							loading="lazy">
+					</iframe>
+				</div>
+			
+			
+				<div class="mt-4" style="overflow-x: auto;">
+					
+						<img src="chords/Am.gif" alt="Am" title="Am" />
+					
+						<img src="chords/C.gif" alt="C" title="C" />
+					
+						<img src="chords/D.gif" alt="D" title="D" />
+					
+						<img src="chords/Dm.gif" alt="Dm" title="Dm" />
+					
+						<img src="chords/E7.gif" alt="E7" title="E7" />
+					
+						<img src="chords/F.gif" alt="F" title="F" />
+					
+						<img src="chords/G.gif" alt="G" title="G" />
+					
+				
+				</div>
+				<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 5px; top: 10px;">
+				  Dev info? <input type="checkbox" class="checkbox">
+				</div>
+				<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px; display: none;">
+				  <p id="heightInfo" style="font-size: xx-small;"></p>
+				  <p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
+				  <p id="songDuration" style="font-size: xx-small;"></p>
+				</div>
+				<div id="floatingButton" style="position: fixed; right: 20px; bottom: 20px; ">
+					<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light toggle-button">
+						<img id="buttonImage" src="images/pause2.gif">
+					</button>
+				</div>
 
-</div>
+			
+			<div id="tab">
+				  <br/>  <br/>  <br/><br/><br/><br/><br/><i>(intro)</i> <br/><span class="chord">[Am]</span> <span class="chord">[E7]</span> <span class="chord">[G]</span> <span class="chord">[D]</span> <span class="chord">[F]</span> <span class="chord">[C]</span> <span class="chord">[Dm]</span> <span class="chord">[E7]</span>  <br/> <br/><i>(verse)</i><br/><span class="chord">[Am]</span> On a dark desert highway <span class="chord">[E7]</span> cool wind in my hair   <br/><span class="chord">[G]</span> Warm smell of colitas <span class="chord">[D]</span> rising up through the air   <br/><span class="chord">[F]</span> Up ahead in the distance <span class="chord">[C]</span> I saw a shimmering light   <br/><span class="chord">[Dm]</span> My head grew heavy and my sight grew dim   <br/><span class="chord">[E7]</span> I had to stop for the night   <br/><br/><span class="chord">[Am]</span> There she stood in the doorway <span class="chord">[E7]</span> I heard the mission bell   <br/><span class="chord">[G]</span> And I was thinking to myself this could be <span class="chord">[D]</span> heaven or this could be hell   <br/><span class="chord">[F]</span> Then she lit up a candle <span class="chord">[C]</span> and she showed me the way   <br/><span class="chord">[Dm]</span> There were voices down the corridor <span class="chord">[E7]</span> I thought I heard them say   <br/><br/><i>(chorus)</i><br/><span class="chord">[F]</span> Welcome to the Hotel Cali<span class="chord">[C]</span>fornia   <br/>Such a <span class="chord">[Dm]</span> lovely place such a <span class="chord">[Am]</span> lovely face   <br/><span class="chord">[F]</span> Plenty of room at the Hotel Cali<span class="chord">[C]</span>fornia   <br/>Any <span class="chord">[Dm]</span> time of year you can <span class="chord">[E7]</span> find it here  <br/> <br/><i>(verse)</i><br/><span class="chord">[Am]</span> Her mind is Tiffany twisted <span class="chord">[E7]</span> she got the Mercedes Benz   <br/><span class="chord">[G]</span> She got a lot of pretty pretty boys <span class="chord">[D]</span> that she calls friends   <br/><span class="chord">[F]</span> How they dance in the courtyard <span class="chord">[C]</span> sweet summer sweat   <br/><span class="chord">[Dm]</span> Some dance to remember <span class="chord">[E7]</span> some dance to forget  <br/> <br/><span class="chord">[Am]</span> So I called up the captain <span class="chord">[E7]</span> please bring me my wine   <br/>He said <span class="chord">[G]</span> we haven't had that spirit here since <span class="chord">[D]</span> 1969   <br/><span class="chord">[F]</span> And still those voices are calling from <span class="chord">[C]</span> far away   <br/><span class="chord">[Dm]</span> Wake you up in the middle of the night <span class="chord">[E7]</span> just to hear them say   <br/><br/><i>(chorus)</i><br/><span class="chord">[F]</span> Welcome to the Hotel Cali<span class="chord">[C]</span>fornia   <br/>Such a <span class="chord">[Dm]</span> lovely place such a <span class="chord">[Am]</span> lovely face   <br/><span class="chord">[F]</span> Plenty of room at the Hotel Cali<span class="chord">[C]</span>fornia   <br/>Any <span class="chord">[Dm]</span> time of year you can <span class="chord">[E7]</span> find it here  <br/><br/><i>(verse)</i> <br/><span class="chord">[Am]</span> Mirrors on the ceiling <span class="chord">[E7]</span> the pink champagne on ice   <br/>And she said <span class="chord">[G]</span> we are all just prisoners here <span class="chord">[D]</span> of our own device   <br/><span class="chord">[F]</span> And in the master's chambers <span class="chord">[C]</span> they gathered for the feast   <br/><span class="chord">[Dm]</span> They stab it with their steely knives but they <span class="chord">[E7]</span> just can't kill the beast  <br/> <br/><span class="chord">[Am]</span> Last thing I remember I was <span class="chord">[E7]</span> running for the door   <br/><span class="chord">[G]</span> I had to find the passage back to the <span class="chord">[D]</span> place I was before   <br/><br/><span class="chord">[F]</span> Relax said the nightman we are <span class="chord">[C]</span> programmed to receive   <br/><span class="chord">[Dm]</span> You can check out anytime you like <span class="chord">[E7]</span> but you can never leave  <br/><br/><i>(chorus)</i><br/><span class="chord">[F]</span> Welcome to the Hotel Cali<span class="chord">[C]</span>fornia   <br/>Such a <span class="chord">[Dm]</span> lovely place such a <span class="chord">[Am]</span> lovely face   <br/>They <span class="chord">[F]</span> livin' it up at the Hotel Cali<span class="chord">[C]</span>fornia   <br/>What a <span class="chord">[Dm]</span> nice surprise bring your <span class="chord">[E7]</span> alibis       <br/><span class="chord">[Am/]</span>
+			</div>
+			<hr/>
+			<div id="options" class="mt-4">
+				<a href="songs.html"><strong>← Back</strong></a>
+				 
+			</div>
+
+			
+					
+			<div class="m-2 my-4 text-center">
+				<img src="/images/qrcode.png" class="img-fluid" alt="QR Code" width="100">
+			</div>
+
+		</div>
 
     </div>
 </div>

@@ -12,9 +12,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <style>
-        .highlight {background-color: lemonchiffon; font-weight: bold;}
+        .highlight {background-color: lemonchiffon; font-weight: bold;} 
         .chord { font-weight: bold; color:red}
-        #tab { font-size: 80%; font-family: Verdana, Tahoma, sans-serif; }
+        #tab { font-size: 90%; font-family: Verdana, Tahoma, sans-serif; }
         #options a {text-decoration: underline;}
         .sticky { 
             position: fixed; 
@@ -62,7 +62,6 @@
 		}
 		.custom-text-h3 {
 			font-family: 'Montserrat', sans-serif;
-			
 			font-size: 2rem
 		}
 		.custom-text-h4 {
@@ -78,97 +77,112 @@
 			font-family: 'Montserrat', sans-serif;
 			font-weight: 200;
 		}
+		.ultra-light2 {
+			font-family: 'Montserrat', sans-serif;
+			font-weight: 200;
+			font-size: 1.1rem
+		}
 
 		.semi-bold {
 			font-family: 'Montserrat', sans-serif;
 			font-weight: 600;
 		}
+		.moj-element {
+			background-image: linear-gradient(to bottom, rgba(189, 32, 40, 0.4), rgba(189, 32, 40, 0.2));
+		}
+		.my-watermark {
+			background-image: url('../images/back_30.png');
+			background-position: right; /* lub background-position: 100%; */
+			background-size: contain;
+			background-repeat: no-repeat;
+			pointer-events: none; 
+		}
+		
+		
     </style>
 
 </head>
 <body data-duration = 4.0>
-
-
-<header class="container">
-    <div class="m-2 mb-4 text-center">
-        <img src="/images/ukulele-krakow.PNG" class="img-fluid" alt="Krakow Ukulele" width="200">
-    </div>
-</header>
+<!-- nie ma headera - czy tak w ogłe wolno? -->
 
 <div class="container">
-    <div class="row justify-content-center">
-        
-<div class="col-lg-8 col-md-10 col-sm-12 my-3">
-	
-
-    <h3 class="song-title semi-bold">
-	  #74 - I Wanna Be Like You (The Monkey Song)
-    </h3>
-    <h4 class="song-artist custom-text-h4">
-        The Jungle Book
-    </h4>
-
-    <h5 class= custom-text-h5>
-        Level: 
-        <span class="badge rounded-pill badge-warning text-white">Medium</span>
-    </h5>
-    
-	    <div class="mt-3">
-		    <iframe src="https://open.spotify.com/embed/track/117ktaeROQ4zkWmDiTAkPf"
-				    width="300"
-				    height="80"
-				    frameborder="0"
-				    allowtransparency="true"
-				    allow="encrypted-media"></iframe>
-	    </div>
-    
-    
-
-   <div class="mt-4" style="overflow-x: auto;">
-    
-        <img src="chords/E7.gif" alt="E7" title="E7" />
-    
-        <img src="chords/G7.gif" alt="G7" title="G7" />
-    
-        <img src="chords/Am.gif" alt="Am" title="Am" />
-    
-        <img src="chords/C.gif" alt="C" title="C" />
-    
-        <img src="chords/D7.gif" alt="D7" title="D7" />
-    
-        <img src="chords/A7.gif" alt="A7" title="A7" />
-    
-</div>
-		<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 5px; top: 10px;">
-		  Dev info? <input type="checkbox" class="checkbox">
-		</div>
-		<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px; display: none;">
-		  <p id="heightInfo" style="font-size: xx-small;"></p>
-		  <p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
-		  <p id="songDuration" style="font-size: xx-small;"></p>
-		</div>
-	<div id="floatingButton" style="position: fixed; right: 20px; bottom: 20px; ">
-		<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light toggle-button">
-			<img id="buttonImage" src="images/pause2.gif">
-		</button>
-	</div>
-    
-    <div id="tab">
-         <br/><br/><br/><br/><br/><br/>Intro:<br/><span class="chord">[Am]</span>... <span class="chord">[Am]</span>... <br/><br/>Now <span class="chord">[Am]</span> I'm the king of the swingers<br/>Oh, the jungle V.I.-<span class="chord">[E7]</span>-P.<br/>I've reached the top and had to stop<br/>And that's what botherin' <span class="chord">[Am]</span> me<br/>I wanna be a man, mancub,<br/>And stroll right into <span class="chord">[E7]</span> town<br/>And be just like the other men<br/>I'm tired of monkeyin’ <span class="chord">[Am/]</span> around!<br/><br/><span class="chord">[G7/]</span> Oh, <span class="chord">[C]</span> oo-bee-doo <br/>I wanna be like <span class="chord">[A7]</span> you <br/>I wanna <span class="chord">[D7//]</span> walk like you<br/><span class="chord">[G7//]</span> Talk like you <span class="chord">[C//]</span> too <br/><br/><span class="chord">[G7//]</span> You'll see it's <span class="chord">[C]</span> true<br/>An ape like <span class="chord">[A7]</span> me<br/>Can <span class="chord">[D7//]</span> learn to be <span class="chord">[G7//]</span> human <span class="chord">[C]</span> too<br/><br/>Now <span class="chord">[Am]</span> don't try to kid me mancub<br/>I made a deal with <span class="chord">[E7]</span> you<br/>What I desire is man's red fire<br/>To make my dream come <span class="chord">[Am]</span> true<br/>Give me the secret, mancub<br/>Clue me what to <span class="chord">[E7]</span> do<br/>Give me the power of man's red flower<br/>So I can be like <span class="chord">[Am/]</span> you<br/><br/><span class="chord">[G7/]</span> Oh, <span class="chord">[C]</span> oo-bee-doo <br/>I wanna be like <span class="chord">[A7]</span> you <br/>I wanna <span class="chord">[D7//]</span> walk like you<br/><span class="chord">[G7//]</span> Talk like you <span class="chord">[C//]</span> too <br/><span class="chord">[G7//]</span> You'll see it's <span class="chord">[C]</span> true<br/>Someone like <span class="chord">[A7]</span> me<br/>Can <span class="chord">[D7//]</span> learn to be <span class="chord">[G7//]</span> like someone like <span class="chord">[C]</span> me<br/>Can <span class="chord">[D7//]</span> learn to be <span class="chord">[G7//]</span> like someone like <span class="chord">[C]</span> you<br/>Can <span class="chord">[D7//]</span> learn to be <span class="chord">[G7//]</span> like someone like <span class="chord">[C]</span> me-eee <br/><span class="chord">[G7/]</span> <span class="chord">[C/]</span>
-    </div>
-
-    <div id="options" class="mt-4">
-        <a href="songs.html"><strong>← Back</strong></a>
-         
-    </div>
-
-    <hr/>
+    <div class="row justify-content-center">      
+		<div class="col-lg-8 col-md-10 col-sm-12 my-3">
+			<div class="shadow p-3 mb-5 bg-body rounded my-watermark">
+				<h3 class="song-title semi-bold">
+					#74 - I Wanna Be Like You (The Monkey Song)
+				</h3>
+				<h5 class="song-artist ultra-light ">
+					The Jungle Book
+				</h5>
 			
-    <div class="m-2 my-4 text-center">
-        <img src="/images/qrcode.png" class="img-fluid" alt="QR Code" width="100">
-    </div>
+				<h5 class= ultra-light >
+					Level: 
+					<span class="badge rounded-pill badge-warning text-white">Medium</span>					
+				</h5>				
+			
+			</div>
+			
+				<div class="mt-3">							
+					<iframe style="border-radius:12px" 
+							src="https://open.spotify.com/embed/track/117ktaeROQ4zkWmDiTAkPf"
+							width="300px" 
+							height="80" 
+							frameBorder="0" 
+							allowfullscreen="" 
+							allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+							loading="lazy">
+					</iframe>
+				</div>
+			
+			
+				<div class="mt-4" style="overflow-x: auto;">
+					
+						<img src="chords/A7.gif" alt="A7" title="A7" />
+					
+						<img src="chords/Am.gif" alt="Am" title="Am" />
+					
+						<img src="chords/C.gif" alt="C" title="C" />
+					
+						<img src="chords/D7.gif" alt="D7" title="D7" />
+					
+						<img src="chords/E7.gif" alt="E7" title="E7" />
+					
+						<img src="chords/G7.gif" alt="G7" title="G7" />
+					
+				
+				</div>
+				<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 5px; top: 10px;">
+				  Dev info? <input type="checkbox" class="checkbox">
+				</div>
+				<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px; display: none;">
+				  <p id="heightInfo" style="font-size: xx-small;"></p>
+				  <p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
+				  <p id="songDuration" style="font-size: xx-small;"></p>
+				</div>
+				<div id="floatingButton" style="position: fixed; right: 20px; bottom: 20px; ">
+					<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light toggle-button">
+						<img id="buttonImage" src="images/pause2.gif">
+					</button>
+				</div>
 
-</div>
+			
+			<div id="tab">
+				 <br/><br/><br/><br/><br/><br/>Intro:<br/><span class="chord">[Am]</span>... <span class="chord">[Am]</span>... <br/><br/>Now <span class="chord">[Am]</span> I'm the king of the swingers<br/>Oh, the jungle V.I.-<span class="chord">[E7]</span>-P.<br/>I've reached the top and had to stop<br/>And that's what botherin' <span class="chord">[Am]</span> me<br/>I wanna be a man, mancub,<br/>And stroll right into <span class="chord">[E7]</span> town<br/>And be just like the other men<br/>I'm tired of monkeyin’ <span class="chord">[Am/]</span> around!<br/><br/><span class="chord">[G7/]</span> Oh, <span class="chord">[C]</span> oo-bee-doo <br/>I wanna be like <span class="chord">[A7]</span> you <br/>I wanna <span class="chord">[D7//]</span> walk like you<br/><span class="chord">[G7//]</span> Talk like you <span class="chord">[C//]</span> too <br/><br/><span class="chord">[G7//]</span> You'll see it's <span class="chord">[C]</span> true<br/>An ape like <span class="chord">[A7]</span> me<br/>Can <span class="chord">[D7//]</span> learn to be <span class="chord">[G7//]</span> human <span class="chord">[C]</span> too<br/><br/>Now <span class="chord">[Am]</span> don't try to kid me mancub<br/>I made a deal with <span class="chord">[E7]</span> you<br/>What I desire is man's red fire<br/>To make my dream come <span class="chord">[Am]</span> true<br/>Give me the secret, mancub<br/>Clue me what to <span class="chord">[E7]</span> do<br/>Give me the power of man's red flower<br/>So I can be like <span class="chord">[Am/]</span> you<br/><br/><span class="chord">[G7/]</span> Oh, <span class="chord">[C]</span> oo-bee-doo <br/>I wanna be like <span class="chord">[A7]</span> you <br/>I wanna <span class="chord">[D7//]</span> walk like you<br/><span class="chord">[G7//]</span> Talk like you <span class="chord">[C//]</span> too <br/><span class="chord">[G7//]</span> You'll see it's <span class="chord">[C]</span> true<br/>Someone like <span class="chord">[A7]</span> me<br/>Can <span class="chord">[D7//]</span> learn to be <span class="chord">[G7//]</span> like someone like <span class="chord">[C]</span> me<br/>Can <span class="chord">[D7//]</span> learn to be <span class="chord">[G7//]</span> like someone like <span class="chord">[C]</span> you<br/>Can <span class="chord">[D7//]</span> learn to be <span class="chord">[G7//]</span> like someone like <span class="chord">[C]</span> me-eee <br/><span class="chord">[G7/]</span> <span class="chord">[C/]</span>
+			</div>
+			<hr/>
+			<div id="options" class="mt-4">
+				<a href="songs.html"><strong>← Back</strong></a>
+				 
+			</div>
+
+			
+					
+			<div class="m-2 my-4 text-center">
+				<img src="/images/qrcode.png" class="img-fluid" alt="QR Code" width="100">
+			</div>
+
+		</div>
 
     </div>
 </div>

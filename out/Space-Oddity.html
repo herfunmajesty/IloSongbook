@@ -12,9 +12,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <style>
-        .highlight {background-color: lemonchiffon; font-weight: bold;}
+        .highlight {background-color: lemonchiffon; font-weight: bold;} 
         .chord { font-weight: bold; color:red}
-        #tab { font-size: 80%; font-family: Verdana, Tahoma, sans-serif; }
+        #tab { font-size: 90%; font-family: Verdana, Tahoma, sans-serif; }
         #options a {text-decoration: underline;}
         .sticky { 
             position: fixed; 
@@ -62,7 +62,6 @@
 		}
 		.custom-text-h3 {
 			font-family: 'Montserrat', sans-serif;
-			
 			font-size: 2rem
 		}
 		.custom-text-h4 {
@@ -78,111 +77,126 @@
 			font-family: 'Montserrat', sans-serif;
 			font-weight: 200;
 		}
+		.ultra-light2 {
+			font-family: 'Montserrat', sans-serif;
+			font-weight: 200;
+			font-size: 1.1rem
+		}
 
 		.semi-bold {
 			font-family: 'Montserrat', sans-serif;
 			font-weight: 600;
 		}
+		.moj-element {
+			background-image: linear-gradient(to bottom, rgba(189, 32, 40, 0.4), rgba(189, 32, 40, 0.2));
+		}
+		.my-watermark {
+			background-image: url('../images/back_30.png');
+			background-position: right; /* lub background-position: 100%; */
+			background-size: contain;
+			background-repeat: no-repeat;
+			pointer-events: none; 
+		}
+		
+		
     </style>
 
 </head>
 <body data-duration = 4.0>
-
-
-<header class="container">
-    <div class="m-2 mb-4 text-center">
-        <img src="/images/ukulele-krakow.PNG" class="img-fluid" alt="Krakow Ukulele" width="200">
-    </div>
-</header>
+<!-- nie ma headera - czy tak w ogłe wolno? -->
 
 <div class="container">
-    <div class="row justify-content-center">
-        
-<div class="col-lg-8 col-md-10 col-sm-12 my-3">
-	
-
-    <h3 class="song-title semi-bold">
-	  #130 - Space Oddity
-    </h3>
-    <h4 class="song-artist custom-text-h4">
-        David Bowie
-    </h4>
-
-    <h5 class= custom-text-h5>
-        Level: 
-        <span class="badge rounded-pill badge-danger text-white">Hard</span>
-    </h5>
-    
-	    <div class="mt-3">
-		    <iframe src="https://open.spotify.com/embed/track/72Z17vmmeQKAg8bptWvpVG"
-				    width="300"
-				    height="80"
-				    frameborder="0"
-				    allowtransparency="true"
-				    allow="encrypted-media"></iframe>
-	    </div>
-    
-    
-
-   <div class="mt-4" style="overflow-x: auto;">
-    
-        <img src="chords/E7.gif" alt="E7" title="E7" />
-    
-        <img src="chords/F.gif" alt="F" title="F" />
-    
-        <img src="chords/G.gif" alt="G" title="G" />
-    
-        <img src="chords/Em7.gif" alt="Em7" title="Em7" />
-    
-        <img src="chords/Am.gif" alt="Am" title="Am" />
-    
-        <img src="chords/Fm.gif" alt="Fm" title="Fm" />
-    
-        <img src="chords/D.gif" alt="D" title="D" />
-    
-        <img src="chords/Bb.gif" alt="Bb" title="Bb" />
-    
-        <img src="chords/C.gif" alt="C" title="C" />
-    
-        <img src="chords/Am7.gif" alt="Am7" title="Am7" />
-    
-        <img src="chords/D7.gif" alt="D7" title="D7" />
-    
-        <img src="chords/A.gif" alt="A" title="A" />
-    
-        <img src="chords/Fmaj7.gif" alt="Fmaj7" title="Fmaj7" />
-    
-</div>
-		<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 5px; top: 10px;">
-		  Dev info? <input type="checkbox" class="checkbox">
-		</div>
-		<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px; display: none;">
-		  <p id="heightInfo" style="font-size: xx-small;"></p>
-		  <p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
-		  <p id="songDuration" style="font-size: xx-small;"></p>
-		</div>
-	<div id="floatingButton" style="position: fixed; right: 20px; bottom: 20px; ">
-		<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light toggle-button">
-			<img id="buttonImage" src="images/pause2.gif">
-		</button>
-	</div>
-    
-    <div id="tab">
-        <br/><br/><br/><br/><br/>Obs: <br/>- The count<br/>- Explain bridge<br/>- <span class="chord">[D7]</span> with two fingers<br/><br/>(intro)<br/><span class="chord">[Fmaj7]</span> ... <span class="chord">[Em7]</span> ...<br/><span class="chord">[Fmaj7]</span> ... <span class="chord">[Em7]</span> ...<br/><br/><span class="chord">[C]</span> Ground control to Major <span class="chord">[Em7]</span> Tom…<br/><span class="chord">[C]</span> Ground control to Major <span class="chord">[Em7]</span> Tom…<br/><span class="chord">[Am]</span> Take your <span class="chord">[Am7]</span> protein pills and <span class="chord">[D]</span> put your helmet on<br/><br/><span class="chord">[C]</span> Ground control to Major <span class="chord">[Em7]</span> Tom…<br/><span class="chord">[C]</span> Commencing countdown engines <span class="chord">[Em7]</span> on…<br/><span class="chord">[Am]</span> Check ig<span class="chord">[Am7]</span>nition and may <span class="chord">[D]</span> God’s love be with you…<br/><br/>(moving chord higher)<br/>8... 7... 6... 5... 4... 3... 2... 1... )<br/><br/><span class="chord">[C]</span> This is ground control to Major <span class="chord">[E7]</span> Tom… <br/>You’ve really made the <span class="chord">[F]</span> gra-ade…<br/>And the <span class="chord">[Fm]</span> papers want to <span class="chord">[C]</span> know whose shirt you <span class="chord">[F]</span> wea-ear…<br/>Now it’s <span class="chord">[Fm]</span> time to leave the <span class="chord">[C]</span> capsule, if you <span class="chord">[F]</span> da-are<br/><br/><span class="chord">[C]</span> This is Major Tom to ground con<span class="chord">[E7]</span>trol… <br/>I’m stepping through the <span class="chord">[F]</span> door…<br/>And I’m <span class="chord">[Fm]</span> floating in a <span class="chord">[C]</span> most peculiar <span class="chord">[F]</span> wa-ay…<br/>And the <span class="chord">[Fm]</span> stars look very <span class="chord">[C]</span> different <span class="chord">[F]</span> toda-a-ay…<br/><br/>For <span class="chord">[Fmaj7]</span> he-e-ere am I <span class="chord">[Em7]</span> sitting in the tin can…<br/><span class="chord">[Fmaj7]</span> Fa-a-ar above the <span class="chord">[Em7]</span> world<br/><br/><span class="chord">[Bb]</span> Planet earth is <span class="chord">[Am]</span> blue <br/>And there’s <span class="chord">[G]</span> nothing I can <span class="chord">[F]</span> do-o-o<br/><br/>(bridge)<br/><span class="chord">[C/]</span> <span class="chord">[F/]</span> <span class="chord">[G/]</span> . <span class="chord">[A/]</span> <span class="chord">[A/]</span><br/><span class="chord">[C/]</span> <span class="chord">[F/]</span> <span class="chord">[G/]</span> . <span class="chord">[A/]</span> <span class="chord">[A/]</span><br/><span class="chord">[Fmaj7]</span> ... <span class="chord">[Em7]</span> ...<br/><span class="chord">[A]</span>... <span class="chord">[C]</span>... <span class="chord">[D]</span>... <span class="chord">[E7]</span>...<br/><br/><span class="chord">[C]</span> Though I’m past one hundred thousand <span class="chord">[E7]</span> miles… <br/>I’m feeling very <span class="chord">[F]</span> stiiill<br/>And I <span class="chord">[Fm]</span> think my spaceship <span class="chord">[C]</span> knows which way to <span class="chord">[F]</span> go-o-o<br/>Tell my <span class="chord">[Fm]</span> wife I love her <span class="chord">[C]</span> very much… she <span class="chord">[F]</span> kno-o-ows<br/><br/><span class="chord">[G]</span> Ground control to <span class="chord">[E7]</span> Major Tom<br/>Your <span class="chord">[Am]</span> circuit’s dead there’s <span class="chord">[C]</span> something wrong<br/><br/>Can you <span class="chord">[D7]</span> hear me Major Tom?<br/>Can you <span class="chord">[C]</span> hear me Major Tom?<br/>Can you <span class="chord">[G]</span> hear me Major Tom? Can you<br/><span class="chord">[Fmaj7]</span> He-e-ere am I <span class="chord">[Em7]</span> floating in my tin can<br/><span class="chord">[Fmaj7]</span> Fa-a-ar above the <span class="chord">[Em7]</span> moon<br/><br/><span class="chord">[Bb]</span> Planet earth is <span class="chord">[Am]</span> blue <br/>And there’s <span class="chord">[G]</span> nothing I can <span class="chord">[F]</span> do-o-o<br/><br/>(bridge)<br/><span class="chord">[C/]</span> <span class="chord">[F/]</span> <span class="chord">[G/]</span> . <span class="chord">[A/]</span> <span class="chord">[A/]</span><br/><span class="chord">[C/]</span> <span class="chord">[F/]</span> <span class="chord">[G/]</span> . <span class="chord">[A/]</span> <span class="chord">[A/]</span><br/><br/><span class="chord">[Fmaj7]</span> ... <span class="chord">[Em7]</span> ... <br/><br/><span class="chord">[A]</span> ... <span class="chord">[C]</span> ... <span class="chord">[D]</span> ... <span class="chord">[E7]</span><br/><br/>(moving chord higher and fading)<br/><span class="chord">[E7]</span>...<br/>
-    </div>
-
-    <div id="options" class="mt-4">
-        <a href="songs.html"><strong>← Back</strong></a>
-         
-    </div>
-
-    <hr/>
+    <div class="row justify-content-center">      
+		<div class="col-lg-8 col-md-10 col-sm-12 my-3">
+			<div class="shadow p-3 mb-5 bg-body rounded my-watermark">
+				<h3 class="song-title semi-bold">
+					#130 - Space Oddity
+				</h3>
+				<h5 class="song-artist ultra-light ">
+					David Bowie
+				</h5>
 			
-    <div class="m-2 my-4 text-center">
-        <img src="/images/qrcode.png" class="img-fluid" alt="QR Code" width="100">
-    </div>
+				<h5 class= ultra-light >
+					Level: 
+					<span class="badge rounded-pill badge-warning text-white">Hard</span>					
+				</h5>				
+			
+			</div>
+			
+				<div class="mt-3">							
+					<iframe style="border-radius:12px" 
+							src="https://open.spotify.com/embed/track/72Z17vmmeQKAg8bptWvpVG"
+							width="300px" 
+							height="80" 
+							frameBorder="0" 
+							allowfullscreen="" 
+							allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+							loading="lazy">
+					</iframe>
+				</div>
+			
+			
+				<div class="mt-4" style="overflow-x: auto;">
+					
+						<img src="chords/A.gif" alt="A" title="A" />
+					
+						<img src="chords/Am.gif" alt="Am" title="Am" />
+					
+						<img src="chords/Am7.gif" alt="Am7" title="Am7" />
+					
+						<img src="chords/Bb.gif" alt="Bb" title="Bb" />
+					
+						<img src="chords/C.gif" alt="C" title="C" />
+					
+						<img src="chords/D.gif" alt="D" title="D" />
+					
+						<img src="chords/D7.gif" alt="D7" title="D7" />
+					
+						<img src="chords/E7.gif" alt="E7" title="E7" />
+					
+						<img src="chords/Em7.gif" alt="Em7" title="Em7" />
+					
+						<img src="chords/F.gif" alt="F" title="F" />
+					
+						<img src="chords/Fm.gif" alt="Fm" title="Fm" />
+					
+						<img src="chords/Fmaj7.gif" alt="Fmaj7" title="Fmaj7" />
+					
+						<img src="chords/G.gif" alt="G" title="G" />
+					
+				
+				</div>
+				<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 5px; top: 10px;">
+				  Dev info? <input type="checkbox" class="checkbox">
+				</div>
+				<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px; display: none;">
+				  <p id="heightInfo" style="font-size: xx-small;"></p>
+				  <p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
+				  <p id="songDuration" style="font-size: xx-small;"></p>
+				</div>
+				<div id="floatingButton" style="position: fixed; right: 20px; bottom: 20px; ">
+					<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light toggle-button">
+						<img id="buttonImage" src="images/pause2.gif">
+					</button>
+				</div>
 
-</div>
+			
+			<div id="tab">
+				<br/><br/><br/><br/><br/>Obs: <br/>- The count<br/>- Explain bridge<br/>- <span class="chord">[D7]</span> with two fingers<br/><br/>(intro)<br/><span class="chord">[Fmaj7]</span> ... <span class="chord">[Em7]</span> ...<br/><span class="chord">[Fmaj7]</span> ... <span class="chord">[Em7]</span> ...<br/><br/><span class="chord">[C]</span> Ground control to Major <span class="chord">[Em7]</span> Tom…<br/><span class="chord">[C]</span> Ground control to Major <span class="chord">[Em7]</span> Tom…<br/><span class="chord">[Am]</span> Take your <span class="chord">[Am7]</span> protein pills and <span class="chord">[D]</span> put your helmet on<br/><br/><span class="chord">[C]</span> Ground control to Major <span class="chord">[Em7]</span> Tom…<br/><span class="chord">[C]</span> Commencing countdown engines <span class="chord">[Em7]</span> on…<br/><span class="chord">[Am]</span> Check ig<span class="chord">[Am7]</span>nition and may <span class="chord">[D]</span> God’s love be with you…<br/><br/>(moving chord higher)<br/>8... 7... 6... 5... 4... 3... 2... 1... )<br/><br/><span class="chord">[C]</span> This is ground control to Major <span class="chord">[E7]</span> Tom… <br/>You’ve really made the <span class="chord">[F]</span> gra-ade…<br/>And the <span class="chord">[Fm]</span> papers want to <span class="chord">[C]</span> know whose shirt you <span class="chord">[F]</span> wea-ear…<br/>Now it’s <span class="chord">[Fm]</span> time to leave the <span class="chord">[C]</span> capsule, if you <span class="chord">[F]</span> da-are<br/><br/><span class="chord">[C]</span> This is Major Tom to ground con<span class="chord">[E7]</span>trol… <br/>I’m stepping through the <span class="chord">[F]</span> door…<br/>And I’m <span class="chord">[Fm]</span> floating in a <span class="chord">[C]</span> most peculiar <span class="chord">[F]</span> wa-ay…<br/>And the <span class="chord">[Fm]</span> stars look very <span class="chord">[C]</span> different <span class="chord">[F]</span> toda-a-ay…<br/><br/>For <span class="chord">[Fmaj7]</span> he-e-ere am I <span class="chord">[Em7]</span> sitting in the tin can…<br/><span class="chord">[Fmaj7]</span> Fa-a-ar above the <span class="chord">[Em7]</span> world<br/><br/><span class="chord">[Bb]</span> Planet earth is <span class="chord">[Am]</span> blue <br/>And there’s <span class="chord">[G]</span> nothing I can <span class="chord">[F]</span> do-o-o<br/><br/>(bridge)<br/><span class="chord">[C/]</span> <span class="chord">[F/]</span> <span class="chord">[G/]</span> . <span class="chord">[A/]</span> <span class="chord">[A/]</span><br/><span class="chord">[C/]</span> <span class="chord">[F/]</span> <span class="chord">[G/]</span> . <span class="chord">[A/]</span> <span class="chord">[A/]</span><br/><span class="chord">[Fmaj7]</span> ... <span class="chord">[Em7]</span> ...<br/><span class="chord">[A]</span>... <span class="chord">[C]</span>... <span class="chord">[D]</span>... <span class="chord">[E7]</span>...<br/><br/><span class="chord">[C]</span> Though I’m past one hundred thousand <span class="chord">[E7]</span> miles… <br/>I’m feeling very <span class="chord">[F]</span> stiiill<br/>And I <span class="chord">[Fm]</span> think my spaceship <span class="chord">[C]</span> knows which way to <span class="chord">[F]</span> go-o-o<br/>Tell my <span class="chord">[Fm]</span> wife I love her <span class="chord">[C]</span> very much… she <span class="chord">[F]</span> kno-o-ows<br/><br/><span class="chord">[G]</span> Ground control to <span class="chord">[E7]</span> Major Tom<br/>Your <span class="chord">[Am]</span> circuit’s dead there’s <span class="chord">[C]</span> something wrong<br/><br/>Can you <span class="chord">[D7]</span> hear me Major Tom?<br/>Can you <span class="chord">[C]</span> hear me Major Tom?<br/>Can you <span class="chord">[G]</span> hear me Major Tom? Can you<br/><span class="chord">[Fmaj7]</span> He-e-ere am I <span class="chord">[Em7]</span> floating in my tin can<br/><span class="chord">[Fmaj7]</span> Fa-a-ar above the <span class="chord">[Em7]</span> moon<br/><br/><span class="chord">[Bb]</span> Planet earth is <span class="chord">[Am]</span> blue <br/>And there’s <span class="chord">[G]</span> nothing I can <span class="chord">[F]</span> do-o-o<br/><br/>(bridge)<br/><span class="chord">[C/]</span> <span class="chord">[F/]</span> <span class="chord">[G/]</span> . <span class="chord">[A/]</span> <span class="chord">[A/]</span><br/><span class="chord">[C/]</span> <span class="chord">[F/]</span> <span class="chord">[G/]</span> . <span class="chord">[A/]</span> <span class="chord">[A/]</span><br/><br/><span class="chord">[Fmaj7]</span> ... <span class="chord">[Em7]</span> ... <br/><br/><span class="chord">[A]</span> ... <span class="chord">[C]</span> ... <span class="chord">[D]</span> ... <span class="chord">[E7]</span><br/><br/>(moving chord higher and fading)<br/><span class="chord">[E7]</span>...<br/>
+			</div>
+			<hr/>
+			<div id="options" class="mt-4">
+				<a href="songs.html"><strong>← Back</strong></a>
+				 
+			</div>
+
+			
+					
+			<div class="m-2 my-4 text-center">
+				<img src="/images/qrcode.png" class="img-fluid" alt="QR Code" width="100">
+			</div>
+
+		</div>
 
     </div>
 </div>

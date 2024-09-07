@@ -12,9 +12,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <style>
-        .highlight {background-color: lemonchiffon; font-weight: bold;}
+        .highlight {background-color: lemonchiffon; font-weight: bold;} 
         .chord { font-weight: bold; color:red}
-        #tab { font-size: 80%; font-family: Verdana, Tahoma, sans-serif; }
+        #tab { font-size: 90%; font-family: Verdana, Tahoma, sans-serif; }
         #options a {text-decoration: underline;}
         .sticky { 
             position: fixed; 
@@ -62,7 +62,6 @@
 		}
 		.custom-text-h3 {
 			font-family: 'Montserrat', sans-serif;
-			
 			font-size: 2rem
 		}
 		.custom-text-h4 {
@@ -78,96 +77,108 @@
 			font-family: 'Montserrat', sans-serif;
 			font-weight: 200;
 		}
+		.ultra-light2 {
+			font-family: 'Montserrat', sans-serif;
+			font-weight: 200;
+			font-size: 1.1rem
+		}
 
 		.semi-bold {
 			font-family: 'Montserrat', sans-serif;
 			font-weight: 600;
 		}
+		.moj-element {
+			background-image: linear-gradient(to bottom, rgba(189, 32, 40, 0.4), rgba(189, 32, 40, 0.2));
+		}
+		.my-watermark {
+			background-image: url('../images/back_30.png');
+			background-position: right; /* lub background-position: 100%; */
+			background-size: contain;
+			background-repeat: no-repeat;
+			pointer-events: none; 
+		}
+		
+		
     </style>
 
 </head>
-<body data-duration = 3.3>
-
-
-<header class="container">
-    <div class="m-2 mb-4 text-center">
-        <img src="/images/ukulele-krakow.PNG" class="img-fluid" alt="Krakow Ukulele" width="200">
-    </div>
-</header>
+<body data-duration = 4.0>
+<!-- nie ma headera - czy tak w ogłe wolno? -->
 
 <div class="container">
-    <div class="row justify-content-center">
-        
-<div class="col-lg-8 col-md-10 col-sm-12 my-3">
-	
-
-    <h3 class="song-title semi-bold">
-	  #27 - Can't Help Falling In Love With You
-    </h3>
-    <h4 class="song-artist custom-text-h4">
-        Elvis Presley
-    </h4>
-
-    <h5 class= custom-text-h5>
-        Level: 
-        <span class="badge rounded-pill badge-warning text-white">Medium</span>
-    </h5>
-    
-    
-
-   <div class="mt-4" style="overflow-x: auto;">
-    
-        <img src="chords/F.gif" alt="F" title="F" />
-    
-        <img src="chords/G7.gif" alt="G7" title="G7" />
-    
-        <img src="chords/G.gif" alt="G" title="G" />
-    
-        <img src="chords/Am.gif" alt="Am" title="Am" />
-    
-        <img src="chords/Em7.gif" alt="Em7" title="Em7" />
-    
-        <img src="chords/C.gif" alt="C" title="C" />
-    
-        <img src="chords/B7.gif" alt="B7" title="B7" />
-    
-        <img src="chords/A7.gif" alt="A7" title="A7" />
-    
-        <img src="chords/Em.gif" alt="Em" title="Em" />
-    
-        <img src="chords/Dm.gif" alt="Dm" title="Dm" />
-    
-</div>
-		<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 5px; top: 10px;">
-		  Dev info? <input type="checkbox" class="checkbox">
-		</div>
-		<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px; display: none;">
-		  <p id="heightInfo" style="font-size: xx-small;"></p>
-		  <p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
-		  <p id="songDuration" style="font-size: xx-small;"></p>
-		</div>
-	<div id="floatingButton" style="position: fixed; right: 20px; bottom: 20px; ">
-		<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light toggle-button">
-			<img id="buttonImage" src="images/pause2.gif">
-		</button>
-	</div>
-    
-    <div id="tab">
-          <br/>  <br/>  <br/>  <br/> <br/><br/><div class="alert alert-warning mb-1">Beats per chord: <b>3</b><br/>Strumming: <b>Waltz</b><br/></div><br/><br/>Intro: <span class="chord">[C]</span> <span class="chord">[G]</span> <span class="chord">[C]</span> <span class="chord">[C]</span><br/><br/><span class="chord">[C]</span> Wise <span class="chord">[Em]</span> men <span class="chord">[Am]</span> say <span class="chord">[Am]</span><br/>only <span class="chord">[F]</span> fools <span class="chord">[C]</span> rush <span class="chord">[G]</span> in <span class="chord">[G7]</span><br/>But <span class="chord">[F]</span> I <span class="chord">[G]</span> can't <span class="chord">[Am]</span> help <span class="chord">[F]</span> falling<br/>in <span class="chord">[C]</span> love <span class="chord">[G7]</span> with <span class="chord">[C]</span> you <span class="chord">[C]</span><br/><br/><span class="chord">[C]</span> Shall <span class="chord">[Em]</span> I <span class="chord">[Am]</span> stay <span class="chord">[Am]</span><br/>would it <span class="chord">[F]</span> be <span class="chord">[C]</span> a <span class="chord">[G]</span> sin <span class="chord">[G7]</span><br/>If <span class="chord">[F]</span> I <span class="chord">[G]</span> can't <span class="chord">[Am]</span> help <span class="chord">[F]</span> falling<br/>in <span class="chord">[C]</span> love <span class="chord">[G7]</span> with <span class="chord">[C]</span> you <span class="chord">[C]</span><br/><br/><span class="chord">[Em]</span> Like a river <span class="chord">[B7]</span> flows<br/><span class="chord">[Em]</span> surely to the <span class="chord">[B7]</span> sea<br/><span class="chord">[Em]</span> Darling so it <span class="chord">[B7]</span> goes<br/><span class="chord">[Em7]</span> Some things are <span class="chord">[A7]</span> meant to <span class="chord">[Dm]</span> be <span class="chord">[G7]</span><br/><br/><span class="chord">[C]</span> Take <span class="chord">[Em]</span> my <span class="chord">[Am]</span> hand <span class="chord">[Am]</span><br/>take my <span class="chord">[F]</span> whole <span class="chord">[C]</span> life <span class="chord">[G]</span> too <span class="chord">[G7]</span><br/>For <span class="chord">[F]</span> I <span class="chord">[G]</span> can't <span class="chord">[Am]</span> help <span class="chord">[F]</span> falling<br/>in <span class="chord">[C]</span> love <span class="chord">[G7]</span> with <span class="chord">[C]</span> you <span class="chord">[C]</span><br/><br/><span class="chord">[Em]</span> Like a river <span class="chord">[B7]</span> flows<br/><span class="chord">[Em]</span> surely to the <span class="chord">[B7]</span> sea<br/><span class="chord">[Em]</span> Darling so it <span class="chord">[B7]</span> goes<br/><span class="chord">[Em7]</span> Some things are <span class="chord">[A7]</span> meant to <span class="chord">[Dm]</span> be <span class="chord">[G7]</span><br/><br/><span class="chord">[C]</span> Take <span class="chord">[Em]</span> my <span class="chord">[Am]</span> hand <span class="chord">[Am]</span><br/>take my <span class="chord">[F]</span> whole <span class="chord">[C]</span> life <span class="chord">[G]</span> too <span class="chord">[G7]</span><br/>For <span class="chord">[F]</span> I <span class="chord">[G]</span> can't <span class="chord">[Am]</span> help <span class="chord">[F]</span> falling<br/>in <span class="chord">[C]</span> love <span class="chord">[G7]</span> with <span class="chord">[C]</span> you <span class="chord">[C]</span><br/>For <span class="chord">[F/]</span> I <span class="chord">[G/]</span> can't <span class="chord">[Am/]</span> help <span class="chord">[F/]</span> falling<br/>in <span class="chord">[C/]</span> love <span class="chord">[G7/]</span> with <span class="chord">[C/]</span> you <span class="chord">[C/]</span><br/><br/><span class="chord">[C/]</span>
-    </div>
-
-    <div id="options" class="mt-4">
-        <a href="songs.html"><strong>← Back</strong></a>
-         
-    </div>
-
-    <hr/>
+    <div class="row justify-content-center">      
+		<div class="col-lg-8 col-md-10 col-sm-12 my-3">
+			<div class="shadow p-3 mb-5 bg-body rounded my-watermark">
+				<h3 class="song-title semi-bold">
+					#27 - Can't Help Falling In Love With You
+				</h3>
+				<h5 class="song-artist ultra-light ">
+					Elvis Presley
+				</h5>
 			
-    <div class="m-2 my-4 text-center">
-        <img src="/images/qrcode.png" class="img-fluid" alt="QR Code" width="100">
-    </div>
+				<h5 class= ultra-light >
+					Level: 
+					<span class="badge rounded-pill badge-warning text-white">Medium</span>					
+				</h5>				
+			
+			</div>
+			
+			
+				<div class="mt-4" style="overflow-x: auto;">
+					
+						<img src="chords/A7.gif" alt="A7" title="A7" />
+					
+						<img src="chords/Am.gif" alt="Am" title="Am" />
+					
+						<img src="chords/B7.gif" alt="B7" title="B7" />
+					
+						<img src="chords/C.gif" alt="C" title="C" />
+					
+						<img src="chords/Dm.gif" alt="Dm" title="Dm" />
+					
+						<img src="chords/Em.gif" alt="Em" title="Em" />
+					
+						<img src="chords/Em7.gif" alt="Em7" title="Em7" />
+					
+						<img src="chords/F.gif" alt="F" title="F" />
+					
+						<img src="chords/G.gif" alt="G" title="G" />
+					
+						<img src="chords/G7.gif" alt="G7" title="G7" />
+					
+				
+				</div>
+				<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 5px; top: 10px;">
+				  Dev info? <input type="checkbox" class="checkbox">
+				</div>
+				<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px; display: none;">
+				  <p id="heightInfo" style="font-size: xx-small;"></p>
+				  <p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
+				  <p id="songDuration" style="font-size: xx-small;"></p>
+				</div>
+				<div id="floatingButton" style="position: fixed; right: 20px; bottom: 20px; ">
+					<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light toggle-button">
+						<img id="buttonImage" src="images/pause2.gif">
+					</button>
+				</div>
 
-</div>
+			
+			<div id="tab">
+				  <br/>  <br/>  <br/>  <br/> <br/><br/><div class="alert alert-warning mb-1">Beats per chord: <b>3</b><br/>Strumming: <b>Waltz</b><br/></div><br/><br/>Intro: <span class="chord">[C]</span> <span class="chord">[G]</span> <span class="chord">[C]</span> <span class="chord">[C]</span><br/><br/><span class="chord">[C]</span> Wise <span class="chord">[Em]</span> men <span class="chord">[Am]</span> say <span class="chord">[Am]</span><br/>only <span class="chord">[F]</span> fools <span class="chord">[C]</span> rush <span class="chord">[G]</span> in <span class="chord">[G7]</span><br/>But <span class="chord">[F]</span> I <span class="chord">[G]</span> can't <span class="chord">[Am]</span> help <span class="chord">[F]</span> falling<br/>in <span class="chord">[C]</span> love <span class="chord">[G7]</span> with <span class="chord">[C]</span> you <span class="chord">[C]</span><br/><br/><span class="chord">[C]</span> Shall <span class="chord">[Em]</span> I <span class="chord">[Am]</span> stay <span class="chord">[Am]</span><br/>would it <span class="chord">[F]</span> be <span class="chord">[C]</span> a <span class="chord">[G]</span> sin <span class="chord">[G7]</span><br/>If <span class="chord">[F]</span> I <span class="chord">[G]</span> can't <span class="chord">[Am]</span> help <span class="chord">[F]</span> falling<br/>in <span class="chord">[C]</span> love <span class="chord">[G7]</span> with <span class="chord">[C]</span> you <span class="chord">[C]</span><br/><br/><span class="chord">[Em]</span> Like a river <span class="chord">[B7]</span> flows<br/><span class="chord">[Em]</span> surely to the <span class="chord">[B7]</span> sea<br/><span class="chord">[Em]</span> Darling so it <span class="chord">[B7]</span> goes<br/><span class="chord">[Em7]</span> Some things are <span class="chord">[A7]</span> meant to <span class="chord">[Dm]</span> be <span class="chord">[G7]</span><br/><br/><span class="chord">[C]</span> Take <span class="chord">[Em]</span> my <span class="chord">[Am]</span> hand <span class="chord">[Am]</span><br/>take my <span class="chord">[F]</span> whole <span class="chord">[C]</span> life <span class="chord">[G]</span> too <span class="chord">[G7]</span><br/>For <span class="chord">[F]</span> I <span class="chord">[G]</span> can't <span class="chord">[Am]</span> help <span class="chord">[F]</span> falling<br/>in <span class="chord">[C]</span> love <span class="chord">[G7]</span> with <span class="chord">[C]</span> you <span class="chord">[C]</span><br/><br/><span class="chord">[Em]</span> Like a river <span class="chord">[B7]</span> flows<br/><span class="chord">[Em]</span> surely to the <span class="chord">[B7]</span> sea<br/><span class="chord">[Em]</span> Darling so it <span class="chord">[B7]</span> goes<br/><span class="chord">[Em7]</span> Some things are <span class="chord">[A7]</span> meant to <span class="chord">[Dm]</span> be <span class="chord">[G7]</span><br/><br/><span class="chord">[C]</span> Take <span class="chord">[Em]</span> my <span class="chord">[Am]</span> hand <span class="chord">[Am]</span><br/>take my <span class="chord">[F]</span> whole <span class="chord">[C]</span> life <span class="chord">[G]</span> too <span class="chord">[G7]</span><br/>For <span class="chord">[F]</span> I <span class="chord">[G]</span> can't <span class="chord">[Am]</span> help <span class="chord">[F]</span> falling<br/>in <span class="chord">[C]</span> love <span class="chord">[G7]</span> with <span class="chord">[C]</span> you <span class="chord">[C]</span><br/>For <span class="chord">[F/]</span> I <span class="chord">[G/]</span> can't <span class="chord">[Am/]</span> help <span class="chord">[F/]</span> falling<br/>in <span class="chord">[C/]</span> love <span class="chord">[G7/]</span> with <span class="chord">[C/]</span> you <span class="chord">[C/]</span><br/><br/><span class="chord">[C/]</span>
+			</div>
+			<hr/>
+			<div id="options" class="mt-4">
+				<a href="songs.html"><strong>← Back</strong></a>
+				 
+			</div>
+
+			
+					
+			<div class="m-2 my-4 text-center">
+				<img src="/images/qrcode.png" class="img-fluid" alt="QR Code" width="100">
+			</div>
+
+		</div>
 
     </div>
 </div>

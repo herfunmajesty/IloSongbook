@@ -12,9 +12,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <style>
-        .highlight {background-color: lemonchiffon; font-weight: bold;}
+        .highlight {background-color: lemonchiffon; font-weight: bold;} 
         .chord { font-weight: bold; color:red}
-        #tab { font-size: 80%; font-family: Verdana, Tahoma, sans-serif; }
+        #tab { font-size: 90%; font-family: Verdana, Tahoma, sans-serif; }
         #options a {text-decoration: underline;}
         .sticky { 
             position: fixed; 
@@ -62,7 +62,6 @@
 		}
 		.custom-text-h3 {
 			font-family: 'Montserrat', sans-serif;
-			
 			font-size: 2rem
 		}
 		.custom-text-h4 {
@@ -78,88 +77,100 @@
 			font-family: 'Montserrat', sans-serif;
 			font-weight: 200;
 		}
+		.ultra-light2 {
+			font-family: 'Montserrat', sans-serif;
+			font-weight: 200;
+			font-size: 1.1rem
+		}
 
 		.semi-bold {
 			font-family: 'Montserrat', sans-serif;
 			font-weight: 600;
 		}
+		.moj-element {
+			background-image: linear-gradient(to bottom, rgba(189, 32, 40, 0.4), rgba(189, 32, 40, 0.2));
+		}
+		.my-watermark {
+			background-image: url('../images/back_30.png');
+			background-position: right; /* lub background-position: 100%; */
+			background-size: contain;
+			background-repeat: no-repeat;
+			pointer-events: none; 
+		}
+		
+		
     </style>
 
 </head>
 <body data-duration = 4.0>
-
-
-<header class="container">
-    <div class="m-2 mb-4 text-center">
-        <img src="/images/ukulele-krakow.PNG" class="img-fluid" alt="Krakow Ukulele" width="200">
-    </div>
-</header>
+<!-- nie ma headera - czy tak w ogłe wolno? -->
 
 <div class="container">
-    <div class="row justify-content-center">
-        
-<div class="col-lg-8 col-md-10 col-sm-12 my-3">
-	
-
-    <h3 class="song-title semi-bold">
-	  #50 - Fluorescent Adolescent
-    </h3>
-    <h4 class="song-artist custom-text-h4">
-        Arctic Monkeys
-    </h4>
-
-    <h5 class= custom-text-h5>
-        Level: 
-        <span class="badge rounded-pill badge-warning text-white">Medium</span>
-    </h5>
-    
-    
-
-   <div class="mt-4" style="overflow-x: auto;">
-    
-        <img src="chords/G.gif" alt="G" title="G" />
-    
-        <img src="chords/D.gif" alt="D" title="D" />
-    
-        <img src="chords/A.gif" alt="A" title="A" />
-    
-        <img src="chords/Bm.gif" alt="Bm" title="Bm" />
-    
-        <img src="chords/Fsharpm.gif" alt="Fsharpm" title="Fsharpm" />
-    
-        <img src="chords/Em.gif" alt="Em" title="Em" />
-    
-</div>
-		<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 5px; top: 10px;">
-		  Dev info? <input type="checkbox" class="checkbox">
-		</div>
-		<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px; display: none;">
-		  <p id="heightInfo" style="font-size: xx-small;"></p>
-		  <p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
-		  <p id="songDuration" style="font-size: xx-small;"></p>
-		</div>
-	<div id="floatingButton" style="position: fixed; right: 20px; bottom: 20px; ">
-		<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light toggle-button">
-			<img id="buttonImage" src="images/pause2.gif">
-		</button>
-	</div>
-    
-    <div id="tab">
-          <br/>  <br/> <br/><br/>Intro:<br/><span class="chord">[D///]</span> (1 2) <br/><span class="chord">[Bm///]</span> (1 2) <br/><span class="chord">[Em///]</span> (1 2)<br/><span class="chord">[A///]</span> (1 2)<br/><br/><span class="chord">[D]</span>... <span class="chord">[Bm]</span>... <span class="chord">[Em]</span>... <span class="chord">[A]</span>...<br/><br/>You used to get it in your <span class="chord">[D/]</span> fishnets<br/>Now you only get it in your <span class="chord">[Bm/]</span> night dress<br/>Discarded all the naughty nights for <span class="chord">[Em/]</span> niceness<br/>Landed in a very common <span class="chord">[A/]</span> crisis<br/>Everything's in order in a <span class="chord">[D]</span> black hole<br/>Nothing seems as pretty as the <span class="chord">[Bm]</span> past though<br/>The Bloody Mary's lacking her <span class="chord">[Em]</span> Tabasco<br/>Remember when you used to be a <span class="chord">[A]</span> rascal?<br/><br/>Oh the boy's a <span class="chord">[Em//]</span> slag<br/>The best you ever had <span class="chord">[A//]</span><br/>The best you ever had <span class="chord">[Em//]</span><br/>Is just a <span class="chord">[A//]</span> memory and <span class="chord">[Em//]</span> those dreams<br/>But as daft as <span class="chord">[A//]</span> they seem<br/>As daft as they <span class="chord">[Em/]</span> seem<br/>My love when you <span class="chord">[G/]</span> dream them up...<br/><br/>Flicking through a little book of <span class="chord">[D]</span> sex tips<br/>Remember when the boys were all <span class="chord">[Bm]</span> electric?<br/>Now when she's told she's gonna <span class="chord">[Em]</span> get it<br/>I'm guessing that she'd rather just <span class="chord">[A]</span> forget it<br/>                             <br/>Clinging to not getting <span class="chord">[D]</span> sentimental<br/>Said she wasn't going but she <span class="chord">[Bm]</span> went still<br/>Likes her gentlemen not to be <span class="chord">[Em//]</span> gentle<br/>Was it a Mecca dauber or a betting pencil?<br/><br/>Oh the boy's a <span class="chord">[Em]</span> slag<br/>The best you ever <span class="chord">[A]</span> had<br/>The best you ever <span class="chord">[Em]</span> had<br/>Is just a <span class="chord">[A]</span> memory and <span class="chord">[Em//]</span> those dreams<br/>But as daft as they <span class="chord">[A//]</span> seem<br/>As daft as they <span class="chord">[Em]</span> seem<br/>My love when you <span class="chord">[G]</span> dream them up<br/><br/><span class="chord">[F#m]</span> Oh, where did you <span class="chord">[Bm]</span> go?<br/>Where did you <span class="chord">[Em]</span> go?<br/>Where did you <span class="chord">[F#m]</span> go? <span class="chord">[Em]</span> Woah...<br/><br/>(interlude:)<br/><span class="chord">[D///]</span> (1 2) <br/><span class="chord">[Bm///]</span> (1 2) <br/><span class="chord">[Em///]</span> (1 2)<br/><span class="chord">[A///]</span> (1 2)<br/><br/><span class="chord">[D]</span> Falling about <span class="chord">[Bm]</span><br/>You took a <span class="chord">[Em]</span> left off Last <span class="chord">[A]</span> Laugh Lane<br/>You were just <span class="chord">[D]</span> sounding it out <span class="chord">[Bm]</span><br/>You're not <span class="chord">[Em]</span> coming back <span class="chord">[A]</span> again.<br/><br/><span class="chord">[D]</span> Falling about <span class="chord">[Bm]</span><br/>You took a <span class="chord">[Em]</span> left off Last <span class="chord">[A]</span> Laugh Lane<br/>You were just <span class="chord">[D]</span> sounding it out <span class="chord">[Bm]</span><br/>You're not <span class="chord">[Em]</span> coming back <span class="chord">[A]</span> again.<br/><br/>You used to get it in your <span class="chord">[D]</span> fishnets<br/>Now you only get it in your <span class="chord">[Bm]</span> night dress<br/>Discarded all the naughty nights for <span class="chord">[Em]</span> niceness<br/>Landed in a very common <span class="chord">[A]</span> crisis<br/>Everything's in order in a <span class="chord">[D]</span> black hole<br/>Nothing seems as pretty as the <span class="chord">[Bm]</span> past though<br/>That Bloody Mary's lacking in <span class="chord">[Em]</span> Tabasco<br/>Remember when he used to be a <span class="chord">[A]</span> rascal?  <br/><span class="chord">[D/]</span>
-    </div>
-
-    <div id="options" class="mt-4">
-        <a href="songs.html"><strong>← Back</strong></a>
-         
-    </div>
-
-    <hr/>
+    <div class="row justify-content-center">      
+		<div class="col-lg-8 col-md-10 col-sm-12 my-3">
+			<div class="shadow p-3 mb-5 bg-body rounded my-watermark">
+				<h3 class="song-title semi-bold">
+					#50 - Fluorescent Adolescent
+				</h3>
+				<h5 class="song-artist ultra-light ">
+					Arctic Monkeys
+				</h5>
 			
-    <div class="m-2 my-4 text-center">
-        <img src="/images/qrcode.png" class="img-fluid" alt="QR Code" width="100">
-    </div>
+				<h5 class= ultra-light >
+					Level: 
+					<span class="badge rounded-pill badge-warning text-white">Medium</span>					
+				</h5>				
+			
+			</div>
+			
+			
+				<div class="mt-4" style="overflow-x: auto;">
+					
+						<img src="chords/A.gif" alt="A" title="A" />
+					
+						<img src="chords/Bm.gif" alt="Bm" title="Bm" />
+					
+						<img src="chords/D.gif" alt="D" title="D" />
+					
+						<img src="chords/Em.gif" alt="Em" title="Em" />
+					
+						<img src="chords/Fsharpm.gif" alt="Fsharpm" title="Fsharpm" />
+					
+						<img src="chords/G.gif" alt="G" title="G" />
+					
+				
+				</div>
+				<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 5px; top: 10px;">
+				  Dev info? <input type="checkbox" class="checkbox">
+				</div>
+				<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px; display: none;">
+				  <p id="heightInfo" style="font-size: xx-small;"></p>
+				  <p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
+				  <p id="songDuration" style="font-size: xx-small;"></p>
+				</div>
+				<div id="floatingButton" style="position: fixed; right: 20px; bottom: 20px; ">
+					<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light toggle-button">
+						<img id="buttonImage" src="images/pause2.gif">
+					</button>
+				</div>
 
-</div>
+			
+			<div id="tab">
+				  <br/>  <br/> <br/><br/>Intro:<br/><span class="chord">[D///]</span> (1 2) <br/><span class="chord">[Bm///]</span> (1 2) <br/><span class="chord">[Em///]</span> (1 2)<br/><span class="chord">[A///]</span> (1 2)<br/><br/><span class="chord">[D]</span>... <span class="chord">[Bm]</span>... <span class="chord">[Em]</span>... <span class="chord">[A]</span>...<br/><br/>You used to get it in your <span class="chord">[D/]</span> fishnets<br/>Now you only get it in your <span class="chord">[Bm/]</span> night dress<br/>Discarded all the naughty nights for <span class="chord">[Em/]</span> niceness<br/>Landed in a very common <span class="chord">[A/]</span> crisis<br/>Everything's in order in a <span class="chord">[D]</span> black hole<br/>Nothing seems as pretty as the <span class="chord">[Bm]</span> past though<br/>The Bloody Mary's lacking her <span class="chord">[Em]</span> Tabasco<br/>Remember when you used to be a <span class="chord">[A]</span> rascal?<br/><br/>Oh the boy's a <span class="chord">[Em//]</span> slag<br/>The best you ever had <span class="chord">[A//]</span><br/>The best you ever had <span class="chord">[Em//]</span><br/>Is just a <span class="chord">[A//]</span> memory and <span class="chord">[Em//]</span> those dreams<br/>But as daft as <span class="chord">[A//]</span> they seem<br/>As daft as they <span class="chord">[Em/]</span> seem<br/>My love when you <span class="chord">[G/]</span> dream them up...<br/><br/>Flicking through a little book of <span class="chord">[D]</span> sex tips<br/>Remember when the boys were all <span class="chord">[Bm]</span> electric?<br/>Now when she's told she's gonna <span class="chord">[Em]</span> get it<br/>I'm guessing that she'd rather just <span class="chord">[A]</span> forget it<br/>                             <br/>Clinging to not getting <span class="chord">[D]</span> sentimental<br/>Said she wasn't going but she <span class="chord">[Bm]</span> went still<br/>Likes her gentlemen not to be <span class="chord">[Em//]</span> gentle<br/>Was it a Mecca dauber or a betting pencil?<br/><br/>Oh the boy's a <span class="chord">[Em]</span> slag<br/>The best you ever <span class="chord">[A]</span> had<br/>The best you ever <span class="chord">[Em]</span> had<br/>Is just a <span class="chord">[A]</span> memory and <span class="chord">[Em//]</span> those dreams<br/>But as daft as they <span class="chord">[A//]</span> seem<br/>As daft as they <span class="chord">[Em]</span> seem<br/>My love when you <span class="chord">[G]</span> dream them up<br/><br/><span class="chord">[F#m]</span> Oh, where did you <span class="chord">[Bm]</span> go?<br/>Where did you <span class="chord">[Em]</span> go?<br/>Where did you <span class="chord">[F#m]</span> go? <span class="chord">[Em]</span> Woah...<br/><br/>(interlude:)<br/><span class="chord">[D///]</span> (1 2) <br/><span class="chord">[Bm///]</span> (1 2) <br/><span class="chord">[Em///]</span> (1 2)<br/><span class="chord">[A///]</span> (1 2)<br/><br/><span class="chord">[D]</span> Falling about <span class="chord">[Bm]</span><br/>You took a <span class="chord">[Em]</span> left off Last <span class="chord">[A]</span> Laugh Lane<br/>You were just <span class="chord">[D]</span> sounding it out <span class="chord">[Bm]</span><br/>You're not <span class="chord">[Em]</span> coming back <span class="chord">[A]</span> again.<br/><br/><span class="chord">[D]</span> Falling about <span class="chord">[Bm]</span><br/>You took a <span class="chord">[Em]</span> left off Last <span class="chord">[A]</span> Laugh Lane<br/>You were just <span class="chord">[D]</span> sounding it out <span class="chord">[Bm]</span><br/>You're not <span class="chord">[Em]</span> coming back <span class="chord">[A]</span> again.<br/><br/>You used to get it in your <span class="chord">[D]</span> fishnets<br/>Now you only get it in your <span class="chord">[Bm]</span> night dress<br/>Discarded all the naughty nights for <span class="chord">[Em]</span> niceness<br/>Landed in a very common <span class="chord">[A]</span> crisis<br/>Everything's in order in a <span class="chord">[D]</span> black hole<br/>Nothing seems as pretty as the <span class="chord">[Bm]</span> past though<br/>That Bloody Mary's lacking in <span class="chord">[Em]</span> Tabasco<br/>Remember when he used to be a <span class="chord">[A]</span> rascal?  <br/><span class="chord">[D/]</span>
+			</div>
+			<hr/>
+			<div id="options" class="mt-4">
+				<a href="songs.html"><strong>← Back</strong></a>
+				 
+			</div>
+
+			
+					
+			<div class="m-2 my-4 text-center">
+				<img src="/images/qrcode.png" class="img-fluid" alt="QR Code" width="100">
+			</div>
+
+		</div>
 
     </div>
 </div>

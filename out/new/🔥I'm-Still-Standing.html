@@ -12,9 +12,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <style>
-        .highlight {background-color: lemonchiffon; font-weight: bold;}
+        .highlight {background-color: lemonchiffon; font-weight: bold;} 
         .chord { font-weight: bold; color:red}
-        #tab { font-size: 80%; font-family: Verdana, Tahoma, sans-serif; }
+        #tab { font-size: 90%; font-family: Verdana, Tahoma, sans-serif; }
         #options a {text-decoration: underline;}
         .sticky { 
             position: fixed; 
@@ -29,19 +29,17 @@
         }
 		.toggle-button {
 			background-color: #eee;
-			border: 1px solid #ccc;
-			padding: 1px 1px;
+			border: 0px solid ;
+			padding: 0px 0px;
 			margin-right: 5px;
 			cursor: pointer;
 		}
 		.div_box {
 			padding: 10px;
-			display: none;
-			}
-			.checkbox:checked + .div_box {
+		}
+		.checkbox:checked + #infoBox {
 			display: block;
-			border: 1px solid #aaa;
-			}
+		}
 		
 		@font-face {
 			font-family: 'Montserrat';
@@ -64,7 +62,6 @@
 		}
 		.custom-text-h3 {
 			font-family: 'Montserrat', sans-serif;
-			
 			font-size: 2rem
 		}
 		.custom-text-h4 {
@@ -80,95 +77,112 @@
 			font-family: 'Montserrat', sans-serif;
 			font-weight: 200;
 		}
+		.ultra-light2 {
+			font-family: 'Montserrat', sans-serif;
+			font-weight: 200;
+			font-size: 1.1rem
+		}
 
 		.semi-bold {
 			font-family: 'Montserrat', sans-serif;
 			font-weight: 600;
 		}
+		.moj-element {
+			background-image: linear-gradient(to bottom, rgba(189, 32, 40, 0.4), rgba(189, 32, 40, 0.2));
+		}
+		.my-watermark {
+			background-image: url('../images/back_30.png');
+			background-position: right; /* lub background-position: 100%; */
+			background-size: contain;
+			background-repeat: no-repeat;
+			pointer-events: none; 
+		}
+		
+		
     </style>
 
 </head>
 <body data-duration = 4.0>
-
-
-<header class="container">
-    <div class="m-2 mb-4 text-center">
-        <img src="/images/ukulele-krakow.PNG" class="img-fluid" alt="Krakow Ukulele" width="200">
-    </div>
-</header>
+<!-- nie ma headera - czy tak w ogłe wolno? -->
 
 <div class="container">
-    <div class="row justify-content-center">
-        
-<div class="col-lg-8 col-md-10 col-sm-12 my-3">
-	
-
-    <h3 class="song-title semi-bold">
-	  #T3 - 🔥I'm Still Standing
-    </h3>
-    <h4 class="song-artist custom-text-h4">
-        Elton John
-    </h4>
-
-    <h5 class= custom-text-h5>
-        Level: 
-        <span class="badge rounded-pill badge-warning text-white">Medium</span>
-    </h5>
-    
-	    <div class="mt-3">
-		    <iframe src="https://open.spotify.com/embed/track/0GjEhVFGZW8afUYGChu3Rr"
-				    width="300"
-				    height="80"
-				    frameborder="0"
-				    allowtransparency="true"
-				    allow="encrypted-media"></iframe>
-	    </div>
-    
-    
-
-   <div class="mt-4" style="overflow-x: auto;">
-    
-        <img src="chords/as.gif" alt="as" title="as" />
-    
-        <img src="chords/same.gif" alt="same" title="same" />
-    
-        <img src="chords/–.gif" alt="–" title="–" />
-    
-        <img src="chords/verse.gif" alt="verse" title="verse" />
-    
-        <img src="chords/chorus.gif" alt="chorus" title="chorus" />
-    
-        <img src="chords/instrumental.gif" alt="instrumental" title="instrumental" />
-    
-</div>
-	<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 20px; top: 20px;">Dev info? <input type="checkbox" class="checkbox" onclick="toggleDiv()"> </div>
-	<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px;">
-		<p id="heightInfo" style="font-size: xx-small;"></p>
-		<p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
-		<p id="songDuration" style="font-size: xx-small;"></p>
-	</div>
-	<div id="floatingButton" style="position: fixed; right: 20px; bottom: 20px; ">
-		<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light">
-			<img id="buttonImage" src="images/pause2.gif">
-		</button>
-	</div>
-    
-    <div id="tab">
-          <br/>  <br/><br/><br/><br/><span class="fw-bold fs-5"><br/>4 beats per chord<br/></span><br/><br/>(Am) (Dm) | (E7) (F-G) x2<br/>(A) You could never know (D)what it's like<br/>Your (E)blood li-ike winter freezes (A)just like ice<br/>And there's (Bm7)cold lonely light that (D)shines from (E)you<br/>You'll (F#m)wind up like the wreck you (D)hide behind that<br/>(Bm)Mask you (A)use<br/>(A) And did you think this fool could (D)never win<br/>Well (E)look at me I'm a-comin' (A)back again<br/>I got a (Bm7)taste of love in a (D)simple (E)way<br/>And if you (F#m)need-to-know while I'm still sta-(D)-anding<br/>You just (Bm)fade a(A)way… don’t you know<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[chorus]</span></span></span></span><br/>(Am7)I'm still (Am)standing better than<br/>I (Em7)ever did… lookin' like<br/>A (Dm)true survivor… feelin' like<br/>A (F)little kid (G)<br/>(Am7)I'm still (Am)standing after<br/>(Em7)All this time<br/>Pickin' up the (Dm)pieces of my life without you<br/>(E7)On my mind<br/>I'm still (Am)standing (Dm)yeah, yeah<br/>(E7)Yeah<br/>I'm still (Am)standing (Dm)yeah, yeah<br/>(E7)Yeah (F-G)<br/>(A) Once I never could've (D)hoped to win<br/>You (E)starting down the road leaving (A)me again<br/>The (Bm7)threats you made were meant to (D)cut me (E)down and if our<br/>(F#m)Love was just a (D)circus you'd be<br/>A (Bm)clown by (A)now<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[chorus]</span></span></span></span><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[instrumental – same as verse]</span></span></span></span><br/>(A) (D) | (E) (A) | (Bm7) (D-E) | (F#m) (D) | (E) (A)<br/>Don't you know (Am7)I'm still (Am)standing better than<br/>I (Em7)ever did… lookin' like<br/>A (Dm)true survivor… feelin' like<br/>A (F)little kid<br/>(Am7)I'm still (Am)standing after<br/>(Em7)All this time<br/>Pickin' up the (Dm)pieces of my life without you<br/>(E7)On my mind<br/>I'm still (Am)standing, (Dm)yeah, yeah<br/>(E7)Yeah<br/>I'm still (Am)standing, (Dm)yeah, yeah<br/>(E7)Yeah (F-G) (Am – single strum)
-    </div>
-
-    <div id="options" class="mt-4">
-        <a href="songs.html"><strong>← Back</strong></a>
-         
-    </div>
-
-    <hr/>
+    <div class="row justify-content-center">      
+		<div class="col-lg-8 col-md-10 col-sm-12 my-3">
+			<div class="shadow p-3 mb-5 bg-body rounded my-watermark">
+				<h3 class="song-title semi-bold">
+					#T3 - 🔥I'm Still Standing
+				</h3>
+				<h5 class="song-artist ultra-light ">
+					Elton John
+				</h5>
 			
-    <div class="m-2 my-4 text-center">
-        <img src="/images/qrcode.png" class="img-fluid" alt="QR Code" width="100">
-    </div>
+				<h5 class= ultra-light >
+					Level: 
+					<span class="badge rounded-pill badge-warning text-white">Medium</span>					
+				</h5>				
+			
+			</div>
+			
+				<div class="mt-3">							
+					<iframe style="border-radius:12px" 
+							src="https://open.spotify.com/embed/track/0GjEhVFGZW8afUYGChu3Rr"
+							width="300px" 
+							height="80" 
+							frameBorder="0" 
+							allowfullscreen="" 
+							allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+							loading="lazy">
+					</iframe>
+				</div>
+			
+			
+				<div class="mt-4" style="overflow-x: auto;">
+					
+						<img src="chords/as.gif" alt="as" title="as" />
+					
+						<img src="chords/chorus.gif" alt="chorus" title="chorus" />
+					
+						<img src="chords/instrumental.gif" alt="instrumental" title="instrumental" />
+					
+						<img src="chords/same.gif" alt="same" title="same" />
+					
+						<img src="chords/verse.gif" alt="verse" title="verse" />
+					
+						<img src="chords/–.gif" alt="–" title="–" />
+					
+				
+				</div>
+				<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 5px; top: 10px;">
+				  Dev info? <input type="checkbox" class="checkbox">
+				</div>
+				<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px; display: none;">
+				  <p id="heightInfo" style="font-size: xx-small;"></p>
+				  <p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
+				  <p id="songDuration" style="font-size: xx-small;"></p>
+				</div>
+				<div id="floatingButton" style="position: fixed; right: 20px; bottom: 20px; ">
+					<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light toggle-button">
+						<img id="buttonImage" src="images/pause2.gif">
+					</button>
+				</div>
 
-</div>
+			
+			<div id="tab">
+				  <br/>  <br/><br/><br/><br/><span class="fw-bold fs-5"><br/>4 beats per chord<br/></span><br/><br/>(Am) (Dm) | (E7) (F-G) x2<br/>(A) You could never know (D)what it's like<br/>Your (E)blood li-ike winter freezes (A)just like ice<br/>And there's (Bm7)cold lonely light that (D)shines from (E)you<br/>You'll (F#m)wind up like the wreck you (D)hide behind that<br/>(Bm)Mask you (A)use<br/>(A) And did you think this fool could (D)never win<br/>Well (E)look at me I'm a-comin' (A)back again<br/>I got a (Bm7)taste of love in a (D)simple (E)way<br/>And if you (F#m)need-to-know while I'm still sta-(D)-anding<br/>You just (Bm)fade a(A)way… don’t you know<br/><span class="chord">[chorus]</span><br/>(Am7)I'm still (Am)standing better than<br/>I (Em7)ever did… lookin' like<br/>A (Dm)true survivor… feelin' like<br/>A (F)little kid (G)<br/>(Am7)I'm still (Am)standing after<br/>(Em7)All this time<br/>Pickin' up the (Dm)pieces of my life without you<br/>(E7)On my mind<br/>I'm still (Am)standing (Dm)yeah, yeah<br/>(E7)Yeah<br/>I'm still (Am)standing (Dm)yeah, yeah<br/>(E7)Yeah (F-G)<br/>(A) Once I never could've (D)hoped to win<br/>You (E)starting down the road leaving (A)me again<br/>The (Bm7)threats you made were meant to (D)cut me (E)down and if our<br/>(F#m)Love was just a (D)circus you'd be<br/>A (Bm)clown by (A)now<br/><span class="chord">[chorus]</span><br/><span class="chord">[instrumental – same as verse]</span><br/>(A) (D) | (E) (A) | (Bm7) (D-E) | (F#m) (D) | (E) (A)<br/>Don't you know (Am7)I'm still (Am)standing better than<br/>I (Em7)ever did… lookin' like<br/>A (Dm)true survivor… feelin' like<br/>A (F)little kid<br/>(Am7)I'm still (Am)standing after<br/>(Em7)All this time<br/>Pickin' up the (Dm)pieces of my life without you<br/>(E7)On my mind<br/>I'm still (Am)standing, (Dm)yeah, yeah<br/>(E7)Yeah<br/>I'm still (Am)standing, (Dm)yeah, yeah<br/>(E7)Yeah (F-G) (Am – single strum)
+			</div>
+			<hr/>
+			<div id="options" class="mt-4">
+				<a href="songs.html"><strong>← Back</strong></a>
+				 
+			</div>
+
+			
+					
+			<div class="m-2 my-4 text-center">
+				<img src="/images/qrcode.png" class="img-fluid" alt="QR Code" width="100">
+			</div>
+
+		</div>
 
     </div>
 </div>
@@ -261,12 +275,12 @@ window.addEventListener('beforeunload', function() {
   }
 });
 </script>
-<!--<script>
+<script>
   function toggleDiv() {
     var checkBox = document.querySelector('.checkbox');
-    var devInfo = document.getElementById('infoBox');
-    devInfo.style.display = checkBox.checked ? 'block' : 'none';
+    var infoBox = document.getElementById('infoBox');
+    infoBox.style.display = checkBox.checked ? 'block' : 'none';
   }
-</script>-->
+</script>
 </body>
 </html>

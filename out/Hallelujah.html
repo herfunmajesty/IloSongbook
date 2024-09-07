@@ -12,9 +12,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <style>
-        .highlight {background-color: lemonchiffon; font-weight: bold;}
+        .highlight {background-color: lemonchiffon; font-weight: bold;} 
         .chord { font-weight: bold; color:red}
-        #tab { font-size: 80%; font-family: Verdana, Tahoma, sans-serif; }
+        #tab { font-size: 90%; font-family: Verdana, Tahoma, sans-serif; }
         #options a {text-decoration: underline;}
         .sticky { 
             position: fixed; 
@@ -62,7 +62,6 @@
 		}
 		.custom-text-h3 {
 			font-family: 'Montserrat', sans-serif;
-			
 			font-size: 2rem
 		}
 		.custom-text-h4 {
@@ -78,86 +77,98 @@
 			font-family: 'Montserrat', sans-serif;
 			font-weight: 200;
 		}
+		.ultra-light2 {
+			font-family: 'Montserrat', sans-serif;
+			font-weight: 200;
+			font-size: 1.1rem
+		}
 
 		.semi-bold {
 			font-family: 'Montserrat', sans-serif;
 			font-weight: 600;
 		}
+		.moj-element {
+			background-image: linear-gradient(to bottom, rgba(189, 32, 40, 0.4), rgba(189, 32, 40, 0.2));
+		}
+		.my-watermark {
+			background-image: url('../images/back_30.png');
+			background-position: right; /* lub background-position: 100%; */
+			background-size: contain;
+			background-repeat: no-repeat;
+			pointer-events: none; 
+		}
+		
+		
     </style>
 
 </head>
-<body data-duration = 4.5>
-
-
-<header class="container">
-    <div class="m-2 mb-4 text-center">
-        <img src="/images/ukulele-krakow.PNG" class="img-fluid" alt="Krakow Ukulele" width="200">
-    </div>
-</header>
+<body data-duration = 4.0>
+<!-- nie ma headera - czy tak w ogłe wolno? -->
 
 <div class="container">
-    <div class="row justify-content-center">
-        
-<div class="col-lg-8 col-md-10 col-sm-12 my-3">
-	
-
-    <h3 class="song-title semi-bold">
-	  #55 - Hallelujah
-    </h3>
-    <h4 class="song-artist custom-text-h4">
-        Leonard Cohen
-    </h4>
-
-    <h5 class= custom-text-h5>
-        Level: 
-        <span class="badge rounded-pill badge-warning text-white">Medium</span>
-    </h5>
-    
-    
-
-   <div class="mt-4" style="overflow-x: auto;">
-    
-        <img src="chords/C.gif" alt="C" title="C" />
-    
-        <img src="chords/Em.gif" alt="Em" title="Em" />
-    
-        <img src="chords/G.gif" alt="G" title="G" />
-    
-        <img src="chords/Bm.gif" alt="Bm" title="Bm" />
-    
-        <img src="chords/D.gif" alt="D" title="D" />
-    
-</div>
-		<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 5px; top: 10px;">
-		  Dev info? <input type="checkbox" class="checkbox">
-		</div>
-		<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px; display: none;">
-		  <p id="heightInfo" style="font-size: xx-small;"></p>
-		  <p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
-		  <p id="songDuration" style="font-size: xx-small;"></p>
-		</div>
-	<div id="floatingButton" style="position: fixed; right: 20px; bottom: 20px; ">
-		<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light toggle-button">
-			<img id="buttonImage" src="images/pause2.gif">
-		</button>
-	</div>
-    
-    <div id="tab">
-          <br/>  <br/><br/><br/><br/>Info:<br/>- "//" means half bar<br/><br/><i>(info)</i><br/> <span class="chord">[G]</span> <span class="chord">[Em]</span> <span class="chord">[G]</span> <span class="chord">[Em]</span> <br/><br/>Well I've <span class="chord">[G]</span> heard there was a <span class="chord">[Em]</span> secret chord,   <br/>That <span class="chord">[G]</span> David played and it <span class="chord">[Em]</span> pleased the Lord,   <br/>But <span class="chord">[C]</span> you don't really <span class="chord">[D]</span> care for music, <span class="chord">[G]</span> do ya? <span class="chord">[D]</span> ...<br/>It <span class="chord">[G]</span> goes like this, the <span class="chord">[C//]</span> 4th, the <span class="chord">[D//]</span> 5th,    <br/>the <span class="chord">[Em]</span> minor fall and the <span class="chord">[C]</span> major lift,   <br/>The <span class="chord">[D]</span> baffled king com<span class="chord">[Bm]</span>posing Halle<span class="chord">[Em]</span> lujah <span class="chord">[Em]</span> ...  <br/><br/>Halle<span class="chord">[C]</span>lujah, halle<span class="chord">[Em]</span>lujah,    <br/>halle<span class="chord">[C]</span>lujah, halle<span class="chord">[G//]</span>lu--- uu<span class="chord">[D//]</span> uuuh jah  <br/><br/><span class="chord">[G]</span> <span class="chord">[Em]</span> <span class="chord">[G]</span> <span class="chord">[Em]</span>  <br/><br/>Your <span class="chord">[G]</span> faith was strong but you <span class="chord">[Em]</span> needed proof,    <br/>You <span class="chord">[G]</span> saw her bathing <span class="chord">[Em]</span> on the roof,   <br/>Her <span class="chord">[C]</span> beauty and the <span class="chord">[D]</span> moonlight over- <span class="chord">[G]</span> threw ya, <span class="chord">[D]</span> ... <br/>She <span class="chord">[G]</span> tied you to her <span class="chord">[C//]</span> kitchen <span class="chord">[D//]</span> chair,   <br/>She <span class="chord">[Em]</span> broke your throne and she <span class="chord">[C]</span> cut your hair,   <br/>And <span class="chord">[D]</span> from your lips she <span class="chord">[Bm]</span> drew the halle<span class="chord">[Em]</span>lujah, <span class="chord">[Em]</span> ...  <br/><br/>Halle<span class="chord">[C]</span>lujah, halle<span class="chord">[Em]</span>lujah,    <br/>halle<span class="chord">[C]</span>lujah, halle<span class="chord">[G//]</span>lu--- uu<span class="chord">[D//]</span> uuuh jah  <br/><br/><span class="chord">[G]</span> <span class="chord">[Em]</span> <span class="chord">[G]</span> <span class="chord">[Em]</span>  <br/><br/>May <span class="chord">[G]</span>be there is a <span class="chord">[Em]</span> God above,   <br/>But <span class="chord">[G]</span> all I ever <span class="chord">[Em]</span> learned from love,   <br/>Was <span class="chord">[C]</span> how to shoot at <span class="chord">[D]</span> someone who out- <span class="chord">[G]</span> drew ya. <span class="chord">[D]</span>  ... <br/>And it's <span class="chord">[G]</span> not a cry you can <span class="chord">[C//]</span> hear at <span class="chord">[D//]</span> night,   <br/>It's not <span class="chord">[Em]</span> somebody who's <span class="chord">[C]</span> seen the light,   <br/>It's a <span class="chord">[D]</span> cold and it's a <span class="chord">[Bm]</span> broken halle- <span class="chord">[Em]</span> lujah,  <span class="chord">[Em]</span> ...  <br/><br/>Halle<span class="chord">[C]</span>lujah, halle<span class="chord">[Em]</span>lujah,    <br/>halle<span class="chord">[C]</span>lujah, halle<span class="chord">[G//]</span>lu--- uu<span class="chord">[D//]</span> uuuh jah  <br/><br/><span class="chord">[G]</span> <span class="chord">[Em]</span> <span class="chord">[G]</span> <span class="chord">[Em]</span>  <br/><br/>I <span class="chord">[G]</span>  did my best, it  <span class="chord">[Em]</span>  wasn’t much,   <br/>I <span class="chord">[G]</span>  couldn’t feel so I  <span class="chord">[Em]</span>  tried to touch,   <br/>I’ve <span class="chord">[C]</span>  told the truth, I <span class="chord">[D]</span>  didn’t come to  <span class="chord">[G]</span>  fool <span class="chord">[D]</span>  ya.   <br/>And <span class="chord">[G]</span>  even though it <span class="chord">[C//]</span>  all went <span class="chord">[D//]</span>  wrong,  <br/>I’ll <span class="chord">[Em]</span>  stand before the  <span class="chord">[C]</span>  Lord of Song,   <br/>With <span class="chord">[D]</span>  nothing on my  <span class="chord">[Bm]</span>  tongue but  halle- <span class="chord">[Em]</span>  lujah,  <span class="chord">[Em]</span> ...   <br/><br/>Halle<span class="chord">[C]</span>lujah, halle<span class="chord">[Em]</span>lujah,    <br/>halle<span class="chord">[C]</span>lujah, halle<span class="chord">[G//]</span>lu-uu-<span class="chord">[D//]</span>-uuuh jah <span class="chord">[G/]</span><br/>
-    </div>
-
-    <div id="options" class="mt-4">
-        <a href="songs.html"><strong>← Back</strong></a>
-         
-    </div>
-
-    <hr/>
+    <div class="row justify-content-center">      
+		<div class="col-lg-8 col-md-10 col-sm-12 my-3">
+			<div class="shadow p-3 mb-5 bg-body rounded my-watermark">
+				<h3 class="song-title semi-bold">
+					#55 - Hallelujah
+				</h3>
+				<h5 class="song-artist ultra-light ">
+					Leonard Cohen
+				</h5>
 			
-    <div class="m-2 my-4 text-center">
-        <img src="/images/qrcode.png" class="img-fluid" alt="QR Code" width="100">
-    </div>
+				<h5 class= ultra-light >
+					Level: 
+					<span class="badge rounded-pill badge-warning text-white">Medium</span>					
+				</h5>				
+			
+			</div>
+			
+			
+				<div class="mt-4" style="overflow-x: auto;">
+					
+						<img src="chords/Bm.gif" alt="Bm" title="Bm" />
+					
+						<img src="chords/C.gif" alt="C" title="C" />
+					
+						<img src="chords/D.gif" alt="D" title="D" />
+					
+						<img src="chords/Em.gif" alt="Em" title="Em" />
+					
+						<img src="chords/G.gif" alt="G" title="G" />
+					
+				
+				</div>
+				<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 5px; top: 10px;">
+				  Dev info? <input type="checkbox" class="checkbox">
+				</div>
+				<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px; display: none;">
+				  <p id="heightInfo" style="font-size: xx-small;"></p>
+				  <p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
+				  <p id="songDuration" style="font-size: xx-small;"></p>
+				</div>
+				<div id="floatingButton" style="position: fixed; right: 20px; bottom: 20px; ">
+					<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light toggle-button">
+						<img id="buttonImage" src="images/pause2.gif">
+					</button>
+				</div>
 
-</div>
+			
+			<div id="tab">
+				  <br/>  <br/><br/><br/><br/>Info:<br/>- "//" means half bar<br/><br/><i>(info)</i><br/> <span class="chord">[G]</span> <span class="chord">[Em]</span> <span class="chord">[G]</span> <span class="chord">[Em]</span> <br/><br/>Well I've <span class="chord">[G]</span> heard there was a <span class="chord">[Em]</span> secret chord,   <br/>That <span class="chord">[G]</span> David played and it <span class="chord">[Em]</span> pleased the Lord,   <br/>But <span class="chord">[C]</span> you don't really <span class="chord">[D]</span> care for music, <span class="chord">[G]</span> do ya? <span class="chord">[D]</span> ...<br/>It <span class="chord">[G]</span> goes like this, the <span class="chord">[C//]</span> 4th, the <span class="chord">[D//]</span> 5th,    <br/>the <span class="chord">[Em]</span> minor fall and the <span class="chord">[C]</span> major lift,   <br/>The <span class="chord">[D]</span> baffled king com<span class="chord">[Bm]</span>posing Halle<span class="chord">[Em]</span> lujah <span class="chord">[Em]</span> ...  <br/><br/>Halle<span class="chord">[C]</span>lujah, halle<span class="chord">[Em]</span>lujah,    <br/>halle<span class="chord">[C]</span>lujah, halle<span class="chord">[G//]</span>lu--- uu<span class="chord">[D//]</span> uuuh jah  <br/><br/><span class="chord">[G]</span> <span class="chord">[Em]</span> <span class="chord">[G]</span> <span class="chord">[Em]</span>  <br/><br/>Your <span class="chord">[G]</span> faith was strong but you <span class="chord">[Em]</span> needed proof,    <br/>You <span class="chord">[G]</span> saw her bathing <span class="chord">[Em]</span> on the roof,   <br/>Her <span class="chord">[C]</span> beauty and the <span class="chord">[D]</span> moonlight over- <span class="chord">[G]</span> threw ya, <span class="chord">[D]</span> ... <br/>She <span class="chord">[G]</span> tied you to her <span class="chord">[C//]</span> kitchen <span class="chord">[D//]</span> chair,   <br/>She <span class="chord">[Em]</span> broke your throne and she <span class="chord">[C]</span> cut your hair,   <br/>And <span class="chord">[D]</span> from your lips she <span class="chord">[Bm]</span> drew the halle<span class="chord">[Em]</span>lujah, <span class="chord">[Em]</span> ...  <br/><br/>Halle<span class="chord">[C]</span>lujah, halle<span class="chord">[Em]</span>lujah,    <br/>halle<span class="chord">[C]</span>lujah, halle<span class="chord">[G//]</span>lu--- uu<span class="chord">[D//]</span> uuuh jah  <br/><br/><span class="chord">[G]</span> <span class="chord">[Em]</span> <span class="chord">[G]</span> <span class="chord">[Em]</span>  <br/><br/>May <span class="chord">[G]</span>be there is a <span class="chord">[Em]</span> God above,   <br/>But <span class="chord">[G]</span> all I ever <span class="chord">[Em]</span> learned from love,   <br/>Was <span class="chord">[C]</span> how to shoot at <span class="chord">[D]</span> someone who out- <span class="chord">[G]</span> drew ya. <span class="chord">[D]</span>  ... <br/>And it's <span class="chord">[G]</span> not a cry you can <span class="chord">[C//]</span> hear at <span class="chord">[D//]</span> night,   <br/>It's not <span class="chord">[Em]</span> somebody who's <span class="chord">[C]</span> seen the light,   <br/>It's a <span class="chord">[D]</span> cold and it's a <span class="chord">[Bm]</span> broken halle- <span class="chord">[Em]</span> lujah,  <span class="chord">[Em]</span> ...  <br/><br/>Halle<span class="chord">[C]</span>lujah, halle<span class="chord">[Em]</span>lujah,    <br/>halle<span class="chord">[C]</span>lujah, halle<span class="chord">[G//]</span>lu--- uu<span class="chord">[D//]</span> uuuh jah  <br/><br/><span class="chord">[G]</span> <span class="chord">[Em]</span> <span class="chord">[G]</span> <span class="chord">[Em]</span>  <br/><br/>I <span class="chord">[G]</span>  did my best, it  <span class="chord">[Em]</span>  wasn’t much,   <br/>I <span class="chord">[G]</span>  couldn’t feel so I  <span class="chord">[Em]</span>  tried to touch,   <br/>I’ve <span class="chord">[C]</span>  told the truth, I <span class="chord">[D]</span>  didn’t come to  <span class="chord">[G]</span>  fool <span class="chord">[D]</span>  ya.   <br/>And <span class="chord">[G]</span>  even though it <span class="chord">[C//]</span>  all went <span class="chord">[D//]</span>  wrong,  <br/>I’ll <span class="chord">[Em]</span>  stand before the  <span class="chord">[C]</span>  Lord of Song,   <br/>With <span class="chord">[D]</span>  nothing on my  <span class="chord">[Bm]</span>  tongue but  halle- <span class="chord">[Em]</span>  lujah,  <span class="chord">[Em]</span> ...   <br/><br/>Halle<span class="chord">[C]</span>lujah, halle<span class="chord">[Em]</span>lujah,    <br/>halle<span class="chord">[C]</span>lujah, halle<span class="chord">[G//]</span>lu-uu-<span class="chord">[D//]</span>-uuuh jah <span class="chord">[G/]</span><br/>
+			</div>
+			<hr/>
+			<div id="options" class="mt-4">
+				<a href="songs.html"><strong>← Back</strong></a>
+				 
+			</div>
+
+			
+					
+			<div class="m-2 my-4 text-center">
+				<img src="/images/qrcode.png" class="img-fluid" alt="QR Code" width="100">
+			</div>
+
+		</div>
 
     </div>
 </div>

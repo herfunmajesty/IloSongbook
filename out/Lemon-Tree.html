@@ -12,9 +12,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <style>
-        .highlight {background-color: lemonchiffon; font-weight: bold;}
+        .highlight {background-color: lemonchiffon; font-weight: bold;} 
         .chord { font-weight: bold; color:red}
-        #tab { font-size: 80%; font-family: Verdana, Tahoma, sans-serif; }
+        #tab { font-size: 90%; font-family: Verdana, Tahoma, sans-serif; }
         #options a {text-decoration: underline;}
         .sticky { 
             position: fixed; 
@@ -62,7 +62,6 @@
 		}
 		.custom-text-h3 {
 			font-family: 'Montserrat', sans-serif;
-			
 			font-size: 2rem
 		}
 		.custom-text-h4 {
@@ -78,101 +77,116 @@
 			font-family: 'Montserrat', sans-serif;
 			font-weight: 200;
 		}
+		.ultra-light2 {
+			font-family: 'Montserrat', sans-serif;
+			font-weight: 200;
+			font-size: 1.1rem
+		}
 
 		.semi-bold {
 			font-family: 'Montserrat', sans-serif;
 			font-weight: 600;
 		}
+		.moj-element {
+			background-image: linear-gradient(to bottom, rgba(189, 32, 40, 0.4), rgba(189, 32, 40, 0.2));
+		}
+		.my-watermark {
+			background-image: url('../images/back_30.png');
+			background-position: right; /* lub background-position: 100%; */
+			background-size: contain;
+			background-repeat: no-repeat;
+			pointer-events: none; 
+		}
+		
+		
     </style>
 
 </head>
 <body data-duration = 4.0>
-
-
-<header class="container">
-    <div class="m-2 mb-4 text-center">
-        <img src="/images/ukulele-krakow.PNG" class="img-fluid" alt="Krakow Ukulele" width="200">
-    </div>
-</header>
+<!-- nie ma headera - czy tak w ogłe wolno? -->
 
 <div class="container">
-    <div class="row justify-content-center">
-        
-<div class="col-lg-8 col-md-10 col-sm-12 my-3">
-	
-
-    <h3 class="song-title semi-bold">
-	  #94 - Lemon Tree
-    </h3>
-    <h4 class="song-artist custom-text-h4">
-        Fools Garden
-    </h4>
-
-    <h5 class= custom-text-h5>
-        Level: 
-        <span class="badge rounded-pill badge-warning text-white">Medium</span>
-    </h5>
-    
-	    <div class="mt-3">
-		    <iframe src="https://open.spotify.com/embed/track/4fXGWiVhlOLdhwRDP6pIFG"
-				    width="300"
-				    height="80"
-				    frameborder="0"
-				    allowtransparency="true"
-				    allow="encrypted-media"></iframe>
-	    </div>
-    
-    
-
-   <div class="mt-4" style="overflow-x: auto;">
-    
-        <img src="chords/G.gif" alt="G" title="G" />
-    
-        <img src="chords/Am.gif" alt="Am" title="Am" />
-    
-        <img src="chords/D.gif" alt="D" title="D" />
-    
-        <img src="chords/C.gif" alt="C" title="C" />
-    
-        <img src="chords/A.gif" alt="A" title="A" />
-    
-        <img src="chords/Bm.gif" alt="Bm" title="Bm" />
-    
-        <img src="chords/B.gif" alt="B" title="B" />
-    
-        <img src="chords/Em.gif" alt="Em" title="Em" />
-    
-</div>
-		<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 5px; top: 10px;">
-		  Dev info? <input type="checkbox" class="checkbox">
-		</div>
-		<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px; display: none;">
-		  <p id="heightInfo" style="font-size: xx-small;"></p>
-		  <p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
-		  <p id="songDuration" style="font-size: xx-small;"></p>
-		</div>
-	<div id="floatingButton" style="position: fixed; right: 20px; bottom: 20px; ">
-		<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light toggle-button">
-			<img id="buttonImage" src="images/pause2.gif">
-		</button>
-	</div>
-    
-    <div id="tab">
-        <br/><br/><br/><br/><br/><br/>Intro: <span class="chord">[Em]</span> <span class="chord">[Bm]</span> <span class="chord">[Em]</span> <span class="chord">[Bm]</span> <span class="chord">[Am]</span> <span class="chord">[Bm]</span> <span class="chord">[Em]</span> (pause)<br/>         <br/><span class="chord">[Em]</span> I'm Sitting Here In A <span class="chord">[Bm]</span> Boring Room<br/><span class="chord">[Em]</span> It's Just Another Rainy Sunday <span class="chord">[Bm]</span> Afternoon<br/><span class="chord">[Em]</span> I'm Wasting My Time I Got <span class="chord">[Bm]</span> Nothing To Do<br/><span class="chord">[Em]</span> I'm Hanging Around I'm <span class="chord">[Bm]</span> Waiting For You<br/><span class="chord">[Am]</span> But Nothing Ever Happens <span class="chord">[Bm]</span> - And I <span class="chord">[Em]</span> Wonder (pause)<br/><br/><span class="chord">[Em]</span> I'm Driving Around <span class="chord">[Bm]</span> In My Car<br/><span class="chord">[Em]</span> I'm Driving Too Fast <span class="chord">[Bm]</span> I'm Driving Too Far<br/><span class="chord">[Em]</span> I'd Like To Change My <span class="chord">[Bm]</span> Point Of View<br/><span class="chord">[Em]</span> I Feel So Lonely I'm <span class="chord">[Bm]</span> Waiting For You<br/><span class="chord">[Am]</span> But Nothing Ever Happens <span class="chord">[Bm]</span> - And I <span class="chord">[Em]</span> Wonder (pause)<br/><br/>(Chorus:)<br/><span class="chord">[G]</span> I Wonder How I <span class="chord">[D]</span> Wonder Why<br/><span class="chord">[Em]</span> Yesterday You Told Me 'bout The <span class="chord">[Bm]</span> Blue Blue Sky<br/><span class="chord">[C]</span> And All That I Can <span class="chord">[D]</span> See Is Just A Yellow <span class="chord">[G]</span> Lemon-tree <span class="chord">[D]</span><br/><span class="chord">[G]</span> I'm Turning My Head <span class="chord">[D]</span> Up And Down<br/><span class="chord">[Em]</span> I'm Turning Turning Turning Turning <span class="chord">[Bm]</span> Turning Around<br/><span class="chord">[C]</span> And All That I Can <span class="chord">[A]</span> See Is Just A Yellow <span class="chord">[D]</span> Lemon-tree<br/><br/>(Bridge 1:)<br/><span class="chord">[Em]</span> dadada.... <span class="chord">[Bm]</span> <br/><span class="chord">[Em]</span> <span class="chord">[Bm]</span> <br/><span class="chord">[Am]</span> <span class="chord">[Bm]</span> <span class="chord">[Em]</span>  (pause)<br/><br/>(Verse 3:)<br/><span class="chord">[Em]</span> I'm Sitting Here I <span class="chord">[Bm]</span> Miss The Power<br/><span class="chord">[Em]</span> I'd Like To Go Out <span class="chord">[Bm]</span> Taking A Shower<br/><span class="chord">[Em]</span> But There's A Heavy Cloud <span class="chord">[Bm]</span> Inside My Head<br/><span class="chord">[Em]</span> I Feel So Tired Put Myself <span class="chord">[Bm]</span> Into Bed<br/><span class="chord">[Am]</span> Where Nothing Ever Happens <span class="chord">[Bm]</span> - And I <span class="chord">[Em]</span> Wonder (pause)<br/><br/>(Bridge 2:)<br/><span class="chord">[B]</span> Isolation - <span class="chord">[Em]</span> Is Not Good For Me<br/><span class="chord">[D]</span> Isolation - <span class="chord">[G]</span> I Don't Want To <span class="chord">[B/]</span> (pause) <br/>Sit On A Lemon-tree<br/><br/><span class="chord">[Em]</span> I'm Steppin' Around In <span class="chord">[Bm]</span> A Desert Of Joy<br/><span class="chord">[Em]</span> Baby Anyhow I'll Get <span class="chord">[Bm]</span> Another Toy<br/><span class="chord">[Am]</span> And Everything Will Happen <span class="chord">[Bm]</span> - And You'll <span class="chord">[Em]</span> Wonder (pause)<br/><br/>(Chorus:)<br/><span class="chord">[G]</span> I Wonder How I <span class="chord">[D]</span> Wonder Why<br/><span class="chord">[Em]</span> Yesterday You Told Me 'bout The <span class="chord">[Bm]</span> Blue Blue Sky<br/><span class="chord">[C]</span> And All That I Can <span class="chord">[D]</span> See Is Just A Yellow <span class="chord">[G]</span> Lemon-tree <span class="chord">[D]</span><br/><span class="chord">[G]</span> I'm Turning My Head <span class="chord">[D]</span> Up And Down<br/><span class="chord">[Em]</span> I'm Turning Turning Turning Turning <span class="chord">[Bm]</span> Turning Around<br/><span class="chord">[C]</span> And All That I Can <span class="chord">[D]</span> See Is Just A <span class="chord">[G]</span> Yellow Lemon-tree<br/><br/><span class="chord">[D]</span> And I wonder I wonder<br/><br/><span class="chord">[G]</span> I Wonder How I <span class="chord">[D]</span> Wonder Why                               <br/><span class="chord">[Em]</span> Yesterday You Told Me 'bout The <span class="chord">[Bm]</span>  Blue Blue Sky<br/><br/><span class="chord">[C]</span> And All That I Can <span class="chord">[D]</span> See<br/><span class="chord">[C]</span> And All That I Can <span class="chord">[D/]</span> See (pause)<br/><span class="chord">[C]</span> And All That I Can <span class="chord">[D/]</span> See (pause)<br/>              <br/>Is Just A Yellow <span class="chord">[G/]</span> Lemon-tree.    
-    </div>
-
-    <div id="options" class="mt-4">
-        <a href="songs.html"><strong>← Back</strong></a>
-         
-    </div>
-
-    <hr/>
+    <div class="row justify-content-center">      
+		<div class="col-lg-8 col-md-10 col-sm-12 my-3">
+			<div class="shadow p-3 mb-5 bg-body rounded my-watermark">
+				<h3 class="song-title semi-bold">
+					#94 - Lemon Tree
+				</h3>
+				<h5 class="song-artist ultra-light ">
+					Fools Garden
+				</h5>
 			
-    <div class="m-2 my-4 text-center">
-        <img src="/images/qrcode.png" class="img-fluid" alt="QR Code" width="100">
-    </div>
+				<h5 class= ultra-light >
+					Level: 
+					<span class="badge rounded-pill badge-warning text-white">Medium</span>					
+				</h5>				
+			
+			</div>
+			
+				<div class="mt-3">							
+					<iframe style="border-radius:12px" 
+							src="https://open.spotify.com/embed/track/4fXGWiVhlOLdhwRDP6pIFG"
+							width="300px" 
+							height="80" 
+							frameBorder="0" 
+							allowfullscreen="" 
+							allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+							loading="lazy">
+					</iframe>
+				</div>
+			
+			
+				<div class="mt-4" style="overflow-x: auto;">
+					
+						<img src="chords/A.gif" alt="A" title="A" />
+					
+						<img src="chords/Am.gif" alt="Am" title="Am" />
+					
+						<img src="chords/B.gif" alt="B" title="B" />
+					
+						<img src="chords/Bm.gif" alt="Bm" title="Bm" />
+					
+						<img src="chords/C.gif" alt="C" title="C" />
+					
+						<img src="chords/D.gif" alt="D" title="D" />
+					
+						<img src="chords/Em.gif" alt="Em" title="Em" />
+					
+						<img src="chords/G.gif" alt="G" title="G" />
+					
+				
+				</div>
+				<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 5px; top: 10px;">
+				  Dev info? <input type="checkbox" class="checkbox">
+				</div>
+				<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px; display: none;">
+				  <p id="heightInfo" style="font-size: xx-small;"></p>
+				  <p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
+				  <p id="songDuration" style="font-size: xx-small;"></p>
+				</div>
+				<div id="floatingButton" style="position: fixed; right: 20px; bottom: 20px; ">
+					<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light toggle-button">
+						<img id="buttonImage" src="images/pause2.gif">
+					</button>
+				</div>
 
-</div>
+			
+			<div id="tab">
+				<br/><br/><br/><br/><br/><br/>Intro: <span class="chord">[Em]</span> <span class="chord">[Bm]</span> <span class="chord">[Em]</span> <span class="chord">[Bm]</span> <span class="chord">[Am]</span> <span class="chord">[Bm]</span> <span class="chord">[Em]</span> (pause)<br/>         <br/><span class="chord">[Em]</span> I'm Sitting Here In A <span class="chord">[Bm]</span> Boring Room<br/><span class="chord">[Em]</span> It's Just Another Rainy Sunday <span class="chord">[Bm]</span> Afternoon<br/><span class="chord">[Em]</span> I'm Wasting My Time I Got <span class="chord">[Bm]</span> Nothing To Do<br/><span class="chord">[Em]</span> I'm Hanging Around I'm <span class="chord">[Bm]</span> Waiting For You<br/><span class="chord">[Am]</span> But Nothing Ever Happens <span class="chord">[Bm]</span> - And I <span class="chord">[Em]</span> Wonder (pause)<br/><br/><span class="chord">[Em]</span> I'm Driving Around <span class="chord">[Bm]</span> In My Car<br/><span class="chord">[Em]</span> I'm Driving Too Fast <span class="chord">[Bm]</span> I'm Driving Too Far<br/><span class="chord">[Em]</span> I'd Like To Change My <span class="chord">[Bm]</span> Point Of View<br/><span class="chord">[Em]</span> I Feel So Lonely I'm <span class="chord">[Bm]</span> Waiting For You<br/><span class="chord">[Am]</span> But Nothing Ever Happens <span class="chord">[Bm]</span> - And I <span class="chord">[Em]</span> Wonder (pause)<br/><br/>(Chorus:)<br/><span class="chord">[G]</span> I Wonder How I <span class="chord">[D]</span> Wonder Why<br/><span class="chord">[Em]</span> Yesterday You Told Me 'bout The <span class="chord">[Bm]</span> Blue Blue Sky<br/><span class="chord">[C]</span> And All That I Can <span class="chord">[D]</span> See Is Just A Yellow <span class="chord">[G]</span> Lemon-tree <span class="chord">[D]</span><br/><span class="chord">[G]</span> I'm Turning My Head <span class="chord">[D]</span> Up And Down<br/><span class="chord">[Em]</span> I'm Turning Turning Turning Turning <span class="chord">[Bm]</span> Turning Around<br/><span class="chord">[C]</span> And All That I Can <span class="chord">[A]</span> See Is Just A Yellow <span class="chord">[D]</span> Lemon-tree<br/><br/>(Bridge 1:)<br/><span class="chord">[Em]</span> dadada.... <span class="chord">[Bm]</span> <br/><span class="chord">[Em]</span> <span class="chord">[Bm]</span> <br/><span class="chord">[Am]</span> <span class="chord">[Bm]</span> <span class="chord">[Em]</span>  (pause)<br/><br/>(Verse 3:)<br/><span class="chord">[Em]</span> I'm Sitting Here I <span class="chord">[Bm]</span> Miss The Power<br/><span class="chord">[Em]</span> I'd Like To Go Out <span class="chord">[Bm]</span> Taking A Shower<br/><span class="chord">[Em]</span> But There's A Heavy Cloud <span class="chord">[Bm]</span> Inside My Head<br/><span class="chord">[Em]</span> I Feel So Tired Put Myself <span class="chord">[Bm]</span> Into Bed<br/><span class="chord">[Am]</span> Where Nothing Ever Happens <span class="chord">[Bm]</span> - And I <span class="chord">[Em]</span> Wonder (pause)<br/><br/>(Bridge 2:)<br/><span class="chord">[B]</span> Isolation - <span class="chord">[Em]</span> Is Not Good For Me<br/><span class="chord">[D]</span> Isolation - <span class="chord">[G]</span> I Don't Want To <span class="chord">[B/]</span> (pause) <br/>Sit On A Lemon-tree<br/><br/><span class="chord">[Em]</span> I'm Steppin' Around In <span class="chord">[Bm]</span> A Desert Of Joy<br/><span class="chord">[Em]</span> Baby Anyhow I'll Get <span class="chord">[Bm]</span> Another Toy<br/><span class="chord">[Am]</span> And Everything Will Happen <span class="chord">[Bm]</span> - And You'll <span class="chord">[Em]</span> Wonder (pause)<br/><br/>(Chorus:)<br/><span class="chord">[G]</span> I Wonder How I <span class="chord">[D]</span> Wonder Why<br/><span class="chord">[Em]</span> Yesterday You Told Me 'bout The <span class="chord">[Bm]</span> Blue Blue Sky<br/><span class="chord">[C]</span> And All That I Can <span class="chord">[D]</span> See Is Just A Yellow <span class="chord">[G]</span> Lemon-tree <span class="chord">[D]</span><br/><span class="chord">[G]</span> I'm Turning My Head <span class="chord">[D]</span> Up And Down<br/><span class="chord">[Em]</span> I'm Turning Turning Turning Turning <span class="chord">[Bm]</span> Turning Around<br/><span class="chord">[C]</span> And All That I Can <span class="chord">[D]</span> See Is Just A <span class="chord">[G]</span> Yellow Lemon-tree<br/><br/><span class="chord">[D]</span> And I wonder I wonder<br/><br/><span class="chord">[G]</span> I Wonder How I <span class="chord">[D]</span> Wonder Why                               <br/><span class="chord">[Em]</span> Yesterday You Told Me 'bout The <span class="chord">[Bm]</span>  Blue Blue Sky<br/><br/><span class="chord">[C]</span> And All That I Can <span class="chord">[D]</span> See<br/><span class="chord">[C]</span> And All That I Can <span class="chord">[D/]</span> See (pause)<br/><span class="chord">[C]</span> And All That I Can <span class="chord">[D/]</span> See (pause)<br/>              <br/>Is Just A Yellow <span class="chord">[G/]</span> Lemon-tree.    
+			</div>
+			<hr/>
+			<div id="options" class="mt-4">
+				<a href="songs.html"><strong>← Back</strong></a>
+				 
+			</div>
+
+			
+					
+			<div class="m-2 my-4 text-center">
+				<img src="/images/qrcode.png" class="img-fluid" alt="QR Code" width="100">
+			</div>
+
+		</div>
 
     </div>
 </div>

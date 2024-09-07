@@ -12,9 +12,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <style>
-        .highlight {background-color: lemonchiffon; font-weight: bold;}
+        .highlight {background-color: lemonchiffon; font-weight: bold;} 
         .chord { font-weight: bold; color:red}
-        #tab { font-size: 80%; font-family: Verdana, Tahoma, sans-serif; }
+        #tab { font-size: 90%; font-family: Verdana, Tahoma, sans-serif; }
         #options a {text-decoration: underline;}
         .sticky { 
             position: fixed; 
@@ -62,7 +62,6 @@
 		}
 		.custom-text-h3 {
 			font-family: 'Montserrat', sans-serif;
-			
 			font-size: 2rem
 		}
 		.custom-text-h4 {
@@ -78,93 +77,108 @@
 			font-family: 'Montserrat', sans-serif;
 			font-weight: 200;
 		}
+		.ultra-light2 {
+			font-family: 'Montserrat', sans-serif;
+			font-weight: 200;
+			font-size: 1.1rem
+		}
 
 		.semi-bold {
 			font-family: 'Montserrat', sans-serif;
 			font-weight: 600;
 		}
+		.moj-element {
+			background-image: linear-gradient(to bottom, rgba(189, 32, 40, 0.4), rgba(189, 32, 40, 0.2));
+		}
+		.my-watermark {
+			background-image: url('../images/back_30.png');
+			background-position: right; /* lub background-position: 100%; */
+			background-size: contain;
+			background-repeat: no-repeat;
+			pointer-events: none; 
+		}
+		
+		
     </style>
 
 </head>
 <body data-duration = 4.0>
-
-
-<header class="container">
-    <div class="m-2 mb-4 text-center">
-        <img src="/images/ukulele-krakow.PNG" class="img-fluid" alt="Krakow Ukulele" width="200">
-    </div>
-</header>
+<!-- nie ma headera - czy tak w ogłe wolno? -->
 
 <div class="container">
-    <div class="row justify-content-center">
-        
-<div class="col-lg-8 col-md-10 col-sm-12 my-3">
-	
-
-    <h3 class="song-title semi-bold">
-	  #64 - Highway To Hell
-    </h3>
-    <h4 class="song-artist custom-text-h4">
-        AC/DC
-    </h4>
-
-    <h5 class= custom-text-h5>
-        Level: 
-        <span class="badge rounded-pill badge-warning text-white">Medium</span>
-    </h5>
-    
-	    <div class="mt-3">
-		    <iframe src="https://open.spotify.com/embed/track/2zYzyRzz6pRmhPzyfMEC8s"
-				    width="300"
-				    height="80"
-				    frameborder="0"
-				    allowtransparency="true"
-				    allow="encrypted-media"></iframe>
-	    </div>
-    
-    
-
-   <div class="mt-4" style="overflow-x: auto;">
-    
-        <img src="chords/E7.gif" alt="E7" title="E7" />
-    
-        <img src="chords/D.gif" alt="D" title="D" />
-    
-        <img src="chords/G.gif" alt="G" title="G" />
-    
-        <img src="chords/A.gif" alt="A" title="A" />
-    
-</div>
-		<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 5px; top: 10px;">
-		  Dev info? <input type="checkbox" class="checkbox">
-		</div>
-		<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px; display: none;">
-		  <p id="heightInfo" style="font-size: xx-small;"></p>
-		  <p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
-		  <p id="songDuration" style="font-size: xx-small;"></p>
-		</div>
-	<div id="floatingButton" style="position: fixed; right: 20px; bottom: 20px; ">
-		<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light toggle-button">
-			<img id="buttonImage" src="images/pause2.gif">
-		</button>
-	</div>
-    
-    <div id="tab">
-        <br/><br/><br/><br/><br/>info:<br/>* the line from intro can be repeated through the verses<br/><br/><i>(intro)</i><br/><span class="chord">[A/]</span><span class="chord">[A/]</span><span class="chord">[A/]</span>.. <span class="chord">[D//]</span><span class="chord">[G/]</span>.. <span class="chord">[D//]</span><span class="chord">[G/]</span> <span class="chord">[D//]</span><span class="chord">[G/]</span> <span class="chord">[D/]</span><span class="chord">[A//]</span> <b>x2</b><br/><br/><i>(verse)</i><br/><span class="chord">[A]</span>Living easy, <span class="chord">[D]</span>livin' free<br/><span class="chord">[D]</span>Season ticket on a <span class="chord">[A]</span>one way ride<br/><span class="chord">[A]</span>Asking nothing, <span class="chord">[D]</span>leave me be<br/><span class="chord">[D]</span>Taking everything <span class="chord">[A]</span>in my stride<br/><span class="chord">[A]</span>Don't need reason, <span class="chord">[D]</span>don't need rhyme<br/><span class="chord">[D]</span>Ain't nothin' that I’d <span class="chord">[A]</span>rather do<br/><span class="chord">[A]</span>Going down, <span class="chord">[D]</span>party time<br/><span class="chord">[D]</span>My friends are gonna <span class="chord">[E7]</span>be there too<br/><br/><i>(chorus)</i><br/><span class="chord">[E7]</span>(Down-Down)<br/>I'm on the <span class="chord">[A]</span>highway to <span class="chord">[D//]</span>hell <span class="chord">[G/]</span><span class="chord">[D/]</span><br/>On the <span class="chord">[A]</span>highway to <span class="chord">[D//]</span>hell <span class="chord">[G/]</span><span class="chord">[D/]</span><br/><span class="chord">[A]</span>Highway to <span class="chord">[D//]</span>hell <span class="chord">[G/]</span><span class="chord">[D/]</span><br/>I'm on the <span class="chord">[A]</span>highway to <span class="chord">[D]</span>hell<br/>(<strong><span class="chord">[stop]</span></strong> 1..2..3..4..)<br/><br/><i>(verse)</i><br/><span class="chord">[A]</span>No stop signs, <span class="chord">[D]</span>speed limit<br/><span class="chord">[D]</span>Nobody's gonna <span class="chord">[A]</span>slow me down<br/><span class="chord">[A]</span>Like a wheel, <span class="chord">[D]</span>gonna spin it<br/><span class="chord">[D]</span>Nobody's gonna <span class="chord">[A]</span>mess me 'round<br/><span class="chord">[A]</span>Hey, satan! <span class="chord">[D]</span>Paid my dues<br/><span class="chord">[D]</span>Playin' in a <span class="chord">[A]</span>rockin' band<br/><span class="chord">[A]</span>Hey mama! <span class="chord">[D]</span>Look at me<br/><span class="chord">[D]</span>I'm on my way to the <span class="chord">[E7]</span>promised land<br/><br/><i>(chorus)</i><br/><span class="chord">[E7]</span>(Down-Down)<br/>I'm on the <span class="chord">[A]</span>highway to <span class="chord">[D//]</span> hell <span class="chord">[G/]</span><span class="chord">[D/]</span><br/>On the <span class="chord">[A]</span>highway to <span class="chord">[D//]</span>hell <span class="chord">[G/]</span><span class="chord">[D/]</span><br/><span class="chord">[A]</span>Highway to <span class="chord">[D//]</span>hell <span class="chord">[G/]</span><span class="chord">[D/]</span><br/>I'm on the <span class="chord">[A]</span>highway to <span class="chord">[D]</span>hell<br/><br/><span class="chord">[A]</span>... <span class="chord">[D//]</span><span class="chord">[G/]</span><span class="chord">[D/]</span><br/><span class="chord">[A]</span>... <span class="chord">[D//]</span><span class="chord">[G/]</span><span class="chord">[D/]</span><br/><br/>I'm on the <span class="chord">[A]</span>highway to <span class="chord">[D//]</span>hell <span class="chord">[G/]</span><span class="chord">[D/]</span><br/>I'm on the <span class="chord">[A]</span>highway to <span class="chord">[D//]</span>hell <span class="chord">[G/]</span><span class="chord">[D/]</span><br/>I'm on the <span class="chord">[A]</span>highway to <span class="chord">[D//]</span>hell <span class="chord">[G/]</span><span class="chord">[D/]</span><br/>On the <span class="chord">[A]</span>highway to <span class="chord">[D/]</span><strong><span class="chord">[stop]</span></strong><br/>( 1..2..)<br/><br/><span class="chord">[A]</span>Highway to <span class="chord">[D//]</span>hell- <b><i>I'm on the<span class="chord">[G/]</span>highway<span class="chord">[D/]</span>  to hell</b></i><br/><span class="chord">[A]</span>Highway to <span class="chord">[D//]</span>hell <span class="chord">[G/]</span><span class="chord">[D/]</span><br/><span class="chord">[A]</span>Highway to <span class="chord">[D//]</span>hell <span class="chord">[G/]</span><span class="chord">[D/]</span><br/><span class="chord">[A]</span>Highway to <span class="chord">[D/]</span>hell<br/><br/><i>(no chords)</i><br/>Yeah I'm going down <br/>all the way<br/><br/>I'm on the highway to hell <span class="chord">[A/]</span>
-    </div>
-
-    <div id="options" class="mt-4">
-        <a href="songs.html"><strong>← Back</strong></a>
-         
-    </div>
-
-    <hr/>
+    <div class="row justify-content-center">      
+		<div class="col-lg-8 col-md-10 col-sm-12 my-3">
+			<div class="shadow p-3 mb-5 bg-body rounded my-watermark">
+				<h3 class="song-title semi-bold">
+					#64 - Highway To Hell
+				</h3>
+				<h5 class="song-artist ultra-light ">
+					AC/DC
+				</h5>
 			
-    <div class="m-2 my-4 text-center">
-        <img src="/images/qrcode.png" class="img-fluid" alt="QR Code" width="100">
-    </div>
+				<h5 class= ultra-light >
+					Level: 
+					<span class="badge rounded-pill badge-warning text-white">Medium</span>					
+				</h5>				
+			
+			</div>
+			
+				<div class="mt-3">							
+					<iframe style="border-radius:12px" 
+							src="https://open.spotify.com/embed/track/2zYzyRzz6pRmhPzyfMEC8s"
+							width="300px" 
+							height="80" 
+							frameBorder="0" 
+							allowfullscreen="" 
+							allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+							loading="lazy">
+					</iframe>
+				</div>
+			
+			
+				<div class="mt-4" style="overflow-x: auto;">
+					
+						<img src="chords/A.gif" alt="A" title="A" />
+					
+						<img src="chords/D.gif" alt="D" title="D" />
+					
+						<img src="chords/E7.gif" alt="E7" title="E7" />
+					
+						<img src="chords/G.gif" alt="G" title="G" />
+					
+				
+				</div>
+				<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 5px; top: 10px;">
+				  Dev info? <input type="checkbox" class="checkbox">
+				</div>
+				<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px; display: none;">
+				  <p id="heightInfo" style="font-size: xx-small;"></p>
+				  <p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
+				  <p id="songDuration" style="font-size: xx-small;"></p>
+				</div>
+				<div id="floatingButton" style="position: fixed; right: 20px; bottom: 20px; ">
+					<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light toggle-button">
+						<img id="buttonImage" src="images/pause2.gif">
+					</button>
+				</div>
 
-</div>
+			
+			<div id="tab">
+				<br/><br/><br/><br/><br/>info:<br/>* the line from intro can be repeated through the verses<br/><br/><i>(intro)</i><br/><span class="chord">[A/]</span><span class="chord">[A/]</span><span class="chord">[A/]</span>.. <span class="chord">[D//]</span><span class="chord">[G/]</span>.. <span class="chord">[D//]</span><span class="chord">[G/]</span> <span class="chord">[D//]</span><span class="chord">[G/]</span> <span class="chord">[D/]</span><span class="chord">[A//]</span> <b>x2</b><br/><br/><i>(verse)</i><br/><span class="chord">[A]</span>Living easy, <span class="chord">[D]</span>livin' free<br/><span class="chord">[D]</span>Season ticket on a <span class="chord">[A]</span>one way ride<br/><span class="chord">[A]</span>Asking nothing, <span class="chord">[D]</span>leave me be<br/><span class="chord">[D]</span>Taking everything <span class="chord">[A]</span>in my stride<br/><span class="chord">[A]</span>Don't need reason, <span class="chord">[D]</span>don't need rhyme<br/><span class="chord">[D]</span>Ain't nothin' that I’d <span class="chord">[A]</span>rather do<br/><span class="chord">[A]</span>Going down, <span class="chord">[D]</span>party time<br/><span class="chord">[D]</span>My friends are gonna <span class="chord">[E7]</span>be there too<br/><br/><i>(chorus)</i><br/><span class="chord">[E7]</span>(Down-Down)<br/>I'm on the <span class="chord">[A]</span>highway to <span class="chord">[D//]</span>hell <span class="chord">[G/]</span><span class="chord">[D/]</span><br/>On the <span class="chord">[A]</span>highway to <span class="chord">[D//]</span>hell <span class="chord">[G/]</span><span class="chord">[D/]</span><br/><span class="chord">[A]</span>Highway to <span class="chord">[D//]</span>hell <span class="chord">[G/]</span><span class="chord">[D/]</span><br/>I'm on the <span class="chord">[A]</span>highway to <span class="chord">[D]</span>hell<br/>(<strong><span class="chord">[stop]</span></strong> 1..2..3..4..)<br/><br/><i>(verse)</i><br/><span class="chord">[A]</span>No stop signs, <span class="chord">[D]</span>speed limit<br/><span class="chord">[D]</span>Nobody's gonna <span class="chord">[A]</span>slow me down<br/><span class="chord">[A]</span>Like a wheel, <span class="chord">[D]</span>gonna spin it<br/><span class="chord">[D]</span>Nobody's gonna <span class="chord">[A]</span>mess me 'round<br/><span class="chord">[A]</span>Hey, satan! <span class="chord">[D]</span>Paid my dues<br/><span class="chord">[D]</span>Playin' in a <span class="chord">[A]</span>rockin' band<br/><span class="chord">[A]</span>Hey mama! <span class="chord">[D]</span>Look at me<br/><span class="chord">[D]</span>I'm on my way to the <span class="chord">[E7]</span>promised land<br/><br/><i>(chorus)</i><br/><span class="chord">[E7]</span>(Down-Down)<br/>I'm on the <span class="chord">[A]</span>highway to <span class="chord">[D//]</span> hell <span class="chord">[G/]</span><span class="chord">[D/]</span><br/>On the <span class="chord">[A]</span>highway to <span class="chord">[D//]</span>hell <span class="chord">[G/]</span><span class="chord">[D/]</span><br/><span class="chord">[A]</span>Highway to <span class="chord">[D//]</span>hell <span class="chord">[G/]</span><span class="chord">[D/]</span><br/>I'm on the <span class="chord">[A]</span>highway to <span class="chord">[D]</span>hell<br/><br/><span class="chord">[A]</span>... <span class="chord">[D//]</span><span class="chord">[G/]</span><span class="chord">[D/]</span><br/><span class="chord">[A]</span>... <span class="chord">[D//]</span><span class="chord">[G/]</span><span class="chord">[D/]</span><br/><br/>I'm on the <span class="chord">[A]</span>highway to <span class="chord">[D//]</span>hell <span class="chord">[G/]</span><span class="chord">[D/]</span><br/>I'm on the <span class="chord">[A]</span>highway to <span class="chord">[D//]</span>hell <span class="chord">[G/]</span><span class="chord">[D/]</span><br/>I'm on the <span class="chord">[A]</span>highway to <span class="chord">[D//]</span>hell <span class="chord">[G/]</span><span class="chord">[D/]</span><br/>On the <span class="chord">[A]</span>highway to <span class="chord">[D/]</span><strong><span class="chord">[stop]</span></strong><br/>( 1..2..)<br/><br/><span class="chord">[A]</span>Highway to <span class="chord">[D//]</span>hell- <b><i>I'm on the<span class="chord">[G/]</span>highway<span class="chord">[D/]</span>  to hell</b></i><br/><span class="chord">[A]</span>Highway to <span class="chord">[D//]</span>hell <span class="chord">[G/]</span><span class="chord">[D/]</span><br/><span class="chord">[A]</span>Highway to <span class="chord">[D//]</span>hell <span class="chord">[G/]</span><span class="chord">[D/]</span><br/><span class="chord">[A]</span>Highway to <span class="chord">[D/]</span>hell<br/><br/><i>(no chords)</i><br/>Yeah I'm going down <br/>all the way<br/><br/>I'm on the highway to hell <span class="chord">[A/]</span>
+			</div>
+			<hr/>
+			<div id="options" class="mt-4">
+				<a href="songs.html"><strong>← Back</strong></a>
+				 
+			</div>
+
+			
+					
+			<div class="m-2 my-4 text-center">
+				<img src="/images/qrcode.png" class="img-fluid" alt="QR Code" width="100">
+			</div>
+
+		</div>
 
     </div>
 </div>

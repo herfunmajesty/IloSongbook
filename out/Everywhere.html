@@ -12,9 +12,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <style>
-        .highlight {background-color: lemonchiffon; font-weight: bold;}
+        .highlight {background-color: lemonchiffon; font-weight: bold;} 
         .chord { font-weight: bold; color:red}
-        #tab { font-size: 80%; font-family: Verdana, Tahoma, sans-serif; }
+        #tab { font-size: 90%; font-family: Verdana, Tahoma, sans-serif; }
         #options a {text-decoration: underline;}
         .sticky { 
             position: fixed; 
@@ -62,7 +62,6 @@
 		}
 		.custom-text-h3 {
 			font-family: 'Montserrat', sans-serif;
-			
 			font-size: 2rem
 		}
 		.custom-text-h4 {
@@ -78,93 +77,108 @@
 			font-family: 'Montserrat', sans-serif;
 			font-weight: 200;
 		}
+		.ultra-light2 {
+			font-family: 'Montserrat', sans-serif;
+			font-weight: 200;
+			font-size: 1.1rem
+		}
 
 		.semi-bold {
 			font-family: 'Montserrat', sans-serif;
 			font-weight: 600;
 		}
+		.moj-element {
+			background-image: linear-gradient(to bottom, rgba(189, 32, 40, 0.4), rgba(189, 32, 40, 0.2));
+		}
+		.my-watermark {
+			background-image: url('../images/back_30.png');
+			background-position: right; /* lub background-position: 100%; */
+			background-size: contain;
+			background-repeat: no-repeat;
+			pointer-events: none; 
+		}
+		
+		
     </style>
 
 </head>
-<body data-duration = 3.5>
-
-
-<header class="container">
-    <div class="m-2 mb-4 text-center">
-        <img src="/images/ukulele-krakow.PNG" class="img-fluid" alt="Krakow Ukulele" width="200">
-    </div>
-</header>
+<body data-duration = 4.0>
+<!-- nie ma headera - czy tak w ogłe wolno? -->
 
 <div class="container">
-    <div class="row justify-content-center">
-        
-<div class="col-lg-8 col-md-10 col-sm-12 my-3">
-	
-
-    <h3 class="song-title semi-bold">
-	  #47 - Everywhere
-    </h3>
-    <h4 class="song-artist custom-text-h4">
-        Fleetwood Mac
-    </h4>
-
-    <h5 class= custom-text-h5>
-        Level: 
-        <span class="badge rounded-pill badge-success text-white">Easy</span>
-    </h5>
-    
-	    <div class="mt-3">
-		    <iframe src="https://open.spotify.com/embed/track/1prZ0pr6XoRCxcrC3MCL0M"
-				    width="300"
-				    height="80"
-				    frameborder="0"
-				    allowtransparency="true"
-				    allow="encrypted-media"></iframe>
-	    </div>
-    
-    
-
-   <div class="mt-4" style="overflow-x: auto;">
-    
-        <img src="chords/Bb.gif" alt="Bb" title="Bb" />
-    
-        <img src="chords/F.gif" alt="F" title="F" />
-    
-        <img src="chords/C.gif" alt="C" title="C" />
-    
-        <img src="chords/Dm.gif" alt="Dm" title="Dm" />
-    
-</div>
-		<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 5px; top: 10px;">
-		  Dev info? <input type="checkbox" class="checkbox">
-		</div>
-		<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px; display: none;">
-		  <p id="heightInfo" style="font-size: xx-small;"></p>
-		  <p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
-		  <p id="songDuration" style="font-size: xx-small;"></p>
-		</div>
-	<div id="floatingButton" style="position: fixed; right: 20px; bottom: 20px; ">
-		<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light toggle-button">
-			<img id="buttonImage" src="images/pause2.gif">
-		</button>
-	</div>
-    
-    <div id="tab">
-        <br/><br/><br/><br/><br/><br/><br/><i>(intro)</i><br/><span class="chord">[F]</span> … <span class="chord">[C]</span> …  <span class="chord">[F]</span> … <span class="chord">[C]</span> … <br/><span class="chord">[F]</span> … <span class="chord">[C]</span> …  <span class="chord">[Dm]</span> … <span class="chord">[Bb]</span> …<br/><br/> <i>(verse)</i><br/><span class="chord">[F]</span> Can you hear me <span class="chord">[C]</span> calling<br/><span class="chord">[F]</span> Out your <span class="chord">[C]</span> name?<br/><span class="chord">[F]</span> You know that I'm <span class="chord">[C]</span> falling<br/>And I <span class="chord">[Dm]</span> don't know what to <span class="chord">[Bb]</span> say<br/><span class="chord">[F]</span> I'll speak a little <span class="chord">[C]</span> louder<br/><span class="chord">[F]</span> I'll even <span class="chord">[C]</span> shout<br/><span class="chord">[F]</span> You know that I'm <span class="chord">[C]</span> proud<br/> And I can't <span class="chord">[Dm]</span> get the words <span class="chord">[Bb]</span> out<br/><br/><i>(chorus)</i><br/><span class="chord">[C]</span> Oh, I <span class="chord">[Dm]</span> … <span class="chord">[Bb]</span> … <span class="chord">[C]</span> … <br/><span class="chord">[Dm]</span>  I want to <span class="chord">[C]</span> be with you <span class="chord">[Bb]</span> everywhere <span class="chord">[C]</span> <br/><span class="chord">[C]</span> Oh, I <span class="chord">[Dm]</span> … <span class="chord">[Bb]</span> … <span class="chord">[C]</span> … <br/><span class="chord">[Dm]</span>  I want to <span class="chord">[C]</span> be with you <span class="chord">[Bb]</span> everywhere <span class="chord">[C]</span> <br/>(Wanna be with you everywhere)<br/><br/><i>(verse)</i><br/><span class="chord">[F]</span> Something's <span class="chord">[C]</span> happening<br/><span class="chord">[F]</span> Happening to <span class="chord">[C]</span> me<br/><span class="chord">[F]</span> My friends <span class="chord">[C]</span> say I'm acting <span class="chord">[Dm]</span> peculiarly <span class="chord">[Bb]</span> <br/><span class="chord">[F]</span> Come on, <span class="chord">[C]</span> baby<br/><span class="chord">[F]</span> We better make a <span class="chord">[C]</span> start<br/><span class="chord">[F]</span> You better make it <span class="chord">[C]</span> soon<br/>Before you <span class="chord">[Dm]</span> break my heart <span class="chord">[Bb]</span> <br/><br/><i>(chorus)</i><br/><span class="chord">[C]</span> Oh, I <span class="chord">[Dm]</span> … <span class="chord">[Bb]</span> … <span class="chord">[C]</span> … <br/><span class="chord">[Dm]</span>  I want to <span class="chord">[C]</span> be with you <span class="chord">[Bb]</span> everywhere <span class="chord">[C]</span> <br/><span class="chord">[C]</span> Oh, I <span class="chord">[Dm]</span> … <span class="chord">[Bb]</span> … <span class="chord">[C]</span> … <br/><span class="chord">[Dm]</span>  I want to <span class="chord">[C]</span> be with you <span class="chord">[Bb]</span> everywhere <span class="chord">[C]</span> <br/>(Wanna be with you everywhere)<br/><br/> <i>(verse)</i><br/><span class="chord">[F]</span> Can you hear me <span class="chord">[C]</span> calling<br/><span class="chord">[F]</span> Out your <span class="chord">[C]</span> name?<br/><span class="chord">[F]</span> You know that I'm <span class="chord">[C]</span> falling<br/>And I <span class="chord">[Dm]</span> don't know what to <span class="chord">[Bb]</span> say<br/><span class="chord">[F]</span> I'll speak a little <span class="chord">[C]</span> louder<br/><span class="chord">[F]</span> I'll even <span class="chord">[C]</span> shout<br/><span class="chord">[F]</span> You know that I'm <span class="chord">[C]</span> proud<br/> And I can't <span class="chord">[Dm]</span> get the words <span class="chord">[Bb]</span> out<br/><br/><i>(chorus)</i><br/><span class="chord">[C]</span> Oh, I <span class="chord">[Dm]</span> … <span class="chord">[Bb]</span> … <span class="chord">[C]</span> … <br/><span class="chord">[Dm]</span>  I want to <span class="chord">[C]</span> be with you <span class="chord">[Bb]</span> everywhere <span class="chord">[C]</span> <br/><span class="chord">[C]</span> Oh, I <span class="chord">[Dm]</span> … <span class="chord">[Bb]</span> … <span class="chord">[C]</span> … <br/><span class="chord">[Dm]</span>  I want to <span class="chord">[C]</span> be with you <span class="chord">[Bb]</span> everywhere <span class="chord">[C]</span> <br/><span class="chord">[C]</span> Oh, I <span class="chord">[Dm]</span> … <span class="chord">[Bb]</span> … <span class="chord">[C]</span> … <br/><span class="chord">[Dm]</span>  I want to <span class="chord">[C]</span> be with you <span class="chord">[Bb]</span> everywhere <span class="chord">[C]</span> <br/><span class="chord">[C]</span> Oh, I <span class="chord">[Dm]</span> … <span class="chord">[Bb]</span> … <span class="chord">[C]</span> … <br/><span class="chord">[Dm]</span>  I want to <span class="chord">[C]</span> be with you <span class="chord">[Bb]</span> everywhere <span class="chord">[C]</span> <br/>(Wanna be with you everywhere)<br/><span class="chord">[F/]</span> 
-    </div>
-
-    <div id="options" class="mt-4">
-        <a href="songs.html"><strong>← Back</strong></a>
-         
-    </div>
-
-    <hr/>
+    <div class="row justify-content-center">      
+		<div class="col-lg-8 col-md-10 col-sm-12 my-3">
+			<div class="shadow p-3 mb-5 bg-body rounded my-watermark">
+				<h3 class="song-title semi-bold">
+					#47 - Everywhere
+				</h3>
+				<h5 class="song-artist ultra-light ">
+					Fleetwood Mac
+				</h5>
 			
-    <div class="m-2 my-4 text-center">
-        <img src="/images/qrcode.png" class="img-fluid" alt="QR Code" width="100">
-    </div>
+				<h5 class= ultra-light >
+					Level: 
+					<span class="badge rounded-pill badge-warning text-white">Easy</span>					
+				</h5>				
+			
+			</div>
+			
+				<div class="mt-3">							
+					<iframe style="border-radius:12px" 
+							src="https://open.spotify.com/embed/track/1prZ0pr6XoRCxcrC3MCL0M"
+							width="300px" 
+							height="80" 
+							frameBorder="0" 
+							allowfullscreen="" 
+							allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+							loading="lazy">
+					</iframe>
+				</div>
+			
+			
+				<div class="mt-4" style="overflow-x: auto;">
+					
+						<img src="chords/Bb.gif" alt="Bb" title="Bb" />
+					
+						<img src="chords/C.gif" alt="C" title="C" />
+					
+						<img src="chords/Dm.gif" alt="Dm" title="Dm" />
+					
+						<img src="chords/F.gif" alt="F" title="F" />
+					
+				
+				</div>
+				<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 5px; top: 10px;">
+				  Dev info? <input type="checkbox" class="checkbox">
+				</div>
+				<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px; display: none;">
+				  <p id="heightInfo" style="font-size: xx-small;"></p>
+				  <p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
+				  <p id="songDuration" style="font-size: xx-small;"></p>
+				</div>
+				<div id="floatingButton" style="position: fixed; right: 20px; bottom: 20px; ">
+					<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light toggle-button">
+						<img id="buttonImage" src="images/pause2.gif">
+					</button>
+				</div>
 
-</div>
+			
+			<div id="tab">
+				<br/><br/><br/><br/><br/><br/><br/><i>(intro)</i><br/><span class="chord">[F]</span> … <span class="chord">[C]</span> …  <span class="chord">[F]</span> … <span class="chord">[C]</span> … <br/><span class="chord">[F]</span> … <span class="chord">[C]</span> …  <span class="chord">[Dm]</span> … <span class="chord">[Bb]</span> …<br/><br/> <i>(verse)</i><br/><span class="chord">[F]</span> Can you hear me <span class="chord">[C]</span> calling<br/><span class="chord">[F]</span> Out your <span class="chord">[C]</span> name?<br/><span class="chord">[F]</span> You know that I'm <span class="chord">[C]</span> falling<br/>And I <span class="chord">[Dm]</span> don't know what to <span class="chord">[Bb]</span> say<br/><span class="chord">[F]</span> I'll speak a little <span class="chord">[C]</span> louder<br/><span class="chord">[F]</span> I'll even <span class="chord">[C]</span> shout<br/><span class="chord">[F]</span> You know that I'm <span class="chord">[C]</span> proud<br/> And I can't <span class="chord">[Dm]</span> get the words <span class="chord">[Bb]</span> out<br/><br/><i>(chorus)</i><br/><span class="chord">[C]</span> Oh, I <span class="chord">[Dm]</span> … <span class="chord">[Bb]</span> … <span class="chord">[C]</span> … <br/><span class="chord">[Dm]</span>  I want to <span class="chord">[C]</span> be with you <span class="chord">[Bb]</span> everywhere <span class="chord">[C]</span> <br/><span class="chord">[C]</span> Oh, I <span class="chord">[Dm]</span> … <span class="chord">[Bb]</span> … <span class="chord">[C]</span> … <br/><span class="chord">[Dm]</span>  I want to <span class="chord">[C]</span> be with you <span class="chord">[Bb]</span> everywhere <span class="chord">[C]</span> <br/>(Wanna be with you everywhere)<br/><br/><i>(verse)</i><br/><span class="chord">[F]</span> Something's <span class="chord">[C]</span> happening<br/><span class="chord">[F]</span> Happening to <span class="chord">[C]</span> me<br/><span class="chord">[F]</span> My friends <span class="chord">[C]</span> say I'm acting <span class="chord">[Dm]</span> peculiarly <span class="chord">[Bb]</span> <br/><span class="chord">[F]</span> Come on, <span class="chord">[C]</span> baby<br/><span class="chord">[F]</span> We better make a <span class="chord">[C]</span> start<br/><span class="chord">[F]</span> You better make it <span class="chord">[C]</span> soon<br/>Before you <span class="chord">[Dm]</span> break my heart <span class="chord">[Bb]</span> <br/><br/><i>(chorus)</i><br/><span class="chord">[C]</span> Oh, I <span class="chord">[Dm]</span> … <span class="chord">[Bb]</span> … <span class="chord">[C]</span> … <br/><span class="chord">[Dm]</span>  I want to <span class="chord">[C]</span> be with you <span class="chord">[Bb]</span> everywhere <span class="chord">[C]</span> <br/><span class="chord">[C]</span> Oh, I <span class="chord">[Dm]</span> … <span class="chord">[Bb]</span> … <span class="chord">[C]</span> … <br/><span class="chord">[Dm]</span>  I want to <span class="chord">[C]</span> be with you <span class="chord">[Bb]</span> everywhere <span class="chord">[C]</span> <br/>(Wanna be with you everywhere)<br/><br/> <i>(verse)</i><br/><span class="chord">[F]</span> Can you hear me <span class="chord">[C]</span> calling<br/><span class="chord">[F]</span> Out your <span class="chord">[C]</span> name?<br/><span class="chord">[F]</span> You know that I'm <span class="chord">[C]</span> falling<br/>And I <span class="chord">[Dm]</span> don't know what to <span class="chord">[Bb]</span> say<br/><span class="chord">[F]</span> I'll speak a little <span class="chord">[C]</span> louder<br/><span class="chord">[F]</span> I'll even <span class="chord">[C]</span> shout<br/><span class="chord">[F]</span> You know that I'm <span class="chord">[C]</span> proud<br/> And I can't <span class="chord">[Dm]</span> get the words <span class="chord">[Bb]</span> out<br/><br/><i>(chorus)</i><br/><span class="chord">[C]</span> Oh, I <span class="chord">[Dm]</span> … <span class="chord">[Bb]</span> … <span class="chord">[C]</span> … <br/><span class="chord">[Dm]</span>  I want to <span class="chord">[C]</span> be with you <span class="chord">[Bb]</span> everywhere <span class="chord">[C]</span> <br/><span class="chord">[C]</span> Oh, I <span class="chord">[Dm]</span> … <span class="chord">[Bb]</span> … <span class="chord">[C]</span> … <br/><span class="chord">[Dm]</span>  I want to <span class="chord">[C]</span> be with you <span class="chord">[Bb]</span> everywhere <span class="chord">[C]</span> <br/><span class="chord">[C]</span> Oh, I <span class="chord">[Dm]</span> … <span class="chord">[Bb]</span> … <span class="chord">[C]</span> … <br/><span class="chord">[Dm]</span>  I want to <span class="chord">[C]</span> be with you <span class="chord">[Bb]</span> everywhere <span class="chord">[C]</span> <br/><span class="chord">[C]</span> Oh, I <span class="chord">[Dm]</span> … <span class="chord">[Bb]</span> … <span class="chord">[C]</span> … <br/><span class="chord">[Dm]</span>  I want to <span class="chord">[C]</span> be with you <span class="chord">[Bb]</span> everywhere <span class="chord">[C]</span> <br/>(Wanna be with you everywhere)<br/><span class="chord">[F/]</span> 
+			</div>
+			<hr/>
+			<div id="options" class="mt-4">
+				<a href="songs.html"><strong>← Back</strong></a>
+				 
+			</div>
+
+			
+					
+			<div class="m-2 my-4 text-center">
+				<img src="/images/qrcode.png" class="img-fluid" alt="QR Code" width="100">
+			</div>
+
+		</div>
 
     </div>
 </div>

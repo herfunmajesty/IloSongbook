@@ -12,9 +12,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <style>
-        .highlight {background-color: lemonchiffon; font-weight: bold;}
+        .highlight {background-color: lemonchiffon; font-weight: bold;} 
         .chord { font-weight: bold; color:red}
-        #tab { font-size: 80%; font-family: Verdana, Tahoma, sans-serif; }
+        #tab { font-size: 90%; font-family: Verdana, Tahoma, sans-serif; }
         #options a {text-decoration: underline;}
         .sticky { 
             position: fixed; 
@@ -62,7 +62,6 @@
 		}
 		.custom-text-h3 {
 			font-family: 'Montserrat', sans-serif;
-			
 			font-size: 2rem
 		}
 		.custom-text-h4 {
@@ -78,95 +77,110 @@
 			font-family: 'Montserrat', sans-serif;
 			font-weight: 200;
 		}
+		.ultra-light2 {
+			font-family: 'Montserrat', sans-serif;
+			font-weight: 200;
+			font-size: 1.1rem
+		}
 
 		.semi-bold {
 			font-family: 'Montserrat', sans-serif;
 			font-weight: 600;
 		}
+		.moj-element {
+			background-image: linear-gradient(to bottom, rgba(189, 32, 40, 0.4), rgba(189, 32, 40, 0.2));
+		}
+		.my-watermark {
+			background-image: url('../images/back_30.png');
+			background-position: right; /* lub background-position: 100%; */
+			background-size: contain;
+			background-repeat: no-repeat;
+			pointer-events: none; 
+		}
+		
+		
     </style>
 
 </head>
 <body data-duration = 4.0>
-
-
-<header class="container">
-    <div class="m-2 mb-4 text-center">
-        <img src="/images/ukulele-krakow.PNG" class="img-fluid" alt="Krakow Ukulele" width="200">
-    </div>
-</header>
+<!-- nie ma headera - czy tak w ogłe wolno? -->
 
 <div class="container">
-    <div class="row justify-content-center">
-        
-<div class="col-lg-8 col-md-10 col-sm-12 my-3">
-	
-
-    <h3 class="song-title semi-bold">
-	  #28 - 🔥Can't Stop
-    </h3>
-    <h4 class="song-artist custom-text-h4">
-        Red Hot Chili Peppers
-    </h4>
-
-    <h5 class= custom-text-h5>
-        Level: 
-        <span class="badge rounded-pill badge-warning text-white">Medium</span>
-    </h5>
-    
-	    <div class="mt-3">
-		    <iframe src="https://open.spotify.com/embed/track/3ZOEytgrvLwQaqXreDs2Jx"
-				    width="300"
-				    height="80"
-				    frameborder="0"
-				    allowtransparency="true"
-				    allow="encrypted-media"></iframe>
-	    </div>
-    
-    
-
-   <div class="mt-4" style="overflow-x: auto;">
-    
-        <img src="chords/G.gif" alt="G" title="G" />
-    
-        <img src="chords/D.gif" alt="D" title="D" />
-    
-        <img src="chords/C.gif" alt="C" title="C" />
-    
-        <img src="chords/Bm.gif" alt="Bm" title="Bm" />
-    
-        <img src="chords/Em.gif" alt="Em" title="Em" />
-    
-</div>
-		<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 5px; top: 10px;">
-		  Dev info? <input type="checkbox" class="checkbox">
-		</div>
-		<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px; display: none;">
-		  <p id="heightInfo" style="font-size: xx-small;"></p>
-		  <p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
-		  <p id="songDuration" style="font-size: xx-small;"></p>
-		</div>
-	<div id="floatingButton" style="position: fixed; right: 20px; bottom: 20px; ">
-		<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light toggle-button">
-			<img id="buttonImage" src="images/pause2.gif">
-		</button>
-	</div>
-    
-    <div id="tab">
-          <br/>  <br/><br/><br/><br/><span class="fw-bold fs-5"><br/>4 beats per chord<br/></span><br/><br/>RIFF 1<br/><pre><br/>A|-------------------------|<br/>E|-------------------------|<br/>C|-2-4--2-4--2-4--2-4--2-4-|<br/>G|-------------------------|<br/></pre><br/><br/>RIFF 2<br/><pre><br/>A|---5-7-------5-7---------|--5-7-------5-7----------|<br/>E|-------------------------|-------------------------|<br/>C|-4----4-4-4-----4-4-4-2--|------2-2-2-----2-2-2----|<br/>G|-------------------------|----------------------4--|<br/><br/>A|--5-7-------5-7----------|--5-7-------5-7----------|<br/>E|-------------------------|-------------------------|<br/>C|----------------------2--|------0-0-0-----0-0-0-4--|<br/>G|------4-4-4-----4-4-4----|-------------------------|<br/></pre><br/><br/><hr/><br/><br/>Intro:<br/>(1, 2, 3, 4)<br/><br/><span class="chord">[riff 1]</span> x6<br/><br/><span class="chord">[riff 2]</span> x1<br/><br/><span class="chord">[Em]</span> Can't stop addicted to the shindig<br/><span class="chord">[D]</span> Chop top he says I'm gonna win big<br/><span class="chord">[Bm]</span> Choose not a life of imitation<br/><span class="chord">[C]</span> Distant cousin to the reservation<br/><br/><span class="chord">[Em]</span> Defunct the pistol that you pay for<br/><span class="chord">[D]</span> This punk the feeling that you stay for<br/><span class="chord">[Bm]</span> In time I want to be your best friend<br/><span class="chord">[C]</span> Eastside love is living on the westend <br/><br/><span class="chord">[Em]</span> Knocked out but boy you better come to<br/><span class="chord">[D]</span> Don't die you know the truth as some do<br/><span class="chord">[Bm]</span> Go write your message on the pavement<br/><span class="chord">[C]</span> Burn so bright I wonder what the wave meant<br/><br/><span class="chord">[Em]</span> White heat is screaming in the jungle<br/><span class="chord">[D]</span> Complete the motion if you stumble<br/><span class="chord">[Bm]</span> Go ask the dust for any answers<br/><span class="chord">[C]</span> Come back strong with 50 belly dancers <br/><br/>The <span class="chord">[G//]</span> world I love<br/>The <span class="chord">[D//]</span> tears I've dropped<br/>To <span class="chord">[Bm//]</span> be part of<br/>the <span class="chord">[C//]</span> wave can't stop<br/><span class="chord">[G//]</span> Ever <span class="chord">[D//]</span> wonder <br/>if <span class="chord">[Bm//]</span> it's all for <span class="chord">[C//]</span> you<br/><br/>The <span class="chord">[G//]</span> world I love<br/>The <span class="chord">[D//]</span> trains I hop<br/>To <span class="chord">[Bm//]</span> be part of<br/>The <span class="chord">[C//]</span> wave can't stop<br/><span class="chord">[G//]</span> Come and tell <span class="chord">[D//]</span> me <br/>when it's <span class="chord">[Bm/]</span> time <span class="chord">[C/]</span> to <br/>(3, 4)<br/><br/><span class="chord">[Em]</span> Sweetheart is bleeding in the snowcone<br/><span class="chord">[D]</span> So smart she's leading me to ozone<br/><span class="chord">[Bm]</span> Music the great communicator<br/><span class="chord">[C]</span> Use two sticks to make it in the nature<br/><br/><span class="chord">[Em]</span> I'll get you into penetration<br/><span class="chord">[D]</span> The gender of a generation<br/><span class="chord">[Bm]</span> The birth of every other nation<br/><span class="chord">[C]</span> Worth your weight the gold of meditation<br/><br/><span class="chord">[Em]</span> This chapter's going to be a close one<br/><span class="chord">[D]</span> Smoke rings I know you're going to blow one<br/><span class="chord">[Bm]</span> All on a spaceship persevering<br/><span class="chord">[C]</span> Use my hands for everything but steering<br/><br/><span class="chord">[Em]</span> Can't stop the spirits when they need you<br/><span class="chord">[D]</span> Mop tops are happy when they feed you<br/><span class="chord">[Bm]</span> Jay butterfly is in the treetop<br/><span class="chord">[C]</span> Birds that blow the meaning into bebop  <br/><br/>The <span class="chord">[G//]</span> world I love<br/>The <span class="chord">[D//]</span> tears I've dropped<br/>To <span class="chord">[Bm//]</span> be part of<br/>the <span class="chord">[C//]</span> wave can't stop<br/><span class="chord">[G//]</span> Ever <span class="chord">[D//]</span> wonder <br/>if <span class="chord">[Bm//]</span> it's all for <span class="chord">[C//]</span> you<br/><br/>The <span class="chord">[G//]</span> world I love<br/>The <span class="chord">[D//]</span> trains I hop<br/>To <span class="chord">[Bm//]</span> be part of<br/>The <span class="chord">[C//]</span> wave can't stop<br/><span class="chord">[G//]</span> Come and tell <span class="chord">[D//]</span> me <br/>when it's <span class="chord">[Bm/]</span> time <span class="chord">[C/]</span> to <br/>(3, 4)<br/><br/><span class="chord">[Em]</span> Wait a minute I'm <span class="chord">[D]</span> passing out, <br/>win or <span class="chord">[Bm]</span> lose, just like <span class="chord">[C]</span> you<br/><span class="chord">[Em]</span> Far more shockin' than <span class="chord">[D]</span> anything <br/>I ever <span class="chord">[Bm]</span> knew, how 'bout <span class="chord">[C]</span> you<br/><br/><span class="chord">[Em]</span> Ten more reasons why <span class="chord">[D]</span> I need <br/>somebody <span class="chord">[Bm]</span> new, just like <span class="chord">[C]</span> you<br/><span class="chord">[Em]</span> Far more shockin' than <span class="chord">[D]</span> anything <br/>I ever <span class="chord">[Bm]</span> knew, right on <span class="chord">[C]</span> cue <br/><br/><span class="chord">[riff 2]</span><br/><span class="chord">[Em/]</span>... <span class="chord">[D/]</span>... <span class="chord">[Bm/]</span>... <span class="chord">[C/]</span><br/><br/><span class="chord">[Em]</span> Can't stop addicted to the shindig<br/><span class="chord">[D]</span> Chop top he says I'm gonna win big<br/><span class="chord">[Bm]</span> Choose not a life of imitation<br/><span class="chord">[C]</span> Distant cousin to the reservation<br/><br/><span class="chord">[Em]</span> Defunct the pistol that you pay for<br/><span class="chord">[D]</span> This punk the feeling that you stay for<br/><span class="chord">[Bm]</span> In time I want to be your best friend<br/><span class="chord">[C]</span> Eastside love is living on the westend<br/><br/><span class="chord">[Em]</span> Knocked out but boy you better come to<br/><span class="chord">[D]</span> Don't die you know the truth as some do<br/><span class="chord">[Bm]</span> Go write your message on the pavement<br/><span class="chord">[C]</span> Burn so bright I wonder what the wave meant<br/><br/><span class="chord">[Em]</span> Kick start the golden generator<br/><span class="chord">[D]</span> Sweet talk but don't intimidate her<br/><span class="chord">[Bm]</span> Can't stop the Gods from engineering<br/><span class="chord">[C]</span> Feel no need for any interfering<br/><br/><span class="chord">[Em]</span> Your image in the dictionary<br/><span class="chord">[D]</span> This life is more than ordinary<br/><span class="chord">[Bm]</span> Can I get 2 maybe even 3 of these<br/><span class="chord">[C]</span> Comin' from space to teach you of the Pliedes<br/><strong><span class="chord">[stop]</span></strong><br/><br/>Can't stop the spirits when they need you<br/>This life is more than just a read-thru  
-    </div>
-
-    <div id="options" class="mt-4">
-        <a href="songs.html"><strong>← Back</strong></a>
-         
-    </div>
-
-    <hr/>
+    <div class="row justify-content-center">      
+		<div class="col-lg-8 col-md-10 col-sm-12 my-3">
+			<div class="shadow p-3 mb-5 bg-body rounded my-watermark">
+				<h3 class="song-title semi-bold">
+					#28 - 🔥Can't Stop
+				</h3>
+				<h5 class="song-artist ultra-light ">
+					Red Hot Chili Peppers
+				</h5>
 			
-    <div class="m-2 my-4 text-center">
-        <img src="/images/qrcode.png" class="img-fluid" alt="QR Code" width="100">
-    </div>
+				<h5 class= ultra-light >
+					Level: 
+					<span class="badge rounded-pill badge-warning text-white">Medium</span>					
+				</h5>				
+			
+			</div>
+			
+				<div class="mt-3">							
+					<iframe style="border-radius:12px" 
+							src="https://open.spotify.com/embed/track/3ZOEytgrvLwQaqXreDs2Jx"
+							width="300px" 
+							height="80" 
+							frameBorder="0" 
+							allowfullscreen="" 
+							allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+							loading="lazy">
+					</iframe>
+				</div>
+			
+			
+				<div class="mt-4" style="overflow-x: auto;">
+					
+						<img src="chords/Bm.gif" alt="Bm" title="Bm" />
+					
+						<img src="chords/C.gif" alt="C" title="C" />
+					
+						<img src="chords/D.gif" alt="D" title="D" />
+					
+						<img src="chords/Em.gif" alt="Em" title="Em" />
+					
+						<img src="chords/G.gif" alt="G" title="G" />
+					
+				
+				</div>
+				<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 5px; top: 10px;">
+				  Dev info? <input type="checkbox" class="checkbox">
+				</div>
+				<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px; display: none;">
+				  <p id="heightInfo" style="font-size: xx-small;"></p>
+				  <p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
+				  <p id="songDuration" style="font-size: xx-small;"></p>
+				</div>
+				<div id="floatingButton" style="position: fixed; right: 20px; bottom: 20px; ">
+					<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light toggle-button">
+						<img id="buttonImage" src="images/pause2.gif">
+					</button>
+				</div>
 
-</div>
+			
+			<div id="tab">
+				  <br/>  <br/><br/><br/><br/><span class="fw-bold fs-5"><br/>4 beats per chord<br/></span><br/><br/>RIFF 1<br/><pre><br/>A|-------------------------|<br/>E|-------------------------|<br/>C|-2-4--2-4--2-4--2-4--2-4-|<br/>G|-------------------------|<br/></pre><br/><br/>RIFF 2<br/><pre><br/>A|---5-7-------5-7---------|--5-7-------5-7----------|<br/>E|-------------------------|-------------------------|<br/>C|-4----4-4-4-----4-4-4-2--|------2-2-2-----2-2-2----|<br/>G|-------------------------|----------------------4--|<br/><br/>A|--5-7-------5-7----------|--5-7-------5-7----------|<br/>E|-------------------------|-------------------------|<br/>C|----------------------2--|------0-0-0-----0-0-0-4--|<br/>G|------4-4-4-----4-4-4----|-------------------------|<br/></pre><br/><br/><hr/><br/><br/>Intro:<br/>(1, 2, 3, 4)<br/><br/><span class="chord">[riff 1]</span> x6<br/><br/><span class="chord">[riff 2]</span> x1<br/><br/><span class="chord">[Em]</span> Can't stop addicted to the shindig<br/><span class="chord">[D]</span> Chop top he says I'm gonna win big<br/><span class="chord">[Bm]</span> Choose not a life of imitation<br/><span class="chord">[C]</span> Distant cousin to the reservation<br/><br/><span class="chord">[Em]</span> Defunct the pistol that you pay for<br/><span class="chord">[D]</span> This punk the feeling that you stay for<br/><span class="chord">[Bm]</span> In time I want to be your best friend<br/><span class="chord">[C]</span> Eastside love is living on the westend <br/><br/><span class="chord">[Em]</span> Knocked out but boy you better come to<br/><span class="chord">[D]</span> Don't die you know the truth as some do<br/><span class="chord">[Bm]</span> Go write your message on the pavement<br/><span class="chord">[C]</span> Burn so bright I wonder what the wave meant<br/><br/><span class="chord">[Em]</span> White heat is screaming in the jungle<br/><span class="chord">[D]</span> Complete the motion if you stumble<br/><span class="chord">[Bm]</span> Go ask the dust for any answers<br/><span class="chord">[C]</span> Come back strong with 50 belly dancers <br/><br/>The <span class="chord">[G//]</span> world I love<br/>The <span class="chord">[D//]</span> tears I've dropped<br/>To <span class="chord">[Bm//]</span> be part of<br/>the <span class="chord">[C//]</span> wave can't stop<br/><span class="chord">[G//]</span> Ever <span class="chord">[D//]</span> wonder <br/>if <span class="chord">[Bm//]</span> it's all for <span class="chord">[C//]</span> you<br/><br/>The <span class="chord">[G//]</span> world I love<br/>The <span class="chord">[D//]</span> trains I hop<br/>To <span class="chord">[Bm//]</span> be part of<br/>The <span class="chord">[C//]</span> wave can't stop<br/><span class="chord">[G//]</span> Come and tell <span class="chord">[D//]</span> me <br/>when it's <span class="chord">[Bm/]</span> time <span class="chord">[C/]</span> to <br/>(3, 4)<br/><br/><span class="chord">[Em]</span> Sweetheart is bleeding in the snowcone<br/><span class="chord">[D]</span> So smart she's leading me to ozone<br/><span class="chord">[Bm]</span> Music the great communicator<br/><span class="chord">[C]</span> Use two sticks to make it in the nature<br/><br/><span class="chord">[Em]</span> I'll get you into penetration<br/><span class="chord">[D]</span> The gender of a generation<br/><span class="chord">[Bm]</span> The birth of every other nation<br/><span class="chord">[C]</span> Worth your weight the gold of meditation<br/><br/><span class="chord">[Em]</span> This chapter's going to be a close one<br/><span class="chord">[D]</span> Smoke rings I know you're going to blow one<br/><span class="chord">[Bm]</span> All on a spaceship persevering<br/><span class="chord">[C]</span> Use my hands for everything but steering<br/><br/><span class="chord">[Em]</span> Can't stop the spirits when they need you<br/><span class="chord">[D]</span> Mop tops are happy when they feed you<br/><span class="chord">[Bm]</span> Jay butterfly is in the treetop<br/><span class="chord">[C]</span> Birds that blow the meaning into bebop  <br/><br/>The <span class="chord">[G//]</span> world I love<br/>The <span class="chord">[D//]</span> tears I've dropped<br/>To <span class="chord">[Bm//]</span> be part of<br/>the <span class="chord">[C//]</span> wave can't stop<br/><span class="chord">[G//]</span> Ever <span class="chord">[D//]</span> wonder <br/>if <span class="chord">[Bm//]</span> it's all for <span class="chord">[C//]</span> you<br/><br/>The <span class="chord">[G//]</span> world I love<br/>The <span class="chord">[D//]</span> trains I hop<br/>To <span class="chord">[Bm//]</span> be part of<br/>The <span class="chord">[C//]</span> wave can't stop<br/><span class="chord">[G//]</span> Come and tell <span class="chord">[D//]</span> me <br/>when it's <span class="chord">[Bm/]</span> time <span class="chord">[C/]</span> to <br/>(3, 4)<br/><br/><span class="chord">[Em]</span> Wait a minute I'm <span class="chord">[D]</span> passing out, <br/>win or <span class="chord">[Bm]</span> lose, just like <span class="chord">[C]</span> you<br/><span class="chord">[Em]</span> Far more shockin' than <span class="chord">[D]</span> anything <br/>I ever <span class="chord">[Bm]</span> knew, how 'bout <span class="chord">[C]</span> you<br/><br/><span class="chord">[Em]</span> Ten more reasons why <span class="chord">[D]</span> I need <br/>somebody <span class="chord">[Bm]</span> new, just like <span class="chord">[C]</span> you<br/><span class="chord">[Em]</span> Far more shockin' than <span class="chord">[D]</span> anything <br/>I ever <span class="chord">[Bm]</span> knew, right on <span class="chord">[C]</span> cue <br/><br/><span class="chord">[riff 2]</span><br/><span class="chord">[Em/]</span>... <span class="chord">[D/]</span>... <span class="chord">[Bm/]</span>... <span class="chord">[C/]</span><br/><br/><span class="chord">[Em]</span> Can't stop addicted to the shindig<br/><span class="chord">[D]</span> Chop top he says I'm gonna win big<br/><span class="chord">[Bm]</span> Choose not a life of imitation<br/><span class="chord">[C]</span> Distant cousin to the reservation<br/><br/><span class="chord">[Em]</span> Defunct the pistol that you pay for<br/><span class="chord">[D]</span> This punk the feeling that you stay for<br/><span class="chord">[Bm]</span> In time I want to be your best friend<br/><span class="chord">[C]</span> Eastside love is living on the westend<br/><br/><span class="chord">[Em]</span> Knocked out but boy you better come to<br/><span class="chord">[D]</span> Don't die you know the truth as some do<br/><span class="chord">[Bm]</span> Go write your message on the pavement<br/><span class="chord">[C]</span> Burn so bright I wonder what the wave meant<br/><br/><span class="chord">[Em]</span> Kick start the golden generator<br/><span class="chord">[D]</span> Sweet talk but don't intimidate her<br/><span class="chord">[Bm]</span> Can't stop the Gods from engineering<br/><span class="chord">[C]</span> Feel no need for any interfering<br/><br/><span class="chord">[Em]</span> Your image in the dictionary<br/><span class="chord">[D]</span> This life is more than ordinary<br/><span class="chord">[Bm]</span> Can I get 2 maybe even 3 of these<br/><span class="chord">[C]</span> Comin' from space to teach you of the Pliedes<br/><strong><span class="chord">[stop]</span></strong><br/><br/>Can't stop the spirits when they need you<br/>This life is more than just a read-thru  
+			</div>
+			<hr/>
+			<div id="options" class="mt-4">
+				<a href="songs.html"><strong>← Back</strong></a>
+				 
+			</div>
+
+			
+					
+			<div class="m-2 my-4 text-center">
+				<img src="/images/qrcode.png" class="img-fluid" alt="QR Code" width="100">
+			</div>
+
+		</div>
 
     </div>
 </div>

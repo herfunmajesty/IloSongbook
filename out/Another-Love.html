@@ -12,9 +12,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <style>
-        .highlight {background-color: lemonchiffon; font-weight: bold;}
+        .highlight {background-color: lemonchiffon; font-weight: bold;} 
         .chord { font-weight: bold; color:red}
-        #tab { font-size: 80%; font-family: Verdana, Tahoma, sans-serif; }
+        #tab { font-size: 90%; font-family: Verdana, Tahoma, sans-serif; }
         #options a {text-decoration: underline;}
         .sticky { 
             position: fixed; 
@@ -62,7 +62,6 @@
 		}
 		.custom-text-h3 {
 			font-family: 'Montserrat', sans-serif;
-			
 			font-size: 2rem
 		}
 		.custom-text-h4 {
@@ -77,6 +76,7 @@
 		.ultra-light {
 			font-family: 'Montserrat', sans-serif;
 			font-weight: 200;
+		}
 		.ultra-light2 {
 			font-family: 'Montserrat', sans-serif;
 			font-weight: 200;
@@ -91,74 +91,76 @@
 			background-image: linear-gradient(to bottom, rgba(189, 32, 40, 0.4), rgba(189, 32, 40, 0.2));
 		}
 		.my-watermark {
-			background-image: url('../images/back_02.png');
+			background-image: url('../images/back_30.png');
 			background-position: right; /* lub background-position: 100%; */
 			background-size: contain;
 			background-repeat: no-repeat;
 			pointer-events: none; 
 		}
+		
+		
     </style>
 
 </head>
-<body data-duration = 4.3>
+<body data-duration = 4.0>
 <!-- nie ma headera - czy tak w ogłe wolno? -->
 
 <div class="container">
-    <div class="row justify-content-center">
+    <div class="row justify-content-center">      
 		<div class="col-lg-8 col-md-10 col-sm-12 my-3">
 			<div class="shadow p-3 mb-5 bg-body rounded my-watermark">
 				<h3 class="song-title semi-bold">
-				  #12 - Another Love
+					#12 - Another Love
 				</h3>
 				<h5 class="song-artist ultra-light ">
 					Tom Odell
-				</h4>
-
+				</h5>
+			
 				<h5 class= ultra-light >
 					Level: 
-					<span class="badge rounded-pill badge-success text-white">Easy</span>
-				</h5>
+					<span class="badge rounded-pill badge-warning text-white">Easy</span>					
+				</h5>				
+			
 			</div>
 			
 			
+				<div class="mt-4" style="overflow-x: auto;">
+					
+						<img src="chords/Bm.gif" alt="Bm" title="Bm" />
+					
+						<img src="chords/C.gif" alt="C" title="C" />
+					
+						<img src="chords/Em.gif" alt="Em" title="Em" />
+					
+						<img src="chords/G.gif" alt="G" title="G" />
+					
+				
+				</div>
+				<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 5px; top: 10px;">
+				  Dev info? <input type="checkbox" class="checkbox">
+				</div>
+				<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px; display: none;">
+				  <p id="heightInfo" style="font-size: xx-small;"></p>
+				  <p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
+				  <p id="songDuration" style="font-size: xx-small;"></p>
+				</div>
+				<div id="floatingButton" style="position: fixed; right: 20px; bottom: 20px; ">
+					<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light toggle-button">
+						<img id="buttonImage" src="images/pause2.gif">
+					</button>
+				</div>
 
-		    <div class="mt-4" style="overflow-x: auto;">
-			
-				<img src="chords/Em.gif" alt="Em" title="Em" />
-			
-				<img src="chords/Bm.gif" alt="Bm" title="Bm" />
-			
-				<img src="chords/C.gif" alt="C" title="C" />
-			
-				<img src="chords/G.gif" alt="G" title="G" />
-			
-			</div>
-			
-			<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 5px; top: 10px;">
-			  Dev info? <input type="checkbox" class="checkbox">
-			</div>
-			<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px; display: none;">
-			  <p id="heightInfo" style="font-size: xx-small;"></p>
-			  <p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
-			  <p id="songDuration" style="font-size: xx-small;"></p>
-			</div>
-			
-			<div id="floatingButton" style="position: fixed; right: 20px; bottom: 20px; ">
-				<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light toggle-button">
-					<img id="buttonImage" src="images/pause2.gif">
-				</button>
-			</div>
 			
 			<div id="tab">
 				<br/><br/><br/><br/><br/><br/>Intro:<br/><span class="chord">[Em//]</span> <span class="chord">[C//]</span> <span class="chord">[Em]</span>... <span class="chord">[Bm]</span>... <span class="chord">[C]</span>... <b>x2</b><br/><br/><span class="chord">[C]</span>...<span class="chord">[C]</span> <b>(quietly)</b><br/>I wanna take you <span class="chord">[Em/]</span>somewhere so you <span class="chord">[C/]</span>know I <span class="chord">[Em/]</span>care<br/>But it's so <span class="chord">[Bm/]</span> cold and I don't know <span class="chord">[C/]</span> where<br/>I brought you  <span class="chord">[Em/]</span> daffodils on a  <span class="chord">[C/]</span> pretty  <span class="chord">[Em/]</span> string<br/>But they won't  <span class="chord">[Bm/]</span> flower like they did last  <span class="chord">[C/]</span> spring<br/><br/>And I wanna  <span class="chord">[Em//]</span>  kiss you, make you   <span class="chord">[C//]</span>  feel al<span class="chord">[Em]</span>right<br/>I'm just so  <span class="chord">[Bm]</span>  tired to share my   <span class="chord">[C]</span> nights<br/>I wanna   <span class="chord">[Em//]</span>  cry and I   <span class="chord">[C//]</span>  wanna   <span class="chord">[Em]</span> love<br/>But all my   <span class="chord">[Bm]</span> tears have been used   <span class="chord">[C]</span>  up<br/><br/>On another love  <span class="chord">[G/]</span> , another love <span class="chord">[Em/]</span> <br/>All my  <span class="chord">[Bm/]</span> tears have been used  <span class="chord">[C/]</span> up<br/>On another love  <span class="chord">[G/]</span> , another love <span class="chord">[Em/]</span> <br/>All my  <span class="chord">[Bm/]</span> tears have been used  <span class="chord">[C/]</span> up<br/>On another love  <span class="chord">[G]</span> , another love <span class="chord">[Em]</span> <br/>All my  <span class="chord">[Bm]</span> tears have been used   <span class="chord">[C]</span> u-u-<span class="chord">[G]</span>-up<br/><br/><span class="chord">[Em]</span> ooo-<span class="chord">[Bm]</span>-oo-<span class="chord">[C]</span>-o<br/><br/><b>(bit louder)</b><br/><span class="chord">[Em//]</span> <span class="chord">[C//]</span> <span class="chord">[Em]</span>... <span class="chord">[Bm]</span>... <span class="chord">[C]</span>... <b>x2</b><br/><span class="chord">[C]</span>...<span class="chord">[C]</span><br/>And if somebody  <span class="chord">[Em//]</span> hurts you, I  <span class="chord">[C//]</span> wanna  <span class="chord">[Em]</span> fight<br/>But my hands been  <span class="chord">[Bm]</span> broken one too many <span class="chord">[C]</span> times<br/>So I'll use my  <span class="chord">[Em//]</span> voice, I'll be so  <span class="chord">[C//]</span> fucking  <span class="chord">[Em]</span> rude<br/>Words they always  <span class="chord">[Bm]</span> win, but I know I'll  <span class="chord">[C]</span> lose<br/><br/>And I'd sing a  <span class="chord">[Em//]</span> song, that'd  <span class="chord">[C//]</span> be just  <span class="chord">[Em]</span> ours<br/>But I sang 'em  <span class="chord">[Bm]</span> all to another  <span class="chord">[C]</span> heart<br/>And I wanna  <span class="chord">[Em//]</span> cry, I wanna  <span class="chord">[C//]</span> learn to  <span class="chord">[Em]</span> love<br/>But all my  <span class="chord">[Bm]</span> tears have been used  <span class="chord">[C]</span> up<br/><br/>On another love  <span class="chord">[G]</span> , another love <span class="chord">[Em]</span> <br/>All my  <span class="chord">[Bm]</span> tears have been used  <span class="chord">[C]</span> up<br/>On another love  <span class="chord">[G]</span> , another love <span class="chord">[Em]</span> <br/>All my  <span class="chord">[Bm]</span> tears have been used  <span class="chord">[C]</span> up<br/>On another love  <span class="chord">[G]</span> , another love <span class="chord">[Em]</span> <br/>All my  <span class="chord">[Bm]</span> tears have been used   <span class="chord">[C]</span> u-u-<span class="chord">[G]</span>-up<br/><br/><span class="chord">[Em]</span> ooo-<span class="chord">[Bm]</span>-oo-<span class="chord">[C]</span>-o<br/><br/><span class="chord">[Em//]</span> <span class="chord">[C//]</span> <span class="chord">[Em]</span>... <span class="chord">[Bm]</span>... <span class="chord">[C]</span>... <br/><span style="color:lightgrey"><span class="chord">[Em//]</span> (Oh, <span class="chord">[C//]</span> i need <span class="chord">[Em]</span> love now ... <span class="chord">[Bm]</span> My heart is thinking of)... <span class="chord">[C]</span>... </span><br/><br/><b>(louder)</b><br/>I wanna sing a  <span class="chord">[Em//]</span> song, that'd  <span class="chord">[C//]</span> be just  <span class="chord">[Em]</span> ours<br/>But I sang 'em  <span class="chord">[Bm]</span> all to another  <span class="chord">[C]</span> heart<br/>And I wanna  <span class="chord">[Em//]</span> cry, I wanna  <span class="chord">[C//]</span> fall in  <span class="chord">[Em]</span> love<br/>But all my  <span class="chord">[Bm]</span> tears have been used  <span class="chord">[C]</span> up<br/><br/>On another love  <span class="chord">[G]</span> , another love <span class="chord">[Em]</span> <br/>All my  <span class="chord">[Bm]</span> tears have been used  <span class="chord">[C]</span> up<br/>On another love  <span class="chord">[G]</span> , another love <span class="chord">[Em]</span> <br/>All my  <span class="chord">[Bm]</span> tears have been used  <span class="chord">[C]</span> UP<br/>On another love  <span class="chord">[G]</span> , another love <span class="chord">[Em]</span> <br/>All my  <span class="chord">[Bm]</span> tears have been used  <span class="chord">[C/]</span> u-u-<span class="chord">[G/]</span>-up<br/><br/><span class="chord">[Em/]</span> ooo-<span class="chord">[Bm/]</span>-oo-<span class="chord">[C/]</span>-o<br/>
 			</div>
-
+			<hr/>
 			<div id="options" class="mt-4">
 				<a href="songs.html"><strong>← Back</strong></a>
 				 
 			</div>
 
-			<hr/>
+			
 					
 			<div class="m-2 my-4 text-center">
 				<img src="/images/qrcode.png" class="img-fluid" alt="QR Code" width="100">

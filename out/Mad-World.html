@@ -12,9 +12,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <style>
-        .highlight {background-color: lemonchiffon; font-weight: bold;}
+        .highlight {background-color: lemonchiffon; font-weight: bold;} 
         .chord { font-weight: bold; color:red}
-        #tab { font-size: 80%; font-family: Verdana, Tahoma, sans-serif; }
+        #tab { font-size: 90%; font-family: Verdana, Tahoma, sans-serif; }
         #options a {text-decoration: underline;}
         .sticky { 
             position: fixed; 
@@ -62,7 +62,6 @@
 		}
 		.custom-text-h3 {
 			font-family: 'Montserrat', sans-serif;
-			
 			font-size: 2rem
 		}
 		.custom-text-h4 {
@@ -78,84 +77,96 @@
 			font-family: 'Montserrat', sans-serif;
 			font-weight: 200;
 		}
+		.ultra-light2 {
+			font-family: 'Montserrat', sans-serif;
+			font-weight: 200;
+			font-size: 1.1rem
+		}
 
 		.semi-bold {
 			font-family: 'Montserrat', sans-serif;
 			font-weight: 600;
 		}
+		.moj-element {
+			background-image: linear-gradient(to bottom, rgba(189, 32, 40, 0.4), rgba(189, 32, 40, 0.2));
+		}
+		.my-watermark {
+			background-image: url('../images/back_30.png');
+			background-position: right; /* lub background-position: 100%; */
+			background-size: contain;
+			background-repeat: no-repeat;
+			pointer-events: none; 
+		}
+		
+		
     </style>
 
 </head>
 <body data-duration = 4.0>
-
-
-<header class="container">
-    <div class="m-2 mb-4 text-center">
-        <img src="/images/ukulele-krakow.PNG" class="img-fluid" alt="Krakow Ukulele" width="200">
-    </div>
-</header>
+<!-- nie ma headera - czy tak w ogłe wolno? -->
 
 <div class="container">
-    <div class="row justify-content-center">
-        
-<div class="col-lg-8 col-md-10 col-sm-12 my-3">
-	
-
-    <h3 class="song-title semi-bold">
-	  #103 - Mad World
-    </h3>
-    <h4 class="song-artist custom-text-h4">
-        Gary Jules
-    </h4>
-
-    <h5 class= custom-text-h5>
-        Level: 
-        <span class="badge rounded-pill badge-success text-white">Easy</span>
-    </h5>
-    
-    
-
-   <div class="mt-4" style="overflow-x: auto;">
-    
-        <img src="chords/Em.gif" alt="Em" title="Em" />
-    
-        <img src="chords/D.gif" alt="D" title="D" />
-    
-        <img src="chords/G.gif" alt="G" title="G" />
-    
-        <img src="chords/A.gif" alt="A" title="A" />
-    
-</div>
-		<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 5px; top: 10px;">
-		  Dev info? <input type="checkbox" class="checkbox">
-		</div>
-		<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px; display: none;">
-		  <p id="heightInfo" style="font-size: xx-small;"></p>
-		  <p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
-		  <p id="songDuration" style="font-size: xx-small;"></p>
-		</div>
-	<div id="floatingButton" style="position: fixed; right: 20px; bottom: 20px; ">
-		<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light toggle-button">
-			<img id="buttonImage" src="images/pause2.gif">
-		</button>
-	</div>
-    
-    <div id="tab">
-          <br/>  <br/> <br/><br/>Intro:<br/><span class="chord">[Em]</span><br/><br/><span class="chord">[Em]</span> All around me are fa<span class="chord">[G]</span>miliar faces<br/><span class="chord">[D]</span>Worn out places... <span class="chord">[A]</span>worn out face-e-es<br/><span class="chord">[Em]</span> Bright and early for their <span class="chord">[G]</span>daily races<br/><span class="chord">[D]</span>Going nowhere... <span class="chord">[A]</span>going nowhe-e-ere<br/><br/><span class="chord">[Em]</span> Their tears are filling <span class="chord">[G]</span>up their glasses<br/><span class="chord">[D]</span>No expression... <span class="chord">[A]</span>no expressio-o-on<br/><span class="chord">[Em]</span> Hide my head I want to <span class="chord">[G]</span>drown my sorrow<br/><span class="chord">[D]</span>No tomorrow... <span class="chord">[A]</span>no tomorro-o-ow<br/><br/><span class="chord">[Em]</span> And I find it kinda <span class="chord">[A]</span>funny... I find it kinda <span class="chord">[Em]</span>sad<br/>The dreams in which I'm <span class="chord">[A]</span>dying are the best I've ever <span class="chord">[Em]</span>had<br/>I find it hard to <span class="chord">[A]</span>tell you... I find it hard to <span class="chord">[Em]</span>take<br/>When people run in <span class="chord">[A]</span>circles... it's a very very...<br/><br/><span class="chord">[Em]</span> Ma-a-a-ad <span class="chord">[A]</span>world<br/><span class="chord">[Em]</span> Ma-a-a-ad <span class="chord">[A]</span>world<br/><br/><span class="chord">[Em]</span> Children waiting for the <span class="chord">[G]</span>day they feel good<br/><span class="chord">[D]</span>Happy birthday... <span class="chord">[A]</span>happy birthda-a-ay<br/><span class="chord">[Em]</span> Made to feel the way that <span class="chord">[G]</span>every child should<br/><span class="chord">[D]</span>Sit and listen... <span class="chord">[A]</span>sit and liste-e-en<br/><br/><span class="chord">[Em]</span> Went to school and I was <span class="chord">[G]</span>very nervous<br/><span class="chord">[D]</span>No one knew me... <span class="chord">[A]</span>no one knew me-e-e<br/><span class="chord">[Em]</span> Hello teacher tell me <span class="chord">[G]</span>what's my lesson<br/><span class="chord">[D]</span>Look right through me... <span class="chord">[A]</span>look right through me-e-e<br/><br/><span class="chord">[Em]</span> And I find it kinda <span class="chord">[A]</span>funny... I find it kinda <span class="chord">[Em]</span>sad<br/>The dreams in which I'm <span class="chord">[A]</span>dying are the best I've ever <span class="chord">[Em]</span>had<br/>I find it hard to <span class="chord">[A]</span>tell you... I find it hard to <span class="chord">[Em]</span>take<br/>When people run in <span class="chord">[A]</span>circles... it's a very very...<br/><br/><span class="chord">[Em]</span> Ma-a-a-ad <span class="chord">[A]</span>world<br/><span class="chord">[Em]</span> Ma-a-a-ad <span class="chord">[A]</span>world<br/><span class="chord">[Em]</span> Enlarge your <span class="chord">[A]</span>world<br/><span class="chord">[Em]</span> Ma-a-a-ad <span class="chord">[A]</span>world <span class="chord">[Em/]</span>
-    </div>
-
-    <div id="options" class="mt-4">
-        <a href="songs.html"><strong>← Back</strong></a>
-         
-    </div>
-
-    <hr/>
+    <div class="row justify-content-center">      
+		<div class="col-lg-8 col-md-10 col-sm-12 my-3">
+			<div class="shadow p-3 mb-5 bg-body rounded my-watermark">
+				<h3 class="song-title semi-bold">
+					#103 - Mad World
+				</h3>
+				<h5 class="song-artist ultra-light ">
+					Gary Jules
+				</h5>
 			
-    <div class="m-2 my-4 text-center">
-        <img src="/images/qrcode.png" class="img-fluid" alt="QR Code" width="100">
-    </div>
+				<h5 class= ultra-light >
+					Level: 
+					<span class="badge rounded-pill badge-warning text-white">Easy</span>					
+				</h5>				
+			
+			</div>
+			
+			
+				<div class="mt-4" style="overflow-x: auto;">
+					
+						<img src="chords/A.gif" alt="A" title="A" />
+					
+						<img src="chords/D.gif" alt="D" title="D" />
+					
+						<img src="chords/Em.gif" alt="Em" title="Em" />
+					
+						<img src="chords/G.gif" alt="G" title="G" />
+					
+				
+				</div>
+				<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 5px; top: 10px;">
+				  Dev info? <input type="checkbox" class="checkbox">
+				</div>
+				<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px; display: none;">
+				  <p id="heightInfo" style="font-size: xx-small;"></p>
+				  <p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
+				  <p id="songDuration" style="font-size: xx-small;"></p>
+				</div>
+				<div id="floatingButton" style="position: fixed; right: 20px; bottom: 20px; ">
+					<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light toggle-button">
+						<img id="buttonImage" src="images/pause2.gif">
+					</button>
+				</div>
 
-</div>
+			
+			<div id="tab">
+				  <br/>  <br/> <br/><br/>Intro:<br/><span class="chord">[Em]</span><br/><br/><span class="chord">[Em]</span> All around me are fa<span class="chord">[G]</span>miliar faces<br/><span class="chord">[D]</span>Worn out places... <span class="chord">[A]</span>worn out face-e-es<br/><span class="chord">[Em]</span> Bright and early for their <span class="chord">[G]</span>daily races<br/><span class="chord">[D]</span>Going nowhere... <span class="chord">[A]</span>going nowhe-e-ere<br/><br/><span class="chord">[Em]</span> Their tears are filling <span class="chord">[G]</span>up their glasses<br/><span class="chord">[D]</span>No expression... <span class="chord">[A]</span>no expressio-o-on<br/><span class="chord">[Em]</span> Hide my head I want to <span class="chord">[G]</span>drown my sorrow<br/><span class="chord">[D]</span>No tomorrow... <span class="chord">[A]</span>no tomorro-o-ow<br/><br/><span class="chord">[Em]</span> And I find it kinda <span class="chord">[A]</span>funny... I find it kinda <span class="chord">[Em]</span>sad<br/>The dreams in which I'm <span class="chord">[A]</span>dying are the best I've ever <span class="chord">[Em]</span>had<br/>I find it hard to <span class="chord">[A]</span>tell you... I find it hard to <span class="chord">[Em]</span>take<br/>When people run in <span class="chord">[A]</span>circles... it's a very very...<br/><br/><span class="chord">[Em]</span> Ma-a-a-ad <span class="chord">[A]</span>world<br/><span class="chord">[Em]</span> Ma-a-a-ad <span class="chord">[A]</span>world<br/><br/><span class="chord">[Em]</span> Children waiting for the <span class="chord">[G]</span>day they feel good<br/><span class="chord">[D]</span>Happy birthday... <span class="chord">[A]</span>happy birthda-a-ay<br/><span class="chord">[Em]</span> Made to feel the way that <span class="chord">[G]</span>every child should<br/><span class="chord">[D]</span>Sit and listen... <span class="chord">[A]</span>sit and liste-e-en<br/><br/><span class="chord">[Em]</span> Went to school and I was <span class="chord">[G]</span>very nervous<br/><span class="chord">[D]</span>No one knew me... <span class="chord">[A]</span>no one knew me-e-e<br/><span class="chord">[Em]</span> Hello teacher tell me <span class="chord">[G]</span>what's my lesson<br/><span class="chord">[D]</span>Look right through me... <span class="chord">[A]</span>look right through me-e-e<br/><br/><span class="chord">[Em]</span> And I find it kinda <span class="chord">[A]</span>funny... I find it kinda <span class="chord">[Em]</span>sad<br/>The dreams in which I'm <span class="chord">[A]</span>dying are the best I've ever <span class="chord">[Em]</span>had<br/>I find it hard to <span class="chord">[A]</span>tell you... I find it hard to <span class="chord">[Em]</span>take<br/>When people run in <span class="chord">[A]</span>circles... it's a very very...<br/><br/><span class="chord">[Em]</span> Ma-a-a-ad <span class="chord">[A]</span>world<br/><span class="chord">[Em]</span> Ma-a-a-ad <span class="chord">[A]</span>world<br/><span class="chord">[Em]</span> Enlarge your <span class="chord">[A]</span>world<br/><span class="chord">[Em]</span> Ma-a-a-ad <span class="chord">[A]</span>world <span class="chord">[Em/]</span>
+			</div>
+			<hr/>
+			<div id="options" class="mt-4">
+				<a href="songs.html"><strong>← Back</strong></a>
+				 
+			</div>
+
+			
+					
+			<div class="m-2 my-4 text-center">
+				<img src="/images/qrcode.png" class="img-fluid" alt="QR Code" width="100">
+			</div>
+
+		</div>
 
     </div>
 </div>

@@ -12,9 +12,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <style>
-        .highlight {background-color: lemonchiffon; font-weight: bold;}
+        .highlight {background-color: lemonchiffon; font-weight: bold;} 
         .chord { font-weight: bold; color:red}
-        #tab { font-size: 80%; font-family: Verdana, Tahoma, sans-serif; }
+        #tab { font-size: 90%; font-family: Verdana, Tahoma, sans-serif; }
         #options a {text-decoration: underline;}
         .sticky { 
             position: fixed; 
@@ -62,7 +62,6 @@
 		}
 		.custom-text-h3 {
 			font-family: 'Montserrat', sans-serif;
-			
 			font-size: 2rem
 		}
 		.custom-text-h4 {
@@ -78,99 +77,114 @@
 			font-family: 'Montserrat', sans-serif;
 			font-weight: 200;
 		}
+		.ultra-light2 {
+			font-family: 'Montserrat', sans-serif;
+			font-weight: 200;
+			font-size: 1.1rem
+		}
 
 		.semi-bold {
 			font-family: 'Montserrat', sans-serif;
 			font-weight: 600;
 		}
+		.moj-element {
+			background-image: linear-gradient(to bottom, rgba(189, 32, 40, 0.4), rgba(189, 32, 40, 0.2));
+		}
+		.my-watermark {
+			background-image: url('../images/back_30.png');
+			background-position: right; /* lub background-position: 100%; */
+			background-size: contain;
+			background-repeat: no-repeat;
+			pointer-events: none; 
+		}
+		
+		
     </style>
 
 </head>
 <body data-duration = 4.0>
-
-
-<header class="container">
-    <div class="m-2 mb-4 text-center">
-        <img src="/images/ukulele-krakow.PNG" class="img-fluid" alt="Krakow Ukulele" width="200">
-    </div>
-</header>
+<!-- nie ma headera - czy tak w ogłe wolno? -->
 
 <div class="container">
-    <div class="row justify-content-center">
-        
-<div class="col-lg-8 col-md-10 col-sm-12 my-3">
-	
-
-    <h3 class="song-title semi-bold">
-	  #133 - 🔥Summer Nights
-    </h3>
-    <h4 class="song-artist custom-text-h4">
-        John Travolta & Olivia Newton-John
-    </h4>
-
-    <h5 class= custom-text-h5>
-        Level: 
-        <span class="badge rounded-pill badge-danger text-white">Hard</span>
-    </h5>
-    
-	    <div class="mt-3">
-		    <iframe src="https://open.spotify.com/embed/track/2AVkArcfALVk2X8sfPRzya"
-				    width="300"
-				    height="80"
-				    frameborder="0"
-				    allowtransparency="true"
-				    allow="encrypted-media"></iframe>
-	    </div>
-    
-    
-
-   <div class="mt-4" style="overflow-x: auto;">
-    
-        <img src="chords/B.gif" alt="B" title="B" />
-    
-        <img src="chords/E7.gif" alt="E7" title="E7" />
-    
-        <img src="chords/D.gif" alt="D" title="D" />
-    
-        <img src="chords/Em.gif" alt="Em" title="Em" />
-    
-        <img src="chords/G.gif" alt="G" title="G" />
-    
-        <img src="chords/E.gif" alt="E" title="E" />
-    
-        <img src="chords/A.gif" alt="A" title="A" />
-    
-</div>
-		<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 5px; top: 10px;">
-		  Dev info? <input type="checkbox" class="checkbox">
-		</div>
-		<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px; display: none;">
-		  <p id="heightInfo" style="font-size: xx-small;"></p>
-		  <p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
-		  <p id="songDuration" style="font-size: xx-small;"></p>
-		</div>
-	<div id="floatingButton" style="position: fixed; right: 20px; bottom: 20px; ">
-		<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light toggle-button">
-			<img id="buttonImage" src="images/pause2.gif">
-		</button>
-	</div>
-    
-    <div id="tab">
-          <br/>  <br/>  <br/><br/><br/><div class="mark">Beats per chord: <b>2</b><br/>Strummings: <b>Down-Down</b><br/>We can split roles<br/></div><br/><br/><br/><span class="chord">[D/]</span> ... <span class="chord">[G/]</span> ... <span class="chord">[A/]</span> ... <span class="chord">[G]</span> <b>x2</b><br/><br/>(A): <span class="chord">[D]</span> Summer <span class="chord">[G]</span> lovin', <span class="chord">[A]</span> had me a <span class="chord">[G]</span> blast<br/><b>(B): <span class="chord">[D]</span> Summer <span class="chord">[G]</span> lovin', <span class="chord">[A]</span> happened so <span class="chord">[G]</span> fast</b><br/>(A): <span class="chord">[D]</span> I met a <span class="chord">[G]</span> girl <span class="chord">[A]</span> crazy for <span class="chord">[B]</span> me<br/><b>(B): <span class="chord">[E7]</span> Met a <span class="chord">[A]</span> boy, <span class="chord">[E7]</span> cute as can <span class="chord">[A]</span> be</b><br/><b><i>(A&B): <span class="chord">[D]</span> Summer <span class="chord">[G]</span> days,<br/><span class="chord">[A]</span> driftin' <span class="chord">[B]</span> away<br/>too, <span class="chord">[Em]</span> ah those <span class="chord">[A]</span> summer <span class="chord">[D]</span> nights<br/><br/>(A&B): Oh, well a <span class="chord">[G]</span> well a <span class="chord">[A]</span> well a</b></i><br/>(A) : <span class="chord">[D]</span> Tell me <span class="chord">[G]</span> more, tell me <span class="chord">[E7]</span> more, did you <span class="chord">[A]</span> get very <span class="chord">[D]</span> far?<br/><b>(B): Tell me <span class="chord">[G]</span> more, tell me <span class="chord">[E7]</span> more, like, does <span class="chord">[A]</span> he have a <span class="chord">[D]</span> car?</b><br/><b><i>(A&B): Uh ah ah <span class="chord">[G]</span> Uh ah ah <span class="chord">[A]</span> Uh ah ah <span class="chord">[A]</span>...<br/><span class="chord">[D]</span> Uh ah ah <span class="chord">[G]</span> Uh ah ah <span class="chord">[A]</span> Uh ah ah <span class="chord">[A]</span></b></i><br/><br/>(A) : <span class="chord">[D]</span> She swan <span class="chord">[G]</span> by me, <span class="chord">[A]</span> she got a <span class="chord">[G]</span> cramp<br/><b>(B): <span class="chord">[D]</span> He ran <span class="chord">[G]</span> by me, <span class="chord">[A]</span> got my suit <span class="chord">[G]</span> damp</b><br/>(A): <span class="chord">[D]</span> I saved her <span class="chord">[G]</span> life, <span class="chord">[A]</span> she nearly <span class="chord">[B]</span> drowned<br/><b>(B): <span class="chord">[E7]</span> He showed <span class="chord">[A]</span> off, <span class="chord">[E7]</span> splashing <span class="chord">[A]</span> around</b><br/><b><i>(A&B): <span class="chord">[D]</span> Summer <span class="chord">[G]</span> sun,<br/><span class="chord">[A]</span> something <span class="chord">[B]</span> begun<br/>too, <span class="chord">[Em]</span> ah those <span class="chord">[A]</span> summer <span class="chord">[D]</span> nights<br/><br/>(A&B): Oh, well a <span class="chord">[G]</span> well a <span class="chord">[A]</span> well a</b></i><br/><b>(B) : <span class="chord">[D]</span> Tell me <span class="chord">[G]</span> more, tell me <span class="chord">[E7]</span> more, was it <span class="chord">[A]</span> love at first <span class="chord">[D]</span> sight</b><br/>(A): Tell me <span class="chord">[G]</span> more, tell me <span class="chord">[E7]</span> more, did she <span class="chord">[A]</span> put up a <span class="chord">[D]</span> fight<br/><b><i>(A&B): Uh ah ah <span class="chord">[G]</span> Uh ah ah <span class="chord">[A]</span> Uh ah ah <span class="chord">[A]</span>...<br/><span class="chord">[D]</span> Uh ah ah <span class="chord">[G]</span> Uh ah ah <span class="chord">[A]</span> Uh ah ah <span class="chord">[A]</span></b></i><br/><br/>(A): <span class="chord">[D]</span> Took her <span class="chord">[G]</span> bowling <span class="chord">[A]</span> in the arc<span class="chord">[G]</span>ade<br/><b>(B): <span class="chord">[D]</span> We went <span class="chord">[G]</span> strolling, <span class="chord">[A]</span>drank lemon<span class="chord">[G]</span>ade</b><br/>(A): <span class="chord">[D]</span> We made <span class="chord">[G]</span> out, <span class="chord">[A]</span> under the <span class="chord">[B]</span> dock<br/><b>(B): <span class="chord">[E7]</span> We stayed <span class="chord">[A]</span> out, <span class="chord">[E7]</span> 'til ten o'cl<span class="chord">[A]</span>ock</b><br/><b><i>(A&B): <span class="chord">[D]</span> Summer <span class="chord">[G]</span> fling,<br/><span class="chord">[A]</span> don't mean a <span class="chord">[B]</span> thing<br/>but ah <span class="chord">[Em]</span> those <span class="chord">[A]</span> summer <span class="chord">[D]</span> nights<br/><br/>(A&B): Oh, well a <span class="chord">[G]</span> well a <span class="chord">[A]</span> well a</b></i><br/>(A) : Tell me <span class="chord">[G]</span> more, tell me <span class="chord">[E7]</span> more, like you <span class="chord">[A]</span> don't have <span class="chord">[D]</span> to brag<br/><b>(B): Tell me <span class="chord">[G]</span> more, tell me <span class="chord">[E7]</span> more, 'cause he <span class="chord">[A]</span> sounds <span class="chord">[D]</span> like a drag</b><br/><b><i>(A&B): Uh ah ah <span class="chord">[G]</span> Uh ah ah <span class="chord">[A]</span> Uh ah ah <span class="chord">[A]</span><br/><span class="chord">[D]</span> Uh ah ah <span class="chord">[G]</span> Uh ah ah <span class="chord">[A]</span> Uh ah ah <span class="chord">[A]</span></b></i><br/><br/><b>(B): <span class="chord">[D]</span> He got <span class="chord">[G]</span> friendly, <span class="chord">[A]</span> holding my <span class="chord">[G]</span> hand</b><br/>(A): <span class="chord">[D]</span> She got <span class="chord">[G]</span> friendly, <span class="chord">[A]</span> down in the <span class="chord">[G]</span> sand<br/><b>(B): <span class="chord">[D]</span> He was <span class="chord">[G]</span> sweet, <span class="chord">[A]</span> just turned <span class="chord">[B]</span> eighteen</b><br/>(A): <span class="chord">[E7]</span> She was <span class="chord">[A]</span> good, <span class="chord">[E7]</span> you know what I <span class="chord">[A]</span> mean<br/><b><i>(A&B): <span class="chord">[D]</span> Summer <span class="chord">[G]</span> heat,<br/><span class="chord">[A]</span> boy and girl <span class="chord">[B]</span>meet,<br/>too ah <span class="chord">[Em]</span> those <span class="chord">[A]</span> summer <span class="chord">[D]</span> nights<br/><br/>(A&B): Oh, well a <span class="chord">[G]</span> well a <span class="chord">[A]</span> well a</b></i><br/><b>(B): Tell me <span class="chord">[G]</span> more, tell me <span class="chord">[E7]</span> more, how much <span class="chord">[A]</span> dough did he <span class="chord">[D]</span> spend?</b><br/>(A): Tell me <span class="chord">[G]</span> more, tell me <span class="chord">[E7]</span> more, could she <span class="chord">[A]</span> get me a <span class="chord">[D]</span> friend?<br/>(STOP)<br/><br/>(slow)<br/><b>(B): <span class="chord">[D/]</span> It's turned <span class="chord">[G/]</span> colder, <span class="chord">[A/]</span> that's where it <span class="chord">[G/]</span> ends</b><br/>(A): <span class="chord">[D/]</span> So I told <span class="chord">[G/]</span> her, <span class="chord">[A/]</span> we'd still be <span class="chord">[G/]</span> friends<br/><b>(B): <span class="chord">[D/]</span> Then we <span class="chord">[G/]</span> made <span class="chord">[A/]</span> our true love <span class="chord">[B/]</span>vow</b><br/>(A): <span class="chord">[E/]</span> Wonder <span class="chord">[A/]</span> what <span class="chord">[E/]</span> she's doin' <span class="chord">[A/]</span> now<br/><b><i>(A&B): <span class="chord">[D/]</span> Summer <span class="chord">[G/]</span> dreams,<br/><span class="chord">[A/]</span> ripped at the <span class="chord">[B/]</span> seams, <br/>But, oh <span class="chord">[Em/]</span> Those <span class="chord">[A/]</span> summer <span class="chord">[D/]</span> nights!<br/><br/>Tell me more! <span class="chord">[G/]</span> Tell me more! <span class="chord">[D/]</span></b></i><br/><br/>
-    </div>
-
-    <div id="options" class="mt-4">
-        <a href="songs.html"><strong>← Back</strong></a>
-         
-    </div>
-
-    <hr/>
+    <div class="row justify-content-center">      
+		<div class="col-lg-8 col-md-10 col-sm-12 my-3">
+			<div class="shadow p-3 mb-5 bg-body rounded my-watermark">
+				<h3 class="song-title semi-bold">
+					#133 - 🔥Summer Nights
+				</h3>
+				<h5 class="song-artist ultra-light ">
+					John Travolta & Olivia Newton-John
+				</h5>
 			
-    <div class="m-2 my-4 text-center">
-        <img src="/images/qrcode.png" class="img-fluid" alt="QR Code" width="100">
-    </div>
+				<h5 class= ultra-light >
+					Level: 
+					<span class="badge rounded-pill badge-warning text-white">Hard</span>					
+				</h5>				
+			
+			</div>
+			
+				<div class="mt-3">							
+					<iframe style="border-radius:12px" 
+							src="https://open.spotify.com/embed/track/2AVkArcfALVk2X8sfPRzya"
+							width="300px" 
+							height="80" 
+							frameBorder="0" 
+							allowfullscreen="" 
+							allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+							loading="lazy">
+					</iframe>
+				</div>
+			
+			
+				<div class="mt-4" style="overflow-x: auto;">
+					
+						<img src="chords/A.gif" alt="A" title="A" />
+					
+						<img src="chords/B.gif" alt="B" title="B" />
+					
+						<img src="chords/D.gif" alt="D" title="D" />
+					
+						<img src="chords/E.gif" alt="E" title="E" />
+					
+						<img src="chords/E7.gif" alt="E7" title="E7" />
+					
+						<img src="chords/Em.gif" alt="Em" title="Em" />
+					
+						<img src="chords/G.gif" alt="G" title="G" />
+					
+				
+				</div>
+				<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 5px; top: 10px;">
+				  Dev info? <input type="checkbox" class="checkbox">
+				</div>
+				<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px; display: none;">
+				  <p id="heightInfo" style="font-size: xx-small;"></p>
+				  <p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
+				  <p id="songDuration" style="font-size: xx-small;"></p>
+				</div>
+				<div id="floatingButton" style="position: fixed; right: 20px; bottom: 20px; ">
+					<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light toggle-button">
+						<img id="buttonImage" src="images/pause2.gif">
+					</button>
+				</div>
 
-</div>
+			
+			<div id="tab">
+				  <br/>  <br/>  <br/><br/><br/><div class="mark">Beats per chord: <b>2</b><br/>Strummings: <b>Down-Down</b><br/>We can split roles<br/></div><br/><br/><br/><span class="chord">[D/]</span> ... <span class="chord">[G/]</span> ... <span class="chord">[A/]</span> ... <span class="chord">[G]</span> <b>x2</b><br/><br/>(A): <span class="chord">[D]</span> Summer <span class="chord">[G]</span> lovin', <span class="chord">[A]</span> had me a <span class="chord">[G]</span> blast<br/><b>(B): <span class="chord">[D]</span> Summer <span class="chord">[G]</span> lovin', <span class="chord">[A]</span> happened so <span class="chord">[G]</span> fast</b><br/>(A): <span class="chord">[D]</span> I met a <span class="chord">[G]</span> girl <span class="chord">[A]</span> crazy for <span class="chord">[B]</span> me<br/><b>(B): <span class="chord">[E7]</span> Met a <span class="chord">[A]</span> boy, <span class="chord">[E7]</span> cute as can <span class="chord">[A]</span> be</b><br/><b><i>(A&B): <span class="chord">[D]</span> Summer <span class="chord">[G]</span> days,<br/><span class="chord">[A]</span> driftin' <span class="chord">[B]</span> away<br/>too, <span class="chord">[Em]</span> ah those <span class="chord">[A]</span> summer <span class="chord">[D]</span> nights<br/><br/>(A&B): Oh, well a <span class="chord">[G]</span> well a <span class="chord">[A]</span> well a</b></i><br/>(A) : <span class="chord">[D]</span> Tell me <span class="chord">[G]</span> more, tell me <span class="chord">[E7]</span> more, did you <span class="chord">[A]</span> get very <span class="chord">[D]</span> far?<br/><b>(B): Tell me <span class="chord">[G]</span> more, tell me <span class="chord">[E7]</span> more, like, does <span class="chord">[A]</span> he have a <span class="chord">[D]</span> car?</b><br/><b><i>(A&B): Uh ah ah <span class="chord">[G]</span> Uh ah ah <span class="chord">[A]</span> Uh ah ah <span class="chord">[A]</span>...<br/><span class="chord">[D]</span> Uh ah ah <span class="chord">[G]</span> Uh ah ah <span class="chord">[A]</span> Uh ah ah <span class="chord">[A]</span></b></i><br/><br/>(A) : <span class="chord">[D]</span> She swan <span class="chord">[G]</span> by me, <span class="chord">[A]</span> she got a <span class="chord">[G]</span> cramp<br/><b>(B): <span class="chord">[D]</span> He ran <span class="chord">[G]</span> by me, <span class="chord">[A]</span> got my suit <span class="chord">[G]</span> damp</b><br/>(A): <span class="chord">[D]</span> I saved her <span class="chord">[G]</span> life, <span class="chord">[A]</span> she nearly <span class="chord">[B]</span> drowned<br/><b>(B): <span class="chord">[E7]</span> He showed <span class="chord">[A]</span> off, <span class="chord">[E7]</span> splashing <span class="chord">[A]</span> around</b><br/><b><i>(A&B): <span class="chord">[D]</span> Summer <span class="chord">[G]</span> sun,<br/><span class="chord">[A]</span> something <span class="chord">[B]</span> begun<br/>too, <span class="chord">[Em]</span> ah those <span class="chord">[A]</span> summer <span class="chord">[D]</span> nights<br/><br/>(A&B): Oh, well a <span class="chord">[G]</span> well a <span class="chord">[A]</span> well a</b></i><br/><b>(B) : <span class="chord">[D]</span> Tell me <span class="chord">[G]</span> more, tell me <span class="chord">[E7]</span> more, was it <span class="chord">[A]</span> love at first <span class="chord">[D]</span> sight</b><br/>(A): Tell me <span class="chord">[G]</span> more, tell me <span class="chord">[E7]</span> more, did she <span class="chord">[A]</span> put up a <span class="chord">[D]</span> fight<br/><b><i>(A&B): Uh ah ah <span class="chord">[G]</span> Uh ah ah <span class="chord">[A]</span> Uh ah ah <span class="chord">[A]</span>...<br/><span class="chord">[D]</span> Uh ah ah <span class="chord">[G]</span> Uh ah ah <span class="chord">[A]</span> Uh ah ah <span class="chord">[A]</span></b></i><br/><br/>(A): <span class="chord">[D]</span> Took her <span class="chord">[G]</span> bowling <span class="chord">[A]</span> in the arc<span class="chord">[G]</span>ade<br/><b>(B): <span class="chord">[D]</span> We went <span class="chord">[G]</span> strolling, <span class="chord">[A]</span>drank lemon<span class="chord">[G]</span>ade</b><br/>(A): <span class="chord">[D]</span> We made <span class="chord">[G]</span> out, <span class="chord">[A]</span> under the <span class="chord">[B]</span> dock<br/><b>(B): <span class="chord">[E7]</span> We stayed <span class="chord">[A]</span> out, <span class="chord">[E7]</span> 'til ten o'cl<span class="chord">[A]</span>ock</b><br/><b><i>(A&B): <span class="chord">[D]</span> Summer <span class="chord">[G]</span> fling,<br/><span class="chord">[A]</span> don't mean a <span class="chord">[B]</span> thing<br/>but ah <span class="chord">[Em]</span> those <span class="chord">[A]</span> summer <span class="chord">[D]</span> nights<br/><br/>(A&B): Oh, well a <span class="chord">[G]</span> well a <span class="chord">[A]</span> well a</b></i><br/>(A) : Tell me <span class="chord">[G]</span> more, tell me <span class="chord">[E7]</span> more, like you <span class="chord">[A]</span> don't have <span class="chord">[D]</span> to brag<br/><b>(B): Tell me <span class="chord">[G]</span> more, tell me <span class="chord">[E7]</span> more, 'cause he <span class="chord">[A]</span> sounds <span class="chord">[D]</span> like a drag</b><br/><b><i>(A&B): Uh ah ah <span class="chord">[G]</span> Uh ah ah <span class="chord">[A]</span> Uh ah ah <span class="chord">[A]</span><br/><span class="chord">[D]</span> Uh ah ah <span class="chord">[G]</span> Uh ah ah <span class="chord">[A]</span> Uh ah ah <span class="chord">[A]</span></b></i><br/><br/><b>(B): <span class="chord">[D]</span> He got <span class="chord">[G]</span> friendly, <span class="chord">[A]</span> holding my <span class="chord">[G]</span> hand</b><br/>(A): <span class="chord">[D]</span> She got <span class="chord">[G]</span> friendly, <span class="chord">[A]</span> down in the <span class="chord">[G]</span> sand<br/><b>(B): <span class="chord">[D]</span> He was <span class="chord">[G]</span> sweet, <span class="chord">[A]</span> just turned <span class="chord">[B]</span> eighteen</b><br/>(A): <span class="chord">[E7]</span> She was <span class="chord">[A]</span> good, <span class="chord">[E7]</span> you know what I <span class="chord">[A]</span> mean<br/><b><i>(A&B): <span class="chord">[D]</span> Summer <span class="chord">[G]</span> heat,<br/><span class="chord">[A]</span> boy and girl <span class="chord">[B]</span>meet,<br/>too ah <span class="chord">[Em]</span> those <span class="chord">[A]</span> summer <span class="chord">[D]</span> nights<br/><br/>(A&B): Oh, well a <span class="chord">[G]</span> well a <span class="chord">[A]</span> well a</b></i><br/><b>(B): Tell me <span class="chord">[G]</span> more, tell me <span class="chord">[E7]</span> more, how much <span class="chord">[A]</span> dough did he <span class="chord">[D]</span> spend?</b><br/>(A): Tell me <span class="chord">[G]</span> more, tell me <span class="chord">[E7]</span> more, could she <span class="chord">[A]</span> get me a <span class="chord">[D]</span> friend?<br/>(STOP)<br/><br/>(slow)<br/><b>(B): <span class="chord">[D/]</span> It's turned <span class="chord">[G/]</span> colder, <span class="chord">[A/]</span> that's where it <span class="chord">[G/]</span> ends</b><br/>(A): <span class="chord">[D/]</span> So I told <span class="chord">[G/]</span> her, <span class="chord">[A/]</span> we'd still be <span class="chord">[G/]</span> friends<br/><b>(B): <span class="chord">[D/]</span> Then we <span class="chord">[G/]</span> made <span class="chord">[A/]</span> our true love <span class="chord">[B/]</span>vow</b><br/>(A): <span class="chord">[E/]</span> Wonder <span class="chord">[A/]</span> what <span class="chord">[E/]</span> she's doin' <span class="chord">[A/]</span> now<br/><b><i>(A&B): <span class="chord">[D/]</span> Summer <span class="chord">[G/]</span> dreams,<br/><span class="chord">[A/]</span> ripped at the <span class="chord">[B/]</span> seams, <br/>But, oh <span class="chord">[Em/]</span> Those <span class="chord">[A/]</span> summer <span class="chord">[D/]</span> nights!<br/><br/>Tell me more! <span class="chord">[G/]</span> Tell me more! <span class="chord">[D/]</span></b></i><br/><br/>
+			</div>
+			<hr/>
+			<div id="options" class="mt-4">
+				<a href="songs.html"><strong>← Back</strong></a>
+				 
+			</div>
+
+			
+					
+			<div class="m-2 my-4 text-center">
+				<img src="/images/qrcode.png" class="img-fluid" alt="QR Code" width="100">
+			</div>
+
+		</div>
 
     </div>
 </div>

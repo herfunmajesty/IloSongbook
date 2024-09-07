@@ -12,9 +12,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <style>
-        .highlight {background-color: lemonchiffon; font-weight: bold;}
+        .highlight {background-color: lemonchiffon; font-weight: bold;} 
         .chord { font-weight: bold; color:red}
-        #tab { font-size: 80%; font-family: Verdana, Tahoma, sans-serif; }
+        #tab { font-size: 90%; font-family: Verdana, Tahoma, sans-serif; }
         #options a {text-decoration: underline;}
         .sticky { 
             position: fixed; 
@@ -29,19 +29,17 @@
         }
 		.toggle-button {
 			background-color: #eee;
-			border: 1px solid #ccc;
-			padding: 1px 1px;
+			border: 0px solid ;
+			padding: 0px 0px;
 			margin-right: 5px;
 			cursor: pointer;
 		}
 		.div_box {
 			padding: 10px;
-			display: none;
-			}
-			.checkbox:checked + .div_box {
+		}
+		.checkbox:checked + #infoBox {
 			display: block;
-			border: 1px solid #aaa;
-			}
+		}
 		
 		@font-face {
 			font-family: 'Montserrat';
@@ -64,7 +62,6 @@
 		}
 		.custom-text-h3 {
 			font-family: 'Montserrat', sans-serif;
-			
 			font-size: 2rem
 		}
 		.custom-text-h4 {
@@ -80,96 +77,110 @@
 			font-family: 'Montserrat', sans-serif;
 			font-weight: 200;
 		}
+		.ultra-light2 {
+			font-family: 'Montserrat', sans-serif;
+			font-weight: 200;
+			font-size: 1.1rem
+		}
 
 		.semi-bold {
 			font-family: 'Montserrat', sans-serif;
 			font-weight: 600;
 		}
+		.moj-element {
+			background-image: linear-gradient(to bottom, rgba(189, 32, 40, 0.4), rgba(189, 32, 40, 0.2));
+		}
+		.my-watermark {
+			background-image: url('../images/back_30.png');
+			background-position: right; /* lub background-position: 100%; */
+			background-size: contain;
+			background-repeat: no-repeat;
+			pointer-events: none; 
+		}
+		
+		
     </style>
 
 </head>
 <body data-duration = 4.0>
-
-
-<header class="container">
-    <div class="m-2 mb-4 text-center">
-        <img src="/images/ukulele-krakow.PNG" class="img-fluid" alt="Krakow Ukulele" width="200">
-    </div>
-</header>
+<!-- nie ma headera - czy tak w ogłe wolno? -->
 
 <div class="container">
-    <div class="row justify-content-center">
-        
-<div class="col-lg-8 col-md-10 col-sm-12 my-3">
-	
-
-    <h3 class="song-title semi-bold">
-	  #T11 - 🔥Yours Truly 2095
-    </h3>
-    <h4 class="song-artist custom-text-h4">
-        Electric Light Orchestra
-    </h4>
-
-    <h5 class= custom-text-h5>
-        Level: 
-        <span class="badge rounded-pill badge-None text-white">xxx</span>
-    </h5>
-    
-    
-
-   <div class="mt-4" style="overflow-x: auto;">
-    
-        <img src="chords/AM.gif" alt="AM" title="AM" />
-    
-        <img src="chords/G.gif" alt="G" title="G" />
-    
-        <img src="chords/Am.gif" alt="Am" title="Am" />
-    
-        <img src="chords/Bridge.gif" alt="Bridge" title="Bridge" />
-    
-        <img src="chords/C.gif" alt="C" title="C" />
-    
-        <img src="chords/Verse.gif" alt="Verse" title="Verse" />
-    
-        <img src="chords/Em.gif" alt="Em" title="Em" />
-    
-        <img src="chords/Intro.gif" alt="Intro" title="Intro" />
-    
-        <img src="chords/Chorus.gif" alt="Chorus" title="Chorus" />
-    
-        <img src="chords/Dm.gif" alt="Dm" title="Dm" />
-    
-        <img src="chords/F.gif" alt="F" title="F" />
-    
-</div>
-	<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 20px; top: 20px;">Dev info? <input type="checkbox" class="checkbox" onclick="toggleDiv()"> </div>
-	<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px;">
-		<p id="heightInfo" style="font-size: xx-small;"></p>
-		<p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
-		<p id="songDuration" style="font-size: xx-small;"></p>
-	</div>
-	<div id="floatingButton" style="position: fixed; right: 20px; bottom: 20px; ">
-		<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light">
-			<img id="buttonImage" src="images/pause2.gif">
-		</button>
-	</div>
-    
-    <div id="tab">
-        <br/><br/><br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Intro]</span></span></span></span><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>2095, <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span>2095, <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span>2095, <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span>2095<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>I love you, <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span>sincerely<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span>Yours truly, <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span>yours truly...<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Verse]</span></span></span></span><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>I sent a message to <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span>another time<br/>But as the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span>days unwind, <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span>this I just can't <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>believe<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>I sent a note across <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span>another plane<br/>Maybe it's <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span>all a game, but <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span>this I just <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span>can't <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>conceive.<br/>Can you <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>hear me? <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span>    <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span>   <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span>   <br/> <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span> ...<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Verse]</span></span></span></span><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>I drive the very latest<span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span>  hovercar<br/>I don't know <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span>where you are, but I <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span>miss you so much till <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>then<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>I met someone who looks a <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span>lot like you<br/>She does the <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span>things you do, but <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span>she is <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span>an <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>IBM.<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bridge]</span></span></span></span><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>2095, <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span>2095, <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span>2095, <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span>2095<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>I love you, <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span>sincerely<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span>Yours truly, <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span>yours truly...<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Verse]</span></span></span></span><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>She's only programmed to be <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span>very nice<br/>But she's as <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span>cold as ice, <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span>whenever I get too <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>near<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>She tells me that she likes me <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span>very much<br/>But when I <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span>try to touch, <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span>she makes it <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span>all too <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>clear.<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Verse]</span></span></span></span><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>She is the latest in <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span>technology<br/>Almost <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span>mythology, but <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span>she has a heart of <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>stone<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>She has an I.Q. of <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span>one-thousand-one<br/>She has a <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span>jumpsuit on, and she's <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span>also a <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>telephone.<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bridge]</span></span></span></span><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>2095, <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span>2095, <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span>2095, <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span>2095<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>I love you, <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span>sincerely<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span>Yours truly, <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span>yours truly...<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Chorus]</span></span></span></span><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span>Is that what you want? (Is it <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span>what you want?)<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span>Is it what you really want? (Is it <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span>what you really want?)<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span>Is that what you want? (Is it <span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span>what you want?)<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span>Is it what you <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>really <span class="chord"><span class="chord"><span class="chord"><span class="chord">[C]</span></span></span></span>want?<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Verse]</span></span></span></span><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>I realize that it must <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span>seem so strange<br/>That time has <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span>rearranged, but <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span>time has the final <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>word<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>She knows I think of you, she <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span>reads my mind<br/>She tries to <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span>be unkind, she knows <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span>nothing <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span>of our <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>world<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Verse]</span></span></span></span><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>Although her memory banks <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span>overflow<br/>No one would <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span>ever know, for all she <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span>says: "Is that what you want?"<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>Maybe one day I'll feel her <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span>cold embrace<br/>And kiss her <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span>interface, 'til <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span>then, I'll <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span>leave her <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>alone.<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Bridge]</span></span></span></span><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>2095, <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span>2095, <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span>2095, <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span>2095<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Am]</span></span></span></span>I love you, <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span>sincerely<br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[Dm]</span></span></span></span>Yours truly, <span class="chord"><span class="chord"><span class="chord"><span class="chord">[Em]</span></span></span></span>yours truly...<br/><br/><br/>REPEAT CHORUS:<br/><br/><span class="chord"><span class="chord"><span class="chord"><span class="chord">[F]</span></span></span></span>"Is <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span>that what <span class="chord"><span class="chord"><span class="chord"><span class="chord">[AM]</span></span></span></span>you <span class="chord"><span class="chord"><span class="chord"><span class="chord">[G]</span></span></span></span>want?"<br/>X
-    </div>
-
-    <div id="options" class="mt-4">
-        <a href="songs.html"><strong>← Back</strong></a>
-         
-    </div>
-
-    <hr/>
+    <div class="row justify-content-center">      
+		<div class="col-lg-8 col-md-10 col-sm-12 my-3">
+			<div class="shadow p-3 mb-5 bg-body rounded my-watermark">
+				<h3 class="song-title semi-bold">
+					#T11 - 🔥Yours Truly 2095
+				</h3>
+				<h5 class="song-artist ultra-light ">
+					Electric Light Orchestra
+				</h5>
 			
-    <div class="m-2 my-4 text-center">
-        <img src="/images/qrcode.png" class="img-fluid" alt="QR Code" width="100">
-    </div>
+				<h5 class= ultra-light >
+					Level: 
+					<span class="badge rounded-pill badge-warning text-white">xxx</span>					
+				</h5>				
+			
+			</div>
+			
+			
+				<div class="mt-4" style="overflow-x: auto;">
+					
+						<img src="chords/AM.gif" alt="AM" title="AM" />
+					
+						<img src="chords/Am.gif" alt="Am" title="Am" />
+					
+						<img src="chords/Bridge.gif" alt="Bridge" title="Bridge" />
+					
+						<img src="chords/C.gif" alt="C" title="C" />
+					
+						<img src="chords/Chorus.gif" alt="Chorus" title="Chorus" />
+					
+						<img src="chords/Dm.gif" alt="Dm" title="Dm" />
+					
+						<img src="chords/Em.gif" alt="Em" title="Em" />
+					
+						<img src="chords/F.gif" alt="F" title="F" />
+					
+						<img src="chords/G.gif" alt="G" title="G" />
+					
+						<img src="chords/Intro.gif" alt="Intro" title="Intro" />
+					
+						<img src="chords/Verse.gif" alt="Verse" title="Verse" />
+					
+				
+				</div>
+				<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 5px; top: 10px;">
+				  Dev info? <input type="checkbox" class="checkbox">
+				</div>
+				<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px; display: none;">
+				  <p id="heightInfo" style="font-size: xx-small;"></p>
+				  <p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
+				  <p id="songDuration" style="font-size: xx-small;"></p>
+				</div>
+				<div id="floatingButton" style="position: fixed; right: 20px; bottom: 20px; ">
+					<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light toggle-button">
+						<img id="buttonImage" src="images/pause2.gif">
+					</button>
+				</div>
 
-</div>
+			
+			<div id="tab">
+				<br/><br/><br/><br/><span class="chord">[Intro]</span><br/><span class="chord">[Am]</span>2095, <span class="chord">[Em]</span>2095, <span class="chord">[Dm]</span>2095, <span class="chord">[Em]</span>2095<br/><span class="chord">[Am]</span>I love you, <span class="chord">[Em]</span>sincerely<br/><span class="chord">[F]</span>Yours truly, <span class="chord">[G]</span>yours truly...<br/><br/><span class="chord">[Verse]</span><br/><span class="chord">[Am]</span>I sent a message to <span class="chord">[Em]</span>another time<br/>But as the <span class="chord">[Dm]</span>days unwind, <span class="chord">[Em]</span>this I just can't <span class="chord">[Am]</span>believe<br/><span class="chord">[Am]</span>I sent a note across <span class="chord">[Em]</span>another plane<br/>Maybe it's <span class="chord">[Dm]</span>all a game, but <span class="chord">[G]</span>this I just <span class="chord">[Em]</span>can't <span class="chord">[Am]</span>conceive.<br/>Can you <span class="chord">[Am]</span>hear me? <span class="chord">[Em]</span>    <span class="chord">[F]</span>   <span class="chord">[G]</span>   <br/> <span class="chord">[Am]</span> ...<br/><br/><span class="chord">[Verse]</span><br/><span class="chord">[Am]</span>I drive the very latest<span class="chord">[Em]</span>  hovercar<br/>I don't know <span class="chord">[Dm]</span>where you are, but I <span class="chord">[Em]</span>miss you so much till <span class="chord">[Am]</span>then<br/><span class="chord">[Am]</span>I met someone who looks a <span class="chord">[Em]</span>lot like you<br/>She does the <span class="chord">[Dm]</span>things you do, but <span class="chord">[G]</span>she is <span class="chord">[Em]</span>an <span class="chord">[Am]</span>IBM.<br/><br/><span class="chord">[Bridge]</span><br/><span class="chord">[Am]</span>2095, <span class="chord">[Em]</span>2095, <span class="chord">[Dm]</span>2095, <span class="chord">[Em]</span>2095<br/><span class="chord">[Am]</span>I love you, <span class="chord">[Em]</span>sincerely<br/><span class="chord">[Dm]</span>Yours truly, <span class="chord">[Em]</span>yours truly...<br/><br/><span class="chord">[Verse]</span><br/><span class="chord">[Am]</span>She's only programmed to be <span class="chord">[Em]</span>very nice<br/>But she's as <span class="chord">[Dm]</span>cold as ice, <span class="chord">[Em]</span>whenever I get too <span class="chord">[Am]</span>near<br/><span class="chord">[Am]</span>She tells me that she likes me <span class="chord">[Em]</span>very much<br/>But when I <span class="chord">[Dm]</span>try to touch, <span class="chord">[G]</span>she makes it <span class="chord">[Em]</span>all too <span class="chord">[Am]</span>clear.<br/><br/><span class="chord">[Verse]</span><br/><span class="chord">[Am]</span>She is the latest in <span class="chord">[Em]</span>technology<br/>Almost <span class="chord">[Dm]</span>mythology, but <span class="chord">[Em]</span>she has a heart of <span class="chord">[Am]</span>stone<br/><span class="chord">[Am]</span>She has an I.Q. of <span class="chord">[Em]</span>one-thousand-one<br/>She has a <span class="chord">[Dm]</span>jumpsuit on, and she's <span class="chord">[G]</span>also a <span class="chord">[Em]</span><span class="chord">[Am]</span>telephone.<br/><br/><span class="chord">[Bridge]</span><br/><span class="chord">[Am]</span>2095, <span class="chord">[Em]</span>2095, <span class="chord">[Dm]</span>2095, <span class="chord">[Em]</span>2095<br/><span class="chord">[Am]</span>I love you, <span class="chord">[Em]</span>sincerely<br/><span class="chord">[F]</span>Yours truly, <span class="chord">[G]</span>yours truly...<br/><br/><span class="chord">[Chorus]</span><br/><span class="chord">[C]</span>Is that what you want? (Is it <span class="chord">[F]</span>what you want?)<br/><span class="chord">[C]</span>Is it what you really want? (Is it <span class="chord">[G]</span>what you really want?)<br/><span class="chord">[C]</span>Is that what you want? (Is it <span class="chord">[F]</span>what you want?)<br/><span class="chord">[G]</span>Is it what you <span class="chord">[Am]</span>really <span class="chord">[C]</span>want?<br/><br/><span class="chord">[Verse]</span><br/><span class="chord">[Am]</span>I realize that it must <span class="chord">[Em]</span>seem so strange<br/>That time has <span class="chord">[Dm]</span>rearranged, but <span class="chord">[Em]</span>time has the final <span class="chord">[Am]</span>word<br/><span class="chord">[Am]</span>She knows I think of you, she <span class="chord">[Em]</span>reads my mind<br/>She tries to <span class="chord">[Dm]</span>be unkind, she knows <span class="chord">[G]</span>nothing <span class="chord">[Em]</span>of our <span class="chord">[Am]</span>world<br/><br/><span class="chord">[Verse]</span><br/><span class="chord">[Am]</span>Although her memory banks <span class="chord">[Em]</span>overflow<br/>No one would <span class="chord">[Dm]</span>ever know, for all she <span class="chord">[Em]</span>says: "Is that what you want?"<br/><span class="chord">[Am]</span>Maybe one day I'll feel her <span class="chord">[Em]</span>cold embrace<br/>And kiss her <span class="chord">[Dm]</span>interface, 'til <span class="chord">[G]</span>then, I'll <span class="chord">[Em]</span>leave her <span class="chord">[Am]</span>alone.<br/><br/><span class="chord">[Bridge]</span><br/><span class="chord">[Am]</span>2095, <span class="chord">[Em]</span>2095, <span class="chord">[Dm]</span>2095, <span class="chord">[Em]</span>2095<br/><span class="chord">[Am]</span>I love you, <span class="chord">[Em]</span>sincerely<br/><span class="chord">[Dm]</span>Yours truly, <span class="chord">[Em]</span>yours truly...<br/><br/><br/>REPEAT CHORUS:<br/><br/><span class="chord">[F]</span>"Is <span class="chord">[G]</span>that what <span class="chord">[AM]</span>you <span class="chord">[G]</span>want?"<br/>X
+			</div>
+			<hr/>
+			<div id="options" class="mt-4">
+				<a href="songs.html"><strong>← Back</strong></a>
+				 
+			</div>
+
+			
+					
+			<div class="m-2 my-4 text-center">
+				<img src="/images/qrcode.png" class="img-fluid" alt="QR Code" width="100">
+			</div>
+
+		</div>
 
     </div>
 </div>
@@ -262,12 +273,12 @@ window.addEventListener('beforeunload', function() {
   }
 });
 </script>
-<!--<script>
+<script>
   function toggleDiv() {
     var checkBox = document.querySelector('.checkbox');
-    var devInfo = document.getElementById('infoBox');
-    devInfo.style.display = checkBox.checked ? 'block' : 'none';
+    var infoBox = document.getElementById('infoBox');
+    infoBox.style.display = checkBox.checked ? 'block' : 'none';
   }
-</script>-->
+</script>
 </body>
 </html>

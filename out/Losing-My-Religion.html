@@ -12,9 +12,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <style>
-        .highlight {background-color: lemonchiffon; font-weight: bold;}
+        .highlight {background-color: lemonchiffon; font-weight: bold;} 
         .chord { font-weight: bold; color:red}
-        #tab { font-size: 80%; font-family: Verdana, Tahoma, sans-serif; }
+        #tab { font-size: 90%; font-family: Verdana, Tahoma, sans-serif; }
         #options a {text-decoration: underline;}
         .sticky { 
             position: fixed; 
@@ -62,7 +62,6 @@
 		}
 		.custom-text-h3 {
 			font-family: 'Montserrat', sans-serif;
-			
 			font-size: 2rem
 		}
 		.custom-text-h4 {
@@ -78,97 +77,112 @@
 			font-family: 'Montserrat', sans-serif;
 			font-weight: 200;
 		}
+		.ultra-light2 {
+			font-family: 'Montserrat', sans-serif;
+			font-weight: 200;
+			font-size: 1.1rem
+		}
 
 		.semi-bold {
 			font-family: 'Montserrat', sans-serif;
 			font-weight: 600;
 		}
+		.moj-element {
+			background-image: linear-gradient(to bottom, rgba(189, 32, 40, 0.4), rgba(189, 32, 40, 0.2));
+		}
+		.my-watermark {
+			background-image: url('../images/back_30.png');
+			background-position: right; /* lub background-position: 100%; */
+			background-size: contain;
+			background-repeat: no-repeat;
+			pointer-events: none; 
+		}
+		
+		
     </style>
 
 </head>
 <body data-duration = 4.0>
-
-
-<header class="container">
-    <div class="m-2 mb-4 text-center">
-        <img src="/images/ukulele-krakow.PNG" class="img-fluid" alt="Krakow Ukulele" width="200">
-    </div>
-</header>
+<!-- nie ma headera - czy tak w ogłe wolno? -->
 
 <div class="container">
-    <div class="row justify-content-center">
-        
-<div class="col-lg-8 col-md-10 col-sm-12 my-3">
-	
-
-    <h3 class="song-title semi-bold">
-	  #100 - Losing My Religion
-    </h3>
-    <h4 class="song-artist custom-text-h4">
-        R.E.M.
-    </h4>
-
-    <h5 class= custom-text-h5>
-        Level: 
-        <span class="badge rounded-pill badge-warning text-white">Medium</span>
-    </h5>
-    
-	    <div class="mt-3">
-		    <iframe src="https://open.spotify.com/embed/track/31AOj9sFz2gM0O3hMARRBx"
-				    width="300"
-				    height="80"
-				    frameborder="0"
-				    allowtransparency="true"
-				    allow="encrypted-media"></iframe>
-	    </div>
-    
-    
-
-   <div class="mt-4" style="overflow-x: auto;">
-    
-        <img src="chords/F.gif" alt="F" title="F" />
-    
-        <img src="chords/G.gif" alt="G" title="G" />
-    
-        <img src="chords/Am.gif" alt="Am" title="Am" />
-    
-        <img src="chords/C.gif" alt="C" title="C" />
-    
-        <img src="chords/Em.gif" alt="Em" title="Em" />
-    
-        <img src="chords/Dm.gif" alt="Dm" title="Dm" />
-    
-</div>
-		<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 5px; top: 10px;">
-		  Dev info? <input type="checkbox" class="checkbox">
-		</div>
-		<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px; display: none;">
-		  <p id="heightInfo" style="font-size: xx-small;"></p>
-		  <p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
-		  <p id="songDuration" style="font-size: xx-small;"></p>
-		</div>
-	<div id="floatingButton" style="position: fixed; right: 20px; bottom: 20px; ">
-		<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light toggle-button">
-			<img id="buttonImage" src="images/pause2.gif">
-		</button>
-	</div>
-    
-    <div id="tab">
-          <br/>  <br/>  <br/>  <br/><br/><br/><br/><iframe width="460" height="180" src="https://www.youtube.com/embed/_m7qYXjvAgM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br/><br/>Intro: <br/><span class="chord">[F]</span> <span class="chord">[Am]</span> <br/><span class="chord">[F]</span> <span class="chord">[Am//]</span> <br/><br/><span class="chord">[G//]</span> Oh <br/><span class="chord">[Am]</span> life, .. is bigger <br/><span class="chord">[Em]</span> it’s bigger than you   <br/>And you are <span class="chord">[Am]</span> not me <br/>The lengths that I will <span class="chord">[Em]</span> go to   <br/>The distance in your <span class="chord">[Am]</span> eyes <span class="chord">[Am]</span>    <br/><span class="chord">[Em]</span> Oh no I’ve said too <span class="chord">[Dm]</span> much<br/>I’ve said e<span class="chord">[G]</span>nough   <br/> <br/>That’s me in the <span class="chord">[Am]</span> corner <br/>That’s me in the <span class="chord">[Em]</span> spot light   <br/>Losing my re<span class="chord">[Am]</span>ligion <br/>Trying to <span class="chord">[Em]</span> keep .. up with you   <br/>And I <span class="chord">[Am]</span> don’t know if I can do it   <br/><span class="chord">[Em]</span> Oh no I’ve said too <span class="chord">[Dm]</span> much <br/>I haven’t said e<span class="chord">[G]</span>nough   <br/> <br/>I thought that I heard you <span class="chord">[F]</span> laughing   <br/>I thought that I heard you <span class="chord">[Am]</span> sing<br/>I <span class="chord">[F]</span> think I thought I saw you <span class="chord">[Am//]</span> try ... <br/><span class="chord">[G//]</span>   <br/> <br/>Every <span class="chord">[Am]</span> whisper    <br/>Every waking <span class="chord">[Em]</span> hour I’m choosing my con<span class="chord">[Am]</span>fessions   <br/>Trying to <span class="chord">[Em]</span> keep eye on you   <br/>Like a <span class="chord">[Am]</span> hurt lost and blinded fool, fool   <br/><span class="chord">[Em]</span> Oh no I’ve said too <span class="chord">[Dm]</span> much I said e<span class="chord">[G]</span>nough   <br/> <br/>Consider <span class="chord">[Am]</span> this .. consider this <span class="chord">[Em]</span> hint of the century   <br/>Consider <span class="chord">[Am]</span> this .. the slip .. that <span class="chord">[Em]</span> brought me to my knees pale   <br/><span class="chord">[Am]</span> What if all these fantasies come <span class="chord">[Em]</span> flaming around   <br/>Now I’ve <span class="chord">[Dm]</span> said .... too <span class="chord">[G]</span> much   <br/> <br/>I thought that I heard you <span class="chord">[F]</span> laughing   <br/>I thought that I heard you <span class="chord">[Am]</span> sing  <br/>I <span class="chord">[F]</span> think I thought I saw you <span class="chord">[Am]</span> try ... <span class="chord">[G//]</span><br/><br/>(solo, single strums)<br/><span class="chord">[Am/]</span> <span class="chord">[G/]</span> <br/><span class="chord">[F/]</span> <span class="chord">[G/]</span> <br/>But <span class="chord">[C/]</span>  that was just a <span class="chord">[Dm/]</span> dream<br/>That <span class="chord">[C/]</span> was just a <span class="chord">[Dm/]</span> dream<br/><br/>That’s me in the <span class="chord">[Am]</span> corner <br/>That’s me in the <span class="chord">[Em]</span> spot light   <br/>Losing my re<span class="chord">[Am]</span>ligion <br/>Trying to <span class="chord">[Em]</span> keep up with you   <br/>And I <span class="chord">[Am]</span> don’t know if I can do it   <br/><span class="chord">[Em]</span> Oh no I’ve said too <span class="chord">[Dm]</span> much <br/>I haven’t said e<span class="chord">[G]</span>nough   <br/> <br/>I thought that I heard you <span class="chord">[F]</span> laughing   <br/>I thought that I heard you <span class="chord">[Am]</span> sing<br/>I <span class="chord">[F]</span> think I thought I saw you <span class="chord">[Am]</span> try <br/><br/>But <span class="chord">[F]</span> that was just a dream ... <br/><span class="chord">[Am]</span> try, cry, why, try<br/><span class="chord">[F]</span> That was just a dream, just a <span class="chord">[Am//]</span> dream, just a <span class="chord">[G//]</span> dream, dream<br/><br/>(riff ending, single strums)<br/><span class="chord">[Am/]</span><br/><span class="chord">[Am/]</span><br/><span class="chord">[Am/]</span><br/><span class="chord">[Am/]</span>
-    </div>
-
-    <div id="options" class="mt-4">
-        <a href="songs.html"><strong>← Back</strong></a>
-         
-    </div>
-
-    <hr/>
+    <div class="row justify-content-center">      
+		<div class="col-lg-8 col-md-10 col-sm-12 my-3">
+			<div class="shadow p-3 mb-5 bg-body rounded my-watermark">
+				<h3 class="song-title semi-bold">
+					#100 - Losing My Religion
+				</h3>
+				<h5 class="song-artist ultra-light ">
+					R.E.M.
+				</h5>
 			
-    <div class="m-2 my-4 text-center">
-        <img src="/images/qrcode.png" class="img-fluid" alt="QR Code" width="100">
-    </div>
+				<h5 class= ultra-light >
+					Level: 
+					<span class="badge rounded-pill badge-warning text-white">Medium</span>					
+				</h5>				
+			
+			</div>
+			
+				<div class="mt-3">							
+					<iframe style="border-radius:12px" 
+							src="https://open.spotify.com/embed/track/31AOj9sFz2gM0O3hMARRBx"
+							width="300px" 
+							height="80" 
+							frameBorder="0" 
+							allowfullscreen="" 
+							allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+							loading="lazy">
+					</iframe>
+				</div>
+			
+			
+				<div class="mt-4" style="overflow-x: auto;">
+					
+						<img src="chords/Am.gif" alt="Am" title="Am" />
+					
+						<img src="chords/C.gif" alt="C" title="C" />
+					
+						<img src="chords/Dm.gif" alt="Dm" title="Dm" />
+					
+						<img src="chords/Em.gif" alt="Em" title="Em" />
+					
+						<img src="chords/F.gif" alt="F" title="F" />
+					
+						<img src="chords/G.gif" alt="G" title="G" />
+					
+				
+				</div>
+				<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 5px; top: 10px;">
+				  Dev info? <input type="checkbox" class="checkbox">
+				</div>
+				<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px; display: none;">
+				  <p id="heightInfo" style="font-size: xx-small;"></p>
+				  <p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
+				  <p id="songDuration" style="font-size: xx-small;"></p>
+				</div>
+				<div id="floatingButton" style="position: fixed; right: 20px; bottom: 20px; ">
+					<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light toggle-button">
+						<img id="buttonImage" src="images/pause2.gif">
+					</button>
+				</div>
 
-</div>
+			
+			<div id="tab">
+				  <br/>  <br/>  <br/>  <br/><br/><br/><br/><iframe width="460" height="180" src="https://www.youtube.com/embed/_m7qYXjvAgM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br/><br/>Intro: <br/><span class="chord">[F]</span> <span class="chord">[Am]</span> <br/><span class="chord">[F]</span> <span class="chord">[Am//]</span> <br/><br/><span class="chord">[G//]</span> Oh <br/><span class="chord">[Am]</span> life, .. is bigger <br/><span class="chord">[Em]</span> it’s bigger than you   <br/>And you are <span class="chord">[Am]</span> not me <br/>The lengths that I will <span class="chord">[Em]</span> go to   <br/>The distance in your <span class="chord">[Am]</span> eyes <span class="chord">[Am]</span>    <br/><span class="chord">[Em]</span> Oh no I’ve said too <span class="chord">[Dm]</span> much<br/>I’ve said e<span class="chord">[G]</span>nough   <br/> <br/>That’s me in the <span class="chord">[Am]</span> corner <br/>That’s me in the <span class="chord">[Em]</span> spot light   <br/>Losing my re<span class="chord">[Am]</span>ligion <br/>Trying to <span class="chord">[Em]</span> keep .. up with you   <br/>And I <span class="chord">[Am]</span> don’t know if I can do it   <br/><span class="chord">[Em]</span> Oh no I’ve said too <span class="chord">[Dm]</span> much <br/>I haven’t said e<span class="chord">[G]</span>nough   <br/> <br/>I thought that I heard you <span class="chord">[F]</span> laughing   <br/>I thought that I heard you <span class="chord">[Am]</span> sing<br/>I <span class="chord">[F]</span> think I thought I saw you <span class="chord">[Am//]</span> try ... <br/><span class="chord">[G//]</span>   <br/> <br/>Every <span class="chord">[Am]</span> whisper    <br/>Every waking <span class="chord">[Em]</span> hour I’m choosing my con<span class="chord">[Am]</span>fessions   <br/>Trying to <span class="chord">[Em]</span> keep eye on you   <br/>Like a <span class="chord">[Am]</span> hurt lost and blinded fool, fool   <br/><span class="chord">[Em]</span> Oh no I’ve said too <span class="chord">[Dm]</span> much I said e<span class="chord">[G]</span>nough   <br/> <br/>Consider <span class="chord">[Am]</span> this .. consider this <span class="chord">[Em]</span> hint of the century   <br/>Consider <span class="chord">[Am]</span> this .. the slip .. that <span class="chord">[Em]</span> brought me to my knees pale   <br/><span class="chord">[Am]</span> What if all these fantasies come <span class="chord">[Em]</span> flaming around   <br/>Now I’ve <span class="chord">[Dm]</span> said .... too <span class="chord">[G]</span> much   <br/> <br/>I thought that I heard you <span class="chord">[F]</span> laughing   <br/>I thought that I heard you <span class="chord">[Am]</span> sing  <br/>I <span class="chord">[F]</span> think I thought I saw you <span class="chord">[Am]</span> try ... <span class="chord">[G//]</span><br/><br/>(solo, single strums)<br/><span class="chord">[Am/]</span> <span class="chord">[G/]</span> <br/><span class="chord">[F/]</span> <span class="chord">[G/]</span> <br/>But <span class="chord">[C/]</span>  that was just a <span class="chord">[Dm/]</span> dream<br/>That <span class="chord">[C/]</span> was just a <span class="chord">[Dm/]</span> dream<br/><br/>That’s me in the <span class="chord">[Am]</span> corner <br/>That’s me in the <span class="chord">[Em]</span> spot light   <br/>Losing my re<span class="chord">[Am]</span>ligion <br/>Trying to <span class="chord">[Em]</span> keep up with you   <br/>And I <span class="chord">[Am]</span> don’t know if I can do it   <br/><span class="chord">[Em]</span> Oh no I’ve said too <span class="chord">[Dm]</span> much <br/>I haven’t said e<span class="chord">[G]</span>nough   <br/> <br/>I thought that I heard you <span class="chord">[F]</span> laughing   <br/>I thought that I heard you <span class="chord">[Am]</span> sing<br/>I <span class="chord">[F]</span> think I thought I saw you <span class="chord">[Am]</span> try <br/><br/>But <span class="chord">[F]</span> that was just a dream ... <br/><span class="chord">[Am]</span> try, cry, why, try<br/><span class="chord">[F]</span> That was just a dream, just a <span class="chord">[Am//]</span> dream, just a <span class="chord">[G//]</span> dream, dream<br/><br/>(riff ending, single strums)<br/><span class="chord">[Am/]</span><br/><span class="chord">[Am/]</span><br/><span class="chord">[Am/]</span><br/><span class="chord">[Am/]</span>
+			</div>
+			<hr/>
+			<div id="options" class="mt-4">
+				<a href="songs.html"><strong>← Back</strong></a>
+				 
+			</div>
+
+			
+					
+			<div class="m-2 my-4 text-center">
+				<img src="/images/qrcode.png" class="img-fluid" alt="QR Code" width="100">
+			</div>
+
+		</div>
 
     </div>
 </div>

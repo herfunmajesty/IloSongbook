@@ -12,9 +12,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <style>
-        .highlight {background-color: lemonchiffon; font-weight: bold;}
+        .highlight {background-color: lemonchiffon; font-weight: bold;} 
         .chord { font-weight: bold; color:red}
-        #tab { font-size: 80%; font-family: Verdana, Tahoma, sans-serif; }
+        #tab { font-size: 90%; font-family: Verdana, Tahoma, sans-serif; }
         #options a {text-decoration: underline;}
         .sticky { 
             position: fixed; 
@@ -62,7 +62,6 @@
 		}
 		.custom-text-h3 {
 			font-family: 'Montserrat', sans-serif;
-			
 			font-size: 2rem
 		}
 		.custom-text-h4 {
@@ -78,88 +77,100 @@
 			font-family: 'Montserrat', sans-serif;
 			font-weight: 200;
 		}
+		.ultra-light2 {
+			font-family: 'Montserrat', sans-serif;
+			font-weight: 200;
+			font-size: 1.1rem
+		}
 
 		.semi-bold {
 			font-family: 'Montserrat', sans-serif;
 			font-weight: 600;
 		}
+		.moj-element {
+			background-image: linear-gradient(to bottom, rgba(189, 32, 40, 0.4), rgba(189, 32, 40, 0.2));
+		}
+		.my-watermark {
+			background-image: url('../images/back_30.png');
+			background-position: right; /* lub background-position: 100%; */
+			background-size: contain;
+			background-repeat: no-repeat;
+			pointer-events: none; 
+		}
+		
+		
     </style>
 
 </head>
 <body data-duration = 4.0>
-
-
-<header class="container">
-    <div class="m-2 mb-4 text-center">
-        <img src="/images/ukulele-krakow.PNG" class="img-fluid" alt="Krakow Ukulele" width="200">
-    </div>
-</header>
+<!-- nie ma headera - czy tak w ogłe wolno? -->
 
 <div class="container">
-    <div class="row justify-content-center">
-        
-<div class="col-lg-8 col-md-10 col-sm-12 my-3">
-	
-
-    <h3 class="song-title semi-bold">
-	  #93 - Lazy Song, The
-    </h3>
-    <h4 class="song-artist custom-text-h4">
-        Bruno Mars
-    </h4>
-
-    <h5 class= custom-text-h5>
-        Level: 
-        <span class="badge rounded-pill badge-success text-white">Easy</span>
-    </h5>
-    
-    
-
-   <div class="mt-4" style="overflow-x: auto;">
-    
-        <img src="chords/F.gif" alt="F" title="F" />
-    
-        <img src="chords/G.gif" alt="G" title="G" />
-    
-        <img src="chords/Am.gif" alt="Am" title="Am" />
-    
-        <img src="chords/C.gif" alt="C" title="C" />
-    
-        <img src="chords/Em.gif" alt="Em" title="Em" />
-    
-        <img src="chords/Dm.gif" alt="Dm" title="Dm" />
-    
-</div>
-		<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 5px; top: 10px;">
-		  Dev info? <input type="checkbox" class="checkbox">
-		</div>
-		<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px; display: none;">
-		  <p id="heightInfo" style="font-size: xx-small;"></p>
-		  <p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
-		  <p id="songDuration" style="font-size: xx-small;"></p>
-		</div>
-	<div id="floatingButton" style="position: fixed; right: 20px; bottom: 20px; ">
-		<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light toggle-button">
-			<img id="buttonImage" src="images/pause2.gif">
-		</button>
-	</div>
-    
-    <div id="tab">
-        <br/><br/><br/><br/><br/><span class="chord">[C]</span> Today I don't feel <span class="chord">[G]</span> like doing <span class="chord">[F]</span> anything ... <span class="chord">[F]</span> ...<br/><span class="chord">[C]</span> I just wanna <span class="chord">[G]</span> lay in my <span class="chord">[F]</span> bed... <span class="chord">[F]</span> ...<br/><span class="chord">[C]</span> Don't feel like picking <span class="chord">[G]</span> up my phone<br/><span class="chord">[F]</span> So leave a message <span class="chord">[F]</span> at the tone<br/><span class="chord">[C]</span> Cause today I swear I'm <span class="chord">[Em]</span> not doing <span class="chord">[F]</span> anything... <span class="chord">[F]</span> ...<br/><br/>Uh I'm gonna <span class="chord">[C]</span> kick my feet up and <span class="chord">[G]</span> stare at the fan<br/><span class="chord">[F]</span> Turn the t.v.  on<br/>Throw <span class="chord">[F]</span> my hand down my pants<br/><span class="chord">[C]</span> Nobody's gon' <span class="chord">[G]</span> tell me I <span class="chord">[F]</span> can’t, <span class="chord">[F]</span>  no <br/><br/><span class="chord">[C]</span> I'll be lying on the couch just <span class="chord">[G]</span> chillin in my snuggie<br/><span class="chord">[F]</span> Click to MTV so they can <span class="chord">[F]</span> teach me how to dougie<br/><span class="chord">[C]</span> Cause in my castle <span class="chord">[G]</span> I’m the freakin’ <span class="chord">[F]</span> man... <span class="chord">[F]</span> ...<br/><br/>Oh Oh, <span class="chord">[Dm]</span> yes I said it, <span class="chord">[Em]</span> I said it<br/><span class="chord">[F]</span> I said it cause I <span class="chord">[G]</span> can<br/><br/><span class="chord">[C]</span> Today I don't feel <span class="chord">[G]</span> like doing <span class="chord">[F]</span> anything... <span class="chord">[F]</span> ...<br/><span class="chord">[C]</span> I just wanna <span class="chord">[G]</span> lay in my <span class="chord">[F]</span> bed... <span class="chord">[F]</span> ...<br/><span class="chord">[C]</span> Don't feel like picking <span class="chord">[G]</span> up my phone<br/><span class="chord">[F]</span> So leave a message <span class="chord">[F]</span> at the tone<br/><span class="chord">[C]</span> Cause today I swear I'm <span class="chord">[Em]</span> not doing <span class="chord">[F]</span> anything - <span class="chord">[F]</span> Nothing at all<br/><br/><span class="chord">[C]</span> Ooh hoo <span class="chord">[G]</span> ooh hoo  <span class="chord">[F]</span> Hoo ooh ooh,<span class="chord">[F]</span> Nothing at all<br/><span class="chord">[C]</span> Ooh hoo <span class="chord">[G]</span> ooh hoo  <span class="chord">[F]</span> Hoo ooh ooh <span class="chord">[F]</span> ...<br/><br/>Tomorrow <span class="chord">[C]</span> I'll wake up, do some <span class="chord">[G]</span> P90X<br/>Meet a <span class="chord">[F]</span> really nice girl, <span class="chord">[F]</span> have some really nice sex<br/>And <span class="chord">[C]</span> she's gonna <span class="chord">[G]</span> scream out: "This is <span class="chord">[F]</span> great" <br/>(Oh my god,<span class="chord">[F]</span> this is great) - Yeah<br/><span class="chord">[C]</span> I might mess around and get my <span class="chord">[G]</span> college degree<br/><span class="chord">[F]</span> I bet my old man will be <span class="chord">[F]</span> so proud of me<br/><span class="chord">[C]</span> I'm sorry pops you <span class="chord">[G]</span> just have to <span class="chord">[F]</span> wait... <span class="chord">[F]</span> ...<br/><br/>Oh Oh, <span class="chord">[Dm]</span> yes I said it, <span class="chord">[Em]</span> I said it<br/><span class="chord">[F]</span> I said it cause I <span class="chord">[G]</span> can<br/><br/><span class="chord">[C]</span> Today I don't feel <span class="chord">[G]</span> like doing <span class="chord">[F]</span> anything ... <span class="chord">[F]</span> ...<br/><span class="chord">[C]</span> I just wanna <span class="chord">[G]</span> lay in my <span class="chord">[F]</span> bed... <span class="chord">[F]</span> ...<br/><span class="chord">[C]</span> Don't feel like picking <span class="chord">[G]</span> up my phone<br/><span class="chord">[F]</span> So leave a message <span class="chord">[F]</span> at the tone<br/><span class="chord">[C]</span> Cause today I swear I'm <span class="chord">[Em]</span> not doing <span class="chord">[F]</span> anything... <span class="chord">[F]</span> ...<br/><br/>No I <span class="chord">[Dm]</span> ain't gonna comb my <span class="chord">[G]</span> hair, cause I <span class="chord">[Dm]</span> ain't going any<span class="chord">[G]</span>where<br/><span class="chord">[F]</span> No no no no <span class="chord">[Em]</span> no no no no <span class="chord">[Am]</span> nooo<br/>I'll just <span class="chord">[Dm]</span> strut in my birthday <span class="chord">[G]</span> suit and let <span class="chord">[Dm]</span> everything hang <span class="chord">[G]</span> loose<br/><span class="chord">[F]</span> Yeah yeah yeah yeah <span class="chord">[Em]</span> yeah yeah yeah yeah <span class="chord">[Am]</span> yeahhh<br/><br/><span class="chord">[C]</span> Today I don't feel <span class="chord">[G]</span> like doing <span class="chord">[F]</span> anything... <span class="chord">[F]</span> ...<br/><span class="chord">[C]</span> I just wanna <span class="chord">[G]</span> lay in my <span class="chord">[F]</span> bed... <span class="chord">[F]</span> ...<br/><span class="chord">[C]</span> Don't feel like picking <span class="chord">[G]</span> up my phone<br/><span class="chord">[F]</span> So leave a message <span class="chord">[F]</span> at the tone<br/><span class="chord">[C]</span> Cause today I swear I'm <span class="chord">[Em]</span> not doing <span class="chord">[F]</span> anything - <span class="chord">[F]</span> Nothing at all<br/><span class="chord">[C]</span> Ooh hoo <span class="chord">[G]</span> ooh hoo  <span class="chord">[F]</span> Hoo ooh ooh, Nothing at all  <br/><span class="chord">[C]</span> Ooh hoo <span class="chord">[G]</span> ooh hoo  <span class="chord">[F]</span> Hoo ooh ooh, Nothing at <span class="chord">[C/]</span> all  <br/>
-    </div>
-
-    <div id="options" class="mt-4">
-        <a href="songs.html"><strong>← Back</strong></a>
-         
-    </div>
-
-    <hr/>
+    <div class="row justify-content-center">      
+		<div class="col-lg-8 col-md-10 col-sm-12 my-3">
+			<div class="shadow p-3 mb-5 bg-body rounded my-watermark">
+				<h3 class="song-title semi-bold">
+					#93 - Lazy Song, The
+				</h3>
+				<h5 class="song-artist ultra-light ">
+					Bruno Mars
+				</h5>
 			
-    <div class="m-2 my-4 text-center">
-        <img src="/images/qrcode.png" class="img-fluid" alt="QR Code" width="100">
-    </div>
+				<h5 class= ultra-light >
+					Level: 
+					<span class="badge rounded-pill badge-warning text-white">Easy</span>					
+				</h5>				
+			
+			</div>
+			
+			
+				<div class="mt-4" style="overflow-x: auto;">
+					
+						<img src="chords/Am.gif" alt="Am" title="Am" />
+					
+						<img src="chords/C.gif" alt="C" title="C" />
+					
+						<img src="chords/Dm.gif" alt="Dm" title="Dm" />
+					
+						<img src="chords/Em.gif" alt="Em" title="Em" />
+					
+						<img src="chords/F.gif" alt="F" title="F" />
+					
+						<img src="chords/G.gif" alt="G" title="G" />
+					
+				
+				</div>
+				<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 5px; top: 10px;">
+				  Dev info? <input type="checkbox" class="checkbox">
+				</div>
+				<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px; display: none;">
+				  <p id="heightInfo" style="font-size: xx-small;"></p>
+				  <p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
+				  <p id="songDuration" style="font-size: xx-small;"></p>
+				</div>
+				<div id="floatingButton" style="position: fixed; right: 20px; bottom: 20px; ">
+					<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light toggle-button">
+						<img id="buttonImage" src="images/pause2.gif">
+					</button>
+				</div>
 
-</div>
+			
+			<div id="tab">
+				<br/><br/><br/><br/><br/><span class="chord">[C]</span> Today I don't feel <span class="chord">[G]</span> like doing <span class="chord">[F]</span> anything ... <span class="chord">[F]</span> ...<br/><span class="chord">[C]</span> I just wanna <span class="chord">[G]</span> lay in my <span class="chord">[F]</span> bed... <span class="chord">[F]</span> ...<br/><span class="chord">[C]</span> Don't feel like picking <span class="chord">[G]</span> up my phone<br/><span class="chord">[F]</span> So leave a message <span class="chord">[F]</span> at the tone<br/><span class="chord">[C]</span> Cause today I swear I'm <span class="chord">[Em]</span> not doing <span class="chord">[F]</span> anything... <span class="chord">[F]</span> ...<br/><br/>Uh I'm gonna <span class="chord">[C]</span> kick my feet up and <span class="chord">[G]</span> stare at the fan<br/><span class="chord">[F]</span> Turn the t.v.  on<br/>Throw <span class="chord">[F]</span> my hand down my pants<br/><span class="chord">[C]</span> Nobody's gon' <span class="chord">[G]</span> tell me I <span class="chord">[F]</span> can’t, <span class="chord">[F]</span>  no <br/><br/><span class="chord">[C]</span> I'll be lying on the couch just <span class="chord">[G]</span> chillin in my snuggie<br/><span class="chord">[F]</span> Click to MTV so they can <span class="chord">[F]</span> teach me how to dougie<br/><span class="chord">[C]</span> Cause in my castle <span class="chord">[G]</span> I’m the freakin’ <span class="chord">[F]</span> man... <span class="chord">[F]</span> ...<br/><br/>Oh Oh, <span class="chord">[Dm]</span> yes I said it, <span class="chord">[Em]</span> I said it<br/><span class="chord">[F]</span> I said it cause I <span class="chord">[G]</span> can<br/><br/><span class="chord">[C]</span> Today I don't feel <span class="chord">[G]</span> like doing <span class="chord">[F]</span> anything... <span class="chord">[F]</span> ...<br/><span class="chord">[C]</span> I just wanna <span class="chord">[G]</span> lay in my <span class="chord">[F]</span> bed... <span class="chord">[F]</span> ...<br/><span class="chord">[C]</span> Don't feel like picking <span class="chord">[G]</span> up my phone<br/><span class="chord">[F]</span> So leave a message <span class="chord">[F]</span> at the tone<br/><span class="chord">[C]</span> Cause today I swear I'm <span class="chord">[Em]</span> not doing <span class="chord">[F]</span> anything - <span class="chord">[F]</span> Nothing at all<br/><br/><span class="chord">[C]</span> Ooh hoo <span class="chord">[G]</span> ooh hoo  <span class="chord">[F]</span> Hoo ooh ooh,<span class="chord">[F]</span> Nothing at all<br/><span class="chord">[C]</span> Ooh hoo <span class="chord">[G]</span> ooh hoo  <span class="chord">[F]</span> Hoo ooh ooh <span class="chord">[F]</span> ...<br/><br/>Tomorrow <span class="chord">[C]</span> I'll wake up, do some <span class="chord">[G]</span> P90X<br/>Meet a <span class="chord">[F]</span> really nice girl, <span class="chord">[F]</span> have some really nice sex<br/>And <span class="chord">[C]</span> she's gonna <span class="chord">[G]</span> scream out: "This is <span class="chord">[F]</span> great" <br/>(Oh my god,<span class="chord">[F]</span> this is great) - Yeah<br/><span class="chord">[C]</span> I might mess around and get my <span class="chord">[G]</span> college degree<br/><span class="chord">[F]</span> I bet my old man will be <span class="chord">[F]</span> so proud of me<br/><span class="chord">[C]</span> I'm sorry pops you <span class="chord">[G]</span> just have to <span class="chord">[F]</span> wait... <span class="chord">[F]</span> ...<br/><br/>Oh Oh, <span class="chord">[Dm]</span> yes I said it, <span class="chord">[Em]</span> I said it<br/><span class="chord">[F]</span> I said it cause I <span class="chord">[G]</span> can<br/><br/><span class="chord">[C]</span> Today I don't feel <span class="chord">[G]</span> like doing <span class="chord">[F]</span> anything ... <span class="chord">[F]</span> ...<br/><span class="chord">[C]</span> I just wanna <span class="chord">[G]</span> lay in my <span class="chord">[F]</span> bed... <span class="chord">[F]</span> ...<br/><span class="chord">[C]</span> Don't feel like picking <span class="chord">[G]</span> up my phone<br/><span class="chord">[F]</span> So leave a message <span class="chord">[F]</span> at the tone<br/><span class="chord">[C]</span> Cause today I swear I'm <span class="chord">[Em]</span> not doing <span class="chord">[F]</span> anything... <span class="chord">[F]</span> ...<br/><br/>No I <span class="chord">[Dm]</span> ain't gonna comb my <span class="chord">[G]</span> hair, cause I <span class="chord">[Dm]</span> ain't going any<span class="chord">[G]</span>where<br/><span class="chord">[F]</span> No no no no <span class="chord">[Em]</span> no no no no <span class="chord">[Am]</span> nooo<br/>I'll just <span class="chord">[Dm]</span> strut in my birthday <span class="chord">[G]</span> suit and let <span class="chord">[Dm]</span> everything hang <span class="chord">[G]</span> loose<br/><span class="chord">[F]</span> Yeah yeah yeah yeah <span class="chord">[Em]</span> yeah yeah yeah yeah <span class="chord">[Am]</span> yeahhh<br/><br/><span class="chord">[C]</span> Today I don't feel <span class="chord">[G]</span> like doing <span class="chord">[F]</span> anything... <span class="chord">[F]</span> ...<br/><span class="chord">[C]</span> I just wanna <span class="chord">[G]</span> lay in my <span class="chord">[F]</span> bed... <span class="chord">[F]</span> ...<br/><span class="chord">[C]</span> Don't feel like picking <span class="chord">[G]</span> up my phone<br/><span class="chord">[F]</span> So leave a message <span class="chord">[F]</span> at the tone<br/><span class="chord">[C]</span> Cause today I swear I'm <span class="chord">[Em]</span> not doing <span class="chord">[F]</span> anything - <span class="chord">[F]</span> Nothing at all<br/><span class="chord">[C]</span> Ooh hoo <span class="chord">[G]</span> ooh hoo  <span class="chord">[F]</span> Hoo ooh ooh, Nothing at all  <br/><span class="chord">[C]</span> Ooh hoo <span class="chord">[G]</span> ooh hoo  <span class="chord">[F]</span> Hoo ooh ooh, Nothing at <span class="chord">[C/]</span> all  <br/>
+			</div>
+			<hr/>
+			<div id="options" class="mt-4">
+				<a href="songs.html"><strong>← Back</strong></a>
+				 
+			</div>
+
+			
+					
+			<div class="m-2 my-4 text-center">
+				<img src="/images/qrcode.png" class="img-fluid" alt="QR Code" width="100">
+			</div>
+
+		</div>
 
     </div>
 </div>

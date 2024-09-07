@@ -12,9 +12,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <style>
-        .highlight {background-color: lemonchiffon; font-weight: bold;}
+        .highlight {background-color: lemonchiffon; font-weight: bold;} 
         .chord { font-weight: bold; color:red}
-        #tab { font-size: 80%; font-family: Verdana, Tahoma, sans-serif; }
+        #tab { font-size: 90%; font-family: Verdana, Tahoma, sans-serif; }
         #options a {text-decoration: underline;}
         .sticky { 
             position: fixed; 
@@ -62,7 +62,6 @@
 		}
 		.custom-text-h3 {
 			font-family: 'Montserrat', sans-serif;
-			
 			font-size: 2rem
 		}
 		.custom-text-h4 {
@@ -78,95 +77,110 @@
 			font-family: 'Montserrat', sans-serif;
 			font-weight: 200;
 		}
+		.ultra-light2 {
+			font-family: 'Montserrat', sans-serif;
+			font-weight: 200;
+			font-size: 1.1rem
+		}
 
 		.semi-bold {
 			font-family: 'Montserrat', sans-serif;
 			font-weight: 600;
 		}
+		.moj-element {
+			background-image: linear-gradient(to bottom, rgba(189, 32, 40, 0.4), rgba(189, 32, 40, 0.2));
+		}
+		.my-watermark {
+			background-image: url('../images/back_30.png');
+			background-position: right; /* lub background-position: 100%; */
+			background-size: contain;
+			background-repeat: no-repeat;
+			pointer-events: none; 
+		}
+		
+		
     </style>
 
 </head>
-<body data-duration = 4.3>
-
-
-<header class="container">
-    <div class="m-2 mb-4 text-center">
-        <img src="/images/ukulele-krakow.PNG" class="img-fluid" alt="Krakow Ukulele" width="200">
-    </div>
-</header>
+<body data-duration = 4.0>
+<!-- nie ma headera - czy tak w ogłe wolno? -->
 
 <div class="container">
-    <div class="row justify-content-center">
-        
-<div class="col-lg-8 col-md-10 col-sm-12 my-3">
-	
-
-    <h3 class="song-title semi-bold">
-	  #33 - Crazy
-    </h3>
-    <h4 class="song-artist custom-text-h4">
-        Gnarls Barkley
-    </h4>
-
-    <h5 class= custom-text-h5>
-        Level: 
-        <span class="badge rounded-pill badge-warning text-white">Medium</span>
-    </h5>
-    
-	    <div class="mt-3">
-		    <iframe src="https://open.spotify.com/embed/track/1vxw6aYJls2oq3gW0DujAo"
-				    width="300"
-				    height="80"
-				    frameborder="0"
-				    allowtransparency="true"
-				    allow="encrypted-media"></iframe>
-	    </div>
-    
-    
-
-   <div class="mt-4" style="overflow-x: auto;">
-    
-        <img src="chords/E7.gif" alt="E7" title="E7" />
-    
-        <img src="chords/Am.gif" alt="Am" title="Am" />
-    
-        <img src="chords/Cmaj7.gif" alt="Cmaj7" title="Cmaj7" />
-    
-        <img src="chords/A.gif" alt="A" title="A" />
-    
-        <img src="chords/F.gif" alt="F" title="F" />
-    
-</div>
-		<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 5px; top: 10px;">
-		  Dev info? <input type="checkbox" class="checkbox">
-		</div>
-		<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px; display: none;">
-		  <p id="heightInfo" style="font-size: xx-small;"></p>
-		  <p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
-		  <p id="songDuration" style="font-size: xx-small;"></p>
-		</div>
-	<div id="floatingButton" style="position: fixed; right: 20px; bottom: 20px; ">
-		<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light toggle-button">
-			<img id="buttonImage" src="images/pause2.gif">
-		</button>
-	</div>
-    
-    <div id="tab">
-          <br/>  <br/><br/><br/><br/> <br/><br/>Intro:<br/><span class="chord">[Am]</span>... <span class="chord">[Cmaj7]</span>... <span class="chord">[F]</span>... <span class="chord">[E7]</span>...<br/><br/><span class="chord">[Am]</span> I remember when… I remember, <br/>I remember when I lost my <span class="chord">[Cmaj7]</span> mind <br/>There was something so pleasant about that plaa<span class="chord">[F]</span>ce<br/>Even your emotions had an echo, In so much spa<span class="chord">[E7]</span>ce<br/><br/><span class="chord">[Am]</span> And when you're out there… without care<br/>Yeah, I was out of tou<span class="chord">[Cmaj7]</span>ch<br/>But it wasn't because I didn't know enough <span class="chord">[F]</span> <br/>I just knew too <span class="chord">[E7]</span> much<br/><br/>Does that make me <span class="chord">[Am]</span> crazy?<br/>Does that make me <span class="chord">[Cmaj7]</span> crazy??<br/>Does that make me <span class="chord">[F]</span> crazy???<br/>Possib<span class="chord">[E7]</span>ly...<br/><br/><span class="chord">[A]</span> And I hope that you are <br/>ha-aving the time of your <span class="chord">[F]</span> li-ife...<br/>But think <span class="chord">[Cmaj7]</span> twice... that's my only ad<span class="chord">[E7]</span>vice<br/><br/><span class="chord">[Am]</span> Come on now who-do-you. Who-do-you, <br/>who-do-you, who do you think you <span class="chord">[Cmaj7]</span> are?<br/>Ha ha ha, bless your so<span class="chord">[F]</span>ul<br/>You really think you're in con<span class="chord">[E7]</span>trol? <br/><br/>Well, I think you're <span class="chord">[Am]</span> crazy!<br/>I think you're <span class="chord">[Cmaj7]</span> crazy!!<br/>I think you're <span class="chord">[F]</span> crazy!!!<br/>Just like <span class="chord">[E7]</span> me-e-e<br/><br/><span class="chord">[A]</span> My heroes had the heart… <br/>to lose their lives out on a <span class="chord">[F]</span> limb<br/>And all I re<span class="chord">[Cmaj7]</span>member… is thinking… <br/>I wanna be like <span class="chord">[E7]</span> them<br/><br/><span class="chord">[Am]</span> Ever since I was little… <br/>Ever since I was little it looked like <span class="chord">[Cmaj7]</span> fun<br/>And it's no coincidence I've co-<span class="chord">[F]</span>-me<br/>And I can die when I'm do<span class="chord">[E7]</span>ne..<br/><br/>Maybe I'm <span class="chord">[Am]</span> crazy<br/>Maybe you're <span class="chord">[Cmaj7]</span> crazy<br/>Maybe we're <span class="chord">[F]</span> crazy<br/>Probably <span class="chord">[E7]</span>...<br/><br/><span class="chord">[Am]</span>... <span class="chord">[Cmaj7]</span>... <span class="chord">[F]</span>... <span class="chord">[E7]</span>...<br/><span class="chord">[Am/]</span><br/>
-    </div>
-
-    <div id="options" class="mt-4">
-        <a href="songs.html"><strong>← Back</strong></a>
-         
-    </div>
-
-    <hr/>
+    <div class="row justify-content-center">      
+		<div class="col-lg-8 col-md-10 col-sm-12 my-3">
+			<div class="shadow p-3 mb-5 bg-body rounded my-watermark">
+				<h3 class="song-title semi-bold">
+					#33 - Crazy
+				</h3>
+				<h5 class="song-artist ultra-light ">
+					Gnarls Barkley
+				</h5>
 			
-    <div class="m-2 my-4 text-center">
-        <img src="/images/qrcode.png" class="img-fluid" alt="QR Code" width="100">
-    </div>
+				<h5 class= ultra-light >
+					Level: 
+					<span class="badge rounded-pill badge-warning text-white">Medium</span>					
+				</h5>				
+			
+			</div>
+			
+				<div class="mt-3">							
+					<iframe style="border-radius:12px" 
+							src="https://open.spotify.com/embed/track/1vxw6aYJls2oq3gW0DujAo"
+							width="300px" 
+							height="80" 
+							frameBorder="0" 
+							allowfullscreen="" 
+							allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+							loading="lazy">
+					</iframe>
+				</div>
+			
+			
+				<div class="mt-4" style="overflow-x: auto;">
+					
+						<img src="chords/A.gif" alt="A" title="A" />
+					
+						<img src="chords/Am.gif" alt="Am" title="Am" />
+					
+						<img src="chords/Cmaj7.gif" alt="Cmaj7" title="Cmaj7" />
+					
+						<img src="chords/E7.gif" alt="E7" title="E7" />
+					
+						<img src="chords/F.gif" alt="F" title="F" />
+					
+				
+				</div>
+				<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 5px; top: 10px;">
+				  Dev info? <input type="checkbox" class="checkbox">
+				</div>
+				<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px; display: none;">
+				  <p id="heightInfo" style="font-size: xx-small;"></p>
+				  <p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
+				  <p id="songDuration" style="font-size: xx-small;"></p>
+				</div>
+				<div id="floatingButton" style="position: fixed; right: 20px; bottom: 20px; ">
+					<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light toggle-button">
+						<img id="buttonImage" src="images/pause2.gif">
+					</button>
+				</div>
 
-</div>
+			
+			<div id="tab">
+				  <br/>  <br/><br/><br/><br/> <br/><br/>Intro:<br/><span class="chord">[Am]</span>... <span class="chord">[Cmaj7]</span>... <span class="chord">[F]</span>... <span class="chord">[E7]</span>...<br/><br/><span class="chord">[Am]</span> I remember when… I remember, <br/>I remember when I lost my <span class="chord">[Cmaj7]</span> mind <br/>There was something so pleasant about that plaa<span class="chord">[F]</span>ce<br/>Even your emotions had an echo, In so much spa<span class="chord">[E7]</span>ce<br/><br/><span class="chord">[Am]</span> And when you're out there… without care<br/>Yeah, I was out of tou<span class="chord">[Cmaj7]</span>ch<br/>But it wasn't because I didn't know enough <span class="chord">[F]</span> <br/>I just knew too <span class="chord">[E7]</span> much<br/><br/>Does that make me <span class="chord">[Am]</span> crazy?<br/>Does that make me <span class="chord">[Cmaj7]</span> crazy??<br/>Does that make me <span class="chord">[F]</span> crazy???<br/>Possib<span class="chord">[E7]</span>ly...<br/><br/><span class="chord">[A]</span> And I hope that you are <br/>ha-aving the time of your <span class="chord">[F]</span> li-ife...<br/>But think <span class="chord">[Cmaj7]</span> twice... that's my only ad<span class="chord">[E7]</span>vice<br/><br/><span class="chord">[Am]</span> Come on now who-do-you. Who-do-you, <br/>who-do-you, who do you think you <span class="chord">[Cmaj7]</span> are?<br/>Ha ha ha, bless your so<span class="chord">[F]</span>ul<br/>You really think you're in con<span class="chord">[E7]</span>trol? <br/><br/>Well, I think you're <span class="chord">[Am]</span> crazy!<br/>I think you're <span class="chord">[Cmaj7]</span> crazy!!<br/>I think you're <span class="chord">[F]</span> crazy!!!<br/>Just like <span class="chord">[E7]</span> me-e-e<br/><br/><span class="chord">[A]</span> My heroes had the heart… <br/>to lose their lives out on a <span class="chord">[F]</span> limb<br/>And all I re<span class="chord">[Cmaj7]</span>member… is thinking… <br/>I wanna be like <span class="chord">[E7]</span> them<br/><br/><span class="chord">[Am]</span> Ever since I was little… <br/>Ever since I was little it looked like <span class="chord">[Cmaj7]</span> fun<br/>And it's no coincidence I've co-<span class="chord">[F]</span>-me<br/>And I can die when I'm do<span class="chord">[E7]</span>ne..<br/><br/>Maybe I'm <span class="chord">[Am]</span> crazy<br/>Maybe you're <span class="chord">[Cmaj7]</span> crazy<br/>Maybe we're <span class="chord">[F]</span> crazy<br/>Probably <span class="chord">[E7]</span>...<br/><br/><span class="chord">[Am]</span>... <span class="chord">[Cmaj7]</span>... <span class="chord">[F]</span>... <span class="chord">[E7]</span>...<br/><span class="chord">[Am/]</span><br/>
+			</div>
+			<hr/>
+			<div id="options" class="mt-4">
+				<a href="songs.html"><strong>← Back</strong></a>
+				 
+			</div>
+
+			
+					
+			<div class="m-2 my-4 text-center">
+				<img src="/images/qrcode.png" class="img-fluid" alt="QR Code" width="100">
+			</div>
+
+		</div>
 
     </div>
 </div>

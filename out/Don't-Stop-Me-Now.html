@@ -12,9 +12,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <style>
-        .highlight {background-color: lemonchiffon; font-weight: bold;}
+        .highlight {background-color: lemonchiffon; font-weight: bold;} 
         .chord { font-weight: bold; color:red}
-        #tab { font-size: 80%; font-family: Verdana, Tahoma, sans-serif; }
+        #tab { font-size: 90%; font-family: Verdana, Tahoma, sans-serif; }
         #options a {text-decoration: underline;}
         .sticky { 
             position: fixed; 
@@ -62,7 +62,6 @@
 		}
 		.custom-text-h3 {
 			font-family: 'Montserrat', sans-serif;
-			
 			font-size: 2rem
 		}
 		.custom-text-h4 {
@@ -78,101 +77,116 @@
 			font-family: 'Montserrat', sans-serif;
 			font-weight: 200;
 		}
+		.ultra-light2 {
+			font-family: 'Montserrat', sans-serif;
+			font-weight: 200;
+			font-size: 1.1rem
+		}
 
 		.semi-bold {
 			font-family: 'Montserrat', sans-serif;
 			font-weight: 600;
 		}
+		.moj-element {
+			background-image: linear-gradient(to bottom, rgba(189, 32, 40, 0.4), rgba(189, 32, 40, 0.2));
+		}
+		.my-watermark {
+			background-image: url('../images/back_30.png');
+			background-position: right; /* lub background-position: 100%; */
+			background-size: contain;
+			background-repeat: no-repeat;
+			pointer-events: none; 
+		}
+		
+		
     </style>
 
 </head>
-<body data-duration = 4.3>
-
-
-<header class="container">
-    <div class="m-2 mb-4 text-center">
-        <img src="/images/ukulele-krakow.PNG" class="img-fluid" alt="Krakow Ukulele" width="200">
-    </div>
-</header>
+<body data-duration = 4.0>
+<!-- nie ma headera - czy tak w ogłe wolno? -->
 
 <div class="container">
-    <div class="row justify-content-center">
-        
-<div class="col-lg-8 col-md-10 col-sm-12 my-3">
-	
-
-    <h3 class="song-title semi-bold">
-	  #41 - Don't Stop Me Now
-    </h3>
-    <h4 class="song-artist custom-text-h4">
-        Queen
-    </h4>
-
-    <h5 class= custom-text-h5>
-        Level: 
-        <span class="badge rounded-pill badge-danger text-white">Hard</span>
-    </h5>
-    
-	    <div class="mt-3">
-		    <iframe src="https://open.spotify.com/embed/track/5T8EDUDqKcs6OSOwEsfqG7"
-				    width="300"
-				    height="80"
-				    frameborder="0"
-				    allowtransparency="true"
-				    allow="encrypted-media"></iframe>
-	    </div>
-    
-    
-
-   <div class="mt-4" style="overflow-x: auto;">
-    
-        <img src="chords/F.gif" alt="F" title="F" />
-    
-        <img src="chords/Am.gif" alt="Am" title="Am" />
-    
-        <img src="chords/Gm.gif" alt="Gm" title="Gm" />
-    
-        <img src="chords/Bb.gif" alt="Bb" title="Bb" />
-    
-        <img src="chords/D.gif" alt="D" title="D" />
-    
-        <img src="chords/C.gif" alt="C" title="C" />
-    
-        <img src="chords/Eb.gif" alt="Eb" title="Eb" />
-    
-        <img src="chords/Dm.gif" alt="Dm" title="Dm" />
-    
-</div>
-		<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 5px; top: 10px;">
-		  Dev info? <input type="checkbox" class="checkbox">
-		</div>
-		<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px; display: none;">
-		  <p id="heightInfo" style="font-size: xx-small;"></p>
-		  <p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
-		  <p id="songDuration" style="font-size: xx-small;"></p>
-		</div>
-	<div id="floatingButton" style="position: fixed; right: 20px; bottom: 20px; ">
-		<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light toggle-button">
-			<img id="buttonImage" src="images/pause2.gif">
-		</button>
-	</div>
-    
-    <div id="tab">
-         <br/>  <br/>  <br/><br/> <br/><br/>(slow)<br/>To<span class="chord">[F/]</span>night… I’m gonna have my<span class="chord">[Am/]</span>self… a real <span class="chord">[Dm/]</span> good time<br/>I feel a<span class="chord">[Gm/]</span>li-i-i-<span class="chord">[C/]</span>ive<br/>And the <span class="chord">[F/]</span> world… I’ll <span class="chord">[F/]</span> turn it inside <span class="chord">[Bb/]</span> out, yeah<br/><span class="chord">[Gm/]</span> Floating around… in <span class="chord">[D/]</span> ecstasy… so<br/><span class="chord">[Gm/]</span> Don’t <span class="chord">[F/]</span> stop <span class="chord">[C/]</span> me <span class="chord">[Gm]</span> now ...<br/><span class="chord">[Gm/]</span> Don’t <span class="chord">[F/]</span> stop <span class="chord">[C/]</span> me cos I’m <span class="chord">[Gm]</span> having a good time<br/><br/>(speeding up)<br/><span class="chord">[C]</span> Having a good time<br/><br/>(faster)<br/>I’m a <span class="chord">[F]</span> shooting star leaping through the <span class="chord">[Am]</span> sky… like a<br/>Ti<span class="chord">[Dm]</span>ger… defying the <span class="chord">[Gm]</span> laws of gravit<span class="chord">[C]</span>y<br/>I’m a <span class="chord">[F]</span> racing car… passing <span class="chord">[Am]</span> by… like Lady God<span class="chord">[Dm]</span>iva<br/>I’m gonna <span class="chord">[Gm]</span> go go go <span class="chord">[C]</span>… there’s no stopping <span class="chord">[F]</span> me <br/><br/>I’m <span class="chord">[F]</span> burning through the <span class="chord">[Bb]</span> sky, yeah<br/>Two <span class="chord">[Gm]</span> hundred degrees that’s why they <span class="chord">[D]</span> call me Mr Fahren<span class="chord">[Gm]</span>heit<br/>I’m <span class="chord">[D]</span> travelling at the speed of <span class="chord">[Gm]</span> light<br/>I wanna make a <span class="chord">[Gm]</span> supersonic man out of <span class="chord">[C]</span> you....<br/><br/><span class="chord">[F/]</span> Don’t <span class="chord">[Gm/]</span> stop <span class="chord">[Am/]</span> me <span class="chord">[Dm]</span> now<br/>I’m having such a <span class="chord">[Gm]</span> good time<br/>I’m <span class="chord">[C]</span> having a ball<br/><span class="chord">[F/]</span> Don’t <span class="chord">[Gm/]</span> stop <span class="chord">[Am/]</span> me <span class="chord">[Dm]</span> now<br/>If you wanna have a <span class="chord">[Gm]</span> good time<br/>Just <span class="chord">[D]</span> give me a call<br/><span class="chord">[Gm/]</span> Don’t <span class="chord">[F/]</span> stop <span class="chord">[C/]</span> me <span class="chord">[Gm]</span> now <br/>                           (Cos I’m having a good time)<br/><span class="chord">[Gm/]</span> Don’t <span class="chord">[F/]</span> stop <span class="chord">[C/]</span> me <span class="chord">[Gm]</span> now <br/>                           (Yes I’m having a good time)<br/>I <span class="chord">[C]</span> don’t want to stop at <span class="chord">[Eb]</span> a-a-all<br/><br/>Yeah I’m a <span class="chord">[F]</span> rocket ship on my way to <span class="chord">[Am]</span> Mars<br/>On a col<span class="chord">[Dm]</span>lision course… I’m a <span class="chord">[Gm]</span> satellite<br/>I’m <span class="chord">[C]</span> out of control<br/>I’m a <span class="chord">[F]</span> sex machine ready to re<span class="chord">[Am]</span>load<br/>Like an <span class="chord">[Dm]</span> atom bomb… about to <span class="chord">[Gm]</span> oh-oh-oh-<span class="chord">[C]</span>-oh, oh ex<span class="chord">[F]</span>plode<br/>I’m <span class="chord">[F]</span> burning through the <span class="chord">[Bb]</span> sky yeah<br/>Two <span class="chord">[Gm]</span> hundred degrees, that’s why they <span class="chord">[D]</span> call me Mr Faren<span class="chord">[Gm]</span>heit<br/>I’m <span class="chord">[D]</span> travelling at the speed of <span class="chord">[Gm]</span> light<br/>I wanna make a <span class="chord">[Gm]</span> supersonic woman of <span class="chord">[C/]</span> you <strong><span class="chord">[stop]</span></strong><br/><br/>(no chords)<br/>Don’t stop me, don’t stop me, don’t stop me (hey hey hey)<br/>Don’t stop me, don’t stop me (ooh, ooh, ooh)<br/>Don’t stop me, don’t stop me (have a good time, good time)<br/>Don’t stop me, don’t stop me, ohhhh<br/><br/><span class="chord">[F]</span> <span class="chord">[Am]</span> <span class="chord">[Dm]</span> <span class="chord">[Gm]</span> <span class="chord">[C]</span><br/><span class="chord">[F]</span> <span class="chord">[Am]</span> <span class="chord">[Dm]</span> <span class="chord">[Gm]</span> <span class="chord">[C]</span><br/><span class="chord">[F]</span><br/>I’m <span class="chord">[F]</span> burning through the <span class="chord">[Bb]</span> sky, yeah<br/>Two <span class="chord">[Gm]</span> hundred degrees that’s why they <span class="chord">[D]</span> call me Mr Fahren<span class="chord">[Gm]</span>heit<br/>I’m <span class="chord">[D]</span> travelling at the speed of <span class="chord">[Gm]</span> light<br/>I wanna make a <span class="chord">[Gm]</span> supersonic man out of <span class="chord">[C]</span> you....<br/><br/><span class="chord">[F/]</span> Don’t <span class="chord">[Gm/]</span> stop <span class="chord">[Am/]</span> me <span class="chord">[Dm]</span> now<br/>I’m having such a <span class="chord">[Gm]</span> good time<br/>I’m <span class="chord">[C]</span> having a ball<br/><span class="chord">[F/]</span> Don’t <span class="chord">[Gm/]</span> stop <span class="chord">[Am/]</span> me <span class="chord">[Dm]</span> now<br/>If you wanna have a <span class="chord">[Gm]</span> good time<br/>Just <span class="chord">[D]</span> give me a call<br/><span class="chord">[Gm/]</span> Don’t <span class="chord">[F/]</span> stop <span class="chord">[C/]</span> me <span class="chord">[Gm]</span> now <br/>                               (Cos I’m having a good time)<br/><span class="chord">[Gm/]</span> Don’t <span class="chord">[F/]</span> stop <span class="chord">[C/]</span> me <span class="chord">[Gm]</span> now <br/>                               (Yes I’m having a good time)<br/>I <span class="chord">[C]</span> don’t want to stop at <span class="chord">[Eb]</span> a-a-all<br/><br/>(slower & quieter to fade out)<br/><span class="chord">[F/]</span> La da da da <span class="chord">[Am/]</span> dah da da da <br/><span class="chord">[Dm/]</span> haa ha da <span class="chord">[Gm/]</span> da ha ha haa <span class="chord">[C/]</span><span class="chord">[F/]</span><span class="chord">[F/]</span><span class="chord">[Bb/]</span> <!--in the video it fades out at this point so did I--><br/>
-    </div>
-
-    <div id="options" class="mt-4">
-        <a href="songs.html"><strong>← Back</strong></a>
-         
-    </div>
-
-    <hr/>
+    <div class="row justify-content-center">      
+		<div class="col-lg-8 col-md-10 col-sm-12 my-3">
+			<div class="shadow p-3 mb-5 bg-body rounded my-watermark">
+				<h3 class="song-title semi-bold">
+					#41 - Don't Stop Me Now
+				</h3>
+				<h5 class="song-artist ultra-light ">
+					Queen
+				</h5>
 			
-    <div class="m-2 my-4 text-center">
-        <img src="/images/qrcode.png" class="img-fluid" alt="QR Code" width="100">
-    </div>
+				<h5 class= ultra-light >
+					Level: 
+					<span class="badge rounded-pill badge-warning text-white">Hard</span>					
+				</h5>				
+			
+			</div>
+			
+				<div class="mt-3">							
+					<iframe style="border-radius:12px" 
+							src="https://open.spotify.com/embed/track/5T8EDUDqKcs6OSOwEsfqG7"
+							width="300px" 
+							height="80" 
+							frameBorder="0" 
+							allowfullscreen="" 
+							allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+							loading="lazy">
+					</iframe>
+				</div>
+			
+			
+				<div class="mt-4" style="overflow-x: auto;">
+					
+						<img src="chords/Am.gif" alt="Am" title="Am" />
+					
+						<img src="chords/Bb.gif" alt="Bb" title="Bb" />
+					
+						<img src="chords/C.gif" alt="C" title="C" />
+					
+						<img src="chords/D.gif" alt="D" title="D" />
+					
+						<img src="chords/Dm.gif" alt="Dm" title="Dm" />
+					
+						<img src="chords/Eb.gif" alt="Eb" title="Eb" />
+					
+						<img src="chords/F.gif" alt="F" title="F" />
+					
+						<img src="chords/Gm.gif" alt="Gm" title="Gm" />
+					
+				
+				</div>
+				<div class="div_box" id="devInfo" style="font-size: xx-small; position: fixed; right: 5px; top: 10px;">
+				  Dev info? <input type="checkbox" class="checkbox">
+				</div>
+				<div id="infoBox" style="position: fixed; right: 20px; top: 35px; border: 1px solid black; padding: 10px; display: none;">
+				  <p id="heightInfo" style="font-size: xx-small;"></p>
+				  <p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
+				  <p id="songDuration" style="font-size: xx-small;"></p>
+				</div>
+				<div id="floatingButton" style="position: fixed; right: 20px; bottom: 20px; ">
+					<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light toggle-button">
+						<img id="buttonImage" src="images/pause2.gif">
+					</button>
+				</div>
 
-</div>
+			
+			<div id="tab">
+				 <br/>  <br/>  <br/><br/> <br/><br/>(slow)<br/>To<span class="chord">[F/]</span>night… I’m gonna have my<span class="chord">[Am/]</span>self… a real <span class="chord">[Dm/]</span> good time<br/>I feel a<span class="chord">[Gm/]</span>li-i-i-<span class="chord">[C/]</span>ive<br/>And the <span class="chord">[F/]</span> world… I’ll <span class="chord">[F/]</span> turn it inside <span class="chord">[Bb/]</span> out, yeah<br/><span class="chord">[Gm/]</span> Floating around… in <span class="chord">[D/]</span> ecstasy… so<br/><span class="chord">[Gm/]</span> Don’t <span class="chord">[F/]</span> stop <span class="chord">[C/]</span> me <span class="chord">[Gm]</span> now ...<br/><span class="chord">[Gm/]</span> Don’t <span class="chord">[F/]</span> stop <span class="chord">[C/]</span> me cos I’m <span class="chord">[Gm]</span> having a good time<br/><br/>(speeding up)<br/><span class="chord">[C]</span> Having a good time<br/><br/>(faster)<br/>I’m a <span class="chord">[F]</span> shooting star leaping through the <span class="chord">[Am]</span> sky… like a<br/>Ti<span class="chord">[Dm]</span>ger… defying the <span class="chord">[Gm]</span> laws of gravit<span class="chord">[C]</span>y<br/>I’m a <span class="chord">[F]</span> racing car… passing <span class="chord">[Am]</span> by… like Lady God<span class="chord">[Dm]</span>iva<br/>I’m gonna <span class="chord">[Gm]</span> go go go <span class="chord">[C]</span>… there’s no stopping <span class="chord">[F]</span> me <br/><br/>I’m <span class="chord">[F]</span> burning through the <span class="chord">[Bb]</span> sky, yeah<br/>Two <span class="chord">[Gm]</span> hundred degrees that’s why they <span class="chord">[D]</span> call me Mr Fahren<span class="chord">[Gm]</span>heit<br/>I’m <span class="chord">[D]</span> travelling at the speed of <span class="chord">[Gm]</span> light<br/>I wanna make a <span class="chord">[Gm]</span> supersonic man out of <span class="chord">[C]</span> you....<br/><br/><span class="chord">[F/]</span> Don’t <span class="chord">[Gm/]</span> stop <span class="chord">[Am/]</span> me <span class="chord">[Dm]</span> now<br/>I’m having such a <span class="chord">[Gm]</span> good time<br/>I’m <span class="chord">[C]</span> having a ball<br/><span class="chord">[F/]</span> Don’t <span class="chord">[Gm/]</span> stop <span class="chord">[Am/]</span> me <span class="chord">[Dm]</span> now<br/>If you wanna have a <span class="chord">[Gm]</span> good time<br/>Just <span class="chord">[D]</span> give me a call<br/><span class="chord">[Gm/]</span> Don’t <span class="chord">[F/]</span> stop <span class="chord">[C/]</span> me <span class="chord">[Gm]</span> now <br/>                           (Cos I’m having a good time)<br/><span class="chord">[Gm/]</span> Don’t <span class="chord">[F/]</span> stop <span class="chord">[C/]</span> me <span class="chord">[Gm]</span> now <br/>                           (Yes I’m having a good time)<br/>I <span class="chord">[C]</span> don’t want to stop at <span class="chord">[Eb]</span> a-a-all<br/><br/>Yeah I’m a <span class="chord">[F]</span> rocket ship on my way to <span class="chord">[Am]</span> Mars<br/>On a col<span class="chord">[Dm]</span>lision course… I’m a <span class="chord">[Gm]</span> satellite<br/>I’m <span class="chord">[C]</span> out of control<br/>I’m a <span class="chord">[F]</span> sex machine ready to re<span class="chord">[Am]</span>load<br/>Like an <span class="chord">[Dm]</span> atom bomb… about to <span class="chord">[Gm]</span> oh-oh-oh-<span class="chord">[C]</span>-oh, oh ex<span class="chord">[F]</span>plode<br/>I’m <span class="chord">[F]</span> burning through the <span class="chord">[Bb]</span> sky yeah<br/>Two <span class="chord">[Gm]</span> hundred degrees, that’s why they <span class="chord">[D]</span> call me Mr Faren<span class="chord">[Gm]</span>heit<br/>I’m <span class="chord">[D]</span> travelling at the speed of <span class="chord">[Gm]</span> light<br/>I wanna make a <span class="chord">[Gm]</span> supersonic woman of <span class="chord">[C/]</span> you <strong><span class="chord">[stop]</span></strong><br/><br/>(no chords)<br/>Don’t stop me, don’t stop me, don’t stop me (hey hey hey)<br/>Don’t stop me, don’t stop me (ooh, ooh, ooh)<br/>Don’t stop me, don’t stop me (have a good time, good time)<br/>Don’t stop me, don’t stop me, ohhhh<br/><br/><span class="chord">[F]</span> <span class="chord">[Am]</span> <span class="chord">[Dm]</span> <span class="chord">[Gm]</span> <span class="chord">[C]</span><br/><span class="chord">[F]</span> <span class="chord">[Am]</span> <span class="chord">[Dm]</span> <span class="chord">[Gm]</span> <span class="chord">[C]</span><br/><span class="chord">[F]</span><br/>I’m <span class="chord">[F]</span> burning through the <span class="chord">[Bb]</span> sky, yeah<br/>Two <span class="chord">[Gm]</span> hundred degrees that’s why they <span class="chord">[D]</span> call me Mr Fahren<span class="chord">[Gm]</span>heit<br/>I’m <span class="chord">[D]</span> travelling at the speed of <span class="chord">[Gm]</span> light<br/>I wanna make a <span class="chord">[Gm]</span> supersonic man out of <span class="chord">[C]</span> you....<br/><br/><span class="chord">[F/]</span> Don’t <span class="chord">[Gm/]</span> stop <span class="chord">[Am/]</span> me <span class="chord">[Dm]</span> now<br/>I’m having such a <span class="chord">[Gm]</span> good time<br/>I’m <span class="chord">[C]</span> having a ball<br/><span class="chord">[F/]</span> Don’t <span class="chord">[Gm/]</span> stop <span class="chord">[Am/]</span> me <span class="chord">[Dm]</span> now<br/>If you wanna have a <span class="chord">[Gm]</span> good time<br/>Just <span class="chord">[D]</span> give me a call<br/><span class="chord">[Gm/]</span> Don’t <span class="chord">[F/]</span> stop <span class="chord">[C/]</span> me <span class="chord">[Gm]</span> now <br/>                               (Cos I’m having a good time)<br/><span class="chord">[Gm/]</span> Don’t <span class="chord">[F/]</span> stop <span class="chord">[C/]</span> me <span class="chord">[Gm]</span> now <br/>                               (Yes I’m having a good time)<br/>I <span class="chord">[C]</span> don’t want to stop at <span class="chord">[Eb]</span> a-a-all<br/><br/>(slower & quieter to fade out)<br/><span class="chord">[F/]</span> La da da da <span class="chord">[Am/]</span> dah da da da <br/><span class="chord">[Dm/]</span> haa ha da <span class="chord">[Gm/]</span> da ha ha haa <span class="chord">[C/]</span><span class="chord">[F/]</span><span class="chord">[F/]</span><span class="chord">[Bb/]</span> <!--in the video it fades out at this point so did I--><br/>
+			</div>
+			<hr/>
+			<div id="options" class="mt-4">
+				<a href="songs.html"><strong>← Back</strong></a>
+				 
+			</div>
+
+			
+					
+			<div class="m-2 my-4 text-center">
+				<img src="/images/qrcode.png" class="img-fluid" alt="QR Code" width="100">
+			</div>
+
+		</div>
 
     </div>
 </div>
