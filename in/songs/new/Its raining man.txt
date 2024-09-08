@@ -1,55 +1,65 @@
-{t:🔥Its Raining Men}
+{t:🔥It's Raining Men}
 {artist:The Weather Girls}
-{level: xxx}
+{level: Medium}
 
 
-[Intro:]
+<small><i>Intro:</small></i>
 [Em]  [G]  [C]   [B]
 
-[Em]Humidity is rising - Barometer's getting low
-According to our sources, the [B7]street's the place to go
-Cause [Em]tonight for the first time
-[Am]Just about half-past ten
-For the [B]first time in history
-It's [B7]gonna start raining men.
+[Em] Humidity is rising - [Em] Barometer's getting low
+[Em] According to our sources, the [B7] street's the place to go
+Cause [Em] tonight for the first time
+[Am] Just about half-past ten
+For the [B] first time in history
+It's [B7] gonna start raining men.
+[B7][back](Start raining men)[/back]
 
-It's Raining [C]Men! [D]Hallelujah! - It's [B]Raining [Em]Men! Amen!
-I'm gonna[Am]  go out to run and let myself get
-[B]Absolutely [B7]soaking wet!
+It's Raining [C] Men! [D] Hallelujah! - It's [B] Raining Men! [Em] Amen!
+I'm gonna [Am] go out, I'm gonna let [Am] myself get
+[B] Absolutely [B7] soaking wet!
 
-It's Raining [C]Men! [D]Hallelujah!
-It's Raining[B]  Men! Every [Em]Specimen!
-[Am]Tall, blonde, dark and lean
-[B]Rough and tough and [B7]strong and mean
+[B7]It's Raining [C] Men! [D] Hallelujah!
+It's Raining [B]  Men! Every [Em] Specimen!
+[Am] Tall, blonde, [Am] dark and lean
+[B] Rough and tough and [B7] strong and mean [B7]
 
-[Cmaj7]God bless Mother[D]  [B7]Nature, she's a [Em]single woman too
-[Cmaj7]She took from [D]the heavens [B7]and she did what [Em]she had to do
-[Cmaj7]She taught [D]every angel [B7]to rearrange the[Em]  sky
-So that[C]  each and every woman could [B7]find her perfect guy
+[Cmaj7] God bless Mother [D] Nature, [B7]  she's a single [Em] woman too
+[Cmaj7] She took from [D] the heavens [B7] and she did what [Em] she had to do
+[Cmaj7] She taught [D] every angel [B7] to rearrange the [Em] sky
+So that [C] each and every [C] woman could [B7] find her perfect [B7] guy
+[B7/]
+It's Raining [C] Men! [D] Hallelujah! - It's [B] Raining Men! [Em] Amen!
+It's Raining [C] Men! [D] Hallelujah! - It's [B] Raining Men! [Em] Ame-e-e-en!
 
-It's Raining [C]Men! [D]Hallelujah! - It's [B]Raining [Em]Men! Amen!
-It's Raining [C]Men! [D]Hallelujah! - It's [B]Raining [Em]Men! Amen!
+[Em]...<b>x4</b>
+<small><i>(Bridge)</small></i>
+[Em]I feel stormy [G] weather moving 
+[C] i-i-in
+[B] About to begin
+[Em] Hear the thunder
+[G] Don't you lose your [C] HEAD!
+[B] Rip off the roof and [B7] stay in bed
+[B7][back] (Rip off the roof and stay in bed)[/back]
 
-[Bridge]
-[Em]I feel stormy [G]weather moving in
- [C] ...
-About to [B]begin
-[Em]Hear the thunder
- [G] ...
-Don't you lose your [C][B]HEAD!
-[B]Rip off the roof and stay in bed
+[Cmaj7] God bless Mother [D] Nature, [B7]  she's a single [Em] woman too
+[Cmaj7] She took from [D] the heavens [B7] and she did what [Em] she had to do
+[Cmaj7] She taught [D] every angel [B7] to rearrange the [Em] sky
+So that [C] each and every [C] woman could [B7] find her perfect  gu-[B7]UUU-Y[B7/]
+Oh, it's raining [Em] yeah! [Em]...
 
-[Cmaj7]God bless Mother[D]  [B7]Nature, she's a [Em]single woman too
-[Cmaj7]She took from [D]the heavens [B7]and she did what [Em]she had to do
-[Cmaj7]She taught [D]every angel [B7]to rearrange the[Em]  sky
-So that[C]  each and every woman could [B7]find her perfect guy
 
-[Em]Humidity is rising - Barometer's getting low
-According to our sources, the [B7]street's the place to go
-Cause [Em]tonight for the first time
-[Am]Just about half-past ten
-For the [B]first time in history
-It's [B7]gonna start raining men.
+[Em] Humidity is rising - [Em] Barometer's getting low
+[Em] According to our sources, the [B7] street's the place to go
+Cause [Em] tonight for the first time
+[Am] Just about half-past ten
+For the [B] first time in history
+It's [B7] gonna start raining men.
+[B7][back](Start raining men)[/back]
 
-It's Raining [C]Men! [D]Hallelujah! - It's [B]Raining [Em]Men! Amen!
-It's Raining [C]Men! [D]Hallelujah! - It's [B]Raining [Em]Men! Amen!
+It's Raining [C] Men! [D] Hallelujah! - It's [B] Raining Men! [Em] Amen!
+It's Raining [C] Men! [D] Hallelujah! - It's [B] Raining Men! [Em] Amen!
+
+<small><i>(outro, fade out)</small></i>
+It's Raining Men! [C] ... [D] It's  Raining Men! [B]...[Em] ...
+It's Raining Men! [C] ... [D] It's  Raining Men! [B]...[Em] ...
+[C/]
