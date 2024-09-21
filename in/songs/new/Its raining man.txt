@@ -12,13 +12,13 @@ Cause [Em] tonight for the first time
 [Am] Just about half-past ten
 For the [B] first time in history
 It's [B7] gonna start raining men.
-[B7][back](Start raining men)[/back]
+[B7/][stop][back](Start raining men)[/back]
 
 It's Raining [C] Men! [D] Hallelujah! - It's [B] Raining Men! [Em] Amen!
 I'm gonna [Am] go out, I'm gonna let [Am] myself get
-[B] Absolutely [B7] soaking wet!
+[B] Absolutely [B7] soaking wet![B7/]
 
-[B7]It's Raining [C] Men! [D] Hallelujah!
+It's Raining [C] Men! [D] Hallelujah!
 It's Raining [B]  Men! Every [Em] Specimen!
 [Am] Tall, blonde, [Am] dark and lean
 [B] Rough and tough and [B7] strong and mean [B7]
@@ -39,13 +39,13 @@ It's Raining [C] Men! [D] Hallelujah! - It's [B] Raining Men! [Em] Ame-e-e-en!
 [Em] Hear the thunder
 [G] Don't you lose your [C] HEAD!
 [B] Rip off the roof and [B7] stay in bed
-[B7][back] (Rip off the roof and stay in bed)[/back]
+[B7/][stop][back] (Rip off the roof and stay in bed)[/back]
 
 [Cmaj7] God bless Mother [D] Nature, [B7]  she's a single [Em] woman too
 [Cmaj7] She took from [D] the heavens [B7] and she did what [Em] she had to do
 [Cmaj7] She taught [D] every angel [B7] to rearrange the [Em] sky
 So that [C] each and every [C] woman could [B7] find her perfect  gu-[B7]UUU-Y[B7/]
-Oh, it's raining [Em] yeah! [Em]...
+Oh, it's raining men [Em] yeah! [Em]...
 
 
 [Em] Humidity is rising - [Em] Barometer's getting low
@@ -54,7 +54,7 @@ Cause [Em] tonight for the first time
 [Am] Just about half-past ten
 For the [B] first time in history
 It's [B7] gonna start raining men.
-[B7][back](Start raining men)[/back]
+[B7/][stop][back](Start raining men)[/back]
 
 It's Raining [C] Men! [D] Hallelujah! - It's [B] Raining Men! [Em] Amen!
 It's Raining [C] Men! [D] Hallelujah! - It's [B] Raining Men! [Em] Amen!
