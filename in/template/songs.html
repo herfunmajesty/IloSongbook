@@ -137,13 +137,13 @@ ul { list-style: none; padding-left: 0px; }
 </div>
 
 
-<script>
+<script> // Filtry poziomu
 	document.addEventListener('DOMContentLoaded', () => {
 		const filterButtons = document.querySelectorAll('.filter-button');
 		const savedState = JSON.parse(sessionStorage.getItem('buttonState'));
-		const songsList = document.getElementById('songs'); // ID twojej listy piosenek
-		console.log('Zachowane stany przyciskow: ', savedState);
-		if (savedState === null) {
+		const songsList = document.getElementById('songs'); // ID listy piosenek
+		console.log('Zachowane stany przyciskow: ', savedState); 
+		if (savedState === null) {//sprawdza czy ma zapamiętane stany z tej sesji
 			// Jesli savedState jest null, oznacz wszystkie przyciski jako aktywne
 			filterButtons.forEach(button => {
 				if (button.name !== 'New') {
@@ -152,8 +152,8 @@ ul { list-style: none; padding-left: 0px; }
 			});
 		} else {
 			// W przeciwnym razie odczytaj stan przyciskow z sessionStorage
-			filterButtons.forEach(button => {
-				if (button.name !== 'New') {
+			filterButtons.forEach(button => { 
+				if (button.name !== 'New') { //zapamiętujemy stan tylko dla leveli - dla New nie chcę
 					if (savedState.includes(button.name)) {
 						button.classList.add('active');
 					}
@@ -163,10 +163,10 @@ ul { list-style: none; padding-left: 0px; }
 		filterSongs(); //odpala filtrowanie z uzględnieniem setupu przycisków
 		filterButtons.forEach(button => {
 			// Dla przyciskow wszystkich bez wyjatku
-			button.addEventListener('touchend', () => {
+			button.addEventListener('touchend', () => { //nasłuchiwacz dotknięcia na urządzeniach dotykowych
 			    changeFilterButtonState(button);
 			});
-			button.addEventListener('click', () => {
+			button.addEventListener('click', () => { //kliknięcia myszką
 				changeFilterButtonState(button);
 			});
 		});
@@ -174,40 +174,36 @@ ul { list-style: none; padding-left: 0px; }
 			console.log(`Przycisk "${button.name}" jest ${button.classList.contains('active') ? 'aktywny' : 'nieaktywny'}`);
 		});
 		function changeFilterButtonState(button){
-				event.preventDefault();
-				button.classList.toggle('active');
+				event.preventDefault(); //blokada zachowania domyślnego aby móc wykonać swoje akcje
+				button.classList.toggle('active'); //zmiana klasy 
 				console.log('zmiana stany przyciskow: ', button.name);
-				filterSongs();
-				saveButtonState();
+				filterSongs(); //odpalenie filtrowania
+				saveButtonState(); //zapamiętanie stanu
 				// document.getElementById('virtual-click-area').click();
 		}
 		function saveButtonState() {
 			const activeButtons = Array.from(filterButtons).filter(btn => btn.classList.contains('active'));
 			sessionStorage.setItem('buttonState', JSON.stringify(activeButtons.map(btn => btn.name)));
 		}
-		function filterSongs() {
-			const activeButtons = document.querySelectorAll('.toggle-button.active');
+		function filterSongs() { //filtrowanie własciwe
+			const activeButtons = document.querySelectorAll('.toggle-button.active'); //spr które aktywne
 			console.log("Aktywne przyciski: ", activeButtons);
-			const allSongs = songsList.querySelectorAll('li');
+			const allSongs = songsList.querySelectorAll('li'); // wrzuca liste piosenek do zmiennej
 
 			allSongs.forEach(song => {
-				const level = song.querySelector('span small b').textContent;
-				var shouldDisplay = Array.from(activeButtons).some(btn => btn.name === level);
-				song.style.display = shouldDisplay ? 'block' : 'none';
+				const level = song.querySelector('span small b').textContent; //level w liscie danych jest w takim selektorze
+				var shouldDisplay = Array.from(activeButtons).some(btn => btn.name === level); // spr czy kótryś z aktywnych przycisków ma taką nazwę jak level danej piosenki
+				song.style.display = shouldDisplay ? 'block' : 'none'; //jeśli tak to block=widoczna a none nie
 				activeButtons.forEach(button => {
 					if (button.name === 'New') {
 						const title = song.querySelector('a').textContent;
-						shouldDisplay = title.includes('🔥');
-						if (song.style.display === 'block'){
+						shouldDisplay = title.includes('🔥'); // piosenka jest nowa jesli ma w nazwie fajer
+						if (song.style.display === 'block'){ //czyli jeśli piosenka jest nowa i już jest wyświetlona (odfiltrowane) to wyświetlaj, 
 							song.style.display = shouldDisplay ? 'block' : 'none';}
 					}
 				});
 			});
 		}
-		// Dodaj nasłuchiwanie na wirtualnym elemencie
-        document.getElementById('virtual-click-area').addEventListener('click', () => {
-            console.log('Wirtualny obiekt został kliknięty!');
-		});
 	});
 </script>
 <script>
@@ -215,14 +211,14 @@ ul { list-style: none; padding-left: 0px; }
         const songsList = document.getElementById('songs'); // ID twojej listy piosenek
         const sortByTitleButton = document.getElementById('sortByTitle');
         const sortByArtistButton = document.getElementById('sortByArtist');
-		const myArtElements = document.querySelectorAll('.my-art'); // Znajdź wszystkie elementy o klasie "my-art"
-		const myLevElements = document.querySelectorAll('.my-lev'); // Znajdź wszystkie elementy o klasie "my-lev"
+		//const myArtElements = document.querySelectorAll('.my-art'); // Znajdź wszystkie elementy o klasie "my-art"
+		//const myLevElements = document.querySelectorAll('.my-lev'); // Znajdź wszystkie elementy o klasie "my-lev"
 		//sortByTitleButton.checked = true; // Zaznacz pole wyboru
 		// Wylacz przycisk "Sort by Artist" na poczatku
            	// sortByArtistButton.classList.remove('active');
-		sortByTitleButton.classList.add('active');
+		sortByTitleButton.classList.add('active');// - domyślne sortowanie po tytułach
 
-        sortByTitleButton.addEventListener('click', () => {
+        sortByTitleButton.addEventListener('click', () => { // jeśli kliknąć title:
             sortByTitle();
             sortByArtistButton.classList.remove('active'); // Wylacz drugi przycisk
             sortByTitleButton.classList.add('active'); // Zaznacz pierwszy przycisk
@@ -241,23 +237,18 @@ ul { list-style: none; padding-left: 0px; }
         });
 		
         function sortByTitle() {
-			const sortedSongs = Array.from(songsList.querySelectorAll('li'))
+			const sortedSongs = Array.from(songsList.querySelectorAll('li')) // pobieram listę piosenek
             .sort((a, b) => {
-				// Pobierz nazw臋 z atrybutu href
+				// Pobierz nazwe z atrybutu href
 				var nameA = a.querySelector('a').getAttribute('href');
 				var nameB = b.querySelector('a').getAttribute('href');
-				nameA = nameA.replace(/^🔥/i, '');
+				nameA = nameA.replace(/^🔥/i, '');//ignor ikon
 				nameB = nameB.replace(/^🔥/i, '');
 				nameA = nameA.replace(/^🎂/i, '');
 				nameB = nameB.replace(/^🎂/i, '');
 				// Porównaj nazwy
 				return nameA.localeCompare(nameB);
-				
-				// Wyświetl wartotci artystów w konsoli
-				//console.log('Title A:', nameA);
-				//console.log('Title B:', nameB);
-				
-                return nameA.localeCompare(nameB);
+
 				
             });
 			songsList.innerHTML = ''; // Wyczysc liste
@@ -265,7 +256,7 @@ ul { list-style: none; padding-left: 0px; }
 			
 			var allLiElements = document.querySelectorAll('li'); // Pobierz wszystkie elementy <li>. Uwaga! nie może istnieć inny element typu <li>
 			allLiElements.forEach(function (myLi) {
-				var EmElement = myLi.querySelector('em');
+				var EmElement = myLi.querySelector('em'); - 
 				var anchorElement = myLi.querySelector('a'); // Pobierz element <a>
 				myLi.insertBefore(anchorElement, EmElement); // Przenieś element small em przed elementem <a>
 			});
@@ -296,7 +287,7 @@ ul { list-style: none; padding-left: 0px; }
 				//console.log(`Iteracja ${index}:`, SmallEmElement);
 				//console.log(`Iteracja ${index}:`, myLi.querySelector('a'));
 
-				myLi.insertBefore(SmallEmElement, myLi.querySelector('a'));
+				myLi.insertBefore(SmallEmElement, myLi.querySelector('a')); // przestawianie szyku
 			});
 		}
 		
