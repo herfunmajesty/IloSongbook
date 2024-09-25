@@ -16,7 +16,7 @@
         .highlight {background-color: lemonchiffon; font-weight: bold;} 
         .chord { font-weight: bold; color:red}
         #options a {text-decoration: underline;}
-        .sticky { 
+		.sticky { 
             position: fixed; 
             top: 0; 
             margin-top: 0 !important; 
@@ -110,7 +110,44 @@
 		#tab.huge {
 			font-size: 170%;
 		}
-}
+		
+		/* Domyślnie pasek akordów jest poziomy */
+		#chordsContainer {
+			position: relative;
+			background-color: white;
+
+			display: flex;
+			flex-wrap: wrap;
+			gap: 5px; /* Odstęp między akordami */
+		}
+		#chordsContainer img {
+			width: 55px;
+		}
+
+		#chordsContainer.sticky {
+			position: fixed;
+			top: 0;
+			width: 100%;
+			z-index: 1000;
+		}
+
+		/* Pasek akordów pionowy, gdy okno jest w trybie landscape */
+		@media (orientation: landscape) {
+			#chordsContainer {
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 200px;
+				height: 100vh; /* Ustaw wysokość na 100% wysokości okna przeglądarki */
+				flex-direction: column;
+				overflow-y: auto;
+			}
+
+			/* Zmiana marginesu dla całej strony */
+			body {
+				margin-left: 200px;
+			}
+		}
 		
     </style>
 
@@ -149,15 +186,38 @@
 				</div>
 			
 			
-				<div class="mt-4" style="overflow-x: auto;">
+				<div id="chordsContainer" class="mt-4 sidebar" style="overflow-x: auto;">
 					
 						<img src="chords/E7.gif" alt="E7" title="E7" />
-					
+						<img src="chords/A7.gif" alt="A7" title="A7" />
 						<img src="chords/D.gif" alt="D" title="D" />
+						<img src="chords/C.gif" alt="C" title="C" />
+						<img src="chords/A.gif" alt="A" title="A" />
+						<img src="chords/Em.gif" alt="Em" title="Em" />
+					
+						<img src="chords/G7.gif" alt="G7" title="G7" />
+					
+						<img src="chords/C.gif" alt="C" title="C" />
+					
+						<img src="chords/Am.gif" alt="Am" title="Am" />
+					
+						<img src="chords/Gsharp.gif" alt="Gsharp" title="Gsharp" />
+					
+						<img src="chords/Fsharp.gif" alt="Fsharp" title="Fsharp" />
+					
+						<img src="chords/Dm.gif" alt="Dm" title="Dm" />
+					
+						<img src="chords/Fm.gif" alt="Fm" title="Fm" />
+					
+						<img src="chords/Bb.gif" alt="Bb" title="Bb" />
 					
 						<img src="chords/A.gif" alt="A" title="A" />
 					
-						<img src="chords/B7.gif" alt="B7" title="B7" />
+						<img src="chords/F.gif" alt="F" title="F" />
+					
+						<img src="chords/B.gif" alt="B" title="B" />
+					
+						<img src="chords/Cdim.gif" alt="Cdim" title="Cdim" />
 					
 				
 				</div>
@@ -198,45 +258,71 @@
 </div>
 
 <script>
-window.onload = function initFloatingChords() {
+//1 sprawdza wymiary wewnętrzne okna i sprawdza czy landscape
+//2 jesli landscape wyświetla akordy po lewej
+//a sprawdza ile akordów się zmieści na wysokosć przy minimalnym rozmiarze schematu
+//b liczy ilość kolumn, i nadaje szerokość paskowi 
+//3 jeśli portrait to wrzuca akordy na górny Pasek
+var horizontal;
 
-    const chordsContainer = document.getElementsByClassName("mt-4")[0];
+window.onload = function initFloatingChords() {
+    const chordsContainer = document.getElementById("chordsContainer");
+	const chordsContainerTop = chordsContainer.offsetTop
+    const chordsContainerHeight = chordsContainer.clientHeight // pobiera pozycję i wysokość kontenera
 
     // prevent lyrics being visible from behind the chords
-    chordsContainer.style.backgroundColor = "white"
+    chordsContainer.style.backgroundColor = "white";
 
-    const chordsContainerTop = chordsContainer.offsetTop
-    const chordsContainerHeight = chordsContainer.clientHeight
+    const chords = Array.prototype.slice.call(chordsContainer.getElementsByTagName("img"));
+    const tab = document.getElementById("tab");
 
-    const chords = Array.prototype.slice.call(chordsContainer.getElementsByTagName("img"))
-    const maxChordSize = chords[0].clientWidth
-    const minChordSize = 40
+    function checkWindowDimensions() {
+        var width = window.innerWidth;
+        var height = window.innerHeight;
+		console.log = ('Wys okna: ', height)
+		console.log = ('poz konternera akordów: ', chordsContainerTop)
+        horizontal = width > height;
+        updateChordsContainer();
+    }
 
-    const tab = document.getElementById("tab")
-
-    window.onscroll = function() {
-        onScrollListener()
-    };
-
-    function onScrollListener() {
-        var ratio = (window.pageYOffset - chordsContainerTop) / (chordsContainerTop + chordsContainerHeight)
-        ratio = Math.min(1.0, ratio)
-
-        var size = (1.0 - ratio) * maxChordSize
-        // minChordSize < size < maxChordSize
-        size = Math.min(maxChordSize, Math.max(minChordSize, size));
-        chords.forEach(chords => chords.style.width = size + "px")
-
-        if (window.pageYOffset > chordsContainerTop) {
-            chordsContainer.classList.add("sticky");
-            //include margin to prevent tab jumping up
-            tab.style.marginTop = chordsContainerHeight + "px"
+    function updateChordsContainer() {
+        if (horizontal) {
+            chordsContainer.classList.add('landscape');
+			chordsContainer.classList.remove('sticky'); // Usuwa klasę sticky przy zmianie na landscape
+            tab.style.marginTop = "0px"; // Resetuje margines
         } else {
-            chordsContainer.classList.remove("sticky");
-            tab.style.marginTop = "0px"
+            chordsContainer.classList.remove('landscape');
+			if (window.pageYOffset > chordsContainerTop) {
+			chordsContainer.classList.add("sticky"); // jeśli strona została przewinięta ponad pozycję kontenera akordów dodaje klasę sticky
+	        tab.style.marginTop = chordsContainerHeight + "px";
+			}
         }
     }
-}
+	window.onscroll = function() {
+        onScrollListener();
+    };
+	function onScrollListener() {
+
+        if (window.pageYOffset > chordsContainerTop) {
+		    if (!horizontal) {
+				chordsContainer.classList.add("sticky"); // jeśli strona została przewinięta ponad pozycję kontenera akordów dodaje klasę sticky
+				//include margin to prevent tab jumping up
+                tab.style.marginTop = chordsContainerHeight + "px";
+            }
+        } else {
+            chordsContainer.classList.remove("sticky");
+            tab.style.marginTop = "0px";
+        }
+    }
+    window.addEventListener('resize', checkWindowDimensions);// moze jeszczedodac lub usunać sticky w zakeżności od pozycji okna po zmianie rozmiaru
+	
+    window.addEventListener('load', checkWindowDimensions);
+
+    // Sprawdź proporcje okna przy ładowaniu strony
+    checkWindowDimensions();
+};
+
+
 </script>
 
 <script>
