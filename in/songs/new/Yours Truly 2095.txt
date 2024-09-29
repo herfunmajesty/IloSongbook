@@ -2,72 +2,69 @@
 {artist:Electric Light Orchestra}
 {level: xxx}
 
-[Intro]
-[Am]2095, [Em]2095, [Dm]2095, [Em]2095
-[Am]I love you, [Em]sincerely
-[F]Yours truly, [G]yours truly...
+<small><i>(Intro)</i></small>
+[Am] 2095, [Em] 2095, [Dm] 2095, [Em] 2095
+[Am] I love you, [Em] sincerely
+[F] Yours truly, [G] yours truly...
 
-[Verse]
-[Am]I sent a message to [Em]another time
-But as the [Dm]days unwind, [Em]this I just can't [Am]believe
-[Am]I sent a note across [Em]another plane
-Maybe it's [Dm]all a game, but [G]this I just [Em]can't [Am]conceive.
-Can you [Am]hear me? [Em]    [F]   [G]   
+<small><i>(Verse)</i></small>
+[Am] I sent a message to [Em] another time
+But as the [Dm] days unwind, [Em//] this I just [G//] can't [Am] believe
+I sent a note across [Em] another plane
+Maybe it's [Dm] all a game, but [G//] this I just [Em//] can't [Am] conceive.
+Can you [Am] hear me? [Em] ... [F] ... [G]   
  [Am] ...
 
-[Verse]
-[Am]I drive the very latest[Em]  hovercar
-I don't know [Dm]where you are, but I [Em]miss you so much till [Am]then
-[Am]I met someone who looks a [Em]lot like you
-She does the [Dm]things you do, but [G]she is [Em]an [Am]IBM.
+[Am] I drive the very latest [Em//]  hover[G//]car
+I don't know [Dm] where you are, but I [Em//] miss you so [G//] much till [Am] then, I met someone who looks a [Em] lot like you
+She does the [Dm] things you do, but [G//]she is [Em//]an [Am]IBM.
 
-[Bridge]
-[Am]2095, [Em]2095, [Dm]2095, [Em]2095
-[Am]I love you, [Em]sincerely
-[Dm]Yours truly, [Em]yours truly...
-
-[Verse]
-[Am]She's only programmed to be [Em]very nice
-But she's as [Dm]cold as ice, [Em]whenever I get too [Am]near
-[Am]She tells me that she likes me [Em]very much
-But when I [Dm]try to touch, [G]she makes it [Em]all too [Am]clear.
-
-[Verse]
-[Am]She is the latest in [Em]technology
-Almost [Dm]mythology, but [Em]she has a heart of [Am]stone
-[Am]She has an I.Q. of [Em]one-thousand-one
-She has a [Dm]jumpsuit on, and she's [G]also a [Em][Am]telephone.
-
-[Bridge]
-[Am]2095, [Em]2095, [Dm]2095, [Em]2095
-[Am]I love you, [Em]sincerely
-[F]Yours truly, [G]yours truly...
-
-[Chorus]
-[C]Is that what you want? (Is it [F]what you want?)
-[C]Is it what you really want? (Is it [G]what you really want?)
-[C]Is that what you want? (Is it [F]what you want?)
-[G]Is it what you [Am]really [C]want?
-
-[Verse]
-[Am]I realize that it must [Em]seem so strange
-That time has [Dm]rearranged, but [Em]time has the final [Am]word
-[Am]She knows I think of you, she [Em]reads my mind
-She tries to [Dm]be unkind, she knows [G]nothing [Em]of our [Am]world
-
-[Verse]
-[Am]Although her memory banks [Em]overflow
-No one would [Dm]ever know, for all she [Em]says: "Is that what you want?"
-[Am]Maybe one day I'll feel her [Em]cold embrace
-And kiss her [Dm]interface, 'til [G]then, I'll [Em]leave her [Am]alone.
-
-[Bridge]
-[Am]2095, [Em]2095, [Dm]2095, [Em]2095
-[Am]I love you, [Em]sincerely
-[Dm]Yours truly, [Em]yours truly...
+<small><i>(Bridge)</i></small>
+[Am] 2095, [Em] 2095, [Dm] 2095, [Em] 2095
+[Am] I love you, [Em] sincerely
+[Dm] Yours truly, [Em] yours truly...
 
 
-REPEAT CHORUS:
+<small><i>(Verse)</i></small>
+[Am] She's only programmed to be [Em] very nice
+But she's as [Dm] cold as ice, [Em//] whenever I [G//] get too [Am] near
+[Am] She tells me that she likes me [Em] very much
+But when I [Dm] try to touch, [G//] she makes it [Em//] all too [Am] clear.
 
-[F]"Is [G]that what [AM]you [G]want?"
-X
+[Am] She is the latest in [Em] technology
+Almost [Dm] mythology, but [Em//] she has a [G//] heart of [Am]stone
+[Am] She has an I.Q. of [Em] one-thousand-one
+She has a [Dm] jumpsuit on, and she's [G//]also a [Em//] tele[Am]phone.
+
+<small><i>(Bridge)</i></small>
+[Am] 2095, [Em] 2095, [Dm] 2095, [Em] 2095
+[Am] I love you, [Em] sincerely
+[F] Yours truly, [G] yours truly...
+
+<small><i>(Chorus)</i></small>
+[C] Is that what you want? (Is it [F] what you want?)
+[C] Is it what you really want? (Is it [G] what you really want?)
+[C] Is that what you want? (Is it [F] what you want?)
+[G] Is it what you [Am] really [C] want?
+
+<small><i>(Verse)</i></small>
+[Am] I realize that it must [Em] seem so strange
+That time has [Dm] rearranged, but [Em//] time has [G//] the final [Am] word
+[Am] She knows I think of you, she [Em] reads my mind
+She tries to [Dm] be unkind, she knows [G//]nothing [Em//]of our [Am]world
+
+[Am] Although her memory banks [Em] overflow
+No one would [Dm] ever know, for all she [Em//]says: "Is [G//] that what you want?"
+[Am] Maybe one day I'll feel her [Em] cold embrace
+And kiss her [Dm] interface, 'til [G//] then, I'll [Em//] leave her [Am]alone.
+
+<small><i>(Bridge)</i></small>
+[Am] 2095, [Em] 2095, [Dm] 2095, [Em] 2095
+[Am] I love you, [Em] sincerely
+[Dm] Yours truly, [Em] yours truly...
+
+<small><i>(Chorus)</i></small>
+[C] Is that what you want? (Is it [F] what you want?)
+[C] Is it what you really want? (Is it [G] what you really want?)
+[C] Is that what you want? (Is it [F] what you want?)
+[G] Is it what you [Am] really [C] want?

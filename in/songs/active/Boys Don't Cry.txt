@@ -1,4 +1,4 @@
-{t:🔥Boys Don't Cry ver2}
+{t:🔥Boys Don't Cry}
 {artist:The Cure}
 {level:Easy}
 {spotify:0C2eEsMBj78CLkHNJPjohc}

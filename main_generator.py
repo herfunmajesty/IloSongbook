@@ -101,7 +101,7 @@ def extract_chords(text, filename):
     # add chords excluding: (riff, stop, solo itp.)
     seq_count = 0
     for match in chords_matches:
-        if not any(keyword in match.lower() for keyword in ['riff', 'stop', 'solo', 'back', 'pause', 'muted']):
+        if not any(keyword in match.lower() for keyword in ['riff', 'stop', 'solo', 'back', 'pause', 'muted', 'NC']):
             normalized_match = normalize_chord(match)
             # if there is sequence of chords with "/", inside, divides, slash was replaced beforehand
 
@@ -253,10 +253,10 @@ def generate_index(out_dir):
         file.write(html_content)
 
 
-def generate_song_html(local_song_list, out_dir):
+def generate_song_html(local_song_list, out_dir, template_file):
     # Utworzenie strony pojedynczej piosenki
     print(f"{sep2}Rozpoczynam generowanie plików HTML dla bazy songbooka.{sep2}")
-    template = env.get_template('song.html')  # Wczytanie szablonu HTML z pliku
+    template = env.get_template(template_file)  # Wczytanie szablonu HTML z pliku
 
     for song in local_song_list:
         html_content = template.render(
@@ -425,7 +425,7 @@ for song in collection:
 
 main_directory = "out"
 generate_index(main_directory)
-generate_song_html(collection, main_directory)
+generate_song_html(collection, main_directory, 'song.html')
 list_name = "songs"  # zmienic ten fragment na main_list i zaimplementować w html
 generate_song_list_html(collection, main_directory, 'songs.html', list_name)
 
@@ -461,7 +461,7 @@ for song in arch_collection:
     print(f"{song.Number} --- {song.Title}  --  by   {song.Artist}")
 
 directory = "out\\archive"
-generate_song_html(arch_collection, directory)
+generate_song_html(arch_collection, directory, 'song_hidden.html')
 a_list_name = "archive"  # zmienic ten fragment na archive_list i zaimplementować w html
 generate_song_list_html(arch_collection, directory, 'songs_hidden.html',  a_list_name)
 
@@ -497,6 +497,6 @@ for song in test_collection:
     print(f"{song.Number} --- {song.Title}  --  by   {song.Artist}")
 
 directory2 = "out\\new"
-generate_song_html(test_collection, directory2)
+generate_song_html(test_collection, directory2, 'song_hidden.html')
 t_list_name = "test"  # zmienic ten fragment na test_list i zaimplementować w html
 generate_song_list_html(test_collection, directory2, 'songs_hidden.html',  t_list_name)

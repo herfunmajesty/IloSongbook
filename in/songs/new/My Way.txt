@@ -1,0 +1,52 @@
+{t:My way}
+{artist:Frank Sinatra}
+{level: Hard}
+
+<small><i>(Intro)</i></small>
+[|] [D] [|] [Dmaj7] [|]
+[|]  [D]  [|]  [Dmaj7]  [|] 
+
+
+<small><i>(Verse)</i></small>
+And [D] now, the end is [Dmaj7] near,
+And so I [D7] face the [B7] final curtain,
+My [Em7] friend. I'll say it [Em7/D] clear,
+I'll state [Em7/C#] my case of [A7] which [D] I'm certain.
+I've [D] lived a life that's [D7] full.
+I traveled [G] each and every [Gm] highway,
+And [D] more, much more than [A] this, I [Asus4] did it [G] m     [D]  y way.
+
+<small><i>(Verse)</i></small>
+[D] Regrets, I've had a [Dmaj7] few,
+But then [D7] again, too few to [B7] mention.
+I [Em7] did what I had to [Em7/D] do,
+And saw it [Em7/C#] thru [A7] without [D] exemption.
+I [D] planned each charted [D7] course,
+Each careful [G] step along the [Gm] byway,
+And [D] more, much more than [A] this, [Asus4] I did it [G] m      y [D] way.
+
+<small><i>(Verse)</i></small>
+Yes there were [D] times, I'm sure you [D7] knew,
+When I bit [G] off more than I could [Gsus4] chew, 
+ [G] ...
+But thru it [Em] all, when there [A7] was doubt,
+I ate it [F#m] up, and spit it [Bm7] out.
+I faced it [Em] all, and I stood [A] tall,
+[Asus4] And did it [G] m      y [D] way.
+
+<small><i>(Verse)</i></small>
+[D] I've loved, I've [Dmaj7] laughed and cried.
+I've had [D7] my fill; my share [B7] of losing.
+[Em7] And now, as tears [Em7/D] subside,
+I find it [Em7/C#] all so  [A7] amusing.
+ [D] ...
+[D] To think I did all [D7] that;
+And may I [G] say - not in a [Gm] shy way,
+[D] "No, oh [A] no not [Asus4] me, I did it [G] m   y [D] way".
+
+<small><i>(Verse)</i></small>
+For what is a [D] man, what has he [D7] got?
+If not [G] himself, then he has naught.
+To say [Em7] the things he truly [A7] feels;
+And not [F#m] the words of one who [Bm7] kneels.
+The record [Em7] shows I took the [A] blows - [Asus4] And did it [G] m   y [D] way!

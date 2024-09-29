@@ -1,4 +1,4 @@
-{t:🔥Flowers}
+{t:Flowers}
 {artist:Miley Cyrus}
 {level: Easy}
 

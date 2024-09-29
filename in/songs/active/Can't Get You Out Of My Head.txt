@@ -1,4 +1,4 @@
-{t:🔥Can't Get You Out Of My Head}  
+{t:Can't Get You Out Of My Head}  
 {artist:Kylie Minogue}  
 {level:Medium}
 {spotify:3E7ZwUMJFqpsDOJzEkBrQ7}

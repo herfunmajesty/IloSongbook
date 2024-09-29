@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
-	<link rel="icon" href="/images/icon.png" sizes="32x32" />
+	<link rel="icon" href="../images/icon.png" sizes="32x32" />
     <title>🔥In The End - Krakow Ukulele Tuesdays</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -110,7 +110,7 @@
 		<div class="col-lg-8 col-md-10 col-sm-12 my-3">
 			<div class="shadow p-3 mb-5 bg-body rounded my-watermark">
 				<h3 class="song-title semi-bold">
-					#T4 - 🔥In The End
+					#T5 - 🔥In The End
 				</h3>
 				<h5 class="song-artist ultra-light ">
 					Linkin Park
@@ -126,13 +126,13 @@
 			
 				<div class="mt-4" style="overflow-x: auto;">
 					
-						<img src="chords/Dm.gif" alt="Dm" title="Dm" />
+						<img src="../chords/Dm.gif" alt="Dm" title="Dm" />
 					
-						<img src="chords/C.gif" alt="C" title="C" />
+						<img src="../chords/C.gif" alt="C" title="C" />
 					
-						<img src="chords/Bb.gif" alt="Bb" title="Bb" />
+						<img src="../chords/Bb.gif" alt="Bb" title="Bb" />
 					
-						<img src="chords/F.gif" alt="F" title="F" />
+						<img src="../chords/F.gif" alt="F" title="F" />
 					
 				
 				</div>
@@ -146,7 +146,7 @@
 				</div>
 				<div id="floatingButton" style="position: fixed; right: 20px; bottom: 20px; ">
 					<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light toggle-button">
-						<img id="buttonImage" src="images/pause2.gif">
+						<img id="buttonImage" src="../images/pause2.gif">
 					</button>
 				</div>
 
@@ -224,16 +224,16 @@ var height = document.getElementById('tab').clientHeight; //wysokość boxu div 
 var scrollTimeStep =  scrollDuration / height; // czas co jaki ma być wywołana funkcja przewijania
 function toggleButton() {
   if (scrollInterval) { //jeśli scrollInterval był ustawiony w trakcie wywołania funkcji to zmień obraz na pauzę i wyczyść go
-    document.getElementById('buttonImage').src = 'images/pause2.gif';
+    document.getElementById('buttonImage').src = '../images/pause2.gif';
     clearInterval(scrollInterval); // Zatrzymuje autoscrollowanie
     scrollInterval = null;
   } else { //w przeciwnym wypadku ustaw scroll interval i przewijaj chyba ze dotrzesz do końca strony
-    document.getElementById('buttonImage').src = 'images/play2.gif';
+    document.getElementById('buttonImage').src = '../images/play2.gif';
     scrollInterval = setInterval(function() {
       if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
         // Jeśli strona została przewinięta do końca, zatrzymaj autoscroll po 4 sekundach
         setTimeout(function() {
-          document.getElementById('buttonImage').src = 'images/pause2.gif';
+          document.getElementById('buttonImage').src = '../images/pause2.gif';
           clearInterval(scrollInterval);
           scrollInterval = null;
         }, 4000);

@@ -2,6 +2,7 @@
 {artist:AC/DC}
 {level:Medium}
 {spotify:2zYzyRzz6pRmhPzyfMEC8s}
+{d:4}
 
 info:
 * the line from intro can be repeated through the verses
