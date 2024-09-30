@@ -2251,14 +2251,14 @@ ul { list-style: none; padding-left: 0px; }
         const songsList = document.getElementById('songs'); // ID twojej listy piosenek
         const sortByTitleButton = document.getElementById('sortByTitle');
         const sortByArtistButton = document.getElementById('sortByArtist');
-		//const myArtElements = document.querySelectorAll('.my-art'); // Znajdź wszystkie elementy o klasie "my-art"
-		//const myLevElements = document.querySelectorAll('.my-lev'); // Znajdź wszystkie elementy o klasie "my-lev"
+		const myArtElements = document.querySelectorAll('.my-art'); // Znajdź wszystkie elementy o klasie "my-art"
+		const myLevElements = document.querySelectorAll('.my-lev'); // Znajdź wszystkie elementy o klasie "my-lev"
 		//sortByTitleButton.checked = true; // Zaznacz pole wyboru
 		// Wylacz przycisk "Sort by Artist" na poczatku
            	// sortByArtistButton.classList.remove('active');
-		sortByTitleButton.classList.add('active');// - domyślne sortowanie po tytułach
+		sortByTitleButton.classList.add('active');
 
-        sortByTitleButton.addEventListener('click', () => { // jeśli kliknąć title:
+        sortByTitleButton.addEventListener('click', () => {
             sortByTitle();
             sortByArtistButton.classList.remove('active'); // Wylacz drugi przycisk
             sortByTitleButton.classList.add('active'); // Zaznacz pierwszy przycisk
@@ -2277,18 +2277,23 @@ ul { list-style: none; padding-left: 0px; }
         });
 		
         function sortByTitle() {
-			const sortedSongs = Array.from(songsList.querySelectorAll('li')) // pobieram listę piosenek
+			const sortedSongs = Array.from(songsList.querySelectorAll('li'))
             .sort((a, b) => {
-				// Pobierz nazwe z atrybutu href
+				// Pobierz nazw臋 z atrybutu href
 				var nameA = a.querySelector('a').getAttribute('href');
 				var nameB = b.querySelector('a').getAttribute('href');
-				nameA = nameA.replace(/^🔥/i, '');//ignor ikon
+				nameA = nameA.replace(/^🔥/i, '');
 				nameB = nameB.replace(/^🔥/i, '');
 				nameA = nameA.replace(/^🎂/i, '');
 				nameB = nameB.replace(/^🎂/i, '');
 				// Porównaj nazwy
 				return nameA.localeCompare(nameB);
-
+				
+				// Wyświetl wartotci artystów w konsoli
+				//console.log('Title A:', nameA);
+				//console.log('Title B:', nameB);
+				
+                return nameA.localeCompare(nameB);
 				
             });
 			songsList.innerHTML = ''; // Wyczysc liste
@@ -2296,7 +2301,7 @@ ul { list-style: none; padding-left: 0px; }
 			
 			var allLiElements = document.querySelectorAll('li'); // Pobierz wszystkie elementy <li>. Uwaga! nie może istnieć inny element typu <li>
 			allLiElements.forEach(function (myLi) {
-				var EmElement = myLi.querySelector('em'); - 
+				var EmElement = myLi.querySelector('em');
 				var anchorElement = myLi.querySelector('a'); // Pobierz element <a>
 				myLi.insertBefore(anchorElement, EmElement); // Przenieś element small em przed elementem <a>
 			});
@@ -2327,7 +2332,7 @@ ul { list-style: none; padding-left: 0px; }
 				//console.log(`Iteracja ${index}:`, SmallEmElement);
 				//console.log(`Iteracja ${index}:`, myLi.querySelector('a'));
 
-				myLi.insertBefore(SmallEmElement, myLi.querySelector('a')); // przestawianie szyku
+				myLi.insertBefore(SmallEmElement, myLi.querySelector('a'));
 			});
 		}
 		
