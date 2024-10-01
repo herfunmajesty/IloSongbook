@@ -211,8 +211,8 @@ ul { list-style: none; padding-left: 0px; }
         const songsList = document.getElementById('songs'); // ID twojej listy piosenek
         const sortByTitleButton = document.getElementById('sortByTitle');
         const sortByArtistButton = document.getElementById('sortByArtist');
-		//const myArtElements = document.querySelectorAll('.my-art'); // Znajdź wszystkie elementy o klasie "my-art"
-		//const myLevElements = document.querySelectorAll('.my-lev'); // Znajdź wszystkie elementy o klasie "my-lev"
+		const myArtElements = document.querySelectorAll('.my-art'); // Znajdź wszystkie elementy o klasie "my-art"
+		const myLevElements = document.querySelectorAll('.my-lev'); // Znajdź wszystkie elementy o klasie "my-lev"
 		//sortByTitleButton.checked = true; // Zaznacz pole wyboru
 		// Wylacz przycisk "Sort by Artist" na poczatku
            	// sortByArtistButton.classList.remove('active');
@@ -256,7 +256,7 @@ ul { list-style: none; padding-left: 0px; }
 			
 			var allLiElements = document.querySelectorAll('li'); // Pobierz wszystkie elementy <li>. Uwaga! nie może istnieć inny element typu <li>
 			allLiElements.forEach(function (myLi) {
-				var EmElement = myLi.querySelector('em'); - 
+				var EmElement = myLi.querySelector('em'); 
 				var anchorElement = myLi.querySelector('a'); // Pobierz element <a>
 				myLi.insertBefore(anchorElement, EmElement); // Przenieś element small em przed elementem <a>
 			});
