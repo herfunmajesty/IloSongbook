@@ -49,7 +49,39 @@ ul { list-style: none; padding-left: 0px; }
 .custom-text-h5 {
 			font-family: 'Montserrat', sans-serif;
 			font-size: 1.2rem
-			}
+}
+.btn-filter-easy:active, .btn-filter-easy.active{
+  color: black !important;
+  background-color: #198754 !important;
+  border-color: #198754 !important;
+}
+.btn-filter-easy:not(active){
+  color: #198754 !important;
+}
+.btn-filter-medium:active, .btn-filter-medium.active{
+  color: black !important;
+  background-color: #ffc107 !important;
+  border-color: #ffc107 !important;
+}
+.btn-filter-medium:not(active){
+  color: #ffc107 !important;
+}
+.btn-filter-hard:active, .btn-filter-hard.active{
+  color: black !important;
+  background-color: #dc3545 !important;
+  border-color: #dc3545 !important;
+}
+.btn-filter-hard:not(active){
+  color: #dc3545 !important;
+}
+.btn-filter-onlynew:active, .btn-filter-onlynew.active{
+  color: black !important;
+  background-color: #0dcaf0 !important;
+  border-color: #0dcaf0 !important;
+}
+.btn-filter-onlynew:not(active){
+  color: #0dcaf0 !important;
+}
 </style>
 
 </head>
@@ -72,10 +104,10 @@ ul { list-style: none; padding-left: 0px; }
                     <h6 class="custom-text-h5">Filter</h6>
                     <form id="filter-form">
 						<div class="btn-group-vertical">
-							<button type="button" name="Easy" class="toggle-button btn btn-outline-success filter-button">Easy</button>
-							<button type="button" name="Medium" class="toggle-button btn btn-outline-warning filter-button">Medium</button>
-							<button type="button" name="Hard" class="toggle-button btn btn-outline-danger filter-button">Hard</button>
-							<button type="button" name="New" class="toggle-button btn btn-outline-info filter-button">🔥 New only</button>
+							<button type="button" name="Easy" class="toggle-button btn btn-filter-easy filter-button">Easy</button>
+							<button type="button" name="Medium" class="toggle-button btn btn-filter-medium filter-button">Medium</button>
+							<button type="button" name="Hard" class="toggle-button btn btn-filter-hard filter-button">Hard</button>
+							<button type="button" name="New" class="toggle-button btn btn-filter-onlynew filter-button">🔥 New only</button>
 						</div>
 					</form>
                 </div>
@@ -2256,9 +2288,9 @@ ul { list-style: none; padding-left: 0px; }
 		//sortByTitleButton.checked = true; // Zaznacz pole wyboru
 		// Wylacz przycisk "Sort by Artist" na poczatku
            	// sortByArtistButton.classList.remove('active');
-		sortByTitleButton.classList.add('active');
+		sortByTitleButton.classList.add('active');// - domyślne sortowanie po tytułach
 
-        sortByTitleButton.addEventListener('click', () => {
+        sortByTitleButton.addEventListener('click', () => { // jeśli kliknąć title:
             sortByTitle();
             sortByArtistButton.classList.remove('active'); // Wylacz drugi przycisk
             sortByTitleButton.classList.add('active'); // Zaznacz pierwszy przycisk
@@ -2277,23 +2309,18 @@ ul { list-style: none; padding-left: 0px; }
         });
 		
         function sortByTitle() {
-			const sortedSongs = Array.from(songsList.querySelectorAll('li'))
+			const sortedSongs = Array.from(songsList.querySelectorAll('li')) // pobieram listę piosenek
             .sort((a, b) => {
-				// Pobierz nazw臋 z atrybutu href
+				// Pobierz nazwe z atrybutu href
 				var nameA = a.querySelector('a').getAttribute('href');
 				var nameB = b.querySelector('a').getAttribute('href');
-				nameA = nameA.replace(/^🔥/i, '');
+				nameA = nameA.replace(/^🔥/i, '');//ignor ikon
 				nameB = nameB.replace(/^🔥/i, '');
 				nameA = nameA.replace(/^🎂/i, '');
 				nameB = nameB.replace(/^🎂/i, '');
 				// Porównaj nazwy
 				return nameA.localeCompare(nameB);
-				
-				// Wyświetl wartotci artystów w konsoli
-				//console.log('Title A:', nameA);
-				//console.log('Title B:', nameB);
-				
-                return nameA.localeCompare(nameB);
+
 				
             });
 			songsList.innerHTML = ''; // Wyczysc liste
@@ -2301,7 +2328,7 @@ ul { list-style: none; padding-left: 0px; }
 			
 			var allLiElements = document.querySelectorAll('li'); // Pobierz wszystkie elementy <li>. Uwaga! nie może istnieć inny element typu <li>
 			allLiElements.forEach(function (myLi) {
-				var EmElement = myLi.querySelector('em');
+				var EmElement = myLi.querySelector('em'); 
 				var anchorElement = myLi.querySelector('a'); // Pobierz element <a>
 				myLi.insertBefore(anchorElement, EmElement); // Przenieś element small em przed elementem <a>
 			});
@@ -2332,7 +2359,7 @@ ul { list-style: none; padding-left: 0px; }
 				//console.log(`Iteracja ${index}:`, SmallEmElement);
 				//console.log(`Iteracja ${index}:`, myLi.querySelector('a'));
 
-				myLi.insertBefore(SmallEmElement, myLi.querySelector('a'));
+				myLi.insertBefore(SmallEmElement, myLi.querySelector('a')); // przestawianie szyku
 			});
 		}
 		
