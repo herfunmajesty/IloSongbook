@@ -2,6 +2,7 @@
 {artist:Red Hot Chili Peppers}  
 {level:Medium}
 {spotify:3ZOEytgrvLwQaqXreDs2Jx}
+{d:5.5}
 
 <span class="fw-bold fs-5">
 4 beats per chord

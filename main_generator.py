@@ -404,7 +404,7 @@ print(f'{sep2}Funkcja zaczytująca z plików{sep2}')
 songs_list = read_songs_from_folder(folder_path_active)
 
 # print(f'{sep2} drukuję szczegóły po zaczytaniu!{sep2}')
-# print_songs_details(songs_list)
+print_songs_details(songs_list)
 
 collection = SongCollection()
 # Dodaj wszystkie piosenki do kolekcji
