@@ -2487,3 +2487,144 @@
 2024-10-13 22:34:22 - Song: When Youre Gone.txt, Message: Uwaga! w tej piosence coś jest nie tak z levelem, jest: xxx
 2024-10-13 22:34:22 - Song: Yours Truly 2095.txt, Message: Nowa pisenka, tytuł zgodny
 2024-10-13 22:34:22 - Song: Yours Truly 2095.txt, Message: Uwaga! w tej piosence coś jest nie tak z levelem, jest: xxx
+2024-10-15 17:49:10 - Song: 19 2000.txt, Message: Tytuł jest źle sformatowany wewnątrz pliku!: 19-2000
+2024-10-15 17:49:10 - Song: All Star (Shrek).txt, Message: Nowa pisenka, tytuł zgodny
+2024-10-15 17:49:10 - Song: Blinding Lights.txt, Message: Nowa pisenka, tytuł zgodny
+2024-10-15 17:49:10 - Song: Boys Don't Cry.txt, Message: Nowa pisenka, tytuł zgodny
+2024-10-15 17:49:10 - Song: Can't Stop.txt, Message: Nowa pisenka, tytuł zgodny
+2024-10-15 17:49:10 - Song: Dancing Queen.txt, Message: Nowa pisenka, tytuł zgodny
+2024-10-15 17:49:11 - Song: Eye Of The Tiger.txt, Message: Uwaga! Jest tu 24 zroślaków różnej formy - sprawdź czy akordy
+2024-10-15 17:49:11 - Song: Its raining man.txt, Message: Nowa! Uwaga! Tytuł i nazwa pliku się różnią: Its raining man.txt i 🔥It's Raining Men
+2024-10-15 17:49:11 - Song: Let It Be.txt, Message: Uwaga! Jest tu 12 zroślaków różnej formy - sprawdź czy akordy
+2024-10-15 17:49:11 - Song: Loneliest.txt, Message: Nowa pisenka, tytuł zgodny
+2024-10-15 17:49:11 - Song: Maria.txt, Message: Nowa pisenka, tytuł zgodny
+2024-10-15 17:49:11 - Song: Shallow.txt, Message: Nowa pisenka, tytuł zgodny
+2024-10-15 17:49:11 - Song: Snow (Hey Oh).txt, Message: Nowa pisenka, tytuł zgodny
+2024-10-15 17:49:11 - Song: Summer Nights.txt, Message: Nowa pisenka, tytuł zgodny
+2024-10-15 17:49:11 - Song: There Is A Light That Never Goes Out.txt, Message: Nowa pisenka, tytuł zgodny
+2024-10-15 17:49:11 - Song: Wake Me Up.txt, Message: Nowa pisenka, tytuł zgodny
+2024-10-15 17:49:14 - Song: Dock Of The Bay.txt, Message: Tytuł jest źle sformatowany wewnątrz pliku!: (Sittin' on the) Dock of the Bay
+2024-10-15 17:49:14 - Song: Boys Don't Cry harder.txt, Message: Nowa! Uwaga! Tytuł i nazwa pliku się różnią: Boys Don't Cry harder.txt i 🔥Boys Don't Cry
+2024-10-15 17:49:14 - Song: Boys Don't Cry harder.txt, Message: Uwaga! Jest tu 8 zroślaków różnej formy - sprawdź czy akordy
+2024-10-15 17:49:14 - Song: Human.txt, Message: Nowa pisenka, tytuł zgodny
+2024-10-15 17:49:14 - Song: Human.txt, Message: Uwaga! w tej piosence coś jest nie tak z levelem, jest: xxx
+2024-10-15 17:49:14 - Song: I'm Still Standing.txt, Message: Nowa pisenka, tytuł zgodny
+2024-10-15 17:49:14 - Song: I'm Still Standing.txt, Message: Uwaga! Jest tu 1 zroślaków różnej formy - sprawdź czy akordy
+2024-10-15 17:49:14 - Song: Im Into You.txt, Message: Nowa pisenka, tytuł zgodny
+2024-10-15 17:49:14 - Song: Im Into You.txt, Message: Uwaga! w tej piosence coś jest nie tak z levelem, jest: xxx
+2024-10-15 17:49:14 - Song: In The End.txt, Message: Nowa pisenka, tytuł zgodny
+2024-10-15 17:49:14 - Song: In The End.txt, Message: Uwaga! w tej piosence coś jest nie tak z levelem, jest: xxx
+2024-10-15 17:49:14 - Song: Just Like Heaven.txt, Message: Nowa pisenka, tytuł zgodny
+2024-10-15 17:49:14 - Song: Little Talks.txt, Message: Nowa pisenka, tytuł zgodny
+2024-10-15 17:49:14 - Song: Little Talks.txt, Message: Uwaga! w tej piosence coś jest nie tak z levelem, jest: xxx
+2024-10-15 17:49:14 - Song: Lovesong.txt, Message: Nowa pisenka, tytuł zgodny
+2024-10-15 17:49:14 - Song: Lovesong.txt, Message: Uwaga! w tej piosence coś jest nie tak z levelem, jest: xxx
+2024-10-15 17:49:14 - Song: Mr Sandman.txt, Message: Nowa! Uwaga! Tytuł i nazwa pliku się różnią: Mr Sandman.txt i 🔥Mister Sandman
+2024-10-15 17:49:14 - Song: My Love_Em.txt, Message: Tytuł jest źle sformatowany wewnątrz pliku!: 🔥My love
+2024-10-15 17:49:14 - Song: My Love_Em.txt, Message: Uwaga! Jest tu 5 zroślaków różnej formy - sprawdź czy akordy
+2024-10-15 17:49:14 - Song: My Way.txt, Message: Tytuł jest źle sformatowany wewnątrz pliku!: My way
+2024-10-15 17:49:14 - Song: Somebody Told Me.txt, Message: Nowa pisenka, tytuł zgodny
+2024-10-15 17:49:14 - Song: Somebody Told Me.txt, Message: Uwaga! w tej piosence coś jest nie tak z levelem, jest: xxx
+2024-10-15 17:49:14 - Song: Space Song.txt, Message: Nowa pisenka, tytuł zgodny
+2024-10-15 17:49:14 - Song: Space Song.txt, Message: Uwaga! w tej piosence coś jest nie tak z levelem, jest: xxx
+2024-10-15 17:49:14 - Song: Waiting for love.txt, Message: Uwaga! Tytuł ok, ale: nazwa pliku nie: Waiting for love.txt i tytuł wew: Waiting For Love
+2024-10-15 17:49:14 - Song: Waiting for love.txt, Message: Uwaga! w tej piosence coś jest nie tak z levelem, jest: xxx
+2024-10-15 17:49:14 - Song: What Is Love (Baby Don't Hurt Me).txt, Message: Nowa pisenka, tytuł zgodny
+2024-10-15 17:49:14 - Song: When Youre Gone.txt, Message: Nowa pisenka, tytuł zgodny
+2024-10-15 17:49:14 - Song: When Youre Gone.txt, Message: Uwaga! w tej piosence coś jest nie tak z levelem, jest: xxx
+2024-10-15 17:49:14 - Song: Yours Truly 2095.txt, Message: Nowa pisenka, tytuł zgodny
+2024-10-15 17:49:14 - Song: Yours Truly 2095.txt, Message: Uwaga! w tej piosence coś jest nie tak z levelem, jest: xxx
+2024-10-15 17:53:37 - Song: 19 2000.txt, Message: Tytuł jest źle sformatowany wewnątrz pliku!: 19-2000
+2024-10-15 17:53:37 - Song: All Star (Shrek).txt, Message: Nowa pisenka, tytuł zgodny
+2024-10-15 17:53:37 - Song: Blinding Lights.txt, Message: Nowa pisenka, tytuł zgodny
+2024-10-15 17:53:37 - Song: Boys Don't Cry.txt, Message: Nowa pisenka, tytuł zgodny
+2024-10-15 17:53:37 - Song: Can't Stop.txt, Message: Nowa pisenka, tytuł zgodny
+2024-10-15 17:53:37 - Song: Dancing Queen.txt, Message: Nowa pisenka, tytuł zgodny
+2024-10-15 17:53:37 - Song: Eye Of The Tiger.txt, Message: Uwaga! Jest tu 24 zroślaków różnej formy - sprawdź czy akordy
+2024-10-15 17:53:37 - Song: Its raining man.txt, Message: Nowa! Uwaga! Tytuł i nazwa pliku się różnią: Its raining man.txt i 🔥It's Raining Men
+2024-10-15 17:53:37 - Song: Let It Be.txt, Message: Uwaga! Jest tu 12 zroślaków różnej formy - sprawdź czy akordy
+2024-10-15 17:53:37 - Song: Loneliest.txt, Message: Nowa pisenka, tytuł zgodny
+2024-10-15 17:53:37 - Song: Maria.txt, Message: Nowa pisenka, tytuł zgodny
+2024-10-15 17:53:37 - Song: Shallow.txt, Message: Nowa pisenka, tytuł zgodny
+2024-10-15 17:53:37 - Song: Snow (Hey Oh).txt, Message: Nowa pisenka, tytuł zgodny
+2024-10-15 17:53:37 - Song: Summer Nights.txt, Message: Nowa pisenka, tytuł zgodny
+2024-10-15 17:53:37 - Song: There Is A Light That Never Goes Out.txt, Message: Nowa pisenka, tytuł zgodny
+2024-10-15 17:53:37 - Song: Wake Me Up.txt, Message: Nowa pisenka, tytuł zgodny
+2024-10-15 17:53:38 - Song: Dock Of The Bay.txt, Message: Tytuł jest źle sformatowany wewnątrz pliku!: (Sittin' on the) Dock of the Bay
+2024-10-15 17:53:38 - Song: Boys Don't Cry harder.txt, Message: Nowa! Uwaga! Tytuł i nazwa pliku się różnią: Boys Don't Cry harder.txt i 🔥Boys Don't Cry
+2024-10-15 17:53:38 - Song: Boys Don't Cry harder.txt, Message: Uwaga! Jest tu 8 zroślaków różnej formy - sprawdź czy akordy
+2024-10-15 17:53:38 - Song: Human.txt, Message: Nowa pisenka, tytuł zgodny
+2024-10-15 17:53:38 - Song: Human.txt, Message: Uwaga! w tej piosence coś jest nie tak z levelem, jest: xxx
+2024-10-15 17:53:38 - Song: I'm Still Standing.txt, Message: Nowa pisenka, tytuł zgodny
+2024-10-15 17:53:38 - Song: I'm Still Standing.txt, Message: Uwaga! Jest tu 1 zroślaków różnej formy - sprawdź czy akordy
+2024-10-15 17:53:38 - Song: Im Into You.txt, Message: Nowa pisenka, tytuł zgodny
+2024-10-15 17:53:38 - Song: Im Into You.txt, Message: Uwaga! w tej piosence coś jest nie tak z levelem, jest: xxx
+2024-10-15 17:53:38 - Song: In The End.txt, Message: Nowa pisenka, tytuł zgodny
+2024-10-15 17:53:38 - Song: In The End.txt, Message: Uwaga! w tej piosence coś jest nie tak z levelem, jest: xxx
+2024-10-15 17:53:38 - Song: Just Like Heaven.txt, Message: Nowa pisenka, tytuł zgodny
+2024-10-15 17:53:38 - Song: Little Talks.txt, Message: Nowa pisenka, tytuł zgodny
+2024-10-15 17:53:38 - Song: Little Talks.txt, Message: Uwaga! w tej piosence coś jest nie tak z levelem, jest: xxx
+2024-10-15 17:53:38 - Song: Lovesong.txt, Message: Nowa pisenka, tytuł zgodny
+2024-10-15 17:53:38 - Song: Lovesong.txt, Message: Uwaga! w tej piosence coś jest nie tak z levelem, jest: xxx
+2024-10-15 17:53:38 - Song: Mr Sandman.txt, Message: Nowa! Uwaga! Tytuł i nazwa pliku się różnią: Mr Sandman.txt i 🔥Mister Sandman
+2024-10-15 17:53:38 - Song: My Love_Em.txt, Message: Tytuł jest źle sformatowany wewnątrz pliku!: 🔥My love
+2024-10-15 17:53:38 - Song: My Love_Em.txt, Message: Uwaga! Jest tu 5 zroślaków różnej formy - sprawdź czy akordy
+2024-10-15 17:53:38 - Song: My Way.txt, Message: Tytuł jest źle sformatowany wewnątrz pliku!: My way
+2024-10-15 17:53:38 - Song: Somebody Told Me.txt, Message: Nowa pisenka, tytuł zgodny
+2024-10-15 17:53:38 - Song: Somebody Told Me.txt, Message: Uwaga! w tej piosence coś jest nie tak z levelem, jest: xxx
+2024-10-15 17:53:38 - Song: Space Song.txt, Message: Nowa pisenka, tytuł zgodny
+2024-10-15 17:53:38 - Song: Space Song.txt, Message: Uwaga! w tej piosence coś jest nie tak z levelem, jest: xxx
+2024-10-15 17:53:38 - Song: Waiting for love.txt, Message: Uwaga! Tytuł ok, ale: nazwa pliku nie: Waiting for love.txt i tytuł wew: Waiting For Love
+2024-10-15 17:53:38 - Song: Waiting for love.txt, Message: Uwaga! w tej piosence coś jest nie tak z levelem, jest: xxx
+2024-10-15 17:53:38 - Song: What Is Love (Baby Don't Hurt Me).txt, Message: Nowa pisenka, tytuł zgodny
+2024-10-15 17:53:38 - Song: When Youre Gone.txt, Message: Nowa pisenka, tytuł zgodny
+2024-10-15 17:53:38 - Song: When Youre Gone.txt, Message: Uwaga! w tej piosence coś jest nie tak z levelem, jest: xxx
+2024-10-15 17:53:38 - Song: Yours Truly 2095.txt, Message: Nowa pisenka, tytuł zgodny
+2024-10-15 17:53:38 - Song: Yours Truly 2095.txt, Message: Uwaga! w tej piosence coś jest nie tak z levelem, jest: xxx
+2024-10-15 17:57:13 - Song: 19 2000.txt, Message: Tytuł jest źle sformatowany wewnątrz pliku!: 19-2000
+2024-10-15 17:57:13 - Song: All Star (Shrek).txt, Message: Nowa pisenka, tytuł zgodny
+2024-10-15 17:57:13 - Song: Blinding Lights.txt, Message: Nowa pisenka, tytuł zgodny
+2024-10-15 17:57:13 - Song: Boys Don't Cry.txt, Message: Nowa pisenka, tytuł zgodny
+2024-10-15 17:57:13 - Song: Can't Stop.txt, Message: Nowa pisenka, tytuł zgodny
+2024-10-15 17:57:13 - Song: Dancing Queen.txt, Message: Nowa pisenka, tytuł zgodny
+2024-10-15 17:57:13 - Song: Eye Of The Tiger.txt, Message: Uwaga! Jest tu 24 zroślaków różnej formy - sprawdź czy akordy
+2024-10-15 17:57:13 - Song: Its raining man.txt, Message: Nowa! Uwaga! Tytuł i nazwa pliku się różnią: Its raining man.txt i 🔥It's Raining Men
+2024-10-15 17:57:13 - Song: Let It Be.txt, Message: Uwaga! Jest tu 12 zroślaków różnej formy - sprawdź czy akordy
+2024-10-15 17:57:13 - Song: Loneliest.txt, Message: Nowa pisenka, tytuł zgodny
+2024-10-15 17:57:13 - Song: Maria.txt, Message: Nowa pisenka, tytuł zgodny
+2024-10-15 17:57:13 - Song: Shallow.txt, Message: Nowa pisenka, tytuł zgodny
+2024-10-15 17:57:13 - Song: Snow (Hey Oh).txt, Message: Nowa pisenka, tytuł zgodny
+2024-10-15 17:57:14 - Song: Summer Nights.txt, Message: Nowa pisenka, tytuł zgodny
+2024-10-15 17:57:14 - Song: There Is A Light That Never Goes Out.txt, Message: Nowa pisenka, tytuł zgodny
+2024-10-15 17:57:14 - Song: Wake Me Up.txt, Message: Nowa pisenka, tytuł zgodny
+2024-10-15 17:57:15 - Song: Dock Of The Bay.txt, Message: Tytuł jest źle sformatowany wewnątrz pliku!: (Sittin' on the) Dock of the Bay
+2024-10-15 17:57:15 - Song: Boys Don't Cry harder.txt, Message: Nowa! Uwaga! Tytuł i nazwa pliku się różnią: Boys Don't Cry harder.txt i 🔥Boys Don't Cry
+2024-10-15 17:57:15 - Song: Boys Don't Cry harder.txt, Message: Uwaga! Jest tu 8 zroślaków różnej formy - sprawdź czy akordy
+2024-10-15 17:57:15 - Song: Human.txt, Message: Nowa pisenka, tytuł zgodny
+2024-10-15 17:57:15 - Song: Human.txt, Message: Uwaga! w tej piosence coś jest nie tak z levelem, jest: xxx
+2024-10-15 17:57:15 - Song: I'm Still Standing.txt, Message: Nowa pisenka, tytuł zgodny
+2024-10-15 17:57:15 - Song: I'm Still Standing.txt, Message: Uwaga! Jest tu 1 zroślaków różnej formy - sprawdź czy akordy
+2024-10-15 17:57:15 - Song: Im Into You.txt, Message: Nowa pisenka, tytuł zgodny
+2024-10-15 17:57:15 - Song: Im Into You.txt, Message: Uwaga! w tej piosence coś jest nie tak z levelem, jest: xxx
+2024-10-15 17:57:15 - Song: In The End.txt, Message: Nowa pisenka, tytuł zgodny
+2024-10-15 17:57:15 - Song: In The End.txt, Message: Uwaga! w tej piosence coś jest nie tak z levelem, jest: xxx
+2024-10-15 17:57:15 - Song: Just Like Heaven.txt, Message: Nowa pisenka, tytuł zgodny
+2024-10-15 17:57:15 - Song: Little Talks.txt, Message: Nowa pisenka, tytuł zgodny
+2024-10-15 17:57:15 - Song: Little Talks.txt, Message: Uwaga! w tej piosence coś jest nie tak z levelem, jest: xxx
+2024-10-15 17:57:15 - Song: Lovesong.txt, Message: Nowa pisenka, tytuł zgodny
+2024-10-15 17:57:15 - Song: Lovesong.txt, Message: Uwaga! w tej piosence coś jest nie tak z levelem, jest: xxx
+2024-10-15 17:57:15 - Song: Mr Sandman.txt, Message: Nowa! Uwaga! Tytuł i nazwa pliku się różnią: Mr Sandman.txt i 🔥Mister Sandman
+2024-10-15 17:57:15 - Song: My Love_Em.txt, Message: Tytuł jest źle sformatowany wewnątrz pliku!: 🔥My love
+2024-10-15 17:57:15 - Song: My Love_Em.txt, Message: Uwaga! Jest tu 5 zroślaków różnej formy - sprawdź czy akordy
+2024-10-15 17:57:15 - Song: My Way.txt, Message: Tytuł jest źle sformatowany wewnątrz pliku!: My way
+2024-10-15 17:57:15 - Song: Somebody Told Me.txt, Message: Nowa pisenka, tytuł zgodny
+2024-10-15 17:57:15 - Song: Somebody Told Me.txt, Message: Uwaga! w tej piosence coś jest nie tak z levelem, jest: xxx
+2024-10-15 17:57:15 - Song: Space Song.txt, Message: Nowa pisenka, tytuł zgodny
+2024-10-15 17:57:15 - Song: Space Song.txt, Message: Uwaga! w tej piosence coś jest nie tak z levelem, jest: xxx
+2024-10-15 17:57:15 - Song: Waiting for love.txt, Message: Uwaga! Tytuł ok, ale: nazwa pliku nie: Waiting for love.txt i tytuł wew: Waiting For Love
+2024-10-15 17:57:15 - Song: Waiting for love.txt, Message: Uwaga! w tej piosence coś jest nie tak z levelem, jest: xxx
+2024-10-15 17:57:15 - Song: What Is Love (Baby Don't Hurt Me).txt, Message: Nowa pisenka, tytuł zgodny
+2024-10-15 17:57:15 - Song: When Youre Gone.txt, Message: Nowa pisenka, tytuł zgodny
+2024-10-15 17:57:15 - Song: When Youre Gone.txt, Message: Uwaga! w tej piosence coś jest nie tak z levelem, jest: xxx
+2024-10-15 17:57:15 - Song: Yours Truly 2095.txt, Message: Nowa pisenka, tytuł zgodny
+2024-10-15 17:57:15 - Song: Yours Truly 2095.txt, Message: Uwaga! w tej piosence coś jest nie tak z levelem, jest: xxx
