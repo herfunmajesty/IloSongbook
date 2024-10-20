@@ -1,6 +1,6 @@
 {t:🔥I'm Still Standing}  
 {artist:Elton John}  
-{level:Medium}
+{level:Hard}
 {spotify:0GjEhVFGZW8afUYGChu3Rr}
 
 
@@ -20,7 +20,7 @@ And if you [F#m] need-to-know while I'm still stan-[D]-ding
 You just [Bm//] fade a[A//]way… [A]
 [A] don’t you know
 
-<small><i>(chorus)</i><small>
+<small><i>(chorus)</i></small>
 [Am7] I'm still [Am] standing better than
 I [Em7] ever did… [Em7] lookin' like
 A [Dm] true survivor… [Dm] feelin' like
