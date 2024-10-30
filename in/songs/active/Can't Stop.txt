@@ -31,12 +31,12 @@ G|------4-4-4-----4-4-4----|-------------------------|
 
 <hr/>
 
-Intro:
+<small><i>(Intro)</i></small>
 (1, 2, 3, 4)
 
-[riff 1] x6
+[riff 1] <b>x6</b>
 
-[riff 2] x1
+[riff 2] <b>x1</b>
 
 [Em] Can't stop addicted to the shindig
 [D] Chop top he says I'm gonna win big
@@ -58,12 +58,13 @@ Intro:
 [Bm] Go ask the dust for any answers
 [C] Come back strong with 50 belly dancers 
 
+<small><i>(Chorus)</i></small>
 The [G//] world I love
 The [D//] tears I've dropped
 To [Bm//] be part of
 the [C//] wave can't stop
-[G//] Ever [D//] wonder 
-if [Bm//] it's all for [C//] you
+[G//] Ever wonder [D//]
+if it's [Bm//] all for [C//] you
 
 The [G//] world I love
 The [D//] trains I hop
@@ -93,12 +94,13 @@ when it's [Bm/] time [C/] to
 [Bm] Jay butterfly is in the treetop
 [C] Birds that blow the meaning into bebop  
 
+<small><i>(Chorus)</i></small>
 The [G//] world I love
 The [D//] tears I've dropped
 To [Bm//] be part of
 the [C//] wave can't stop
-[G//] Ever [D//] wonder 
-if [Bm//] it's all for [C//] you
+[G//] Ever wonder [D//]
+if it's [Bm//] all for [C//] you
 
 The [G//] world I love
 The [D//] trains I hop

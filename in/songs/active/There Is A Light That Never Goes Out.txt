@@ -8,7 +8,7 @@
 4 beats per chord in chorus</mark>
 </span> 
 
-Intro:
+<small><i>(Intro)</i></small>
 [Dm] [C]  [Dm] [C]
 [Bb] [Bb] [F]  [C]
 [Dm] [C]  [Dm] [C]
@@ -37,7 +37,7 @@ Oh, [Bb] please don't drop me [F] home be[C]cause it's not
 [Bb] [Bb] [F] [C]
 [Gm/] (2,3,4) [Bb///] [C//]
 
-(chorus)
+<small><i>(Chorus)</i></small>
 And if a [F] double-decker [Dm] bus
 [Bb] Crashes into [Bb] us
 [C] To die by [F] your side is such a
@@ -69,7 +69,7 @@ I [Bb] never never want to go [F] home be[C]cause I haven't
 [Bb] Got one [Bb] [F] [C]
 [Gm/] (2,3,4) [Bb///] [C//]
 
-(chorus)
+<small><i>(Chorus)</i></small>
 And if a [F] double-decker [Dm] bus
 [Bb] Crashes into [Bb] us
 [C] To die by [F] your side is such a
@@ -79,9 +79,11 @@ And if a [F] ten ton truck [Dm]..
 [C] To die by [F] your side, well
 The [Bb] pleasure the privilege is [Gm] mine
 
+<small><i>(Outro)</i></small>
 [Dm] There is a [C] light and it [Dm] never goes [C] out
 [Bb] There is a [Bb] light and it [F] never goes [C] out
 [Dm] There is a [C] light and it [Dm] never goes [C] out
 [Bb] There is a [Bb] light and it [F] never goes [C] out
 [Dm] There is a [C] light and it [Dm] never goes 
 [C] ouuu-[Bb]-ouuuut [Bb] [F] [C/]
+[Dm/]

@@ -4,12 +4,10 @@
 {youtube:49FB9hhoO6c}
 {spotify:0KzAbK6nItSqNh8q70tb0K}
 
-Intro: 
 info: 
 * different key than orginal
 * explain chorus ending
 * explain riff
-* <span style="color:gray">"O-o-oh"</span>'s at end with second voice 
 <!--* riff could also be played during verses-->
 
 <pre>
@@ -21,18 +19,19 @@ C|0----------|2----------|1----------|2-----2----|
 G|2----------|2----------|2----------|3-----3----|
 </pre>
 
-intro:
-(quiet)
-[F] O-[Dm]-o-[A]-oh [Bb] x2
-(louder)
-[F] O-[Dm]-o-[A]-oh [Bb] + (riff) x2
+<small><i>(Intro) quietly</i></small>
+[F] O-[Dm]-o-[A]-oh [Bb] <b>x2</b>
+<small><i>louder</i></small>
+[F] O-[Dm]-o-[A]-oh [Bb] + (riff) <b>x2</b>
 
+<small><i>(Verse)</i></small>
 With your [F] feet on the air and your [Dm] head on the ground [A] ... [Bb]...
 [F].. Try this [Dm] trick and [A] spin it, [Bb] yeah
 [F] Your head will [Dm] collapse
 But there's [A] nothing in it
 And you'll [Bb] ask yourself
 
+<small><i>(Chorus)</i></small>
 [F] Where is my [Dm] mind?
 [A] Where is my [Bb] mind?
 [F] Whe-ere is my [Dm] mind?
@@ -42,12 +41,14 @@ Wa-[F]-ay [A] out in the [Bb] water
 See it [Bbm] swimming. [Dm]... ... <!--in orginal this is single strum and stop, but on uke seems empty-->
 [C]... ... 
 
+<small><i>(Verse)</i></small>
 [F] I was swimming [Dm] in the Caribbe-[A]-an [Bb]... 
 [F] Animals were [Dm] hiding behind the [A] rock [Bb]...
 [F] Except the little [Dm] fish
 But they [A] told me, he swears
 Tryin' to [Bb] talk to me, (to me, to me) <!--NOT NESSESARY'CAUSE FREAKY-DICKY FAST-->
 
+<small><i>(Chorus)</i></small>
 [F] Where is my [Dm] mind?
 [A] Where is my [Bb] mind?
 [F] Whe-ere is my [Dm] mind?
@@ -57,12 +58,14 @@ Wa-[F]-ay [A] out in the [Bb] water
 See it [Bbm] swimming. [Dm]... ...
 [C]... ... <!-- no /(SOLO)/-->
 
+<small><i>(Verse)</i></small>
 With your [F] feet on the air and your [Dm] head on the ground [A] ... [Bb]... 
 [F] Try this [Dm] trick and [A] spin it, [Bb] yeah
 [F] Your head will [Dm] collapse
 But there's [A] nothing in it
 And you'll [Bb] ask yourself
 
+<small><i>(Chorus)</i></small>
 [F] Where is my [Dm] mind?
 [A] Where is my [Bb] mind?
 [F] Whe-ere is my [Dm] mind?
@@ -72,12 +75,12 @@ Wa-[F]-ay [A] out in the [Bb] water
 See it [Bbm] swimming. [Dm]... ...
 [C]... ... 
 
-[F] O-[Dm]-o-[A]-oh [Bb] 
-
+<small><i>(Outro) two voices</i></small>
+[back]O-o-oh[/back]
 With your [F] feet on the air and your [Dm] head on the ground [A]  [Bb]
-<span style="color:gray">______________O-o-oh </span>
+[back]O-o-oh[/back]
 [F] Try this [Dm] trick and [A] spin it, [Bb] yeah
-<span style="color:gray">O-o-oh</span>
+[back]O-o-oh[/back]
 
-[F] O-[Dm]-o-[A]-oh [Bb] 
+[F] O-[Dm]-o-[A]-oh [Bb] ...
 [stop] O-o-oh
