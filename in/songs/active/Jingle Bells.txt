@@ -5,7 +5,8 @@
 Info:
 strumming pattern: island strum
 
-Intro: [C]
+<small><i>(Intro)</i></small>
+ [C]
 
 [C] Jingle bells, [C] jingle bells,
 [C] Jingle all the [C] way.
@@ -36,4 +37,5 @@ In a [D] one-horse open sle[G7/]igh, [G7/] hey!
 [F] Oh what fun it [C] is to ride
 In a [G7] one-horse open sle[C]igh 
 
+<small><i>(Outro)</i></small>
 [F] Oh, what fun [C] is to ride in a [G7] one horse open [C/] sleigh

@@ -6,7 +6,8 @@ Info:
 * easy way to play F# => same shape as G chord, just one fret lower and mute G string
 * strumming pattern: four down
 
-Intro: [G]
+<small><i>(Intro)</i></small>
+[G]
 
 [G] Jingle bell, jingle bell, [G] jingle bell rock
 [G] Jingle bells swing and [Am//] jingle bells [D//] ring
@@ -42,6 +43,7 @@ Jingle [A7] bell time is a [A7] swell time
 [G] Jingle around the [E7] clock
 [C] Mix and mingle in the [Cm] jinglin' feet
 
+<small><i>(Outro)</i></small>
 [A7//] That's the [D//] jingle bell
 [A7//] That's the [D//] jingle bell
 [A7//] That's the [D//] jingle bell [G] rock! 

@@ -14,9 +14,10 @@ C|----------7-------|-7-9----------9---|--------9-5-------|---------11-7------|
 G|------------------|------------------|------------------|-------------------|
 </pre>
 
-Intro +riff : 
+<small><i>(Intro)+riff</i></small>
 [C] [Am] [Dm] [G7] 
 
+<small><i>(Chorus)</i></small>
 [C] Last Christmas, I gave you my heart
 But the [Am] very next day, you gave it away
 [Dm] This year, to save me from tears
@@ -38,6 +39,7 @@ I keep [Am] my distance, but you still catch my eye
 [Dm] Now I know what a fool I've been
 [G7] But if you kissed me now, I know you'd fool me again
 
+<small><i>(Chorus)</i></small>
 [C] Last Christmas, I gave you my heart
 But the [Am] very next day, you gave it away
 [Dm] This year, to save me from tears
@@ -59,6 +61,7 @@ A [Am] man under cover but you tore me a[Dm]pa-a-art
 Ooh, ooh, 
 now I've [G7] found a real love, You'll never fool me again
 
+<small><i>(Chorus)</i></small>
 [C] Last Christmas, I gave you my heart
 But the [Am] very next day, you gave it away [back](you gave it away)[/back]
 [Dm] This year, to save me from tears
@@ -69,6 +72,7 @@ But the [Am] very next day, you gave it away [back](you gave it away)[/back]
 [Dm] This year, to save me from tears
 I'll [G7] give it to someone special [back](special!)[/back]
 
+<small><i>(Outro)</i></small>
 A [C] face on a lover with a fire in his heart
 A [Am] man under cover but you tore me a[Dm]part
 Ooh, ooh, 

@@ -3,6 +3,8 @@
 {level:Medium}
 {spotify:3zJw3rugfpVrmBeDDnUYzy}
 
+
+<small><i>(Verse)</i></small>
 So this is [A] Christmas
 And what have you [Bm] done
 Another year [E7] over
@@ -13,12 +15,13 @@ And I hope you have [Em] fun
 The near and the [A] dear one
 The old and the [D] young
 
-Chorus:             
+<small><i>(Chorus)</i></small>             
 A very merry [G] Christmas
 And a happy New [A] Year
 Let's hope it's a good [Em7] one [G]
 Without any [D] fear [E7]
-               
+  
+<small><i>(Verse)</i></small>             
 And so this is [A] Christmas [back](War is over) [/back]
 For weak and for [Bm] strong [back](If you want it)[/back]
 For rich and for [E7] poor ones [back](War is over)[/back]
@@ -29,13 +32,13 @@ For black and for [Em] white [back](If you want it)[/back]
 For yellow and red [A] ones [back](War is over)[/back]
 Let's stop all the [D] fight [back](No-o-o-ow)[/back]
 
-Chorus:
+<small><i>(Chorus)</i></small>
 A very merry [G] Christmas
 And a happy New [A] Year
 Let's hope it's a good [Em7] one [G]
 Without any [D] fear [E7]
 
-Verse:
+<small><i>(Verse)</i></small>
 And so this is [A] Christmas [back](War is over)[/back]
 And what have you [Bm] done? [back](If you want it)[/back]
 Another year [E7] over, [back](War is over)[/back]
@@ -46,12 +49,13 @@ We hope you had [Em] fun [back](If you want it)[/back]
 The near and the [A] dear one [back](War is over)[/back]
 The old and the [D] young [back](No-o-o-ow)[/back]
 
-Chorus:
+<small><i>(Chorus)</i></small>
 A very merry [G] Christmas
 And a happy New [A] Year
 Let's hope it's a good [Em7] one [G]
 Without any [D] fear [E7]
 
+<small><i>(Outro)</i></small>
 [A] War is over,
 [Bm] If you want it
 [E7] War is over

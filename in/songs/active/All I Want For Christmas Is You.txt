@@ -4,7 +4,7 @@
 Info:
 strumming pattern: 4 down per chord
 
-Intro: [G] <b>(slowly)</b>
+<small><i>(Intro) slowly </i></small> [G]
 
 [G/] I don't want a [G/] lot for Christmas
 [G/] There is just one [G/] thing I need
@@ -14,7 +14,9 @@ Intro: [G] <b>(slowly)</b>
 [G/] Make my wish come [E7/] true
 [Am/] All I want for [D/] Christma-a-as 
 i-i-i-is [G] you 
-[Em] Yeah [C] <b>(faster)</b>[D]
+[Em] Yeah [C] 
+
+<small><i>faster</i></small>[D]
 
 [G] I don't want a [G] lot for Christmas
 [G] There is just one [G] thing I need (and I)

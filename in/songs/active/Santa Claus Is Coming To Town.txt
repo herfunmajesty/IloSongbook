@@ -5,7 +5,8 @@
 Info: 
 strumming pattern: 4 down
 
-Intro: [G]
+<small><i>(Intro)</i></small>
+[G]
 
 You [G] better watch out
 You [C] better not cry

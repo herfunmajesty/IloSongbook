@@ -5,7 +5,8 @@
 Info:
 strumming pattern: island strum
 
-Intro: [G7] 
+<small><i>(Intro)</i></small> 
+[G7] 
 
 Oh, the [C//] weather [G7//] outside is [C] frightful
 [C//] But the fire [D7//] is so de[G7]lightful
@@ -38,6 +39,7 @@ How I'll [Am//] hate going [D7//] out in the [G] storm
 But if you [G] really hold me [G] tight
 [A7//] All the way home [D7//] I'll be [G7] warm
 
+<small><i>(Outro)</i></small>
 Oh [C//] the fire is [G7//] slowly [C] dying
 And, my [C//] dear, we're [D7//] still good-[G7]bye-ing
 [Dm//] But as long as you'd [A7//] love me [Dm] so,
