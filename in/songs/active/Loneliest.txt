@@ -1,8 +1,10 @@
-{t:🔥Loneliest}
+{t:Loneliest}
 {artist:Maneskin}
 {level:Medium}
-
+<span class="fw-bold fs-5">
+Info:
 Pre Chorus Riff for D and F#m (optional):
+</span>
 <pre>
 A|-----------------|
 E|---2---2---2---2-|    for D

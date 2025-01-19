@@ -1,4 +1,4 @@
-{t:🔥Shallow}
+{t:Shallow}
 {artist:Misc Soundtrack}
 {level: Medium}
 {youtube:}

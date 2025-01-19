@@ -2,43 +2,52 @@
 {artist:The Cure}
 {level: Easy}
 
+riff
+<pre>
+  [A]             [E7]            [Bm]            [D]
+A|-4-4-4-2-2-0---|---------------|---------------|---------------|
+E|---------------|-4-4-4-2-2-0---|---------------|---------------|
+C|---------------|---------------|-----2-2-2-1-2-|-4-2-----------|
+G|---------------|---------------|---------------|---------------| X2
 
+  [A]             [E7]            [Bm]            [D]
+A|---------------|---------------|---------------|----2---0------|
+E|---------------|-------2---4---|---5---4---5---|---------------|
+C|---1---2---4---|---4-----------|---------------|---------------|
+G|---------------|---------------|---------------|---------------|
 
+  [A]             [E7]            [Bm]            [D]
+A|-4-4-4-2-2-0---|---------------|---------------|---------------|
+E|---------------|-4-4-4-2-2-0---|---------------|---------------|
+C|---------------|---------------|-----2-2-2-1-2-|-4-2-----------|
+G|---------------|---------------|---------------|---------------|
+
+</pre>
+[A]   [E7]   [Bm]   [D]   <small><b>(x4)</b></small> 
 
 <small><i>(Verse)</i></small>
-
-"Show me, show me, [A] show me how you [E] do that trick
+"Show me, show me, [A] show me how you [E7] do that trick
 The [Bm] one that makes me [D] scream" she said
-"The [A] one that makes me [E] laugh" she said
+"The [A] one that makes me [E7] laugh" she said
 And [Bm] threw her arms [D] around my neck
-[A] "Show me how you [E] do it
+[A] "Show me how you [E7] do it
 And I [Bm] promise you, I [D] promise that
-I'll run [A] away with you   
- [E] ...
-I'll run [Bm] away with you"  
- [D] ...
+I'll run [A] away with you  [E7] ...
+I'll run [Bm] away with you" [D] ...
 
-
-<small><i>(Instrumental)</i></small> *
-
-[A]   [E]   [Bm]   [D]   [x4] 
-
+[A]   [E7]   [Bm]   [D]   <small><b>(x4)</b></small> 
 
 <small><i>(Verse)</i></small>
-
-[A] Spinning on that [E] dizzy edge
+[A] Spinning on that [E7] dizzy edge
 I [Bm] kissed her face and [D] kissed her head
-And [A] dreamed of all the [E] different ways
+And [A] dreamed of all the [E7] different ways
 I [Bm] had to make her [D] glow
-[A] "Why are you so [E] far away?" she [Bm] said
-"Why won't you [D] ever know that I'm in [A] love with you
- [E] ...
-That I'm in [Bm] love with you" 
- [D] ...
-
+[A] "Why are you so [E7] far away?" she [Bm] said
+"Why won't you [D] ever know 
+that I'm in [A] love with you [E7] ...
+That I'm in [Bm] love with you" [D] ...
 
 <small><i>(Chorus)</i></small>
-
 [F#m] You
 [G] Soft and only
 [F#m] You
@@ -47,36 +56,27 @@ That I'm in [Bm] love with you"
 [G] Strange as angels
 [D] Dancing in the deepest oceans
 
-Twisting in the water
-You're just like a [A] dream  
- [E] ...
-You're just like a [Bm] dream  
- [D] ...
+[D] Twisting in the water
+You're just like a [A] dream  [E7] ...
+You're just like a [Bm] dream  [D] ...
 
-
-<small><i>(Instrumental)</i></small>
-
-[A]   [E]   [Bm]   [D]   [x3] 
-
+[A]   [E7]   [Bm]   [D]   <small><b>(x4)</b></small> 
 
 <small><i>(Verse)</i></small>
-
-[A] Daylight licked me [E] into shape
+[A] Daylight licked me [E7] into shape
 I [Bm] must have been [D] asleep for days
-And [A] moving lips to [E] breathe her name
+And [A] moving lips to [E7] breathe her name
 I [Bm] opened up my [D] eyes
-And [A] found myself [E] alone, alone
+And [A] found myself [E7] alone, alone
 [Bm] Alone above a [D] raging sea
-That [A] stole the only [E] girl I loved
+That [A] stole the only [E7] girl I loved
 And [Bm] drowned her deep [D] inside of me
 
-
 <small><i>(Chorus)</i></small>
-
 [F#m] You
 [G] Soft and only
 [F#m] You
 [G] Lost and lonely
 [F#m] You
 [G] Just like heaven
- [D] ...
+[D/] ...

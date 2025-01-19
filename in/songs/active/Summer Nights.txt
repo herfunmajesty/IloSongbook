@@ -1,4 +1,4 @@
-{t:🔥Summer Nights}  
+{t:Summer Nights}  
 {artist:John Travolta & Olivia Newton-John}  
 {spotify:2AVkArcfALVk2X8sfPRzya}  
 {level:Hard}

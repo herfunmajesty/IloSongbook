@@ -1,6 +1,6 @@
-{t:🔥Boys Don't Cry}
+{t:Boys Don't Cry}
 {artist:The Cure}
-{level:Easy}
+{level:Medium}
 {spotify:0C2eEsMBj78CLkHNJPjohc}
 
 <span class="fw-bold fs-5">

@@ -2,8 +2,9 @@
 {artist:Twenty one pilots}
 {level: Medium}
 {youtube:}
-{spotify: xxx}
-{d:5.5}
+{spotify:1lguQJjlNrIOoOylYVZN3M}
+
+{d:6.5}
 <small><i>(Intro)</i></small>
 
 | [Am]    | [Am] [F/]  |
@@ -119,11 +120,13 @@ So [F] ple-[F]-ease [F]...[F/]
 [F] Na Na Na [C] Na Oh-Oh   
 [G] Na Na Na [Am] Na Oh-Oh  
 
+<small><i>(Outro)</i></small>
 You're the [F] judge, oh [C] no
 Set me [G] free-[Am]-ee ...
 You're the [F] judge, oh [C] no
 Set me [G] free-[Am]-ee ...
-You're the [F] judge, oh [C] no
-Set me [G] free-[Am]-ee ...
-You're the [F/] judge, oh [C/] no
-Set me [G/] free-[Am/]-ee 
+I [F] know my soul's [G] freezing
+Hell's [C] hot for good [Am] reason
+So [F] ple-e[F]ase,... [F/][stop]
+
+take [Am] me

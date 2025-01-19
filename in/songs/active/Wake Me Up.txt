@@ -1,6 +1,7 @@
-{t:🔥Wake Me Up}
+{t:Wake Me Up}
 {artist:Avicii}
 {level: Easy}
+
 
 <div class="mark">Beats per chord: <b>4</b>
 Strummings: simple <b>Down-Down</b> or <b>Down-Down--Up-Down-Up</b>

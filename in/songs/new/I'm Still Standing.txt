@@ -1,6 +1,6 @@
 {t:🔥I'm Still Standing}  
 {artist:Elton John}  
-{level:Hard}
+{level:Medium}
 {spotify:0GjEhVFGZW8afUYGChu3Rr}
 
 
@@ -8,24 +8,24 @@
 [Am]... [Dm]... [E7]... [E7/] - [F/][G/] x2
 
 [A] You could never know [D] what it's like
-Your [E] blood li-ike winter freezes [A] just like ice
-And there's [Bm7] cold lonely light that [D//] shines from [E//] you
+Your [E7] blood like winter freezes [A] just like ice
+And there's [Bm7] cold lonely light that [Bm7//] shines from [E7//] you
 You'll [F#m] wind up like the wreck you [D] hide behind that
-[Bm//] Mask you [A//] use [A]
+[Bm7//] Mask you [A//] use [A]
 
 [A] And did you think this fool could [D] never win
-Well [E] look at me I'm a-comin' [A] back again
-I got a [Bm7] taste of love in a [D//] simple [E//] way
+Well [E7] look at me I'm a-comin' [A] back again
+I got a [Bm7] taste of love in a [Bm7//] simple [E7//] way
 And if you [F#m] need-to-know while I'm still stan-[D]-ding
-You just [Bm//] fade a[A//]way… [A]
+You just [Bm7//] fade a[A//]way… [A]
 [A] don’t you know
 
 <small><i>(chorus)</i></small>
-[Am7] I'm still [Am] standing better than
+[Am] I'm still [Am] standing better than
 I [Em7] ever did… [Em7] lookin' like
 A [Dm] true survivor… [Dm] feelin' like
 A [F] little kid [G]
-[Am7] I'm still [Am] standing after
+[Am] I'm still [Am] standing after
 [Em7] All this time [Em7]
 Pickin' up the [Dm] pieces of my life [Dm] without you
 [E7]On my mind [E7]
@@ -35,18 +35,18 @@ I'm still [Am]standing [Dm]yeah, yeah
 [E7]Yeah [E7/] - [F/][G/] 
 
 [A] Once I never could've [D] hoped to win
-You [E] starting down the road leaving [A] me again
-The [Bm7] threats you made were meant to [D//] cut me [E//] down and if our
-[F#m] Love was just a [D] circus you'd be
-A [Bm//] clown by [A//] now
+You [E7] starting down the road leaving [A] me again
+The [Bm7] threats you made were meant to [Bm7//] cut me [E7//] down 
+and if our [F#m] Love was just a [D] circus you'd be
+A [Bm7//] clown by [A//] now
 
 [A]
 <small><i>(chorus)</i></small>
-[Am7] I'm still [Am] standing better than
+[Am] I'm still [Am] standing better than
 I [Em7] ever did… [Em7] lookin' like
 A [Dm] true survivor… [Dm] feelin' like
 A [F] little kid [G]
-[Am7] I'm still [Am] standing after
+[Am] I'm still [Am] standing after
 [Em7] All this time [Em7]
 Pickin' up the [Dm] pieces of my life [Dm] without you
 [E7] On my mind [E7]
@@ -56,23 +56,26 @@ I'm still [Am] standing [Dm] yeah, yeah
 [E7] Yeah [E7/] - [F/][G/] 
 
 <small><i>(instrumental) </i></small>
-[A] [D] 
-[E] [A]
-[Bm7] [D//][E//]
-[F#m] [D] 
-[E//] [A//]
+[A]... [D]...
+[E7]... [A]...
+[Bm7]... [Bm7//][E7//]
+[F#m]... [D]... 
+[Bm7//] [A//]
 
-[A]
-Don't you know [Am7] I'm still [Am] standing better than
+[A] Don't you know 
+[Am] I'm still [Am] standing better than
 I [Em7] ever did… [Em7] lookin' like
 A [Dm] true survivor… [Dm] feelin' like
 A [F] little kid [G]
-[Am7] I'm still [Am] standing after
+[Am] I'm still [Am] standing after
 [Em7] All this time [Em7]
 Pickin' up the [Dm] pieces of my life [Dm] without you
 [E7] On my mind [E7]
 I'm still [Am] standing [Dm]yeah, yeah
 [E7] Yeah [E7]
 I'm still [Am] standing [Dm] yeah, yeah
-[E7] Yeah [E7/] - [F/][G/] 
+[E7] Yeah [E7]  
+
+[Am]... [Dm]... [E7]... [E7]
+[Am]... [Dm]... [E7]... [E7/] - [F/][G/]
 [Am/]

@@ -1,4 +1,4 @@
-{t:🔥Dancing Queen}  
+{t:Dancing Queen}  
 {artist:Abba}  
 {level:Medium}
 {spotify:0GjEhVFGZW8afUYGChu3Rr}

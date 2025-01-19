@@ -1,4 +1,4 @@
-{t:🔥Blinding Lights}  
+{t:Blinding Lights}  
 {artist:The Weeknd}  
 {level:Medium}
 {spotify:0VjIjW4GlUZAMYd2vXMi3b}
