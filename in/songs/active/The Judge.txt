@@ -1,32 +1,31 @@
 {t:🔥The Judge}
-{artist:Twenty one pilots}
+{artist:Twenty One Pilots}
 {level: Medium}
-{youtube:}
+{youtube:PbP-aIe51Ek}
 {spotify:1lguQJjlNrIOoOylYVZN3M}
-
 {d:6.5}
 <small><i>(Intro)</i></small>
 
-| [Am]    | [Am] [F/]  |
-| [C]     | [C]  [Dm/] |
-| [Am]    | [Am] [F/]  |
-| [C]     | [C]  [Dm/] |
+| [Am]    | [Am] [F//]  |
+| [C]     | [C]  [Dm//] |
+| [Am]    | [Am] [F//]  |
+| [C]     | [C]         |
 
-[Am]... Na Na Na Na [F/] Oh   
-[C] Oh... Na Na Na Na [Dm/] Oh  
-[Am] Oh... Na Na Na Na [F/] Oh  
-[C] Oh ... [Dm/]
+[Am]... Na Na Na Na [F//] Oh   
+[C] Oh... Na Na Na Na [Dm//] Oh  
+[Am] Oh... Na Na Na Na [F//] Oh  
+[C] Oh ... [C]
 
 <small><i>(Verse)</i></small>
-[Am] When the leader of the bad guys [F/] sang 
-[C] Something soft and soaked in [Dm/] pain 
-[Am] I heard the echo from his secret [F/] 
-hide[C]away ...[Dm/]
+[Am] When the leader of the bad guys [F//] sang 
+[C] Something soft and soaked in [Dm//] pain 
+[Am] I heard the echo from his secret [F//] 
+hide[C]away ...[C]
 
-[Am] He must've forgot to close his [F/] door 
-[C] As he cranked out those dismal [Dm/] chords 
-[Am] And his four walls declared [F/] him 
-[C] insane... [Dm/]
+[Am] He must've forgot to close his [F//] door 
+[C] As he cranked out those dismal [Dm//] chords 
+[Am] And his four walls declared [F//] him 
+[C] insane... [C]
 
 <small><i>(Pre-Chorus)</i></small>
 I [Em/] found my way
@@ -44,30 +43,30 @@ So [F] ple-e[F]ase,... [F/][stop]
 
 take me
 
-[Am]... Na Na Na Na [F/] Oh   
-[C] Oh... Na Na Na Na [Dm/] Oh  
-[Am] Oh... Na Na Na Na [F/] Oh  
-[C] Oh ... [Dm/]
+[Am]... Na Na Na Na [F//] Oh   
+[C] Oh... Na Na Na Na [Dm//] Oh  
+[Am] Oh... Na Na Na Na [F//] Oh  
+[C] Oh ... [C]
 
 <small><i>(Verse)</i></small>
 [Am] Three lights are lit-
--But the fourth one's [F/] out-
+-But the fourth one's [F//] out-
 -I can [C] tell cause it's a bit darker-
--Than the last night's [Dm/] bout-
+-Than the last night's [Dm//] bout-
 -I [Am] forgot about the drought-
--Of light bulbs in this [F/] house-
+-Of light bulbs in this [F//] house-
 -So I head [C] out-
--Down a route I think is heading [Dm/] south-
+-Down a route I think is heading [Dm//] south-
 
 -But I'm not [Am] good with directions-
--And I hide behind my [F/] mouth-
+-And I hide behind my [F//] mouth-
 -I'm a [C] pro at imperfections-
--And I'm best friends with my [Dm/] doubt-
+-And I'm best friends with my [Dm//] doubt-
 -And [Am] now that my mind's out
-And now I hear it clear and [F/] loud-
-I'm thinking, [C] 'Wow-
+And now I hear it clear and [F//] loud-
+I'm thinking, [C/] 'Wow- [stop]
 
--I probably should've stayed inside [Dm/] my house.'
+-I probably should've stayed inside my house.'
 
 <small><i>(Pre-Chorus)</i></small>
 I [Em/] found my way
@@ -81,7 +80,7 @@ You're the [F] judge, oh [C] no
 Set me [G] free-[Am]-ee ...
 I [F] know my soul's [G] freezing
 Hell's [C] hot for good [Am] reason
-So [F] ple-e[F]ase,... [F/][stop]
+So [F] ple-[F]-ease... [F/][stop]
 
 <small><i>(Bridge) slow down</i></small> 
 [Am/] [Am//] I don't know if this [F/] song    
@@ -97,10 +96,11 @@ So [F] ple-e[F]ase,... [F/][stop]
 <small><i>down-down</i></small>
 [Dm]devil
 
-[Am] ... [F/]  
-[C] ... [Dm/] 
-[Am] ... [F/]  
-[C] ... [Dm/]
+<small><i>slowly</i></small>
+| [Am]    | [Am] [F///]  |
+| [C]     | [C]  [Dm///] |
+| [Am]    | [Am] [F///]  |
+| [C]     | [C]         |
 
 <small><i>(Chorus) still slow</i></small>
 You're the [F] judge, oh [C] no
@@ -109,24 +109,31 @@ You're the [F] judge, oh [C] no
 Set me [G] free, oh [Am] no
 I [F] know my soul's [G] freezing
 Hell's [C] hot for good [Am] reason
-So [F] ple-[F]-ease [F]...[F/]
+So [F] ple-[F]-ease...
 
 
 <small><i>(Interlude) faster</i></small>
 [F]    [C]    [G]    [Am]  <small><b>(x2)</b></small>
 
-[F] Na Na Na [C] Na Oh-Oh   
-[G] Na Na Na [Am] Na Oh-Oh  
-[F] Na Na Na [C] Na Oh-Oh   
-[G] Na Na Na [Am] Na Oh-Oh  
+[F]... Na Na [C] Na Na Oh   
+[G] Oh... Na Na [Am] Na Na Oh  
+[F] Oh... Na Na [C] Na Na Oh  
+[G] Oh ... Na Na [Am] Na Na 
 
-<small><i>(Outro)</i></small>
 You're the [F] judge, oh [C] no
+<small><i>(... Na Na Na Na Oh )</i></small>
 Set me [G] free-[Am]-ee ...
+<small><i>(Oh... Na Na Na Na Oh )</i></small>
 You're the [F] judge, oh [C] no
+<small><i>(Oh... Na Na Na Na Oh )</i></small>
 Set me [G] free-[Am]-ee ...
-I [F] know my soul's [G] freezing
-Hell's [C] hot for good [Am] reason
-So [F] ple-e[F]ase,... [F/][stop]
-
-take [Am] me
+<small><i>(Oh... Na Na Na Na Oh )</i></small>
+You're the [F] judge, oh [C] no
+<small><i>(Oh... Na Na Na Na Oh )</i></small>
+Set me [G] free-[Am]-ee ...
+<small><i>(Oh... Na Na Na Na Oh )</i></small>
+You're the [F] judge, oh [C] no
+<small><i>(Oh... Na Na Na Na Oh )</i></small>
+Set me [G] free-[Am]-ee
+<small><i>(Oh... Na Na Na Na Oh Oh)</i></small>
+[F/]

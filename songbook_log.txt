@@ -3452,3 +3452,72 @@
 2025-01-19 20:34:28 - Song: Somebody Told Me.txt, Message: Nowa pisenka, tytuł zgodny
 2025-01-19 20:34:28 - Song: Somebody Told Me.txt, Message: Uwaga! w tej piosence coś jest nie tak z levelem, jest: xxx
 2025-01-19 20:34:28 - Song: What Is Love (Baby Don't Hurt Me).txt, Message: Nowa pisenka, tytuł zgodny
+2025-01-19 21:13:06 - Song: 19 2000.txt, Message: Tytuł jest źle sformatowany wewnątrz pliku!: 19-2000
+2025-01-19 21:13:06 - Song: All Star (Shrek).txt, Message: Nowa pisenka, tytuł zgodny
+2025-01-19 21:13:06 - Song: Can't Stop.txt, Message: Nowa pisenka, tytuł zgodny
+2025-01-19 21:13:06 - Song: Eye Of The Tiger.txt, Message: Uwaga! Jest tu 24 zroślaków różnej formy - sprawdź czy akordy
+2025-01-19 21:13:06 - Song: I'm Still Standing.txt, Message: Nowa pisenka, tytuł zgodny
+2025-01-19 21:13:06 - Song: Its raining man.txt, Message: Nowa! Uwaga! Tytuł i nazwa pliku się różnią: Its raining man.txt i 🔥It's Raining Men
+2025-01-19 21:13:06 - Song: Just Like Heaven.txt, Message: Nowa pisenka, tytuł zgodny
+2025-01-19 21:13:06 - Song: Let It Be.txt, Message: Uwaga! Jest tu 12 zroślaków różnej formy - sprawdź czy akordy
+2025-01-19 21:13:06 - Song: Maria.txt, Message: Nowa pisenka, tytuł zgodny
+2025-01-19 21:13:06 - Song: Roxanne.txt, Message: Nowa pisenka, tytuł zgodny
+2025-01-19 21:13:06 - Song: Snow (Hey Oh).txt, Message: Nowa pisenka, tytuł zgodny
+2025-01-19 21:13:06 - Song: The Judge.txt, Message: Nowa pisenka, tytuł zgodny
+2025-01-19 21:13:06 - Song: Dock Of The Bay.txt, Message: Tytuł jest źle sformatowany wewnątrz pliku!: (Sittin' on the) Dock of the Bay
+2025-01-19 21:13:07 - Song: I'm Still Standing — kopia.txt, Message: Tytuł jest źle sformatowany wewnątrz pliku!: 🔥I'm Still Standing_hard
+2025-01-19 21:13:07 - Song: Little Talks.txt, Message: Nowa pisenka, tytuł zgodny
+2025-01-19 21:13:07 - Song: Little Talks.txt, Message: Uwaga! w tej piosence coś jest nie tak z levelem, jest: xxx
+2025-01-19 21:13:07 - Song: Lovesong.txt, Message: Nowa pisenka, tytuł zgodny
+2025-01-19 21:13:07 - Song: Lovesong.txt, Message: Uwaga! w tej piosence coś jest nie tak z levelem, jest: xxx
+2025-01-19 21:13:07 - Song: Mr Sandman.txt, Message: Nowa! Uwaga! Tytuł i nazwa pliku się różnią: Mr Sandman.txt i 🔥Mister Sandman
+2025-01-19 21:13:07 - Song: My Way.txt, Message: Tytuł jest źle sformatowany wewnątrz pliku!: My way
+2025-01-19 21:13:07 - Song: Somebody Told Me.txt, Message: Nowa pisenka, tytuł zgodny
+2025-01-19 21:13:07 - Song: Somebody Told Me.txt, Message: Uwaga! w tej piosence coś jest nie tak z levelem, jest: xxx
+2025-01-19 21:13:07 - Song: What Is Love (Baby Don't Hurt Me).txt, Message: Nowa pisenka, tytuł zgodny
+2025-01-19 21:13:13 - Song: 19 2000.txt, Message: Tytuł jest źle sformatowany wewnątrz pliku!: 19-2000
+2025-01-19 21:13:13 - Song: All Star (Shrek).txt, Message: Nowa pisenka, tytuł zgodny
+2025-01-19 21:13:13 - Song: Can't Stop.txt, Message: Nowa pisenka, tytuł zgodny
+2025-01-19 21:13:13 - Song: Eye Of The Tiger.txt, Message: Uwaga! Jest tu 24 zroślaków różnej formy - sprawdź czy akordy
+2025-01-19 21:13:13 - Song: I'm Still Standing.txt, Message: Nowa pisenka, tytuł zgodny
+2025-01-19 21:13:13 - Song: Its raining man.txt, Message: Nowa! Uwaga! Tytuł i nazwa pliku się różnią: Its raining man.txt i 🔥It's Raining Men
+2025-01-19 21:13:13 - Song: Just Like Heaven.txt, Message: Nowa pisenka, tytuł zgodny
+2025-01-19 21:13:13 - Song: Let It Be.txt, Message: Uwaga! Jest tu 12 zroślaków różnej formy - sprawdź czy akordy
+2025-01-19 21:13:13 - Song: Maria.txt, Message: Nowa pisenka, tytuł zgodny
+2025-01-19 21:13:13 - Song: Roxanne.txt, Message: Nowa pisenka, tytuł zgodny
+2025-01-19 21:13:13 - Song: Snow (Hey Oh).txt, Message: Nowa pisenka, tytuł zgodny
+2025-01-19 21:13:13 - Song: The Judge.txt, Message: Nowa pisenka, tytuł zgodny
+2025-01-19 21:13:13 - Song: Dock Of The Bay.txt, Message: Tytuł jest źle sformatowany wewnątrz pliku!: (Sittin' on the) Dock of the Bay
+2025-01-19 21:13:13 - Song: I'm Still Standing — kopia.txt, Message: Tytuł jest źle sformatowany wewnątrz pliku!: 🔥I'm Still Standing_hard
+2025-01-19 21:13:13 - Song: Little Talks.txt, Message: Nowa pisenka, tytuł zgodny
+2025-01-19 21:13:13 - Song: Little Talks.txt, Message: Uwaga! w tej piosence coś jest nie tak z levelem, jest: xxx
+2025-01-19 21:13:13 - Song: Lovesong.txt, Message: Nowa pisenka, tytuł zgodny
+2025-01-19 21:13:13 - Song: Lovesong.txt, Message: Uwaga! w tej piosence coś jest nie tak z levelem, jest: xxx
+2025-01-19 21:13:13 - Song: Mr Sandman.txt, Message: Nowa! Uwaga! Tytuł i nazwa pliku się różnią: Mr Sandman.txt i 🔥Mister Sandman
+2025-01-19 21:13:13 - Song: My Way.txt, Message: Tytuł jest źle sformatowany wewnątrz pliku!: My way
+2025-01-19 21:13:13 - Song: Somebody Told Me.txt, Message: Nowa pisenka, tytuł zgodny
+2025-01-19 21:13:13 - Song: Somebody Told Me.txt, Message: Uwaga! w tej piosence coś jest nie tak z levelem, jest: xxx
+2025-01-19 21:13:13 - Song: What Is Love (Baby Don't Hurt Me).txt, Message: Nowa pisenka, tytuł zgodny
+2025-01-19 21:13:14 - Song: 19 2000.txt, Message: Tytuł jest źle sformatowany wewnątrz pliku!: 19-2000
+2025-01-19 21:13:14 - Song: All Star (Shrek).txt, Message: Nowa pisenka, tytuł zgodny
+2025-01-19 21:13:14 - Song: Can't Stop.txt, Message: Nowa pisenka, tytuł zgodny
+2025-01-19 21:13:14 - Song: Eye Of The Tiger.txt, Message: Uwaga! Jest tu 24 zroślaków różnej formy - sprawdź czy akordy
+2025-01-19 21:13:14 - Song: I'm Still Standing.txt, Message: Nowa pisenka, tytuł zgodny
+2025-01-19 21:13:14 - Song: Its raining man.txt, Message: Nowa! Uwaga! Tytuł i nazwa pliku się różnią: Its raining man.txt i 🔥It's Raining Men
+2025-01-19 21:13:14 - Song: Just Like Heaven.txt, Message: Nowa pisenka, tytuł zgodny
+2025-01-19 21:13:14 - Song: Let It Be.txt, Message: Uwaga! Jest tu 12 zroślaków różnej formy - sprawdź czy akordy
+2025-01-19 21:13:14 - Song: Maria.txt, Message: Nowa pisenka, tytuł zgodny
+2025-01-19 21:13:14 - Song: Roxanne.txt, Message: Nowa pisenka, tytuł zgodny
+2025-01-19 21:13:14 - Song: Snow (Hey Oh).txt, Message: Nowa pisenka, tytuł zgodny
+2025-01-19 21:13:14 - Song: The Judge.txt, Message: Nowa pisenka, tytuł zgodny
+2025-01-19 21:13:14 - Song: Dock Of The Bay.txt, Message: Tytuł jest źle sformatowany wewnątrz pliku!: (Sittin' on the) Dock of the Bay
+2025-01-19 21:13:14 - Song: I'm Still Standing — kopia.txt, Message: Tytuł jest źle sformatowany wewnątrz pliku!: 🔥I'm Still Standing_hard
+2025-01-19 21:13:14 - Song: Little Talks.txt, Message: Nowa pisenka, tytuł zgodny
+2025-01-19 21:13:14 - Song: Little Talks.txt, Message: Uwaga! w tej piosence coś jest nie tak z levelem, jest: xxx
+2025-01-19 21:13:14 - Song: Lovesong.txt, Message: Nowa pisenka, tytuł zgodny
+2025-01-19 21:13:14 - Song: Lovesong.txt, Message: Uwaga! w tej piosence coś jest nie tak z levelem, jest: xxx
+2025-01-19 21:13:14 - Song: Mr Sandman.txt, Message: Nowa! Uwaga! Tytuł i nazwa pliku się różnią: Mr Sandman.txt i 🔥Mister Sandman
+2025-01-19 21:13:14 - Song: My Way.txt, Message: Tytuł jest źle sformatowany wewnątrz pliku!: My way
+2025-01-19 21:13:14 - Song: Somebody Told Me.txt, Message: Nowa pisenka, tytuł zgodny
+2025-01-19 21:13:14 - Song: Somebody Told Me.txt, Message: Uwaga! w tej piosence coś jest nie tak z levelem, jest: xxx
+2025-01-19 21:13:14 - Song: What Is Love (Baby Don't Hurt Me).txt, Message: Nowa pisenka, tytuł zgodny

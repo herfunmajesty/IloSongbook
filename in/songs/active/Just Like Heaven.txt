@@ -1,6 +1,7 @@
 {t:🔥Just Like Heaven}
 {artist:The Cure}
 {level: Easy}
+{spotify: 4NnWuGQujzWUEg0uZokO5M}
 
 riff
 <pre>
