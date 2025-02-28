@@ -382,8 +382,10 @@ def copy_files(src_dir, dest_dir, files_to_copy):
 
 # ====================== Program Własciwy ===========================
 
+
+
 # sprawdzenie gdzie jestem
-env = Environment(loader=FileSystemLoader('in\\template'))
+env = Environment(loader=FileSystemLoader('in/template'))
 print(f"{sep1}Tworzenie bazy piosenek aktywnych{sep1}")
 print("Current working directory:", os.getcwd())
 
@@ -394,12 +396,12 @@ dest_directory = os.path.join(os.getcwd(), 'out')
 copy_folders(src_directory, dest_directory, img_folders)
 # kopiowanie plików nie renderowanych
 n_r_files = ['how.html']
-n_src_directory = os.path.join(os.getcwd(), 'in\\template')
+n_src_directory = os.path.join(os.getcwd(), 'in/template')
 n_dest_directory = os.path.join(os.getcwd(), 'out')
 copy_files(n_src_directory, n_dest_directory, n_r_files)
 
 # Najpierw tworzę bazę piosenek aktywnych:
-folder_path_active = os.path.join(os.getcwd(), 'in\\songs\\active')
+folder_path_active = os.path.join(os.getcwd(), 'in/songs/active')
 print(f'{sep2}Funkcja zaczytująca z plików{sep2}')
 songs_list = read_songs_from_folder(folder_path_active)
 
@@ -437,7 +439,7 @@ generate_song_list_html(collection, main_directory, 'songs.html', list_name)
 
 print(f"{sep1}Tworzenie bazy piosenek usuniętych{sep1}")
 # Najpierw tworzę bazę piosenek usuniętych:
-folder_path_archive: str = os.path.join(os.getcwd(), 'in\\songs\\archive')
+folder_path_archive: str = os.path.join(os.getcwd(), 'in/songs/archive')
 print(folder_path_archive)
 print(f'{sep2}Funkcja zaczytująca z plików{sep2}')
 
@@ -460,7 +462,7 @@ arch_collection.assign_numbers('A')
 for song in arch_collection:
     print(f"{song.Number} --- {song.Title}  --  by   {song.Artist}")
 
-directory = "out\\archive"
+directory = "out/archive"
 generate_song_html(arch_collection, directory, 'song_hidden.html')
 a_list_name = "archive"  # zmienic ten fragment na archive_list i zaimplementować w html
 generate_song_list_html(arch_collection, directory, 'songs_hidden.html',  a_list_name)
@@ -473,7 +475,7 @@ generate_song_list_html(arch_collection, directory, 'songs_hidden.html',  a_list
 
 print(f"{sep1}Tworzenie bazy piosenek  do testów{sep1}")
 # Najpierw tworzę bazę piosenek usuniętych:
-folder_path_test: str = os.path.join(os.getcwd(), 'in\\songs\\new')
+folder_path_test: str = os.path.join(os.getcwd(), 'in/songs/new')
 print(folder_path_test)
 print(f'{sep2}Funkcja zaczytująca z plików{sep2}')
 
@@ -496,7 +498,7 @@ test_collection.assign_numbers('T')
 for song in test_collection:
     print(f"{song.Number} --- {song.Title}  --  by   {song.Artist}")
 
-directory2 = "out\\new"
+directory2 = "out/new"
 generate_song_html(test_collection, directory2, 'song_hidden.html')
 t_list_name = "test"  # zmienic ten fragment na test_list i zaimplementować w html
 generate_song_list_html(test_collection, directory2, 'songs_hidden.html',  t_list_name)
