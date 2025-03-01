@@ -267,6 +267,7 @@ def generate_song_html(local_song_list, out_dir, template_file):
             duration=song.Duration,
             lyrics=song.lyrics,
             spotify=song.s_link,
+            youtube=song.y_link,
             sticky=song.Sticky,
             chords=song.ch_list,
             ltrans=song.l_tr
