@@ -4,7 +4,7 @@
 {level:Easy}
 
 <small><i>(Intro)</i></small>
-[C][G][Am][Am] <small><b>x2</b><small>
+[C][G][Am][Am] <small><b>x2</b></small>
 
 <small><i>(Verse)</i></small>
 [C] You shout it out [G]
