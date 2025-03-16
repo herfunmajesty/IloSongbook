@@ -1,4 +1,4 @@
-{t:🔥Snow (Hey Oh)}  
+{t:Snow (Hey Oh)}  
 {artist:Red Hot Chili Peppers}  
 {level:Medium}
 {spotify:2aibwv5hGXSgw7Yru8IYTO}
