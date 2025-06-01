@@ -7,7 +7,7 @@
 <span class="mark fw-bold">4 beats per chord
 </span>
 
-RIFF 1
+<b>riff 1</b>
 <pre>
 A|---8-8-6-8-10---6-|-8-8-6-8-10---6-|
 E|--------------8---|------------8---|

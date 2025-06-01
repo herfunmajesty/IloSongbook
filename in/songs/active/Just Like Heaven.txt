@@ -3,7 +3,7 @@
 {level: Easy}
 {spotify: 4NnWuGQujzWUEg0uZokO5M}
 
-riff
+<b>riff</b>
 <pre>
   [A]             [E7]            [Bm]            [D]
 A|-4-4-4-2-2-0---|---------------|---------------|---------------|

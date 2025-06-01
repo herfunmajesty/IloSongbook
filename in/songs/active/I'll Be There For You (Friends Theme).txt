@@ -3,7 +3,7 @@
 {level:Medium}
 {spotify:15tHagkk8z306XkyOHqiip}
 
-RIFF 1
+<b>riff 1</b>
 <pre>
 A|-4-4~2--------2----|
 E|------5-3-3-5---5--|

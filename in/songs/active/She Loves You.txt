@@ -1,63 +1,69 @@
-{t: She Loves You }  
+{t: She Loves You}  
 {artist: The Beatles}  
 {level:Medium}  
 {youtube:NN50dnljfZQ}
 
-Ps:
-- Key is different than original (starts in Em)
 
-Intro: (1 . 2 . 1 2 3 .)
+(1 . 2 . 1 2 3 .)
 
-She [Am] loves you, yeah, yeah, yeah
-She [D7] loves you, yeah, yeah, yeah      
-She [F] loves you, yeah, yeah, yeah, [C] yeaaaaah
+<small><i>(Intro)</i></small>
+She [Em] loves you, yeah, yeah, yeah
+She [A7] loves you, yeah, yeah, yeah      
+She [C] loves you, yeah, yeah, yeah, [G] yeaaaaah
 
-You [C] think you lost your [Am] love
-Well, I [Em] saw her yester[G7]day-ay
-It's [C] you she's thinking of [Am] 
-And she [Em] told me what to [G7] say
+<small><i>(Verse)</i></small>
+You [G] think you lost your [Em] love
+Well, I [Bm] saw her yester[D7]day-ay
+It's [G] you she's thinking of [Em] 
+And she [Bm] told me what to [D7] say
 
-She says she [C] loves you 
-And you know that can't be [Am] bad
-Yes she [Fm] loves you 
-And you know you should be [G7] glad
+She says she [G] loves you 
+And you know that can't be [Em] bad
+Yes she [Cm] loves you 
+And you know you should be [D7] glad
 
-She [C] said you hurt her [Am] so,  
-she [Em] almost lost her [G7] mind
-But [C] now she says she [Am] knows 
-You're [Em] not the hurting [G7] kind
+<small><i>(Verse)</i></small>
+She [G] said you hurt her [Em] so,  
+she [Bm] almost lost her [D7] mind
+But [G] now she says she [Em] knows 
+You're [Bm] not the hurting [D7] kind
 
-She says she [C] loves you 
-And you know that can't be [Am] bad
-Yes she [Fm] loves you 
-And you know you should be [G7] glad
-[G7] oooohhh!
+She says she [G] loves you 
+And you know that can't be [Em] bad
+Yes she [Cm] loves you 
+And you know you should be [D7] glad
+[D7] oooohhh!
 
-She [Am] loves you yeah, yeah, yeah,
-She [D7] loves you yeah, yeah, yeah,
+<small><i>(Chorus)</i></small>
+She [Em] loves you yeah, yeah, yeah,
+She [A7] loves you yeah, yeah, yeah,
 With a [Fm/] love [Fm/] like [Fm/] that, 
-You [G] know you should be [C] glad
+You [D] know you should be [G] glad
 
-You [C] know it's up to [Am] you,
-I [Em] think it's only [G7] fair
-[C] Pride can hurt you [Am] too  
-A[Em]pologize to [G7] her
+<small><i>(Verse)</i></small>
+You [G] know it's up to [Em] you,
+I [Bm] think it's only [D7] fair
+[G] Pride can hurt you [Em] too  
+A[Bm]pologize to [D7] her
 
-Because she [C] loves you 
-And you know that can't be [Am] bad
-Yes she [Fm] loves you 
-And you know you should be [G7] glad
-[G7] oooohhh!
+Because she [G] loves you 
+And you know that can't be [Em] bad
+Yes she [Cm] loves you 
+And you know you should be [D7] glad
+[D7] oooohhh!
 
-She [Am] loves you yeah, yeah, yeah,
-She [D7] loves you yeah, yeah, yeah
+<small><i>(Chorus)</i></small>
+She [Em] loves you yeah, yeah, yeah,
+She [A7] loves you yeah, yeah, yeah
 With a [Fm/] love [Fm/] like [Fm/] that, 
-You [G] know you should be [C] glad .. [Am] ..
+You [D] know you should be [G] glad .. [Em] ..
 
 With a [Fm/] love [Fm/] like [Fm/] that, 
-You [G] know you should be [C] glad .. [Am] ..
+You [D] know you should be [G] glad .. [Em] ..
 
+<small><i>(Outro)</i></small>
 With a [Fm/] love [Fm/] like [Fm/] that, 
-You [G/] (stop) know you shou-u-u-ld ... be [C] glaaad
-[Am] ... Yeah, yeah, yeah!
-[F] ... Yeah, yeah, yeah [C/] yeah!
+You [D/] (stop) know you shou-u-u-ld ... be 
+[G] glaaad [back](Yeah, yeah, yeah)[/back]
+[Em] ... Yeah, yeah, yeah!
+[C] ... Yeah, yeah, yeah [G/] yeah!
