@@ -1,14 +1,14 @@
-{t:American Idiot}
+{t: 🔥American Idiot}
 {artist:Green Day}
 {level:Medium}
 
-<i>(Intro)</i> 
+<small><i>(Intro)</i></small>
 [A///][D/ //][G//][D/][A//][stop]
 [A///][D/ //][G//][D/][A//][stop]
 [A///][D/ //][G//][D/][A//][stop]
 [A///][D/ //][G//][D/][A//][stop]
 
-<i>(Verse)</i> 
+<small><i>(Verse)</i></small>
 Don't wanna be an American idiot.
 [A///][D/ //][G//][D/][A//][stop]
 Don't want a nation under the new media.
@@ -18,7 +18,7 @@ And can you hear the sound of hysteria?
 The subliminal mindfuck America.
 [A///][D/ //][G//][D/][A//]
 
-<i>(Chorus)</i> 
+<small><i>(Chorus)</i></small>
 [D] Welcome to a new kind of tension.
 [A] All across the alien nation.
 [E7] Everything isn't meant to be [A] okay.
@@ -26,11 +26,11 @@ The subliminal mindfuck America.
 [A] We're not the ones who're meant to follow.
 [E7] For that's enough to argue.
 
-<i>(Instrumental)</i> 
+<small><i>(Instrumental)</i></small> 
 [A///][D/ //][G//][D/][A//]
 [A///][D/ //][G//][D/][A//][stop]
 
-<i>(Verse 2)</i> 
+<small><i>(Verse)</i></small>
 Well maybe I'm the faggot America.
 [A///][D/ //][G//][D/][A//][stop]
 I'm not a part of a redneck agenda.
@@ -40,7 +40,7 @@ Now everybody do the propaganda.
 And sing along in the age of paranoia.
 [A///][D/ //][G//][D/][A//]
 
-<i>(Chorus)</i> 
+<small><i>(Chorus)</i></small> 
 [D] Welcome to a new kind of tension.
 [A] All across the alien nation.
 [E7] Everything isn't meant to be [A] okay.
@@ -48,19 +48,19 @@ And sing along in the age of paranoia.
 [A] We're not the ones who're meant to follow.
 [E7] For that's enough to argue.
 
-<i>(Instrumental)</i> 
+<small><i>(Instrumental)</i></small> 
 [D][A][E7][A]
 [D][A][E7][A]
 [A///][D/ //][G//][D/][A//]
 [A///][D/ //][G//][D/][A//]
 
-<i>(Verse 3)</i> 
+<small><i>(Verse)</i></small> 
 [A///] Don't [D/ //] wanna be [G//]an American [A//] idiot
 [A//] One nation [D/ //] controlled by [G//] the media [A//]
 [A//] Information [D/ //] nation of [G//] hysteria [A//][stop]
 It's calling out to idiot America.
 
-<i>(Chorus)</i> 
+<small><i>(Chorus)</i></small> 
 [D] Welcome to a new kind of tension.
 [A] All across the alien nation.
 [E7] Everything isn't meant to be [A] okay.
@@ -68,7 +68,7 @@ It's calling out to idiot America.
 [A] We're not the ones who're meant to follow.
 [E7] For that's enough to argue.
 
-<i>(Outro)</i> 
+<small><i>(Outro)</i></small>
 [A///][D/ //][G//][D/][A//]
 [A///][D/ //][G//][D/][A//]
 [A///][D/ //][G//][D/][A//]
