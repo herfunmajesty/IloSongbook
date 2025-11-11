@@ -1,3 +1,4 @@
+{spotify:6xdLJrVj4vIXwhuG8TMopk}
 {t:Crazy Little Thing Called Love}  
 {artist:The Queen}  
 {level:Hard}

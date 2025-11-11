@@ -1,4 +1,4 @@
-{t: Imagine }  
+{t:Imagine}  
 {key: C}  
 {artist:John Lennon}  
 {level:Medium}

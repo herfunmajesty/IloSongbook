@@ -19,6 +19,12 @@ replacements = {
     "[/back]": "</b></i>",
     """[""": "<span class=\"chord\">[",
     """]""": "]</span>",
+    "<d>": "<span style=\"color: purple;\"><small><i>",
+    "</d>": "</i></small></span>",
+    "<r>": "<small><b>",
+    "</r>": "</b></small>",
+    "<s>": "<small><i>",
+    "</s>": "</i></small>",
     "\n": '<br>',
     # add more if needed here
 }

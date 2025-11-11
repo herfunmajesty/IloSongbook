@@ -1,4 +1,4 @@
-{t: I'm A Believer (From Shrek) }  
+{t:I'm A Believer (From Shrek)}  
 {key: G}  
 {artist:The Monkees}  
 {level:Medium}  

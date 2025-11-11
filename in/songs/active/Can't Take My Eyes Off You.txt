@@ -1,4 +1,5 @@
-{t: Can't Take My Eyes Off You }  
+{spotify:6ft9PAgNOjmZ2kFVP7LGqb}
+{t:Can't Take My Eyes Off You}  
 {key: G}  
 {artist:Frankie Vallie}  
 {level:Medium} 

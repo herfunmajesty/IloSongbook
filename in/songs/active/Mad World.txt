@@ -1,4 +1,4 @@
-{t: Mad World }  
+{t:Mad World}  
 {artist:Gary Jules}  
 {level:Easy} 
 

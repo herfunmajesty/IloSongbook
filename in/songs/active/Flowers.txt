@@ -1,6 +1,7 @@
+{spotify:7DSAEUvxU8FajXtRloy8M0}
 {t:Flowers}
 {artist:Miley Cyrus}
-{level: Easy}
+{level:Easy}
 
 * info
 - second verse almost blends with the finish of the chorus

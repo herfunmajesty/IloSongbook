@@ -1,4 +1,4 @@
-{t: 19-2000 }  
+{t:19-2000}  
 {artist:Gorillaz}  
 {level:Easy}
 {spotify:71koAFCnGnugRdGIDfS7f4}

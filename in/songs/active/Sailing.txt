@@ -1,7 +1,7 @@
-{t: Sailing }  
+{t:Sailing}  
 {key: C}  
 {artist:Rod Stewart}  
-{level: Medium}
+{level:Medium}
    
 I am [C] sailing, I am [Am] sailing    
 home a[F]gain 'cross the [C] sea   

@@ -1,4 +1,4 @@
-{t: In The Summertime }  
+{t:In The Summertime}  
 {key: C}  
 {artist:Mungo Jerry}  
 {level:Easy} 

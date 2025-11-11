@@ -1,4 +1,4 @@
-{t: Let It Be }  
+{t:Let It Be}  
 {artist:The Beatles}  
 {level:Medium}  
 

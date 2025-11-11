@@ -1,5 +1,5 @@
 {t:🎅Santa Claus Is Coming To Town}  
-{artist: Haven Gillespie and J. F. Coots}  
+{artist:Haven Gillespie and J. F. Coots}  
 {level:Medium}
 
 Info: 

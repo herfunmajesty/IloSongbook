@@ -1,6 +1,6 @@
 {t:Wake Me Up}
 {artist:Avicii}
-{level: Easy}
+{level:Easy}
 
 
 <div class="mark">Beats per chord: <b>4</b>

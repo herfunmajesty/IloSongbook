@@ -1,4 +1,4 @@
-{t: Karma Police }  
+{t:Karma Police}  
 {artist:Radiohead}  
 {level:Medium}
 {spotify:63OQupATfueTdZMWTxW03A}

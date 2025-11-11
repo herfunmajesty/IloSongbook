@@ -2,7 +2,7 @@
 {artist:Madcon}
 {level:Easy}
 {youtube:zrFI2gJSuwA}
-{spotify:1XyL3J7eTTKnxRZAM3LqIT?}
+{spotify:1XyL3J7eTTKnxRZAM3LqIT}
 {new:}
 
 (Intro)

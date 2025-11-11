@@ -1,5 +1,5 @@
 {t:Yellow}
-{artist: Coldplay}
+{artist:Coldplay}
 {key: C}
 {level:Easy}
 {spotify:3QhXzfpjEhLfNrF7qUz15M}

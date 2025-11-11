@@ -1,6 +1,6 @@
 {t:My way}
 {artist:Frank Sinatra}
-{level: Hard}
+{level:Hard}
 
 <small><i>(Intro)</i></small>
 [|] [D] [|] [Dmaj7] [|]

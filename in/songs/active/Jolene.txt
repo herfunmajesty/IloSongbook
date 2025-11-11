@@ -1,4 +1,4 @@
-{t: Jolene }  
+{t:Jolene}  
 {key: Am}  
 {artist:Dolly Parton}  
 {level:Medium}  

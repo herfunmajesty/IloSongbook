@@ -1,3 +1,4 @@
+{spotify:3z8h0TU7ReDPLIbEnYhWZb}
 {t:Bohemian Rhapsody}
 {artist:Queen}
 {level:Hard}

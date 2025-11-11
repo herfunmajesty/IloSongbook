@@ -1,4 +1,4 @@
-{t: Lion Sleeps Tonight, The }  
+{t:Lion Sleeps Tonight, The}  
 {artist:The Tokens}  
 {level:Easy}  
 

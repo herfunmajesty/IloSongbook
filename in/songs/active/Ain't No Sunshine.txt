@@ -1,4 +1,4 @@
-{t: Ain't No Sunshine }  
+{t:Ain't No Sunshine}  
 {key: Am}  
 {artist:Bill Withers}  
 {level:Easy}  

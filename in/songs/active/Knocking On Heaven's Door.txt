@@ -1,4 +1,4 @@
-{t: Knocking On Heaven's Door }  
+{t:Knocking On Heaven's Door}  
 {artist:Bob Dylan}  
 {level:Easy} 
 

@@ -1,4 +1,4 @@
-{t: Valerie }  
+{t:Valerie}  
 {artist:Amy Winehouse} 
 {level:Easy} 
 

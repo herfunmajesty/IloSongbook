@@ -1,4 +1,4 @@
-{t: Hey Jude }  
+{t:Hey Jude}  
 {artist:The Beatles}  
 {level:Medium} 
 {d:4.3}

@@ -1,6 +1,6 @@
 {t:🔥Cold Heart}
 {artist:Elton John, Dua Lipa}
-{level: Easy}
+{level:Easy}
 {spotify:6JIC3hbC28JZKZ8AlAqX8h}
 {d:4}
 

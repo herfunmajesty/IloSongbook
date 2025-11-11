@@ -1,4 +1,4 @@
-{t: Losing My Religion }  
+{t:Losing My Religion}  
 {key: G}  
 {artist:R.E.M.}  
 {level:Medium}  

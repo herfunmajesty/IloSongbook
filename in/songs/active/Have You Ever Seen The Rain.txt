@@ -1,4 +1,5 @@
-{t: Have You Ever Seen The Rain }  
+{spotify:2LawezPeJhN4AWuSB0GtAU}
+{t:Have You Ever Seen The Rain}  
 {artist:Creedence}  
 {level:Medium} 
 

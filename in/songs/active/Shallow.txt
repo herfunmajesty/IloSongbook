@@ -1,6 +1,6 @@
 {t:Shallow}
 {artist:Misc Soundtrack}
-{level: Medium}
+{level:Medium}
 {youtube:}
 {spotify:}
 {d:5.0}

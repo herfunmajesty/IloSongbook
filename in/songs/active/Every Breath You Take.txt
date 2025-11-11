@@ -1,8 +1,9 @@
-{t: Every Breath You Take }  
+{spotify:2KH16WveTQWT6KOG9Rg6e2}
+{t:Every Breath You Take}  
 {key: A}  
 {artist:The Police}  
 {level:Medium}
-{d: 4.3}   
+{d:4.3}   
 
 4 beats per chord
 

@@ -1,6 +1,6 @@
 {t:Maria}
 {artist:Blondie}
-{level: Easy}
+{level:Easy}
  
 <i>Intro</i>
 [C]

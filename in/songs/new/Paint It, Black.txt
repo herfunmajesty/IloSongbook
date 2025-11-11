@@ -1,6 +1,6 @@
 {t:🔥Paint It, Black}  
 {artist:The Rolling Stones}  
-{spotify:}  
+{spotify:63T7DJ1AFDD6Bn8VzG6JE8}  
 {level:Easy}
 
 <small><i>(Intro)</i></small>

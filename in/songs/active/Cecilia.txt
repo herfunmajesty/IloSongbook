@@ -1,4 +1,4 @@
-{t: Cecilia }  
+{t:Cecilia}  
 {artist:Simon & Garfunkel}  
 {level:Medium}  
 {spotify:6QhXQOpyYvbpdbyjgAqKdY}  

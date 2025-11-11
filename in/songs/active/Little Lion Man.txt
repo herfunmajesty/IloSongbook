@@ -1,5 +1,5 @@
 {t:Little Lion Man}
-{artist: Mumford and Sons}
+{artist:Mumford and Sons}
 {level:Easy}
 {spotify:2KrN3MCNztKcSleZgHEj83}
 

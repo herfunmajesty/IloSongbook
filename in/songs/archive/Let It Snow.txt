@@ -1,5 +1,5 @@
 {t:🎅Let It Snow}  
-{artist: Sammy Cahn and Jule Styne}  
+{artist:Sammy Cahn and Jule Styne}  
 {level:Medium}
 
 Info:

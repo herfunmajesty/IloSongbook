@@ -1,4 +1,4 @@
-{t: Killing Me Softly }  
+{t:Killing Me Softly}  
 {key: Am}  
 {artist:Roberta Flack}  
 {level:Medium}  

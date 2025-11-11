@@ -1,6 +1,6 @@
-{t: Don't Look Back In Anger }  
+{t:Don't Look Back In Anger}  
 {key: C}  
-{artist: Oasis}  
+{artist:Oasis}  
 {level:Hard}  
 {spotify:0UvCh63URrLFcPkKt99hHd}
 

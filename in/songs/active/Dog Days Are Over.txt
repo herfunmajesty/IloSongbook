@@ -1,9 +1,8 @@
-{t: 🔥Dog Days Are Over}
-{artist: Florence + The Machine}
-{level: Medium}
-{spotify: }
-{d: 5}
-
+{t:🔥Dog Days Are Over}
+{artist:Florence + The Machine}
+{level:Medium}
+{spotify:456WNXWhDwYOSf5SpTuqxd}
+{d:6}
 <span class="mark fw-bold"> It's better when one person sings the brige
 </span> 
 
@@ -11,10 +10,13 @@
 [G] ... [G] ... [G] ...
 
 <small><i>(Verse)</i></small>
-[G]   Happiness hit her like a train on a [G]tra-a[Am]aa[Em]a-ack...
-[G]   Coming towards her, stuck still, no turning [G]ba-a[Am]a-a[Em]a-ack...
+[G]   Happiness hit her 
+like a train on a [G]tra-a[Am]aa[Em]a-ack...
+[G]   Coming towards her, 
+stuck still, no turning [G]ba-a[Am]a-a[Em]a-ack...
 She [G] hid around corners and she hid under beds
-She [G] killed it with ki[Am]sses a[Em]nd from it she fle-e-ed
+She [G] killed it with ki[Am]sses 
+[Em]and from it she fle-e-ed
 With [G] every bubble she sank with a drink
 And [G] washed it a[Am]way down the [Em] kitchen sink
 
@@ -47,7 +49,8 @@ Except [G/] for e-e-every-[G/]thing you had and
 [G] Happiness hit her [G] like a bullet in the 
 [G] baa-[Am]aa-[Em]ack.....
 [G] Struck from a -- great height... 
-[G] by someone who  should know [G]be-ee[Am]-etter than [Em] that
+[G] by someone who  should know 
+[G]be-ee[Am]-etter than [Em] that
  
 The [G] dog days are ove-e-er
 The [G] dog days are done

@@ -1,4 +1,4 @@
-{t: Kids }  
+{t:Kids}  
 {artist:MGMT}  
 {level:Easy}
 {spotify:1jJci4qxiYcOHhQR247rEU}

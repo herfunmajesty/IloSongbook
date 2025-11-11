@@ -1,4 +1,4 @@
-{t: Stay With Me }  
+{t:Stay With Me}  
 {key: C}  
 {artist:Sam Smith}  
 {level:Easy}  

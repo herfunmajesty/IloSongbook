@@ -1,7 +1,7 @@
 {t:This Charming Man} 
 {artist:The Smiths}
 {level:Medium}
-{youtube: ZTgcUySAab4}
+{youtube:ZTgcUySAab4}
 
 Ps: one key lower than original
 

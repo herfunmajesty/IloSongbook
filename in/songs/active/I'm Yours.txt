@@ -1,4 +1,4 @@
-{t: I'm Yours }  
+{t:I'm Yours}  
 {key: C}  
 {artist:Jason Mraz}  
 {level:Easy}

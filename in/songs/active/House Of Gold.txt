@@ -1,4 +1,4 @@
-{t: House Of Gold}  
+{t:House Of Gold}  
 {artist:Twenty One Pilots} 
 {level:Medium}
 {youtube:grK3foF8gUE}

@@ -1,4 +1,4 @@
-{t: Hit Me Baby One More Time }  
+{t:Hit Me Baby One More Time}  
 {artist:Britney Spears}  
 {level:Medium} 
 {youtube:7PtwkucvBJA}

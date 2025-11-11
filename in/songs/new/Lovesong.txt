@@ -1,6 +1,7 @@
+{spotify:2mIrfke7vosXAEWfz6ucyo}
 {t:🔥Lovesong}
 {artist:The Cure}
-{level: xxx}
+{level:Easy}
 
  riff na E 5-7/8-10
 	   12-10/8-5

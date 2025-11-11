@@ -3,7 +3,7 @@
 {level:Medium}
 {youtube:SZF9rKzOqCI}
 {spotify:1vxw6aYJls2oq3gW0DujAo}
-{d: 4.3} 
+{d:4.3} 
 
 Intro:
 [Am]... [Cmaj7]... [F]... [E7]...

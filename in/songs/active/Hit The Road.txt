@@ -1,4 +1,4 @@
-{t: Hit The Road Jack }  
+{t:Hit The Road Jack}  
 {key: Am}  
 {artist:Ray Charles}  
 {level:Hard}  

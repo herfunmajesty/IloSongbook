@@ -1,4 +1,4 @@
-{t: Take On Me }  
+{t:Take On Me}  
 {key: Dm}  
 {artist:Aha}  
 {level:Medium}  

@@ -1,4 +1,4 @@
-{t: (Sittin' on the) Dock of the Bay }  
+{t:(Sittin' on the) Dock of the Bay}  
 {key: G}  
 {artist:Otis Redding}  
 {level:Medium}

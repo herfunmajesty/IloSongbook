@@ -1,4 +1,4 @@
-{t: Wonderwall }  
+{t:Wonderwall}  
 {artist:Oasis}  
 {level:Medium}  
 {c: }

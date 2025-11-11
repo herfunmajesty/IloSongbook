@@ -1,5 +1,5 @@
 {t:Let Her Go}
-{artist:Passenger }
+{artist:Passenger}
 {key:Dm}
 {level:Medium}
 {c: } 

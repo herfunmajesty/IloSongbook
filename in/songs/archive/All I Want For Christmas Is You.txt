@@ -1,5 +1,5 @@
 {t:🎅All I Want For Christmas Is You}  
-{artist: Mariah Carey and Walter Afanasieff}  
+{artist:Mariah Carey and Walter Afanasieff}  
 {level:Hard}
 Info:
 strumming pattern: 4 down per chord

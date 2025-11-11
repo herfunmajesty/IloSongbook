@@ -1,5 +1,5 @@
-{t: She Loves You}  
-{artist: The Beatles}  
+{t:She Loves You}  
+{artist:The Beatles}  
 {level:Medium}  
 {youtube:NN50dnljfZQ}
 

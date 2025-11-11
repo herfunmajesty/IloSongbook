@@ -1,7 +1,7 @@
-{t: Zombie }  
+{t:Zombie}  
 {key: G}  
-{artist: The Cranberries}  
-{level: Easy}  
+{artist:The Cranberries}  
+{level:Easy}  
 {spotify:2IZZqH4K02UIYg5EohpNHF}
 
 Obs:

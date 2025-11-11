@@ -1,4 +1,4 @@
-{t: Somewhere Over The Rainbow }  
+{t:Somewhere Over The Rainbow}  
 {key: G}  
 {artist:Arlen and Harburg}  
 {level:Medium}

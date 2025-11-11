@@ -1,4 +1,5 @@
-{t: Friday I'm In Love }  
+{spotify:4QlzkaRHtU8gAdwqjWmO8n}
+{t:Friday I'm In Love}  
 {artist:The Cure}  
 {level:Medium}  
 

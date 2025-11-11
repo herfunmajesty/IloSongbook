@@ -1,5 +1,5 @@
 {t:🎅Jingle Bell Rock}  
-{artist: Joseph Beal and Jim Boothe}  
+{artist:Joseph Beal and Jim Boothe}  
 {level:Medium}
 
 Info:

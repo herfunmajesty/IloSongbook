@@ -1,4 +1,4 @@
-{t: Hey Ya }  
+{t:Hey Ya}  
 {artist:OutKast}  
 {level:Medium}  
 {spotify:2PpruBYCo4H7WOBJ7Q2EwM}

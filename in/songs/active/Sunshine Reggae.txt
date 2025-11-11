@@ -1,4 +1,4 @@
-{t: Sunshine Reggae }  
+{t:Sunshine Reggae}  
 {key: C}  
 {artist:Laid Back}  
 {level:Easy}  

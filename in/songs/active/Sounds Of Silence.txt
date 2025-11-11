@@ -1,4 +1,4 @@
-{t: Sounds Of Silence }  
+{t:Sounds Of Silence}  
 {artist:Paul Simon}  
 {level:Medium}  
 

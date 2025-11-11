@@ -1,6 +1,6 @@
 {t:How You Remind Me}
 {artist:Nickelback}
-{level: Easy}
+{level:Easy}
 
 <div class="mark">Beats per chord: <b>4</b>
 Strummings: <b>Down-Down, Metal strum</b>

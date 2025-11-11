@@ -1,7 +1,8 @@
-{t: Dream A Little Dream Of Me }  
+{spotify:1JSTJqkT5qHq8MDJnJbRE1}
+{t:Dream A Little Dream Of Me}  
 {key: C}  
 {artist:The Mamas & The Papas}  
-{level: Hard}  
+{level:Hard}  
 
 Info:
 - All chords play two beats (as [C//])

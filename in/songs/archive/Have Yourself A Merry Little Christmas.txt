@@ -1,5 +1,5 @@
 {t:🎅Have Yourself A Merry Little Christmas}
-{artist: Judy Garland/Sam Smith}  
+{artist:Judy Garland/Sam Smith}  
 {level:Hard}
 
 Info:

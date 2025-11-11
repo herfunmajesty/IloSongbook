@@ -1,4 +1,4 @@
-{t: I Will Survive }  
+{t:I Will Survive}  
 {key: Am}  
 {artist:Gloria Gaynor}  
 {level:Medium}  

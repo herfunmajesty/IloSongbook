@@ -1,4 +1,4 @@
-{t: Hey There Delilah }  
+{t:Hey There Delilah}  
 {artist:Plain White T's}  
 {level:Medium}  
 {spotify:4RCWB3V8V0dignt99LZ8vH}  

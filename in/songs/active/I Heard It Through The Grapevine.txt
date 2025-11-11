@@ -1,6 +1,6 @@
-{t:I Heard It Through The Grapevine }  
+{t:I Heard It Through The Grapevine}  
 {artist:Marvin Gaye}  
-{level:Easy }
+{level:Easy}
 {spotify:1tqT6DhmsrtQgyCKUwotiw}
 {youtube:gFGV7QYlY1g}
 

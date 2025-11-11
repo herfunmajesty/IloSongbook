@@ -1,6 +1,6 @@
 {t:🔥It's Raining Men}
 {artist:The Weather Girls}
-{level: Medium}
+{level:Medium}
 
 
 <small><i>Intro:</small></i>

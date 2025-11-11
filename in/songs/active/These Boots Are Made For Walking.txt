@@ -1,4 +1,4 @@
-{t:These Boots Are Made For Walking }  
+{t:These Boots Are Made For Walking}  
 {artist:Nancy Sinatra}  
 {spotify:2nwCO1PqpvyoFIvq3Vrj8N}
 {youtube:Ik8K_R0cWAY}

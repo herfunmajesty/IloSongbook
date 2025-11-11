@@ -1,81 +1,89 @@
 {t:🔥Somebody Told Me}
 {artist:The Killers}
-{level: xxx}
+{level:Medium}
+{spotify:6PwjJ58I4t7Mae9xfZ9l9v}
+{d:5}
 
 <i>Intro</i>
 
-[Am]   [Dm]
+[Am] ... [Dm]
 
 <i>Verse</i>
-[Am]Breaking my back just to know your name
-Seventeen tracks and I've had it with this [Dm]game     
- [F] ...
-[Am]I'm breaking my back just to know your name
-[Am]But heaven ain't close in a place like this
-[Am]Anything goes but don't blink you [Dm]might miss    
- [F] ...
-[Am]Cause heaven ain't close in a place like this
-[Am]I said heaven ain't close in a place like this
-[F]Bring it back down, [G]bring it back down [Am]tonight
-[F]Never thought I'd let a [G]rumor ruin my moonlight
+[Am] Breaking my back just to [Am] know your name
+[Am] Seventeen tracks and I've [Am] had it with this 
+[Dm] game     [F] ...
+[Am] I'm breaking my back just to [Am] know your name
+[Am] But heaven ain't close in a [Am] place like this
+[Am] Anything goes but [Am] don't blink you 
+[Dm] might miss   [F] ...
+[Am]Cause heaven ain't close in a [Am] place like this
+[Am]I said heaven ain't close in a [Am] place like this
+[F] Bring it back down, [G] bring it back down [Am] tonight
+[Am] (o-o-o)
+[F] Never thought I'd let [F] a rumor ruin [G] my moonlight
+[G/][G/]
 
 <i>Chorus</i>
-Well somebody [Am]told me
-You had a [F]boyfriend
-Who looked like a [G]girlfriend
-That I had in [E]February of [Am]last year
-It's not [F]confidential
-I've got [G]potential
+Well somebody [Am] told me
+You had a [F] boyfriend
+Who looked like a [G] girlfriend
+That I had in [E7] February of [Am] last year
+It's not [F] confidential
+I've got [G] potential
+[NC]...
 
 <i>Verse</i>
-[Am]Ready? Let's roll onto something new
-Taking its toll and I'm leaving without you    [Dm]        
- [F] ...
-[Am]Cause heaven ain't close in a place like this
-[Am]I said heaven ain't close in a place like this
-[F]Bring it back down, bring it back [G]down [Am]tonight
-[F]Never thought I'd let a [G]rumour ruin my moonlight
+[Am] Ready? Let's roll onto [Am] something new
+[Am] Taking its toll and I'm [Am] leaving without you-u-u   
+[Dm] ... [F] ...
+[Am] Cause heaven ain't close [Am] in a place like this
+[Am] I said heaven ain't close [Am] in a place like this
+[F] Bring it back down, [G] bring it back down [Am] tonight
+[Am] (o-o-o)
+[F] Never thought I'd let [F] a rumor ruin [G] my moonlight
+[G/][G/]
 
 <i>Chorus</i>
-Well somebody [Am]told me
-You had a [F]boyfriend
-Who looked like a [G]girlfriend
-That I had in [E]February of [Am]last year
-It's not [F]confidential
-I've got [G]potential
-A rushin', a [E]rushin' around
+Well somebody [Am] told me
+You had a [F] boyfriend
+Who looked like a [G] girlfriend
+That I had in [E7] February of [Am] last year
+It's not [F] confidential
+I've got [G] potential
+A rushin', a [E7] rushin' around
 
 <i>Bridge</i>
-[F]Pace [G]yourself from [Dm]me
-I said [C]maybe [Dm]baby [F]please
-But I just don't [Am]know now [G]       
- [F] ...
-[E]When all I wanna do is try        
- [G] ...
+[F] Pace [G] yourself from [Dm] me [Dm] 
+I said [C] maybe [Dm] baby [F] please  [F]
+But I just don't [Am] know now [G] ... [F] ... [F] ...
+[E7/] When all I wanna do is try  
+[NC]...
+[G/][G/]
 
 <i>Chorus</i>
-Well somebody [Am]told me
-You had a [F]boyfriend
-Who looked like a [G]girlfriend
-That I had in [E]February of [Am]last year
-It's not [F]confidential
-I've got [G]potential
-A rushin', a [E]rushin' around
+Well somebody [Am] told me
+You had a [F] boyfriend
+Who looked like a [G] girlfriend
+That I had in [E7] February of [Am] last year
+It's not [F] confidential
+I've got [G] potential
+A rushin', a [E7] rushin' around
 
-Well somebody [Am]told me
-You had a [F]boyfriend
-Who looked like a [G]girlfriend
-That I had in [E]February of [Am]last year
-It's not [F]confidential
-I've got [G]potential
-A rushin', a [E]rushin' around
+Well somebody [Am] told me
+You had a [F] boyfriend
+Who looked like a [G] girlfriend
+That I had in [E7] February of [Am] last year
+It's not [F] confidential
+I've got [G] potential
+A rushin', a [E7] rushin' around
 
-Well somebody [Am]told me
-You had a [F]boyfriend
-Who looked like a [G]girlfriend
-That I had in [E]February of [Am]last year
-It's not [F]confidential
-I've got [G]potential
-A rushin', a [E]rushin' around
+<i>Outro</i>
+Well somebody [Am] told me
+You had a [F] boyfriend
+Who looked like a [G] girlfriend
+That I had in [E7] February of [Am] last year
+It's not [F] confidential
+I've got [G] potential
+A rushin', a [E7] rushin' around
 
-[Am]
+[Am/][Am/]

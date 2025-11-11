@@ -1,4 +1,4 @@
-{t: One Love}  
+{t:One Love}  
 {artist:Bob Marley}  
 {spotify:2HcyIzVsX45jLIxK7SH2aI}  
 {level:Easy}

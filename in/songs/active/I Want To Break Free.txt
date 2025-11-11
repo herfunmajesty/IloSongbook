@@ -1,4 +1,4 @@
-{t: I Want To Break Free }  
+{t:I Want To Break Free}  
 {artist:Queen}  
 {level:Easy}
 

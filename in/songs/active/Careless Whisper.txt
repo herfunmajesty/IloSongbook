@@ -1,8 +1,8 @@
 {t:Careless Whisper}
 {artist:George Michael}
-{level: Easy}
+{level:Easy}
 {spotify:4jDmJ51x1o9NZB5Nxxc7gY}
-{d: 4.3} 
+{d:4.3} 
 
 (intro)
 [Dm]... [Gm]... [Bbmaj7]... [Am]...

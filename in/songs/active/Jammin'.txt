@@ -1,4 +1,4 @@
-{t: Jammin' }  
+{t:Jammin'}  
 {artist:Bob Marley}  
 {spotify:4zn0kScuV9Oj28d4g9CQQs}  
 {level:Medium}

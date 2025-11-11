@@ -1,6 +1,8 @@
+{d:5}
+{spotify:2ihCaVdNZmnHZWt0fvAM7B}
 {t:🔥Little Talks}
 {artist:Of Monsters and Men}
-{level: Easy}
+{level:Easy}
 
 <small><i>(Intro)</i></small> (pa-pa-pa-pa-pa)
 [Am] ... [F] ... [C] ... [G] Hey!

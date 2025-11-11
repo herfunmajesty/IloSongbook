@@ -1,4 +1,4 @@
-{t: Ho Hey }  
+{t:Ho Hey}  
 {artist:The Lumineers}  
 {level:Easy}
 {spotify:1K3LRUEcUz5FMtPYyg0F45}

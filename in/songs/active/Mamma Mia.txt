@@ -1,4 +1,4 @@
-{t: Mamma Mia }  
+{t:Mamma Mia}  
 {key: C}  
 {artist:ABBA}  
 {level:Hard}  

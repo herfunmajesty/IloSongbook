@@ -1,6 +1,6 @@
 {t:🔥The Judge}
 {artist:Twenty One Pilots}
-{level: Medium}
+{level:Medium}
 {youtube:PbP-aIe51Ek}
 {spotify:1lguQJjlNrIOoOylYVZN3M}
 {d:6.5}

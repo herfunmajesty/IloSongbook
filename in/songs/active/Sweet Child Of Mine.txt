@@ -1,4 +1,4 @@
-{t: Sweet Child Of Mine }  
+{t:Sweet Child Of Mine}  
 {artist:Guns & Roses}  
 {level:Medium}  
 

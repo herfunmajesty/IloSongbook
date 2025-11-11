@@ -1,4 +1,4 @@
-{t: Love Of My Life }  
+{t:Love Of My Life}  
 {artist:Queen}  
 {level:Medium}  
 

@@ -1,4 +1,5 @@
-{t: Bad Moon Rising }  
+{spotify:20OFwXhEXf12DzwXmaV7fj}
+{t:Bad Moon Rising}  
 {artist:Creedence}  
 {level:Easy}  
 {youtube:UDK2w9s3gP0}
