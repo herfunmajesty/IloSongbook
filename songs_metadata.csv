@@ -8,6 +8,7 @@ active	After Hours.txt	After Hours	The Velvet Underground	Medium	6cA1usDL8nTHeSg
 active	Ain't No Sunshine.txt	Ain't No Sunshine	Bill Withers	Easy	1k1Bqnv2R0uJXQN4u6LKYt		3.0	True	False	False	False	none	3	Am, Dm, Em7	False	otwórz plik
 active	All About That Bass.txt	All About That Bass	Meghan Trainor	Easy	5jE48hhRu8E6zBDPRSkEq7	7PCkvCPvDXk		True	False	False	False	none	4	A, Bm, D, E7	False	otwórz plik
 active	All Apologies.txt	All Apologies	Nirvana	Easy	3bH8PZsfbCRIoeNiFm7JmU	DkWmW_jJk9k		True	False	False	False	none	2	C, F	True	otwórz plik
+active	All I Want For Christmas Is You.txt	🎅All I Want For Christmas Is You	Mariah Carey and Walter Afanasieff	Hard				True	False	True	True	<small><i>	8	Am, B7, C, Cm, D, E7, Em, G	False	otwórz plik
 active	All Star (Shrek).txt	All Star (Shrek)	Smash Mouth	Hard	3cfOd4CMv2snFaKAnMdnvK			True	False	True	False	none	6	Am, C, C#dim, D, F, G	False	otwórz plik
 active	American Idiot.txt	🔥American Idiot	Green Day	Medium	6nTiIhLmQ3FWhvrGafw2zj			True	True	True	True	<small><i>	3	A, D, E7	False	otwórz plik
 active	Another Brick In The Wall.txt	Another Brick In The Wall	Pink Floyd	Easy	7rPzEczIS574IgPaiPieS3			True	False	False	False	none	4	C, Dm, F, G	False	otwórz plik
@@ -18,6 +19,7 @@ active	Bang Bang.txt	Bang Bang	Nancy Sinatra	Easy	4JLcAU2xY90qTkTSNM1lUa			True	
 active	Basket Case.txt	Basket Case	Green Day	Medium	6L89mwZXSOwYl76YXfX13s			True	False	False	False	none	5	Am, C, Em, F, G	False	otwórz plik
 active	Beggin'.txt	Beggin'	Madcon	Easy	1XyL3J7eTTKnxRZAM3LqIT	zrFI2gJSuwA		True	False	False	True	none	4	Am, Dm, E7, F	False	otwórz plik
 active	Billie Jean.txt	Billie Jean	Micheal Jackson	Easy	5ChkMS8OtdzJeqyybCc9R5			True	False	False	True	none	4	Am, B7, C, Em	False	otwórz plik
+active	Bitter Sweet Symphony.txt	🔥Bitter Sweet Symphony	The Verve	Easy	57iDDD9N9tTWe75x6qhStw		7	True	True	False	True	<small><i>	4	Am7, D, G, Gsus4	True	otwórz plik
 active	Black.txt	🔥Black	Pearl Jam	Medium	5Xak5fmy089t0FYmh3VJiY			True	True	False	True	<small><i>	6	A, Asus4, C, D, E, Em	False	otwórz plik
 active	Blinding Lights.txt	Blinding Lights	The Weeknd	Medium	0VjIjW4GlUZAMYd2vXMi3b		4.3	True	False	True	True	<i>	4	Bb, Cm, Eb, Fm	True	otwórz plik
 active	Blowing In The Wind.txt	Blowing In The Wind	Bob Dylan	Easy	18GiV1BaXzPVYpp9rmOg0E			True	False	False	False	none	4	Am, C, F, G	False	otwórz plik
@@ -35,6 +37,7 @@ active	Careless Whisper.txt	Careless Whisper	George Michael	Easy	4jDmJ51x1o9NZB5
 active	Cecilia.txt	Cecilia	Simon & Garfunkel	Medium	6QhXQOpyYvbpdbyjgAqKdY			True	False	False	False	none	4	C, F, G, G7	False	otwórz plik
 active	Chop Suey.txt	Chop Suey	System of a Down	Hard	2DlHlPMa4M17kufBvI2lEN	CSvFpBOe8eY		True	False	False	True	<i>	6	A, Cm, Eb, F, F#, Gm	False	otwórz plik
 active	Cold Heart.txt	🔥Cold Heart	Elton John, Dua Lipa	Easy	6JIC3hbC28JZKZ8AlAqX8h		4	True	True	False	True	<small><i>	4	Am7, Dm7, Em, F	False	otwórz plik
+active	Colors Of The Wind.txt	🔥Colors Of The Wind	Judy Kuhn	Medium	1OYOLWqKmhkFIx2KC9ek1a		5	True	True	False	True	none	5	Bm, Bm7, D, F#m, G	False	otwórz plik
 active	Crazy Little Thing Called Love.txt	Crazy Little Thing Called Love	The Queen	Hard	6xdLJrVj4vIXwhuG8TMopk			True	False	False	True	none	6	A, C, D, Eb, F, G	True	otwórz plik
 active	Crazy.txt	Crazy	Gnarls Barkley	Medium	1vxw6aYJls2oq3gW0DujAo	SZF9rKzOqCI	4.3	True	False	False	False	none	5	A, Am, Cmaj7, E7, F	False	otwórz plik
 active	Creep.txt	Creep	Radiohead	Easy	6b2oQwSGFkzsMtQruIWm2p		4.3	True	False	False	False	none	4	B, C, Cm, G	False	otwórz plik
@@ -61,8 +64,10 @@ active	Get Lucky.txt	Get Lucky	Daft Punk	Easy	2Foc5Q5nqNiosCNqttzHof			True	Fals
 active	Hallelujah.txt	Hallelujah	Leonard Cohen	Medium	5USZyz6dnBEn1oLsKcAKQy		4.5	True	False	True	False	<i>	5	Bm, C, D, Em, G	False	otwórz plik
 active	Happy Birthday.txt	🎂Happy Birthday	Patty & Mildred Hill (Traditional tune)	Easy				True	False	False	False	none	3	C, F, G7	False	otwórz plik
 active	Happy Together.txt	Happy Together	The Turtles	Medium	1JO1xLtVc8mWhIoE3YaCL0			True	False	False	False	none	7	A, Am, C, E7, Em, F, G	False	otwórz plik
+active	Happy Xmas.txt	🎅Happy Xmas	John Lennon	Medium	3zJw3rugfpVrmBeDDnUYzy			True	False	False	True	<small><i>	7	A, Bm, D, E7, Em, Em7, G	False	otwórz plik
 active	Happy.txt	Happy	Pharrell Williams	Medium	60nZcImufyMA1MKQY3dcCH			True	False	False	False	none	3	Bm7, C, E7	False	otwórz plik
 active	Have You Ever Seen The Rain.txt	Have You Ever Seen The Rain	Creedence	Medium	2LawezPeJhN4AWuSB0GtAU			True	False	False	False	none	4	Am, C, F, G	False	otwórz plik
+active	Have Yourself A Merry Little Christmas.txt	🎅Have Yourself A Merry Little Christmas	Judy Garland/Sam Smith	Hard				True	False	True	True	<small><i>	12	A7, Am, B7, Bm, Cmaj7, D, D7, E7, Em, G, G7, Gmaj7	False	otwórz plik
 active	Here Comes The Sun.txt	Here Comes The Sun	The Beatles	Hard	6dGnYIeXmHdcikdzNNDMm2	BcfXtcCr3uI		True	False	False	False	none	2	D7, G	True	otwórz plik
 active	Hey Jude.txt	Hey Jude	The Beatles	Medium			4.3	True	False	False	False	none	8	Am, C, D, D7, Em, F, G, G7	False	otwórz plik
 active	Hey There Delilah.txt	Hey There Delilah	Plain White T's	Medium	4RCWB3V8V0dignt99LZ8vH			True	False	False	False	none	5	A, Bm, D, F#m, G	False	otwórz plik
@@ -91,6 +96,8 @@ active	In The Summertime.txt	In The Summertime	Mungo Jerry	Easy	3RNyGLgSvmVRZ7xK
 active	It's My Life.txt	It's My Life	Bon Jovi	Medium	0v1XpBHnsbkCn7iJ9Ucr1l			True	False	False	True	none	5	Am, C, D, F, G	False	otwórz plik
 active	Its raining man.txt	🔥It's Raining Men	The Weather Girls	Medium				True	True	False	True	<small><i>	8	Am, B, B7, C, Cmaj7, D, Em, G	False	otwórz plik
 active	Jammin'.txt	Jammin'	Bob Marley	Medium	4zn0kScuV9Oj28d4g9CQQs			True	False	True	False	<i>	5	Bm7, E7, Em, F#m, G	False	otwórz plik
+active	Jingle Bell Rock.txt	🎅Jingle Bell Rock	Joseph Beal and Jim Boothe	Medium				True	False	True	True	<small><i>	6	A7, C, Cm, D7, E7, G	False	otwórz plik
+active	Jingle Bells.txt	🎅Jingle Bells	J.S. Pierpont	Easy				True	False	True	True	<small><i>	4	C, D, F, G7	False	otwórz plik
 active	Jolene.txt	Jolene	Dolly Parton	Medium				True	False	False	False	none	4	Am, C, Em7, G	False	otwórz plik
 active	Just Like Heaven.txt	🔥Just Like Heaven	The Cure	Easy	4NnWuGQujzWUEg0uZokO5M			True	True	False	True	<small><i>	6	A, Bm, D, E7, F#m, G	True	otwórz plik
 active	Karma Police.txt	Karma Police	Radiohead	Medium	63OQupATfueTdZMWTxW03A			True	False	False	False	none	8	Am, Bm, C, D, E7, Em, F, G	False	otwórz plik
@@ -99,10 +106,12 @@ active	Killing Me Softly.txt	Killing Me Softly	Roberta Flack	Medium				True	Fals
 active	Knocking On Heaven's Door.txt	Knocking On Heaven's Door	Bob Dylan	Easy				True	False	False	False	none	4	Am, C, D, G	False	otwórz plik
 active	La Bamba.txt	La Bamba	Ritchie Valens	Easy				True	False	False	True	<small><i>	3	C, F, G	False	otwórz plik
 active	La Vie En Rose.txt	La Vie En Rose	Louis Armstrong	Medium				True	False	False	False	none	6	C, Cmaj7, Dm, Dm7, Em, G7	False	otwórz plik
+active	Last Christmas.txt	🎅Last Christmas	Wham!	Easy				True	False	True	True	<small><i>	4	Am, C, Dm, G7	True	otwórz plik
 active	Lazy Song, The.txt	Lazy Song, The	Bruno Mars	Easy				True	False	False	False	none	6	Am, C, Dm, Em, F, G	False	otwórz plik
 active	Lemon Tree.txt	Lemon Tree	Fools Garden	Medium	4fXGWiVhlOLdhwRDP6pIFG			True	False	False	False	none	8	A, Am, B, Bm, C, D, Em, G	False	otwórz plik
 active	Let Her Go.txt	Let Her Go	Passenger	Medium		h_QKYLuMoV0		True	False	False	False	none	5	Bm, C, D, Em, G	False	otwórz plik
 active	Let It Be.txt	Let It Be	The Beatles	Medium				True	False	False	False	none	4	Am, C, F, G	False	otwórz plik
+active	Let It Snow.txt	🎅Let It Snow	Sammy Cahn and Jule Styne	Medium				True	False	True	True	<small><i>	4	C, Dm, G, G7	False	otwórz plik
 active	Light My Fire.txt	Light My Fire	The Doors	Medium				True	False	False	False	none	8	A, Am, C, D, E7, F, F#m, G	False	otwórz plik
 active	Lion Sleeps Tonight, The.txt	Lion Sleeps Tonight, The	The Tokens	Easy				True	False	False	False	none	3	C, D, G	False	otwórz plik
 active	Little Lion Man.txt	Little Lion Man	Mumford and Sons	Easy	2KrN3MCNztKcSleZgHEj83			True	False	False	False	none	4	Bb, C, Dm, F	False	otwórz plik
@@ -111,12 +120,14 @@ active	Loneliest.txt	Loneliest	Maneskin	Medium				True	False	True	False	<small><
 active	Losing My Religion.txt	Losing My Religion	R.E.M.	Medium	31AOj9sFz2gM0O3hMARRBx	_m7qYXjvAgM		True	False	False	False	none	5	Am, Dm, Em, F, G	False	otwórz plik
 active	Lost On You.txt	🔥Lost On You	LP	Easy	0hyJTVfBJXeBTWTN6lOSYF			True	True	False	True	<small><i>	4	A, Bm, Em, G	False	otwórz plik
 active	Love Of My Life.txt	Love Of My Life	Queen	Medium				True	False	False	False	none	8	Am, Bb, C, D7, Dm, F, G, Gm	False	otwórz plik
+active	Lovesong.txt	🔥Lovesong	The Cure	Easy	2mIrfke7vosXAEWfz6ucyo			True	True	False	True	<small><i>	5	Am, C, Em7, F, G	False	otwórz plik
 active	Lucy In The Sky With Diamonds.txt	Lucy In The Sky With Diamonds	The Beatles	Hard	25yQPHgC35WNnnOUqFhgVR			True	False	False	False	none	9	A, A7, Bb, C, D, Dm, F, F#m, G	False	otwórz plik
 active	Mad World.txt	Mad World	Gary Jules	Easy				True	False	False	False	none	4	A, D, Em, G	False	otwórz plik
 active	Mamma Mia.txt	Mamma Mia	ABBA	Hard	2TxCwUlqaOH3TIyJqGgR91			True	False	False	False	none	8	Am, C, C+, Dm, Em, F, G, G7	False	otwórz plik
 active	Maria.txt	Maria	Blondie	Easy				True	False	False	False	<i>	4	Am, C, F, G	False	otwórz plik
 active	Maybe Tomorrow.txt	Maybe Tomorrow	Stereophonics	Easy	6SXy02aTZU3ysoGUixYCz0	2q9_ZEtuTR8		True	False	True	True	<i>	5	Am, Dm, E7, F, G	False	otwórz plik
 active	Mr Brightside.txt	Mr Brightside	The Killers	Easy	003vvx7Niy0yvhvHt4a68B	gGdGFtwCNBE		True	False	True	True	<i>	5	Am, C, Cmaj7, F, G	False	otwórz plik
+active	Mr Sandman.txt	🔥Mr Sandman	The Chordettes	Hard	47O5lXcK78Z3TIiGzuc18l		5	True	True	False	True	none	8	A7, B7, C, D7, Dm, E7, Fm, G7	False	otwórz plik
 active	My Girl.txt	My Girl	The Temptations	Medium	745H5CctFr12Mo7cqa1BMH	8Ff2Z0Dq2sg		True	False	False	False	none	6	C, D, Dm, Em, F, G	True	otwórz plik
 active	My Heart Will Go On (Titanic).txt	My Heart Will Go On (Titanic)	Celine Dion	Easy				True	False	False	False	none	4	A, Bm, D, G	False	otwórz plik
 active	Never Gonna Give You Up.txt	🔥Never Gonna Give You Up	Rick Astley	Easy	4PTG3Z6ehGkBFwjybzWkR8			True	True	False	True	<small><i>	2	F, G	False	otwórz plik
@@ -133,10 +144,11 @@ active	Riptide.txt	Riptide	Vance Joy	Easy				True	False	False	False	none	4	Am, C
 active	Rolling In The Deep.txt	Rolling In The Deep	Adelle	Easy	1c8gk2PeTE04A1pIDH9YMk	TKKTgqSAc6M		True	False	False	False	<i>	4	Am, Em7, F, G	False	otwórz plik
 active	Roxanne.txt	🔥Roxanne	The Police	Easy	3EYOJ48Et32uATr9ZmLnAo			True	True	True	True	<small><i>	7	Am, Asus4, Bm, C, D, Em, G	False	otwórz plik
 active	Sailing.txt	Sailing	Rod Stewart	Medium				True	False	False	False	none	7	Am, C, D, Dm, Dm7, F, G7	False	otwórz plik
+active	Santa Claus Is Coming To Town.txt	🎅Santa Claus Is Coming To Town	Haven Gillespie and J. F. Coots	Medium				True	False	True	True	<small><i>	6	A7, C, D, D7, G, G7	False	otwórz plik
 active	Save My Soul.txt	Save My Soul	Krakow Street Band	Easy				True	False	False	True	none	3	C, F, G	False	otwórz plik
 active	Shake It Off.txt	Shake It Off	Taylor Swift	Easy		oOURjK5Hl1k		True	False	False	False	none	3	D, Em, G	False	otwórz plik
 active	Shallow.txt	Shallow	Misc Soundtrack	Medium			5.0	True	False	False	True	<small><i>	7	A, Am, Bm, C, D, Em, G	False	otwórz plik
-active	She Loves You.txt	She Loves You	The Beatles	Medium		NN50dnljfZQ		True	False	False	True	<small><i>	8	A7, Bm, C, Cm, D, D7, Em, G	False	otwórz plik
+active	She Loves You.txt	🔥She Loves You	The Beatles	Medium		NN50dnljfZQ		True	False	False	True	<small><i>	8	A7, Bm, C, Cm, D, D7, Em, G	False	otwórz plik
 active	Shiny Happy People.txt	Shiny Happy People	REM	Medium		HL4uh_erpD8		True	False	False	False	none	8	A, B, Bm, C, E7, Em, F#m, G	True	otwórz plik
 active	Snow (Hey Oh).txt	Snow (Hey Oh)	Red Hot Chili Peppers	Medium	2aibwv5hGXSgw7Yru8IYTO		5.5	True	False	False	True	none	5	Bb, Cm, Eb, F, Gm	False	otwórz plik
 active	Somebody To Love.txt	Somebody To Love	Jefferson Airplane	Medium	4uGIJG1jYFonGc4LGp5uQL	p4zp6-8mc1w		True	False	False	False	none	1	Em	False	otwórz plik
@@ -175,6 +187,7 @@ active	Wake Me Up.txt	Wake Me Up	Avicii	Easy				True	False	False	False	<i>	5	Am,
 active	What Is Love (Baby Don't Hurt Me).txt	🔥What Is Love (Baby Don't Hurt Me)	Haddaway	Easy	2ahnofp2LbBWDXcJbMaSTu	HEXWRTEbj1I		True	True	False	True	<small><i>	4	Bm, D, Em, G	False	otwórz plik
 active	What's Up.txt	What's Up	4 Non Blondes	Easy				True	False	False	False	none	3	A, Bm, D	False	otwórz plik
 active	Where Is My Mind.txt	Where Is My Mind	Pixies	Medium	0KzAbK6nItSqNh8q70tb0K	49FB9hhoO6c		True	False	True	True	<small><i>	6	A, Bb, Bbm, C, Dm, F	True	otwórz plik
+active	White Christmas.txt	🎅White Christmas	Bing Crosby	Medium		w9QLn7gM-hY		True	False	True	True	<small><i>	7	Am, C, Cm, D, Em, G, G7	False	otwórz plik
 active	Why Don't You Get A Job.txt	Why Don't You Get A Job	The Offspring	Easy	0sNKiz82ATCvT3f3XVVUUj			True	False	False	False	none	4	Bb, C, F, G	False	otwórz plik
 active	Wicked Game.txt	Wicked Game	Chris Isaak	Easy	390AWnOn2rfe9FzQjYmxIH			True	False	False	True	<i>	3	A, D, Em	False	otwórz plik
 active	Wish You Were Here.txt	Wish You Were Here	Pink Floyd	Medium				True	False	False	False	none	6	A, Am, C, D, Em, G	False	otwórz plik
@@ -184,25 +197,20 @@ active	You Are My Sunshine.txt	You Are My Sunshine	Johnny Cash	Easy				True	Fals
 active	You Know I'm No Good.txt	You Know I'm No Good	Amy Winehouse	Medium	4zQuwW24dweWcaX0fEJkP2			True	False	False	True	<i>	6	A7, Am, Dm, E7, F, Gm	False	otwórz plik
 active	You Will Never Know.txt	You Will Never Know	Imany	Easy	4sZkRuS2CcfDPEjrNSyHsE			True	False	True	True	<small><i>	5	Am, Dm, Em, F, G	False	otwórz plik
 active	Zombie.txt	Zombie	The Cranberries	Easy	2IZZqH4K02UIYg5EohpNHF			True	False	False	False	none	4	C, D, Em, G	False	otwórz plik
-archive	All I Want For Christmas Is You.txt	🎅All I Want For Christmas Is You	Mariah Carey and Walter Afanasieff	Hard				True	False	True	True	<small><i>	8	Am, B7, C, Cm, D, E7, Em, G	False	otwórz plik
 archive	Dock Of The Bay.txt	(Sittin' on the) Dock of the Bay	Otis Redding	Medium	3zBhihYUHBmGd2bcQIobrF			True	False	False	False	none	7	A, B7, C, D, E7, F, G	False	otwórz plik
-archive	Happy Xmas.txt	🎅Happy Xmas	John Lennon	Medium	3zJw3rugfpVrmBeDDnUYzy			True	False	False	True	<small><i>	7	A, Bm, D, E7, Em, Em7, G	False	otwórz plik
-archive	Have Yourself A Merry Little Christmas.txt	🎅Have Yourself A Merry Little Christmas	Judy Garland/Sam Smith	Hard				True	False	True	True	<small><i>	12	A7, Am, B7, Bm, Cmaj7, D, D7, E7, Em, G, G7, Gmaj7	False	otwórz plik
-archive	Jingle Bell Rock.txt	🎅Jingle Bell Rock	Joseph Beal and Jim Boothe	Medium				True	False	True	True	<small><i>	6	A7, C, Cm, D7, E7, G	False	otwórz plik
-archive	Jingle Bells.txt	🎅Jingle Bells	J.S. Pierpont	Easy				True	False	True	True	<small><i>	4	C, D, F, G7	False	otwórz plik
-archive	Last Christmas.txt	🎅Last Christmas	Wham!	Easy				True	False	True	True	<small><i>	4	Am, C, Dm, G7	True	otwórz plik
-archive	Let It Snow.txt	🎅Let It Snow	Sammy Cahn and Jule Styne	Medium				True	False	True	True	<small><i>	4	C, Dm, G, G7	False	otwórz plik
-archive	Santa Claus Is Coming To Town.txt	🎅Santa Claus Is Coming To Town	Haven Gillespie and J. F. Coots	Medium				True	False	True	True	<small><i>	6	A7, C, D, D7, G, G7	False	otwórz plik
 archive	Stir It Up.txt	Stir It Up	Bob Marley	Easy	4FNm4ZJaUVLDCMXcqwS6zY			True	False	False	False	none	4	C, D, D7, G	False	otwórz plik
-archive	White Christmas.txt	🎅White Christmas	Bing Crosby	Medium		w9QLn7gM-hY		True	False	True	True	<small><i>	7	Am, C, Cm, D, Em, G, G7	False	otwórz plik
 archive	You and I.txt	You And I	Ingrid Michaelson	Medium	4oeRfmp9XpKWym6YD1WvBP			True	False	False	False	none	6	Am, C, D, E, F, G	False	otwórz plik
-new	Bitter Sweet Symphony.txt	🔥Bitter Sweet Symphony	The Verve	Easy	57iDDD9N9tTWe75x6qhStw		7	True	True	False	True	<small><i>	4	Am7, D, G, Gsus4	True	otwórz plik
-new	Lovesong.txt	🔥Lovesong	The Cure	Easy	2mIrfke7vosXAEWfz6ucyo			True	True	False	True	<small><i>	5	Am, C, Em7, F, G	False	otwórz plik
-new	Mr Sandman.txt	🔥Mr Sandman	The Chordettes	Hard	47O5lXcK78Z3TIiGzuc18l		5	True	True	False	True	none	8	A7, B7, C, D7, Dm, E7, Fm, G7	False	otwórz plik
-new	My Way.txt	My way	Frank Sinatra	Hard				True	False	False	True	<small><i>	14	A, A7, Asus4, B7, Bm7, D, D7, Dmaj7, Em, Em7, F#m, G, Gm, Gsus4	False	otwórz plik
+new	Blister in the Sun.txt	🔥Blister in the Sun	The Violent Femmes	Medium			5	True	True	False	True	none	4	C, D, Em, G	False	otwórz plik
+new	Breakfast at Tiffany's .txt	🔥Breakfast at Tiffany's	Deep Blue Something	Easy			5	True	True	False	True	none	1	C	False	otwórz plik
+new	Faith.txt	🔥Faith	George Michael	Medium			5	True	True	True	True	none	4	C, Dm, F, G	False	otwórz plik
+new	Go Your Own Way.txt	🔥Go Your Own Way	Fleetwood Mac	Medium			5	True	True	False	False	none	5	Bb, C, Dm, F, Fsus2	False	otwórz plik
+new	Home.txt	🔥Home	Edward Sharpe and the Magnetic Zeros	Medium			5	True	False	False	True	none	6	A, Bm, D, Em, Em(hey,, G	False	otwórz plik
+new	I Knew You Were Trouble.txt	🔥I Knew You Were Trouble	Taylor Swift	Medium			5	True	True	False	False	none	4	Bb, C, Dm, F	False	otwórz plik
+new	My Way.txt	🔥My way	Frank Sinatra	Hard				True	True	False	True	<small><i>	14	A, A7, Asus4, B7, Bm7, D, D7, Dmaj7, Em, Em7, F#m, G, Gm, Gsus4	False	otwórz plik
 new	Paint It, Black.txt	🔥Paint It, Black	The Rolling Stones	Easy	63T7DJ1AFDD6Bn8VzG6JE8			True	True	False	True	<small><i>	6	A, B, D, EM, Em, G	False	otwórz plik
+new	Relax Take It Easy.txt	🔥Relax Take It Easy	Mika	Easy			5	True	False	False	True	none	7	Am, Dm, Dsus2, Em, Em7, F, G	False	otwórz plik
 new	Rose Tattoo.txt	🔥Rose Tattoo	Dropkick Murphys	Easy	a9RnzKhERxeokp9SNyllrQ			True	True	False	True	<small><i>	5	Am, C, Dm, F, G	False	otwórz plik
 new	Somebody Told Me.txt	🔥Somebody Told Me	The Killers	Medium	6PwjJ58I4t7Mae9xfZ9l9v		5	True	True	False	False	<i>	6	Am, C, Dm, E7, F, G	False	otwórz plik
+new	Sweater Weather.txt	🔥Sweater Weather	The Neighbourhood	Medium			5	True	False	False	True	none	5	Bb, Cm, Eb, F, Gm	False	otwórz plik
 new	Teenage Dirtbag.txt	🔥Teenage Dirtbag	Wheatus	Medium	25FTMokYEbEWHEdss5JLZS		5	True	True	False	True	<small><i>	5	Bb, C, Csus4, Dm, F	False	otwórz plik
 new	You Shook Me All Night Long.txt	🔥You Shook Me All Night Long	AC/DC	Medium				True	True	False	False	none	4	C, D, D7, G	False	otwórz plik
-new	🔥Colors Of The Wind.txt	🔥Colors Of The Wind	Judy Kuhn	Medium	1OYOLWqKmhkFIx2KC9ek1a		5	True	True	False	True	none	5	Bm, Bm7, D, F#m, G	False	otwórz plik

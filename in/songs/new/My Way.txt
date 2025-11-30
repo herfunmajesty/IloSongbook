@@ -1,4 +1,4 @@
-{t:My way}
+{t:🔥My way}
 {artist:Frank Sinatra}
 {level:Hard}
 
