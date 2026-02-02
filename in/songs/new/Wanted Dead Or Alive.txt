@@ -1,0 +1,48 @@
+{t: Wanted Dead Or Alive}
+{artist: Bon Jovi}
+{level: Easy}
+{spotify: }
+{d: 5}
+
+<s>(Verse)</s>
+It's [D] all the same [D]... , [C] only the names will [G] change
+[C] Every [G] day, it seems we're  [F] wasting [D] away
+[D] Another place [D]... , where the [C] faces [G] are so cold
+I'd [C] drive [G] all night, just to  get [F] back [D] home
+ 
+<s>(Chorus)</s>
+I'm a [C] [G] cowboy, on [F] a steel horse [D] I ride
+I'm [C] wanted [G]... , [F] dead or [D] alive
+[C]  Wanted [G]... , [F] dead or [D] alive
+ 
+<s>(Verse)</s>
+[D] Sometimes I sleep [D]... , [C] sometimes it's not for [G] days
+The [C] people I [G] meet, always [G] go [F] their separate [D] ways
+[D] Sometimes you tell [D] the day, by the [C] bottle that [G] you drink
+And [C] times when you're [G] alone, and [G] all [F] you do is [D] think
+ 
+<s>(Chorus)</s>
+I'm a [C] [G] cowboy, on [F] a steel horse [D] I ride
+I'm [C] [G] wanted, [F] dead or [D] alive
+[C] [G] Wanted, [F] dead or [D] alive
+ 
+<s>(Chorus)</s>
+[D] Ooooh and I'm a [C] [G] cowboy, on [F] a steel horse [D] I ride
+I'm [C] wanted [G] (wanted), [F] dead or [D] alive
+ 
+<s>(Verse)</s>
+And I [D] walk these streets [D]... , a loaded [C] six string [G] on my back
+I [C] play for [G] keeps, 'cause I [G] might [F] not make it [D] back
+I been [D] everywhere [D]... , still I'm [C] standing [G] tall
+I've [C] seen a million [G] faces, and I've [G] rocked [F] them all[D] ...
+ 
+<s>(Chorus)</s>
+'Cause I'm a [C] [G] cowboy, on [F] a steel horse [D] I ride
+I'm [C] wanted [G] (wanted), [F] dead or [D] alive
+Well, I'm a [C] [G] cowboy, I got the [F] night on my [D] side
+And I'm [C] wanted [G] (wanted), [F] dead or [D] alive
+And [C] I ride (and I [G] ride), [F] dead or [D] alive
+I still [C] drive (I [G] still drive), [F] dead or [D] alive
+[F] Dead or [G] alive, [F] dead or [D] alive
+[F] Dead or [G] alive, [F] dead or [D] alive
+[D/]

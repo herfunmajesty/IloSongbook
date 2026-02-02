@@ -3,8 +3,15 @@
 {artist:The Cure}
 {level:Easy}
 
- riff na E 5-7/8-10
-	   12-10/8-5
+ 
+<b>riff</b>
+<pre>
+A|-----------|------------|
+E|-5--7/8-10-|-12--10/8-5-|
+C|-----------|------------|
+G|-----------|------------|
+</pre>
+
 <small><i>(Intro)</i></small>
 [Am] ... [G] ... [F] ... [Em7] ... <b><small> x4</b></small> 
 
@@ -30,7 +37,7 @@
 [Am] I will [C] always love you
 [F] I will [G] always love you
 
-[Am] ... [G] ... [F] ... [Em7] ... <b><small> x4</b></small> ] 
+[Am] ... [G] ... [F] ... [Em7] ... <b><small> x4</b></small> 
 
 <small><i>(Verse)</i></small>
 [Am] Whenever I'm alone, [G]   with you [F] ... [Em7] ...
