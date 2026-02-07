@@ -3,6 +3,7 @@
 
 src/Config
 export*/
+.venv/
 
 # User-specific files
 *.suo
