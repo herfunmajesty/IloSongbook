@@ -3,47 +3,59 @@
 {spotify:63T7DJ1AFDD6Bn8VzG6JE8}  
 {level:Easy}
 
-<small><i>(Intro)</i></small>
-xA|-------0--------------------------|
-xE|-0-2-3---3-2-0-0---0h2p0----------|
-xC|-----------------3--------0/3\0/3-|
-xG|----------------------------------|
+<small><i>(Strumming)</i></small>
 
+First Part of verse down chunk and up -> <large>x↓↑</large>
 
-[EM]I see a red door and I [B]want it painted black
-[EM]No colors anymore, I [B]want them to turn black
-[EM]I [D]see the [G]girls walk by [D]dressed in [EM]their summer clothes
-[EM]I [D]have to [G]turn my [D]head [A]until my darkness [B]goes
+[riff]
+<pre>
+A|--0-0-0-0-0-0-0-0-0-0-0-0-0------|
+E|---0-1-3-1-0---------0-----------|
+C|-2-----------2-2-1-2---2-1-------|
+G|---------------------------------|
+</pre>
 
-[Em]I see a line of cars and [B]they're all painted black
-[Em]With flowers and my love, both [B]never to come back
-[Em]I [D]see people [G]turn their [D]heads and [Em]quickly look away
-[Em]Like a [D]new born [G]baby, [D]it just [A]happens every [B]day
+<b>[riff]</b>
+[Dm]
+[Dm]I see a red door and I [A]want it painted black
+[Dm]No colors anymore, I [A]want them to turn black
+[Dm//]I [C//]see the [F//]girls walk by [C//]dressed [Dm] in their summer clothes
+[Dm//]I [C//]have to [F//]turn my [C//]head [G]until my darkness goes[A]
 
-[Em]I look inside myself and [B]see my heart is black
-[Em]I see my red door, I [B]must have it painted black
-[Em]Maybe [D]then I'll [G]fade [D]away and [Em]not have to face the facts
-[Em]It's not [D]easy [G]facing [D]up, when [A]your whole world is [B]black
+[Dm]I see a line of cars and [A]they're all painted black
+[Dm]With flowers and my love, both [A]never to come back
+[Dm//]I [C//]see people [F//]turn their [C//]heads and [Dm]quickly look away
+[Dm//]Like a [C//]new born [F//]baby, [C//]it just [G]happens every [A]day
 
-[Em]No more will my green sea go [B]turn a deeper blue
-[Em]I could not foresee this thing [B]happening to you
-[Em]If I look hard enough into the [B]settin' sun
-[Em]My love will laugh with me before [B]the mornin' comes
+[Dm]I look inside myself and [A]see my heart is black
+[Dm]I see my red door, I [A]must have it painted black
+[Dm//]Maybe [C//]then I'll [F//]fade [C//]away and [Dm]not have to face the facts
+[Dm//]It's not [C//]easy [F//]facing [C//]up, when [G]your whole world is black[A]
 
-[EM]I see a red door and I [B]want it painted black
-[EM]No colors anymore, I [B]want them to turn black
-[EM]I [D]see the [G]girls walk by [D]dressed in [EM]their summer clothes
-[EM]I [D]have to [G]turn my [D]head [A]until my darkness [B]goes
+<small>quieter</small>
+[Dm/]No more will my green sea go [A/]turn a deeper blue
+[Dm/]I could not foresee this thing [A/]happening to you
+<small>Lauder</small>
+[Dm//]If [C//]I look [F//] hard [C//]enough in [Dm]to the settin' sun
+[Dm//]My [C//]love will [F//]laugh with [C//]me [G//]before the mornin' [A]comes
 
-[Em]Hmm, hmm, [B]hmm, hmm
-[Em]Hmm, hmm, [B]hmm, hmm
+[Dm]I see a red door and I [A]want it painted black
+[Dm]No colors anymore, I [A]want them to turn black
+[Dm//]I [C//]see the [F//]girls walk [C//]by dressed [Dm]in their summer clothes
+[Dm//]I [C//]have to [F//]turn my [C//]head [G]until my darkness goes[A]
 
-[Em]I wanna see it [B]painted, painted black
-[Em]Black as night, [B]black as coal
-[Em]I wanna see the sun [B]blotted out from the sky
-[Em]I wanna see it painted, [B]painted, painted, painted black
+[Dm]Hmm, hmm, [A]hmm, hmm
+[Dm]Hmm, hmm, [A]hmm, hmm
+
+[Dm]I wanna see it painted, painted [A]black
+[Dm]Black as night, [A]black as coal
+[Dm]I wanna see the sun [A]blotted out by the sky
+[Dm]I wanna see it painted, painted, painted, painted [A]black
 Yeah
 
-[Em]Hmm, hmm, [B]hmm, hmm
-[Em]Hmm, hmm, [B]hmm, hmm
-[Em/]
+[Dm]Hmm, hmm, [A]hmm, hmm
+[Dm]Hmm, hmm, [A]hmm, hmm
+
+<b>[riff]</b>
+
+[Dm/]
