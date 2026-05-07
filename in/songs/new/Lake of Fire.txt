@@ -1,10 +1,10 @@
 {t:🔥Lake Of Fire}
 {artist:Meat Puppets}
-{level:Medium}
+{level:Hard}
 
 <small><i>(Intro)</i></small>
 [F#] [E] [A] [F#] [B] [A] [F#] [E] [A]
-[B] [E] [F#] [E] [F#] [E] [F#]
+[B] [E] [F#] 
 
 <small><i>(Chorus)</i></small>
 [F#] Where do bad folks [E] go when they [A] die?
@@ -42,4 +42,4 @@ They [F#] don't go to heaven where the [B] angels [A] fly
 [B] See 'em again 'til the [E] Fourth of [F#] July
 
 <small><i>(Outro)</i></small>
-[F#] [E] [F#] [E] [F#] [E] [F#] [E] [F#]
+[F#] [E] [F#] [E] [F#] [E/]

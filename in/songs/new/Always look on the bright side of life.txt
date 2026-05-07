@@ -1,6 +1,6 @@
 {t:🔥Always Look on the Bright Side of Life}
 {artist:Monty Python}
-{level:Medium}
+{level:Easy}
 
 <small><i>(Verse)</i></small>
 Some [Am/]things in life are [D/]bad, they can [G/]really make you [Em/]mad
