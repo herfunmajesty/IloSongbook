@@ -14,9 +14,7 @@
     <style>
         .highlight {background-color: lemonchiffon; font-weight: bold;} 
         .chord { font-weight: bold; color:red}
-        #tab { font-size: 90%; font-family: Verdana, Tahoma, sans-serif; position: relative; z-index: 1; }
-        #tab .alert, #tab .mark { position: relative; z-index: 1; }
-        #floatingButton { z-index: 1100; }
+        #tab { font-size: 90%; font-family: Verdana, Tahoma, sans-serif; }
         #options a {text-decoration: underline;}
         .sticky { 
             position: fixed; 
@@ -26,9 +24,6 @@
             padding: 0px 0px; 
             width: 100%; 
             border-bottom: 1px solid #cfd8dc; 
-            z-index: 1050;
-            background-color: white;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.08);
             /* overflow-x: auto;
             white-space: nowrap; */
         }
@@ -159,7 +154,7 @@
 
 			</div>
 			{% endif %}
-				<div id="chordsContainer" class="mt-4" style="overflow-x: auto;">
+				<div class="mt-4" style="overflow-x: auto;">
 					{% for chord in chords %}
 						<img src="chords/{{chord}}.gif" alt="{{chord}}" title="{{chord}}" />
 					{% endfor %}
@@ -173,7 +168,7 @@
 				  <p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
 				  <p id="songDuration" style="font-size: xx-small;"></p>
 				</div>-->
-				<div id="floatingButton" style="position: fixed; right: 20px; bottom: 20px; z-index: 1100;">
+				<div id="floatingButton" style="position: fixed; right: 20px; bottom: 20px; ">
 					<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light toggle-button">
 						<img id="buttonImage" src="images/pause2.gif">
 					</button>
@@ -203,7 +198,7 @@
 <script>
 window.onload = function initFloatingChords() {
 
-    const chordsContainer = document.getElementById("chordsContainer") || document.getElementsByClassName("mt-4")[0];
+    const chordsContainer = document.getElementsByClassName("mt-4")[0];
 
     // prevent lyrics being visible from behind the chords
     chordsContainer.style.backgroundColor = "white"
