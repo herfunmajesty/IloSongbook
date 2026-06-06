@@ -84,6 +84,85 @@ ul { list-style: none; padding-left: 0px; }
 .btn-filter-onlynew:not(active){
   color: #0dcaf0 !important;
 }
+
+.lucky-button {
+	margin-top: 10px;
+	border: none;
+	border-radius: 999px;
+	padding: 8px 14px;
+	background: linear-gradient(135deg, #ffe45e, #a855f7);
+	background-size: 220% 220%;
+	color: #231f20;
+	font-weight: 600;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+	animation: luckyShift 7s ease-in-out infinite;
+}
+
+.lucky-button:hover {
+	filter: brightness(1.05);
+}
+
+@keyframes luckyShift {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.theme-toggle {
+	position: fixed;
+	top: 12px;
+	right: 12px;
+	z-index: 2000;
+	border: 1px solid #ced4da;
+	border-radius: 999px;
+	background-color: #ffffff;
+	color: #212529;
+	padding: 6px 12px;
+	font-size: 0.875rem;
+}
+
+.theme-toggle:hover {
+	background-color: #f8f9fa;
+}
+
+body {
+	background-color: #ffffff;
+	color: #212529;
+}
+
+body.dark-mode {
+	background-color: #121212;
+	color: #f1f1f1;
+}
+
+body.dark-mode a {
+	color: #ff9a9a;
+}
+
+body.dark-mode a:focus,
+body.dark-mode a:hover {
+	color: #ffffff;
+}
+
+body.dark-mode .toggle-button,
+body.dark-mode .btn-outline-primary,
+body.dark-mode .theme-toggle {
+	background-color: #1f1f1f;
+	color: #f1f1f1;
+	border-color: #595959;
+}
+
+body.dark-mode .lucky-button {
+	background: linear-gradient(135deg, #ffd84d, #b084ff);
+	background-size: 220% 220%;
+	color: #111111;
+}
 </style>
 
 </head>
@@ -97,10 +176,11 @@ ul { list-style: none; padding-left: 0px; }
   gtag('config', 'G-1NRMQRF4X2');
 </script>
 <body>
+<button id="themeToggle" class="theme-toggle" type="button" aria-label="Switch to dark mode">☼</button>
 
 <header class="container">
     <div class="m-2 mb-4 text-center">
-        <img src="images/ukulele-krakow.PNG" class="img-fluid" alt="Krakow Ukulele" width="200">
+	<img id="siteLogo" src="images/ukulele-krakow-trans-light.png" data-light-logo="images/ukulele-krakow-trans-light.png" data-dark-logo="images/ukulele-krakow-trans-dark.png" class="img-fluid" alt="Krakow Ukulele" width="200">
 </header>
 
 <div class="container">
@@ -131,6 +211,7 @@ ul { list-style: none; padding-left: 0px; }
 						<div class="btn-group-vertical">
 							<button type="button" id="sortByTitle" class="toggle-button btn btn-outline-primary">  Titles  </button>
 							<button type="button" id="sortByArtist" class="toggle-button btn btn-outline-primary"> Artists </button>
+							<button type="button" id="luckyButton" class="lucky-button">✨ I am feelin Lucky</button>
 						</div>
 						<div id="virtual-click-area" style="display: none; border: 2px solid red;"></div>
                 </div>
@@ -181,10 +262,62 @@ ul { list-style: none; padding-left: 0px; }
 
 
 <script> // Filtry poziomu
+	(function() {
+		var key = 'ilo-theme';
+		var toggleButton = document.getElementById('themeToggle');
+		var logo = document.getElementById('siteLogo');
+
+		function applyTheme(theme) {
+			var isDark = theme === 'dark';
+			document.body.classList.toggle('dark-mode', isDark);
+			toggleButton.textContent = isDark ? '☾' : '☼';
+			toggleButton.setAttribute('aria-label', isDark ? 'Switch to light mode' : 'Switch to dark mode');
+			if (logo) {
+				logo.src = isDark ? logo.dataset.darkLogo : logo.dataset.lightLogo;
+			}
+			localStorage.setItem(key, isDark ? 'dark' : 'light');
+		}
+
+		var savedTheme = localStorage.getItem(key);
+		applyTheme(savedTheme === 'dark' ? 'dark' : 'light');
+
+		toggleButton.addEventListener('click', function() {
+			applyTheme(document.body.classList.contains('dark-mode') ? 'light' : 'dark');
+		});
+	})();
+
 	document.addEventListener('DOMContentLoaded', () => {
 		setupFilterButtons();
 		setupSortingButtons();
+		setupLuckyButton();
 	});
+
+	function setupLuckyButton() {
+		const luckyButton = document.getElementById('luckyButton');
+		const songsList = document.getElementById('songs');
+
+		if (!luckyButton || !songsList) {
+			return;
+		}
+
+		luckyButton.addEventListener('click', () => {
+			const visibleSongs = Array.from(songsList.querySelectorAll('li')).filter(song => {
+				return song.style.display !== 'none';
+			});
+
+			if (visibleSongs.length === 0) {
+				alert('No songs match the current filter.');
+				return;
+			}
+
+			const randomIndex = Math.floor(Math.random() * visibleSongs.length);
+			const selectedSong = visibleSongs[randomIndex].querySelector('a');
+
+			if (selectedSong && selectedSong.getAttribute('href')) {
+				window.location.href = selectedSong.getAttribute('href');
+			}
+		});
+	}
 
 	function setupFilterButtons(){
 		const filterButtons = document.querySelectorAll('.filter-button');
