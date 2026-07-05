@@ -51,6 +51,11 @@
 			font-weight: 700;
 		}
         #options a {text-decoration: underline;}
+
+		/* Updated background color here to keep text covered */
+        .chord-diagrams {
+            background-color: #ffffff;
+        }
         .sticky { 
             position: fixed; 
             top: 0; 
@@ -175,12 +180,20 @@
 		body.dark-mode .shadow,
 		body.dark-mode .theme-toggle,
 		body.dark-mode .btn-light,
+		body.dark-mode .chord-diagrams,
 		body.dark-mode .sticky {
 			background-color: #1f1f1f !important;
 			color: #f1f1f1;
 			border-color: #595959;
 		}
-
+		
+		/* Specifically forces the chord container to match the body color */
+        body.dark-mode #chordsContainer,
+        body.dark-mode .sticky {
+            background-color: #121212 !important;
+            color: #f1f1f1;
+            border-color: #333333;
+        }
 		body.dark-mode .chord-diagrams img,
 		body.dark-mode img[src^="chords/"],
 		body.dark-mode img[src^="../chords/"] {
@@ -193,7 +206,7 @@
 			border-color: #595959;
 		}
 
-		
+
     </style>
 
 </head>
@@ -309,7 +322,7 @@ window.onload = function initFloatingChords() {
     const chordsContainer = document.getElementById("chordsContainer") || document.getElementsByClassName("mt-4")[0];
 
     // prevent lyrics being visible from behind the chords
-    chordsContainer.style.backgroundColor = "white"
+    // chordsContainer.style.backgroundColor = "white"
 
     const chordsContainerTop = chordsContainer.offsetTop
     const chordsContainerHeight = chordsContainer.clientHeight
@@ -363,7 +376,8 @@ function updateAutoScrollButton(isRunning) {
 		return;
 	}
 
-	icon.textContent = isRunning ? '■' : '▶';
+	icon.textContent = isRunning ? '■' : '▷';
+	// icon.textContent = isRunning ? '⏸' : '▶';  // Pause vs. Play
 	button.setAttribute('aria-pressed', isRunning ? 'true' : 'false');
 	button.setAttribute('aria-label', isRunning ? 'Stop auto-scroll' : 'Start auto-scroll');
 }
