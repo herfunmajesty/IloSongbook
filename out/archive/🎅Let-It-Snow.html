@@ -27,6 +27,39 @@
             /* overflow-x: auto;
             white-space: nowrap; */
         }
+		.auto-scroll-control {
+			position: fixed;
+			right: 20px;
+			bottom: 20px;
+			z-index: 1100;
+		}
+		.auto-scroll-btn {
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			width: 48px;
+			height: 48px;
+			padding: 0;
+			border: 1px solid #d1d5db;
+			border-radius: 999px;
+			background: rgba(255, 255, 255, 0.95);
+			box-shadow: 0 8px 20px rgba(0, 0, 0, 0.14);
+			color: #1f2937;
+			line-height: 1;
+			cursor: pointer;
+			transition: transform 0.18s ease, box-shadow 0.18s ease, background-color 0.18s ease;
+		}
+		.auto-scroll-btn:hover {
+			transform: translateY(-1px);
+			box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2);
+		}
+		.auto-scroll-btn:active {
+			transform: translateY(0);
+		}
+		.auto-scroll-icon {
+			font-size: 1.05rem;
+			font-weight: 700;
+		}
 		.toggle-button {
 			background-color: #eee;
 			border: 0px solid ;
@@ -97,7 +130,64 @@
 			background-repeat: no-repeat;
 			pointer-events: none; 
 		}
-		
+
+		.theme-toggle {
+			position: absolute;
+			top: 12px;
+			right: 12px;
+			z-index: 2000;
+			border: 1px solid #ced4da;
+			border-radius: 999px;
+			background-color: #ffffff;
+			color: #212529;
+			padding: 6px 12px;
+			font-size: 0.875rem;
+		}
+
+		.theme-toggle:hover {
+			background-color: #f8f9fa;
+		}
+
+		body {
+			background-color: #ffffff;
+			color: #212529;
+		}
+
+		body.dark-mode {
+			background-color: #121212;
+			color: #f1f1f1;
+		}
+
+		body.dark-mode a {
+			color: #ff9a9a;
+		}
+
+		body.dark-mode a:hover,
+		body.dark-mode a:focus {
+			color: #ffffff;
+		}
+
+		body.dark-mode .shadow,
+		body.dark-mode .theme-toggle,
+		body.dark-mode .btn-light,
+		body.dark-mode .sticky {
+			background-color: #1f1f1f !important;
+			color: #f1f1f1;
+			border-color: #595959;
+		}
+
+		body.dark-mode .chord-diagrams img,
+		body.dark-mode img[src^="chords/"],
+		body.dark-mode img[src^="../chords/"] {
+			filter: invert(1) hue-rotate(180deg) contrast(0.95) !important;
+		}
+
+		body.dark-mode .auto-scroll-btn {
+			background: rgba(31, 31, 31, 0.95);
+			color: #f3f4f6;
+			border-color: #595959;
+		}
+
 		
     </style>
 
@@ -113,6 +203,7 @@
 </script>
 <body data-duration = 4.0>
 <!-- nie ma headera - czy tak w ogłe wolno? -->
+<button id="themeToggle" class="theme-toggle" type="button" aria-label="Switch to dark mode">☼</button>
 
 <div class="container">
     <div class="row justify-content-center">      
@@ -133,7 +224,7 @@
 			</div>
 			
 			
-				<div class="mt-4" style="overflow-x: auto;">
+				<div id="chordsContainer" class="mt-4 chord-diagrams" style="overflow-x: auto;">
 					
 						<img src="../chords/G7.gif" alt="G7" title="G7" />
 					
@@ -159,9 +250,9 @@
 				  <p id="scrollTimeStepInfo" style="font-size: xx-small;"></p>
 				  <p id="songDuration" style="font-size: xx-small;"></p>
 				</div>
-				<div id="floatingButton" style="position: fixed; right: 20px; bottom: 20px; ">
-					<button id="myButton" onclick="toggleButton()" type="button" class="btn btn-light toggle-button">
-						<img id="buttonImage" src="../images/pause2.gif">
+				<div id="floatingButton" class="auto-scroll-control">
+					<button id="myButton" onclick="toggleButton()" type="button" class="auto-scroll-btn" aria-label="Start auto-scroll" aria-pressed="false">
+						<span id="buttonIcon" class="auto-scroll-icon">▶</span>
 					</button>
 				</div>
 
@@ -187,12 +278,32 @@
 </div>
 
 <script>
+(function() {
+	var key = 'ilo-theme';
+	var toggleButton = document.getElementById('themeToggle');
+
+	function applyTheme(theme) {
+		var isDark = theme === 'dark';
+		document.body.classList.toggle('dark-mode', isDark);
+		toggleButton.textContent = isDark ? '☾' : '☼';
+		toggleButton.setAttribute('aria-label', isDark ? 'Switch to light mode' : 'Switch to dark mode');
+		localStorage.setItem(key, isDark ? 'dark' : 'light');
+	}
+
+	var savedTheme = localStorage.getItem(key);
+	applyTheme(savedTheme === 'dark' ? 'dark' : 'light');
+
+	toggleButton.addEventListener('click', function() {
+		applyTheme(document.body.classList.contains('dark-mode') ? 'light' : 'dark');
+	});
+})();
+
 window.onload = function initFloatingChords() {
 
-    const chordsContainer = document.getElementsByClassName("mt-4")[0];
+    const chordsContainer = document.getElementById("chordsContainer");
 
-    // prevent lyrics being visible from behind the chords
-    chordsContainer.style.backgroundColor = "white"
+    // Keep sticky chords readable in both light and dark mode.
+    chordsContainer.style.backgroundColor = getComputedStyle(document.body).backgroundColor
 
     const chordsContainerTop = chordsContainer.offsetTop
     const chordsContainerHeight = chordsContainer.clientHeight
@@ -237,20 +348,34 @@ var scrollDuration = songDuration * 60 * 1000; // x min w milisekundach - w tym 
 //var height = Math.max( Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight ) - window.innerHeight, 1);
 var height = document.getElementById('tab').clientHeight; //wysokość boxu div tab
 var scrollTimeStep =  scrollDuration / height; // czas co jaki ma być wywołana funkcja przewijania
+
+function updateAutoScrollButton(isRunning) {
+	var button = document.getElementById('myButton');
+	var icon = document.getElementById('buttonIcon');
+
+	if (!button || !icon) {
+		return;
+	}
+
+	icon.textContent = isRunning ? '■' : '▶';
+	button.setAttribute('aria-pressed', isRunning ? 'true' : 'false');
+	button.setAttribute('aria-label', isRunning ? 'Stop auto-scroll' : 'Start auto-scroll');
+}
+
 function toggleButton() {
-  if (scrollInterval) { //jeśli scrollInterval był ustawiony w trakcie wywołania funkcji to zmień obraz na pauzę i wyczyść go
-    document.getElementById('buttonImage').src = '../images/pause2.gif';
+	if (scrollInterval) { //jeśli scrollInterval był ustawiony w trakcie wywołania funkcji to zatrzymaj autoscroll
     clearInterval(scrollInterval); // Zatrzymuje autoscrollowanie
     scrollInterval = null;
+		updateAutoScrollButton(false);
   } else { //w przeciwnym wypadku ustaw scroll interval i przewijaj chyba ze dotrzesz do końca strony
-    document.getElementById('buttonImage').src = '../images/play2.gif';
+		updateAutoScrollButton(true);
     scrollInterval = setInterval(function() {
       if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
         // Jeśli strona została przewinięta do końca, zatrzymaj autoscroll po 4 sekundach
         setTimeout(function() {
-          document.getElementById('buttonImage').src = '../images/pause2.gif';
           clearInterval(scrollInterval);
           scrollInterval = null;
+					updateAutoScrollButton(false);
         }, 4000);
       } else {
         window.scrollBy({top: 1, behavior: "instant"}); // Uruchamia autoscrollowanie
@@ -267,6 +392,7 @@ function toggleButton() {
     }, scrollTimeStep);
   }
 }
+updateAutoScrollButton(false);
 // Zatrzymaj autoscroll, gdy strona jest opuszczana
 window.addEventListener('beforeunload', function() {
   if (scrollInterval) {
