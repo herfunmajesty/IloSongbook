@@ -2,7 +2,7 @@
 {artist:The Violent Femmes} 
 {level:Medium}
 {spotify:7jIAttgQTpLDoNtykIQXjH}
-{d:5}
+{d:3}
 
 Info: 
 -strumming pattern from the intro (with chunks) repeats in verses
