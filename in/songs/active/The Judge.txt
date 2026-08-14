@@ -1,4 +1,4 @@
-{t:🔥The Judge}
+{t:The Judge}
 {artist:Twenty One Pilots}
 {level:Medium}
 {youtube:PbP-aIe51Ek}

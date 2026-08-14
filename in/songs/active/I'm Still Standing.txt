@@ -1,4 +1,4 @@
-{t:🔥I'm Still Standing}  
+{t:I'm Still Standing}  
 {artist:Elton John}  
 {level:Medium}
 {spotify:1jDJFeK9x3OZboIAHsY9k2}

@@ -1,4 +1,4 @@
-{t:🔥Roxanne}  
+{t:Roxanne}  
 {artist:The Police}  
 {spotify:3EYOJ48Et32uATr9ZmLnAo}  
 {level:Easy}
