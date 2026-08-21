@@ -389,123 +389,128 @@ def copy_files(src_dir, dest_dir, files_to_copy):
 
 # ====================== Program Własciwy ===========================
 
-
-
 # sprawdzenie gdzie jestem
 env = Environment(loader=FileSystemLoader('in/template'))
-print(f"{sep1}Tworzenie bazy piosenek aktywnych{sep1}")
-print("Current working directory:", os.getcwd())
 
-# kopiowanie obrazów i ikon do katalogu wyjsciowego
-img_folders = ['images', 'chords']
-src_directory = os.path.join(os.getcwd(), 'in')
-dest_directory = os.path.join(os.getcwd(), 'out')
-copy_folders(src_directory, dest_directory, img_folders)
-# kopiowanie plików nie renderowanych
-n_r_files = ['how.html']
-n_src_directory = os.path.join(os.getcwd(), 'in/template')
-n_dest_directory = os.path.join(os.getcwd(), 'out')
-copy_files(n_src_directory, n_dest_directory, n_r_files)
+def build_songbook():
+    print(f"{sep1}Tworzenie bazy piosenek aktywnych{sep1}")
+    print("Current working directory:", os.getcwd())
 
-# Najpierw tworzę bazę piosenek aktywnych:
-folder_path_active = os.path.join(os.getcwd(), 'in/songs/active')
-print(f'{sep2}Funkcja zaczytująca z plików{sep2}')
-songs_list = read_songs_from_folder(folder_path_active)
+    # kopiowanie obrazów i ikon do katalogu wyjsciowego
+    img_folders = ['images', 'chords']
+    src_directory = os.path.join(os.getcwd(), 'in')
+    dest_directory = os.path.join(os.getcwd(), 'out')
+    copy_folders(src_directory, dest_directory, img_folders)
+    # kopiowanie plików nie renderowanych
+    n_r_files = ['how.html']
+    n_src_directory = os.path.join(os.getcwd(), 'in/template')
+    n_dest_directory = os.path.join(os.getcwd(), 'out')
+    copy_files(n_src_directory, n_dest_directory, n_r_files)
 
-# print(f'{sep2} drukuję szczegóły po zaczytaniu!{sep2}')
-print_songs_details(songs_list)
+    # Najpierw tworzę bazę piosenek aktywnych:
+    folder_path_active = os.path.join(os.getcwd(), 'in/songs/active')
+    print(f'{sep2}Funkcja zaczytująca z plików{sep2}')
+    songs_list = read_songs_from_folder(folder_path_active)
 
-collection = SongCollection()
-# Dodaj wszystkie piosenki do kolekcji
-for song in songs_list:
-    # print(f'Dodaję do collection piosenkę: {Song.Title}')
-    collection.add_song(song)
+    # print(f'{sep2} drukuję szczegóły po zaczytaniu!{sep2}')
+    print_songs_details(songs_list)
 
-print(f"{sep3}Ile piosenek jest na liście?{sep3}")  # Separator dla czytelności
-songTotal = collection.count_songs()
-print(collection.count_songs())
-print(f"{sep2}")  # Separator dla czytelności
+    collection = SongCollection()
+    # Dodaj wszystkie piosenki do kolekcji
+    for song in songs_list:
+        # print(f'Dodaję do collection piosenkę: {Song.Title}')
+        collection.add_song(song)
 
-# Posortuj piosenki i przypisz im numery
-collection.sort_songs()
-collection.assign_numbers('')
-for song in collection:
-    print(f"{song.Number} --- {song.Title}  --  by   {song.Artist}")
+    print(f"{sep3}Ile piosenek jest na liście?{sep3}")  # Separator dla czytelności
+    songTotal = collection.count_songs()
+    print(collection.count_songs())
+    print(f"{sep2}")  # Separator dla czytelności
 
-main_directory = "out"
-generate_index(main_directory)
-generate_song_html(collection, main_directory, 'song.html')
-list_name = "songs"  # zmienic ten fragment na main_list i zaimplementować w html
-generate_song_list_html(collection, main_directory, 'songs.html', list_name)
+    # Posortuj piosenki i przypisz im numery
+    collection.sort_songs()
+    collection.assign_numbers('')
+    for song in collection:
+        print(f"{song.Number} --- {song.Title}  --  by   {song.Artist}")
 
-#    USUNIETE
+    main_directory = "out"
+    generate_index(main_directory)
+    generate_song_html(collection, main_directory, 'song.html')
+    list_name = "songs"  # zmienic ten fragment na main_list i zaimplementować w html
+    generate_song_list_html(collection, main_directory, 'songs.html', list_name)
 
-# to do:
-# szablon listy
-# adres wstecza w szablonie poisenki
+    #    USUNIETE
 
-print(f"{sep1}Tworzenie bazy piosenek usuniętych{sep1}")
-# Najpierw tworzę bazę piosenek usuniętych:
-folder_path_archive: str = os.path.join(os.getcwd(), 'in/songs/archive')
-print(folder_path_archive)
-print(f'{sep2}Funkcja zaczytująca z plików{sep2}')
+    # to do:
+    # szablon listy
+    # adres wstecza w szablonie poisenki
 
-songs_list_archive = read_songs_from_folder(folder_path_archive)
+    print(f"{sep1}Tworzenie bazy piosenek usuniętych{sep1}")
+    # Najpierw tworzę bazę piosenek usuniętych:
+    folder_path_archive: str = os.path.join(os.getcwd(), 'in/songs/archive')
+    print(folder_path_archive)
+    print(f'{sep2}Funkcja zaczytująca z plików{sep2}')
 
-arch_collection = SongCollection()
-# Dodaj wszystkie piosenki do kolekcji
-for song in songs_list_archive:
-    # print(f'Dodaję do collection piosenkę: {Song.Title}')
-    arch_collection.add_song(song)
+    songs_list_archive = read_songs_from_folder(folder_path_archive)
 
-print(f"{sep3}Ile piosenek jest na liście archiwalnej?{sep3}")  # Separator dla czytelności
-a_songTotal = arch_collection.count_songs()
-print(a_songTotal)
-print(f"{sep2}")  # Separator dla czytelności
+    arch_collection = SongCollection()
+    # Dodaj wszystkie piosenki do kolekcji
+    for song in songs_list_archive:
+        # print(f'Dodaję do collection piosenkę: {Song.Title}')
+        arch_collection.add_song(song)
 
-# Posortuj piosenki i przypisz im numery
-arch_collection.sort_songs()
-arch_collection.assign_numbers('A')
-for song in arch_collection:
-    print(f"{song.Number} --- {song.Title}  --  by   {song.Artist}")
+    print(f"{sep3}Ile piosenek jest na liście archiwalnej?{sep3}")  # Separator dla czytelności
+    a_songTotal = arch_collection.count_songs()
+    print(a_songTotal)
+    print(f"{sep2}")  # Separator dla czytelności
 
-directory = "out/archive"
-generate_song_html(arch_collection, directory, 'song_hidden.html')
-a_list_name = "archive"  # zmienic ten fragment na archive_list i zaimplementować w html
-generate_song_list_html(arch_collection, directory, 'songs_hidden.html',  a_list_name)
+    # Posortuj piosenki i przypisz im numery
+    arch_collection.sort_songs()
+    arch_collection.assign_numbers('A')
+    for song in arch_collection:
+        print(f"{song.Number} --- {song.Title}  --  by   {song.Artist}")
+
+    directory = "out/archive"
+    generate_song_html(arch_collection, directory, 'song_hidden.html')
+    a_list_name = "archive"  # zmienic ten fragment na archive_list i zaimplementować w html
+    generate_song_list_html(arch_collection, directory, 'songs_hidden.html',  a_list_name)
 
 
-#    NOWE - TESTOWE
-# to do:
-# szablon listy
-# adres wstecza w szablonie poisenki
+    #    NOWE - TESTOWE
+    # to do:
+    # szablon listy
+    # adres wstecza w szablonie poisenki
 
-print(f"{sep1}Tworzenie bazy piosenek  do testów{sep1}")
-# Najpierw tworzę bazę piosenek usuniętych:
-folder_path_test: str = os.path.join(os.getcwd(), 'in/songs/new')
-print(folder_path_test)
-print(f'{sep2}Funkcja zaczytująca z plików{sep2}')
+    print(f"{sep1}Tworzenie bazy piosenek  do testów{sep1}")
+    # Najpierw tworzę bazę piosenek usuniętych:
+    folder_path_test: str = os.path.join(os.getcwd(), 'in/songs/new')
+    print(folder_path_test)
+    print(f'{sep2}Funkcja zaczytująca z plików{sep2}')
 
-songs_list_test = read_songs_from_folder(folder_path_test)
+    songs_list_test = read_songs_from_folder(folder_path_test)
 
-test_collection = SongCollection()
-# Dodaj wszystkie piosenki do kolekcji
-for song in songs_list_test:
-    # print(f'Dodaję do collection piosenkę: {Song.Title}')
-    test_collection.add_song(song)
+    test_collection = SongCollection()
+    # Dodaj wszystkie piosenki do kolekcji
+    for song in songs_list_test:
+        # print(f'Dodaję do collection piosenkę: {Song.Title}')
+        test_collection.add_song(song)
 
-print(f"{sep3}Ile piosenek jest na liście testowej?{sep3}")  # Separator dla czytelności
-n_songTotal = test_collection.count_songs()
-print(n_songTotal)
-print(f"{sep2}")  # Separator dla czytelności
+    print(f"{sep3}Ile piosenek jest na liście testowej?{sep3}")  # Separator dla czytelności
+    n_songTotal = test_collection.count_songs()
+    print(n_songTotal)
+    print(f"{sep2}")  # Separator dla czytelności
 
-# Posortuj piosenki i przypisz im numery
-test_collection.sort_songs()
-test_collection.assign_numbers('T')
-for song in test_collection:
-    print(f"{song.Number} --- {song.Title}  --  by   {song.Artist}")
+    # Posortuj piosenki i przypisz im numery
+    test_collection.sort_songs()
+    test_collection.assign_numbers('T')
+    for song in test_collection:
+        print(f"{song.Number} --- {song.Title}  --  by   {song.Artist}")
 
-directory2 = "out/new"
-generate_song_html(test_collection, directory2, 'song_hidden.html')
-t_list_name = "test"  # zmienic ten fragment na test_list i zaimplementować w html
-generate_song_list_html(test_collection, directory2, 'songs_hidden.html',  t_list_name)
+    directory2 = "out/new"
+    generate_song_html(test_collection, directory2, 'song_hidden.html')
+    t_list_name = "test"  # zmienic ten fragment na test_list i zaimplementować w html
+    generate_song_list_html(test_collection, directory2, 'songs_hidden.html',  t_list_name)
+
+if __name__=="__main__":
+    build_songbook()
+
+    
