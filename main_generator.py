@@ -393,6 +393,17 @@ def copy_files(src_dir, dest_dir, files_to_copy):
 env = Environment(loader=FileSystemLoader('in/template'))
 
 def build_songbook():
+    # raise Exception ('testowy błąd gui')
+    result = {
+        "success": False,
+        "active": 0,
+        "archive": 0,
+        "test": 0,
+        "warnings": [],
+        "errors": []
+    }
+    
+
     print(f"{sep1}Tworzenie bazy piosenek aktywnych{sep1}")
     print("Current working directory:", os.getcwd())
 
@@ -423,6 +434,7 @@ def build_songbook():
 
     print(f"{sep3}Ile piosenek jest na liście?{sep3}")  # Separator dla czytelności
     songTotal = collection.count_songs()
+    result["active"]=songTotal
     print(collection.count_songs())
     print(f"{sep2}")  # Separator dla czytelności
 
@@ -460,6 +472,7 @@ def build_songbook():
 
     print(f"{sep3}Ile piosenek jest na liście archiwalnej?{sep3}")  # Separator dla czytelności
     a_songTotal = arch_collection.count_songs()
+    result["archive"]=a_songTotal
     print(a_songTotal)
     print(f"{sep2}")  # Separator dla czytelności
 
@@ -496,6 +509,7 @@ def build_songbook():
 
     print(f"{sep3}Ile piosenek jest na liście testowej?{sep3}")  # Separator dla czytelności
     n_songTotal = test_collection.count_songs()
+    result["test"]=n_songTotal
     print(n_songTotal)
     print(f"{sep2}")  # Separator dla czytelności
 
@@ -509,8 +523,11 @@ def build_songbook():
     generate_song_html(test_collection, directory2, 'song_hidden.html')
     t_list_name = "test"  # zmienic ten fragment na test_list i zaimplementować w html
     generate_song_list_html(test_collection, directory2, 'songs_hidden.html',  t_list_name)
+    result["success"]="True"
+    return result
 
 if __name__=="__main__":
-    build_songbook()
+    result=build_songbook()
+    print('\nWYNIK BUILD:')
+    print(result)
 
-    
