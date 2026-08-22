@@ -3,6 +3,20 @@ import main_generator
 import threading
 import subprocess
 
+# =========================
+# ILO SONGBOOK – COLOR THEME
+# =========================
+
+BG_COLOR = "#08090B"
+PANEL_COLOR = "#111316"
+BUTTON_COLOR = "#0B0D0F"
+
+NEON_RED = "#E52B32"
+NEON_RED_DARK = "#64171B"
+
+TEXT_MAIN = "#F0F0F0"
+TEXT_SECONDARY = "#A8A8A8"
+
 
 def get_git_status():
     result = subprocess.run(
@@ -29,9 +43,11 @@ def run_git_command(command):
     return result.stdout.strip()
 
 def update_songbook():
-    update_button.configure(
-        state="disabled",
-        text="⏳  BUDUJĘ ŚPIEWNIK..."
+    set_dual_button(
+        update_button,
+        "⏳ BUILDING SONGBOOK...", 
+        " Buduję śwpiewnik...",
+        enabled=False
     )
 
     status_label.configure(
@@ -69,9 +85,10 @@ def run_build():
 
 
 def show_build_result(result):
-    update_button.configure(
-        state="normal",
-        text="🔄  AKTUALIZUJ ŚPIEWNIK"
+    set_dual_button(update_button, 
+        "UPDATE SONGBOOK", 
+        "Aktualizuj śpiewnik", 
+        enabled=True
     )
     git_status = get_git_status()
 
@@ -103,10 +120,11 @@ def show_build_result(result):
 
 
 def show_build_error(error):
-    update_button.configure(
-        state="normal",
-        text="🔄  AKTUALIZUJ ŚPIEWNIK"
-    )
+    set_dual_button(update_button, 
+            "UPDATE SONGBOOK", 
+            "Aktualizuj śpiewnik", 
+            enabled=True
+        )
 
     status_label.configure(
         text="🔴 BŁĄD PODCZAS BUDOWANIA"
@@ -126,7 +144,10 @@ def show_git_changes():
 
     report_window = ctk.CTkToplevel(app)
     report_window.title("Zmiany w repozytorium")
-    report_window.geometry("600x400")
+    report_window.geometry("600x450")
+    report_window.transient(app)
+    report_window.grab_set()
+    report_window.focus_force()
 
     label = ctk.CTkLabel(
         report_window,
@@ -145,6 +166,20 @@ def show_git_changes():
     text_box.insert("1.0", message)
     text_box.configure(state="disabled")
 
+    ok_button = ctk.CTkButton(
+        report_window,
+        text="OK",
+        command=report_window.destroy,
+        width=150,
+        height=35,
+        fg_color=BUTTON_COLOR,
+        hover_color="#15171A",
+        border_color=NEON_RED,
+        border_width=2,
+        text_color=TEXT_MAIN
+    )
+    ok_button.pack(pady=15)
+
 def commit_and_push():
     git_status = get_git_status()
 
@@ -158,6 +193,10 @@ def commit_and_push():
     confirmation_window = ctk.CTkToplevel(app)
     confirmation_window.title("Potwierdzenie publikacji")
     confirmation_window.geometry("650x500")
+    confirmation_window.transient(app)
+    confirmation_window.grab_set()
+    confirmation_window.focus_force()
+
 
     title = ctk.CTkLabel(
         confirmation_window,
@@ -189,7 +228,12 @@ def commit_and_push():
             confirmation_window
         ),
         width=250,
-        height=45
+        height=45,
+        fg_color=BUTTON_COLOR,
+        hover_color="#15171A",
+        border_color=NEON_RED,
+        border_width=2,
+        text_color=TEXT_MAIN
     )
     confirm_button.pack(pady=15)
 
@@ -197,7 +241,12 @@ def commit_and_push():
         confirmation_window,
         text="ANULUJ",
         command=confirmation_window.destroy,
-        width=250
+        width=250,
+        fg_color=BUTTON_COLOR,
+        hover_color="#15171A",
+        border_color=NEON_RED,
+        border_width=2,
+        text_color=TEXT_MAIN
     )
     cancel_button.pack()
 
@@ -248,9 +297,10 @@ def show_git_message(title, message):
     )
     button.pack(pady=20)
 
+ctk.set_appearance_mode('dark')
 app = ctk.CTk()
 app.title("IloSongbook 2.1")
-app.geometry("600x400")
+app.geometry("600x550")
 
 
 title_label = ctk.CTkLabel(
@@ -260,31 +310,126 @@ title_label = ctk.CTkLabel(
 )
 title_label.pack(pady=40)
 
+def create_dual_button(parent, english, polish, command):
+    button = ctk.CTkFrame(
+        parent,
+        fg_color=BUTTON_COLOR,
+        border_color=NEON_RED,
+        border_width=2,
+        corner_radius=8,
+        width=280,
+        height=60
+    )
 
-update_button = ctk.CTkButton(
+    button.pack_propagate(False)
+
+    button.english_label = ctk.CTkLabel(
+        button,
+        text=english,
+        text_color=TEXT_MAIN,
+        font=("Arial", 16, "bold")
+    )
+    button.english_label.pack(pady=(7, 0))
+
+    button.polish_label = ctk.CTkLabel(
+        button,
+        text=polish,
+        text_color=TEXT_SECONDARY,
+        font=("Arial", 11, "italic")
+    )
+    button.polish_label.pack(pady=(0, 4))
+
+    button.enabled = True
+
+    def click(event):
+        if button.enabled:
+            command()
+
+
+    def hover_on(event):
+        if button.enabled:
+            button.configure(
+                border_color=NEON_RED,
+                fg_color="#15171A"
+            )
+
+
+    def hover_off(event):
+        if button.enabled:
+            button.configure(
+                border_color=NEON_RED_DARK,
+                fg_color=BUTTON_COLOR
+            )
+
+
+    button.bind("<Button-1>", click)
+    button.english_label.bind("<Button-1>", click)
+    button.polish_label.bind("<Button-1>", click)
+
+    button.bind("<Enter>", hover_on)
+    button.bind("<Leave>", hover_off)
+
+    button.english_label.bind("<Enter>", hover_on)
+    button.english_label.bind("<Leave>", hover_off)
+
+    button.polish_label.bind("<Enter>", hover_on)
+    button.polish_label.bind("<Leave>", hover_off)
+
+    return button
+
+def set_dual_button(button, english=None, polish=None, enabled=True):
+    button.enabled = enabled
+
+    if english is not None:
+        button.english_label.configure(text=english)
+
+    if polish is not None:
+        button.polish_label.configure(text=polish)
+
+    if enabled:
+        button.configure(
+            border_color=NEON_RED,
+            fg_color=BUTTON_COLOR
+        )
+        button.english_label.configure(
+            text_color=TEXT_MAIN
+        )
+        button.polish_label.configure(
+            text_color=TEXT_SECONDARY
+        )
+    else:
+        button.configure(
+            border_color=NEON_RED_DARK,
+            fg_color="#08090B"
+        )
+        button.english_label.configure(
+            text_color="#666666"
+        )
+        button.polish_label.configure(
+            text_color="#444444"
+        )
+
+update_button = create_dual_button(
     app,
-    text="🔄  AKTUALIZUJ ŚPIEWNIK",
-    command=update_songbook,
-    width=280,
-    height=50
+    "UPDATE SONGBOOK", 
+    "Aktualizuj śpiewnik",
+    update_songbook,
 )
 update_button.pack(pady=20)
 
-git_button = ctk.CTkButton(
+git_button = create_dual_button(
     app,
-    text="POKAŻ ZMIANY GIT",
-    command=show_git_changes,
-    width=280,
-    height=40
+    "SHOW GIT CHANGES",
+    "Pokaż zmiany Git",
+    show_git_changes
 )
 git_button.pack(pady=10)
 
-commit_button = ctk.CTkButton(
+commit_button = create_dual_button(
     app,
-    text="COMMIT & PUSH",
-    command=commit_and_push,
-    width=280,
-    height=40
+    "COMMIT & PUSH",
+    "Zapisz i opublikuj",
+    commit_and_push
 )
 commit_button.pack(pady=10)
 
