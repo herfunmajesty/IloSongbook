@@ -211,8 +211,8 @@ def perform_commit_and_push(window):
             ["git", "commit", "-m", commit_message]
         )
 
-        # run_git_command(["git", "push"])
-        print("TEST: tutaj nastąpił by git push")
+        run_git_command(["git", "push"])
+        # print("TEST: tutaj nastąpił by git push")
 
         window.destroy()
 
