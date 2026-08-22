@@ -293,7 +293,12 @@ def show_git_message(title, message):
         message_window,
         text="OK",
         command=message_window.destroy,
-        width=150
+        width=150,
+        fg_color=BUTTON_COLOR,
+        hover_color="#15171A",
+        border_color=NEON_RED,
+        border_width=2,
+        text_color=TEXT_MAIN
     )
     button.pack(pady=20)
 
