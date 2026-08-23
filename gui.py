@@ -391,7 +391,7 @@ def show_git_message(title, message):
 ctk.set_appearance_mode('dark')
 app = ctk.CTk()
 app.title("IloSongbook 2.1")
-app.geometry("600x650")
+app.geometry("600x700")
 
 
 title_label = ctk.CTkLabel(
