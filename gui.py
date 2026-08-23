@@ -2,6 +2,7 @@ import customtkinter as ctk
 import main_generator
 import threading
 import subprocess
+from pathlib import Path
 
 # =========================
 # ILO SONGBOOK – COLOR THEME
@@ -392,7 +393,10 @@ ctk.set_appearance_mode('dark')
 app = ctk.CTk()
 app.title("IloSongbook 2.1")
 app.geometry("600x700")
+app.iconbitmap ("icon.ico")
 
+icon_path = Path(__file__).resolve().parent / "icon.ico"
+app.iconbitmap(icon_path)
 
 title_label = ctk.CTkLabel(
     app,
