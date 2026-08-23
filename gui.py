@@ -63,7 +63,37 @@ def pull_latest():
 def has_local_changes():
     return bool(get_git_status())
 
+def start_pull_latest():
 
+    thread = threading.Thread(
+        target=run_pull_latest,
+        daemon=True
+    )
+
+    thread.start()
+
+
+def run_pull_latest():
+
+    try:
+        pull_latest()
+
+        app.after(
+            0,
+            show_git_message,
+            "✓ UPDATED / ZAKTUALIZOWANO",
+            "Repository is up to date.\n\n"
+            "Repozytorium jest aktualne."
+        )
+
+    except Exception as error:
+
+        app.after(
+            0,
+            show_git_message,
+            "🔴 UPDATE ERROR / BŁĄD AKTUALIZACJI",
+            str(error)
+        )
 
 def update_branch_info():
     branch = get_git_branch()
@@ -474,7 +504,7 @@ pull_button = create_dual_button (
     app,
     "GET LATEST VERSION",
     "Pobierz aktualną wersję",
-    pull_latest
+    start_pull_latest
 )
 pull_button.pack (pady=10)
 
