@@ -27,6 +27,13 @@ def get_git_status():
     )
     return result.stdout.strip()
 
+def get_git_branch():
+    result=subprocess.run(["git", "branch", "--show-current"], capture_output=True, text=True, encoding="utf-8")
+    return result.stdout.strip()
+
+def is_content_branch():
+    return get_git_branch()== "main"
+
 def run_git_command(command):
     result = subprocess.run(
         command,
@@ -41,6 +48,36 @@ def run_git_command(command):
         )
 
     return result.stdout.strip()
+
+def pull_latest():
+
+    if has_local_changes():
+        raise Exception(
+            "LOCAL CHANGES DETECTED / Wykryto lokalne zmiany\n\n"
+            "Finish or publish you current work before downloading updates.\n\n"
+            "Zakończ lub opublikuj bieżące zmiany przed pobraniem aktualizacji." 
+        )
+    run_git_command(["git", "fetch", "upstream"])
+    run_git_command(["git", "merge", "upstream/main"])
+
+def has_local_changes():
+    return bool(get_git_status())
+
+
+
+def update_branch_info():
+    branch = get_git_branch()
+
+    if branch == "main":
+        branch_label.configure(
+            text="● MAIN / GŁÓWNA GAŁĄŹ",
+            text_color=NEON_RED
+        )
+    else:
+        branch_label.configure(
+            text=f"⚠ {branch} / TRYB DEWELOPERSKI",
+            text_color="#C98A8A"
+        )
 
 def update_songbook():
     set_dual_button(
@@ -181,6 +218,22 @@ def show_git_changes():
     ok_button.pack(pady=15)
 
 def commit_and_push():
+
+    if not is_content_branch():
+        show_git_message(
+            "⚠ DEVELOPMENT BRANCH",
+            (
+                "You are not on the main branch.\n\n"
+                "This tool is intended for songbook content updates only.\n\n"
+                "Nie jesteś na głównej gałęzi.\n\n"
+                "To narzędzie służy wyłącznie do aktualizacji "
+                "treści śpiewnika.\n\n"
+                "For code changes, use a development branch "
+                "and merge it into main after testing."
+            )
+        )
+        return
+
     git_status = get_git_status()
 
     if not git_status:
@@ -280,6 +333,9 @@ def show_git_message(title, message):
     message_window = ctk.CTkToplevel(app)
     message_window.title(title)
     message_window.geometry("500x300")
+    message_window.transient(app)
+    message_window.grab_set()
+    message_window.focus_force()
 
     label = ctk.CTkLabel(
         message_window,
@@ -305,7 +361,7 @@ def show_git_message(title, message):
 ctk.set_appearance_mode('dark')
 app = ctk.CTk()
 app.title("IloSongbook 2.1")
-app.geometry("600x550")
+app.geometry("600x650")
 
 
 title_label = ctk.CTkLabel(
@@ -414,6 +470,14 @@ def set_dual_button(button, english=None, polish=None, enabled=True):
             text_color="#444444"
         )
 
+pull_button = create_dual_button (
+    app,
+    "GET LATEST VERSION",
+    "Pobierz aktualną wersję",
+    pull_latest
+)
+pull_button.pack (pady=10)
+
 update_button = create_dual_button(
     app,
     "UPDATE SONGBOOK", 
@@ -444,6 +508,22 @@ status_label = ctk.CTkLabel(
 )
 status_label.pack(pady=10)
 
+branch_label = ctk.CTkLabel(app, text="", font=("Arial", 12))
+branch_label.pack(pady=(0,5))
+
+scope_label = ctk.CTkLabel(
+    app,
+    text=(
+        "CONTENT TOOL / NARZĘDZIE DO OBSŁUGI TREŚCI\n"
+        "Use for songbook content updates only / "
+        "Służy wyłącznie do aktualizacji treści śpiewnika"
+    ),
+    text_color=TEXT_SECONDARY,
+    font=("Arial", 10, "italic"),
+    justify="center"
+)
+scope_label.pack(pady=(5, 10))
+
 
 details_label = ctk.CTkLabel(
     app,
@@ -451,5 +531,6 @@ details_label = ctk.CTkLabel(
 )
 details_label.pack(pady=10)
 
+update_branch_info()
 
 app.mainloop()
