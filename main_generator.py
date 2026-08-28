@@ -4,6 +4,9 @@ import datetime
 import shutil
 from jinja2 import Environment, FileSystemLoader
 
+from song_parser import parse_song_metadata
+from chord_processing import normalize_chord
+
 
 sep1 = "\n===================\n"
 sep2 = "\n-------------------\n"
@@ -79,19 +82,6 @@ def log_sequence(song_name, message):
     # Save  to external txt log
     with open("songbook_log.txt", "a", encoding='utf-8') as log_file:
         log_file.write(log_entry + "\n")
-
-
-def parse_song_metadata(text):
-    metadata_pattern = r"\{(.*?):(.*?)\}"  # scans for {} brackets
-    # and inside for the key before : and value after
-    metadata_matches = re.findall(metadata_pattern, text)
-    metadata_dict = {key.strip(): value.strip() for key, value in metadata_matches}
-    return metadata_dict
-
-
-def normalize_chord(chord):
-    # for creating a list of used chords, and then importing schemes
-    return chord.replace("\\", "").replace("/", "").replace("#", "sharp")
 
 
 def extract_chords(text, filename):
@@ -193,56 +183,68 @@ def check_title(song_name, string):
 
 def read_songs_from_folder(local_folder_path):  #
     songs = []
+
     for filename in os.listdir(local_folder_path):
         # print(f'==========\n{filename}\n============')
         if filename.endswith('.txt'):
             if not filename.startswith("_"):  # zostawiam tę część dla ignorowania templatki - zrobić jej update
                 print(f'Czytam {filename}')
-                with (open(os.path.join(local_folder_path, filename), 'r', encoding='utf-8') as loc_file):
-                    file_content = loc_file.read()
-                    metadata = parse_song_metadata(file_content)
-                    title = metadata.get('t')
-                    print(title)
-                    check_title(filename, title)
-                    new = True if '🔥' in metadata.get('t') else False
-                    # print(new)
-                    artist = metadata.get('artist')
-                    level = metadata.get('level')
-                    s_link = metadata.get('spotify')
-                    y_link = metadata.get('youtube')
-                    sticky = True
-                    # print (sticky)
-                    # Ustawienie wartości domyślnej dla czasu trwania na 4, jeśli nie jest podane
-                    duration = float(metadata.get('d', 4))
-                    # Remove the metadata from the content to get lyrics and chords
-                    lyrics_chords_content = re.sub(r"{.*?}", "", file_content)
-                    lyrics = lyrics_chords_content
-                    # remove_extra_empty_lines(lyrics)
-                    # Sprawdzanie i zamiana fraz w zawartości pliku
-                    for old, new in replacements.items():
-                        if old in lyrics_chords_content:
-                            lyrics = lyrics.replace(old, new)
-                            # lyrics = lyrics.replace("""[""", "<span class=\"chord\">[")
-                            # lyrics = lyrics.replace("""]""", "]</span>")
-                    lyrics=remove_extra_empty_lines(lyrics)
-                    ch_list = extract_chords(lyrics_chords_content, filename)
-                    print(ch_list)
-                    loc_song = Song(title, artist, level, s_link, y_link, lyrics, ch_list, duration, sticky)
-                    # po nadaniu obiektowu klasy html_namei l_tr nie tworzą się z automatu!
-                    html_name = loc_song.convert_name(loc_song.Title)
-                    l_tr = loc_song.convert_level(level)
-                    print(l_tr)
-                    if l_tr is None:
-                        print(f'Uwaga! w piosence {filename} coś jest nie tak z levelem')
-                        log_sequence(filename, f'Uwaga! w tej piosence coś jest nie tak z levelem, jest: {level}')
-                    loc_song = Song(title, artist, level, s_link, y_link, lyrics, ch_list, duration, sticky)
-                    print(f'Sprawdzenie poprawności 2: {title}, {html_name}, {level}, {l_tr}')
-                    songs.append(loc_song)
+                file_path = os.path.join(local_folder_path, filename)
+                file_content = read_song_file (file_path)
+                
+                
+                loc_song = process_song_file(file_content, filename)
+                songs.append(loc_song)
         else:
             log_sequence(filename, "Nazwa zaczyna się od _")
     # zapis do innego loga zrobić - że taka i taka piosenka się zaczytała
-    print(f'{sep3} I got all songs {sep3}')
+    print(f'{sep3} Ive got all songs {sep3}')
     return songs
+
+
+def read_song_file(file_path):
+    with open(file_path, 'r', encoding='utf-8') as loc_file:
+        return loc_file.read()
+
+def process_song_file(file_content, filename):
+    metadata = parse_song_metadata(file_content)
+    title = metadata.get('t')
+    print(title)
+    check_title(filename, title)
+    new = True if '🔥' in metadata.get('t') else False
+    # print(new)
+    artist = metadata.get('artist')
+    level = metadata.get('level')
+    s_link = metadata.get('spotify')
+    y_link = metadata.get('youtube')
+    sticky = True
+    # print (sticky)
+    # Ustawienie wartości domyślnej dla czasu trwania na 4, jeśli nie jest podane
+    duration = float(metadata.get('d', 4))
+    # Remove the metadata from the content to get lyrics and chords
+    lyrics_chords_content = re.sub(r"{.*?}", "", file_content)
+    lyrics = lyrics_chords_content
+    # remove_extra_empty_lines(lyrics)
+    # Sprawdzanie i zamiana fraz w zawartości pliku
+    for old, new in replacements.items():
+        if old in lyrics_chords_content:
+            lyrics = lyrics.replace(old, new)
+            # lyrics = lyrics.replace("""[""", "<span class=\"chord\">[")
+            # lyrics = lyrics.replace("""]""", "]</span>")
+    lyrics=remove_extra_empty_lines(lyrics)
+    ch_list = extract_chords(lyrics_chords_content, filename)
+    print(ch_list)
+    loc_song = Song(title, artist, level, s_link, y_link, lyrics, ch_list, duration, sticky)
+    # po nadaniu obiektowu klasy html_namei l_tr nie tworzą się z automatu!
+    html_name = loc_song.convert_name(loc_song.Title)
+    l_tr = loc_song.convert_level(level)
+    print(l_tr)
+    if l_tr is None:
+        print(f'Uwaga! w piosence {filename} coś jest nie tak z levelem')
+        log_sequence(filename, f'Uwaga! w tej piosence coś jest nie tak z levelem, jest: {level}')
+    loc_song = Song(title, artist, level, s_link, y_link, lyrics, ch_list, duration, sticky)
+
+    return loc_song
 
 
 def generate_index(out_dir):

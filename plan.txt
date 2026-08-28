@@ -1,0 +1,50 @@
+MAIN_GENERATOR
+│
+├── konfiguracja / stałe
+│
+├── model danych
+│   ├── Song (DO UPORZADKOWANIA, LOGIKA NEW NP, )
+│   └── SongCollection (podejrzane - własny iterator)
+│
+├── parsing 
+│   ├── metadata (parse_song_metadata)
+│   ├── chords (normalise_chords, extract_chords, logowanie do poprawy)
+│   └── lyrics (remove_extra_empty_lines - do poprwy, replacements)
+│
+├── validation
+│   ├── title (check title do poprawy)
+│   └── level
+│
+├── input / filesystem
+│   └── read_songs_from_folder ( robi rzeczy z 5 zakresów. parsowanie, validacja, transformacja, tworzenie obiektu i raportowanie. do popr: 1) liczenie new, 2) loc_song jakby tworzone dwa razy,3) html_name i l_tr sa liczone i tracone... 4) zmiana logiki new,) 
+│
+├── output / HTML (podejrzane: uzywają lokalnego environmentu a nie dostają env jako argumentu...)
+│   ├── index (generate_index)
+│   ├── song (generate_song)
+│   └── song lists (generate_song_list_html)
+│
+├── assets
+│   ├── copy folders (podejrzane)
+│   └── copy files
+│
+├── reporting / logging (log_sequence do poprawy, print song details, )
+│
+└── orchestration
+    └── build_songbook( warnings i errors inicjalizowane ale nie używane, błędy raportowane przez printy, succes dostaje string a nie bool)
+
+
+TXT
+ ↓
+metadata dict
+ ↓
+luźne zmienne
+ ↓
+lyrics/chords
+ ↓
+walidacja + side effects
+ ↓
+Song
+ ↓
+SongCollection
+ ↓
+HTML
