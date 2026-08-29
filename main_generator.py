@@ -235,15 +235,10 @@ def process_song_file(file_content, filename):
     ch_list = extract_chords(lyrics_chords_content, filename)
     print(ch_list)
     loc_song = Song(title, artist, level, s_link, y_link, lyrics, ch_list, duration, sticky)
-    # po nadaniu obiektowu klasy html_namei l_tr nie tworzą się z automatu!
-    html_name = loc_song.convert_name(loc_song.Title)
-    l_tr = loc_song.convert_level(level)
-    print(l_tr)
-    if l_tr is None:
+    
+    if loc_song.l_tr is None:
         print(f'Uwaga! w piosence {filename} coś jest nie tak z levelem')
         log_sequence(filename, f'Uwaga! w tej piosence coś jest nie tak z levelem, jest: {level}')
-    loc_song = Song(title, artist, level, s_link, y_link, lyrics, ch_list, duration, sticky)
-
     return loc_song
 
 
