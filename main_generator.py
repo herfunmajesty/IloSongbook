@@ -211,8 +211,6 @@ def process_song_file(file_content, filename):
     title = metadata.get('t')
     print(title)
     check_title(filename, title)
-    new = True if '🔥' in metadata.get('t') else False
-    # print(new)
     artist = metadata.get('artist')
     level = metadata.get('level')
     s_link = metadata.get('spotify')
@@ -221,6 +219,15 @@ def process_song_file(file_content, filename):
     # print (sticky)
     # Ustawienie wartości domyślnej dla czasu trwania na 4, jeśli nie jest podane
     duration = float(metadata.get('d', 4))
+    lyrics, ch_list = parse_song_content(file_content, filename)
+    loc_song = Song(title, artist, level, s_link, y_link, lyrics, ch_list, duration, sticky)
+    
+    if loc_song.l_tr is None:
+        print(f'Uwaga! w piosence {filename} coś jest nie tak z levelem')
+        log_sequence(filename, f'Uwaga! w tej piosence coś jest nie tak z levelem, jest: {level}')
+    return loc_song
+
+def parse_song_content (file_content, filename):
     # Remove the metadata from the content to get lyrics and chords
     lyrics_chords_content = re.sub(r"{.*?}", "", file_content)
     lyrics = lyrics_chords_content
@@ -234,12 +241,8 @@ def process_song_file(file_content, filename):
     lyrics=remove_extra_empty_lines(lyrics)
     ch_list = extract_chords(lyrics_chords_content, filename)
     print(ch_list)
-    loc_song = Song(title, artist, level, s_link, y_link, lyrics, ch_list, duration, sticky)
-    
-    if loc_song.l_tr is None:
-        print(f'Uwaga! w piosence {filename} coś jest nie tak z levelem')
-        log_sequence(filename, f'Uwaga! w tej piosence coś jest nie tak z levelem, jest: {level}')
-    return loc_song
+    return lyrics, ch_list
+
 
 
 def generate_index(out_dir):
