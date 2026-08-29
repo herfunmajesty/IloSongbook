@@ -1,13 +1,13 @@
 import os
-import re
+
 import datetime
 import shutil
 from jinja2 import Environment, FileSystemLoader
 
 from Song import Song
 from SongCollection import SongCollection
-from song_parser import parse_song_metadata, parse_song_content, process_song_file
-from chord_processing import normalize_chord, extract_chords
+from song_parser import process_song_file
+
 
 sep1 = "\n===================\n"
 sep2 = "\n-------------------\n"
