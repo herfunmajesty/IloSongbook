@@ -1,0 +1,75 @@
+{t:🔥Blister in the Sun}
+{artist:The Violent Femmes} 
+{level:Medium}
+{spotify:7jIAttgQTpLDoNtykIQXjH}
+{d:3}
+
+Info: 
+-strumming pattern from the intro (with chunks) repeats in verses
+-strumming pattern in chorus is different, chords last longer
+
+<s>(Intro)</s>
+[G] [C] [G] [C] 
+[G] [C] [G/] xx-xx 
+[G] [C] [G] [C] 
+[G] [C] [G/] xx-xx 
+
+<s>(Verse)</s>
+[G]When I’m out [C]wal-kin', [G]I strut my [C]stu-uff
+[G]Then I’m [C]so strung [G/]out
+I’m [G]high as a [C]ki-te, [G]I just [C]mi-ght
+[G]Stop to [C]check you [G/]out
+
+<s>(Chorus)</s>
+Let me go [Em]o-o-on
+Like I [C]blister in the sun
+Let me go [Em]o-o-on
+Big [C]hands I know you’re the [D]one [D]
+
+<s>(Verse)</s>
+[G]Body and [C]be-ats, [G]I stain my [C]she-ets,
+[G]I don’t [C]even know [G/]why
+[G]My [C]girlfrie-nd, [G]she’s at the [C]e-nd
+[G]She is [C]starting to [G/]cry
+
+<s>(Chorus)</s>
+Let me go [Em]o-o-on
+Like I [C]blister in the sun
+Let me go [Em]o-o-on
+Big [C]hands I know you’re the [D]one [D]
+
+<s>(Instrumental)</s>
+[G] [C] [G] [C] 
+[G] [C] [G/] xx-xx 
+[G] [C] [G] [C] 
+[G] [C] [G/] xx-xx 
+
+<s>(Verse)</s>
+<d>quietly</d>
+[G]When I’m out [C]wal-kin', [G]I strut my [C]stu-ff
+[G]Then I’m [C]so strung [G/]out
+I’m [G]high as a [C]ki-te, [G]I just [C]mi-ght
+[G]Stop to [C]check you [G/]out
+
+[G]Body and [C]be-ats, [G]I stain my [C]she-ets,
+[G]I don’t [C]even know [G/]why
+[G]My [C]girlfrie-nd, [G]she’s at the [C]e-nd
+[G]She is [C]starting to [G/]cry
+
+<s>(Verse)</s>
+<d>whisper</d>
+[G]When I’m out [C]wal-kin', [G]I strut my [C]stu-ff
+[G]Then I’m [C]so strung [G/]out
+I’m [G]high as a [C]ki-te, [G]I just [C]mi-ght
+[G]Stop to [C]check you [G/]out
+
+<s>(Chorus)</s>
+<d>loudly</d>
+Let me go [Em]o-o-on
+Like I [C]blister in the sun
+Let me go [Em]o-o-on
+Big [C]hands I know you’re the [D]one [D]
+[G] [C] [G] [C] 
+[G] [C] [G/] xx-xx 
+[G] [C] [G] [C] 
+[G] [C] [G/] xx-xx

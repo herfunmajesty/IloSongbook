@@ -1,4 +1,4 @@
-{t:🔥It's Raining Men}
+{t:It's Raining Men}
 {artist:The Weather Girls}
 {level:Medium}
 

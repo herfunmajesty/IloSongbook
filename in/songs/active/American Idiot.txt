@@ -1,5 +1,5 @@
 {spotify:6nTiIhLmQ3FWhvrGafw2zj}
-{t:🔥American Idiot}
+{t:American Idiot}
 {artist:Green Day}
 {level:Medium}
 

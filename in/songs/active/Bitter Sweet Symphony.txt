@@ -1,4 +1,4 @@
-{t:🔥Bitter Sweet Symphony}
+{t:Bitter Sweet Symphony}
 {artist:The Verve}
 {level:Easy}
 {spotify:57iDDD9N9tTWe75x6qhStw}

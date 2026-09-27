@@ -1,4 +1,4 @@
-{t:🔥Black}  
+{t:Black}  
 {artist:Pearl Jam}  
 {spotify:5Xak5fmy089t0FYmh3VJiY}  
 {level:Medium}

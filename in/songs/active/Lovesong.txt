@@ -1,5 +1,5 @@
 {spotify:2mIrfke7vosXAEWfz6ucyo}
-{t:🔥Lovesong}
+{t:Lovesong}
 {artist:The Cure}
 {level:Easy}
 
