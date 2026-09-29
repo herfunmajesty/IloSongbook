@@ -1,476 +1,586 @@
 <!doctype html>
-
 <html lang="en">
 <head>
-
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="description" content="">
 
 <link rel="icon" href="/images/icon.PNG" sizes="32x32" />
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-<title>Krakow Ukulele & Sing Tuesdays</title>
-    
+<title>Krakow Ukulele & Sing Tuesdays - 7th Anniversary</title>
+
 <style>
-.highlight {background-color: lemonchiffon; font-weight: bold;}
-.chord { font-weight: bold; color:red}
-ul { list-style: none; padding-left: 0px; }
-#options a {text-decoration: underline;}
-#songs a {text-decoration: none;}
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+.highlight { background-color: lemonchiffon; font-weight: bold; }
+.chord { font-weight: bold; color: red; }
+ul { list-style: none; padding-left: 0; }
+#options a { text-decoration: underline; }
+#songs a { text-decoration: none; }
+
 .montserrat-h3 {
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 300; /* Waga 300 odpowiada Montserrat Light */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
 }
-.toggle-button {
-	background-color: #eee;
-	border: 3px solid #ccc;
-	padding: 3px 5px;
-	margin-right: 5px;
-	cursor: pointer;
+
+/* --- Redesigned Pill-Style Toggle & Action Buttons --- */
+.custom-btn {
+    margin-bottom: 8px;
+    border: none;
+    border-radius: 999px;
+    padding: 8px 16px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
 }
+
+.custom-btn:hover {
+    filter: brightness(1.08);
+    transform: translateY(-1px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+}
+
+/* Base Filter Styles (Inactive State) */
+.btn-filter-easy {
+    background-color: #e8f5e9;
+    color: #198754;
+    border: 2px solid #198754;
+}
+.btn-filter-easy.active {
+    background: linear-gradient(135deg, #2ecc71, #198754);
+    color: #ffffff !important;
+    border-color: transparent;
+}
+
+.btn-filter-medium {
+    background-color: #fffde7;
+    color: #d97706;
+    border: 2px solid #ffc107;
+}
+.btn-filter-medium.active {
+    background: linear-gradient(135deg, #ffe082, #ffc107);
+    color: #212529 !important;
+    border-color: transparent;
+}
+
+.btn-filter-hard {
+    background-color: #ffebee;
+    color: #dc3545;
+    border: 2px solid #dc3545;
+}
+.btn-filter-hard.active {
+    background: linear-gradient(135deg, #ff7675, #dc3545);
+    color: #ffffff !important;
+    border-color: transparent;
+}
+
+.btn-filter-onlynew {
+    background-color: #e0f7fa;
+    color: #0891b2;
+    border: 2px solid #0dcaf0;
+}
+.btn-filter-onlynew.active {
+    background: linear-gradient(135deg, #67e8f9, #0dcaf0);
+    color: #0f172a !important;
+    border-color: transparent;
+}
+
+/* Sort Buttons */
+.btn-sort {
+    background-color: #f1f5f9;
+    color: #334155;
+    border: 2px solid #cbd5e1;
+}
+.btn-sort.active {
+    background: linear-gradient(135deg, #38bdf8, #2563eb);
+    color: #ffffff;
+    border-color: transparent;
+}
+
 .bold-text {
     font-weight: bold;
     font-style: normal; 
-	}
+}
 .italic-text {
-	font-style: italic;
+    font-style: italic;
     font-weight: normal;
-	}	
+}   
 .ultra-light {
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 200;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
 }
 
 .semi-bold {
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
 }
 .custom-text-h5 {
-			font-family: 'Montserrat', sans-serif;
-			font-size: 1.2rem
-}
-.btn-filter-easy:active, .btn-filter-easy.active{
-  color: black !important;
-  background-color: #198754 !important;
-  border-color: #198754 !important;
-}
-.btn-filter-easy:not(active){
-  color: #198754 !important;
-}
-.btn-filter-medium:active, .btn-filter-medium.active{
-  color: black !important;
-  background-color: #ffc107 !important;
-  border-color: #ffc107 !important;
-}
-.btn-filter-medium:not(active){
-  color: #ffc107 !important;
-}
-.btn-filter-hard:active, .btn-filter-hard.active{
-  color: black !important;
-  background-color: #dc3545 !important;
-  border-color: #dc3545 !important;
-}
-.btn-filter-hard:not(active){
-  color: #dc3545 !important;
-}
-.btn-filter-onlynew:active, .btn-filter-onlynew.active{
-  color: black !important;
-  background-color: #0dcaf0 !important;
-  border-color: #0dcaf0 !important;
-}
-.btn-filter-onlynew:not(active){
-  color: #0dcaf0 !important;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
 }
 
 .lucky-button {
-	margin-top: 10px;
-	border: none;
-	border-radius: 999px;
-	padding: 8px 14px;
-	background: linear-gradient(135deg, #ffe45e, #a855f7);
-	background-size: 220% 220%;
-	color: #231f20;
-	font-weight: 600;
-	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-	animation: luckyShift 7s ease-in-out infinite;
+    margin-top: 4px;
+    border: none;
+    border-radius: 999px;
+    padding: 8px 16px;
+    background: linear-gradient(135deg, #ffe45e, #a855f7);
+    background-size: 220% 220%;
+    color: #231f20;
+    font-weight: 600;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    animation: luckyShift 7s ease-in-out infinite;
+    width: 100%;
+    transition: transform 0.2s ease;
 }
 
 .lucky-button:hover {
-	filter: brightness(1.05);
+    filter: brightness(1.05);
+    transform: translateY(-1px);
 }
 
 @keyframes luckyShift {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
 .theme-toggle {
-	position: fixed;
-	top: 12px;
-	right: 12px;
-	z-index: 2000;
-	border: 1px solid #ced4da;
-	border-radius: 999px;
-	background-color: #ffffff;
-	color: #212529;
-	padding: 6px 12px;
-	font-size: 0.875rem;
+    position: fixed;
+    top: 12px;
+    right: 12px;
+    z-index: 2000;
+    border: 1px solid #ced4da;
+    border-radius: 999px;
+    background-color: #ffffff;
+    color: #212529;
+    padding: 6px 12px;
+    font-size: 0.875rem;
 }
 
 .theme-toggle:hover {
-	background-color: #f8f9fa;
+    background-color: #f8f9fa;
 }
 
 body {
-	background-color: #ffffff;
-	color: #212529;
+    background-color: #ffffff;
+    color: #212529;
+    overflow-x: hidden;
 }
 
 body.dark-mode {
-	background-color: #121212;
-	color: #f1f1f1;
+    background-color: #121212;
+    color: #f1f1f1;
 }
 
 body.dark-mode a {
-	color: #ff9a9a;
+    color: #ff9a9a;
 }
 
 body.dark-mode a:focus,
 body.dark-mode a:hover {
-	color: #ffffff;
+    color: #ffffff;
 }
 
-body.dark-mode .toggle-button,
-body.dark-mode .btn-outline-primary,
+body.dark-mode .custom-btn.btn-sort {
+    background-color: #1e293b;
+    color: #cbd5e1;
+    border-color: #475569;
+}
+
 body.dark-mode .theme-toggle {
-	background-color: #1f1f1f;
-	color: #f1f1f1;
-	border-color: #595959;
+    background-color: #1f1f1f;
+    color: #f1f1f1;
+    border-color: #595959;
 }
 
 body.dark-mode .lucky-button {
-	background: linear-gradient(135deg, #ffd84d, #b084ff);
-	background-size: 220% 220%;
-	color: #111111;
+    background: linear-gradient(135deg, #ffd84d, #b084ff);
+    background-size: 220% 220%;
+    color: #111111;
+}
+
+/* --- Clean Anniversary Header Text --- */
+.anniversary-header {
+    margin: 10px auto 20px auto;
+}
+
+.anniversary-title {
+    font-weight: 700;
+    color: #db2777;
+    letter-spacing: 0.5px;
+    margin-bottom: 0;
+    cursor: pointer;
+    user-select: none;
+    display: inline-block;
+}
+
+body.dark-mode .anniversary-title {
+    color: #f472b6;
+}
+
+/* --- Natural Petal Shower Animation --- */
+#petal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 9999;
+    overflow: hidden;
+    transition: opacity 0.4s ease;
+}
+
+#petal-container.off {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.petal {
+    position: absolute;
+    top: -10%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.85;
+    border-radius: 15px 0px 15px 0px;
+    will-change: transform;
+    animation: fall linear infinite;
+}
+
+/* Light Pink & Light Red Color Hues */
+.petal.light-pink {
+    background: linear-gradient(135deg, #fce7f3, #f472b6);
+}
+
+.petal.soft-rose {
+    background: linear-gradient(135deg, #fbcfe8, #f43f5e);
+}
+
+.petal.light-red {
+    background: linear-gradient(135deg, #ffe4e6, #f87171);
+}
+
+.petal.blush-pink {
+    background: linear-gradient(135deg, #fff1f2, #fda4af);
+}
+
+@keyframes fall {
+    0% {
+        top: -10%;
+        transform: translateX(0px) rotate(0deg);
+        opacity: 0.85;
+    }
+    50% {
+        opacity: 0.9;
+    }
+    100% {
+        top: 105%;
+        transform: translateX(var(--sway-x, 100px)) rotate(var(--sway-rot, 360deg));
+        opacity: 0.15;
+    }
 }
 </style>
-
 </head>
+
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-1NRMQRF4X2"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-1NRMQRF4X2');
 </script>
+
 <body>
+
+<div id="petal-container"></div>
+
 <button id="themeToggle" class="theme-toggle" type="button" aria-label="Switch to dark mode">☼</button>
 
-<header class="container">
-    <div class="m-2 mb-4 text-center">
-	<img id="siteLogo" src="images/ukulele-krakow-trans-light.png" data-light-logo="images/ukulele-krakow-trans-light.png" data-dark-logo="images/ukulele-krakow-trans-dark.png" class="img-fluid" alt="Krakow Ukulele" width="200">
+<header class="container text-center">
+    <div class="m-2 mb-2 text-center">
+        <img id="siteLogo" src="images/ukulele-krakow-trans-light.png" data-light-logo="images/ukulele-krakow-trans-light.png" data-dark-logo="images/ukulele-krakow-trans-dark.png" class="img-fluid" alt="Krakow Ukulele" width="200">
+    </div>
+    
+    <!-- Clean Anniversary Header (Clickable Toggle) -->
+    <div class="col-lg-8 col-md-10 col-sm-12 anniversary-header">
+        <h5 id="anniversaryTitle" class="anniversary-title" title="Click to toggle petal animation on/off"> Celebrating 7 Years of Strumming Together!</h5>
+    </div>
 </header>
 
 <div class="container">
 <div class="row justify-content-center">
     
-    <div id="list" class="col-lg-8 col-md-10 col-sm-12 my-3"> <!-- zachowania kontenerów dla różnych typów ekranów + margin-->
+    <div id="list" class="col-lg-8 col-md-10 col-sm-12 my-3">
 
-        <h4 class="semi-bold">Songbook</h4>
+        <h4 class="semi-bold mb-3">Songbook</h4>
         <div class="row row-cols-2">
             <div class="col-md-6">
                 <div>
-                    <h6 class="custom-text-h5">Filter</h6>
+                    <h6 class="custom-text-h5 mb-2">Filter</h6>
                     <form id="filter-form">
-						<div class="btn-group-vertical">
-							<button type="button" name="Easy" class="toggle-button btn btn-filter-easy filter-button">Easy</button>
-							<button type="button" name="Medium" class="toggle-button btn btn-filter-medium filter-button">Medium</button>
-							<button type="button" name="Hard" class="toggle-button btn btn-filter-hard filter-button">Hard</button>
-							<button type="button" name="New" class="toggle-button btn btn-filter-onlynew filter-button">🔥 New only</button>
-						</div>
-					</form>
+                        <div class="d-flex flex-column">
+                            <button type="button" name="Easy" class="custom-btn btn-filter-easy filter-button active">Easy</button>
+                            <button type="button" name="Medium" class="custom-btn btn-filter-medium filter-button active">Medium</button>
+                            <button type="button" name="Hard" class="custom-btn btn-filter-hard filter-button active">Hard</button>
+                            <button type="button" name="New" class="custom-btn btn-filter-onlynew filter-button">🔥 New only</button>
+                        </div>
+                    </form>
                 </div>
             </div>
-			<!--<div class="col-md-1">
-			</div>-->
+
             <div class="col-md-6 d-flex justify-content-end">
-                <div>
-                    <h6 class="custom-text-h5">Sort by</h6>
-						<div class="btn-group-vertical">
-							<button type="button" id="sortByTitle" class="toggle-button btn btn-outline-primary">  Titles  </button>
-							<button type="button" id="sortByArtist" class="toggle-button btn btn-outline-primary"> Artists </button>
-							<button type="button" id="luckyButton" class="lucky-button">I am feelin Lucky</button>
-						</div>
-						<div id="virtual-click-area" style="display: none; border: 2px solid red;"></div>
+                <div class="w-100">
+                    <h6 class="custom-text-h5 mb-2">Sort by</h6>
+                    <div class="d-flex flex-column">
+                        <button type="button" id="sortByTitle" class="custom-btn btn-sort active">Titles</button>
+                        <button type="button" id="sortByArtist" class="custom-btn btn-sort">Artists</button>
+                        <button type="button" id="luckyButton" class="lucky-button">I am feeling Lucky</button>
+                    </div>
                 </div>
             </div>
-			
         </div>
-		<!-- <div id="infoBox" style="position: fixed; right: 20px; top: 20px; border: 1px solid black; padding: 10px;">
-			<p id="sorting method" style="font-size: xx-small;"></p>
-		</div> 
-		Robocze elementy do sprawdzania trybu sortowania 
-		-->
-		<!--<p id="sorting method"></p>-->
-		
-		
-        <div class="mt-2">
-			<h6>Songs</h6>
-			<ul id="songs">
-				{% for song in songs %}
-					<li>
-						<a href="{{song.html_name}}.html" name="{{song.Number}}">
-						{{song.Number}} - {{song.Title}} - 
-						</a>
-						<small>
-							<em> {{song.Artist}} -	</em> 
-						</small>
-						<span class="text-{{song.l_tr}}" >
-							<small><b>{{song.Level}}</b></small>
-						</span>
-					</li>
-				{% endfor %}
-			</ul>
-		</div>
+        
+        <div class="mt-4">
+            <h6>Songs</h6>
+            <ul id="songs">
+                {% for song in songs %}
+                    <li>
+                        <a href="{{song.html_name}}.html" name="{{song.Number}}">
+                        {{song.Number}} - {{song.Title}} - 
+                        </a>
+                        <small>
+                            <em> {{song.Artist}} - </em> 
+                        </small>
+                        <span class="text-{{song.l_tr}}" >
+                            <small><b>{{song.Level}}</b></small>
+                        </span>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
        
     </div>
 
     <hr/>
-			
+            
     <div class="m-2 my-4 text-center">
         <img src="/images/qrcode.png" class="img-fluid" alt="QR Code" width="200">
     </div>
-	<!--<div class="m-2 my-4 text-center"><li><a href="archive/archive.html">Archiwum</a></li>
-	<li><a href="new/test.html">Test</a></li>
-	</div>-->
-
 
 </div>
 </div>
 
+<script>
+    // Theme Switcher (No storage)
+    (function() {
+        const toggleButton = document.getElementById('themeToggle');
+        const logo = document.getElementById('siteLogo');
 
-<script> // Filtry poziomu
-	(function() {
-		var key = 'ilo-theme';
-		var toggleButton = document.getElementById('themeToggle');
-		var logo = document.getElementById('siteLogo');
+        function applyTheme(isDark) {
+            document.body.classList.toggle('dark-mode', isDark);
+            toggleButton.textContent = isDark ? '☾' : '☼';
+            toggleButton.setAttribute('aria-label', isDark ? 'Switch to light mode' : 'Switch to dark mode');
+            if (logo) {
+                logo.src = isDark ? logo.dataset.darkLogo : logo.dataset.lightLogo;
+            }
+        }
 
-		function applyTheme(theme) {
-			var isDark = theme === 'dark';
-			document.body.classList.toggle('dark-mode', isDark);
-			toggleButton.textContent = isDark ? '☾' : '☼';
-			toggleButton.setAttribute('aria-label', isDark ? 'Switch to light mode' : 'Switch to dark mode');
-			if (logo) {
-				logo.src = isDark ? logo.dataset.darkLogo : logo.dataset.lightLogo;
-			}
-			localStorage.setItem(key, isDark ? 'dark' : 'light');
-		}
+        toggleButton.addEventListener('click', function() {
+            applyTheme(!document.body.classList.contains('dark-mode'));
+        });
+    })();
 
-		var savedTheme = localStorage.getItem(key);
-		applyTheme(savedTheme === 'dark' ? 'dark' : 'light');
+    // Petal Shower Animation
+    function setupPetalShower() {
+        const container = document.getElementById('petal-container');
+        const titleButton = document.getElementById('anniversaryTitle');
+        if (!container || !titleButton) return;
 
-		toggleButton.addEventListener('click', function() {
-			applyTheme(document.body.classList.contains('dark-mode') ? 'light' : 'dark');
-		});
-	})();
+        let petalsEnabled = true;
 
-	document.addEventListener('DOMContentLoaded', () => {
-		setupFilterButtons();
-		setupSortingButtons();
-		setupLuckyButton();
-	});
+        function createPetals() {
+            container.innerHTML = '';
+            const colors = ['light-pink', 'soft-rose', 'light-red', 'blush-pink'];
+            const petalCount = 32;
+            const fragment = document.createDocumentFragment();
 
-	function setupLuckyButton() {
-		const luckyButton = document.getElementById('luckyButton');
-		const songsList = document.getElementById('songs');
+            for (let i = 0; i < petalCount; i++) {
+                const petal = document.createElement('div');
+                const randomColor = colors[Math.floor(Math.random() * colors.length)];
+                const size = Math.random() * 10 + 10;
+                const duration = Math.random() * 6 + 6;
 
-		if (!luckyButton || !songsList) {
-			return;
-		}
+                petal.classList.add('petal', randomColor);
+                petal.style.width = `${size}px`;
+                petal.style.height = `${size * 1.3}px`;
+                petal.style.left = `${Math.random() * 100}vw`;
 
-		luckyButton.addEventListener('click', () => {
-			const visibleSongs = Array.from(songsList.querySelectorAll('li')).filter(song => {
-				return song.style.display !== 'none';
-			});
+                petal.style.animationDuration = `${duration}s`;
+                petal.style.animationDelay = `-${Math.random() * duration}s`;
 
-			if (visibleSongs.length === 0) {
-				alert('No songs match the current filter.');
-				return;
-			}
+                const swayX = (Math.random() - 0.5) * 260;
+                const swayRot = Math.random() * 540 + 180;
+                petal.style.setProperty('--sway-x', `${swayX}px`);
+                petal.style.setProperty('--sway-rot', `${swayRot}deg`);
 
-			const randomIndex = Math.floor(Math.random() * visibleSongs.length);
-			const selectedSong = visibleSongs[randomIndex].querySelector('a');
+                fragment.appendChild(petal);
+            }
 
-			if (selectedSong && selectedSong.getAttribute('href')) {
-				window.location.href = selectedSong.getAttribute('href');
-			}
-		});
-	}
+            container.appendChild(fragment);
+        }
 
-	function setupFilterButtons(){
-		const filterButtons = document.querySelectorAll('.filter-button');
-		const savedState = JSON.parse(sessionStorage.getItem('buttonState'));
-		const songsList = document.getElementById('songs'); // ID listy piosenek
-		console.log('Zachowane stany przyciskow: ', savedState); 
-		if (savedState === null) {//sprawdza czy ma zapamiętane stany z tej sesji
-			// Jesli savedState jest null, oznacz wszystkie przyciski jako aktywne
-			filterButtons.forEach(button => {
-				if (button.name !== 'New') {
-					button.classList.add('active');
-				}
-			});
-		} else {
-			// W przeciwnym razie odczytaj stan przyciskow z sessionStorage
-			filterButtons.forEach(button => { 
-				if (button.name !== 'New') { //zapamiętujemy stan tylko dla leveli - dla New nie chcę
-					if (savedState.includes(button.name)) {
-						button.classList.add('active');
-					}
-				}
-			});
-		}
-		filterSongs(); //odpala filtrowanie z uzględnieniem setupu przycisków
-		filterButtons.forEach(button => {
-			// Dla przyciskow wszystkich bez wyjatku
-			button.addEventListener('touchend', () => { //nasłuchiwacz dotknięcia na urządzeniach dotykowych
-			    changeFilterButtonState(button);
-			});
-			button.addEventListener('click', () => { //kliknięcia myszką
-				changeFilterButtonState(button);
-			});
-		});
-		filterButtons.forEach(button => {
-			console.log(`Przycisk "${button.name}" jest ${button.classList.contains('active') ? 'aktywny' : 'nieaktywny'}`);
-		});
-		function changeFilterButtonState(button){
-				event.preventDefault(); //blokada zachowania domyślnego aby móc wykonać swoje akcje
-				button.classList.toggle('active'); //zmiana klasy 
-				console.log('zmiana stany przyciskow: ', button.name);
-				filterSongs(); //odpalenie filtrowania
-				saveButtonState(); //zapamiętanie stanu
-				// document.getElementById('virtual-click-area').click();
-		}
-		function saveButtonState() {
-			const activeButtons = Array.from(filterButtons).filter(btn => btn.classList.contains('active'));
-			sessionStorage.setItem('buttonState', JSON.stringify(activeButtons.map(btn => btn.name)));
-		}
-		function filterSongs() { //filtrowanie własciwe
-			const activeButtons = document.querySelectorAll('.toggle-button.active'); //spr które aktywne
-			console.log("Aktywne przyciski: ", activeButtons);
-			const allSongs = songsList.querySelectorAll('li'); // wrzuca liste piosenek do zmiennej
+        function updatePetalState() {
+            if (petalsEnabled) {
+                if (!container.children.length) createPetals();
+                container.classList.remove('off');
+            } else {
+                container.classList.add('off');
+            }
+        }
 
-			allSongs.forEach(song => {
-				const level = song.querySelector('span small b').textContent; //level w liscie danych jest w takim selektorze
-				var shouldDisplay = Array.from(activeButtons).some(btn => btn.name === level); // spr czy kótryś z aktywnych przycisków ma taką nazwę jak level danej piosenki
-				song.style.display = shouldDisplay ? 'block' : 'none'; //jeśli tak to block=widoczna a none nie
-				activeButtons.forEach(button => {
-					if (button.name === 'New') {
-						const title = song.querySelector('a').textContent;
-						shouldDisplay = title.includes('🔥'); // piosenka jest nowa jesli ma w nazwie fajer
-						if (song.style.display === 'block'){ //czyli jeśli piosenka jest nowa i już jest wyświetlona (odfiltrowane) to wyświetlaj, 
-							song.style.display = shouldDisplay ? 'block' : 'none';}
-					}
-				});
-			});
-		}
-	}
+        titleButton.addEventListener('click', () => {
+            petalsEnabled = !petalsEnabled;
+            updatePetalState();
+        });
 
-	function setupSortingButtons(){
-		const songsList = document.getElementById('songs'); // ID twojej listy piosenek
+        updatePetalState();
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        setupFilterButtons();
+        setupSortingButtons();
+        setupLuckyButton();
+        setupPetalShower();
+    });
+
+    function setupLuckyButton() {
+        const luckyButton = document.getElementById('luckyButton');
+        const songsList = document.getElementById('songs');
+
+        if (!luckyButton || !songsList) return;
+
+        luckyButton.addEventListener('click', () => {
+            const visibleSongs = Array.from(songsList.querySelectorAll('li')).filter(song => song.style.display !== 'none');
+
+            if (visibleSongs.length === 0) {
+                alert('No songs match the current filter.');
+                return;
+            }
+
+            const randomIndex = Math.floor(Math.random() * visibleSongs.length);
+            const selectedSong = visibleSongs[randomIndex].querySelector('a');
+
+            if (selectedSong && selectedSong.getAttribute('href')) {
+                window.location.href = selectedSong.getAttribute('href');
+            }
+        });
+    }
+
+    function setupFilterButtons() {
+        const filterButtons = document.querySelectorAll('.filter-button');
+        const songsList = document.getElementById('songs');
+
+        filterSongs();
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', (e) => {
+                e.preventDefault();
+                button.classList.toggle('active');
+                filterSongs();
+            });
+        });
+
+        function filterSongs() {
+            const activeButtons = document.querySelectorAll('.filter-button.active');
+            const allSongs = songsList.querySelectorAll('li');
+
+            allSongs.forEach(song => {
+                const levelElem = song.querySelector('span small b');
+                if (!levelElem) return;
+                
+                const level = levelElem.textContent;
+                let shouldDisplay = Array.from(activeButtons).some(btn => btn.name === level);
+
+                activeButtons.forEach(button => {
+                    if (button.name === 'New') {
+                        const title = song.querySelector('a').textContent;
+                        if (shouldDisplay) {
+                            shouldDisplay = title.includes('🔥');
+                        }
+                    }
+                });
+
+                song.style.display = shouldDisplay ? 'block' : 'none';
+            });
+        }
+    }
+
+    function setupSortingButtons() {
+        const songsList = document.getElementById('songs');
         const sortByTitleButton = document.getElementById('sortByTitle');
         const sortByArtistButton = document.getElementById('sortByArtist');
-		const myArtElements = document.querySelectorAll('.my-art'); // Znajdź wszystkie elementy o klasie "my-art"
-		const myLevElements = document.querySelectorAll('.my-lev'); // Znajdź wszystkie elementy o klasie "my-lev"
-		//sortByTitleButton.checked = true; // Zaznacz pole wyboru
-		// Wylacz przycisk "Sort by Artist" na poczatku
-           	// sortByArtistButton.classList.remove('active');
-		sortByTitleButton.classList.add('active');// - domyślne sortowanie po tytułach
 
-        sortByTitleButton.addEventListener('click', () => { // jeśli kliknąć title:
+        if (!songsList || !sortByTitleButton || !sortByArtistButton) return;
+
+        sortByTitleButton.addEventListener('click', () => {
             sortByTitle();
-            sortByArtistButton.classList.remove('active'); // Wylacz drugi przycisk
-            sortByTitleButton.classList.add('active'); // Zaznacz pierwszy przycisk
-			var s_variant=true;
-			// Aktualizuj wartości w infoBox ROBOCZO
-			//document.getElementById('sorting method').textContent = 'sort by title: ' + s_variant;
+            sortByArtistButton.classList.remove('active');
+            sortByTitleButton.classList.add('active');
         });
 
         sortByArtistButton.addEventListener('click', () => {
             sortByArtist();
-            sortByTitleButton.classList.remove('active'); // Wy艂膮cz pierwszy przycisk
-            sortByArtistButton.classList.add('active'); // Zaznacz drugi przycisk
-			s_variant=false;
-			// Aktualizuj wartości w infoBox ROBOCZO
-			//document.getElementById('sorting method').textContent = 'sort by title: ' + s_variant;
+            sortByTitleButton.classList.remove('active');
+            sortByArtistButton.classList.add('active');
         });
-		
-        function sortByTitle() {
-			const sortedSongs = Array.from(songsList.querySelectorAll('li')) // pobieram listę piosenek
-            .sort((a, b) => {
-				// Pobierz nazwe z atrybutu href
-				var nameA = a.querySelector('a').getAttribute('href');
-				var nameB = b.querySelector('a').getAttribute('href');
-				nameA = nameA.replace(/^🔥/i, '');//ignor ikon
-				nameB = nameB.replace(/^🔥/i, '');
-				nameA = nameA.replace(/^🎂/i, '');
-				nameB = nameB.replace(/^🎂/i, '');
-				// Porównaj nazwy
-				return nameA.localeCompare(nameB);
 
-				
+        function sortByTitle() {
+            const sortedSongs = Array.from(songsList.querySelectorAll('li')).sort((a, b) => {
+                let nameA = a.querySelector('a').getAttribute('href') || '';
+                let nameB = b.querySelector('a').getAttribute('href') || '';
+                nameA = nameA.replace(/^🔥/i, '').replace(/^🎂/i, '');
+                nameB = nameB.replace(/^🔥/i, '').replace(/^🎂/i, '');
+                return nameA.localeCompare(nameB);
             });
-			songsList.innerHTML = ''; // Wyczysc liste
-			sortedSongs.forEach(song => songsList.appendChild(song));
-			
-			var allLiElements = document.querySelectorAll('li'); // Pobierz wszystkie elementy <li>. Uwaga! nie może istnieć inny element typu <li>
-			allLiElements.forEach(function (myLi) {
-				var EmElement = myLi.querySelector('em'); 
-				var anchorElement = myLi.querySelector('a'); // Pobierz element <a>
-				myLi.insertBefore(anchorElement, EmElement); // Przenieś element small em przed elementem <a>
-			});
+
+            songsList.innerHTML = '';
+            sortedSongs.forEach(song => {
+                const emElem = song.querySelector('em');
+                const anchorElem = song.querySelector('a');
+                if (emElem && anchorElem) {
+                    song.insertBefore(anchorElem, emElem);
+                }
+                songsList.appendChild(song);
+            });
         }
 
         function sortByArtist() {
-			const sortedSongs = Array.from(songsList.querySelectorAll('li'))
-				.sort((a, b) => {
-					var artistA = a.querySelector('em').textContent;
-					artistA = artistA.replace(/^\s*The\s+/i, ''); //usuwanie śmieci napotrzeby sotowania
-					artistA = artistA.replace(/^\s+/, ''); 
-					//console.log('artistA : ', artistA);
-					
-					var artistB = b.querySelector('em').textContent;
-					artistB = artistB.replace(/^\s*The\s+/i, '');
-					artistB = artistB.replace(/^\s+/, '');
-					//console.log('artistB : ', artistB);
-					
+            const sortedSongs = Array.from(songsList.querySelectorAll('li')).sort((a, b) => {
+                let artistA = a.querySelector('em')?.textContent || '';
+                let artistB = b.querySelector('em')?.textContent || '';
+                artistA = artistA.replace(/^\s*The\s+/i, '').trim();
+                artistB = artistB.replace(/^\s*The\s+/i, '').trim();
+                return artistA.localeCompare(artistB, 'en', { sensitivity: 'base' });
+            });
 
-					return artistA.localeCompare(artistB, 'en', { sensitivity: 'base' });
-				});
-			songsList.innerHTML = ''; // Wyczysc liste
-			sortedSongs.forEach(song => songsList.appendChild(song));
-			
-			var allLiElements = document.querySelectorAll('li'); // Pobierz wszystkie elementy <li>
-			allLiElements.forEach(function(myLi, index) {
-				var SmallEmElement = myLi.querySelector('em');
-				//console.log(`Iteracja ${index}:`, SmallEmElement);
-				//console.log(`Iteracja ${index}:`, myLi.querySelector('a'));
-
-				myLi.insertBefore(SmallEmElement, myLi.querySelector('a')); // przestawianie szyku
-			});
-		}
-	}
+            songsList.innerHTML = '';
+            sortedSongs.forEach(song => {
+                const emElem = song.querySelector('em');
+                const anchorElem = song.querySelector('a');
+                if (emElem && anchorElem) {
+                    song.insertBefore(emElem, anchorElem);
+                }
+                songsList.appendChild(song);
+            });
+        }
+    }
 </script>
 </body>
 </html>
