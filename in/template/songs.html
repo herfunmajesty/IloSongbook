@@ -310,7 +310,7 @@ body.dark-mode .anniversary-title {
     
     <!-- Clean Anniversary Header (Clickable Toggle) -->
     <div class="col-lg-8 col-md-10 col-sm-12 anniversary-header">
-        <h5 id="anniversaryTitle" class="anniversary-title" title="Click to toggle petal animation on/off"> Celebrating 7 Years of Strumming Together!</h5>
+        <h5 id="anniversaryTitle" class="anniversary-title" title="Click to toggle petal animation on/off">Celebrating 7 Years of Strumming Together!</h5>
     </div>
 </header>
 
@@ -351,7 +351,7 @@ body.dark-mode .anniversary-title {
             <h6>Songs</h6>
             <ul id="songs">
                 {% for song in songs %}
-                    <li>
+                    <li data-title="{{song.Title}}" data-artist="{{song.Artist}}" data-level="{{song.Level}}">
                         <a href="{{song.html_name}}.html" name="{{song.Number}}">
                         {{song.Number}} - {{song.Title}} - 
                         </a>
@@ -453,12 +453,100 @@ body.dark-mode .anniversary-title {
         updatePetalState();
     }
 
-    document.addEventListener('DOMContentLoaded', () => {
-        setupFilterButtons();
-        setupSortingButtons();
-        setupLuckyButton();
-        setupPetalShower();
-    });
+    // Shared Filtering Logic
+    function filterSongs() {
+        const songsList = document.getElementById('songs');
+        if (!songsList) return;
+
+        const activeButtons = document.querySelectorAll('.filter-button.active');
+        const activeNames = Array.from(activeButtons).map(b => b.name);
+        const allSongs = songsList.querySelectorAll('li');
+
+        allSongs.forEach(song => {
+            // Get level from data attribute or fallback to DOM text
+            let level = song.getAttribute('data-level');
+            if (!level) {
+                const bTag = song.querySelector('span small b');
+                level = bTag ? bTag.textContent.trim() : '';
+            }
+
+            let shouldDisplay = activeNames.includes(level);
+
+            // Handle "New" Filter
+            if (activeNames.includes('New')) {
+                const titleText = song.querySelector('a')?.textContent || '';
+                if (shouldDisplay) {
+                    shouldDisplay = titleText.includes('🔥');
+                }
+            }
+
+            song.style.display = shouldDisplay ? 'block' : 'none';
+        });
+    }
+
+    function setupFilterButtons() {
+        const filterButtons = document.querySelectorAll('.filter-button');
+
+        filterSongs();
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', (e) => {
+                e.preventDefault();
+                button.classList.toggle('active');
+                filterSongs();
+            });
+        });
+    }
+
+    function setupSortingButtons() {
+        const songsList = document.getElementById('songs');
+        const sortByTitleButton = document.getElementById('sortByTitle');
+        const sortByArtistButton = document.getElementById('sortByArtist');
+
+        if (!songsList || !sortByTitleButton || !sortByArtistButton) return;
+
+        sortByTitleButton.addEventListener('click', () => {
+            sortListBy('title');
+            sortByArtistButton.classList.remove('active');
+            sortByTitleButton.classList.add('active');
+            filterSongs();
+        });
+
+        sortByArtistButton.addEventListener('click', () => {
+            sortListBy('artist');
+            sortByTitleButton.classList.remove('active');
+            sortByArtistButton.classList.add('active');
+            filterSongs();
+        });
+
+        function sortListBy(type) {
+            const items = Array.from(songsList.children);
+
+            items.sort((a, b) => {
+                let valA = '';
+                let valB = '';
+
+                if (type === 'title') {
+                    valA = a.getAttribute('data-title') || a.querySelector('a')?.textContent || '';
+                    valB = b.getAttribute('data-title') || b.querySelector('a')?.textContent || '';
+                } else if (type === 'artist') {
+                    valA = a.getAttribute('data-artist') || a.querySelector('em')?.textContent || '';
+                    valB = b.getAttribute('data-artist') || b.querySelector('em')?.textContent || '';
+                }
+
+                // Clean prefixes for sorting
+                valA = valA.replace(/^[🔥🎂\s\-\:]+/, '').replace(/^The\s+/i, '').trim();
+                valB = valB.replace(/^[🔥🎂\s\-\:]+/, '').replace(/^The\s+/i, '').trim();
+
+                return valA.localeCompare(valB, 'en', { sensitivity: 'base' });
+            });
+
+            // Re-append sorted elements
+            const fragment = document.createDocumentFragment();
+            items.forEach(item => fragment.appendChild(item));
+            songsList.appendChild(fragment);
+        }
+    }
 
     function setupLuckyButton() {
         const luckyButton = document.getElementById('luckyButton');
@@ -483,104 +571,12 @@ body.dark-mode .anniversary-title {
         });
     }
 
-    function setupFilterButtons() {
-        const filterButtons = document.querySelectorAll('.filter-button');
-        const songsList = document.getElementById('songs');
-
-        filterSongs();
-
-        filterButtons.forEach(button => {
-            button.addEventListener('click', (e) => {
-                e.preventDefault();
-                button.classList.toggle('active');
-                filterSongs();
-            });
-        });
-
-        function filterSongs() {
-            const activeButtons = document.querySelectorAll('.filter-button.active');
-            const allSongs = songsList.querySelectorAll('li');
-
-            allSongs.forEach(song => {
-                const levelElem = song.querySelector('span small b');
-                if (!levelElem) return;
-                
-                const level = levelElem.textContent;
-                let shouldDisplay = Array.from(activeButtons).some(btn => btn.name === level);
-
-                activeButtons.forEach(button => {
-                    if (button.name === 'New') {
-                        const title = song.querySelector('a').textContent;
-                        if (shouldDisplay) {
-                            shouldDisplay = title.includes('🔥');
-                        }
-                    }
-                });
-
-                song.style.display = shouldDisplay ? 'block' : 'none';
-            });
-        }
-    }
-
-    function setupSortingButtons() {
-        const songsList = document.getElementById('songs');
-        const sortByTitleButton = document.getElementById('sortByTitle');
-        const sortByArtistButton = document.getElementById('sortByArtist');
-
-        if (!songsList || !sortByTitleButton || !sortByArtistButton) return;
-
-        sortByTitleButton.addEventListener('click', () => {
-            sortByTitle();
-            sortByArtistButton.classList.remove('active');
-            sortByTitleButton.classList.add('active');
-        });
-
-        sortByArtistButton.addEventListener('click', () => {
-            sortByArtist();
-            sortByTitleButton.classList.remove('active');
-            sortByArtistButton.classList.add('active');
-        });
-
-        function sortByTitle() {
-            const sortedSongs = Array.from(songsList.querySelectorAll('li')).sort((a, b) => {
-                let nameA = a.querySelector('a').getAttribute('href') || '';
-                let nameB = b.querySelector('a').getAttribute('href') || '';
-                nameA = nameA.replace(/^🔥/i, '').replace(/^🎂/i, '');
-                nameB = nameB.replace(/^🔥/i, '').replace(/^🎂/i, '');
-                return nameA.localeCompare(nameB);
-            });
-
-            songsList.innerHTML = '';
-            sortedSongs.forEach(song => {
-                const emElem = song.querySelector('em');
-                const anchorElem = song.querySelector('a');
-                if (emElem && anchorElem) {
-                    song.insertBefore(anchorElem, emElem);
-                }
-                songsList.appendChild(song);
-            });
-        }
-
-        function sortByArtist() {
-            const sortedSongs = Array.from(songsList.querySelectorAll('li')).sort((a, b) => {
-                let artistA = a.querySelector('em')?.textContent || '';
-                let artistB = b.querySelector('em')?.textContent || '';
-                artistA = artistA.replace(/^\s*The\s+/i, '').trim();
-                artistB = artistB.replace(/^\s*The\s+/i, '').trim();
-                return artistA.localeCompare(artistB, 'en', { sensitivity: 'base' });
-            });
-
-            songsList.innerHTML = '';
-            sortedSongs.forEach(song => {
-                const emElem = song.querySelector('em');
-                const anchorElem = song.querySelector('a');
-                if (emElem && anchorElem) {
-                    song.insertBefore(emElem, anchorElem);
-                }
-                songsList.appendChild(song);
-            });
-        }
-    }
+    document.addEventListener('DOMContentLoaded', () => {
+        setupFilterButtons();
+        setupSortingButtons();
+        setupLuckyButton();
+        setupPetalShower();
+    });
 </script>
 </body>
 </html>
