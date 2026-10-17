@@ -1,10 +1,11 @@
-{t:🔥Teenage Dirtbag}
+{t:Teenage Dirtbag}
 {artist:Wheatus}
 {level:Medium}
 {spotify:25FTMokYEbEWHEdss5JLZS}
 {d:5}
 
 <s>(Intro)</s>
+<d>gallop strum (down,down-up)</d>
 [F] [C] [F] [Bb] x2
 
 <s>(Verse)</s>
@@ -31,6 +32,7 @@ with [F] me[Bb] Ooo-ooo [C] oooh
 
 [Dm//] [Am//] [Bb//] [C//]
 
+<d>gallop strum (down,down-up)</d>
 [F] [C] [F] [Bb] x2
 
 <s>(Verse)</s>
@@ -58,6 +60,7 @@ with [F] me[Bb] Ooo-ooo [C] oooh
 [Dm//] [Am//] [Bb//] [C//]
 
 <s>(Bridge)</s>
+<d>driving strum</d>
 [F][Bb] Oh yeaa-[F]-ah [Bb] dirtba-[F]-aa-[Bb]-ag
 No,[Dm//] she doesn’t[Am//] know 
 [Bb//]what she’s [C//]missing
@@ -66,6 +69,7 @@ No,[Dm//] she doesn’t[Am//] know
 No,[Dm//] she doesn’t[Am//] know 
 [Bb//]what she’s [C//]missing
 
+<d>gallop strum (down,down-up)</d>
 [F] [C] [F] [Bb] x2
 
 <s>(Verse)</s>
@@ -93,7 +97,7 @@ I’ve got two [F]tickets to [Bb]Iron [C]Maiden
 [Dm//] [Am//] [Bb//] [C//]
 
 <s>(Bridge)</s>
-<d>loud</d>
+<d>driving strum, loud</d>
 [F][Bb] Oh yeaa-[F]-ah [Bb] dirtba-[F]-aa-[Bb]-ag
 No,[Dm//] she doesn’t[Am//] know 
 [Bb//]what she’s [C//]missing
