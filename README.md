@@ -12,7 +12,7 @@ When opened online, the Service Worker automatically caches the core app shell, 
 
 ### How to Install
 
-- **Android (Chrome / Edge / Firefox)**:
+- **Android (Chrome / Edge / Firefox/ Brave)**:
   1. Open [ukulelekrakow.pl](https://ukulelekrakow.pl).
   2. Tap the browser menu (**⋮**) or the install prompt at the bottom of the screen.
   3. Tap **Install app** (or **Add to Home screen**).
