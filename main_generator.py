@@ -2,6 +2,7 @@ import os
 import re
 import datetime
 import shutil
+import json
 from jinja2 import Environment, FileSystemLoader
 
 
@@ -318,10 +319,11 @@ def generate_service_worker(out_dir, collection, arch_collection=None):
             all_chords.update(song.ch_list)
     chord_urls = [f"/chords/{c}.gif" for c in sorted(all_chords) if c]
 
+    all_urls = song_urls + chord_urls
+
     content = template.render(
         build_version=version,
-        song_urls=song_urls,
-        chord_urls=chord_urls
+        all_urls_json=json.dumps(all_urls, ensure_ascii=False, indent=2)
     )
     sw_file = os.path.join(out_dir, "sw.js")
     with open(sw_file, 'w', encoding='utf-8') as file:
