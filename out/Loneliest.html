@@ -7,6 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
 	<link rel="icon" href="/images/icon.PNG" sizes="32x32" />
+	<link rel="manifest" href="/manifest.json" />
+	<meta name="theme-color" content="#ffffff" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="default" />
+	<meta name="apple-mobile-web-app-title" content="UkeSongbook" />
+	<link rel="apple-touch-icon" href="/images/icon-192.png" />
     <title>Loneliest - Krakow Ukulele Tuesdays</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -424,6 +430,18 @@ window.addEventListener('beforeunload', function() {
     var checkBox = document.querySelector('.checkbox');
     var infoBox = document.getElementById('infoBox');
     infoBox.style.display = checkBox.checked ? 'block' : 'none';
+  }
+</script>
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function() {
+      navigator.serviceWorker.register('/sw.js').then(function(reg) {
+        console.log('PWA ServiceWorker registered with scope:', reg.scope);
+        reg.update();
+      }).catch(function(err) {
+        console.warn('PWA ServiceWorker registration failed:', err);
+      });
+    });
   }
 </script>
 </body>

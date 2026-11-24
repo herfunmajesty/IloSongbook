@@ -5,6 +5,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="description" content="">
+<link rel="icon" href="../images/icon.png" sizes="32x32" />
+<link rel="manifest" href="/manifest.json" />
+<meta name="theme-color" content="#ffffff" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="default" />
+<meta name="apple-mobile-web-app-title" content="UkeSongbook" />
+<link rel="apple-touch-icon" href="/images/icon-192.png" />
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
 <title>Krakow Ukulele & Sing Tuesdays</title>
 
@@ -273,6 +280,18 @@ ul { list-style: none; padding-left: 0px; }
 			sortedSongs.forEach(song => songsList.appendChild(song));
 			}
 		});
+</script>
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function() {
+      navigator.serviceWorker.register('/sw.js').then(function(reg) {
+        console.log('PWA ServiceWorker registered with scope:', reg.scope);
+        reg.update();
+      }).catch(function(err) {
+        console.warn('PWA ServiceWorker registration failed:', err);
+      });
+    });
+  }
 </script>
 </body>
 </html>

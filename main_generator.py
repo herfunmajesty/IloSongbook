@@ -2,6 +2,7 @@ import os
 import re
 import datetime
 import shutil
+import json
 from jinja2 import Environment, FileSystemLoader
 
 
@@ -299,6 +300,37 @@ def generate_song_list_html(loc_song_list, out_dir, loc_template, name):
         file.write(html_content2)
 
 
+def generate_service_worker(out_dir, collection, arch_collection=None):
+    print(f"{sep2}Rozpoczynam generowanie Service Workera (PWA) dla songbooka.{sep2}")
+    template = env.get_template('sw.js')
+    version = datetime.datetime.now().strftime("%Y%m%d%H%M%S")
+
+    # URL-e aktywnych piosenek
+    song_urls = [f"/{song.html_name}.html" for song in collection]
+    if arch_collection:
+        song_urls.extend([f"/archive/{song.html_name}.html" for song in arch_collection])
+
+    # Unikalne akordy wykorzystywane w piosenkach
+    all_chords = set()
+    for song in collection:
+        all_chords.update(song.ch_list)
+    if arch_collection:
+        for song in arch_collection:
+            all_chords.update(song.ch_list)
+    chord_urls = [f"/chords/{c}.gif" for c in sorted(all_chords) if c]
+
+    all_urls = song_urls + chord_urls
+
+    content = template.render(
+        build_version=version,
+        all_urls_json=json.dumps(all_urls, ensure_ascii=False, indent=2)
+    )
+    sw_file = os.path.join(out_dir, "sw.js")
+    with open(sw_file, 'w', encoding='utf-8') as file:
+        file.write(content)
+    print(f'Zapisano Service Worker pod nazwa {sw_file} (wersja {version}, piosenek: {len(song_urls)}, akordow: {len(chord_urls)})')
+
+
 class SongCollection:
     def __init__(self):
         self.songs = []
@@ -413,10 +445,15 @@ def build_songbook():
     dest_directory = os.path.join(os.getcwd(), 'out')
     copy_folders(src_directory, dest_directory, img_folders)
     # kopiowanie plików nie renderowanych
-    n_r_files = ['how.html']
+    n_r_files = ['how.html', 'manifest.json']
     n_src_directory = os.path.join(os.getcwd(), 'in/template')
     n_dest_directory = os.path.join(os.getcwd(), 'out')
     copy_files(n_src_directory, n_dest_directory, n_r_files)
+
+    # kopiowanie CNAME jeśli istnieje
+    cname_src = os.path.join(os.getcwd(), 'CNAME')
+    if os.path.exists(cname_src):
+        shutil.copy(cname_src, os.path.join(dest_directory, 'CNAME'))
 
     # Najpierw tworzę bazę piosenek aktywnych:
     folder_path_active = os.path.join(os.getcwd(), 'in/songs/active')
@@ -523,6 +560,10 @@ def build_songbook():
     generate_song_html(test_collection, directory2, 'song_hidden.html')
     t_list_name = "test"  # zmienic ten fragment na test_list i zaimplementować w html
     generate_song_list_html(test_collection, directory2, 'songs_hidden.html',  t_list_name)
+
+    # Generowanie Service Workera PWA z listą piosenek do pełnego offline
+    generate_service_worker(main_directory, collection, arch_collection)
+
     result["success"]="True"
     return result
 

@@ -4,6 +4,27 @@ A static songbook generator for the **Krakow Ukulele Tuesdays** community. It re
 
 Live site: [ukulelekrakow.pl](https://ukulelekrakow.pl)
 
+## Progressive Web App (PWA) & Offline Use
+
+The songbook is a **Progressive Web App (PWA)** that can be installed directly onto smartphones, tablets, or computers to use offline during meetups and jam sessions.
+
+When opened online, the Service Worker automatically caches the core app shell, chord diagrams, and the entire active song catalogue in the background. Once cached, lyrics, chord charts, search/filtering, and auto-scroll work completely without an internet connection.
+
+### How to Install
+
+- **Android (Chrome / Edge / Firefox/ Brave)**:
+  1. Open [ukulelekrakow.pl](https://ukulelekrakow.pl).
+  2. Tap the browser menu (**⋮**) or the install prompt at the bottom of the screen.
+  3. Tap **Install app** (or **Add to Home screen**).
+- **iOS / iPadOS (Safari)**:
+  1. Open [ukulelekrakow.pl](https://ukulelekrakow.pl) in Safari.
+  2. Tap the **Share** button (the square with an upward arrow).
+  3. Scroll down and select **Add to Home Screen**, then tap **Add**.
+- **Desktop (Chrome / Edge / Brave)**:
+  1. Open [ukulelekrakow.pl](https://ukulelekrakow.pl).
+  2. Click the **Install** icon in the browser address bar (or select *Install Krakow Ukulele...* from the menu).
+
+
 ## How It Works
 
 `main_generator.py` reads `.txt` song files from three directories, processes them through Jinja2 HTML templates, and outputs a browsable songbook website into the `out/` directory.
@@ -93,17 +114,21 @@ IloSongbook/
 │   │   ├── song.html          # Song page template (active)
 │   │   ├── song_hidden.html   # Song page template (archive/new)
 │   │   ├── songs.html         # Song list template (active)
-│   │   └── songs_hidden.html  # Song list template (archive/new)
+│   │   ├── songs_hidden.html  # Song list template (archive/new)
+│   │   ├── manifest.json      # PWA Web App Manifest
+│   │   └── sw.js              # Service Worker template (offline caching)
 │   ├── chords/                # Ukulele chord diagram images (.gif)
-│   └── images/                # Logos, icons, backgrounds
+│   └── images/                # Logos, icons, PWA app icons (icon-192, icon-512)
 └── out/                       # Generated HTML output (do not edit)
     ├── index.html
     ├── songs.html
+    ├── manifest.json          # Copied PWA manifest
+    ├── sw.js                  # Generated Service Worker with pre-cache list
     ├── *.html                 # Individual song pages
     ├── archive/               # Archived song pages
     ├── new/                   # New/test song pages
     ├── chords/                # Copied chord diagrams
-    └── images/                # Copied images
+    └── images/                # Copied images and app icons
 ```
 
 ## Requirements
@@ -131,12 +156,14 @@ python main_generator.py
 
 This will:
 
-1. Copy images and chord diagrams from `in/` to `out/`
-2. Read and parse all song files from the three song directories
-3. Validate song titles and metadata (results logged to `songbook_log.txt`)
-4. Generate individual HTML pages for each song
-5. Generate song list pages for each collection
-6. Generate the index page
+1. Copy images, icons, and chord diagrams from `in/` to `out/`
+2. Copy non-rendered files (`how.html`, `manifest.json`, `CNAME`) to `out/`
+3. Read and parse all song files from the three song directories
+4. Validate song titles and metadata (results logged to `songbook_log.txt`)
+5. Generate individual HTML pages for each song
+6. Generate song list pages for each collection
+7. Generate the index page
+8. Generate `out/sw.js` with full pre-caching metadata for offline PWA operation
 
 The output in `out/` is then deployed to GitHub Pages.
 
